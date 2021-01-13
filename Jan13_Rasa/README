@@ -13,3 +13,8 @@ Changes in files from init model:
   - added new intents in nlu to the list
   - added new response "utter_itsok"
   - be aware that all examples in responses require "text:"
+
+Image - chat example with the updates:
+- some learning is happening
+- all user inputs are unseen/ not in the training examples
+- "It's ok" and "Hey do you mean.." belong to the same response "itsok"
