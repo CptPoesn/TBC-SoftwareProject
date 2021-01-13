@@ -1,0 +1,10 @@
+Changes in files from init model:
+1. nlu.yml
+  - added new intents: "stalling" & "itsok"
+  - be aware of "metadata" formatting different from usual examples ("text:" and indent)
+2. stories.yml
+  - added new story: "ok path"
+3. domain.yml
+  - added new intents in nlu to the list
+  - added new response "utter_itsok"
+  - be aware that all examples in responses require "text:"
