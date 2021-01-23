@@ -4,39 +4,18 @@ nlu:
     - text: |
       Right
 
-  - intent: turnKeep
-  examples:
-    - text: |
-      uh
-    - text: |
-      and
-    - text: |
-      I I I
-    - text: |
-      I I
-    - text: |
-      ((You'd))
-    - text: |
-      Now
-    - text: |
-      So
-    - text: |
-      and
-    - text: |
-      and
-    - text: |
-      Well
-    - text: |
-      and
-
   - intent: stalling
   examples:
     - text: |
       uh
+    metadata:
+      turnManagement: turnKeep
     - text: |
       uh
     - text: |
       Ou ou our
+    metadata:
+      turnManagement: turnTake
     - text: |
       <lipsmack>
     - text: |
@@ -71,10 +50,16 @@ nlu:
       Uh
     - text: |
       I I I
+    metadata:
+      turnManagement: turnKeep
     - text: |
       I I
+    metadata:
+      turnManagement: turnKeep
     - text: |
       Uh
+    metadata:
+      turnManagement: turnTake
     - text: |
       uh
     - text: |
@@ -115,6 +100,8 @@ nlu:
       th they're
     - text: |
       Well
+    metadata:
+      turnManagement: turnKeep
     - text: |
       I mean they're they're
     - text: |
@@ -272,21 +259,6 @@ nlu:
     - text: |
       I think to really correct the judicial system you have to get the lawyers out of it <laughter>
 
-  - intent: turnTake
-  examples:
-    - text: |
-      Ou ou our
-    - text: |
-      And
-    - text: |
-      <Breathing>
-    - text: |
-      Uh
-    - text: |
-      <Throat_clearing> 
-    - text: |
-      Um
-
   - intent: autoPositive
   examples:
     - text: |
@@ -354,15 +326,6 @@ nlu:
       That's right
     - text: |
       Yeah
-
-  - intent: turnGrab
-  examples:
-    - text: |
-      Well
-    - text: |
-      Well
-    - text: |
-      Now
 
   - intent: setQuestion
   examples:

@@ -30,8 +30,14 @@ def dict_to_yaml(filename_out, data_dict):
     for row in data_dict:
         for key, value in row.items():
             if value and key != 'Markables' and key != 'Sender' \
-                    and key != 'Addressee' and key != 'Turn transcription' and key != 'FS text':
-                yaml_dict[value].append(row['FS text'])
+                    and key != 'Addressee' and key != 'Turn transcription' and key != 'FS text' \
+                    and key != 'turnManagement':
+                if row['turnManagement']:
+                    yaml_dict[value].append(row['FS text'] + '\n    metadata:\n      turnManagement: ' \
+                                            + row['turnManagement'])
+                    print(row['turnManagement'])
+                else:
+                    yaml_dict[value].append(row['FS text'])
     with open(filename_out, 'w') as f:
         f.write('nlu:\n')  # no spaces
         for key, values in yaml_dict.items():
