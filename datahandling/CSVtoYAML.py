@@ -41,7 +41,7 @@ def dict_to_yaml(filename_out, data_dict):
     with open(filename_out, 'w') as f:
         f.write('nlu:\n')  # no spaces
         for key, values in yaml_dict.items():
-            f.write('  - intent: ' + key + '\n')  # two spaces
+            f.write('- intent: ' + key + '\n')  # two spaces
             f.write('  examples:' + '\n')  # two spaces
 
             for ex in values:

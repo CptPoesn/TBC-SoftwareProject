@@ -1,21 +1,21 @@
 nlu:
-  - intent: opening
+- intent: opening
   examples:
     - text: |
       Right
 
-  - intent: stalling
+- intent: stalling
   examples:
     - text: |
       uh
-    metadata:
-      turnManagement: turnKeep
+      metadata:
+        turnManagement: turnKeep
     - text: |
       uh
     - text: |
       Ou ou our
-    metadata:
-      turnManagement: turnTake
+      metadata:
+        turnManagement: turnTake
     - text: |
       <lipsmack>
     - text: |
@@ -50,16 +50,16 @@ nlu:
       Uh
     - text: |
       I I I
-    metadata:
-      turnManagement: turnKeep
+      metadata:
+        turnManagement: turnKeep
     - text: |
       I I
-    metadata:
-      turnManagement: turnKeep
+      metadata:
+        turnManagement: turnKeep
     - text: |
       Uh
-    metadata:
-      turnManagement: turnTake
+      metadata:
+        turnManagement: turnTake
     - text: |
       uh
     - text: |
@@ -100,14 +100,14 @@ nlu:
       th they're
     - text: |
       Well
-    metadata:
-      turnManagement: turnKeep
+      metadata:
+        turnManagement: turnKeep
     - text: |
       I mean they're they're
     - text: |
       I mean you you
 
-  - intent: inform_continue
+- intent: inform_continue
   examples:
     - text: |
       actually I lived over in Europe for a couple of years
@@ -220,7 +220,7 @@ nlu:
     - text: |
       with that type person running it you could expect that you
 
-  - intent: inform_pass
+- intent: inform_pass
   examples:
     - text: |
       those three guys take the evidence go off figure it out and then come back and say whether you're guilty or not
@@ -259,7 +259,7 @@ nlu:
     - text: |
       I think to really correct the judicial system you have to get the lawyers out of it <laughter>
 
-  - intent: autoPositive
+- intent: autoPositive
   examples:
     - text: |
       <Laughter>
@@ -278,12 +278,12 @@ nlu:
     - text: |
       <Laughter>
 
-  - intent: autoPositve
+- intent: autoPositve
   examples:
     - text: |
       it's one of those things
 
-  - intent: selfCorrection
+- intent: selfCorrection
   examples:
     - text: |
       the just the
@@ -302,7 +302,7 @@ nlu:
     - text: |
       that's it it's
 
-  - intent: agreement
+- intent: agreement
   examples:
     - text: |
       that's true
@@ -327,44 +327,44 @@ nlu:
     - text: |
       Yeah
 
-  - intent: setQuestion
+- intent: setQuestion
   examples:
     - text: |
       How would you go about changing it? 
     - text: |
       Who's paying for that
 
-  - intent: retraction
+- intent: retraction
   examples:
     - text: |
       that's a
 
-  - intent: alloPositive
+- intent: alloPositive
   examples:
     - text: |
       <Laughter>
 
-  - intent: completion
+- intent: completion
   examples:
     - text: |
       Leave the details op to somebody else
 
-  - intent: checkQuestion
+- intent: checkQuestion
   examples:
     - text: |
       huh
 
-  - intent: confirm
+- intent: confirm
   examples:
     - text: |
       Yeah
 
-  - intent: propositionalQuestion
+- intent: propositionalQuestion
   examples:
     - text: |
       because when you get the most heinous of crimes have you ever noticed you always get the most renowned defense attorney
 
-  - intent: answer
+- intent: answer
   examples:
     - text: |
       yeah
