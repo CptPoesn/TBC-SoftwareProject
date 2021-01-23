@@ -33,7 +33,7 @@ def dict_to_yaml(filename_out, data_dict):
                     and key != 'Addressee' and key != 'Turn transcription' and key != 'FS text' \
                     and key != 'turnManagement':
                 if row['turnManagement']:
-                    yaml_dict[value].append(row['FS text'] + '\n    metadata:\n      turnManagement: ' \
+                    yaml_dict[value].append(row['FS text'] + '\n      metadata:\n        turnManagement: '
                                             + row['turnManagement'])
                     print(row['turnManagement'])
                 else:
