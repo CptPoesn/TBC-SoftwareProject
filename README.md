@@ -8,3 +8,5 @@ do you see this?
 `our_script_shell.py` Going to be our interface - Theresa's still playing around with it.
 
 `our_dialogue_manader.py` same as above
+
+`rasa_env` conda environment to set up rasa and its prerequisites
