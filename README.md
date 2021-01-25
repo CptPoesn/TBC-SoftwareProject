@@ -9,4 +9,4 @@ do you see this?
 
 `our_dialogue_manader.py` same as above
 
-`rasa_env` conda environment to set up rasa and its prerequisites
+`rasa_env.yml` conda environment to set up rasa and its prerequisites
