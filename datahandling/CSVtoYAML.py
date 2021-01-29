@@ -34,7 +34,7 @@ def dict_to_yaml(filename_out, data_dict):
                     and key != 'Addressee' and key != 'Turn transcription' and key != 'FS text' \
                     and key != 'turnManagement':
                 if row['turnManagement']:
-                    yaml_dict[value].append(row['FS text'] + '\n      metadata:\n        turnManagement: '
+                    yaml_dict[value].append(row['FS text'] + '\n    metadata:\n      turnManagement: '
                                             + row['turnManagement'])
                     # print(row['turnManagement'])
                 else:
@@ -46,8 +46,8 @@ def dict_to_yaml(filename_out, data_dict):
             f.write('  examples:' + '\n')  # two spaces
 
             for ex in values:
-                f.write('    - text: |\n')  # four spaces
-                f.write('      ' + ex + '\n')  # six spaces
+                f.write('  - text: |\n')  # four spaces
+                f.write('    ' + ex + '\n')  # six spaces
 
             f.write('\n')
 
@@ -63,7 +63,9 @@ def dict_to_yaml(filename_out, data_dict):
 
 
 if __name__ == '__main__':
-    file = 'TRAINS-1-gold_standard-MultiTab-V21.csv'
+    # file = 'TRAINS-1-gold_standard-MultiTab-V21.csv'
+    file = 'sw00-0004_DiAML-MultiTab.csv'
+
     file_out = file[:-3] + 'yaml'
 
     data = cvs_to_dict(file)
