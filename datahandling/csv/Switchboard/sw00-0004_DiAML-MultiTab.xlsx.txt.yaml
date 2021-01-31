@@ -1,0 +1,1263 @@
+nlu:
+- intent: sw00-0004-fs1
+  examples:
+  - text: |
+    Right
+
+- intent: opening
+  examples:
+  - text: |
+    Right
+
+- intent: sw00-0004-fs2
+  examples:
+  - text: |
+    uh
+    metadata:
+      turnManagement: turnKeep
+
+- intent: stalling
+  examples:
+  - text: |
+    uh
+    metadata:
+      turnManagement: turnKeep
+  - text: |
+    uh
+  - text: |
+    Ou ou our
+    metadata:
+      turnManagement: turnTake
+  - text: |
+    <lipsmack>
+  - text: |
+    I mean
+  - text: |
+    a a a
+  - text: |
+    a a
+  - text: |
+    <Breathing> Well you know it's it's 
+  - text: |
+    I mean uh uh
+  - text: |
+    I  if 
+  - text: |
+    uh
+  - text: |
+    uh
+  - text: |
+    you know
+  - text: |
+    you know
+  - text: |
+    uh uh
+  - text: |
+    to the to the
+  - text: |
+    oh
+  - text: |
+    d disregard
+  - text: |
+    Uh
+  - text: |
+    I I I
+    metadata:
+      turnManagement: turnKeep
+  - text: |
+    I I
+    metadata:
+      turnManagement: turnKeep
+  - text: |
+    Uh
+    metadata:
+      turnManagement: turnTake
+  - text: |
+    uh
+  - text: |
+    <Throat_clearing> You know
+  - text: |
+    you know uh
+  - text: |
+    you know
+  - text: |
+    a uh a
+  - text: |
+    do it do it
+  - text: |
+    uh
+  - text: |
+    He he
+  - text: |
+    your your
+  - text: |
+    you know
+  - text: |
+    you know
+  - text: |
+    uh
+  - text: |
+    Oh
+  - text: |
+    y well you you know <laughter> 
+  - text: |
+    You know
+  - text: |
+    its's it's
+  - text: |
+    and and
+  - text: |
+    I mean
+  - text: |
+    th they're
+  - text: |
+    Well
+    metadata:
+      turnManagement: turnKeep
+  - text: |
+    I mean they're they're
+  - text: |
+    I mean you you
+
+- intent: sw00-0004-fs3
+  examples:
+  - text: |
+    actually I lived over in Europe for a couple of years
+
+- intent: inform_continue
+  examples:
+  - text: |
+    actually I lived over in Europe for a couple of years
+  - text: |
+    I lived in Germany 
+  - text: |
+    and in Germany they don't have the jury system
+  - text: |
+    What they do is they have three judges basically
+  - text: |
+    And you get up there  
+  - text: |
+    and the prosecuting attorney presents his evidence  
+  - text: |
+    your defense attorney presents their evidence  
+  - text: |
+    I think what they need to do is they need to somehow take the money out of it
+  - text: |
+    when you have a man that's signed a statement saying he's guilty
+  - text: |
+    we have a family called All day family
+  - text: |
+    All the people signed confessions
+  - text: |
+    they went to a trial by jury
+  - text: |
+    what they've done is they've bought Mercedes after Mercedes after Mercedes is what they've done
+  - text: |
+    I would have to look at it
+  - text: |
+    if they did it with just the judges the police have to do a lot better job of making sure that their evidence is airtight
+  - text: |
+    because the judges sitting in that kind of stuff day after day they know all the procedures
+  - text: |
+    they know what's good and what isn't
+  - text: |
+    they'd be able to say, I'm sorry,  /
+  - text: |
+    you can't use this as evidence
+  - text: |
+    because it was either illegally obtained or whatever
+  - text: |
+    you wouldn't have this theatrics where the lawyer jumps up and presents it to the jury
+  - text: |
+    and then the judge says no disregard that
+  - text: |
+    my favorite is the police department
+  - text: |
+    <breathing> they're not aimed at the criminal  
+  - text: |
+    The judicial system is aimed at the citizens  
+  - text: |
+    because you and I we have work schedules
+  - text: |
+    we can be called at work  
+  - text: |
+    we have Social Security numbers
+  - text: |
+    they can trace us down
+  - text: |
+    we have telephones
+  - text: |
+    then we have checkbooks
+  - text: |
+     Criminals have none of these things
+  - text: |
+    They're real difficult to catch
+  - text: |
+    and if they do catch them they don't get any monetary gain out of it whereas we write a check
+  - text: |
+    I've nailed the problem down  
+  - text: |
+    I'm going to have to leave those details like what would you do about
+  - text: |
+    I think to begin with you would have
+  - text: |
+    like here in Atlanta area our crime rate is just astronomical
+  - text: |
+    talking about the lawyers what might very well cause a drop in the number of lawyers and things like that is to set the fees for cases
+  - text: |
+    It's kind of like do it in the similar vein like VCR or television repair
+  - text: |
+    If you take your TV in a lot of these TV repair places will say  well  I'll repair your TV for a hundred dollars
+  - text: |
+    and if he gets in there and starts rooting around and finds something in there that's really tremendously wrong with it then he eats it
+  - text: |
+    he repairs it gives it back to you and takes your hundred dollars
+  - text: |
+    if he comes in and says  I'll repair your VCR or somebody else's VCR for a hundred dollars gets in there
+  - text: |
+    maybe it's a blown fuse
+  - text: |
+    takes him two minutes
+  - text: |
+    he fixes it
+  - text: |
+    he still charges you that hundred dollars
+  - text: |
+    maybe if we did that with the lawyers so that whether it's a murder case or somebody suing somebody else you get X dollars for that case
+  - text: |
+    And here's this bum that didn't have a job
+  - text: |
+    it's amazing
+  - text: |
+    when you stop and look at it the judges they're all former lawyers
+  - text: |
+    that's another problem
+  - text: |
+    they're totally and morally bankrupt without any ethics whatsoever
+  - text: |
+    with that type person running it you could expect that you
+
+- intent: sw00-0004-fs4
+  examples:
+  - text: |
+    I lived in Germany 
+
+- intent: sw00-0004-fs5
+  examples:
+  - text: |
+    and in Germany they don't have the jury system
+
+- intent: sw00-0004-fs6
+  examples:
+  - text: |
+    What they do is they have three judges basically
+
+- intent: sw00-0004-fs7
+  examples:
+  - text: |
+    uh
+
+- intent: sw00-0004-fs8
+  examples:
+  - text: |
+    And you get up there  
+
+- intent: sw00-0004-fs9
+  examples:
+  - text: |
+    and the prosecuting attorney presents his evidence  
+
+- intent: sw00-0004-fs10
+  examples:
+  - text: |
+    your defense attorney presents their evidence  
+
+- intent: sw00-0004-fs11
+  examples:
+  - text: |
+    those three guys take the evidence go off figure it out and then come back and say whether you're guilty or not
+
+- intent: inform_pass
+  examples:
+  - text: |
+    those three guys take the evidence go off figure it out and then come back and say whether you're guilty or not
+  - text: |
+    our judicial system is in such total chaos
+  - text: |
+    They were all murdered
+  - text: |
+    They been trying these people now for twentytwo years ever since I was a child
+  - text: |
+     has nothing to do with justice whatsoever
+  - text: |
+    Come on any jury's not going to  disregard the evidence you know <laughter>
+  - text: |
+    I think our judicial system is attorney welfare myself
+  - text: |
+    I hold it in the utmost contempt
+  - text: |
+    So where do you think they target their efforts? 
+  - text: |
+    They target their efforts toward the citizens not the criminals
+  - text: |
+    but I
+  - text: |
+    yet you go out on the streets and they're giving speeding tickets
+  - text: |
+    I think somehow you have to separate the revenues from
+  - text: |
+    that's it.
+  - text: |
+    None of this
+  - text: |
+    and he's got a attorney that you and I could never afford
+  - text: |
+    and you're talking to the other half that's paying for it <laughter> 
+  - text: |
+    I think to really correct the judicial system you have to get the lawyers out of it <laughter>
+
+- intent: sw00-0004-fs12
+  examples:
+  - text: |
+    Ou ou our
+    metadata:
+      turnManagement: turnTake
+
+- intent: sw00-0004-fs13
+  examples:
+  - text: |
+    our judicial system is in such total chaos
+
+- intent: sw00-0004-fs14
+  examples:
+  - text: |
+    <Laughter>
+
+- intent: autoPositive
+  examples:
+  - text: |
+    <Laughter>
+  - text: |
+    Uh-huh
+  - text: |
+    Wow
+  - text: |
+    <Laughter>
+  - text: |
+    Yeah
+  - text: |
+    <Laughter>
+  - text: |
+    <Laughter>
+  - text: |
+    <Laughter>
+
+- intent: sw00-0004-fs15
+  examples:
+  - text: |
+    I think what they need to do is they need to somehow take the money out of it
+
+- intent: sw00-0004-fs16
+  examples:
+  - text: |
+    <lipsmack>
+
+- intent: sw00-0004-fs17
+  examples:
+  - text: |
+    I mean
+
+- intent: sw00-0004-fs18
+  examples:
+  - text: |
+    when you have a man that's signed a statement saying he's guilty
+
+- intent: sw00-0004-fs19
+  examples:
+  - text: |
+    a a a
+
+- intent: sw00-0004-fs20
+  examples:
+  - text: |
+    we have a family called All day family
+
+- intent: sw00-0004-fs21
+  examples:
+  - text: |
+    a a
+
+- intent: sw00-0004-fs22
+  examples:
+  - text: |
+    They were all murdered
+
+- intent: sw00-0004-fs23
+  examples:
+  - text: |
+    Uh-huh
+
+- intent: sw00-0004-fs24
+  examples:
+  - text: |
+    All the people signed confessions
+
+- intent: sw00-0004-fs25
+  examples:
+  - text: |
+    they went to a trial by jury
+
+- intent: sw00-0004-fs26
+  examples:
+  - text: |
+    They been trying these people now for twentytwo years ever since I was a child
+
+- intent: sw00-0004-fs27
+  examples:
+  - text: |
+    Wow
+
+- intent: sw00-0004-fs28
+  examples:
+  - text: |
+    And
+    metadata:
+      turnManagement: turnTake
+
+- intent: sw00-0004-fs29
+  examples:
+  - text: |
+    what they've done is they've bought Mercedes after Mercedes after Mercedes is what they've done
+
+- intent: sw00-0004-fs30
+  examples:
+  - text: |
+     has nothing to do with justice whatsoever
+
+- intent: sw00-0004-fs31
+  examples:
+  - text: |
+    <Breathing>
+    metadata:
+      turnManagement: turnTake
+
+- intent: sw00-0004-fs32
+  examples:
+  - text: |
+    <Breathing> Well you know it's it's 
+
+- intent: sw00-0004-fs33
+  examples:
+  - text: |
+    it's one of those things
+
+- intent: autoPositve
+  examples:
+  - text: |
+    it's one of those things
+
+- intent: sw00-0004-fs34
+  examples:
+  - text: |
+    I mean uh uh
+
+- intent: sw00-0004-fs35
+  examples:
+  - text: |
+    I would have to look at it
+
+- intent: sw00-0004-fs36
+  examples:
+  - text: |
+    I  if 
+
+- intent: sw00-0004-fs37
+  examples:
+  - text: |
+    the just the
+
+- intent: selfCorrection
+  examples:
+  - text: |
+    the just the
+  - text: |
+    The d my
+  - text: |
+    us we
+  - text: |
+    you would h  you would have
+  - text: |
+    do uh cause
+  - text: |
+    similar like
+  - text: |
+    a  a civil somebody suing somebody else
+  - text: |
+    that's it it's
+
+- intent: sw00-0004-fs38
+  examples:
+  - text: |
+    uh
+
+- intent: sw00-0004-fs39
+  examples:
+  - text: |
+    if they did it with just the judges the police have to do a lot better job of making sure that their evidence is airtight
+
+- intent: sw00-0004-fs40
+  examples:
+  - text: |
+    because the judges sitting in that kind of stuff day after day they know all the procedures
+
+- intent: sw00-0004-fs41
+  examples:
+  - text: |
+    they know what's good and what isn't
+
+- intent: sw00-0004-fs42
+  examples:
+  - text: |
+    they'd be able to say, I'm sorry,  /
+
+- intent: sw00-0004-fs43
+  examples:
+  - text: |
+    you can't use this as evidence
+
+- intent: sw00-0004-fs44
+  examples:
+  - text: |
+    uh
+
+- intent: sw00-0004-fs45
+  examples:
+  - text: |
+    you know
+
+- intent: sw00-0004-fs46
+  examples:
+  - text: |
+    because it was either illegally obtained or whatever
+
+- intent: sw00-0004-fs47
+  examples:
+  - text: |
+    and
+    metadata:
+      turnManagement: turnKeep
+
+- intent: sw00-0004-fs48
+  examples:
+  - text: |
+    you know
+
+- intent: sw00-0004-fs49
+  examples:
+  - text: |
+    you wouldn't have this theatrics where the lawyer jumps up and presents it to the jury
+
+- intent: sw00-0004-fs50
+  examples:
+  - text: |
+    uh uh
+
+- intent: sw00-0004-fs51
+  examples:
+  - text: |
+    to the to the
+
+- intent: sw00-0004-fs52
+  examples:
+  - text: |
+    oh
+
+- intent: sw00-0004-fs53
+  examples:
+  - text: |
+    and then the judge says no disregard that
+
+- intent: sw00-0004-fs54
+  examples:
+  - text: |
+    d disregard
+
+- intent: sw00-0004-fs55
+  examples:
+  - text: |
+    Come on any jury's not going to  disregard the evidence you know <laughter>
+
+- intent: sw00-0004-fs56
+  examples:
+  - text: |
+    Uh
+
+- intent: sw00-0004-fs57
+  examples:
+  - text: |
+    that's true
+
+- intent: agreement
+  examples:
+  - text: |
+    that's true
+  - text: |
+    That may very well be
+  - text: |
+    Yeah
+  - text: |
+    That's true
+  - text: |
+    Yeah
+  - text: |
+    I firmly believe in that  
+  - text: |
+    That's true
+  - text: |
+    Yeah
+  - text: |
+    Yeah
+  - text: |
+    That's right
+  - text: |
+    Yeah
+
+- intent: sw00-0004-fs58
+  examples:
+  - text: |
+    I I I
+    metadata:
+      turnManagement: turnKeep
+
+- intent: sw00-0004-fs59
+  examples:
+  - text: |
+    I think our judicial system is attorney welfare myself
+
+- intent: sw00-0004-fs60
+  examples:
+  - text: |
+    That may very well be
+
+- intent: sw00-0004-fs61
+  examples:
+  - text: |
+    I I
+    metadata:
+      turnManagement: turnKeep
+
+- intent: sw00-0004-fs62
+  examples:
+  - text: |
+    I hold it in the utmost contempt
+
+- intent: sw00-0004-fs63
+  examples:
+  - text: |
+    Uh
+    metadata:
+      turnManagement: turnTake
+
+- intent: sw00-0004-fs64
+  examples:
+  - text: |
+    The d my
+
+- intent: sw00-0004-fs65
+  examples:
+  - text: |
+    uh
+
+- intent: sw00-0004-fs66
+  examples:
+  - text: |
+    my favorite is the police department
+
+- intent: sw00-0004-fs67
+  examples:
+  - text: |
+    <breathing> they're not aimed at the criminal  
+
+- intent: sw00-0004-fs68
+  examples:
+  - text: |
+    The judicial system is aimed at the citizens  
+
+- intent: sw00-0004-fs69
+  examples:
+  - text: |
+    because you and I we have work schedules
+
+- intent: sw00-0004-fs70
+  examples:
+  - text: |
+    we can be called at work  
+
+- intent: sw00-0004-fs71
+  examples:
+  - text: |
+    we have Social Security numbers
+
+- intent: sw00-0004-fs72
+  examples:
+  - text: |
+    they can trace us down
+
+- intent: sw00-0004-fs73
+  examples:
+  - text: |
+    we have telephones
+
+- intent: sw00-0004-fs74
+  examples:
+  - text: |
+    then we have checkbooks
+
+- intent: sw00-0004-fs75
+  examples:
+  - text: |
+     Criminals have none of these things
+
+- intent: sw00-0004-fs76
+  examples:
+  - text: |
+    They're real difficult to catch
+
+- intent: sw00-0004-fs77
+  examples:
+  - text: |
+    and if they do catch them they don't get any monetary gain out of it whereas we write a check
+
+- intent: sw00-0004-fs78
+  examples:
+  - text: |
+    us we
+
+- intent: sw00-0004-fs79
+  examples:
+  - text: |
+    Yeah
+
+- intent: sw00-0004-fs80
+  examples:
+  - text: |
+    So where do you think they target their efforts? 
+
+- intent: sw00-0004-fs81
+  examples:
+  - text: |
+    That's true
+
+- intent: sw00-0004-fs82
+  examples:
+  - text: |
+    ((You'd))
+    metadata:
+      turnManagement: turnKeep
+
+- intent: sw00-0004-fs83
+  examples:
+  - text: |
+    They target their efforts toward the citizens not the criminals
+
+- intent: sw00-0004-fs84
+  examples:
+  - text: |
+    Well
+    metadata:
+      turnManagement: turnGrab
+
+- intent: sw00-0004-fs85
+  examples:
+  - text: |
+    How would you go about changing it? 
+
+- intent: setQuestion
+  examples:
+  - text: |
+    How would you go about changing it? 
+  - text: |
+    Who's paying for that
+
+- intent: sw00-0004-fs86
+  examples:
+  - text: |
+    <Throat_clearing> 
+    metadata:
+      turnManagement: turnTake
+
+- intent: sw00-0004-fs87
+  examples:
+  - text: |
+    <Throat_clearing> You know
+
+- intent: sw00-0004-fs88
+  examples:
+  - text: |
+    that's a
+
+- intent: retraction
+  examples:
+  - text: |
+    that's a
+
+- intent: sw00-0004-fs89
+  examples:
+  - text: |
+    I've nailed the problem down  
+
+- intent: sw00-0004-fs90
+  examples:
+  - text: |
+    but I
+
+- intent: sw00-0004-fs91
+  examples:
+  - text: |
+    <Laughter>
+
+- intent: sw00-0004-fs92
+  examples:
+  - text: |
+    <Laughter>
+
+- intent: alloPositive
+  examples:
+  - text: |
+    <Laughter>
+
+- intent: sw00-0004-fs93
+  examples:
+  - text: |
+    Leave the details op to somebody else
+
+- intent: completion
+  examples:
+  - text: |
+    Leave the details op to somebody else
+
+- intent: sw00-0004-fs94
+  examples:
+  - text: |
+    huh
+
+- intent: checkQuestion
+  examples:
+  - text: |
+    huh
+
+- intent: sw00-0004-fs95
+  examples:
+  - text: |
+    Yeah
+
+- intent: confirm
+  examples:
+  - text: |
+    Yeah
+
+- intent: sw00-0004-fs96
+  examples:
+  - text: |
+    I'm going to have to leave those details like what would you do about
+
+- intent: sw00-0004-fs97
+  examples:
+  - text: |
+    I think to begin with you would have
+
+- intent: sw00-0004-fs98
+  examples:
+  - text: |
+    you would h  you would have
+
+- intent: sw00-0004-fs99
+  examples:
+  - text: |
+    like here in Atlanta area our crime rate is just astronomical
+
+- intent: sw00-0004-fs100
+  examples:
+  - text: |
+    yet you go out on the streets and they're giving speeding tickets
+
+- intent: sw00-0004-fs101
+  examples:
+  - text: |
+    Yeah
+
+- intent: sw00-0004-fs102
+  examples:
+  - text: |
+    I think somehow you have to separate the revenues from
+
+- intent: sw00-0004-fs103
+  examples:
+  - text: |
+    Well
+    metadata:
+      turnManagement: turnGrab
+
+- intent: sw00-0004-fs104
+  examples:
+  - text: |
+    you know uh
+
+- intent: sw00-0004-fs105
+  examples:
+  - text: |
+    talking about the lawyers what might very well cause a drop in the number of lawyers and things like that is to set the fees for cases
+
+- intent: sw00-0004-fs106
+  examples:
+  - text: |
+    you know
+
+- intent: sw00-0004-fs107
+  examples:
+  - text: |
+    do uh cause
+
+- intent: sw00-0004-fs108
+  examples:
+  - text: |
+    a uh a
+
+- intent: sw00-0004-fs109
+  examples:
+  - text: |
+    It's kind of like do it in the similar vein like VCR or television repair
+
+- intent: sw00-0004-fs110
+  examples:
+  - text: |
+    do it do it
+
+- intent: sw00-0004-fs111
+  examples:
+  - text: |
+    similar like
+
+- intent: sw00-0004-fs112
+  examples:
+  - text: |
+    uh
+
+- intent: sw00-0004-fs113
+  examples:
+  - text: |
+    If you take your TV in a lot of these TV repair places will say  well  I'll repair your TV for a hundred dollars
+
+- intent: sw00-0004-fs114
+  examples:
+  - text: |
+    and if he gets in there and starts rooting around and finds something in there that's really tremendously wrong with it then he eats it
+
+- intent: sw00-0004-fs115
+  examples:
+  - text: |
+    He he
+
+- intent: sw00-0004-fs116
+  examples:
+  - text: |
+    he repairs it gives it back to you and takes your hundred dollars
+
+- intent: sw00-0004-fs117
+  examples:
+  - text: |
+    Now
+    metadata:
+      turnManagement: turnKeep
+
+- intent: sw00-0004-fs118
+  examples:
+  - text: |
+    if he comes in and says  I'll repair your VCR or somebody else's VCR for a hundred dollars gets in there
+
+- intent: sw00-0004-fs119
+  examples:
+  - text: |
+    your your
+
+- intent: sw00-0004-fs120
+  examples:
+  - text: |
+    maybe it's a blown fuse
+
+- intent: sw00-0004-fs121
+  examples:
+  - text: |
+    takes him two minutes
+
+- intent: sw00-0004-fs122
+  examples:
+  - text: |
+    he fixes it
+
+- intent: sw00-0004-fs123
+  examples:
+  - text: |
+    he still charges you that hundred dollars
+
+- intent: sw00-0004-fs124
+  examples:
+  - text: |
+    So
+    metadata:
+      turnManagement: turnKeep
+
+- intent: sw00-0004-fs125
+  examples:
+  - text: |
+    maybe if we did that with the lawyers so that whether it's a murder case or somebody suing somebody else you get X dollars for that case
+
+- intent: sw00-0004-fs126
+  examples:
+  - text: |
+    you know
+
+- intent: sw00-0004-fs127
+  examples:
+  - text: |
+    a  a civil somebody suing somebody else
+
+- intent: sw00-0004-fs128
+  examples:
+  - text: |
+    you know
+
+- intent: sw00-0004-fs129
+  examples:
+  - text: |
+    uh
+
+- intent: sw00-0004-fs130
+  examples:
+  - text: |
+    and
+    metadata:
+      turnManagement: turnKeep
+
+- intent: sw00-0004-fs131
+  examples:
+  - text: |
+    that's it.
+
+- intent: sw00-0004-fs132
+  examples:
+  - text: |
+    Now
+    metadata:
+      turnManagement: turnGrab
+
+- intent: sw00-0004-fs133
+  examples:
+  - text: |
+    None of this
+
+- intent: sw00-0004-fs134
+  examples:
+  - text: |
+    I firmly believe in that  
+
+- intent: sw00-0004-fs135
+  examples:
+  - text: |
+    because when you get the most heinous of crimes have you ever noticed you always get the most renowned defense attorney
+
+- intent: propositionalQuestion
+  examples:
+  - text: |
+    because when you get the most heinous of crimes have you ever noticed you always get the most renowned defense attorney
+
+- intent: sw00-0004-fs136
+  examples:
+  - text: |
+    Oh
+
+- intent: sw00-0004-fs137
+  examples:
+  - text: |
+    yeah
+
+- intent: answer
+  examples:
+  - text: |
+    yeah
+  - text: |
+    you're talking to part of them that's paying for that <laughter>
+
+- intent: sw00-0004-fs138
+  examples:
+  - text: |
+    And here's this bum that didn't have a job
+
+- intent: sw00-0004-fs139
+  examples:
+  - text: |
+    Yeah
+
+- intent: sw00-0004-fs140
+  examples:
+  - text: |
+    and he's got a attorney that you and I could never afford
+
+- intent: sw00-0004-fs141
+  examples:
+  - text: |
+    That's true
+
+- intent: sw00-0004-fs142
+  examples:
+  - text: |
+    Who's paying for that
+
+- intent: sw00-0004-fs143
+  examples:
+  - text: |
+    Yeah
+
+- intent: sw00-0004-fs144
+  examples:
+  - text: |
+    Um
+    metadata:
+      turnManagement: turnTake
+
+- intent: sw00-0004-fs145
+  examples:
+  - text: |
+    y well you you know <laughter> 
+
+- intent: sw00-0004-fs146
+  examples:
+  - text: |
+    you're talking to part of them that's paying for that <laughter>
+
+- intent: sw00-0004-fs147
+  examples:
+  - text: |
+    <Laughter>
+
+- intent: sw00-0004-fs148
+  examples:
+  - text: |
+    Yeah
+
+- intent: sw00-0004-fs149
+  examples:
+  - text: |
+    and you're talking to the other half that's paying for it <laughter> 
+
+- intent: sw00-0004-fs150
+  examples:
+  - text: |
+    <Laughter>
+
+- intent: sw00-0004-fs151
+  examples:
+  - text: |
+    That's right
+
+- intent: sw00-0004-fs152
+  examples:
+  - text: |
+    You know
+
+- intent: sw00-0004-fs153
+  examples:
+  - text: |
+    that's it it's
+
+- intent: sw00-0004-fs154
+  examples:
+  - text: |
+    its's it's
+
+- intent: sw00-0004-fs155
+  examples:
+  - text: |
+    it's amazing
+
+- intent: sw00-0004-fs156
+  examples:
+  - text: |
+    and
+    metadata:
+      turnManagement: turnKeep
+
+- intent: sw00-0004-fs157
+  examples:
+  - text: |
+    and and
+
+- intent: sw00-0004-fs158
+  examples:
+  - text: |
+    when you stop and look at it the judges they're all former lawyers
+
+- intent: sw00-0004-fs159
+  examples:
+  - text: |
+    I mean
+
+- intent: sw00-0004-fs160
+  examples:
+  - text: |
+    th they're
+
+- intent: sw00-0004-fs161
+  examples:
+  - text: |
+    Yeah
+
+- intent: sw00-0004-fs162
+  examples:
+  - text: |
+    Well
+    metadata:
+      turnManagement: turnKeep
+
+- intent: sw00-0004-fs163
+  examples:
+  - text: |
+    that's another problem
+
+- intent: sw00-0004-fs164
+  examples:
+  - text: |
+    I think to really correct the judicial system you have to get the lawyers out of it <laughter>
+
+- intent: sw00-0004-fs165
+  examples:
+  - text: |
+    <Laughter>
+
+- intent: sw00-0004-fs166
+  examples:
+  - text: |
+    I mean they're they're
+
+- intent: sw00-0004-fs167
+  examples:
+  - text: |
+    they're totally and morally bankrupt without any ethics whatsoever
+
+- intent: sw00-0004-fs168
+  examples:
+  - text: |
+    and
+    metadata:
+      turnManagement: turnKeep
+
+- intent: sw00-0004-fs169
+  examples:
+  - text: |
+    with that type person running it you could expect that you
+
+- intent: sw00-0004-fs170
+  examples:
+  - text: |
+    I mean you you
+

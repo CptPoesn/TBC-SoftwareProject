@@ -1,0 +1,892 @@
+nlu:
+- intent: TRAINS1-fs1
+  examples:
+  - text: |
+    hello
+
+- intent: opening
+  examples:
+  - text: |
+    hello
+
+- intent: initialGreeting
+  examples:
+  - text: |
+    hello
+
+- intent: TRAINS1-fs2
+  examples:
+  - text: |
+    can I help you
+
+- intent: offer
+  examples:
+  - text: |
+    can I help you
+
+- intent: TRAINS1-fs3
+  examples:
+  - text: |
+    yeah
+
+- intent: acceptOffer
+  examples:
+  - text: |
+    yeah
+
+- intent: TRAINS1-fs4
+  examples:
+  - text: |
+    I want t-
+
+- intent: stalling
+  examples:
+  - text: |
+    I want t-
+  - text: |
+    VOC_breath hm ... so
+  - text: |
+    VOC_breath
+    metadata:
+      turnManagement: turnKeep
+  - text: |
+    … hm so
+  - text: |
+    ... um
+    metadata:
+      turnManagement: turnKeep
+  - text: |
+    VOC_breath so VOC_breath
+    metadata:
+      turnManagement: turnKeep
+  - text: |
+    um
+    metadata:
+      turnManagement: turnKeep
+  - text: |
+    VOC_breath
+    metadata:
+      turnManagement: turnKeep
+  - text: |
+    VOC_breath
+    metadata:
+      turnManagement: turnKeep
+  - text: |
+    VOC_breath
+  - text: |
+    VOC_breath
+    metadata:
+      turnManagement: turnKeep
+  - text: |
+    VOC_breath so
+    metadata:
+      turnManagement: turnKeep
+
+- intent: TRAINS1-fs5
+  examples:
+  - text: |
+    I want to determine the maximum number of boxcars of oranges that I can get to Bath by seven a.m. tomorrow
+
+- intent: inform_continue
+  examples:
+  - text: |
+    I want to determine the maximum number of boxcars of oranges that I can get to Bath by seven a.m. tomorrow
+  - text: |
+    I guess all the boxcars will have to go through Corning
+  - text: |
+    because that's where the orange juice factory is
+  - text: |
+    we can unload any amount of cargo onto a train in one hour
+  - text: |
+    but the thing is that I was thinking if we could actually pick up those two boxcars which are at Bath
+  - text: |
+    but I think that we can't even put them in to
+  - text: |
+    that they won't even come in to
+  - text: |
+    we could actually take like engine E
+  - text: |
+    have it go to Bath pick up those two box cars
+  - text: |
+    so we're like screwed as far as those two box cars at Bath
+  - text: |
+    like I don't think we so to get the maximum number of box cars of oranges to bath by seven am I don't think we can even use those two at Bath
+  - text: |
+    we have the three boxcars at Dansville
+  - text: |
+    so that's three boxcars
+  - text: |
+    so that's engine E one from Avon going to Dansville pick up the three boxcars go to Corning load them up and then take it to Bath
+  - text: |
+    so that's good
+  - text: |
+    then I guess we can also take like engine E two with those two boxcars from Elmira take it to Corning
+  - text: |
+    so that gives us a maximum number of five
+
+- intent: TRAINS1-fs6
+  examples:
+  - text: |
+    so
+    metadata:
+      turnManagement: turnKeep
+
+- intent: TRAINS1-fs7
+  examples:
+  - text: |
+    VOC_breath hm ... so
+
+- intent: TRAINS1-fs8
+  examples:
+  - text: |
+    I guess all the boxcars will have to go through Corning
+
+- intent: TRAINS1-fs9
+  examples:
+  - text: |
+    because that's where the orange juice factory is
+
+- intent: TRAINS1-fs10
+  examples:
+  - text: |
+    VOC_breath
+    metadata:
+      turnManagement: turnKeep
+
+- intent: TRAINS1-fs11
+  examples:
+  - text: |
+    orange factory
+
+- intent: selfCorrection
+  examples:
+  - text: |
+    orange factory
+  - text: |
+    to Corning
+  - text: |
+    that they won't even come in to
+
+- intent: TRAINS1-fs12
+  examples:
+  - text: |
+    so
+    metadata:
+      turnManagement: turnKeep
+
+- intent: TRAINS1-fs13
+  examples:
+  - text: |
+    from Corning to Bath how far is that
+    metadata:
+      turnManagement: turnAssign
+
+- intent: setQuestion
+  examples:
+  - text: |
+    from Corning to Bath how far is that
+    metadata:
+      turnManagement: turnAssign
+  - text: |
+    how far is it from Avon to Bath
+  - text: |
+    how far is it from Elmira to Bath VOC_breath
+  - text: |
+    how long from Bath to Corning
+  - text: |
+    I thought well from like Elmira through to Corning to Bath is many hours
+  - text: |
+    how far is it from Avon to Danville
+
+- intent: TRAINS1-fs14
+  examples:
+  - text: |
+    two hours
+
+- intent: answer
+  examples:
+  - text: |
+    two hours
+  - text: |
+    that's six hours 
+  - text: |
+    two hours
+  - text: |
+    two hours
+  - text: |
+    four hours
+  - text: |
+    three hours
+  - text: |
+    one hour
+
+- intent: TRAINS1-fs15
+  examples:
+  - text: |
+    and it's gonna take us also an hour to load boxcars right
+    metadata:
+      turnManagement: turnAssign
+
+- intent: checkQuestion
+  examples:
+  - text: |
+    and it's gonna take us also an hour to load boxcars right
+    metadata:
+      turnManagement: turnAssign
+  - text: |
+    every trip will take at least three hours then
+  - text: |
+    an hour I guess
+  - text: |
+    so we can actually use those three boxcars right
+    metadata:
+      turnManagement: turnAssign
+  - text: |
+    so Elmira to Corning is two hours
+
+- intent: TRAINS1-fs16
+  examples:
+  - text: |
+    right
+
+- intent: confirm
+  examples:
+  - text: |
+    right
+  - text: |
+    right
+  - text: |
+    mm-hm
+  - text: |
+    mm-hm
+
+- intent: TRAINS1-fs17
+  examples:
+  - text: |
+    okay
+    metadata:
+      turnManagement: turnTake
+
+- intent: autoPositive
+  examples:
+  - text: |
+    okay
+    metadata:
+      turnManagement: turnTake
+  - text: |
+    right
+  - text: |
+    okay
+  - text: |
+    okay
+  - text: |
+    VOC_click VOC_breath
+    metadata:
+      turnManagement: turnTake
+  - text: |
+    okay
+  - text: |
+    from Avon
+  - text: |
+    mm
+  - text: |
+    oh really
+  - text: |
+    oh wait a second
+  - text: |
+    oh that's four hours
+  - text: |
+    okay
+    metadata:
+      turnManagement: turnTake
+  - text: |
+    three hours
+  - text: |
+    okay
+    metadata:
+      turnManagement: turnTake
+  - text: |
+    okay
+    metadata:
+      turnManagement: turnTake
+  - text: |
+    okay
+    metadata:
+      turnManagement: turnTake
+
+- intent: TRAINS1-fs18
+  examples:
+  - text: |
+    so
+    metadata:
+      turnManagement: turnKeep
+
+- intent: TRAINS1-fs19
+  examples:
+  - text: |
+    … hm so
+
+- intent: TRAINS1-fs20
+  examples:
+  - text: |
+    every trip will take at least three hours then
+
+- intent: TRAINS1-fs21
+  examples:
+  - text: |
+    ... um
+    metadata:
+      turnManagement: turnKeep
+
+- intent: TRAINS1-fs22
+  examples:
+  - text: |
+    right
+
+- intent: TRAINS1-fs23
+  examples:
+  - text: |
+    we can unload any amount of cargo onto a train in one hour
+
+- intent: TRAINS1-fs24
+  examples:
+  - text: |
+    so
+    metadata:
+      turnManagement: turnKeep
+
+- intent: TRAINS1-fs25
+  examples:
+  - text: |
+    we can do a maximum of three boxcars in an hour
+
+- intent: inform_pass
+  examples:
+  - text: |
+    we can do a maximum of three boxcars in an hour
+  - text: |
+    it's shorter through Dansville
+  - text: |
+    because we can't get an engine to Bath in time
+  - text: |
+    yeah that should also work
+  - text: |
+    engine one goes to Dansville picks up three boxcars goes to Corning is loaded with oranges and goes to Bath engine E two picks takes the two boxcars at Elmira to Corning where they're loaded with oranges and then takes them to Bath
+
+- intent: TRAINS1-fs26
+  examples:
+  - text: |
+    right
+
+- intent: TRAINS1-fs27
+  examples:
+  - text: |
+    okay
+
+- intent: TRAINS1-fs28
+  examples:
+  - text: |
+    okay
+
+- intent: TRAINS1-fs29
+  examples:
+  - text: |
+    so
+    metadata:
+      turnManagement: turnKeep
+
+- intent: TRAINS1-fs30
+  examples:
+  - text: |
+    I guess one thing we can do
+
+- intent: suggest
+  examples:
+  - text: |
+    I guess one thing we can do
+  - text: |
+    I guess one thing is that we should see how many boxcars we can actually get to Corning in four hours
+
+- intent: TRAINS1-fs31
+  examples:
+  - text: |
+    oh
+
+- intent: selfError
+  examples:
+  - text: |
+    oh
+  - text: |
+    oh no
+
+- intent: TRAINS1-fs32
+  examples:
+  - text: |
+    VOC_breath so VOC_breath
+    metadata:
+      turnManagement: turnKeep
+
+- intent: TRAINS1-fs33
+  examples:
+  - text: |
+    I guess one thing is that we should see how many boxcars we can actually get to Corning in four hours
+
+- intent: TRAINS1-fs34
+  examples:
+  - text: |
+    um
+    metadata:
+      turnManagement: turnKeep
+
+- intent: TRAINS1-fs35
+  examples:
+  - text: |
+    how far is it from Avon to Bath
+
+- intent: TRAINS1-fs36
+  examples:
+  - text: |
+    to Corning
+
+- intent: TRAINS1-fs37
+  examples:
+  - text: |
+    VOC_click VOC_breath
+    metadata:
+      turnManagement: turnTake
+
+- intent: TRAINS1-fs38
+  examples:
+  - text: |
+    that's six hours 
+
+- intent: TRAINS1-fs39
+  examples:
+  - text: |
+    it's shorter through Dansville
+
+- intent: TRAINS1-fs40
+  examples:
+  - text: |
+    okay
+
+- intent: TRAINS1-fs41
+  examples:
+  - text: |
+    from Avon
+
+- intent: TRAINS1-fs42
+  examples:
+  - text: |
+    oh no
+
+- intent: TRAINS1-fs43
+  examples:
+  - text: |
+    but the thing is that I was thinking if we could actually pick up those two boxcars which are at Bath
+
+- intent: abandoned
+  examples:
+  - text: |
+    s- I was wondering
+  - text: |
+    wa-
+  - text: |
+    tho-
+  - text: |
+    i don-
+  - text: |
+    s-
+  - text: |
+    because there we
+  - text: |
+    le-
+
+- intent: TRAINS1-fs44
+  examples:
+  - text: |
+    mm
+
+- intent: TRAINS1-fs45
+  examples:
+  - text: |
+    but I think that we can't even put them in to
+
+- intent: TRAINS1-fs46
+  examples:
+  - text: |
+    VOC_breath
+    metadata:
+      turnManagement: turnKeep
+
+- intent: TRAINS1-fs47
+  examples:
+  - text: |
+    that they won't even come in to
+
+- intent: TRAINS1-fs48
+  examples:
+  - text: |
+    unless
+
+- intent: retraction
+  examples:
+  - text: |
+    unless
+  - text: |
+    take it to Corn-
+
+- intent: TRAINS1-fs49
+  examples:
+  - text: |
+    how far is it from Elmira to Bath VOC_breath
+
+- intent: TRAINS1-fs50
+  examples:
+  - text: |
+    two hours
+
+- intent: TRAINS1-fs51
+  examples:
+  - text: |
+    oh really
+
+- intent: TRAINS1-fs52
+  examples:
+  - text: |
+    so then
+    metadata:
+      turnManagement: turnKeep
+
+- intent: TRAINS1-fs53
+  examples:
+  - text: |
+    we could actually take like engine E
+
+- intent: TRAINS1-fs54
+  examples:
+  - text: |
+    VOC_breath
+    metadata:
+      turnManagement: turnKeep
+
+- intent: TRAINS1-fs55
+  examples:
+  - text: |
+    have it go to Bath pick up those two box cars
+
+- intent: TRAINS1-fs56
+  examples:
+  - text: |
+    take it to Corn-
+
+- intent: TRAINS1-fs57
+  examples:
+  - text: |
+    how long from Bath to Corning
+
+- intent: TRAINS1-fs58
+  examples:
+  - text: |
+    an hour I guess
+
+- intent: TRAINS1-fs59
+  examples:
+  - text: |
+    two hours
+
+- intent: TRAINS1-fs60
+  examples:
+  - text: |
+    oh wait a second
+
+- intent: TRAINS1-fs61
+  examples:
+  - text: |
+    I thought well from like Elmira through to Corning to Bath is many hours
+
+- intent: TRAINS1-fs62
+  examples:
+  - text: |
+    VOC_breath
+
+- intent: TRAINS1-fs63
+  examples:
+  - text: |
+    four hours
+
+- intent: TRAINS1-fs64
+  examples:
+  - text: |
+    oh that's four hours
+
+- intent: TRAINS1-fs65
+  examples:
+  - text: |
+    so we're like screwed as far as those two box cars at Bath
+
+- intent: TRAINS1-fs66
+  examples:
+  - text: |
+    like I don't think we so to get the maximum number of box cars of oranges to bath by seven am I don't think we can even use those two at Bath
+
+- intent: TRAINS1-fs67
+  examples:
+  - text: |
+    VOC_breath
+    metadata:
+      turnManagement: turnKeep
+
+- intent: TRAINS1-fs68
+  examples:
+  - text: |
+    because we can't get an engine to Bath in time
+
+- intent: TRAINS1-fs69
+  examples:
+  - text: |
+    that's right
+
+- intent: agreement
+  examples:
+  - text: |
+    that's right
+  - text: |
+    mm-hm
+
+- intent: TRAINS1-fs70
+  examples:
+  - text: |
+    okay
+    metadata:
+      turnManagement: turnTake
+
+- intent: TRAINS1-fs71
+  examples:
+  - text: |
+    VOC_breath so
+    metadata:
+      turnManagement: turnKeep
+
+- intent: TRAINS1-fs72
+  examples:
+  - text: |
+    we have the three boxcars at Dansville
+
+- intent: TRAINS1-fs73
+  examples:
+  - text: |
+    so
+    metadata:
+      turnManagement: turnKeep
+
+- intent: TRAINS1-fs74
+  examples:
+  - text: |
+    how far is it from Avon to Danville
+
+- intent: TRAINS1-fs75
+  examples:
+  - text: |
+    three hours
+
+- intent: TRAINS1-fs76
+  examples:
+  - text: |
+    three hours
+
+- intent: TRAINS1-fs77
+  examples:
+  - text: |
+    then from Dansville to Corning
+
+- intent: SetQuestion
+  examples:
+  - text: |
+    then from Dansville to Corning
+
+- intent: TRAINS1-fs78
+  examples:
+  - text: |
+    one hour
+
+- intent: TRAINS1-fs79
+  examples:
+  - text: |
+    okay
+    metadata:
+      turnManagement: turnTake
+
+- intent: TRAINS1-fs80
+  examples:
+  - text: |
+    so we can actually use those three boxcars right
+    metadata:
+      turnManagement: turnAssign
+
+- intent: TRAINS1-fs81
+  examples:
+  - text: |
+    mm-hm
+
+- intent: TRAINS1-fs82
+  examples:
+  - text: |
+    okay
+    metadata:
+      turnManagement: turnTake
+
+- intent: TRAINS1-fs83
+  examples:
+  - text: |
+    so that's three boxcars
+
+- intent: TRAINS1-fs84
+  examples:
+  - text: |
+    okay
+    metadata:
+      turnManagement: turnKeep
+
+- intent: TRAINS1-fs85
+  examples:
+  - text: |
+    so that's engine E one from Avon going to Dansville pick up the three boxcars go to Corning load them up and then take it to Bath
+
+- intent: TRAINS1-fs86
+  examples:
+  - text: |
+    okay
+    metadata:
+      turnManagement: turnKeep
+
+- intent: TRAINS1-fs87
+  examples:
+  - text: |
+    so that's good
+
+- intent: TRAINS1-fs88
+  examples:
+  - text: |
+    VOC_breath so
+    metadata:
+      turnManagement: turnKeep
+
+- intent: TRAINS1-fs89
+  examples:
+  - text: |
+    then I guess we can also take like engine E two with those two boxcars from Elmira take it to Corning
+
+- intent: TRAINS1-fs90
+  examples:
+  - text: |
+    so Elmira to Corning is two hours
+
+- intent: TRAINS1-fs91
+  examples:
+  - text: |
+    mm-hm
+
+- intent: TRAINS1-fs92
+  examples:
+  - text: |
+    okay
+    metadata:
+      turnManagement: turnTake
+
+- intent: TRAINS1-fs93
+  examples:
+  - text: |
+    VOC_breath and
+    metadata:
+      turnManagement: turnKeep
+
+- intent: TRAINS1-fs94
+  examples:
+  - text: |
+    okay
+    metadata:
+      turnManagement: turnKeep
+
+- intent: TRAINS1-fs95
+  examples:
+  - text: |
+    VOC_breath so
+    metadata:
+      turnManagement: turnKeep
+
+- intent: TRAINS1-fs96
+  examples:
+  - text: |
+    yeah that should also work
+
+- intent: TRAINS1-fs97
+  examples:
+  - text: |
+    mm-hm
+
+- intent: TRAINS1-fs98
+  examples:
+  - text: |
+    so
+    metadata:
+      turnManagement: turnTake
+
+- intent: TRAINS1-fs99
+  examples:
+  - text: |
+    so did you wanna repeat that plan
+    metadata:
+      turnManagement: turnAssign
+
+- intent: request
+  examples:
+  - text: |
+    so did you wanna repeat that plan
+    metadata:
+      turnManagement: turnAssign
+
+- intent: TRAINS1-fs100
+  examples:
+  - text: |
+    okay
+    metadata:
+      turnManagement: turnAccept
+
+- intent: acceptRequest
+  examples:
+  - text: |
+    okay
+    metadata:
+      turnManagement: turnAccept
+
+- intent: TRAINS1-fs101
+  examples:
+  - text: |
+    engine one goes to Dansville picks up three boxcars goes to Corning is loaded with oranges and goes to Bath engine E two picks takes the two boxcars at Elmira to Corning where they're loaded with oranges and then takes them to Bath
+
+- intent: TRAINS1-fs102
+  examples:
+  - text: |
+    okay
+
+- intent: alloPositive
+  examples:
+  - text: |
+    okay
+
+- intent: TRAINS1-fs103
+  examples:
+  - text: |
+    so that gives us a maximum number of five
+
+- intent: TRAINS1-fs104
+  examples:
+  - text: |
+    okay
+
+- intent: interactionStructuring
+  examples:
+  - text: |
+    okay
+

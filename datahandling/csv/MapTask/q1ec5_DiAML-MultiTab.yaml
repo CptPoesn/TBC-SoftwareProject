@@ -1,0 +1,1754 @@
+nlu:
+- intent: fsp1TUMCV0;fsp1DISCV0
+  examples:
+  - text: |
+     okay 
+    metadata:
+      turnManagement: turnTake
+
+- intent: opening
+  examples:
+  - text: |
+     okay 
+    metadata:
+      turnManagement: turnTake
+
+- intent: fsp1TSKCV0
+  examples:
+  - text: |
+     now youre starting above the diamond mine 
+
+- intent: instruct
+  examples:
+  - text: |
+     now youre starting above the diamond mine 
+  - text: |
+     now go south from the diamond mine 
+  - text: |
+     until you are still above the desert 
+  - text: |
+     now go right from the diamond mine 
+  - text: |
+     and now youve got to pass 
+  - text: |
+     and so youre pass by the graveyard as well 
+  - text: |
+     and then youre go up and over the top of the 
+  - text: |
+     go along 
+  - text: |
+     go along to your right and veer slightly upwards 
+  - text: |
+     as you reach the creek 
+  - text: |
+     and then go over and round the creek to your right 
+  - text: |
+     and then 
+  - text: |
+     see when youre over the top of the fast or your creek or the river that ive got here 
+  - text: |
+     when youre over the top of that and vertically in line with the apache camp go south 
+  - text: |
+     until just above the apache camp 
+  - text: |
+     when you reach the apache camp 
+  - text: |
+     well youre going to go from above the apache camp to the walled city 
+  - text: |
+     but youve got to avoid a carved wooden pole 
+  - text: |
+     so youve got 
+    metadata:
+      turnManagement: turnGrab
+  - text: |
+     so youre going from above the apache camp the carved wooden pole and over the top of the walled city 
+  - text: |
+     and then when you reach the far your left-hand side of the walled city travel southwards 
+  - text: |
+     until you come to the level of some flat rocks 
+  - text: |
+     and go bel-- 
+  - text: |
+     so what i want you to do is go between the flat rocks and stone creek 
+  - text: |
+     but 
+  - text: |
+     so youre going to 
+  - text: |
+     so go south down past the walled city underneath your ghost town 
+  - text: |
+     and then slightly up 
+  - text: |
+     sort of northeast direction between the flat rocks and the stone creek 
+  - text: |
+     and then slightly up underneath the flat rocks and above the stone creek 
+  - text: |
+     then go slightly to your right beyond the flat rocks 
+  - text: |
+     until you are above the level of the buffalo 
+  - text: |
+     so avoid the saloon bar 
+  - text: |
+     and then 
+  - text: |
+     then just straight down to the right of the buffalo 
+  - text: |
+     so that youre on the right of the buffalo 
+  - text: |
+     and go underneath the buffalo 
+  - text: |
+     so youre go from the buffalo to the fort 
+  - text: |
+     but youve got to avoid the cattle ranch on the way 
+  - text: |
+     and youll have to go up and over the top of the cattle ranch 
+  - text: |
+     which on my map is halfway between the buffalo and the fort 
+  - text: |
+     over the cattle ranch underneath buffalo or over the cattle ranch 
+  - text: |
+     then underneath the fort 
+  - text: |
+     and come out at the left-hand side of the fort 
+  - text: |
+     and finishing 
+  - text: |
+     not beside but on the same level as the the carved wooden pole 
+  - text: |
+     the base of the carved wooden pole 
+
+- intent: fsp1TUMCV1;fsp1TIMCV0
+  examples:
+  - text: |
+     ehm 
+    metadata:
+      turnManagement: turnKeep
+
+- intent: stalling
+  examples:
+  - text: |
+     ehm 
+    metadata:
+      turnManagement: turnKeep
+  - text: |
+     er 
+    metadata:
+      turnManagement: turnKeep
+  - text: |
+     ehm 
+    metadata:
+      turnManagement: turnAccept
+  - text: |
+     um 
+    metadata:
+      turnManagement: turnKeep
+  - text: |
+     uh 
+    metadata:
+      turnManagement: turnKeep
+  - text: |
+     ehm 
+    metadata:
+      turnManagement: turnKeep
+  - text: |
+     ehm 
+    metadata:
+      turnManagement: turnKeep
+  - text: |
+     ehm 
+    metadata:
+      turnManagement: turnKeep
+  - text: |
+     ehm 
+    metadata:
+      turnManagement: turnKeep
+  - text: |
+     ehm 
+    metadata:
+      turnManagement: turnTake
+  - text: |
+     ehm 
+    metadata:
+      turnManagement: turnTake
+  - text: |
+     ehm 
+    metadata:
+      turnManagement: turnKeep
+
+- intent: fsp2TSKCV0
+  examples:
+  - text: |
+     mmhmm 
+
+- intent: acceptRequest(Fu:dap1TSK0)
+  examples:
+  - text: |
+     mmhmm 
+
+- intent: fsp1TSKCV1
+  examples:
+  - text: |
+     and the desert is below to your left 
+
+- intent: checkQuestion
+  examples:
+  - text: |
+     and the desert is below to your left 
+  - text: |
+     so id be better to go underneath it right 
+  - text: |
+     so ill be avoiding the saloon bar 
+  - text: |
+     that on the level between the fort 
+  - text: |
+     mm 
+  - text: |
+     under the fort 
+
+- intent: fsp1TUMCV2;fsp1TIMCV1
+  examples:
+  - text: |
+     er 
+    metadata:
+      turnManagement: turnKeep
+
+- intent: fsp2TSKCV1
+  examples:
+  - text: |
+     uh-huh 
+
+- intent: confirm(Fu:dap1TSK1)
+  examples:
+  - text: |
+     uh-huh 
+
+- intent: fsp1AUFCV0;fsp1TUMCV3
+  examples:
+  - text: |
+     right 
+    metadata:
+      turnManagement: turnTake
+
+- intent: autoPositive(Fe:fsp1AUFFB0)
+  examples:
+  - text: |
+     right 
+    metadata:
+      turnManagement: turnTake
+
+- intent: fsp1TSKCV2
+  examples:
+  - text: |
+     now go south from the diamond mine 
+
+- intent: fsp1OCMCV0
+  examples:
+  - text: |
+     go 
+
+- intent: selfCorrection(Fe:fsp1OCMFB0)
+  examples:
+  - text: |
+     go 
+
+- intent: fsp1TSKCV3
+  examples:
+  - text: |
+     until you are still above the desert 
+
+- intent: fsp1ALFCV0
+  examples:
+  - text: |
+     okay 
+
+- intent: feedbackElicitation(Fe:fsp1ALFFB0)
+  examples:
+  - text: |
+     okay 
+
+- intent: fsp2AUFCV0
+  examples:
+  - text: |
+     okay 
+
+- intent: autoPositive(Fu:dap1ALF0)
+  examples:
+  - text: |
+     okay 
+
+- intent: fsp1TSKCV4
+  examples:
+  - text: |
+     now if you tell me whats to your right 
+
+- intent: request
+  examples:
+  - text: |
+     now if you tell me whats to your right 
+  - text: |
+     at the 
+
+- intent: fsp1TSKCV5
+  examples:
+  - text: |
+     at the 
+
+- intent: fsp1TSKCV6
+  examples:
+  - text: |
+     whats to your right 
+
+- intent: setQuestion
+  examples:
+  - text: |
+     whats to your right 
+  - text: |
+     where is that 
+  - text: |
+     okay so 
+  - text: |
+     do you have anything between the walled city and the carved wooden pole 
+  - text: |
+     so 
+
+- intent: fsp2TUMCV0;fsp2TIMCV0
+  examples:
+  - text: |
+     ehm 
+    metadata:
+      turnManagement: turnAccept
+
+- intent: fsp2TSKCV2
+  examples:
+  - text: |
+     the canoes 
+
+- intent: answer(Fu:dap1TSK6)
+  examples:
+  - text: |
+     the canoes 
+  - text: |
+     fast running creek 
+
+- intent: fsp1AUFCV1
+  examples:
+  - text: |
+     canoes 
+
+- intent: autoPositive(Fe:fsp1AUFFB1)
+  examples:
+  - text: |
+     canoes 
+
+- intent: fsp2TSKCV3
+  examples:
+  - text: |
+     fast running creek 
+
+- intent: fsp1AUFCV2
+  examples:
+  - text: |
+     fast running creek 
+
+- intent: autoPositive(Fe:fsp1AUFFB2)
+  examples:
+  - text: |
+     fast running creek 
+
+- intent: fsp1TUMCV4;fsp1TIMCV2
+  examples:
+  - text: |
+     um 
+    metadata:
+      turnManagement: turnKeep
+
+- intent: fsp1TSKCV7
+  examples:
+  - text: |
+     and do you have a graveyard 
+
+- intent: propositionalQuestion
+  examples:
+  - text: |
+     and do you have a graveyard 
+  - text: |
+     do you have a carved wooden pole in this area 
+  - text: |
+     below it 
+  - text: |
+     do you have 
+  - text: |
+     do you have an apache camp 
+  - text: |
+     do you have a walled city 
+  - text: |
+     do you have a stone creek 
+  - text: |
+     or have you got something else there 
+  - text: |
+     now do you have a cattle ranch 
+  - text: |
+     do you have a fort 
+
+- intent: fsp2TSKCV4
+  examples:
+  - text: |
+     no 
+
+- intent: answer(Fu:dap1TSK7)
+  examples:
+  - text: |
+     no 
+
+- intent: fsp1TSKCV8
+  examples:
+  - text: |
+     do you have a carved wooden pole in this area 
+
+- intent: fsp2TSKCV5
+  examples:
+  - text: |
+     right away down the very bottom 
+
+- intent: answer(Fu:dap1TSK8)
+  examples:
+  - text: |
+     right away down the very bottom 
+
+- intent: fsp1AUFCV3
+  examples:
+  - text: |
+     right okay 
+
+- intent: autoPositive(Fe:fsp1AUFFB3)
+  examples:
+  - text: |
+     right okay 
+
+- intent: fsp1TSKCV9
+  examples:
+  - text: |
+     now go right from the diamond mine 
+
+- intent: fsp1OCMCV1
+  examples:
+  - text: |
+     go 
+
+- intent: selfCorrection(Fe:fsp1OCMFB1)
+  examples:
+  - text: |
+     go 
+
+- intent: fsp2TSKCV6
+  examples:
+  - text: |
+     okay 
+
+- intent: acceptRequest(Fu:dap1TSK9)
+  examples:
+  - text: |
+     okay 
+
+- intent: fsp1AUFCV4;fsp1TUMCV5
+  examples:
+  - text: |
+     okay 
+    metadata:
+      turnManagement: turnTake
+
+- intent: autoPositive(Fe:fsp1AUFFB4)
+  examples:
+  - text: |
+     okay 
+    metadata:
+      turnManagement: turnTake
+
+- intent: fsp1TSKCV10
+  examples:
+  - text: |
+     and now youve got to pass 
+
+- intent: fsp1TSKCV11
+  examples:
+  - text: |
+     theres actually a graveyard to the right of the diamond mine 
+
+- intent: inform_continue
+  examples:
+  - text: |
+     theres actually a graveyard to the right of the diamond mine 
+  - text: |
+     well ive got a fast flowing river here 
+  - text: |
+     but theres another one a carved wooden pole here 
+  - text: |
+     which is halfway between the walled city and the apache camp 
+  - text: |
+     thats not on my map 
+
+- intent: fsp1TSKCV12
+  examples:
+  - text: |
+     on my map 
+
+- intent: inform_pass
+  examples:
+  - text: |
+     on my map 
+  - text: |
+     on the same level as the diamond mine 
+  - text: |
+     ive got is a fast flowing river 
+  - text: |
+     which in my map is slightly above the level of the apache camp 
+  - text: |
+     this is vertically in line with the walled city below it 
+  - text: |
+     ive got one of them as well 
+  - text: |
+     but slightly above the level of the apache camp 
+  - text: |
+     i dont have a saloon bar here 
+  - text: |
+     ive got here 
+
+- intent: fsp2TSKCV7
+  examples:
+  - text: |
+     below it 
+
+- intent: fsp1TSKCV13
+  examples:
+  - text: |
+     no 
+
+- intent: answer(Fu:dap2TSK7)
+  examples:
+  - text: |
+     no 
+
+- intent: fsp1TSKCV14
+  examples:
+  - text: |
+     on the same level as the diamond mine 
+
+- intent: fsp2TSKCV8
+  examples:
+  - text: |
+     mm 
+
+- intent: agreement(Fu:dap1TSK13)
+  examples:
+  - text: |
+     mm 
+
+- intent: fsp1TSKCV15
+  examples:
+  - text: |
+     and so youre pass by the graveyard as well 
+
+- intent: fsp1OCMCV2
+  examples:
+  - text: |
+     youre _ pass 
+
+- intent: selfCorrection(Fe:fsp1OCMFB2)
+  examples:
+  - text: |
+     youre _ pass 
+
+- intent: fsp2TSKCV9
+  examples:
+  - text: |
+     mm 
+
+- intent: acceptRequest(Fu:dap1TSK15)
+  examples:
+  - text: |
+     mm 
+
+- intent: fsp1TSKCV16
+  examples:
+  - text: |
+     and then youre go up and over the top of the 
+
+- intent: fsp1TUMCV6;fsp1TIMCV3
+  examples:
+  - text: |
+     uh 
+    metadata:
+      turnManagement: turnKeep
+
+- intent: fsp1TSKCV17
+  examples:
+  - text: |
+     ive got is a fast flowing river 
+
+- intent: fsp2AUFCV1
+  examples:
+  - text: |
+     mmhmm 
+
+- intent: autoPositive(Fe:fsp2AUFFB1)
+  examples:
+  - text: |
+     mmhmm 
+
+- intent: fsp1TSKCV18
+  examples:
+  - text: |
+     do you have 
+
+- intent: fsp1AUFCV5
+  examples:
+  - text: |
+     you have fast running creek 
+
+- intent: autoPositive(Fe:fsp1AUFFB5)
+  examples:
+  - text: |
+     you have fast running creek 
+
+- intent: fsp2TSKCV10
+  examples:
+  - text: |
+     fast running creek 
+
+- intent: answer(Fu:dap1TSK18)
+  examples:
+  - text: |
+     fast running creek 
+
+- intent: fsp1TSKCV19
+  examples:
+  - text: |
+     where is that 
+
+- intent: fsp1TSKCV20
+  examples:
+  - text: |
+     on a level with the diamond mine or is it _ slightly below 
+
+- intent: choiceQuestion
+  examples:
+  - text: |
+     on a level with the diamond mine or is it _ slightly below 
+
+- intent: fsp2TSKCV11
+  examples:
+  - text: |
+     its just slightly above 
+
+- intent: answer(Fu:dap1TSK19)
+  examples:
+  - text: |
+     its just slightly above 
+
+- intent: fsp1AUFCV6
+  examples:
+  - text: |
+     slightly above 
+
+- intent: autoPositive(Fe:fsp1AUFFB6)
+  examples:
+  - text: |
+     slightly above 
+
+- intent: fsp1AUFCV7;fsp1TUMCV7
+  examples:
+  - text: |
+     right 
+    metadata:
+      turnManagement: turnTake
+
+- intent: autoPositive(Fe:fsp1AUFFB7)
+  examples:
+  - text: |
+     right 
+    metadata:
+      turnManagement: turnTake
+
+- intent: fsp1TSKCV21
+  examples:
+  - text: |
+     well ive got a fast flowing river here 
+
+- intent: fsp1TSKCV22
+  examples:
+  - text: |
+     so what youd best to do is go along past the bottom 
+
+- intent: suggest
+  examples:
+  - text: |
+     so what youd best to do is go along past the bottom 
+  - text: |
+     well itd be better if i between the walled city and the ghost town no to go underneath it 
+  - text: |
+     above it 
+
+- intent: fsp1TSKCV23
+  examples:
+  - text: |
+     go along 
+
+- intent: fsp1ALFCV1
+  examples:
+  - text: |
+     okay 
+
+- intent: feedbackElicitation(Fe:fsp1ALFFB1)
+  examples:
+  - text: |
+     okay 
+
+- intent: fsp1SOMCV0
+  examples:
+  - text: |
+     sorry 
+
+- intent: apology
+  examples:
+  - text: |
+     sorry 
+
+- intent: fsp1TSKCV24
+  examples:
+  - text: |
+     go along to your right and veer slightly upwards 
+
+- intent: fsp1TSKCV25
+  examples:
+  - text: |
+     as you reach the creek 
+
+- intent: fsp2TSKCV12
+  examples:
+  - text: |
+     mmhmm 
+
+- intent: acceptRequest(Fu:dap1TSK24)
+  examples:
+  - text: |
+     mmhmm 
+
+- intent: fsp1TSKCV26
+  examples:
+  - text: |
+     and then go over and round the creek to your right 
+
+- intent: fsp1TSKCV27
+  examples:
+  - text: |
+     and then 
+
+- intent: fsp1TUMCV8;fsp1TIMCV4
+  examples:
+  - text: |
+     ehm 
+    metadata:
+      turnManagement: turnKeep
+
+- intent: fsp1TSKCV28
+  examples:
+  - text: |
+     do you have an apache camp 
+
+- intent: fsp2TSKCV13
+  examples:
+  - text: |
+     uh-huh 
+
+- intent: answer(Fu:dap1TSK28)
+  examples:
+  - text: |
+     uh-huh 
+
+- intent: fsp1AUFCV8;fsp1TUMCV9
+  examples:
+  - text: |
+     right 
+    metadata:
+      turnManagement: turnTake
+
+- intent: autoPositive(Fe:fsp1AUFFB8)
+  examples:
+  - text: |
+     right 
+    metadata:
+      turnManagement: turnTake
+
+- intent: fsp1TSKCV29
+  examples:
+  - text: |
+     see when youre over the top of the fast or your creek or the river that ive got here 
+
+- intent: fsp2AUFCV2
+  examples:
+  - text: |
+     mmhmm 
+
+- intent: autoPositive(Fe:fsp2AUFFB2)
+  examples:
+  - text: |
+     mmhmm 
+
+- intent: fsp1TSKCV30
+  examples:
+  - text: |
+     when youre over the top of that and vertically in line with the apache camp go south 
+
+- intent: fsp1OCMCV3
+  examples:
+  - text: |
+     vertically in line 
+
+- intent: selfCorrection(Fe:fsp1OCMFB3)
+  examples:
+  - text: |
+     vertically in line 
+
+- intent: fsp2AUFCV3
+  examples:
+  - text: |
+     mmhmm 
+
+- intent: autoPositive(Fe:fsp2AUFFB3)
+  examples:
+  - text: |
+     mmhmm 
+
+- intent: fsp1TSKCV31
+  examples:
+  - text: |
+     until just above the apache camp 
+
+- intent: fsp2TSKCV14
+  examples:
+  - text: |
+     okay 
+
+- intent: acceptRequest(Fu:dap1TSK30)
+  examples:
+  - text: |
+     okay 
+
+- intent: fsp1AUFCV9;fsp1TUMCV10
+  examples:
+  - text: |
+     right 
+    metadata:
+      turnManagement: turnTake
+
+- intent: autoPositive(Fe:fsp1AUFFB9)
+  examples:
+  - text: |
+     right 
+    metadata:
+      turnManagement: turnTake
+
+- intent: fsp1TSKCV32
+  examples:
+  - text: |
+     when you reach the apache camp 
+
+- intent: fsp1TUMCV11;fsp1TIMCV5
+  examples:
+  - text: |
+     ehm 
+    metadata:
+      turnManagement: turnKeep
+
+- intent: fsp1TSKCV33
+  examples:
+  - text: |
+     do you have a walled city 
+
+- intent: fsp2TSKCV15
+  examples:
+  - text: |
+     right away on the far left 
+
+- intent: answer(Fu:dap1TSK33)
+  examples:
+  - text: |
+     right away on the far left 
+
+- intent: fsp1AUFCV10
+  examples:
+  - text: |
+     right 
+
+- intent: autoPositive(Fe:fsp1AUFFB10)
+  examples:
+  - text: |
+     right 
+
+- intent: fsp1TSKCV34
+  examples:
+  - text: |
+     well youre going to go from above the apache camp to the walled city 
+
+- intent: fsp1TSKCV35
+  examples:
+  - text: |
+     but youve got to avoid a carved wooden pole 
+
+- intent: fsp1TSKCV36
+  examples:
+  - text: |
+     which in my map is slightly above the level of the apache camp 
+
+- intent: fsp2TSKCV16
+  examples:
+  - text: |
+     no 
+
+- intent: correction(Fu:dap1TSK36)
+  examples:
+  - text: |
+     no 
+
+- intent: fsp2TSKCV17
+  examples:
+  - text: |
+     this is vertically in line with the walled city below it 
+
+- intent: fsp1AUFCV11
+  examples:
+  - text: |
+     right 
+
+- intent: autoPositive(Fe:fsp1AUFFB11)
+  examples:
+  - text: |
+     right 
+
+- intent: fsp2TSKCV18
+  examples:
+  - text: |
+     okay so 
+
+- intent: fsp1AUFCV12
+  examples:
+  - text: |
+     right 
+
+- intent: autoPositive(Fe:fsp1AUFFB12)
+  examples:
+  - text: |
+     right 
+
+- intent: fsp1TSKCV37
+  examples:
+  - text: |
+     ive got one of them as well 
+
+- intent: fsp2AUFCV4
+  examples:
+  - text: |
+     right 
+
+- intent: autoPositive(Fe:fsp2AUFFB4)
+  examples:
+  - text: |
+     right 
+
+- intent: fsp1TUMCV12
+  examples:
+  - text: |
+     so 
+    metadata:
+      turnManagement: turnTake
+
+- intent: fsp1TSKCV38
+  examples:
+  - text: |
+     but theres another one a carved wooden pole here 
+
+- intent: fsp1TSKCV39
+  examples:
+  - text: |
+     which is halfway between the walled city and the apache camp 
+
+- intent: fsp1ALFCV2
+  examples:
+  - text: |
+     okay 
+
+- intent: feedbackElicitation(Fe:fsp1ALFFB2)
+  examples:
+  - text: |
+     okay 
+
+- intent: fsp2AUFCV5
+  examples:
+  - text: |
+     mmhmm 
+
+- intent: autoPositive(Fu:dap1ALF2)
+  examples:
+  - text: |
+     mmhmm 
+
+- intent: fsp1TSKCV40
+  examples:
+  - text: |
+     but slightly above the level of the apache camp 
+
+- intent: fsp2TSKCV19
+  examples:
+  - text: |
+     so id be better to go underneath it right 
+
+- intent: fsp1AUFCV13;fsp1TUMCV13
+  examples:
+  - text: |
+     okay 
+    metadata:
+      turnManagement: turnRelease
+
+- intent: autoPositive(Fe:fsp1AUFFB13)
+  examples:
+  - text: |
+     okay 
+    metadata:
+      turnManagement: turnRelease
+
+- intent: fsp1TSKCV41
+  examples:
+  - text: |
+     uh-huh 
+
+- intent: confirm(Fu:dap2TSK19)
+  examples:
+  - text: |
+     uh-huh 
+
+- intent: fsp1TSKCV42;fsp1TUMCV14
+  examples:
+  - text: |
+     so youve got 
+    metadata:
+      turnManagement: turnGrab
+
+- intent: fsp1TSKCV43
+  examples:
+  - text: |
+     so youre going from above the apache camp the carved wooden pole and over the top of the walled city 
+
+- intent: fsp1TSKCV44
+  examples:
+  - text: |
+     and then when you reach the far your left-hand side of the walled city travel southwards 
+
+- intent: fsp1TSKCV45
+  examples:
+  - text: |
+     until you come to the level of some flat rocks 
+
+- intent: fsp2TSKCV20
+  examples:
+  - text: |
+     uh-huh 
+
+- intent: acceptRequest(Fu:dap1TSK44)
+  examples:
+  - text: |
+     uh-huh 
+
+- intent: fsp1TSKCV46
+  examples:
+  - text: |
+     and go bel-- 
+
+- intent: fsp1TSKCV47
+  examples:
+  - text: |
+     do you have a stone creek 
+
+- intent: fsp2TSKCV21
+  examples:
+  - text: |
+     uh-huh 
+
+- intent: answer(Fu:dap1TSK47)
+  examples:
+  - text: |
+     uh-huh 
+
+- intent: fsp1AUFCV14
+  examples:
+  - text: |
+     right 
+
+- intent: autoPositive(Fe:fsp1AUFFB14)
+  examples:
+  - text: |
+     right 
+
+- intent: fsp1TSKCV48
+  examples:
+  - text: |
+     so what i want you to do is go between the flat rocks and stone creek 
+
+- intent: fsp1TSKCV49
+  examples:
+  - text: |
+     but 
+
+- intent: fsp1TSKCV50
+  examples:
+  - text: |
+     do you have anything between the walled city and the carved wooden pole 
+
+- intent: fsp2TSKCV22
+  examples:
+  - text: |
+     ghost town 
+
+- intent: answer(Fu:dap1TSK50)
+  examples:
+  - text: |
+     ghost town 
+
+- intent: fsp1AUFCV15
+  examples:
+  - text: |
+     a ghost town 
+
+- intent: autoPositive(Fe:fsp1AUFFB15)
+  examples:
+  - text: |
+     a ghost town 
+
+- intent: fsp1TSKCV51
+  examples:
+  - text: |
+     so youre going to 
+
+- intent: fsp1TSKCV52
+  examples:
+  - text: |
+     thats not on my map 
+
+- intent: fsp1TSKCV53
+  examples:
+  - text: |
+     youve got to avoid that i think 
+
+- intent: instruct[uncertain]
+  examples:
+  - text: |
+     youve got to avoid that i think 
+
+- intent: fsp2TSKCV23
+  examples:
+  - text: |
+     okay 
+
+- intent: acceptRequest(Fu:dap1TSK53)
+  examples:
+  - text: |
+     okay 
+
+- intent: fsp1TSKCV54
+  examples:
+  - text: |
+     so go south down past the walled city underneath your ghost town 
+
+- intent: fsp1TSKCV55
+  examples:
+  - text: |
+     and then slightly up 
+
+- intent: fsp1TSKCV56
+  examples:
+  - text: |
+     sort of northeast direction between the flat rocks and the stone creek 
+
+- intent: fsp2TUMCV1
+  examples:
+  - text: |
+     between 
+    metadata:
+      turnManagement: turnGrab
+
+- intent: fsp2TSKCV24
+  examples:
+  - text: |
+     well itd be better if i between the walled city and the ghost town no to go underneath it 
+
+- intent: fsp2TSKCV25
+  examples:
+  - text: |
+     above it 
+
+- intent: fsp2TSKCV26
+  examples:
+  - text: |
+     or have you got something else there 
+
+- intent: fsp1TSKCV57
+  examples:
+  - text: |
+     ive not got anything between the carved wooden pole and the walled city 
+
+- intent: answer(Fu:dap2TSK26)
+  examples:
+  - text: |
+     ive not got anything between the carved wooden pole and the walled city 
+
+- intent: fsp1TSKCV58
+  examples:
+  - text: |
+     but the map shows a c-shaped curve 
+
+- intent: declineSuggest(Fu:dap2TSK24)
+  examples:
+  - text: |
+     but the map shows a c-shaped curve 
+
+- intent: fsp1OCMCV4
+  examples:
+  - text: |
+     a c-shaped curve 
+
+- intent: selfCorrection(Fe:fsp1OCMFB4)
+  examples:
+  - text: |
+     a c-shaped curve 
+
+- intent: fsp2TSKCV27
+  examples:
+  - text: |
+     right 
+
+- intent: agreement(Fu:dap1TSK58)
+  examples:
+  - text: |
+     right 
+
+- intent: fsp2TSKCV28
+  examples:
+  - text: |
+     score that out 
+
+- intent: agreement
+  examples:
+  - text: |
+     score that out 
+
+- intent: fsp1TSKCV59
+  examples:
+  - text: |
+     right 
+
+- intent: agreement(Fu:dap2TSK28)
+  examples:
+  - text: |
+     right 
+
+- intent: fsp2AUFCV6
+  examples:
+  - text: |
+     right 
+
+- intent: autoPositive(Fe:fsp2AUFFB6)
+  examples:
+  - text: |
+     right 
+
+- intent: fsp1TSKCV60
+  examples:
+  - text: |
+     and sort of 
+
+- intent: NA
+  examples:
+  - text: |
+     and sort of 
+
+- intent: fsp1TSKCV61
+  examples:
+  - text: |
+     and then slightly up underneath the flat rocks and above the stone creek 
+
+- intent: fsp2TSKCV29
+  examples:
+  - text: |
+     right 
+
+- intent: acceptRequest(Fu:dap1TSK61)
+  examples:
+  - text: |
+     right 
+
+- intent: fsp1AUFCV16;fsp1TUMCV15
+  examples:
+  - text: |
+     okay 
+    metadata:
+      turnManagement: turnTake
+
+- intent: autoPositive(Fe:fsp1AUFFB16)
+  examples:
+  - text: |
+     okay 
+    metadata:
+      turnManagement: turnTake
+
+- intent: fsp1TSKCV62
+  examples:
+  - text: |
+     then go slightly to your right beyond the flat rocks 
+
+- intent: fsp1TSKCV63
+  examples:
+  - text: |
+     until you are above the level of the buffalo 
+
+- intent: fsp2TSKCV30
+  examples:
+  - text: |
+     so ill be avoiding the saloon bar 
+
+- intent: fsp2OCMCV0
+  examples:
+  - text: |
+     ill 
+
+- intent: selfCorrection(Fe:fsp2OCMFB0)
+  examples:
+  - text: |
+     ill 
+
+- intent: fsp1TSKCV64;fsp1AUFCV17
+  examples:
+  - text: |
+     i dont have a saloon bar here 
+
+- intent: autoNegative(Fe:fsp1AUFFB17)
+  examples:
+  - text: |
+     i dont have a saloon bar here 
+
+- intent: fsp2TSKCV31
+  examples:
+  - text: |
+     ive got here 
+
+- intent: fsp1AUFCV18
+  examples:
+  - text: |
+     right okay 
+
+- intent: autoPositive(Fe:fsp1AUFFB18)
+  examples:
+  - text: |
+     right okay 
+
+- intent: fsp1TSKCV65
+  examples:
+  - text: |
+     so avoid the saloon bar 
+
+- intent: fsp2TSKCV32
+  examples:
+  - text: |
+     right 
+
+- intent: acceptRequest(Fu:dap1TSK65)
+  examples:
+  - text: |
+     right 
+
+- intent: fsp1TSKCV66
+  examples:
+  - text: |
+     and then 
+
+- intent: fsp1TUMCV16;fsp1TIMCV6
+  examples:
+  - text: |
+     ehm 
+    metadata:
+      turnManagement: turnKeep
+
+- intent: fsp1AUFCV19;fsp1TUMCV17
+  examples:
+  - text: |
+     right 
+    metadata:
+      turnManagement: turnTake
+
+- intent: autoPositive
+  examples:
+  - text: |
+     right 
+    metadata:
+      turnManagement: turnTake
+
+- intent: fsp1TSKCV67
+  examples:
+  - text: |
+     then just straight down to the right of the buffalo 
+
+- intent: fsp1TUMCV18;fsp1TIMCV7
+  examples:
+  - text: |
+     ehm 
+    metadata:
+      turnManagement: turnKeep
+
+- intent: fsp2AUFCV7
+  examples:
+  - text: |
+     to the right 
+
+- intent: autoPositive(Fe:fsp2AUFFB7)
+  examples:
+  - text: |
+     to the right 
+
+- intent: fsp1TSKCV68
+  examples:
+  - text: |
+     so that youre on the right of the buffalo 
+
+- intent: fsp1OCMCV5
+  examples:
+  - text: |
+     youre on 
+
+- intent: selfCorrection(Fe:fsp1OCMFB5)
+  examples:
+  - text: |
+     youre on 
+
+- intent: fsp2TSKCV33
+  examples:
+  - text: |
+     right 
+
+- intent: acceptRequest(Fu:dap1TSK67)
+  examples:
+  - text: |
+     right 
+
+- intent: fsp1AUFCV20;fsp1ALFCV3;fsp1TUMCV19
+  examples:
+  - text: |
+     okay 
+    metadata:
+      turnManagement: turnTake
+
+- intent: autoPositive(Fe:fsp1AUFFB20)
+  examples:
+  - text: |
+     okay 
+    metadata:
+      turnManagement: turnTake
+
+- intent: alloPositive(Fe:fsp1ALFFB3)
+  examples:
+  - text: |
+     okay 
+    metadata:
+      turnManagement: turnTake
+
+- intent: fsp1TSKCV69
+  examples:
+  - text: |
+     and go underneath the buffalo 
+
+- intent: fsp1TSKCV70
+  examples:
+  - text: |
+     now do you have a cattle ranch 
+
+- intent: fsp2TSKCV34
+  examples:
+  - text: |
+     no 
+
+- intent: answer(Fu:dap1TSK70)
+  examples:
+  - text: |
+     no 
+
+- intent: fsp1TUMCV20;fsp1TIMCV8
+  examples:
+  - text: |
+     ehm 
+    metadata:
+      turnManagement: turnTake
+
+- intent: fsp1TSKCV71
+  examples:
+  - text: |
+     do you have a fort 
+
+- intent: fsp2TSKCV35
+  examples:
+  - text: |
+     mmhmm 
+
+- intent: answer(Fu:dap1TSK71)
+  examples:
+  - text: |
+     mmhmm 
+
+- intent: fsp1TSKCV72
+  examples:
+  - text: |
+     so youre go from the buffalo to the fort 
+
+- intent: fsp1TSKCV73
+  examples:
+  - text: |
+     but youve got to avoid the cattle ranch on the way 
+
+- intent: fsp1TSKCV74
+  examples:
+  - text: |
+     and youll have to go up and over the top of the cattle ranch 
+
+- intent: fsp2TSKCV36
+  examples:
+  - text: |
+     right 
+
+- intent: acceptRequest(Fu:dap1TSK72)
+  examples:
+  - text: |
+     right 
+
+- intent: fsp1TSKCV75
+  examples:
+  - text: |
+     which on my map is halfway between the buffalo and the fort 
+
+- intent: fsp1ALFCV4
+  examples:
+  - text: |
+     okay 
+
+- intent: feedbackElicitation(Fe:fsp1ALFFB4)
+  examples:
+  - text: |
+     okay 
+
+- intent: fsp2AUFCV8
+  examples:
+  - text: |
+     right 
+
+- intent: autoPositive(Fu:dap1ALF4)
+  examples:
+  - text: |
+     right 
+
+- intent: fsp2TSKCV37
+  examples:
+  - text: |
+     that on the level between the fort 
+
+- intent: fsp1TUMCV21;fsp1TIMCV9
+  examples:
+  - text: |
+     ehm 
+    metadata:
+      turnManagement: turnTake
+
+- intent: fsp2TSKCV38
+  examples:
+  - text: |
+     mm 
+
+- intent: fsp1TSKCV76
+  examples:
+  - text: |
+     its almost on level with the fort 
+
+- intent: confirm(Fu:dap2TSK37)
+  examples:
+  - text: |
+     its almost on level with the fort 
+
+- intent: fsp1TSKCV77
+  examples:
+  - text: |
+     but its slightly higher than the fort 
+
+- intent: correction(Fu:dap1TSK76)
+  examples:
+  - text: |
+     but its slightly higher than the fort 
+
+- intent: fsp2TSKCV39
+  examples:
+  - text: |
+     so 
+
+- intent: fsp1TSKCV78
+  examples:
+  - text: |
+     so you need to go up on a sort of hill 
+
+- intent: instruct(Fu:dap2TSK39)
+  examples:
+  - text: |
+     so you need to go up on a sort of hill 
+
+- intent: fsp1OCMCV6
+  examples:
+  - text: |
+     go up 
+
+- intent: selfCorrection(Fe:fsp1OCMFB6)
+  examples:
+  - text: |
+     go up 
+
+- intent: fsp2TSKCV40
+  examples:
+  - text: |
+     mmhmm 
+
+- intent: acceptRequest(Fu:dap1TSK78)
+  examples:
+  - text: |
+     mmhmm 
+  - text: |
+     right 
+
+- intent: fsp1TSKCV79
+  examples:
+  - text: |
+     over the cattle ranch underneath buffalo or over the cattle ranch 
+
+- intent: fsp2TSKCV41;fsp2AUFCV9
+  examples:
+  - text: |
+     right 
+
+- intent: autoPositive(Fe:fsp2AUFFB9)
+  examples:
+  - text: |
+     right 
+
+- intent: fsp1TSKCV80
+  examples:
+  - text: |
+     then underneath the fort 
+
+- intent: fsp2AUFCV10
+  examples:
+  - text: |
+     under the fort 
+
+- intent: fsp1ALFCV5
+  examples:
+  - text: |
+     underneath the fort uh-huh 
+
+- intent: confirm(Fu:dap2AUF10)
+  examples:
+  - text: |
+     underneath the fort uh-huh 
+
+- intent: fsp1TSKCV81
+  examples:
+  - text: |
+     and come out at the left-hand side of the fort 
+
+- intent: fsp1DISCV1
+  examples:
+  - text: |
+     and finishing 
+
+- intent: fsp1TUMCV22;fsp1TIMCV10
+  examples:
+  - text: |
+     ehm 
+    metadata:
+      turnManagement: turnKeep
+
+- intent: fsp1TSKCV82
+  examples:
+  - text: |
+     not beside but on the same level as the the carved wooden pole 
+
+- intent: fsp1TSKCV83
+  examples:
+  - text: |
+     the base of the carved wooden pole 
+
+- intent: fsp1OCMCV7
+  examples:
+  - text: |
+     wooden 
+
+- intent: selfCorrection(Fe:fsp1OCMFB7)
+  examples:
+  - text: |
+     wooden 
+
+- intent: fsp2TSKCV42
+  examples:
+  - text: |
+     right 
+
+- intent: acceptRequest(Fu:dap1DIS1)
+  examples:
+  - text: |
+     right 
+
+- intent: fsp1AUFCV21;fsp1ALFCV6;fsp1TUMCV23
+  examples:
+  - text: |
+     okay 
+    metadata:
+      turnManagement: turnTake
+
+- intent: autoPositive(Fe:fsp1AUFFB21)
+  examples:
+  - text: |
+     okay 
+    metadata:
+      turnManagement: turnTake
+
+- intent: alloPositive(Fe:fsp1ALFFB6)
+  examples:
+  - text: |
+     okay 
+    metadata:
+      turnManagement: turnTake
+
+- intent: fsp1DISCV2
+  examples:
+  - text: |
+     thats you finished 
+
+- intent: inform
+  examples:
+  - text: |
+     thats you finished 
+
+- intent: fsp2AUFCV11;fsp2DISCV0
+  examples:
+  - text: |
+     okay 
+
+- intent: autoPositive(Fe:fsp2AUFFB11)
+  examples:
+  - text: |
+     okay 
+
+- intent: interactionStructuring
+  examples:
+  - text: |
+     okay 
+

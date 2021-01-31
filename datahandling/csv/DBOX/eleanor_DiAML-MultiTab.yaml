@@ -1,0 +1,1347 @@
+nlu:
+- intent: fsp1TUMCV0;fsp1CTMCV0
+  examples:
+  - text: |
+     alright 
+    metadata:
+      turnManagement: turnTake
+
+- intent: dap1CTM0:contactManagement:contactIndication
+  examples:
+  - text: |
+     alright 
+    metadata:
+      turnManagement: turnTake
+
+- intent: fsp1DISCV0
+  examples:
+  - text: |
+     alright hello again 
+
+- intent: opening
+  examples:
+  - text: |
+     alright hello again 
+
+- intent: fsp1SOMCV0
+  examples:
+  - text: |
+     hello again 
+
+- intent: initGreeting
+  examples:
+  - text: |
+     hello again 
+
+- intent: fsp2DISCV0;fsp2SOMCV0;fsp2CTMCV0
+  examples:
+  - text: |
+     hello 
+
+- intent: opening(Fu:dap1DIS0)
+  examples:
+  - text: |
+     hello 
+
+- intent: returnGreeting(Fu:dap1SOM0)
+  examples:
+  - text: |
+     hello 
+
+- intent: dap2CTM0:contactManagement:contactIndication
+  examples:
+  - text: |
+     hello 
+
+- intent: fsp1TSMCV0
+  examples:
+  - text: |
+     are you ready to continue 
+
+- intent: dap1TSM0:taskManagement:propositionalQuestion
+  examples:
+  - text: |
+     are you ready to continue 
+
+- intent: fsp2TSMCV0
+  examples:
+  - text: |
+     yes i am 
+
+- intent: dap2TSM0:taskManagement:propositionalAnswer(Fu:dap1TSM0)
+  examples:
+  - text: |
+     yes i am 
+
+- intent: fsp1AUFCV0;fsp1ALFCV0
+  examples:
+  - text: |
+     great 
+
+- intent: autoPositive(Fe:fsp1AUFFB0)
+  examples:
+  - text: |
+     great 
+
+- intent: alloPositive(Fe:fsp1ALFFB0)
+  examples:
+  - text: |
+     great 
+
+- intent: fsp1TUMCV1;fsp1TIMCV0
+  examples:
+  - text: |
+     uh 
+    metadata:
+      turnManagement: turnKeep
+
+- intent: stalling
+  examples:
+  - text: |
+     uh 
+    metadata:
+      turnManagement: turnKeep
+  - text: |
+     uh 
+    metadata:
+      turnManagement: turnAccept
+  - text: |
+     uh 
+    metadata:
+      turnManagement: turnAccept
+  - text: |
+     uhm 
+    metadata:
+      turnManagement: turnAccept
+  - text: |
+     uh 
+    metadata:
+      turnManagement: turnAccept
+  - text: |
+     uh 
+    metadata:
+      turnManagement: turnKeep
+  - text: |
+     uhm 
+    metadata:
+      turnManagement: turnAccept
+  - text: |
+     uh 
+    metadata:
+      turnManagement: turnKeep
+  - text: |
+     uh 
+    metadata:
+      turnManagement: turnKeep
+  - text: |
+     uhm 
+    metadata:
+      turnManagement: turnAccept
+  - text: |
+     uhm 
+    metadata:
+      turnManagement: turnKeep
+  - text: |
+     uh 
+    metadata:
+      turnManagement: turnKeep
+  - text: |
+     okay 
+    metadata:
+      turnManagement: turnKeep
+  - text: |
+     uh 
+    metadata:
+      turnManagement: turnAccept
+  - text: |
+     uh 
+  - text: |
+     uhm 
+    metadata:
+      turnManagement: turnKeep
+  - text: |
+     uhm 
+    metadata:
+      turnManagement: turnKeep
+  - text: |
+     mh 
+    metadata:
+      turnManagement: turnAccept
+  - text: |
+     uh 
+    metadata:
+      turnManagement: turnKeep
+  - text: |
+     uh 
+    metadata:
+      turnManagement: turnKeep
+  - text: |
+     uhm 
+    metadata:
+      turnManagement: turnAccept
+  - text: |
+     uhm 
+    metadata:
+      turnManagement: turnKeep
+  - text: |
+     uhm 
+    metadata:
+      turnManagement: turnKeep
+  - text: |
+     uhm 
+    metadata:
+      turnManagement: turnKeep
+  - text: |
+     uhm 
+    metadata:
+      turnManagement: turnKeep
+  - text: |
+     uhm 
+    metadata:
+      turnManagement: turnKeep
+  - text: |
+     uhm 
+    metadata:
+      turnManagement: turnKeep
+  - text: |
+     uhm 
+    metadata:
+      turnManagement: turnKeep
+
+- intent: fsp1TSMCV1
+  examples:
+  - text: |
+     do you remember all of the rules or do you have any questions 
+
+- intent: dap1TSM1:taskManagement:choiceQuestion
+  examples:
+  - text: |
+     do you remember all of the rules or do you have any questions 
+
+- intent: fsp2TUMCV0;fsp2TIMCV0
+  examples:
+  - text: |
+     uh 
+    metadata:
+      turnManagement: turnAccept
+
+- intent: fsp2TSMCV1
+  examples:
+  - text: |
+     yes and no to the other question 
+
+- intent: dap2TSM1:taskManagement:setAnswer(Fu:dap1TSM1)
+  examples:
+  - text: |
+     yes and no to the other question 
+
+- intent: fsp1AUFCV1;fsp1ALFCV1
+  examples:
+  - text: |
+     okay 
+
+- intent: autoPositive(Fe:fsp1AUFFB1)
+  examples:
+  - text: |
+     okay 
+
+- intent: alloPositive(Fe:fsp1ALFFB1)
+  examples:
+  - text: |
+     okay 
+
+- intent: fsp1AUFCV2
+  examples:
+  - text: |
+     so you know all of the rules 
+
+- intent: checkQuestion(Fe:fsp1AUFFB2)
+  examples:
+  - text: |
+     so you know all of the rules 
+
+- intent: fsp2ALFCV0
+  examples:
+  - text: |
+     yes i do 
+
+- intent: confirm(Fu:dap1AUF2)
+  examples:
+  - text: |
+     yes i do 
+
+- intent: fsp1AUFCV3;fsp1ALFCV2
+  examples:
+  - text: |
+     great 
+
+- intent: autoPositive(Fe:fsp1AUFFB3)
+  examples:
+  - text: |
+     great 
+
+- intent: alloPositive(Fe:fsp1ALFFB2)
+  examples:
+  - text: |
+     great 
+
+- intent: fsp1TUMCV2
+  examples:
+  - text: |
+     alright 
+    metadata:
+      turnManagement: turnKeep
+
+- intent: fsp1TSMCV2
+  examples:
+  - text: |
+     lets go ahead and get started then 
+
+- intent: dap1TSM2:taskManagement:suggest
+  examples:
+  - text: |
+     lets go ahead and get started then 
+
+- intent: fsp1TSKCV0;fsp1TSMCV3
+  examples:
+  - text: |
+     what is your first question 
+
+- intent: setQuestion
+  examples:
+  - text: |
+     what is your first question 
+  - text: |
+     which country $UNINTELLIGIBLE 
+  - text: |
+     during which years exactly did you reign 
+  - text: |
+     while you were at the peak of your power which position did you occupy in the country 
+  - text: |
+     and during which year were you the queen consort of england 
+  - text: |
+     how did you die 
+  - text: |
+     who was your husband during your time as queen regent of england 
+  - text: |
+     what are you most known for in history of humankind 
+  - text: |
+     can you name one thing that many people know that you did 
+
+- intent: dap1TSM3:taskManagement:request
+  examples:
+  - text: |
+     what is your first question 
+
+- intent: fsp2TUMCV1;fsp2TIMCV1
+  examples:
+  - text: |
+     uh 
+    metadata:
+      turnManagement: turnAccept
+
+- intent: fsp2TSKCV0;fsp2TSMCV2
+  examples:
+  - text: |
+     what are you famous for 
+
+- intent: setQuestion(Fu:dap1TSK0)
+  examples:
+  - text: |
+     what are you famous for 
+
+- intent: dap2TSM2:taskManagement:acceptRequest(Fu:dap1TSM3)
+  examples:
+  - text: |
+     what are you famous for 
+
+- intent: fsp1TUMCV3;fsp1TIMCV1
+  examples:
+  - text: |
+     uhm 
+    metadata:
+      turnManagement: turnAccept
+
+- intent: fsp1TSKCV1
+  examples:
+  - text: |
+     i am famous for being one of the wealthiest and most powerful women in western europe during the middle ages 
+
+- intent: setAnswer(Fu:dap2TSK0)
+  examples:
+  - text: |
+     i am famous for being one of the wealthiest and most powerful women in western europe during the middle ages 
+
+- intent: fsp2AUFCV0
+  examples:
+  - text: |
+     $LAUGH 
+
+- intent: autoPositive(Fe:fsp2AUFFB0)
+  examples:
+  - text: |
+     $LAUGH 
+
+- intent: fsp2TSKCV1
+  examples:
+  - text: |
+     are you part of the royalty or were you part of the royalty rather 
+
+- intent: choiceQuestion
+  examples:
+  - text: |
+     are you part of the royalty or were you part of the royalty rather 
+  - text: |
+     are you more famous for your time in england or in france 
+
+- intent: fsp1TSKCV2
+  examples:
+  - text: |
+     yes i was 
+
+- intent: answer(Fu:dap2TSK1)
+  examples:
+  - text: |
+     yes i was 
+
+- intent: fsp2TSKCV2
+  examples:
+  - text: |
+     which country $UNINTELLIGIBLE 
+
+- intent: fsp2TIMCV2
+  examples:
+  - text: |
+     yeah 
+
+- intent: pausing
+  examples:
+  - text: |
+     yeah 
+  - text: |
+     just a minute 
+    metadata:
+      turnManagement: turnAccept
+  - text: |
+     just a minute 
+    metadata:
+      turnManagement: turnKeep
+  - text: |
+     just a second 
+
+- intent: fsp1TUMCV4;fsp1TIMCV2
+  examples:
+  - text: |
+     uh 
+    metadata:
+      turnManagement: turnAccept
+
+- intent: fsp1TSKCV3
+  examples:
+  - text: |
+     france 
+
+- intent: setAnswer(Fu:dap2TSK2)
+  examples:
+  - text: |
+     france 
+
+- intent: fsp2AUFCV1
+  examples:
+  - text: |
+     france 
+
+- intent: autoPositive(Fe:fsp2AUFFB1)
+  examples:
+  - text: |
+     france 
+
+- intent: fsp2TUMCV2;fsp2TIMCV3
+  examples:
+  - text: |
+     uh 
+    metadata:
+      turnManagement: turnKeep
+
+- intent: fsp2AUFCV2;fsp2TUMCV3
+  examples:
+  - text: |
+     okay 
+    metadata:
+      turnManagement: turnKeep
+
+- intent: autoPositive(Fe:fsp2AUFFB2)
+  examples:
+  - text: |
+     okay 
+    metadata:
+      turnManagement: turnKeep
+
+- intent: fsp2AUFCV3
+  examples:
+  - text: |
+     do I know any French which 
+
+- intent: autoPositive(Fe:fsp2AUFFB3)
+  examples:
+  - text: |
+     do I know any French which 
+
+- intent: fsp2TSKCV3
+  examples:
+  - text: |
+     during which years exactly did you reign 
+
+- intent: fsp1TUMCV5;fsp1TIMCV3
+  examples:
+  - text: |
+     uhm 
+    metadata:
+      turnManagement: turnAccept
+
+- intent: fsp1AUFCV4
+  examples:
+  - text: |
+     could you clarify 
+
+- intent: autoNegative(Fe:fsp1AUFFB4)
+  examples:
+  - text: |
+     could you clarify 
+
+- intent: fsp2ALFCV1
+  examples:
+  - text: |
+     okay 
+
+- intent: acceptRequest(Fu:dap1AUF4)
+  examples:
+  - text: |
+     okay 
+
+- intent: fsp2TUMCV4;fsp2TIMCV4
+  examples:
+  - text: |
+     uh 
+    metadata:
+      turnManagement: turnKeep
+
+- intent: fsp2TSKCV4
+  examples:
+  - text: |
+     while you were at the peak of your power which position did you occupy in the country 
+
+- intent: fsp2TUMCV5;fsp2TIMCV5
+  examples:
+  - text: |
+     uh 
+    metadata:
+      turnManagement: turnKeep
+
+- intent: fsp2OCMCV0
+  examples:
+  - text: |
+     which position 
+
+- intent: selfCorrection(Fe:fsp2OCMFB0)
+  examples:
+  - text: |
+     which position 
+
+- intent: fsp1TUMCV6;fsp1TIMCV4
+  examples:
+  - text: |
+     uhm 
+    metadata:
+      turnManagement: turnAccept
+
+- intent: fsp1TSKCV4
+  examples:
+  - text: |
+     i was the queen consort of france and later the queen consort of england 
+
+- intent: setAnswer(Fu:dap2TSK4)
+  examples:
+  - text: |
+     i was the queen consort of france and later the queen consort of england 
+
+- intent: fsp2AUFCV4;fsp2TUMCV6
+  examples:
+  - text: |
+     okay 
+    metadata:
+      turnManagement: turnTake
+
+- intent: autoPositive(Fe:fsp2AUFFB4)
+  examples:
+  - text: |
+     okay 
+    metadata:
+      turnManagement: turnTake
+
+- intent: fsp2TSKCV5
+  examples:
+  - text: |
+     and during which year were you the queen consort of england 
+
+- intent: fsp2TUMCV7;fsp2TIMCV6
+  examples:
+  - text: |
+     uhm 
+    metadata:
+      turnManagement: turnKeep
+
+- intent: fsp2OCMCV1
+  examples:
+  - text: |
+     years 
+
+- intent: selfCorrection(Fe:fsp2OCMFB1)
+  examples:
+  - text: |
+     years 
+
+- intent: fsp1TSKCV5
+  examples:
+  - text: |
+     from eleven fifty four to eleven eighty nine 
+
+- intent: setAnswer(Fu:dap2TSK5)
+  examples:
+  - text: |
+     from eleven fifty four to eleven eighty nine 
+
+- intent: fsp2AUFCV5;fsp2TUMCV8
+  examples:
+  - text: |
+     okay 
+    metadata:
+      turnManagement: turnTake
+
+- intent: autoPositive(Fe:fsp2AUFFB5)
+  examples:
+  - text: |
+     okay 
+    metadata:
+      turnManagement: turnTake
+
+- intent: fsp2TUMCV9;fsp2TIMCV7
+  examples:
+  - text: |
+     uh 
+    metadata:
+      turnManagement: turnKeep
+
+- intent: fsp2TIMCV8
+  examples:
+  - text: |
+     wait 
+
+- intent: request
+  examples:
+  - text: |
+     wait 
+  - text: |
+     give me just a second 
+    metadata:
+      turnManagement: turnKeep
+  - text: |
+     wait 
+
+- intent: fsp2AUFCV6
+  examples:
+  - text: |
+     now how do i ask that 
+
+- intent: autoPositive
+  examples:
+  - text: |
+     now how do i ask that 
+
+- intent: fsp2OCMCV2
+  examples:
+  - text: |
+     how do 
+
+- intent: selfCorrection(Fe:fsp2OCMFB2)
+  examples:
+  - text: |
+     how do 
+
+- intent: fsp2AUFCV7
+  examples:
+  - text: |
+     now that does not work 
+
+- intent: autoNegative(Fe:fsp2AUFFB7)
+  examples:
+  - text: |
+     now that does not work 
+
+- intent: fsp2TUMCV10;fsp2TIMCV9
+  examples:
+  - text: |
+     okay 
+    metadata:
+      turnManagement: turnKeep
+
+- intent: fsp2TSKCV6
+  examples:
+  - text: |
+     how did you die 
+
+- intent: fsp1TUMCV7;fsp1TIMCV5
+  examples:
+  - text: |
+     just a minute 
+    metadata:
+      turnManagement: turnAccept
+
+- intent: fsp1AUFCV5
+  examples:
+  - text: |
+     i dont have an answer to that question 
+
+- intent: inform(Fe:fsp1AUFFB5)
+  examples:
+  - text: |
+     i dont have an answer to that question 
+
+- intent: fsp2AUFCV8
+  examples:
+  - text: |
+     okay 
+
+- intent: autoPositive(Fe:fsp2AUFFB8)
+  examples:
+  - text: |
+     okay 
+
+- intent: fsp2TSKCV7
+  examples:
+  - text: |
+     who was your husband during your time as queen regent of england 
+
+- intent: fsp1TUMCV8;fsp1TIMCV6
+  examples:
+  - text: |
+     uh 
+    metadata:
+      turnManagement: turnAccept
+
+- intent: fsp1TUMCV9;fsp1TIMCV7
+  examples:
+  - text: |
+     just a minute 
+    metadata:
+      turnManagement: turnKeep
+
+- intent: fsp1TSKCV6
+  examples:
+  - text: |
+     i was 
+
+- intent: setAnswer(Fu:dap2TSK7)
+  examples:
+  - text: |
+     i was 
+  - text: |
+     SIL i was married to henry duke of normandy who became king henry the second of england 
+
+- intent: fsp1TUMCV10
+  examples:
+  - text: |
+     uh just a second 
+    metadata:
+      turnManagement: turnKeep
+
+- intent: fsp1TIMCV8
+  examples:
+  - text: |
+     uh 
+
+- intent: fsp1TIMCV9
+  examples:
+  - text: |
+     just a second 
+
+- intent: fsp1AUFCV6
+  examples:
+  - text: |
+     yes 
+
+- intent: autoPositive(Fe:fsp1AUFFB6)
+  examples:
+  - text: |
+     yes 
+
+- intent: fsp1TSKCV7
+  examples:
+  - text: |
+     SIL i was married to henry duke of normandy who became king henry the second of england 
+
+- intent: fsp1OCMCV0
+  examples:
+  - text: |
+     SIL i was 
+
+- intent: selfCorrection(Fe:fsp1OCMFB0)
+  examples:
+  - text: |
+     SIL i was 
+
+- intent: fsp1TUMCV11;fsp1TIMCV10
+  examples:
+  - text: |
+     uhm 
+    metadata:
+      turnManagement: turnKeep
+
+- intent: fsp1OCMCV1
+  examples:
+  - text: |
+     king 
+
+- intent: selfCorrection(Fe:fsp1OCMFB1)
+  examples:
+  - text: |
+     king 
+
+- intent: fsp2AUFCV9;fsp2TUMCV11
+  examples:
+  - text: |
+     ok 
+    metadata:
+      turnManagement: turnTake
+
+- intent: autoPositive(Fe:fsp2AUFFB9)
+  examples:
+  - text: |
+     ok 
+    metadata:
+      turnManagement: turnTake
+
+- intent: fsp2TUMCV12;fsp2TIMCV10
+  examples:
+  - text: |
+     uhm 
+    metadata:
+      turnManagement: turnKeep
+
+- intent: fsp2TSKCV8
+  examples:
+  - text: |
+     what are you most known for in history of humankind 
+
+- intent: fsp2TSKCV9;fsp2TSMCV3
+  examples:
+  - text: |
+     if its not too general for a question 
+
+- intent: inform_pass
+  examples:
+  - text: |
+     if its not too general for a question 
+  - text: |
+     my name is eleanor of aquitaine 
+
+- intent: dap2TSM3:taskManagement:inform {elaboration dap2TSK8}
+  examples:
+  - text: |
+     if its not too general for a question 
+
+- intent: fsp1ALFCV3
+  examples:
+  - text: |
+     that is a very good question 
+
+- intent: alloPositive(Fe:fsp1ALFFB3)
+  examples:
+  - text: |
+     that is a very good question 
+
+- intent: fsp1AUFCV7
+  examples:
+  - text: |
+     im not sure if i can answer it 
+
+- intent: inform[uncertain](Fe:fsp1AUFFB7)
+  examples:
+  - text: |
+     im not sure if i can answer it 
+
+- intent: fsp1TUMCV12;fsp1TIMCV11
+  examples:
+  - text: |
+     give me just a second 
+    metadata:
+      turnManagement: turnKeep
+
+- intent: fsp1AUFCV8
+  examples:
+  - text: |
+     not sure that i can fully answer that question 
+
+- intent: inform[uncertain](Fe:fsp1AUFFB8)
+  examples:
+  - text: |
+     not sure that i can fully answer that question 
+
+- intent: fsp2AUFCV10;fsp2TUMCV13
+  examples:
+  - text: |
+     okay 
+    metadata:
+      turnManagement: turnTake
+
+- intent: autoPositive(Fe:fsp2AUFFB10)
+  examples:
+  - text: |
+     okay 
+    metadata:
+      turnManagement: turnTake
+
+- intent: fsp2TSKCV10
+  examples:
+  - text: |
+     can you name one thing that many people know that you did 
+
+- intent: fsp1TUMCV13;fsp1TIMCV12
+  examples:
+  - text: |
+     mh 
+    metadata:
+      turnManagement: turnAccept
+
+- intent: fsp1TSKCV8
+  examples:
+  - text: |
+     i was married to two kings and i participated in the second crusade while queen of france 
+
+- intent: setAnswer(Fu:dap2TSK10)
+  examples:
+  - text: |
+     i was married to two kings and i participated in the second crusade while queen of france 
+
+- intent: fsp2AUFCV11;fsp2TUMCV14
+  examples:
+  - text: |
+     okay 
+    metadata:
+      turnManagement: turnTake
+
+- intent: autoPositive(Fe:fsp2AUFFB11)
+  examples:
+  - text: |
+     okay 
+    metadata:
+      turnManagement: turnTake
+
+- intent: fsp2TUMCV15;fsp2TIMCV11
+  examples:
+  - text: |
+     uh 
+    metadata:
+      turnManagement: turnKeep
+
+- intent: fsp2TUMCV16;fsp2TIMCV12
+  examples:
+  - text: |
+     uh 
+    metadata:
+      turnManagement: turnKeep
+
+- intent: fsp2TSKCV11
+  examples:
+  - text: |
+     did you have any religious epiphanies 
+
+- intent: propositionalQuestion
+  examples:
+  - text: |
+     did you have any religious epiphanies 
+  - text: |
+     documented 
+  - text: |
+     are you considered a hero by some 
+
+- intent: fsp1TUMCV14;fsp1TIMCV13
+  examples:
+  - text: |
+     uhm 
+    metadata:
+      turnManagement: turnAccept
+
+- intent: fsp2TSKCV12;fsp2OCMCV3
+  examples:
+  - text: |
+     documented 
+
+- intent: selfCorrection(Fe:fsp2OCMFB3)
+  examples:
+  - text: |
+     documented 
+
+- intent: fsp1AUFCV9
+  examples:
+  - text: |
+     i dont have an answer to that question 
+
+- intent: inform(Fe:fsp1AUFFB9)
+  examples:
+  - text: |
+     i dont have an answer to that question 
+
+- intent: fsp2AUFCV12;fsp2TUMCV17
+  examples:
+  - text: |
+     okay 
+    metadata:
+      turnManagement: turnTake
+
+- intent: autoPositive(Fe:fsp2AUFFB12)
+  examples:
+  - text: |
+     okay 
+    metadata:
+      turnManagement: turnTake
+
+- intent: fsp2TUMCV18;fsp2TIMCV13
+  examples:
+  - text: |
+     uhm 
+    metadata:
+      turnManagement: turnKeep
+
+- intent: fsp2TSKCV13
+  examples:
+  - text: |
+     are you more famous for your time in england or in france 
+
+- intent: fsp1TSKCV9;fsp1AUFCV10
+  examples:
+  - text: |
+     unfortunately im not sure how to answer that question 
+
+- intent: answer[uncertain](Fu:dap2TSK13)
+  examples:
+  - text: |
+     unfortunately im not sure how to answer that question 
+
+- intent: inform[uncertain](Fe:fsp1AUFFB10)
+  examples:
+  - text: |
+     unfortunately im not sure how to answer that question 
+
+- intent: fsp2TSKCV14
+  examples:
+  - text: |
+     are you considered a hero by some 
+
+- intent: fsp1TSKCV10
+  examples:
+  - text: |
+     that is possible 
+
+- intent: propositionalAnswer[uncertain](Fu:dap2TSK14)
+  examples:
+  - text: |
+     that is possible 
+
+- intent: fsp1AUFCV11
+  examples:
+  - text: |
+     but i dont have a answer to that question 
+
+- intent: inform(Fe:fsp1AUFFB11)
+  examples:
+  - text: |
+     but i dont have a answer to that question 
+
+- intent: fsp2AUFCV13;fsp2TUMCV19
+  examples:
+  - text: |
+     okay 
+    metadata:
+      turnManagement: turnTake
+
+- intent: autoPositive(Fe:fsp2AUFFB13)
+  examples:
+  - text: |
+     okay 
+    metadata:
+      turnManagement: turnTake
+
+- intent: fsp2TUMCV20;fsp2TIMCV14
+  examples:
+  - text: |
+     uhm 
+    metadata:
+      turnManagement: turnKeep
+
+- intent: fsp1SOMCV1
+  examples:
+  - text: |
+     sorry 
+
+- intent: apology(Fu:dap1TSK10)
+  examples:
+  - text: |
+     sorry 
+
+- intent: fsp2ALFCV2;fsp2SOMCV1
+  examples:
+  - text: |
+     yeah 
+
+- intent: alloPositive(Fe:fsp2ALFFB2)
+  examples:
+  - text: |
+     yeah 
+
+- intent: acceptApology(Fu:dap1SOM1)
+  examples:
+  - text: |
+     yeah 
+
+- intent: fsp2ALFCV3
+  examples:
+  - text: |
+     youre not giving me a lot to work with 
+
+- intent: alloNegative(Fe:fsp2ALFFB3)
+  examples:
+  - text: |
+     youre not giving me a lot to work with 
+
+- intent: fsp1AUFCV12
+  examples:
+  - text: |
+     I know 
+
+- intent: agreement(Fu:dap2ALF3)
+  examples:
+  - text: |
+     I know 
+
+- intent: fsp2AUFCV14;fsp2TUMCV21
+  examples:
+  - text: |
+     okay 
+    metadata:
+      turnManagement: turnTake
+
+- intent: autoPositive(Fe:fsp2AUFFB14)
+  examples:
+  - text: |
+     okay 
+    metadata:
+      turnManagement: turnTake
+
+- intent: fsp2TUMCV22;fsp2TIMCV15
+  examples:
+  - text: |
+     uhm 
+    metadata:
+      turnManagement: turnKeep
+
+- intent: fsp2TIMCV16
+  examples:
+  - text: |
+     wait 
+
+- intent: fsp2TSKCV15
+  examples:
+  - text: |
+     no 
+
+- intent: correction(Fu:dap2307)
+  examples:
+  - text: |
+     no 
+
+- intent: fsp2TSMCV4
+  examples:
+  - text: |
+     questions regarding the name are not allowed 
+
+- intent: dap2TSM4:taskManagement:checkQuestion
+  examples:
+  - text: |
+     questions regarding the name are not allowed 
+
+- intent: fsp2AUFCV15
+  examples:
+  - text: |
+     yeah 
+
+- intent: autoPositive(Fe:fsp2AUFFB15)
+  examples:
+  - text: |
+     yeah 
+
+- intent: fsp2TUMCV23;fsp2TIMCV17
+  examples:
+  - text: |
+     uhm 
+    metadata:
+      turnManagement: turnKeep
+
+- intent: fsp1TSMCV4
+  examples:
+  - text: |
+     no 
+
+- intent: dap1TSM4:taskManagement:confirm(Fu:dap2TSM4)
+  examples:
+  - text: |
+     no 
+
+- intent: fsp2TUMCV24;fsp2TIMCV18
+  examples:
+  - text: |
+     uhm 
+    metadata:
+      turnManagement: turnKeep
+
+- intent: fsp2TUMCV25;fsp2TIMCV19
+  examples:
+  - text: |
+     uhm 
+    metadata:
+      turnManagement: turnKeep
+
+- intent: fsp2TUMCV26;fsp2TIMCV20
+  examples:
+  - text: |
+     uhm 
+    metadata:
+      turnManagement: turnKeep
+
+- intent: fsp2AUFCV16
+  examples:
+  - text: |
+     nah i dont think i know her 
+
+- intent: inform(Fe:fsp2AUFFB16)
+  examples:
+  - text: |
+     nah i dont think i know her 
+
+- intent: fsp1AUFCV13
+  examples:
+  - text: |
+     mkay 
+
+- intent: autoPositive(Fe:fsp1AUFFB13)
+  examples:
+  - text: |
+     mkay 
+
+- intent: fsp1TSMCV5
+  examples:
+  - text: |
+     would you like me to tell you the answer 
+
+- intent: dap1TSM5:taskManagement:offer
+  examples:
+  - text: |
+     would you like me to tell you the answer 
+
+- intent: fsp2TSMCV5
+  examples:
+  - text: |
+     yeah sure 
+
+- intent: dap2TSM5:taskManagement:acceptOffer(Fu:dap1TSM5)
+  examples:
+  - text: |
+     yeah sure 
+
+- intent: fsp2TSMCV6
+  examples:
+  - text: |
+     go ahead 
+
+- intent: dap2TSM6:taskManagement:request
+  examples:
+  - text: |
+     go ahead 
+
+- intent: fsp1TSMCV6;fsp1TUMCV15
+  examples:
+  - text: |
+     alright 
+    metadata:
+      turnManagement: turnAccept
+
+- intent: dap1TSM6:taskManagement:acceptRequest(Fu:dap2TSM6)
+  examples:
+  - text: |
+     alright 
+    metadata:
+      turnManagement: turnAccept
+
+- intent: fsp1TSKCV11
+  examples:
+  - text: |
+     my name is eleanor of aquitaine 
+
+- intent: fsp2AUFCV17
+  examples:
+  - text: |
+     know 
+
+- intent: autoPositive(Fe:fsp2AUFFB17)
+  examples:
+  - text: |
+     know 
+
+- intent: fsp1ALFCV4;fsp1TUMCV16;fsp1DISCV1
+  examples:
+  - text: |
+     alright 
+    metadata:
+      turnManagement: turnTake
+
+- intent: alloPositive(Fe:fsp1ALFFB4)
+  examples:
+  - text: |
+     alright 
+    metadata:
+      turnManagement: turnTake
+
+- intent: interactionStructuring
+  examples:
+  - text: |
+     alright 
+    metadata:
+      turnManagement: turnTake
+
+- intent: fsp1ALFCV5;fsp1SOMCV2
+  examples:
+  - text: |
+     well good try though 
+
+- intent: alloPositive
+  examples:
+  - text: |
+     well good try though 
+
+- intent: inform[encouraging]
+  examples:
+  - text: |
+     well good try though 
+  - text: |
+     and maybe next time 
+
+- intent: fsp1DISCV2;fsp1SOMCV3
+  examples:
+  - text: |
+     and maybe next time 
+
+- intent: closing
+  examples:
+  - text: |
+     and maybe next time 
+

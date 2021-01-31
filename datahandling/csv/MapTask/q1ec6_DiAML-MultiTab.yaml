@@ -1,0 +1,1455 @@
+nlu:
+- intent: fsp1TUMCV0;fsp1DISCV0;fsp1CV0
+  examples:
+  - text: |
+     right 
+    metadata:
+      turnManagement: turnTake
+
+- intent: opening
+  examples:
+  - text: |
+     right 
+    metadata:
+      turnManagement: turnTake
+
+- intent: dap10:contactManagement:contactIndication
+  examples:
+  - text: |
+     right 
+    metadata:
+      turnManagement: turnTake
+
+- intent: fsp2AUFCV0;fsp2ALFCV0;fsp2CV0
+  examples:
+  - text: |
+     nonvocal 
+
+- intent: autoPositive(Fe:fsp2AUFFB0)
+  examples:
+  - text: |
+     nonvocal 
+
+- intent: alloPositive(Fe:fsp2ALFFB0)
+  examples:
+  - text: |
+     nonvocal 
+
+- intent: dap20:contactManagement:contactIndication
+  examples:
+  - text: |
+     nonvocal 
+
+- intent: fsp1TSKCV0
+  examples:
+  - text: |
+     go south and youll pass some cliffs on your right 
+
+- intent: instruct
+  examples:
+  - text: |
+     go south and youll pass some cliffs on your right 
+  - text: |
+     and keep going down south 
+  - text: |
+     past a forge on your right 
+  - text: |
+     nonvocal keep going down 
+  - text: |
+     and then loop towards the east 
+  - text: |
+     and then start going back up again 
+  - text: |
+     youre going northeast 
+  - text: |
+     and go up past it 
+  - text: |
+     til youre just above the top of the pine 
+  - text: |
+     and then east again 
+  - text: |
+     east 
+  - text: |
+     and then start going southeast 
+  - text: |
+     til you get to just underneath pine forest 
+  - text: |
+     and then start going south 
+  - text: |
+     and then go east again 
+  - text: |
+     you loop round about a bakery 
+  - text: |
+     and coming back round towards the west 
+  - text: |
+     and loop round a bit until youre underneath it 
+  - text: |
+     and then west 
+  - text: |
+     and then down south 
+  - text: |
+     follow the curve of crane bay 
+  - text: |
+     and then youre going southwest 
+  - text: |
+     youre going 
+  - text: |
+     and then like go west 
+  - text: |
+     and then southwest towards the edge of the map 
+  - text: |
+     and then south 
+  - text: |
+     and then youre going east 
+  - text: |
+     you come to the lighthouse 
+  - text: |
+     until you 
+  - text: |
+     then go east until you get to the lighthouse 
+
+- intent: fsp2TSKCV0
+  examples:
+  - text: |
+     okay 
+
+- intent: acceptRequest(Fu:dap1TSK0)
+  examples:
+  - text: |
+     okay 
+  - text: |
+     yeah 
+
+- intent: fsp2TSKCV1
+  examples:
+  - text: |
+     yeah 
+
+- intent: fsp1TSKCV1
+  examples:
+  - text: |
+     and keep going down south 
+
+- intent: fsp2TSKCV2
+  examples:
+  - text: |
+     mmhmm 
+
+- intent: acceptRequest(Fu:dap1TSK1)
+  examples:
+  - text: |
+     mmhmm 
+
+- intent: fsp1TSKCV2
+  examples:
+  - text: |
+     past a forge on your right 
+
+- intent: fsp2AUFCV1
+  examples:
+  - text: |
+     past a what 
+
+- intent: setQuestion(Fe:fsp2AUFFB1)
+  examples:
+  - text: |
+     past a what 
+
+- intent: fsp1ALFCV0
+  examples:
+  - text: |
+     a forge 
+
+- intent: answer(Fu:dap2AUF1)
+  examples:
+  - text: |
+     a forge 
+
+- intent: fsp1TUMCV1
+  examples:
+  - text: |
+     well 
+    metadata:
+      turnManagement: turnKeep
+
+- intent: fsp1TSKCV3
+  examples:
+  - text: |
+     nonvocal keep going down 
+
+- intent: fsp1AUFCV0;fsp1TUMCV2
+  examples:
+  - text: |
+     right 
+    metadata:
+      turnManagement: turnTake
+
+- intent: autoPositive
+  examples:
+  - text: |
+     right 
+    metadata:
+      turnManagement: turnTake
+  - text: |
+     right 
+    metadata:
+      turnManagement: turnKeep
+
+- intent: fsp1TSKCV4
+  examples:
+  - text: |
+     and then loop towards the east 
+
+- intent: fsp2TSKCV3
+  examples:
+  - text: |
+     underneath what wheatfields 
+
+- intent: checkQuestion
+  examples:
+  - text: |
+     underneath what wheatfields 
+  - text: |
+     so i go straight 
+  - text: |
+     you theres a 
+  - text: |
+     im going east underneath the bakery 
+  - text: |
+     and then you s-- 
+  - text: |
+     thats it 
+  - text: |
+     so youre going west 
+  - text: |
+     so youre between them 
+  - text: |
+     so right down past the caves 
+
+- intent: fsp2TSKCV4
+  examples:
+  - text: |
+     so i go straight 
+
+- intent: fsp1TSKCV5
+  examples:
+  - text: |
+     not as far down as that 
+
+- intent: disconfirm(Fu:dap2TSK3)
+  examples:
+  - text: |
+     not as far down as that 
+
+- intent: fsp2AUFCV2
+  examples:
+  - text: |
+     not as far down as that 
+
+- intent: autoPositive(Fe:fsp2AUFFB2)
+  examples:
+  - text: |
+     not as far down as that 
+
+- intent: fsp1ALFCV1
+  examples:
+  - text: |
+     no 
+
+- intent: alloPositive(Fe:fsp1ALFFB1)
+  examples:
+  - text: |
+     no 
+
+- intent: fsp2TSKCV5;fsp2AUFCV3
+  examples:
+  - text: |
+     right 
+
+- intent: acceptRequest(Fu:dap1TSK4)
+  examples:
+  - text: |
+     right 
+
+- intent: autoPositive(Fe:fsp2AUFFB3)
+  examples:
+  - text: |
+     right 
+
+- intent: fsp2AUFCV4
+  examples:
+  - text: |
+     and do a loop 
+
+- intent: autoPositive(Fe:fsp2AUFFB4)
+  examples:
+  - text: |
+     and do a loop 
+
+- intent: fsp1ALFCV2
+  examples:
+  - text: |
+     and do a loop 
+
+- intent: alloPositive(Fe:fsp1ALFFB2)
+  examples:
+  - text: |
+     and do a loop 
+
+- intent: fsp1TSKCV6
+  examples:
+  - text: |
+     and then start going back up again 
+
+- intent: fsp1TSKCV7
+  examples:
+  - text: |
+     youre going northeast 
+
+- intent: fsp2TSKCV6
+  examples:
+  - text: |
+     right 
+
+- intent: acceptRequest(Fu:dap1TSK7)
+  examples:
+  - text: |
+     right 
+
+- intent: fsp1AUFCV1
+  examples:
+  - text: |
+     right 
+
+- intent: autoPositive(Fe:fsp1AUFFB1)
+  examples:
+  - text: |
+     right 
+
+- intent: fsp1TSKCV8
+  examples:
+  - text: |
+     you theres a 
+
+- intent: fsp2TSKCV7
+  examples:
+  - text: |
+     and am i come like between these cliffs and pine or 
+
+- intent: choiceQuestion
+  examples:
+  - text: |
+     and am i come like between these cliffs and pine or 
+  - text: |
+     above or below 
+
+- intent: fsp1AUFCV2
+  examples:
+  - text: |
+     oh 
+
+- intent: autoPositive(Fe:fsp1AUFFB2)
+  examples:
+  - text: |
+     oh 
+
+- intent: fsp1TSKCV9
+  examples:
+  - text: |
+     you past the pine 
+
+- intent: answer(Fu:dap2TSK7)
+  examples:
+  - text: |
+     you past the pine 
+
+- intent: fsp1TSKCV10
+  examples:
+  - text: |
+     pines on your right 
+
+- intent: inform_pass
+  examples:
+  - text: |
+     pines on your right 
+  - text: |
+     pine forest on your way 
+  - text: |
+     im going right straight down 
+  - text: |
+     til youre at the top of the bakery 
+  - text: |
+     and theres a crane bay 
+  - text: |
+     between the two of them 
+
+- intent: fsp2AUFCV5
+  examples:
+  - text: |
+     right 
+
+- intent: autoPositive(Fe:fsp2AUFFB5)
+  examples:
+  - text: |
+     right 
+
+- intent: fsp2TSKCV8
+  examples:
+  - text: |
+     okay 
+
+- intent: acceptRequest(Fu:dap1TSK6)
+  examples:
+  - text: |
+     okay 
+
+- intent: fsp1TSKCV11
+  examples:
+  - text: |
+     and go up past it 
+
+- intent: fsp1TSKCV12
+  examples:
+  - text: |
+     til youre just above the top of the pine 
+
+- intent: fsp2AUFCV6
+  examples:
+  - text: |
+     right 
+
+- intent: autoPositive(Fe:fsp2AUFFB6)
+  examples:
+  - text: |
+     right 
+
+- intent: fsp2TSKCV9
+  examples:
+  - text: |
+     okay 
+
+- intent: acceptRequest(Fu:dap1TSK11)
+  examples:
+  - text: |
+     okay 
+
+- intent: fsp1TSKCV13
+  examples:
+  - text: |
+     and then east again 
+
+- intent: fsp2AUFCV7
+  examples:
+  - text: |
+     east again 
+
+- intent: autoPositive(Fe:fsp2AUFFB7)
+  examples:
+  - text: |
+     east again 
+
+- intent: fsp1ALFCV3
+  examples:
+  - text: |
+     east again 
+
+- intent: alloPositive(Fe:fsp1ALFFB3)
+  examples:
+  - text: |
+     east again 
+
+- intent: fsp2AUFCV8
+  examples:
+  - text: |
+     right 
+
+- intent: autoPositive(Fe:fsp2AUFFB8)
+  examples:
+  - text: |
+     right 
+
+- intent: fsp2TSKCV10
+  examples:
+  - text: |
+     okay 
+
+- intent: acceptRequest(Fu:dap1TSK13)
+  examples:
+  - text: |
+     okay 
+
+- intent: fsp2AUFCV9;fsp2TUMCV0
+  examples:
+  - text: |
+     right 
+    metadata:
+      turnManagement: turnRelease
+
+- intent: autoPositive(Fe:fsp2AUFFB9)
+  examples:
+  - text: |
+     right 
+    metadata:
+      turnManagement: turnRelease
+
+- intent: fsp2SOMCV0
+  examples:
+  - text: |
+     sorry 
+
+- intent: apology
+  examples:
+  - text: |
+     sorry 
+  - text: |
+     sorry 
+
+- intent: fsp1AUFCV3;fsp1ALFCV4
+  examples:
+  - text: |
+     right 
+
+- intent: autoPositive(Fe:fsp1AUFFB3)
+  examples:
+  - text: |
+     right 
+
+- intent: alloPositive(Fe:fsp1ALFFB4)
+  examples:
+  - text: |
+     right 
+
+- intent: fsp2AUFCV10
+  examples:
+  - text: |
+     right 
+
+- intent: autoPositive(Fe:fsp2AUFFB10)
+  examples:
+  - text: |
+     right 
+
+- intent: fsp1AUFCV4;fsp1ALFCV5;fsp1TUMCV3
+  examples:
+  - text: |
+     right 
+    metadata:
+      turnManagement: turnTake
+
+- intent: autoPositive(Fe:fsp1AUFFB4)
+  examples:
+  - text: |
+     right 
+    metadata:
+      turnManagement: turnTake
+
+- intent: alloPositive(Fe:fsp1ALFFB5)
+  examples:
+  - text: |
+     right 
+    metadata:
+      turnManagement: turnTake
+
+- intent: fsp1TSKCV14
+  examples:
+  - text: |
+     east 
+
+- intent: fsp1TSKCV15
+  examples:
+  - text: |
+     sort of for a wee bit 
+
+- intent: inform_continue
+  examples:
+  - text: |
+     sort of for a wee bit 
+  - text: |
+     im coming down by the pine forest 
+  - text: |
+     til youre not 
+  - text: |
+     and its got a 
+  - text: |
+     between the wheatfields and the warehouse 
+
+- intent: fsp1TUMCV4;fsp1TIMCV0
+  examples:
+  - text: |
+     um 
+    metadata:
+      turnManagement: turnKeep
+
+- intent: stalling
+  examples:
+  - text: |
+     um 
+    metadata:
+      turnManagement: turnKeep
+  - text: |
+     ehm 
+    metadata:
+      turnManagement: turnTake
+  - text: |
+     and 
+    metadata:
+      turnManagement: turnKeep
+  - text: |
+     um 
+    metadata:
+      turnManagement: turnKeep
+  - text: |
+     um 
+    metadata:
+      turnManagement: turnKeep
+  - text: |
+     um 
+    metadata:
+      turnManagement: turnKeep
+
+- intent: fsp1TSKCV16
+  examples:
+  - text: |
+     and then start going southeast 
+
+- intent: fsp2AUFCV11
+  examples:
+  - text: |
+     right 
+
+- intent: autoPositive(Fe:fsp2AUFFB11)
+  examples:
+  - text: |
+     right 
+
+- intent: fsp2TSKCV11
+  examples:
+  - text: |
+     okay 
+
+- intent: acceptRequest(Fu:dap1TSK16)
+  examples:
+  - text: |
+     okay 
+  - text: |
+     right okay 
+
+- intent: fsp1TSKCV17
+  examples:
+  - text: |
+     pine forest on your way 
+
+- intent: fsp2AUFCV12;fsp2TUMCV1;fsp2TIMCV0
+  examples:
+  - text: |
+     ehm 
+    metadata:
+      turnManagement: turnTake
+
+- intent: autoNegative(Fe:fsp2AUFFB12)
+  examples:
+  - text: |
+     ehm 
+    metadata:
+      turnManagement: turnTake
+
+- intent: fsp2TSKCV12
+  examples:
+  - text: |
+     yeah thats right 
+
+- intent: agreement(Fu:dap1TSK17)
+  examples:
+  - text: |
+     yeah thats right 
+  - text: |
+     uh-huh 
+
+- intent: fsp2TSKCV13
+  examples:
+  - text: |
+     uh-huh 
+
+- intent: fsp1AUFCV5;fsp1ALFCV6
+  examples:
+  - text: |
+     right 
+
+- intent: autoPositive(Fe:fsp1AUFFB5)
+  examples:
+  - text: |
+     right 
+
+- intent: alloPositive(Fe:fsp1ALFFB6)
+  examples:
+  - text: |
+     right 
+
+- intent: fsp2TSKCV14
+  examples:
+  - text: |
+     right okay 
+
+- intent: fsp1TSKCV18
+  examples:
+  - text: |
+     til you get to just underneath pine forest 
+
+- intent: fsp2TSKCV15
+  examples:
+  - text: |
+     right 
+
+- intent: acceptRequest(Fu:dap1TSK18)
+  examples:
+  - text: |
+     right 
+
+- intent: fsp1TSKCV19
+  examples:
+  - text: |
+     and then start going south 
+
+- intent: fsp2TSKCV16
+  examples:
+  - text: |
+     okay 
+
+- intent: acceptRequest(Fu:dap1TSK19)
+  examples:
+  - text: |
+     okay 
+
+- intent: fsp1TSKCV20
+  examples:
+  - text: |
+     and then go east again 
+
+- intent: fsp1TUMCV5;fsp1TIMCV1
+  examples:
+  - text: |
+     and 
+    metadata:
+      turnManagement: turnKeep
+
+- intent: fsp1TSKCV21
+  examples:
+  - text: |
+     you loop round about a bakery 
+
+- intent: fsp2TSKCV17
+  examples:
+  - text: |
+     yeah 
+
+- intent: acceptRequest(Fu:dap1TSK21)
+  examples:
+  - text: |
+     yeah 
+  - text: |
+     okay 
+
+- intent: fsp1AUFCV6;fsp1ALFCV7
+  examples:
+  - text: |
+     right 
+
+- intent: autoPositive(Fe:fsp1AUFFB6)
+  examples:
+  - text: |
+     right 
+
+- intent: alloPositive(Fe:fsp1ALFFB7)
+  examples:
+  - text: |
+     right 
+
+- intent: fsp2TSKCV18
+  examples:
+  - text: |
+     im going east underneath the bakery 
+
+- intent: fsp1TSKCV22
+  examples:
+  - text: |
+     underneath the bakery 
+
+- intent: confirm(Fu:dap2TSK18)
+  examples:
+  - text: |
+     underneath the bakery 
+
+- intent: fsp2AUFCV13
+  examples:
+  - text: |
+     right 
+
+- intent: autoPositive(Fe:fsp2AUFFB13)
+  examples:
+  - text: |
+     right 
+
+- intent: fsp1ALFCV8
+  examples:
+  - text: |
+     uh-huh right 
+
+- intent: alloPositive(Fe:fsp1ALFFB8)
+  examples:
+  - text: |
+     uh-huh right 
+
+- intent: fsp2TSKCV19
+  examples:
+  - text: |
+     okay 
+
+- intent: fsp1TSKCV23
+  examples:
+  - text: |
+     and coming back round towards the west 
+
+- intent: fsp2AUFCV14
+  examples:
+  - text: |
+     whoa whoa 
+
+- intent: autoNegative(Fe:fsp2AUFFB14)
+  examples:
+  - text: |
+     whoa whoa 
+
+- intent: fsp2TIMCV1
+  examples:
+  - text: |
+     wait a minute 
+
+- intent: pausing
+  examples:
+  - text: |
+     wait a minute 
+
+- intent: fsp2AUFCV15
+  examples:
+  - text: |
+     right 
+
+- intent: autoPositive(Fe:fsp2AUFFB15)
+  examples:
+  - text: |
+     right 
+
+- intent: fsp2TSKCV20
+  examples:
+  - text: |
+     im coming down by the pine forest 
+
+- intent: fsp2TSKCV21
+  examples:
+  - text: |
+     im going right straight down 
+
+- intent: fsp1TSKCV24
+  examples:
+  - text: |
+     right 
+
+- intent: agreement(Fu:dap2TSK20)
+  examples:
+  - text: |
+     right 
+
+- intent: fsp2OCMCV0
+  examples:
+  - text: |
+     straight down 
+
+- intent: selfCorrection(Fe:fsp2OCMFB0)
+  examples:
+  - text: |
+     straight down 
+
+- intent: fsp2TSKCV22
+  examples:
+  - text: |
+     and then you s-- 
+
+- intent: fsp1TSKCV25
+  examples:
+  - text: |
+     til youre not 
+
+- intent: fsp1TSKCV26
+  examples:
+  - text: |
+     til youre at the top of the bakery 
+
+- intent: fsp2AUFCV16
+  examples:
+  - text: |
+     ah right 
+
+- intent: autoPositive(Fe:fsp2AUFFB16)
+  examples:
+  - text: |
+     ah right 
+
+- intent: fsp1ALFCV9
+  examples:
+  - text: |
+     right 
+
+- intent: alloPositive(Fe:fsp1ALFFB9)
+  examples:
+  - text: |
+     right 
+
+- intent: fsp2SOMCV1
+  examples:
+  - text: |
+     sorry 
+
+- intent: fsp2AUFCV17
+  examples:
+  - text: |
+     right 
+
+- intent: autoPositive(Fe:fsp2AUFFB17)
+  examples:
+  - text: |
+     right 
+
+- intent: fsp2TSKCV23
+  examples:
+  - text: |
+     okay 
+
+- intent: acceptRequest(Fu:dap1TSK23)
+  examples:
+  - text: |
+     okay 
+
+- intent: fsp1TSKCV27
+  examples:
+  - text: |
+     and loop round a bit until youre underneath it 
+
+- intent: fsp1AUFCV7;fsp1TUMCV6
+  examples:
+  - text: |
+     right 
+    metadata:
+      turnManagement: turnKeep
+
+- intent: fsp1TSKCV28
+  examples:
+  - text: |
+     and then west 
+
+- intent: fsp2AUFCV18
+  examples:
+  - text: |
+     right 
+
+- intent: autoPositive(Fe:fsp2AUFFB18)
+  examples:
+  - text: |
+     right 
+
+- intent: fsp2TSKCV24
+  examples:
+  - text: |
+     okay right got that 
+
+- intent: acceptRequest(Fu:dap1TSK27)
+  examples:
+  - text: |
+     okay right got that 
+
+- intent: fsp1AUFCV8
+  examples:
+  - text: |
+     right 
+
+- intent: autoPositive(Fe:fsp1AUFFB8)
+  examples:
+  - text: |
+     right 
+
+- intent: fsp1TSKCV29
+  examples:
+  - text: |
+     and then down south 
+
+- intent: fsp2TSKCV25
+  examples:
+  - text: |
+     okay 
+
+- intent: acceptRequest(Fu:dap1TSK29)
+  examples:
+  - text: |
+     okay 
+
+- intent: fsp1TSKCV30
+  examples:
+  - text: |
+     and theres a crane bay 
+
+- intent: fsp2TSKCV26
+  examples:
+  - text: |
+     yeah 
+
+- intent: agreement(Fu:dap1TSK30)
+  examples:
+  - text: |
+     yeah 
+
+- intent: fsp2TSKCV27
+  examples:
+  - text: |
+     thats it 
+
+- intent: fsp1TSKCV31
+  examples:
+  - text: |
+     right 
+
+- intent: confirm(Fu:dap2TSK27)
+  examples:
+  - text: |
+     right 
+
+- intent: fsp2AUFCV19
+  examples:
+  - text: |
+     uh-huh 
+
+- intent: autoPositive(Fe:fsp2AUFFB19)
+  examples:
+  - text: |
+     uh-huh 
+
+- intent: fsp1TSKCV32
+  examples:
+  - text: |
+     and its got a 
+
+- intent: fsp1TSKCV33
+  examples:
+  - text: |
+     can you curve 
+
+- intent: propositionalQuestion
+  examples:
+  - text: |
+     can you curve 
+
+- intent: fsp1TSKCV34
+  examples:
+  - text: |
+     follow the curve of crane bay 
+
+- intent: fsp2TSKCV28
+  examples:
+  - text: |
+     yeah 
+
+- intent: answer(Fu:dap1TSK33)
+  examples:
+  - text: |
+     yeah 
+
+- intent: fsp2TSKCV29
+  examples:
+  - text: |
+     right 
+
+- intent: acceptRequest(Fu:dap1TSK34)
+  examples:
+  - text: |
+     right 
+  - text: |
+     uh-huh 
+
+- intent: fsp1TSKCV35
+  examples:
+  - text: |
+     so youre going west 
+
+- intent: fsp2TSKCV30
+  examples:
+  - text: |
+     uh-huh 
+
+- intent: fsp2TSKCV31
+  examples:
+  - text: |
+     yep 
+
+- intent: confirm(Fu:dap1TSK35)
+  examples:
+  - text: |
+     yep 
+
+- intent: fsp1AUFCV9;fsp1ALFCV10;fsp1TUMCV7
+  examples:
+  - text: |
+     right 
+    metadata:
+      turnManagement: turnTake
+
+- intent: autoPositive(Fe:fsp1AUFFB9)
+  examples:
+  - text: |
+     right 
+    metadata:
+      turnManagement: turnTake
+
+- intent: alloPositive(Fe:fsp1ALFFB10)
+  examples:
+  - text: |
+     right 
+    metadata:
+      turnManagement: turnTake
+
+- intent: fsp1TSKCV36
+  examples:
+  - text: |
+     and then youre going southwest 
+
+- intent: fsp1TUMCV8;fsp1TIMCV2
+  examples:
+  - text: |
+     um 
+    metadata:
+      turnManagement: turnKeep
+
+- intent: fsp2TSKCV32
+  examples:
+  - text: |
+     mmhmm 
+
+- intent: acceptRequest(Fu:dap1TSK36)
+  examples:
+  - text: |
+     mmhmm 
+  - text: |
+     okay 
+
+- intent: fsp1TSKCV37
+  examples:
+  - text: |
+     between the wheatfields and the warehouse 
+
+- intent: fsp1TSKCV38
+  examples:
+  - text: |
+     between the two of them 
+
+- intent: fsp2AUFCV20
+  examples:
+  - text: |
+     right 
+
+- intent: autoPositive(Fe:fsp2AUFFB20)
+  examples:
+  - text: |
+     right 
+
+- intent: fsp2TSKCV33
+  examples:
+  - text: |
+     okay 
+
+- intent: fsp1AUFCV10
+  examples:
+  - text: |
+     right 
+
+- intent: autoPositive(Fe:fsp1AUFFB10)
+  examples:
+  - text: |
+     right 
+
+- intent: fsp1TSKCV39
+  examples:
+  - text: |
+     youre going 
+
+- intent: fsp2AUFCV21;fsp2TUMCV2
+  examples:
+  - text: |
+     yep 
+    metadata:
+      turnManagement: turnAssign
+
+- intent: autoPositive(Fe:fsp2AUFFB21)
+  examples:
+  - text: |
+     yep 
+    metadata:
+      turnManagement: turnAssign
+
+- intent: fsp1TSKCV40
+  examples:
+  - text: |
+     and then like go west 
+
+- intent: fsp2TSKCV34
+  examples:
+  - text: |
+     right 
+
+- intent: acceptRequest(Fu:dap1TSK40)
+  examples:
+  - text: |
+     right 
+  - text: |
+     okay 
+
+- intent: fsp1TSKCV41
+  examples:
+  - text: |
+     so youre between them 
+
+- intent: fsp1OCMCV0
+  examples:
+  - text: |
+     between them 
+
+- intent: selfCorrection(Fe:fsp1OCMFB0)
+  examples:
+  - text: |
+     between them 
+
+- intent: fsp2TSKCV35;fsp2ALFCV1
+  examples:
+  - text: |
+     between them 
+
+- intent: confirm(Fu:dap1TSK41)
+  examples:
+  - text: |
+     between them 
+
+- intent: alloPositive(Fe:fsp2ALFFB1)
+  examples:
+  - text: |
+     between them 
+
+- intent: fsp1TUMCV9;fsp1TIMCV3
+  examples:
+  - text: |
+     um 
+    metadata:
+      turnManagement: turnKeep
+
+- intent: fsp2AUFCV22
+  examples:
+  - text: |
+     right 
+
+- intent: autoPositive(Fe:fsp2AUFFB22)
+  examples:
+  - text: |
+     right 
+
+- intent: fsp1AUFCV11;fsp1ALFCV11
+  examples:
+  - text: |
+     mmhmm 
+
+- intent: autoPositive(Fe:fsp1AUFFB11)
+  examples:
+  - text: |
+     mmhmm 
+
+- intent: alloPositive(Fe:fsp1ALFFB11)
+  examples:
+  - text: |
+     mmhmm 
+
+- intent: fsp2TSKCV36
+  examples:
+  - text: |
+     okay 
+
+- intent: fsp1TSKCV42
+  examples:
+  - text: |
+     and then southwest towards the edge of the map 
+
+- intent: fsp2AUFCV23
+  examples:
+  - text: |
+     right 
+
+- intent: autoPositive(Fe:fsp2AUFFB23)
+  examples:
+  - text: |
+     right 
+
+- intent: fsp2TSKCV37
+  examples:
+  - text: |
+     okay 
+
+- intent: acceptRequest(Fu:dap1TSK42)
+  examples:
+  - text: |
+     okay 
+
+- intent: fsp1AUFCV12;fsp1ALFCV12
+  examples:
+  - text: |
+     right 
+
+- intent: autoPositive(Fe:fsp1AUFFB12)
+  examples:
+  - text: |
+     right 
+
+- intent: alloPositive(Fe:fsp1ALFFB12)
+  examples:
+  - text: |
+     right 
+
+- intent: fsp1TSKCV43
+  examples:
+  - text: |
+     and then south 
+
+- intent: fsp2AUFCV24
+  examples:
+  - text: |
+     mm 
+
+- intent: autoPositive(Fe:fsp2AUFFB24)
+  examples:
+  - text: |
+     mm 
+
+- intent: fsp2TSKCV38
+  examples:
+  - text: |
+     right 
+
+- intent: acceptRequest(Fu:dap1TSK43)
+  examples:
+  - text: |
+     right 
+
+- intent: fsp1TSKCV44
+  examples:
+  - text: |
+     and then youre going east 
+
+- intent: fsp1TUMCV10;fsp1TIMCV4
+  examples:
+  - text: |
+     um 
+    metadata:
+      turnManagement: turnKeep
+
+- intent: fsp1TSKCV45
+  examples:
+  - text: |
+     you come to the lighthouse 
+
+- intent: fsp2TSKCV39
+  examples:
+  - text: |
+     so right down past the caves 
+
+- intent: fsp1TSKCV46
+  examples:
+  - text: |
+     until you 
+
+- intent: fsp1TSKCV47
+  examples:
+  - text: |
+     then go east until you get to the lighthouse 
+
+- intent: fsp2AUFCV25
+  examples:
+  - text: |
+     right 
+
+- intent: autoPositive(Fe:fsp2AUFFB25)
+  examples:
+  - text: |
+     right 
+
+- intent: fsp2TSKCV40
+  examples:
+  - text: |
+     okay 
+
+- intent: acceptRequest(Fu:dap1TSK47)
+  examples:
+  - text: |
+     okay 
+
+- intent: fsp1AUFCV13;fsp1ALFCV13
+  examples:
+  - text: |
+     right 
+
+- intent: autoPositive(Fe:fsp1AUFFB13)
+  examples:
+  - text: |
+     right 
+
+- intent: alloPositive(Fe:fsp1ALFFB13)
+  examples:
+  - text: |
+     right 
+
+- intent: fsp1DISCV1
+  examples:
+  - text: |
+     thats the end 
+
+- intent: inform
+  examples:
+  - text: |
+     thats the end 
+
+- intent: fsp2TSKCV41
+  examples:
+  - text: |
+     above or below 
+
+- intent: fsp2AUFCV26
+  examples:
+  - text: |
+     laugh 
+
+- intent: autoPositive[positive]
+  examples:
+  - text: |
+     laugh 
+
+- intent: fsp1TSKCV48
+  examples:
+  - text: |
+     at the side 
+
+- intent: answer(Fu:dap2TSK41)
+  examples:
+  - text: |
+     at the side 
+
+- intent: fsp1AUFCV14
+  examples:
+  - text: |
+     laugh 
+
+- intent: autoPositive[positive](Fe:fsp1AUFFB14)
+  examples:
+  - text: |
+     laugh 
+
