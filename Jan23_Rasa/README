@@ -8,7 +8,7 @@ Updated files
 
 Please run by doing the followings:
 1. Get up a new initial Rasa model    ("rasa init" and then set ur path etc.)
-2. Replace the initial nlu.yml file with the one uploaded here
+2. Replace the initial nlu.yml and config.yml files with the one uploaded here
 3. Run the command "rasa train"
 4. In either our_dialogue_manager test1 or test2, input the message you would want the model to take (incrementally)
 5. Run the command "python our_dialogue_manager_test1.py"
