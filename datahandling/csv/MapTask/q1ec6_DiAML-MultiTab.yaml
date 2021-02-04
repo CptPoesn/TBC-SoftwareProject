@@ -6,15 +6,135 @@ nlu:
     metadata:
       turnManagement: turnTake
 
-- intent: autoPositive(Fe:fsp2AUFFB0)
+- intent: autoPositive
   examples:
   - text: |
        nonvocal 
+  - text: |
+       right 
+    metadata:
+      turnManagement: turnTake
+  - text: |
+       not as far down as that 
+  - text: |
+       right 
+  - text: |
+       and do a loop 
+  - text: |
+       right 
+  - text: |
+       oh 
+  - text: |
+       right 
+  - text: |
+       right 
+  - text: |
+       east again 
+  - text: |
+       right 
+  - text: |
+       right 
+    metadata:
+      turnManagement: turnRelease
+  - text: |
+       right 
+  - text: |
+       right 
+  - text: |
+       right 
+    metadata:
+      turnManagement: turnTake
+  - text: |
+       right 
+  - text: |
+       right 
+  - text: |
+       right 
+  - text: |
+       right 
+  - text: |
+       right 
+  - text: |
+       ah right 
+  - text: |
+       right 
+  - text: |
+       right 
+    metadata:
+      turnManagement: turnKeep
+  - text: |
+       right 
+  - text: |
+       right 
+  - text: |
+       uh-huh 
+  - text: |
+       right 
+    metadata:
+      turnManagement: turnTake
+  - text: |
+       right 
+  - text: |
+       right 
+  - text: |
+       yep 
+    metadata:
+      turnManagement: turnAssign
+  - text: |
+       right 
+  - text: |
+       mmhmm 
+  - text: |
+       right 
+  - text: |
+       right 
+  - text: |
+       mm 
+  - text: |
+       right 
+  - text: |
+       right 
+  - text: |
+       laugh 
+  - text: |
+       laugh 
 
-- intent: alloPositive(Fe:fsp2ALFFB0)
+- intent: alloPositive
   examples:
   - text: |
        nonvocal 
+  - text: |
+       no 
+  - text: |
+       and do a loop 
+  - text: |
+       east again 
+  - text: |
+       right 
+  - text: |
+       right 
+    metadata:
+      turnManagement: turnTake
+  - text: |
+       right 
+  - text: |
+       right 
+  - text: |
+       uh-huh right 
+  - text: |
+       right 
+  - text: |
+       right 
+    metadata:
+      turnManagement: turnTake
+  - text: |
+       between them 
+  - text: |
+       mmhmm 
+  - text: |
+       right 
+  - text: |
+       right 
 
 - intent: instruct
   examples:
@@ -79,38 +199,76 @@ nlu:
   - text: |
        then go east until you get to the lighthouse 
 
-- intent: acceptRequest(Fu:dap1TSK0)
+- intent: acceptRequest
   examples:
   - text: |
        okay 
   - text: |
        yeah 
-
-- intent: acceptRequest(Fu:dap1TSK1)
-  examples:
   - text: |
        mmhmm 
+  - text: |
+       right 
+  - text: |
+       right 
+  - text: |
+       okay 
+  - text: |
+       okay 
+  - text: |
+       okay 
+  - text: |
+       okay 
+  - text: |
+       right okay 
+  - text: |
+       right 
+  - text: |
+       okay 
+  - text: |
+       yeah 
+  - text: |
+       okay 
+  - text: |
+       okay 
+  - text: |
+       okay right got that 
+  - text: |
+       okay 
+  - text: |
+       right 
+  - text: |
+       uh-huh 
+  - text: |
+       mmhmm 
+  - text: |
+       okay 
+  - text: |
+       right 
+  - text: |
+       okay 
+  - text: |
+       okay 
+  - text: |
+       right 
+  - text: |
+       okay 
 
-- intent: setQuestion(Fe:fsp2AUFFB1)
+- intent: setQuestion
   examples:
   - text: |
        past a what 
 
-- intent: answer(Fu:dap2AUF1)
+- intent: answer
   examples:
   - text: |
        a forge 
-
-- intent: autoPositive
-  examples:
   - text: |
-       right 
-    metadata:
-      turnManagement: turnTake
+       you past the pine 
   - text: |
-       right 
-    metadata:
-      turnManagement: turnKeep
+       yeah 
+  - text: |
+       at the side 
 
 - intent: checkQuestion
   examples:
@@ -133,50 +291,10 @@ nlu:
   - text: |
        so right down past the caves 
 
-- intent: disconfirm(Fu:dap2TSK3)
+- intent: disconfirm
   examples:
   - text: |
        not as far down as that 
-
-- intent: autoPositive(Fe:fsp2AUFFB2)
-  examples:
-  - text: |
-       not as far down as that 
-
-- intent: alloPositive(Fe:fsp1ALFFB1)
-  examples:
-  - text: |
-       no 
-
-- intent: acceptRequest(Fu:dap1TSK4)
-  examples:
-  - text: |
-       right 
-
-- intent: autoPositive(Fe:fsp2AUFFB3)
-  examples:
-  - text: |
-       right 
-
-- intent: autoPositive(Fe:fsp2AUFFB4)
-  examples:
-  - text: |
-       and do a loop 
-
-- intent: alloPositive(Fe:fsp1ALFFB2)
-  examples:
-  - text: |
-       and do a loop 
-
-- intent: acceptRequest(Fu:dap1TSK7)
-  examples:
-  - text: |
-       right 
-
-- intent: autoPositive(Fe:fsp1AUFFB1)
-  examples:
-  - text: |
-       right 
 
 - intent: choiceQuestion
   examples:
@@ -184,16 +302,6 @@ nlu:
        and am i come like between these cliffs and pine or 
   - text: |
        above or below 
-
-- intent: autoPositive(Fe:fsp1AUFFB2)
-  examples:
-  - text: |
-       oh 
-
-- intent: answer(Fu:dap2TSK7)
-  examples:
-  - text: |
-       you past the pine 
 
 - intent: inform_pass
   examples:
@@ -210,88 +318,12 @@ nlu:
   - text: |
        between the two of them 
 
-- intent: autoPositive(Fe:fsp2AUFFB5)
-  examples:
-  - text: |
-       right 
-
-- intent: acceptRequest(Fu:dap1TSK6)
-  examples:
-  - text: |
-       okay 
-
-- intent: autoPositive(Fe:fsp2AUFFB6)
-  examples:
-  - text: |
-       right 
-
-- intent: acceptRequest(Fu:dap1TSK11)
-  examples:
-  - text: |
-       okay 
-
-- intent: autoPositive(Fe:fsp2AUFFB7)
-  examples:
-  - text: |
-       east again 
-
-- intent: alloPositive(Fe:fsp1ALFFB3)
-  examples:
-  - text: |
-       east again 
-
-- intent: autoPositive(Fe:fsp2AUFFB8)
-  examples:
-  - text: |
-       right 
-
-- intent: acceptRequest(Fu:dap1TSK13)
-  examples:
-  - text: |
-       okay 
-
-- intent: autoPositive(Fe:fsp2AUFFB9)
-  examples:
-  - text: |
-       right 
-    metadata:
-      turnManagement: turnRelease
-
 - intent: apology
   examples:
   - text: |
        sorry 
   - text: |
        sorry 
-
-- intent: autoPositive(Fe:fsp1AUFFB3)
-  examples:
-  - text: |
-       right 
-
-- intent: alloPositive(Fe:fsp1ALFFB4)
-  examples:
-  - text: |
-       right 
-
-- intent: autoPositive(Fe:fsp2AUFFB10)
-  examples:
-  - text: |
-       right 
-
-- intent: autoPositive(Fe:fsp1AUFFB4)
-  examples:
-  - text: |
-       right 
-    metadata:
-      turnManagement: turnTake
-
-- intent: alloPositive(Fe:fsp1ALFFB5)
-  examples:
-  - text: |
-       right 
-    metadata:
-      turnManagement: turnTake
 
 - intent: inform_continue
   examples:
@@ -333,328 +365,56 @@ nlu:
     metadata:
       turnManagement: turnKeep
 
-- intent: autoPositive(Fe:fsp2AUFFB11)
-  examples:
-  - text: |
-       right 
-
-- intent: acceptRequest(Fu:dap1TSK16)
-  examples:
-  - text: |
-       okay 
-  - text: |
-       right okay 
-
-- intent: autoNegative(Fe:fsp2AUFFB12)
+- intent: autoNegative
   examples:
   - text: |
        ehm 
     metadata:
       turnManagement: turnTake
+  - text: |
+       whoa whoa 
 
-- intent: agreement(Fu:dap1TSK17)
+- intent: agreement
   examples:
   - text: |
        yeah thats right 
   - text: |
        uh-huh 
-
-- intent: autoPositive(Fe:fsp1AUFFB5)
-  examples:
   - text: |
        right 
-
-- intent: alloPositive(Fe:fsp1ALFFB6)
-  examples:
-  - text: |
-       right 
-
-- intent: acceptRequest(Fu:dap1TSK18)
-  examples:
-  - text: |
-       right 
-
-- intent: acceptRequest(Fu:dap1TSK19)
-  examples:
-  - text: |
-       okay 
-
-- intent: acceptRequest(Fu:dap1TSK21)
-  examples:
   - text: |
        yeah 
-  - text: |
-       okay 
 
-- intent: autoPositive(Fe:fsp1AUFFB6)
-  examples:
-  - text: |
-       right 
-
-- intent: alloPositive(Fe:fsp1ALFFB7)
-  examples:
-  - text: |
-       right 
-
-- intent: confirm(Fu:dap2TSK18)
+- intent: confirm
   examples:
   - text: |
        underneath the bakery 
-
-- intent: autoPositive(Fe:fsp2AUFFB13)
-  examples:
   - text: |
        right 
-
-- intent: alloPositive(Fe:fsp1ALFFB8)
-  examples:
   - text: |
-       uh-huh right 
-
-- intent: autoNegative(Fe:fsp2AUFFB14)
-  examples:
+       yep 
   - text: |
-       whoa whoa 
+       between them 
 
 - intent: pausing
   examples:
   - text: |
        wait a minute 
 
-- intent: autoPositive(Fe:fsp2AUFFB15)
-  examples:
-  - text: |
-       right 
-
-- intent: agreement(Fu:dap2TSK20)
-  examples:
-  - text: |
-       right 
-
-- intent: selfCorrection(Fe:fsp2OCMFB0)
+- intent: selfCorrection
   examples:
   - text: |
        straight down 
-
-- intent: autoPositive(Fe:fsp2AUFFB16)
-  examples:
   - text: |
-       ah right 
-
-- intent: alloPositive(Fe:fsp1ALFFB9)
-  examples:
-  - text: |
-       right 
-
-- intent: autoPositive(Fe:fsp2AUFFB17)
-  examples:
-  - text: |
-       right 
-
-- intent: acceptRequest(Fu:dap1TSK23)
-  examples:
-  - text: |
-       okay 
-
-- intent: autoPositive(Fe:fsp2AUFFB18)
-  examples:
-  - text: |
-       right 
-
-- intent: acceptRequest(Fu:dap1TSK27)
-  examples:
-  - text: |
-       okay right got that 
-
-- intent: autoPositive(Fe:fsp1AUFFB8)
-  examples:
-  - text: |
-       right 
-
-- intent: acceptRequest(Fu:dap1TSK29)
-  examples:
-  - text: |
-       okay 
-
-- intent: agreement(Fu:dap1TSK30)
-  examples:
-  - text: |
-       yeah 
-
-- intent: confirm(Fu:dap2TSK27)
-  examples:
-  - text: |
-       right 
-
-- intent: autoPositive(Fe:fsp2AUFFB19)
-  examples:
-  - text: |
-       uh-huh 
+       between them 
 
 - intent: propositionalQuestion
   examples:
   - text: |
        can you curve 
 
-- intent: answer(Fu:dap1TSK33)
-  examples:
-  - text: |
-       yeah 
-
-- intent: acceptRequest(Fu:dap1TSK34)
-  examples:
-  - text: |
-       right 
-  - text: |
-       uh-huh 
-
-- intent: confirm(Fu:dap1TSK35)
-  examples:
-  - text: |
-       yep 
-
-- intent: autoPositive(Fe:fsp1AUFFB9)
-  examples:
-  - text: |
-       right 
-    metadata:
-      turnManagement: turnTake
-
-- intent: alloPositive(Fe:fsp1ALFFB10)
-  examples:
-  - text: |
-       right 
-    metadata:
-      turnManagement: turnTake
-
-- intent: acceptRequest(Fu:dap1TSK36)
-  examples:
-  - text: |
-       mmhmm 
-  - text: |
-       okay 
-
-- intent: autoPositive(Fe:fsp2AUFFB20)
-  examples:
-  - text: |
-       right 
-
-- intent: autoPositive(Fe:fsp1AUFFB10)
-  examples:
-  - text: |
-       right 
-
-- intent: autoPositive(Fe:fsp2AUFFB21)
-  examples:
-  - text: |
-       yep 
-    metadata:
-      turnManagement: turnAssign
-
-- intent: acceptRequest(Fu:dap1TSK40)
-  examples:
-  - text: |
-       right 
-  - text: |
-       okay 
-
-- intent: selfCorrection(Fe:fsp1OCMFB0)
-  examples:
-  - text: |
-       between them 
-
-- intent: confirm(Fu:dap1TSK41)
-  examples:
-  - text: |
-       between them 
-
-- intent: alloPositive(Fe:fsp2ALFFB1)
-  examples:
-  - text: |
-       between them 
-
-- intent: autoPositive(Fe:fsp2AUFFB22)
-  examples:
-  - text: |
-       right 
-
-- intent: autoPositive(Fe:fsp1AUFFB11)
-  examples:
-  - text: |
-       mmhmm 
-
-- intent: alloPositive(Fe:fsp1ALFFB11)
-  examples:
-  - text: |
-       mmhmm 
-
-- intent: autoPositive(Fe:fsp2AUFFB23)
-  examples:
-  - text: |
-       right 
-
-- intent: acceptRequest(Fu:dap1TSK42)
-  examples:
-  - text: |
-       okay 
-
-- intent: autoPositive(Fe:fsp1AUFFB12)
-  examples:
-  - text: |
-       right 
-
-- intent: alloPositive(Fe:fsp1ALFFB12)
-  examples:
-  - text: |
-       right 
-
-- intent: autoPositive(Fe:fsp2AUFFB24)
-  examples:
-  - text: |
-       mm 
-
-- intent: acceptRequest(Fu:dap1TSK43)
-  examples:
-  - text: |
-       right 
-
-- intent: autoPositive(Fe:fsp2AUFFB25)
-  examples:
-  - text: |
-       right 
-
-- intent: acceptRequest(Fu:dap1TSK47)
-  examples:
-  - text: |
-       okay 
-
-- intent: autoPositive(Fe:fsp1AUFFB13)
-  examples:
-  - text: |
-       right 
-
-- intent: alloPositive(Fe:fsp1ALFFB13)
-  examples:
-  - text: |
-       right 
-
 - intent: inform
   examples:
   - text: |
        thats the end 
-
-- intent: autoPositive[positive]
-  examples:
-  - text: |
-       laugh 
-
-- intent: answer(Fu:dap2TSK41)
-  examples:
-  - text: |
-       at the side 
-
-- intent: autoPositive[positive](Fe:fsp1AUFFB14)
-  examples:
-  - text: |
-       laugh 
 

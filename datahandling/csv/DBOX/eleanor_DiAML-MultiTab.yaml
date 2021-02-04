@@ -3,31 +3,100 @@ nlu:
   examples:
   - text: |
        alright hello again 
+  - text: |
+       hello 
 
 - intent: initGreeting
   examples:
   - text: |
        hello again 
 
-- intent: opening(Fu:dap1DIS0)
+- intent: returnGreeting
   examples:
   - text: |
        hello 
 
-- intent: returnGreeting(Fu:dap1SOM0)
-  examples:
-  - text: |
-       hello 
-
-- intent: autoPositive(Fe:fsp1AUFFB0)
+- intent: autoPositive
   examples:
   - text: |
        great 
+  - text: |
+       okay 
+  - text: |
+       great 
+  - text: |
+       $LAUGH 
+  - text: |
+       france 
+  - text: |
+       okay 
+    metadata:
+      turnManagement: turnKeep
+  - text: |
+       do I know any French which 
+  - text: |
+       okay 
+    metadata:
+      turnManagement: turnTake
+  - text: |
+       okay 
+    metadata:
+      turnManagement: turnTake
+  - text: |
+       now how do i ask that 
+  - text: |
+       okay 
+  - text: |
+       yes 
+  - text: |
+       ok 
+    metadata:
+      turnManagement: turnTake
+  - text: |
+       okay 
+    metadata:
+      turnManagement: turnTake
+  - text: |
+       okay 
+    metadata:
+      turnManagement: turnTake
+  - text: |
+       okay 
+    metadata:
+      turnManagement: turnTake
+  - text: |
+       okay 
+    metadata:
+      turnManagement: turnTake
+  - text: |
+       okay 
+    metadata:
+      turnManagement: turnTake
+  - text: |
+       yeah 
+  - text: |
+       mkay 
+  - text: |
+       know 
 
-- intent: alloPositive(Fe:fsp1ALFFB0)
+- intent: alloPositive
   examples:
   - text: |
        great 
+  - text: |
+       okay 
+  - text: |
+       great 
+  - text: |
+       that is a very good question 
+  - text: |
+       yeah 
+  - text: |
+       alright 
+    metadata:
+      turnManagement: turnTake
+  - text: |
+       well good try though 
 
 - intent: stalling
   examples:
@@ -142,40 +211,22 @@ nlu:
     metadata:
       turnManagement: turnKeep
 
-- intent: autoPositive(Fe:fsp1AUFFB1)
-  examples:
-  - text: |
-       okay 
-
-- intent: alloPositive(Fe:fsp1ALFFB1)
-  examples:
-  - text: |
-       okay 
-
-- intent: checkQuestion(Fe:fsp1AUFFB2)
+- intent: checkQuestion
   examples:
   - text: |
        so you know all of the rules 
 
-- intent: confirm(Fu:dap1AUF2)
+- intent: confirm
   examples:
   - text: |
        yes i do 
-
-- intent: autoPositive(Fe:fsp1AUFFB3)
-  examples:
-  - text: |
-       great 
-
-- intent: alloPositive(Fe:fsp1ALFFB2)
-  examples:
-  - text: |
-       great 
 
 - intent: setQuestion
   examples:
   - text: |
        what is your first question 
+  - text: |
+       what are you famous for 
   - text: |
        which country $UNINTELLIGIBLE 
   - text: |
@@ -193,20 +244,22 @@ nlu:
   - text: |
        can you name one thing that many people know that you did 
 
-- intent: setQuestion(Fu:dap1TSK0)
-  examples:
-  - text: |
-       what are you famous for 
-
-- intent: setAnswer(Fu:dap2TSK0)
+- intent: setAnswer
   examples:
   - text: |
        i am famous for being one of the wealthiest and most powerful women in western europe during the middle ages 
-
-- intent: autoPositive(Fe:fsp2AUFFB0)
-  examples:
   - text: |
-       $LAUGH 
+       france 
+  - text: |
+       i was the queen consort of france and later the queen consort of england 
+  - text: |
+       from eleven fifty four to eleven eighty nine 
+  - text: |
+       i was 
+  - text: |
+       SIL i was married to henry duke of normandy who became king henry the second of england 
+  - text: |
+       i was married to two kings and i participated in the second crusade while queen of france 
 
 - intent: choiceQuestion
   examples:
@@ -215,10 +268,12 @@ nlu:
   - text: |
        are you more famous for your time in england or in france 
 
-- intent: answer(Fu:dap2TSK1)
+- intent: answer
   examples:
   - text: |
        yes i was 
+  - text: |
+       unfortunately im not sure how to answer that question 
 
 - intent: pausing
   examples:
@@ -235,71 +290,32 @@ nlu:
   - text: |
        just a second 
 
-- intent: setAnswer(Fu:dap2TSK2)
-  examples:
-  - text: |
-       france 
-
-- intent: autoPositive(Fe:fsp2AUFFB1)
-  examples:
-  - text: |
-       france 
-
-- intent: autoPositive(Fe:fsp2AUFFB2)
-  examples:
-  - text: |
-       okay 
-    metadata:
-      turnManagement: turnKeep
-
-- intent: autoPositive(Fe:fsp2AUFFB3)
-  examples:
-  - text: |
-       do I know any French which 
-
-- intent: autoNegative(Fe:fsp1AUFFB4)
+- intent: autoNegative
   examples:
   - text: |
        could you clarify 
+  - text: |
+       now that does not work 
 
-- intent: acceptRequest(Fu:dap1AUF4)
+- intent: acceptRequest
   examples:
   - text: |
        okay 
 
-- intent: selfCorrection(Fe:fsp2OCMFB0)
+- intent: selfCorrection
   examples:
   - text: |
        which position 
-
-- intent: setAnswer(Fu:dap2TSK4)
-  examples:
-  - text: |
-       i was the queen consort of france and later the queen consort of england 
-
-- intent: autoPositive(Fe:fsp2AUFFB4)
-  examples:
-  - text: |
-       okay 
-    metadata:
-      turnManagement: turnTake
-
-- intent: selfCorrection(Fe:fsp2OCMFB1)
-  examples:
   - text: |
        years 
-
-- intent: setAnswer(Fu:dap2TSK5)
-  examples:
   - text: |
-       from eleven fifty four to eleven eighty nine 
-
-- intent: autoPositive(Fe:fsp2AUFFB5)
-  examples:
+       how do 
   - text: |
-       okay 
-    metadata:
-      turnManagement: turnTake
+       SIL i was 
+  - text: |
+       king 
+  - text: |
+       documented 
 
 - intent: request
   examples:
@@ -312,59 +328,26 @@ nlu:
   - text: |
        wait 
 
-- intent: autoPositive
-  examples:
-  - text: |
-       now how do i ask that 
-
-- intent: selfCorrection(Fe:fsp2OCMFB2)
-  examples:
-  - text: |
-       how do 
-
-- intent: autoNegative(Fe:fsp2AUFFB7)
-  examples:
-  - text: |
-       now that does not work 
-
-- intent: inform(Fe:fsp1AUFFB5)
+- intent: inform
   examples:
   - text: |
        i dont have an answer to that question 
-
-- intent: autoPositive(Fe:fsp2AUFFB8)
-  examples:
   - text: |
-       okay 
-
-- intent: setAnswer(Fu:dap2TSK7)
-  examples:
+       im not sure if i can answer it 
   - text: |
-       i was 
+       not sure that i can fully answer that question 
   - text: |
-       SIL i was married to henry duke of normandy who became king henry the second of england 
-
-- intent: autoPositive(Fe:fsp1AUFFB6)
-  examples:
+       i dont have an answer to that question 
   - text: |
-       yes 
-
-- intent: selfCorrection(Fe:fsp1OCMFB0)
-  examples:
+       unfortunately im not sure how to answer that question 
   - text: |
-       SIL i was 
-
-- intent: selfCorrection(Fe:fsp1OCMFB1)
-  examples:
+       but i dont have a answer to that question 
   - text: |
-       king 
-
-- intent: autoPositive(Fe:fsp2AUFFB9)
-  examples:
+       nah i dont think i know her 
   - text: |
-       ok 
-    metadata:
-      turnManagement: turnTake
+       well good try though 
+  - text: |
+       and maybe next time 
 
 - intent: inform_pass
   examples:
@@ -372,40 +355,6 @@ nlu:
        if its not too general for a question 
   - text: |
        my name is eleanor of aquitaine 
-
-- intent: alloPositive(Fe:fsp1ALFFB3)
-  examples:
-  - text: |
-       that is a very good question 
-
-- intent: inform[uncertain](Fe:fsp1AUFFB7)
-  examples:
-  - text: |
-       im not sure if i can answer it 
-
-- intent: inform[uncertain](Fe:fsp1AUFFB8)
-  examples:
-  - text: |
-       not sure that i can fully answer that question 
-
-- intent: autoPositive(Fe:fsp2AUFFB10)
-  examples:
-  - text: |
-       okay 
-    metadata:
-      turnManagement: turnTake
-
-- intent: setAnswer(Fu:dap2TSK10)
-  examples:
-  - text: |
-       i was married to two kings and i participated in the second crusade while queen of france 
-
-- intent: autoPositive(Fe:fsp2AUFFB11)
-  examples:
-  - text: |
-       okay 
-    metadata:
-      turnManagement: turnTake
 
 - intent: propositionalQuestion
   examples:
@@ -416,113 +365,35 @@ nlu:
   - text: |
        are you considered a hero by some 
 
-- intent: selfCorrection(Fe:fsp2OCMFB3)
-  examples:
-  - text: |
-       documented 
-
-- intent: inform(Fe:fsp1AUFFB9)
-  examples:
-  - text: |
-       i dont have an answer to that question 
-
-- intent: autoPositive(Fe:fsp2AUFFB12)
-  examples:
-  - text: |
-       okay 
-    metadata:
-      turnManagement: turnTake
-
-- intent: answer[uncertain](Fu:dap2TSK13)
-  examples:
-  - text: |
-       unfortunately im not sure how to answer that question 
-
-- intent: inform[uncertain](Fe:fsp1AUFFB10)
-  examples:
-  - text: |
-       unfortunately im not sure how to answer that question 
-
-- intent: propositionalAnswer[uncertain](Fu:dap2TSK14)
+- intent: propositionalAnswer
   examples:
   - text: |
        that is possible 
 
-- intent: inform(Fe:fsp1AUFFB11)
-  examples:
-  - text: |
-       but i dont have a answer to that question 
-
-- intent: autoPositive(Fe:fsp2AUFFB13)
-  examples:
-  - text: |
-       okay 
-    metadata:
-      turnManagement: turnTake
-
-- intent: apology(Fu:dap1TSK10)
+- intent: apology
   examples:
   - text: |
        sorry 
 
-- intent: alloPositive(Fe:fsp2ALFFB2)
+- intent: acceptApology
   examples:
   - text: |
        yeah 
 
-- intent: acceptApology(Fu:dap1SOM1)
-  examples:
-  - text: |
-       yeah 
-
-- intent: alloNegative(Fe:fsp2ALFFB3)
+- intent: alloNegative
   examples:
   - text: |
        youre not giving me a lot to work with 
 
-- intent: agreement(Fu:dap2ALF3)
+- intent: agreement
   examples:
   - text: |
        I know 
 
-- intent: autoPositive(Fe:fsp2AUFFB14)
-  examples:
-  - text: |
-       okay 
-    metadata:
-      turnManagement: turnTake
-
-- intent: correction(Fu:dap2307)
+- intent: correction
   examples:
   - text: |
        no 
-
-- intent: autoPositive(Fe:fsp2AUFFB15)
-  examples:
-  - text: |
-       yeah 
-
-- intent: inform(Fe:fsp2AUFFB16)
-  examples:
-  - text: |
-       nah i dont think i know her 
-
-- intent: autoPositive(Fe:fsp1AUFFB13)
-  examples:
-  - text: |
-       mkay 
-
-- intent: autoPositive(Fe:fsp2AUFFB17)
-  examples:
-  - text: |
-       know 
-
-- intent: alloPositive(Fe:fsp1ALFFB4)
-  examples:
-  - text: |
-       alright 
-    metadata:
-      turnManagement: turnTake
 
 - intent: interactionStructuring
   examples:
@@ -530,18 +401,6 @@ nlu:
        alright 
     metadata:
       turnManagement: turnTake
-
-- intent: alloPositive
-  examples:
-  - text: |
-       well good try though 
-
-- intent: inform[encouraging]
-  examples:
-  - text: |
-       well good try though 
-  - text: |
-       and maybe next time 
 
 - intent: closing
   examples:

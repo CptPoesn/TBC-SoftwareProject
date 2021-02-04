@@ -3,26 +3,25 @@ nlu:
   examples:
   - text: |
        hello again 
+  - text: |
+       hello 
 
 - intent: initGreeting
   examples:
   - text: |
        hello again 
 
-- intent: opening(Fu:dap1DIS0)
+- intent: returnGreeting
   examples:
   - text: |
        hello 
 
-- intent: returnGreeting(Fu:dap1SOM0)
-  examples:
-  - text: |
-       hello 
-
-- intent: alloPositive(Fe:fsp1ALFFB0)
+- intent: alloPositive
   examples:
   - text: |
        great 
+  - text: |
+       very good job 
 
 - intent: interactionStructuring
   examples:
@@ -38,22 +37,31 @@ nlu:
   - text: |
        where are you from 
 
-- intent: autoPositive(Fe:fsp2AUFFB0)
+- intent: autoPositive
   examples:
   - text: |
        mh 
     metadata:
       turnManagement: turnAccept
+  - text: |
+       okay 
+  - text: |
+       mh 
+    metadata:
+      turnManagement: turnTake
+  - text: |
+       mh 
+    metadata:
+      turnManagement: turnTake
+  - text: |
+       mh 
+    metadata:
+      turnManagement: turnTake
 
-- intent: inform(Fe:fsp1AUFFB0)
+- intent: inform
   examples:
   - text: |
        i can not answer that question 
-
-- intent: autoPositive(Fe:fsp2AUFFB1)
-  examples:
-  - text: |
-       okay 
 
 - intent: propositionalQuestion
   examples:
@@ -64,10 +72,14 @@ nlu:
   - text: |
        are you a musician 
 
-- intent: propositionalAnswer(Fu:dap2TSK1)
+- intent: propositionalAnswer
   examples:
   - text: |
        yes i am a real person 
+  - text: |
+       no i am still alive 
+  - text: |
+       yes i am a musician 
 
 - intent: stalling
   examples:
@@ -88,56 +100,20 @@ nlu:
     metadata:
       turnManagement: turnTake
 
-- intent: propositionalAnswer(Fu:dap2TSK2)
-  examples:
-  - text: |
-       no i am still alive 
-
-- intent: autoPositive(Fe:fsp2AUFFB2)
-  examples:
-  - text: |
-       mh 
-    metadata:
-      turnManagement: turnTake
-
-- intent: setAnswer(Fu:dap2TSK3)
+- intent: setAnswer
   examples:
   - text: |
        i am from barbados 
-
-- intent: autoPositive(Fe:fsp2AUFFB3)
-  examples:
-  - text: |
-       mh 
-    metadata:
-      turnManagement: turnTake
-
-- intent: propositionalAnswer(Fu:dap2TSK4)
-  examples:
-  - text: |
-       yes i am a musician 
-
-- intent: autoPositive(Fe:fsp2AUFFB4)
-  examples:
-  - text: |
-       mh 
-    metadata:
-      turnManagement: turnTake
 
 - intent: guess
   examples:
   - text: |
        are you rihanna 
 
-- intent: confirm(Fu:dap2TSK5)
+- intent: confirm
   examples:
   - text: |
        yes that is correct i am rihanna 
-
-- intent: alloPositive(Fe:fsp1ALFFB1)
-  examples:
-  - text: |
-       very good job 
 
 - intent: closing
   examples:

@@ -63,6 +63,8 @@ nlu:
   - text: |
        so youre going to 
   - text: |
+       youve got to avoid that i think 
+  - text: |
        so go south down past the walled city underneath your ghost town 
   - text: |
        and then slightly up 
@@ -92,6 +94,8 @@ nlu:
        and youll have to go up and over the top of the cattle ranch 
   - text: |
        which on my map is halfway between the buffalo and the fort 
+  - text: |
+       so you need to go up on a sort of hill 
   - text: |
        over the cattle ranch underneath buffalo or over the cattle ranch 
   - text: |
@@ -156,10 +160,36 @@ nlu:
     metadata:
       turnManagement: turnKeep
 
-- intent: acceptRequest(Fu:dap1TSK0)
+- intent: acceptRequest
   examples:
   - text: |
        mmhmm 
+  - text: |
+       okay 
+  - text: |
+       mm 
+  - text: |
+       mmhmm 
+  - text: |
+       okay 
+  - text: |
+       uh-huh 
+  - text: |
+       okay 
+  - text: |
+       right 
+  - text: |
+       right 
+  - text: |
+       right 
+  - text: |
+       right 
+  - text: |
+       mmhmm 
+  - text: |
+       right 
+  - text: |
+       right 
 
 - intent: checkQuestion
   examples:
@@ -176,30 +206,133 @@ nlu:
   - text: |
        under the fort 
 
-- intent: confirm(Fu:dap1TSK1)
+- intent: confirm
   examples:
   - text: |
        uh-huh 
+  - text: |
+       uh-huh 
+  - text: |
+       its almost on level with the fort 
+  - text: |
+       underneath the fort uh-huh 
 
-- intent: autoPositive(Fe:fsp1AUFFB0)
+- intent: autoPositive
   examples:
   - text: |
        right 
     metadata:
       turnManagement: turnTake
-
-- intent: selfCorrection(Fe:fsp1OCMFB0)
-  examples:
   - text: |
-       go 
-
-- intent: feedbackElicitation(Fe:fsp1ALFFB0)
-  examples:
+       okay 
+  - text: |
+       canoes 
+  - text: |
+       fast running creek 
+  - text: |
+       right okay 
+  - text: |
+       okay 
+    metadata:
+      turnManagement: turnTake
+  - text: |
+       mmhmm 
+  - text: |
+       you have fast running creek 
+  - text: |
+       slightly above 
+  - text: |
+       right 
+    metadata:
+      turnManagement: turnTake
+  - text: |
+       right 
+    metadata:
+      turnManagement: turnTake
+  - text: |
+       mmhmm 
+  - text: |
+       mmhmm 
+  - text: |
+       right 
+    metadata:
+      turnManagement: turnTake
+  - text: |
+       right 
+  - text: |
+       right 
+  - text: |
+       right 
+  - text: |
+       right 
+  - text: |
+       mmhmm 
+  - text: |
+       okay 
+    metadata:
+      turnManagement: turnRelease
+  - text: |
+       right 
+  - text: |
+       a ghost town 
+  - text: |
+       right 
+  - text: |
+       okay 
+    metadata:
+      turnManagement: turnTake
+  - text: |
+       right okay 
+  - text: |
+       right 
+    metadata:
+      turnManagement: turnTake
+  - text: |
+       to the right 
+  - text: |
+       okay 
+    metadata:
+      turnManagement: turnTake
+  - text: |
+       right 
+  - text: |
+       right 
+  - text: |
+       okay 
+    metadata:
+      turnManagement: turnTake
   - text: |
        okay 
 
-- intent: autoPositive(Fu:dap1ALF0)
+- intent: selfCorrection
   examples:
+  - text: |
+       go 
+  - text: |
+       go 
+  - text: |
+       youre _ pass 
+  - text: |
+       vertically in line 
+  - text: |
+       a c-shaped curve 
+  - text: |
+       ill 
+  - text: |
+       youre on 
+  - text: |
+       go up 
+  - text: |
+       wooden 
+
+- intent: feedbackElicitation
+  examples:
+  - text: |
+       okay 
+  - text: |
+       okay 
+  - text: |
+       okay 
   - text: |
        okay 
 
@@ -223,22 +356,36 @@ nlu:
   - text: |
        so 
 
-- intent: answer(Fu:dap1TSK6)
+- intent: answer
   examples:
   - text: |
        the canoes 
   - text: |
        fast running creek 
-
-- intent: autoPositive(Fe:fsp1AUFFB1)
-  examples:
   - text: |
-       canoes 
-
-- intent: autoPositive(Fe:fsp1AUFFB2)
-  examples:
+       no 
+  - text: |
+       right away down the very bottom 
+  - text: |
+       no 
   - text: |
        fast running creek 
+  - text: |
+       its just slightly above 
+  - text: |
+       uh-huh 
+  - text: |
+       right away on the far left 
+  - text: |
+       uh-huh 
+  - text: |
+       ghost town 
+  - text: |
+       ive not got anything between the carved wooden pole and the walled city 
+  - text: |
+       no 
+  - text: |
+       mmhmm 
 
 - intent: propositionalQuestion
   examples:
@@ -262,38 +409,6 @@ nlu:
        now do you have a cattle ranch 
   - text: |
        do you have a fort 
-
-- intent: answer(Fu:dap1TSK7)
-  examples:
-  - text: |
-       no 
-
-- intent: answer(Fu:dap1TSK8)
-  examples:
-  - text: |
-       right away down the very bottom 
-
-- intent: autoPositive(Fe:fsp1AUFFB3)
-  examples:
-  - text: |
-       right okay 
-
-- intent: selfCorrection(Fe:fsp1OCMFB1)
-  examples:
-  - text: |
-       go 
-
-- intent: acceptRequest(Fu:dap1TSK9)
-  examples:
-  - text: |
-       okay 
-
-- intent: autoPositive(Fe:fsp1AUFFB4)
-  examples:
-  - text: |
-       okay 
-    metadata:
-      turnManagement: turnTake
 
 - intent: inform_continue
   examples:
@@ -329,62 +444,21 @@ nlu:
   - text: |
        ive got here 
 
-- intent: answer(Fu:dap2TSK7)
-  examples:
-  - text: |
-       no 
-
-- intent: agreement(Fu:dap1TSK13)
+- intent: agreement
   examples:
   - text: |
        mm 
-
-- intent: selfCorrection(Fe:fsp1OCMFB2)
-  examples:
   - text: |
-       youre _ pass 
-
-- intent: acceptRequest(Fu:dap1TSK15)
-  examples:
+       right 
   - text: |
-       mm 
-
-- intent: autoPositive(Fe:fsp2AUFFB1)
-  examples:
+       score that out 
   - text: |
-       mmhmm 
-
-- intent: autoPositive(Fe:fsp1AUFFB5)
-  examples:
-  - text: |
-       you have fast running creek 
-
-- intent: answer(Fu:dap1TSK18)
-  examples:
-  - text: |
-       fast running creek 
+       right 
 
 - intent: choiceQuestion
   examples:
   - text: |
        on a level with the diamond mine or is it _ slightly below 
-
-- intent: answer(Fu:dap1TSK19)
-  examples:
-  - text: |
-       its just slightly above 
-
-- intent: autoPositive(Fe:fsp1AUFFB6)
-  examples:
-  - text: |
-       slightly above 
-
-- intent: autoPositive(Fe:fsp1AUFFB7)
-  examples:
-  - text: |
-       right 
-    metadata:
-      turnManagement: turnTake
 
 - intent: suggest
   examples:
@@ -395,336 +469,39 @@ nlu:
   - text: |
        above it 
 
-- intent: feedbackElicitation(Fe:fsp1ALFFB1)
-  examples:
-  - text: |
-       okay 
-
 - intent: apology
   examples:
   - text: |
        sorry 
 
-- intent: acceptRequest(Fu:dap1TSK24)
-  examples:
-  - text: |
-       mmhmm 
-
-- intent: answer(Fu:dap1TSK28)
-  examples:
-  - text: |
-       uh-huh 
-
-- intent: autoPositive(Fe:fsp1AUFFB8)
-  examples:
-  - text: |
-       right 
-    metadata:
-      turnManagement: turnTake
-
-- intent: autoPositive(Fe:fsp2AUFFB2)
-  examples:
-  - text: |
-       mmhmm 
-
-- intent: selfCorrection(Fe:fsp1OCMFB3)
-  examples:
-  - text: |
-       vertically in line 
-
-- intent: autoPositive(Fe:fsp2AUFFB3)
-  examples:
-  - text: |
-       mmhmm 
-
-- intent: acceptRequest(Fu:dap1TSK30)
-  examples:
-  - text: |
-       okay 
-
-- intent: autoPositive(Fe:fsp1AUFFB9)
-  examples:
-  - text: |
-       right 
-    metadata:
-      turnManagement: turnTake
-
-- intent: answer(Fu:dap1TSK33)
-  examples:
-  - text: |
-       right away on the far left 
-
-- intent: autoPositive(Fe:fsp1AUFFB10)
-  examples:
-  - text: |
-       right 
-
-- intent: correction(Fu:dap1TSK36)
+- intent: correction
   examples:
   - text: |
        no 
-
-- intent: autoPositive(Fe:fsp1AUFFB11)
-  examples:
   - text: |
-       right 
+       but its slightly higher than the fort 
 
-- intent: autoPositive(Fe:fsp1AUFFB12)
-  examples:
-  - text: |
-       right 
-
-- intent: autoPositive(Fe:fsp2AUFFB4)
-  examples:
-  - text: |
-       right 
-
-- intent: feedbackElicitation(Fe:fsp1ALFFB2)
-  examples:
-  - text: |
-       okay 
-
-- intent: autoPositive(Fu:dap1ALF2)
-  examples:
-  - text: |
-       mmhmm 
-
-- intent: autoPositive(Fe:fsp1AUFFB13)
-  examples:
-  - text: |
-       okay 
-    metadata:
-      turnManagement: turnRelease
-
-- intent: confirm(Fu:dap2TSK19)
-  examples:
-  - text: |
-       uh-huh 
-
-- intent: acceptRequest(Fu:dap1TSK44)
-  examples:
-  - text: |
-       uh-huh 
-
-- intent: answer(Fu:dap1TSK47)
-  examples:
-  - text: |
-       uh-huh 
-
-- intent: autoPositive(Fe:fsp1AUFFB14)
-  examples:
-  - text: |
-       right 
-
-- intent: answer(Fu:dap1TSK50)
-  examples:
-  - text: |
-       ghost town 
-
-- intent: autoPositive(Fe:fsp1AUFFB15)
-  examples:
-  - text: |
-       a ghost town 
-
-- intent: instruct[uncertain]
-  examples:
-  - text: |
-       youve got to avoid that i think 
-
-- intent: acceptRequest(Fu:dap1TSK53)
-  examples:
-  - text: |
-       okay 
-
-- intent: answer(Fu:dap2TSK26)
-  examples:
-  - text: |
-       ive not got anything between the carved wooden pole and the walled city 
-
-- intent: declineSuggest(Fu:dap2TSK24)
+- intent: declineSuggest
   examples:
   - text: |
        but the map shows a c-shaped curve 
-
-- intent: selfCorrection(Fe:fsp1OCMFB4)
-  examples:
-  - text: |
-       a c-shaped curve 
-
-- intent: agreement(Fu:dap1TSK58)
-  examples:
-  - text: |
-       right 
-
-- intent: agreement
-  examples:
-  - text: |
-       score that out 
-
-- intent: agreement(Fu:dap2TSK28)
-  examples:
-  - text: |
-       right 
-
-- intent: autoPositive(Fe:fsp2AUFFB6)
-  examples:
-  - text: |
-       right 
 
 - intent: NA
   examples:
   - text: |
        and sort of 
 
-- intent: acceptRequest(Fu:dap1TSK61)
-  examples:
-  - text: |
-       right 
-
-- intent: autoPositive(Fe:fsp1AUFFB16)
-  examples:
-  - text: |
-       okay 
-    metadata:
-      turnManagement: turnTake
-
-- intent: selfCorrection(Fe:fsp2OCMFB0)
-  examples:
-  - text: |
-       ill 
-
-- intent: autoNegative(Fe:fsp1AUFFB17)
+- intent: autoNegative
   examples:
   - text: |
        i dont have a saloon bar here 
 
-- intent: autoPositive(Fe:fsp1AUFFB18)
-  examples:
-  - text: |
-       right okay 
-
-- intent: acceptRequest(Fu:dap1TSK65)
-  examples:
-  - text: |
-       right 
-
-- intent: autoPositive
-  examples:
-  - text: |
-       right 
-    metadata:
-      turnManagement: turnTake
-
-- intent: autoPositive(Fe:fsp2AUFFB7)
-  examples:
-  - text: |
-       to the right 
-
-- intent: selfCorrection(Fe:fsp1OCMFB5)
-  examples:
-  - text: |
-       youre on 
-
-- intent: acceptRequest(Fu:dap1TSK67)
-  examples:
-  - text: |
-       right 
-
-- intent: autoPositive(Fe:fsp1AUFFB20)
+- intent: alloPositive
   examples:
   - text: |
        okay 
     metadata:
       turnManagement: turnTake
-
-- intent: alloPositive(Fe:fsp1ALFFB3)
-  examples:
-  - text: |
-       okay 
-    metadata:
-      turnManagement: turnTake
-
-- intent: answer(Fu:dap1TSK70)
-  examples:
-  - text: |
-       no 
-
-- intent: answer(Fu:dap1TSK71)
-  examples:
-  - text: |
-       mmhmm 
-
-- intent: acceptRequest(Fu:dap1TSK72)
-  examples:
-  - text: |
-       right 
-
-- intent: feedbackElicitation(Fe:fsp1ALFFB4)
-  examples:
-  - text: |
-       okay 
-
-- intent: autoPositive(Fu:dap1ALF4)
-  examples:
-  - text: |
-       right 
-
-- intent: confirm(Fu:dap2TSK37)
-  examples:
-  - text: |
-       its almost on level with the fort 
-
-- intent: correction(Fu:dap1TSK76)
-  examples:
-  - text: |
-       but its slightly higher than the fort 
-
-- intent: instruct(Fu:dap2TSK39)
-  examples:
-  - text: |
-       so you need to go up on a sort of hill 
-
-- intent: selfCorrection(Fe:fsp1OCMFB6)
-  examples:
-  - text: |
-       go up 
-
-- intent: acceptRequest(Fu:dap1TSK78)
-  examples:
-  - text: |
-       mmhmm 
-  - text: |
-       right 
-
-- intent: autoPositive(Fe:fsp2AUFFB9)
-  examples:
-  - text: |
-       right 
-
-- intent: confirm(Fu:dap2AUF10)
-  examples:
-  - text: |
-       underneath the fort uh-huh 
-
-- intent: selfCorrection(Fe:fsp1OCMFB7)
-  examples:
-  - text: |
-       wooden 
-
-- intent: acceptRequest(Fu:dap1DIS1)
-  examples:
-  - text: |
-       right 
-
-- intent: autoPositive(Fe:fsp1AUFFB21)
-  examples:
-  - text: |
-       okay 
-    metadata:
-      turnManagement: turnTake
-
-- intent: alloPositive(Fe:fsp1ALFFB6)
-  examples:
   - text: |
        okay 
     metadata:
@@ -734,11 +511,6 @@ nlu:
   examples:
   - text: |
        thats you finished 
-
-- intent: autoPositive(Fe:fsp2AUFFB11)
-  examples:
-  - text: |
-       okay 
 
 - intent: interactionStructuring
   examples:

@@ -3,18 +3,15 @@ nlu:
   examples:
   - text: |
        hello again 
+  - text: |
+       hello 
 
 - intent: initGreeting
   examples:
   - text: |
        hello again 
 
-- intent: opening(Fu:dap1DIS0)
-  examples:
-  - text: |
-       hello 
-
-- intent: returnGreeting(Fu:dap1SOM0)
+- intent: returnGreeting
   examples:
   - text: |
        hello 
@@ -24,30 +21,42 @@ nlu:
   - text: |
        ready to start with the next round 
 
-- intent: confirm(Fu:dap1DIS1)
+- intent: confirm
   examples:
   - text: |
        mhm 
 
-- intent: autoPositive(Fe:fsp1AUFFB0)
+- intent: autoPositive
   examples:
   - text: |
        alright 
-
-- intent: alloPositive(Fe:fsp1ALFFB0)
-  examples:
+  - text: |
+       great 
+  - text: |
+       yeah 
+  - text: |
+       okay 
+    metadata:
+      turnManagement: turnTake
+  - text: |
+       okay 
+  - text: |
+       ah okay 
+  - text: |
+       okay 
   - text: |
        alright 
 
-- intent: autoPositive(Fe:fsp1AUFFB1)
+- intent: alloPositive
   examples:
   - text: |
-       great 
-
-- intent: alloPositive(Fe:fsp1ALFFB1)
-  examples:
+       alright 
   - text: |
        great 
+  - text: |
+       very close 
+  - text: |
+       very close though 
 
 - intent: interactionStructuring
   examples:
@@ -135,15 +144,18 @@ nlu:
   - text: |
        and what are you doing 
 
-- intent: setAnswer(Fu:dap2TSK0)
+- intent: setAnswer
   examples:
   - text: |
        my mother tongue is english 
-
-- intent: setAnswer(Fu:dap2TSK1)
-  examples:
   - text: |
        i am from the united states 
+  - text: |
+       i am thirty three 
+  - text: |
+       thirty three years old 
+  - text: |
+       i am a professional tennis player 
 
 - intent: propositionalQuestion
   examples:
@@ -154,76 +166,38 @@ nlu:
   - text: |
        are you successful in tennis 
 
-- intent: propositionalAnswer(Fu:dap2TSK2)
+- intent: propositionalAnswer
   examples:
   - text: |
        yes i am still alive 
-
-- intent: setAnswer(Fu:dap2TSK3)
-  examples:
   - text: |
-       i am thirty three 
-  - text: |
-       thirty three years old 
+       yes I am very successful 
 
-- intent: selfCorrection(Fe:fsp1OCMFB0)
+- intent: selfCorrection
   examples:
   - text: |
        thirty 
-
-- intent: autoPositive(Fe:fsp2AUFFB0)
-  examples:
-  - text: |
-       yeah 
-
-- intent: setAnswer(Fu:dap2TSK4)
-  examples:
-  - text: |
-       i am a professional tennis player 
-
-- intent: autoPositive(Fe:fsp2AUFFB1)
-  examples:
-  - text: |
-       okay 
-    metadata:
-      turnManagement: turnTake
-
-- intent: selfCorrection(Fe:fsp2OCMFB0)
-  examples:
   - text: |
        with an 
 
-- intent: inform[certain](Fe:fsp1AUFFB2)
+- intent: inform
   examples:
   - text: |
        im not sure if i can answer that question 
-
-- intent: answer(Fu:dap2TSK5)
-  examples:
   - text: |
        no i cant answer that question 
 
-- intent: inform[uncertain](Fe:fsp1AUFFB3)
+- intent: answer
   examples:
   - text: |
        no i cant answer that question 
-
-- intent: autoPositive(Fe:fsp2AUFFB2)
-  examples:
-  - text: |
-       okay 
-
-- intent: propositionalAnswer(Fu:dap2TSK6)
-  examples:
-  - text: |
-       yes I am very successful 
 
 - intent: guess
   examples:
   - text: |
        are you serena williams 
 
-- intent: disconfirm(Fu:dap2TSK7)
+- intent: disconfirm
   examples:
   - text: |
        no 
@@ -235,45 +209,20 @@ nlu:
   - text: |
        but that is not the correct answer 
 
-- intent: alloPositive(Fe:fsp1ALFFB2)
-  examples:
-  - text: |
-       very close 
-
 - intent: inform_pass
   examples:
   - text: |
        im venus williams 
-
-- intent: autoPositive(Fe:fsp2AUFFB3)
-  examples:
-  - text: |
-       ah okay 
-
-- intent: alloPositive(Fe:fsp1ALFFB3)
-  examples:
-  - text: |
-       very close though 
 
 - intent: congratulation
   examples:
   - text: |
        very good try 
 
-- intent: autoPositive(Fe:fsp2AUFFB4)
-  examples:
-  - text: |
-       okay 
-
-- intent: thanking(Fu:dap1SOM1)
+- intent: thanking
   examples:
   - text: |
        thank you 
-
-- intent: autoPositive(Fe:fsp1AUFFB4)
-  examples:
-  - text: |
-       alright 
 
 - intent: closing
   examples:

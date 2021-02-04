@@ -3,21 +3,22 @@ nlu:
   examples:
   - text: |
        good afternoon 
+  - text: |
+       hello 
 
 - intent: initGreeting
   examples:
   - text: |
        good afternoon 
+  - text: |
+       nice to meet you 
 
-- intent: opening(Fe:fsp2DISFB0)
+- intent: returnGreeting
   examples:
   - text: |
        hello 
-
-- intent: returnGreeting(Fu:dap1SOM0)
-  examples:
   - text: |
-       hello 
+       nice to meet you 
 
 - intent: stalling
   examples:
@@ -139,40 +140,65 @@ nlu:
   - text: |
        where did you die 
 
-- intent: setAnswer(Fu:dap1SOM1)
+- intent: setAnswer
   examples:
   - text: |
        my name is gregor linn 
-
-- intent: autoPositive(Fe:fsp1AUFFB0)
-  examples:
-  - text: |
-       nice to meet you 
-
-- intent: initGreeting[positive](Fe:fsp1SOMFB2)
-  examples:
-  - text: |
-       nice to meet you 
-
-- intent: autoPositive[positive](Fe:fsp2AUFFB0)
-  examples:
-  - text: |
-       nice to meet you 
-
-- intent: returnGreeting[positive](Fu:dap1SOM2)
-  examples:
-  - text: |
-       nice to meet you 
-
-- intent: setAnswer(Fu:dap1SOM3)
-  examples:
   - text: |
        fine 
+  - text: |
+       i was 
+  - text: |
+       i was a princess 
+  - text: |
+       when i was alive 
+  - text: |
+       i am from england 
+  - text: |
+       i died in paris 
 
-- intent: autoPositive(Fe:fsp1AUFFB1)
+- intent: autoPositive
   examples:
   - text: |
+       nice to meet you 
+  - text: |
+       nice to meet you 
+  - text: |
        im doing well too 
+  - text: |
+       okay 
+  - text: |
+       okay 
+  - text: |
+       okay 
+  - text: |
+       okay i understand 
+  - text: |
+       okay 
+  - text: |
+       mhm 
+    metadata:
+      turnManagement: turnRelease
+  - text: |
+       okay 
+  - text: |
+       okay 
+  - text: |
+       alright 
+  - text: |
+       ah okay 
+  - text: |
+       alright 
+  - text: |
+       mhm 
+    metadata:
+      turnManagement: turnTake
+  - text: |
+       okay 
+  - text: |
+       mhm 
+  - text: |
+       okay 
 
 - intent: inform
   examples:
@@ -190,92 +216,30 @@ nlu:
   - text: |
        alright 
 
-- intent: autoPositive(Fe:fsp2AUFFB1)
-  examples:
-  - text: |
-       okay 
-
-- intent: autoPositive(Fe:fsp2AUFFB2)
-  examples:
-  - text: |
-       okay 
-
-- intent: autoPositive(Fe:fsp2AUFFB3)
-  examples:
-  - text: |
-       okay 
-
-- intent: autoPositive(Fe:fsp2AUFFB4)
-  examples:
-  - text: |
-       okay i understand 
-
-- intent: autoPositive(Fe:fsp2AUFFB5)
-  examples:
-  - text: |
-       okay 
-
-- intent: autoPositive(Fe:fsp1AUFFB2)
-  examples:
-  - text: |
-       mhm 
-    metadata:
-      turnManagement: turnRelease(Fu:dap2TUM1)
-
-- intent: selfCorrection(Fu:dap233)
+- intent: selfCorrection
   examples:
   - text: |
        is 
+  - text: |
+       i will 
+  - text: |
+       would you 
+  - text: |
+       i was 
 
-- intent: autoNegative(Fe:fsp1AUFFB3)
+- intent: autoNegative
   examples:
   - text: |
        could you repeat the questions 
-
-- intent: autoNegative(Fe:fsp1AUFFB4)
-  examples:
   - text: |
        could you clarify the question 
 
-- intent: selfCorrection(Fu:dap1141)
-  examples:
-  - text: |
-       i will 
-
-- intent: autoPositive(Fe:fsp2AUFFB6)
-  examples:
-  - text: |
-       okay 
-
-- intent: autoPositive(Fe:fsp2AUFFB7)
-  examples:
-  - text: |
-       okay 
-
-- intent: selfCorrection(Fu:dap1202)
-  examples:
-  - text: |
-       would you 
-
-- intent: autoPositive(Fe:fsp1AUFFB5)
-  examples:
-  - text: |
-       alright 
-
-- intent: autoPositive(Fe:fsp2AUFFB8)
-  examples:
-  - text: |
-       ah okay 
-
-- intent: alloPositive(Fe:fsp1ALFFB0)
+- intent: alloPositive
   examples:
   - text: |
        mhm 
-
-- intent: autoPositive(Fe:fsp1AUFFB6)
-  examples:
   - text: |
-       alright 
+       good job 
 
 - intent: suggest
   examples:
@@ -291,25 +255,12 @@ nlu:
   - text: |
        are you from america 
 
-- intent: propositionalAnswer(Fu:dap2TSK0)
+- intent: propositionalAnswer
   examples:
   - text: |
        no i am not 
-
-- intent: autoPositive(Fe:fsp2AUFFB9)
-  examples:
-  - text: |
-       mhm 
-    metadata:
-      turnManagement: turnTake
-
-- intent: propositionalAnswer(Fu:dap2TSK1)
-  examples:
   - text: |
        no i am not from germany 
-
-- intent: propositionalAnswer(Fu:dap2TSK2)
-  examples:
   - text: |
        no i am not from america 
 
@@ -322,52 +273,12 @@ nlu:
     metadata:
       turnManagement: turnKeep
 
-- intent: setAnswer
-  examples:
-  - text: |
-       i was 
-
-- intent: setAnswer(Fu:dap2TSK3)
-  examples:
-  - text: |
-       i was a princess 
-
-- intent: selfCorrection(Fu:dap1281)
-  examples:
-  - text: |
-       i was 
-
-- intent: setAnswer(Fu:dap1TSK5)
-  examples:
-  - text: |
-       when i was alive 
-
-- intent: setAnswer(Fu:dap2TSK4)
-  examples:
-  - text: |
-       i am from england 
-
-- intent: autoPositive(Fe:fsp2AUFFB10)
-  examples:
-  - text: |
-       okay 
-
-- intent: setAnswer(Fu:dap2TSK5)
-  examples:
-  - text: |
-       i died in paris 
-
-- intent: autoPositive(Fe:fsp2AUFFB11)
-  examples:
-  - text: |
-       mhm 
-
 - intent: guess
   examples:
   - text: |
        you are princess diana 
 
-- intent: confirm(Fu:dap2TSK6)
+- intent: confirm
   examples:
   - text: |
        yes 
@@ -376,11 +287,6 @@ nlu:
   examples:
   - text: |
        that is the correct answer 
-
-- intent: alloPositive(Fe:fsp1ALFFB1)
-  examples:
-  - text: |
-       good job 
 
 - intent: closing
   examples:
@@ -393,9 +299,4 @@ nlu:
   examples:
   - text: |
        good job 
-
-- intent: autoPositive(Fe:fsp2AUFFB12)
-  examples:
-  - text: |
-       okay 
 
