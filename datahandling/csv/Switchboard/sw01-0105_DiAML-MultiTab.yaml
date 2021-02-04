@@ -2,1501 +2,1501 @@ nlu:
 - intent: sw01-0105-fs1
   examples:
   - text: |
-    Jimmy
+      Jimmy
     metadata:
       turnManagement: turnAssign
 
 - intent: sw01-0105-fs2
   examples:
   - text: |
-    so how do you get most of your news?
+      so how do you get most of your news?
 
 - intent: setQuestion
   examples:
   - text: |
-    so how do you get most of your news?
+      so how do you get most of your news?
   - text: |
-    when you say the morning news, or evening news or national news is when? /
+      when you say the morning news, or evening news or national news is when? /
   - text: |
-    What newspapers do you read
+      What newspapers do you read
 
 - intent: sw01-0105-fs3
   examples:
   - text: |
-    Well
+      Well
     metadata:
       turnManagement: turnTake
 
 - intent: stalling
   examples:
   - text: |
-    Well
+      Well
     metadata:
       turnManagement: turnTake
   - text: |
-    uh
+      uh
   - text: |
-    uh
+      uh
   - text: |
-    Uh
+      Uh
     metadata:
       turnManagement: turnTake
   - text: |
-    Oh
+      Oh
     metadata:
       turnManagement: turnTake
   - text: |
-    Well
+      Well
     metadata:
       turnManagement: turnKeep
   - text: |
-    I don't, uh, I don't, uh
+      I don't, uh, I don't, uh
   - text: |
-    be-, because
+      be-, because
   - text: |
-    uh
+      uh
   - text: |
-    well
+      well
     metadata:
       turnManagement: turnKeep
   - text: |
-    I, uh, I
+      I, uh, I
   - text: |
-    uh
+      uh
   - text: |
-    Uh
+      Uh
   - text: |
-    o-, off 
+      o-, off 
   - text: |
-    uh
+      uh
   - text: |
-    of, of
+      of, of
   - text: |
-    Oh
+      Oh
   - text: |
-    What, what, uh
+      What, what, uh
   - text: |
-    uh
+      uh
   - text: |
-    uh
+      uh
   - text: |
-    I, I, I, uh
+      I, I, I, uh
   - text: |
-    a-, actually
+      a-, actually
   - text: |
-    uh, you know
+      uh, you know
   - text: |
-    you know
+      you know
   - text: |
-    the,  <inhaling> the
+      the,  <inhaling> the
   - text: |
-    newspape-, uh, news
+      newspape-, uh, news
   - text: |
-    uh
+      uh
   - text: |
-    the, the
+      the, the
   - text: |
-    uh, I mean
+      uh, I mean
   - text: |
-    they, they
+      they, they
   - text: |
-    uh
+      uh
     metadata:
       turnManagement: turnKeep
   - text: |
-    I, I
+      I, I
   - text: |
-    uh
+      uh
   - text: |
-    on, on, uh
+      on, on, uh
   - text: |
-    to, to
+      to, to
   - text: |
-    uh
+      uh
   - text: |
-    Uh
+      Uh
     metadata:
       turnManagement: turnTake
   - text: |
-    uh
+      uh
     metadata:
       turnManagement: turnTake
   - text: |
-    they're, they're
+      they're, they're
   - text: |
-    uh
+      uh
     metadata:
       turnManagement: turnKeep
   - text: |
-    uh
+      uh
     metadata:
       turnManagement: turnTake
   - text: |
-    I, I don't know
+      I, I don't know
   - text: |
-    the, the
+      the, the
   - text: |
-    uh
+      uh
   - text: |
-     r-, really
+       r-, really
   - text: |
-    uh
+      uh
   - text: |
-    uh
+      uh
     metadata:
       turnManagement: turnKeep
   - text: |
-    it's it's 
+      it's it's 
   - text: |
-    Well
+      Well
   - text: |
-    ne-, news, news 
+      ne-, news, news 
   - text: |
-    I, I
+      I, I
   - text: |
-    Oh
+      Oh
   - text: |
-    it, it
+      it, it
   - text: |
-    you know
+      you know
   - text: |
-    if, if
+      if, if
   - text: |
-    uh
+      uh
   - text: |
-    you're supposed, you're supposed
+      you're supposed, you're supposed
   - text: |
-    uh
+      uh
   - text: |
-    this, this
+      this, this
   - text: |
-    and, and
+      and, and
   - text: |
-    uh
+      uh
   - text: |
-    I've, I've
+      I've, I've
 
 - intent: sw01-0105-fs4
   examples:
   - text: |
-    I kind of I
+      I kind of I
 
 - intent: selfCorrection
   examples:
   - text: |
-    I kind of I
+      I kind of I
   - text: |
-    I'm a, I'm pretty much a
+      I'm a, I'm pretty much a
   - text: |
-    s-,  watch
+      s-,  watch
   - text: |
-    where I,  why I 
+      where I,  why I 
   - text: |
-    want-, help wanted
+      want-, help wanted
   - text: |
-    they,  they tr-, the newspapers are
+      they,  they tr-, the newspapers are
   - text: |
-    newspape-, uh, news
+      newspape-, uh, news
   - text: |
-    McNeil, Neil
+      McNeil, Neil
   - text: |
-    he's leaving, one of them is leaving
+      he's leaving, one of them is leaving
   - text: |
-    a lot of it's still a lot of
+      a lot of it's still a lot of
   - text: |
-    where you, where they
+      where you, where they
   - text: |
-    just in-, just
+      just in-, just
   - text: |
-    if you, if you'll
+      if you, if you'll
   - text: |
-    you're going, your opinion is going
+      you're going, your opinion is going
   - text: |
-    about, on 
+      about, on 
   - text: |
-    pinion, opinion
+      pinion, opinion
   - text: |
-    haven't, would
+      haven't, would
 
 - intent: sw01-0105-fs5
   examples:
   - text: |
-    uh
+      uh
 
 - intent: sw01-0105-fs6
   examples:
   - text: |
-    I watch the national news every day, for one,
+      I watch the national news every day, for one,
 
 - intent: answer
   examples:
   - text: |
-    I watch the national news every day, for one,
+      I watch the national news every day, for one,
   - text: |
-    I also read one or two papers a day 
+      I also read one or two papers a day 
   - text: |
-    I tune in to CNN a lot. 
+      I tune in to CNN a lot. 
   - text: |
-    every evening at six thirty, I believe, I watch the national news
+      every evening at six thirty, I believe, I watch the national news
   - text: |
-    I read the local newspaper
+      I read the local newspaper
   - text: |
-    I also try and read one of the major dailies like the CHICAGO TRIBUNE, or the NEW YORK TIMES or something like that.
+      I also try and read one of the major dailies like the CHICAGO TRIBUNE, or the NEW YORK TIMES or something like that.
 
 - intent: sw01-0105-fs7
   examples:
   - text: |
-    uh
+      uh
 
 - intent: sw01-0105-fs8
   examples:
   - text: |
-    I also read one or two papers a day 
+      I also read one or two papers a day 
 
 - intent: sw01-0105-fs9
   examples:
   - text: |
-    and
+      and
     metadata:
       turnManagement: turnKeep
 
 - intent: sw01-0105-fs10
   examples:
   - text: |
-    I'm a news junkie
+      I'm a news junkie
 
 - intent: inform_continue
   examples:
   - text: |
-    I'm a news junkie
+      I'm a news junkie
   - text: |
-    I would probably be a junkie or watch <laughter> CNN a lot
+      I would probably be a junkie or watch <laughter> CNN a lot
   - text: |
-    I don't subscribe to cable
+      I don't subscribe to cable
   - text: |
-    because of the poor service and also because I give to the United Way
+      because of the poor service and also because I give to the United Way
   - text: |
-    I take away a addiction <laughter>
+      I take away a addiction <laughter>
   - text: |
-    overall, the quality of the news you get of most sources I would say is pretty low. 
+      overall, the quality of the news you get of most sources I would say is pretty low. 
   - text: |
-    usually you get pretty incomplete coverage 
+      usually you get pretty incomplete coverage 
   - text: |
-    that's one of the reasons why I try and get as many sources as possible, 
+      that's one of the reasons why I try and get as many sources as possible, 
   - text: |
-    because if you hear the same story from three different sources, then you get a much clearer picture of what is going on. You would hope,
+      because if you hear the same story from three different sources, then you get a much clearer picture of what is going on. You would hope,
   - text: |
-    For a while there I subscribed to NEW YORK TIMES, a couple of newspapers
+      For a while there I subscribed to NEW YORK TIMES, a couple of newspapers
   - text: |
-    because my fiance - she was unemployed for a while 
+      because my fiance - she was unemployed for a while 
   - text: |
-    so she really needed to look at the help wanted ads
+      so she really needed to look at the help wanted ads
   - text: |
-    and so often the newspapers are trying to compete with a lot of other sources of news
+      and so often the newspapers are trying to compete with a lot of other sources of news
   - text: |
-    I don't know,
+      I don't know,
   - text: |
-    NEW YORK TIMES is okay
+      NEW YORK TIMES is okay
   - text: |
-    but when you read a lot of this stuff, the quality of the writing has definitely gone down in the last ten years or so
+      but when you read a lot of this stuff, the quality of the writing has definitely gone down in the last ten years or so
   - text: |
-    they say it's  like the sixth grade reading level
+      they say it's  like the sixth grade reading level
   - text: |
-    but, I don't know, I think if you listen to like NPR or something like
+      but, I don't know, I think if you listen to like NPR or something like
   - text: |
-    I like listening to that when I get a chance, when I'm in the car a long enough time to listen to it, because I
+      I like listening to that when I get a chance, when I'm in the car a long enough time to listen to it, because I
   - text: |
-    I miss NPR a lot also
+      I miss NPR a lot also
   - text: |
-    I really like them because they give, instead of being, as your newspaper or your TV news where you get a five minute blurb or a ten paragraph blurb, they go really in depth on topics which i think is good
+      I really like them because they give, instead of being, as your newspaper or your TV news where you get a five minute blurb or a ten paragraph blurb, they go really in depth on topics which i think is good
   - text: |
-    Neil and Lehrer, they're pretty good too
+      Neil and Lehrer, they're pretty good too
   - text: |
-    I guess one of them is leaving.
+      I guess one of them is leaving.
   - text: |
-    but I guess it's still a lot of hype
+      but I guess it's still a lot of hype
   - text: |
-    but then you also have things where they broadcast the Clarence Thomas hearings basically the whole length of them which I thought was really good.
+      but then you also have things where they broadcast the Clarence Thomas hearings basically the whole length of them which I thought was really good.
   - text: |
-    I had some visitor, he was just, I don't know, fixated on that, just listened to it constantly
+      I had some visitor, he was just, I don't know, fixated on that, just listened to it constantly
   - text: |
-    and I guess that's good when it's live, if you'll really want that
+      and I guess that's good when it's live, if you'll really want that
   - text: |
-    but the news that you would get from any other source is being generated from that event, which is something that's good also about C Span which I tune into every once in a while
+      but the news that you would get from any other source is being generated from that event, which is something that's good also about C Span which I tune into every once in a while
   - text: |
-    but that's if you don't watch it there, then you're going to hear somebody else's canned report, somebody else's view about it
+      but that's if you don't watch it there, then you're going to hear somebody else's canned report, somebody else's view about it
   - text: |
-    if you watch the news, your opinion is going to be formed on what somebody else thought about it
+      if you watch the news, your opinion is going to be formed on what somebody else thought about it
   - text: |
-    as opposed to actually watching it yourself and forming your own opinion, which I would  be much more in favor of forming my own opinion as opposed to following someone else's
+      as opposed to actually watching it yourself and forming your own opinion, which I would  be much more in favor of forming my own opinion as opposed to following someone else's
   - text: |
-    I guess that's true
+      I guess that's true
   - text: |
-    one of the ways that I get information is, every day when I log in on the computer I subscribe to this thing
+      one of the ways that I get information is, every day when I log in on the computer I subscribe to this thing
   - text: |
-    it's free inside the company
+      it's free inside the company
   - text: |
-    it's called INTELLECT
+      it's called INTELLECT
   - text: |
-    they basically, type out abstracts which are really literally, -
+      they basically, type out abstracts which are really literally, -
   - text: |
-    I've actually read the actual articles
+      I've actually read the actual articles
 
 - intent: sw01-0105-fs11
   examples:
   - text: |
-    I'm a, I'm pretty much a
+      I'm a, I'm pretty much a
 
 - intent: sw01-0105-fs12
   examples:
   - text: |
-    and
+      and
     metadata:
       turnManagement: turnKeep
 
 - intent: sw01-0105-fs13
   examples:
   - text: |
-    I tune in to CNN a lot. 
+      I tune in to CNN a lot. 
 
 - intent: sw01-0105-fs14
   examples:
   - text: |
-    Oh,  wow  
+      Oh,  wow  
 
 - intent: autoPositive
   examples:
   - text: |
-    Oh,  wow  
+      Oh,  wow  
   - text: |
-    okay
+      okay
   - text: |
-    Uh-huh
+      Uh-huh
   - text: |
-    Uh-huh
+      Uh-huh
   - text: |
-     <Laughter>
+       <Laughter>
   - text: |
-    Oh
+      Oh
   - text: |
-    Uh-huh
+      Uh-huh
   - text: |
-    Uh-huh
+      Uh-huh
   - text: |
-    Right
+      Right
   - text: |
-    Uh-huh
+      Uh-huh
   - text: |
-    Right. /
+      Right. /
   - text: |
-    <Laughter>
+      <Laughter>
   - text: |
-    Pretty low
+      Pretty low
   - text: |
-    Uh-huh
+      Uh-huh
   - text: |
-    Uh-huh
+      Uh-huh
   - text: |
-    Uh-uh
+      Uh-uh
   - text: |
-    really
+      really
 
 - intent: sw01-0105-fs15
   examples:
   - text: |
-    So
+      So
     metadata:
       turnManagement: turnKeep
 
 - intent: sw01-0105-fs16
   examples:
   - text: |
-    when you say the morning news, or evening news or national news is when? /
+      when you say the morning news, or evening news or national news is when? /
 
 - intent: sw01-0105-fs17
   examples:
   - text: |
-    Uh
+      Uh
     metadata:
       turnManagement: turnTake
 
 - intent: sw01-0105-fs18
   examples:
   - text: |
-    every evening at six thirty, I believe, I watch the national news
+      every evening at six thirty, I believe, I watch the national news
 
 - intent: sw01-0105-fs19
   examples:
   - text: |
-    Oh
+      Oh
     metadata:
       turnManagement: turnTake
 
 - intent: sw01-0105-fs20
   examples:
   - text: |
-    okay
+      okay
 
 - intent: sw01-0105-fs21
   examples:
   - text: |
-    Well
+      Well
     metadata:
       turnManagement: turnKeep
 
 - intent: sw01-0105-fs22
   examples:
   - text: |
-    I would probably be a junkie or watch <laughter> CNN a lot
+      I would probably be a junkie or watch <laughter> CNN a lot
 
 - intent: sw01-0105-fs23
   examples:
   - text: |
-    s-,  watch
+      s-,  watch
 
 - intent: sw01-0105-fs24
   examples:
   - text: |
-    but
+      but
     metadata:
       turnManagement: turnKeep
 
 - intent: sw01-0105-fs25
   examples:
   - text: |
-    I don't subscribe to cable
+      I don't subscribe to cable
 
 - intent: sw01-0105-fs26
   examples:
   - text: |
-    I don't, uh, I don't, uh
+      I don't, uh, I don't, uh
 
 - intent: sw01-0105-fs27
   examples:
   - text: |
-    Uh-huh
+      Uh-huh
 
 - intent: sw01-0105-fs28
   examples:
   - text: |
-    be-, because
+      be-, because
 
 - intent: sw01-0105-fs29
   examples:
   - text: |
-    because of the poor service and also because I give to the United Way
+      because of the poor service and also because I give to the United Way
 
 - intent: sw01-0105-fs30
   examples:
   - text: |
-    uh
+      uh
 
 - intent: sw01-0105-fs31
   examples:
   - text: |
-    well
+      well
     metadata:
       turnManagement: turnKeep
 
 - intent: sw01-0105-fs32
   examples:
   - text: |
-    I, uh, I
+      I, uh, I
 
 - intent: sw01-0105-fs33
   examples:
   - text: |
-    and so
+      and so
     metadata:
       turnManagement: turnKeep
 
 - intent: sw01-0105-fs34
   examples:
   - text: |
-    I figured that amount of money I just donate to that.
+      I figured that amount of money I just donate to that.
 
 - intent: inform_pass
   examples:
   - text: |
-    I figured that amount of money I just donate to that.
+      I figured that amount of money I just donate to that.
   - text: |
-     Oh, something
+       Oh, something
   - text: |
-    still, you know, hard to say that what you've heard is what really is.
+      still, you know, hard to say that what you've heard is what really is.
   - text: |
-    but I swear it's at least second or third grade sometimes.
+      but I swear it's at least second or third grade sometimes.
   - text: |
-    I really like NPR a lot
+      I really like NPR a lot
   - text: |
-    their editorial stand point seems to be a lot better than, say, your major network news and that kind of thing
+      their editorial stand point seems to be a lot better than, say, your major network news and that kind of thing
   - text: |
-    Had that invasion or whatever it is
+      Had that invasion or whatever it is
   - text: |
-    I mean, that was a joke
+      I mean, that was a joke
   - text: |
-    but that's not really providing you news. 
+      but that's not really providing you news. 
   - text: |
-    it's more like a media event rather than reporting
+      it's more like a media event rather than reporting
   - text: |
-    That's kind of boring to me, I think
+      That's kind of boring to me, I think
 
 - intent: sw01-0105-fs35
   examples:
   - text: |
-    Uh-huh
+      Uh-huh
 
 - intent: sw01-0105-fs36
   examples:
   - text: |
-    as opposed to paying for cable
+      as opposed to paying for cable
 
 - intent: checkQuestion
   examples:
   - text: |
-    as opposed to paying for cable
+      as opposed to paying for cable
   - text: |
-    I guess a year ago you're probably watching CNN a lot, right?
+      I guess a year ago you're probably watching CNN a lot, right?
 
 - intent: sw01-0105-fs37
   examples:
   - text: |
-    Yeah
+      Yeah
 
 - intent: confirm
   examples:
   - text: |
-    Yeah
+      Yeah
   - text: |
-    Right <laughter> 
+      Right <laughter> 
   - text: |
-    yeah
+      yeah
 
 - intent: sw01-0105-fs38
   examples:
   - text: |
-    I take away a addiction <laughter>
+      I take away a addiction <laughter>
 
 - intent: sw01-0105-fs39
   examples:
   - text: |
-    uh
+      uh
 
 - intent: sw01-0105-fs40
   examples:
   - text: |
-     <Laughter>
+       <Laughter>
 
 - intent: sw01-0105-fs41
   examples:
   - text: |
-     Oh, something
+       Oh, something
 
 - intent: sw01-0105-fs42
   examples:
   - text: |
-    Yeah
+      Yeah
 
 - intent: agreement
   examples:
   - text: |
-    Yeah
+      Yeah
   - text: |
-    Right
+      Right
   - text: |
-    That's pretty good.  /
+      That's pretty good.  /
   - text: |
-    Right
+      Right
   - text: |
-    yeah
+      yeah
   - text: |
-    Sure was
+      Sure was
   - text: |
-    Yeah that was
+      Yeah that was
   - text: |
-    Oh yeah, the NPR doing that, yeah, I know
+      Oh yeah, the NPR doing that, yeah, I know
   - text: |
-    Right
+      Right
   - text: |
-    Yeah, it is really kind of boring
+      Yeah, it is really kind of boring
   - text: |
-    Yeah
+      Yeah
   - text: |
-    Yeah
+      Yeah
 
 - intent: sw01-0105-fs43
   examples:
   - text: |
-    Well
+      Well
     metadata:
       turnManagement: turnTake
 
 - intent: sw01-0105-fs44
   examples:
   - text: |
-    I
+      I
 
 - intent: retraction
   examples:
   - text: |
-    I
+      I
   - text: |
-    I,  I 
+      I,  I 
   - text: |
-    It's
+      It's
   - text: |
-    they also
+      they also
   - text: |
-    that's what you're supposed to
+      that's what you're supposed to
 
 - intent: sw01-0105-fs45
   examples:
   - text: |
-    Uh
+      Uh
 
 - intent: sw01-0105-fs46
   examples:
   - text: |
-    I,  I 
+      I,  I 
 
 - intent: sw01-0105-fs47
   examples:
   - text: |
-    overall, the quality of the news you get of most sources I would say is pretty low. 
+      overall, the quality of the news you get of most sources I would say is pretty low. 
 
 - intent: sw01-0105-fs48
   examples:
   - text: |
-    o-, off 
+      o-, off 
 
 - intent: sw01-0105-fs49
   examples:
   - text: |
-    uh
+      uh
 
 - intent: sw01-0105-fs50
   examples:
   - text: |
-    It's
+      It's
 
 - intent: sw01-0105-fs51
   examples:
   - text: |
-    usually you get pretty incomplete coverage 
+      usually you get pretty incomplete coverage 
 
 - intent: sw01-0105-fs52
   examples:
   - text: |
-    and
+      and
     metadata:
       turnManagement: turnKeep
 
 - intent: sw01-0105-fs53
   examples:
   - text: |
-    that's one of the reasons why I try and get as many sources as possible, 
+      that's one of the reasons why I try and get as many sources as possible, 
 
 - intent: sw01-0105-fs54
   examples:
   - text: |
-    where I,  why I 
+      where I,  why I 
 
 - intent: sw01-0105-fs55
   examples:
   - text: |
-    because if you hear the same story from three different sources, then you get a much clearer picture of what is going on. You would hope,
+      because if you hear the same story from three different sources, then you get a much clearer picture of what is going on. You would hope,
 
 - intent: sw01-0105-fs56
   examples:
   - text: |
-    of, of
+      of, of
 
 - intent: sw01-0105-fs57
   examples:
   - text: |
-    but
+      but
     metadata:
       turnManagement: turnKeep
 
 - intent: sw01-0105-fs58
   examples:
   - text: |
-    still, you know, hard to say that what you've heard is what really is.
+      still, you know, hard to say that what you've heard is what really is.
 
 - intent: sw01-0105-fs59
   examples:
   - text: |
-    Oh
+      Oh
 
 - intent: sw01-0105-fs60
   examples:
   - text: |
-    What
+      What
     metadata:
       turnManagement: turnTake
 
 - intent: sw01-0105-fs61
   examples:
   - text: |
-    What, what, uh
+      What, what, uh
 
 - intent: sw01-0105-fs62
   examples:
   - text: |
-    What newspapers do you read
+      What newspapers do you read
 
 - intent: sw01-0105-fs63
   examples:
   - text: |
-    Well
+      Well
     metadata:
       turnManagement: turnTake
 
 - intent: sw01-0105-fs64
   examples:
   - text: |
-    I read the local newspaper
+      I read the local newspaper
 
 - intent: sw01-0105-fs65
   examples:
   - text: |
-    uh
+      uh
 
 - intent: sw01-0105-fs66
   examples:
   - text: |
-    and
+      and
     metadata:
       turnManagement: turnKeep
 
 - intent: sw01-0105-fs67
   examples:
   - text: |
-    I also try and read one of the major dailies like the CHICAGO TRIBUNE, or the NEW YORK TIMES or something like that.
+      I also try and read one of the major dailies like the CHICAGO TRIBUNE, or the NEW YORK TIMES or something like that.
 
 - intent: sw01-0105-fs68
   examples:
   - text: |
-    uh
+      uh
 
 - intent: sw01-0105-fs69
   examples:
   - text: |
-    Uh-huh
+      Uh-huh
 
 - intent: sw01-0105-fs70
   examples:
   - text: |
-    For a while there I subscribed to NEW YORK TIMES, a couple of newspapers
+      For a while there I subscribed to NEW YORK TIMES, a couple of newspapers
 
 - intent: sw01-0105-fs71
   examples:
   - text: |
-    I, I, I, uh
+      I, I, I, uh
 
 - intent: sw01-0105-fs72
   examples:
   - text: |
-    a-, actually
+      a-, actually
 
 - intent: sw01-0105-fs73
   examples:
   - text: |
-    uh, you know
+      uh, you know
 
 - intent: sw01-0105-fs74
   examples:
   - text: |
-    well
+      well
     metadata:
       turnManagement: turnKeep
 
 - intent: sw01-0105-fs75
   examples:
   - text: |
-    because my fiance - she was unemployed for a while 
+      because my fiance - she was unemployed for a while 
 
 - intent: sw01-0105-fs76
   examples:
   - text: |
-    so she really needed to look at the help wanted ads
+      so she really needed to look at the help wanted ads
 
 - intent: sw01-0105-fs77
   examples:
   - text: |
-    you know
+      you know
 
 - intent: sw01-0105-fs78
   examples:
   - text: |
-    the,  <inhaling> the
+      the,  <inhaling> the
 
 - intent: sw01-0105-fs79
   examples:
   - text: |
-    want-, help wanted
+      want-, help wanted
 
 - intent: sw01-0105-fs80
   examples:
   - text: |
-    Uh-huh
+      Uh-huh
 
 - intent: sw01-0105-fs81
   examples:
   - text: |
-    and so often the newspapers are trying to compete with a lot of other sources of news
+      and so often the newspapers are trying to compete with a lot of other sources of news
 
 - intent: sw01-0105-fs82
   examples:
   - text: |
-    they,  they tr-, the newspapers are
+      they,  they tr-, the newspapers are
 
 - intent: sw01-0105-fs83
   examples:
   - text: |
-    newspape-, uh, news
+      newspape-, uh, news
 
 - intent: sw01-0105-fs84
   examples:
   - text: |
-    Right
+      Right
 
 - intent: sw01-0105-fs85
   examples:
   - text: |
-    and
+      and
     metadata:
       turnManagement: turnTake
 
 - intent: sw01-0105-fs86
   examples:
   - text: |
-    I don't know,
+      I don't know,
 
 - intent: sw01-0105-fs87
   examples:
   - text: |
-    NEW YORK TIMES is okay
+      NEW YORK TIMES is okay
 
 - intent: sw01-0105-fs88
   examples:
   - text: |
-    but
+      but
     metadata:
       turnManagement: turnKeep
 
 - intent: sw01-0105-fs89
   examples:
   - text: |
-    uh
+      uh
 
 - intent: sw01-0105-fs90
   examples:
   - text: |
-    but when you read a lot of this stuff, the quality of the writing has definitely gone down in the last ten years or so
+      but when you read a lot of this stuff, the quality of the writing has definitely gone down in the last ten years or so
 
 - intent: sw01-0105-fs91
   examples:
   - text: |
-    the, the
+      the, the
 
 - intent: sw01-0105-fs92
   examples:
   - text: |
-    but
+      but
     metadata:
       turnManagement: turnKeep
 
 - intent: sw01-0105-fs93
   examples:
   - text: |
-    Uh-huh
+      Uh-huh
 
 - intent: sw01-0105-fs94
   examples:
   - text: |
-    uh, I mean
+      uh, I mean
 
 - intent: sw01-0105-fs95
   examples:
   - text: |
-    they, they
+      they, they
 
 - intent: sw01-0105-fs96
   examples:
   - text: |
-    they say it's  like the sixth grade reading level
+      they say it's  like the sixth grade reading level
 
 - intent: sw01-0105-fs97
   examples:
   - text: |
-    but I swear it's at least second or third grade sometimes.
+      but I swear it's at least second or third grade sometimes.
 
 - intent: sw01-0105-fs98
   examples:
   - text: |
-    Right. /
+      Right. /
 
 - intent: sw01-0105-fs99
   examples:
   - text: |
-    <Laughter>
+      <Laughter>
 
 - intent: sw01-0105-fs100
   examples:
   - text: |
-    Pretty low
+      Pretty low
 
 - intent: sw01-0105-fs101
   examples:
   - text: |
-     <Throat_clearing>
+       <Throat_clearing>
     metadata:
       turnManagement: turnTake
 
 - intent: sw01-0105-fs102
   examples:
   - text: |
-    but, I don't know, I think if you listen to like NPR or something like
+      but, I don't know, I think if you listen to like NPR or something like
 
 - intent: sw01-0105-fs103
   examples:
   - text: |
-    uh
+      uh
     metadata:
       turnManagement: turnKeep
 
 - intent: sw01-0105-fs104
   examples:
   - text: |
-    Right
+      Right
 
 - intent: sw01-0105-fs105
   examples:
   - text: |
-    I, I
+      I, I
 
 - intent: sw01-0105-fs106
   examples:
   - text: |
-    I really like NPR a lot
+      I really like NPR a lot
 
 - intent: sw01-0105-fs107
   examples:
   - text: |
-    That's pretty good.  /
+      That's pretty good.  /
 
 - intent: sw01-0105-fs108
   examples:
   - text: |
-    uh
+      uh
 
 - intent: sw01-0105-fs109
   examples:
   - text: |
-    and
+      and
     metadata:
       turnManagement: turnKeep
 
 - intent: sw01-0105-fs110
   examples:
   - text: |
-    on, on, uh
+      on, on, uh
 
 - intent: sw01-0105-fs111
   examples:
   - text: |
-    I like listening to that when I get a chance, when I'm in the car a long enough time to listen to it, because I
+      I like listening to that when I get a chance, when I'm in the car a long enough time to listen to it, because I
 
 - intent: sw01-0105-fs112
   examples:
   - text: |
-    to, to
+      to, to
 
 - intent: sw01-0105-fs113
   examples:
   - text: |
-    Right
+      Right
 
 - intent: sw01-0105-fs114
   examples:
   - text: |
-    yeah
+      yeah
 
 - intent: sw01-0105-fs115
   examples:
   - text: |
-    I miss NPR a lot also
+      I miss NPR a lot also
 
 - intent: sw01-0105-fs116
   examples:
   - text: |
-    I really like them because they give, instead of being, as your newspaper or your TV news where you get a five minute blurb or a ten paragraph blurb, they go really in depth on topics which i think is good
+      I really like them because they give, instead of being, as your newspaper or your TV news where you get a five minute blurb or a ten paragraph blurb, they go really in depth on topics which i think is good
 
 - intent: sw01-0105-fs117
   examples:
   - text: |
-    uh
+      uh
 
 - intent: sw01-0105-fs118
   examples:
   - text: |
-    Uh
+      Uh
     metadata:
       turnManagement: turnTake
 
 - intent: sw01-0105-fs119
   examples:
   - text: |
-    And
+      And
     metadata:
       turnManagement: turnTake
 
 - intent: sw01-0105-fs120
   examples:
   - text: |
-    they also
+      they also
 
 - intent: sw01-0105-fs121
   examples:
   - text: |
-    their editorial stand point seems to be a lot better than, say, your major network news and that kind of thing
+      their editorial stand point seems to be a lot better than, say, your major network news and that kind of thing
 
 - intent: sw01-0105-fs122
   examples:
   - text: |
-    Well
+      Well
     metadata:
       turnManagement: turnTake
 
 - intent: sw01-0105-fs123
   examples:
   - text: |
-    McNeil, Neil
+      McNeil, Neil
 
 - intent: sw01-0105-fs124
   examples:
   - text: |
-    Neil and Lehrer, they're pretty good too
+      Neil and Lehrer, they're pretty good too
 
 - intent: sw01-0105-fs125
   examples:
   - text: |
-    I guess one of them is leaving.
+      I guess one of them is leaving.
 
 - intent: sw01-0105-fs126
   examples:
   - text: |
-    he's leaving, one of them is leaving
+      he's leaving, one of them is leaving
 
 - intent: sw01-0105-fs127
   examples:
   - text: |
-    Uh-huh
+      Uh-huh
 
 - intent: sw01-0105-fs128
   examples:
   - text: |
-    uh
+      uh
     metadata:
       turnManagement: turnTake
 
 - intent: sw01-0105-fs129
   examples:
   - text: |
-    they're, they're
+      they're, they're
 
 - intent: sw01-0105-fs130
   examples:
   - text: |
-    uh
+      uh
     metadata:
       turnManagement: turnKeep
 
 - intent: sw01-0105-fs131
   examples:
   - text: |
-    I guess a year ago you're probably watching CNN a lot, right?
+      I guess a year ago you're probably watching CNN a lot, right?
 
 - intent: sw01-0105-fs132
   examples:
   - text: |
-    Right <laughter> 
+      Right <laughter> 
 
 - intent: sw01-0105-fs133
   examples:
   - text: |
-    yeah
+      yeah
 
 - intent: sw01-0105-fs134
   examples:
   - text: |
-    Had that invasion or whatever it is
+      Had that invasion or whatever it is
 
 - intent: sw01-0105-fs135
   examples:
   - text: |
-    Sure was
+      Sure was
 
 - intent: sw01-0105-fs136
   examples:
   - text: |
-    uh
+      uh
     metadata:
       turnManagement: turnTake
 
 - intent: sw01-0105-fs137
   examples:
   - text: |
-    I, I don't know
+      I, I don't know
 
 - intent: sw01-0105-fs138
   examples:
   - text: |
-    but I guess it's still a lot of hype
+      but I guess it's still a lot of hype
 
 - intent: sw01-0105-fs139
   examples:
   - text: |
-    a lot of it's still a lot of
+      a lot of it's still a lot of
 
 - intent: sw01-0105-fs140
   examples:
   - text: |
-    Look at the Smith trial
+      Look at the Smith trial
 
 - intent: suggest
   examples:
   - text: |
-    Look at the Smith trial
+      Look at the Smith trial
 
 - intent: sw01-0105-fs141
   examples:
   - text: |
-    the, the
+      the, the
 
 - intent: sw01-0105-fs142
   examples:
   - text: |
-    Uh-huh
+      Uh-huh
 
 - intent: sw01-0105-fs143
   examples:
   - text: |
-    I mean, that was a joke
+      I mean, that was a joke
 
 - intent: sw01-0105-fs144
   examples:
   - text: |
-    Yeah that was
+      Yeah that was
 
 - intent: sw01-0105-fs145
   examples:
   - text: |
-    but
+      but
     metadata:
       turnManagement: turnKeep
 
 - intent: sw01-0105-fs146
   examples:
   - text: |
-    but then you also have things where they broadcast the Clarence Thomas hearings basically the whole length of them which I thought was really good.
+      but then you also have things where they broadcast the Clarence Thomas hearings basically the whole length of them which I thought was really good.
 
 - intent: sw01-0105-fs147
   examples:
   - text: |
-    where you, where they
+      where you, where they
 
 - intent: sw01-0105-fs148
   examples:
   - text: |
-    uh
+      uh
 
 - intent: sw01-0105-fs149
   examples:
   - text: |
-     r-, really
+       r-, really
 
 - intent: sw01-0105-fs150
   examples:
   - text: |
-    Oh yeah, the NPR doing that, yeah, I know
+      Oh yeah, the NPR doing that, yeah, I know
 
 - intent: sw01-0105-fs151
   examples:
   - text: |
-    I had some visitor, he was just, I don't know, fixated on that, just listened to it constantly
+      I had some visitor, he was just, I don't know, fixated on that, just listened to it constantly
 
 - intent: sw01-0105-fs152
   examples:
   - text: |
-    uh
+      uh
 
 - intent: sw01-0105-fs153
   examples:
   - text: |
-    and
+      and
     metadata:
       turnManagement: turnKeep
 
 - intent: sw01-0105-fs154
   examples:
   - text: |
-    just in-, just
+      just in-, just
 
 - intent: sw01-0105-fs155
   examples:
   - text: |
-    Uh-uh
+      Uh-uh
 
 - intent: sw01-0105-fs156
   examples:
   - text: |
-    uh
+      uh
     metadata:
       turnManagement: turnKeep
 
 - intent: sw01-0105-fs157
   examples:
   - text: |
-    and I guess that's good when it's live, if you'll really want that
+      and I guess that's good when it's live, if you'll really want that
 
 - intent: sw01-0105-fs158
   examples:
   - text: |
-    if you, if you'll
+      if you, if you'll
 
 - intent: sw01-0105-fs159
   examples:
   - text: |
-    but
+      but
     metadata:
       turnManagement: turnKeep
 
 - intent: sw01-0105-fs160
   examples:
   - text: |
-    but that's not really providing you news. 
+      but that's not really providing you news. 
 
 - intent: sw01-0105-fs161
   examples:
   - text: |
-    Right
+      Right
 
 - intent: sw01-0105-fs162
   examples:
   - text: |
-    it's it's 
+      it's it's 
 
 - intent: sw01-0105-fs163
   examples:
   - text: |
-    it's more like a media event rather than reporting
+      it's more like a media event rather than reporting
 
 - intent: sw01-0105-fs164
   examples:
   - text: |
-    Well
+      Well
 
 - intent: sw01-0105-fs165
   examples:
   - text: |
-    but the news that you would get from any other source is being generated from that event, which is something that's good also about C Span which I tune into every once in a while
+      but the news that you would get from any other source is being generated from that event, which is something that's good also about C Span which I tune into every once in a while
 
 - intent: sw01-0105-fs166
   examples:
   - text: |
-    ne-, news, news 
+      ne-, news, news 
 
 - intent: sw01-0105-fs167
   examples:
   - text: |
-    I, I
+      I, I
 
 - intent: sw01-0105-fs168
   examples:
   - text: |
-    Oh
+      Oh
 
 - intent: sw01-0105-fs169
   examples:
   - text: |
-    really
+      really
 
 - intent: sw01-0105-fs170
   examples:
   - text: |
-    That's kind of boring to me, I think
+      That's kind of boring to me, I think
 
 - intent: sw01-0105-fs171
   examples:
   - text: |
-    Yeah, it is really kind of boring
+      Yeah, it is really kind of boring
 
 - intent: sw01-0105-fs172
   examples:
   - text: |
-    it, it
+      it, it
 
 - intent: sw01-0105-fs173
   examples:
   - text: |
-    but
+      but
     metadata:
       turnManagement: turnKeep
 
 - intent: sw01-0105-fs174
   examples:
   - text: |
-    you know
+      you know
 
 - intent: sw01-0105-fs175
   examples:
   - text: |
-    but that's if you don't watch it there, then you're going to hear somebody else's canned report, somebody else's view about it
+      but that's if you don't watch it there, then you're going to hear somebody else's canned report, somebody else's view about it
 
 - intent: sw01-0105-fs176
   examples:
   - text: |
-    if, if
+      if, if
 
 - intent: sw01-0105-fs177
   examples:
   - text: |
-    uh
+      uh
 
 - intent: sw01-0105-fs178
   examples:
   - text: |
-    and
+      and
     metadata:
       turnManagement: turnKeep
 
 - intent: sw01-0105-fs179
   examples:
   - text: |
-    that's what you're supposed to
+      that's what you're supposed to
 
 - intent: sw01-0105-fs180
   examples:
   - text: |
-    you're supposed, you're supposed
+      you're supposed, you're supposed
 
 - intent: sw01-0105-fs181
   examples:
   - text: |
-    if you watch the news, your opinion is going to be formed on what somebody else thought about it
+      if you watch the news, your opinion is going to be formed on what somebody else thought about it
 
 - intent: sw01-0105-fs182
   examples:
   - text: |
-    you're going, your opinion is going
+      you're going, your opinion is going
 
 - intent: sw01-0105-fs183
   examples:
   - text: |
-    about, on 
+      about, on 
 
 - intent: sw01-0105-fs184
   examples:
   - text: |
-    Yeah
+      Yeah
 
 - intent: sw01-0105-fs185
   examples:
   - text: |
-    as opposed to actually watching it yourself and forming your own opinion, which I would  be much more in favor of forming my own opinion as opposed to following someone else's
+      as opposed to actually watching it yourself and forming your own opinion, which I would  be much more in favor of forming my own opinion as opposed to following someone else's
 
 - intent: sw01-0105-fs186
   examples:
   - text: |
-    pinion, opinion
+      pinion, opinion
 
 - intent: sw01-0105-fs187
   examples:
   - text: |
-    haven't, would
+      haven't, would
 
 - intent: sw01-0105-fs188
   examples:
   - text: |
-    Yeah
+      Yeah
 
 - intent: sw01-0105-fs189
   examples:
   - text: |
-    I guess that's true
+      I guess that's true
 
 - intent: sw01-0105-fs190
   examples:
   - text: |
-    But
+      But
     metadata:
       turnManagement: turnTake
 
 - intent: sw01-0105-fs191
   examples:
   - text: |
-    one of the ways that I get information is, every day when I log in on the computer I subscribe to this thing
+      one of the ways that I get information is, every day when I log in on the computer I subscribe to this thing
 
 - intent: sw01-0105-fs192
   examples:
   - text: |
-    uh
+      uh
 
 - intent: sw01-0105-fs193
   examples:
   - text: |
-    this, this
+      this, this
 
 - intent: sw01-0105-fs194
   examples:
   - text: |
-    it's free inside the company
+      it's free inside the company
 
 - intent: sw01-0105-fs195
   examples:
   - text: |
-    it's called INTELLECT
+      it's called INTELLECT
 
 - intent: sw01-0105-fs196
   examples:
   - text: |
-    and
+      and
     metadata:
       turnManagement: turnKeep
 
 - intent: sw01-0105-fs197
   examples:
   - text: |
-    and, and
+      and, and
 
 - intent: sw01-0105-fs198
   examples:
   - text: |
-    uh
+      uh
 
 - intent: sw01-0105-fs199
   examples:
   - text: |
-    they basically, type out abstracts which are really literally, -
+      they basically, type out abstracts which are really literally, -
 
 - intent: sw01-0105-fs200
   examples:
   - text: |
-    I've, I've
+      I've, I've
 
 - intent: sw01-0105-fs201
   examples:
   - text: |
-    I've actually read the actual articles
+      I've actually read the actual articles
 
 - intent: sw01-0105-fs202
   examples:
   - text: |
-    they're pretty g
+      they're pretty g
 
 - intent: inform
   examples:
   - text: |
-    they're pretty g
+      they're pretty g
 

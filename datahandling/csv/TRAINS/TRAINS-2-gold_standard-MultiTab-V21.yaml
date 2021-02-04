@@ -2,690 +2,690 @@ nlu:
 - intent: TRAINS2-fs1
   examples:
   - text: |
-    hello
+      hello
 
 - intent: opening
   examples:
   - text: |
-    hello
+      hello
 
 - intent: initialGreeting
   examples:
   - text: |
-    hello
+      hello
 
 - intent: TRAINS2-fs2
   examples:
   - text: |
-    can I help you
+      can I help you
 
 - intent: offer
   examples:
   - text: |
-    can I help you
+      can I help you
 
 - intent: TRAINS2-fs3
   examples:
   - text: |
-    yes
+      yes
 
 - intent: acceptOffer
   examples:
   - text: |
-    yes
+      yes
 
 - intent: TRAINS2-fs4
   examples:
   - text: |
-    I have a problem I need to transport two tankers of OJ to Avon and three boxcars of bananas to Elmira
+      I have a problem I need to transport two tankers of OJ to Avon and three boxcars of bananas to Elmira
 
 - intent: inform_continue
   examples:
   - text: |
-    I have a problem I need to transport two tankers of OJ to Avon and three boxcars of bananas to Elmira
+      I have a problem I need to transport two tankers of OJ to Avon and three boxcars of bananas to Elmira
   - text: |
-    and I can only use engine two it's all the way over here
+      and I can only use engine two it's all the way over here
   - text: |
-    two tankers of OJ to Avon would mean I take engine two and take the two b(oxcars)- from Elmira and bring them over and pick up two and bring them back to Elmira to fill with OJ
+      two tankers of OJ to Avon would mean I take engine two and take the two b(oxcars)- from Elmira and bring them over and pick up two and bring them back to Elmira to fill with OJ
   - text: |
-    in Avon I want to load three box- drop off the one engine drop off the two tankers of OJ
+      in Avon I want to load three box- drop off the one engine drop off the two tankers of OJ
   - text: |
-    the two tankers
+      the two tankers
   - text: |
-    four p.m.
+      four p.m.
   - text: |
-    four p.m.
+      four p.m.
 
 - intent: TRAINS2-fs5
   examples:
   - text: |
-    the bananas must arrive in Elmira by nine p.m.
+      the bananas must arrive in Elmira by nine p.m.
 
 - intent: inform_pass
   examples:
   - text: |
-    the bananas must arrive in Elmira by nine p.m.
+      the bananas must arrive in Elmira by nine p.m.
   - text: |
-    I can only use engine two
+      I can only use engine two
   - text: |
-    it's now noon when you arrive in Avon
+      it's now noon when you arrive in Avon
   - text: |
-    I guess I still have nine hours
+      I guess I still have nine hours
   - text: |
-    when I reach Dansville I wanna pick up one more boxcar
+      when I reach Dansville I wanna pick up one more boxcar
   - text: |
-    bring it with me with the other two to Avon
+      bring it with me with the other two to Avon
   - text: |
-    load those three
+      load those three
   - text: |
-    fill up the three boxcars with bananas
+      fill up the three boxcars with bananas
   - text: |
-    bring them back to Elmira
+      bring them back to Elmira
   - text: |
-    we'll get there by seven p.m.
+      we'll get there by seven p.m.
 
 - intent: TRAINS2-fs6
   examples:
   - text: |
-    okay
+      okay
 
 - intent: autoPositive
   examples:
   - text: |
-    okay
+      okay
   - text: |
-    okay
+      okay
   - text: |
-    mm-hm
+      mm-hm
   - text: |
-    okay
+      okay
     metadata:
       turnManagement: turnTake
   - text: |
-    okay
+      okay
   - text: |
-    okay
+      okay
   - text: |
-    okay
+      okay
   - text: |
-    okay
+      okay
   - text: |
-    okay
+      okay
     metadata:
       turnManagement: turnTake
   - text: |
-    okay then that way
+      okay then that way
   - text: |
-    okay that's fine
+      okay that's fine
   - text: |
-    okay
+      okay
   - text: |
-    mm-hm
+      mm-hm
   - text: |
-    okay
+      okay
   - text: |
-    okay
+      okay
   - text: |
-    mm-hm
+      mm-hm
   - text: |
-    okay
+      okay
   - text: |
-    okay
+      okay
 
 - intent: TRAINS2-fs7
   examples:
   - text: |
-    um
+      um
     metadata:
       turnManagement: turnTake
 
 - intent: stalling
   examples:
   - text: |
-    um
+      um
     metadata:
       turnManagement: turnTake
   - text: |
-    so … VOC noise
+      so … VOC noise
     metadata:
       turnManagement: turnTake
   - text: |
-    and ..
+      and ..
     metadata:
       turnManagement: turnKeep
   - text: |
-    uh …
+      uh …
     metadata:
       turnManagement: turnAccept
   - text: |
-    uh
+      uh
     metadata:
       turnManagement: turnTake
   - text: |
-    t(o)-
+      t(o)-
   - text: |
-    VOC mumble .. VOC click ..
+      VOC mumble .. VOC click ..
   - text: |
-    um
+      um
     metadata:
       turnManagement: turnTake
   - text: |
-    when I reach, when I reach
+      when I reach, when I reach
   - text: |
-    f- .. uh
+      f- .. uh
     metadata:
       turnManagement: turnTake
   - text: |
-    of ..
+      of ..
   - text: |
-    uh
+      uh
     metadata:
       turnManagement: turnTake
   - text: |
-    okay
+      okay
   - text: |
-    four p.m.
+      four p.m.
 
 - intent: TRAINS2-fs8
   examples:
   - text: |
-    I can only use engine two
+      I can only use engine two
 
 - intent: TRAINS2-fs9
   examples:
   - text: |
-    okay
+      okay
 
 - intent: TRAINS2-fs10
   examples:
   - text: |
-    so … VOC noise
+      so … VOC noise
     metadata:
       turnManagement: turnTake
 
 - intent: TRAINS2-fs11
   examples:
   - text: |
-    and I can only use engine two it's all the way over here
+      and I can only use engine two it's all the way over here
 
 - intent: TRAINS2-fs12
   examples:
   - text: |
-    and ..
+      and ..
     metadata:
       turnManagement: turnKeep
 
 - intent: TRAINS2-fs13
   examples:
   - text: |
-    two tankers of OJ to Avon would mean I take engine two and take the two b(oxcars)- from Elmira and bring them over and pick up two and bring them back to Elmira to fill with OJ
+      two tankers of OJ to Avon would mean I take engine two and take the two b(oxcars)- from Elmira and bring them over and pick up two and bring them back to Elmira to fill with OJ
 
 - intent: TRAINS2-fs14
   examples:
   - text: |
-    Avon
+      Avon
 
 - intent: TRAINS2-fs15
   examples:
   - text: |
-    VOC click
+      VOC click
     metadata:
       turnManagement: turnKeep
 
 - intent: TRAINS2-fs16
   examples:
   - text: |
-    mm-hm
+      mm-hm
 
 - intent: TRAINS2-fs17
   examples:
   - text: |
-    over
+      over
 
 - intent: TRAINS2-fs18
   examples:
   - text: |
-    VOC click
+      VOC click
     metadata:
       turnManagement: turnKeep
 
 - intent: TRAINS2-fs19
   examples:
   - text: |
-    okay
+      okay
     metadata:
       turnManagement: turnTake
 
 - intent: TRAINS2-fs20
   examples:
   - text: |
-    do you wanna load the boxcars while you're in Corning
+      do you wanna load the boxcars while you're in Corning
 
 - intent: propositionalQuestion
   examples:
   - text: |
-    do you wanna load the boxcars while you're in Corning
+      do you wanna load the boxcars while you're in Corning
 
 - intent: TRAINS2-fs21
   examples:
   - text: |
-    yes
+      yes
 
 - intent: answer
   examples:
   - text: |
-    yes
+      yes
   - text: |
-    I will take them with me
+      I will take them with me
   - text: |
-    to Corning
+      to Corning
   - text: |
-    yeah to Corning to Dansville to Avon
+      yeah to Corning to Dansville to Avon
   - text: |
-    to Dansville to Corning to Elmira
+      to Dansville to Corning to Elmira
 
 - intent: TRAINS2-fs22
   examples:
   - text: |
-    okay
+      okay
 
 - intent: TRAINS2-fs23
   examples:
   - text: |
-    and
+      and
     metadata:
       turnManagement: turnTake
 
 - intent: abandoned
   examples:
   - text: |
-    then make
+      then make
   - text: |
-    but i need
+      but i need
 
 - intent: TRAINS2-fs24
   examples:
   - text: |
-    then make the OJ in Elmira with engine two and take it from Elmira to Corning to Dansville to Avon
+      then make the OJ in Elmira with engine two and take it from Elmira to Corning to Dansville to Avon
 
 - intent: instruct
   examples:
   - text: |
-    then make the OJ in Elmira with engine two and take it from Elmira to Corning to Dansville to Avon
+      then make the OJ in Elmira with engine two and take it from Elmira to Corning to Dansville to Avon
 
 - intent: TRAINS2-fs25
   examples:
   - text: |
-    okay
+      okay
 
 - intent: TRAINS2-fs26
   examples:
   - text: |
-    do you wanna take the boxcars with you or do you want to leave them in Elmira
+      do you wanna take the boxcars with you or do you want to leave them in Elmira
     metadata:
       turnManagement: turnAssign
 
 - intent: choiceQuestion
   examples:
   - text: |
-    do you wanna take the boxcars with you or do you want to leave them in Elmira
+      do you wanna take the boxcars with you or do you want to leave them in Elmira
     metadata:
       turnManagement: turnAssign
 
 - intent: TRAINS2-fs27
   examples:
   - text: |
-    uh …
+      uh …
     metadata:
       turnManagement: turnAccept
 
 - intent: TRAINS2-fs28
   examples:
   - text: |
-    I will take them with me
+      I will take them with me
 
 - intent: TRAINS2-fs29
   examples:
   - text: |
-    okay
+      okay
 
 - intent: TRAINS2-fs30
   examples:
   - text: |
-    so you wanna go from Elmira
+      so you wanna go from Elmira
 
 - intent: checkQuestion
   examples:
   - text: |
-    so you wanna go from Elmira
+      so you wanna go from Elmira
 
 - intent: TRAINS2-fs31
   examples:
   - text: |
-    to Avon
+      to Avon
 
 - intent: completion
   examples:
   - text: |
-    to Avon
+      to Avon
 
 - intent: TRAINS2-fs32
   examples:
   - text: |
-    okay
+      okay
 
 - intent: TRAINS2-fs33
   examples:
   - text: |
-    by which way
+      by which way
 
 - intent: setQuestion
   examples:
   - text: |
-    by which way
+      by which way
   - text: |
-    which way do we wanna go
+      which way do we wanna go
 
 - intent: TRAINS2-fs34
   examples:
   - text: |
-    uh
+      uh
     metadata:
       turnManagement: turnTake
 
 - intent: TRAINS2-fs35
   examples:
   - text: |
-    t(o)-
+      t(o)-
 
 - intent: TRAINS2-fs36
   examples:
   - text: |
-    to Corning
+      to Corning
 
 - intent: TRAINS2-fs37
   examples:
   - text: |
-    let me see
+      let me see
 
 - intent: pausing
   examples:
   - text: |
-    let me see
+      let me see
   - text: |
-    let me think
+      let me think
   - text: |
-    oh oh wait
+      oh oh wait
   - text: |
-    let's see
+      let's see
     metadata:
       turnManagement: turnKeep
 
 - intent: TRAINS2-fs38
   examples:
   - text: |
-    let me think
+      let me think
 
 - intent: TRAINS2-fs39
   examples:
   - text: |
-    VOC mumble .. VOC click ..
+      VOC mumble .. VOC click ..
 
 - intent: TRAINS2-fs40
   examples:
   - text: |
-    yeah to Corning to Dansville to Avon
+      yeah to Corning to Dansville to Avon
 
 - intent: TRAINS2-fs41
   examples:
   - text: |
-    okay
+      okay
     metadata:
       turnManagement: turnTake
 
 - intent: TRAINS2-fs42
   examples:
   - text: |
-    okay then that way
+      okay then that way
 
 - intent: TRAINS2-fs43
   examples:
   - text: |
-    it's now noon when you arrive in Avon
+      it's now noon when you arrive in Avon
 
 - intent: TRAINS2-fs44
   examples:
   - text: |
-    okay that's fine
+      okay that's fine
 
 - intent: TRAINS2-fs45
   examples:
   - text: |
-    I guess I still have nine hours
+      I guess I still have nine hours
 
 - intent: TRAINS2-fs46
   examples:
   - text: |
-    okay
+      okay
 
 - intent: TRAINS2-fs47
   examples:
   - text: |
-    um
+      um
     metadata:
       turnManagement: turnTake
 
 - intent: TRAINS2-fs48
   examples:
   - text: |
-    oh oh wait
+      oh oh wait
 
 - intent: TRAINS2-fs49
   examples:
   - text: |
-    I have something else to say
+      I have something else to say
 
 - intent: inform
   examples:
   - text: |
-    I have something else to say
+      I have something else to say
   - text: |
-    I am now finished
+      I am now finished
 
 - intent: TRAINS2-fs50
   examples:
   - text: |
-    I when I hit- when I reach
+      I when I hit- when I reach
 
 - intent: selfCorrection
   examples:
   - text: |
-    I when I hit- when I reach
+      I when I hit- when I reach
   - text: |
-    the one tanker the two tankers
+      the one tanker the two tankers
   - text: |
-    of oranges and of OJ actually
+      of oranges and of OJ actually
   - text: |
-    the two tankers
+      the two tankers
 
 - intent: TRAINS2-fs51
   examples:
   - text: |
-    when I reach, when I reach
+      when I reach, when I reach
 
 - intent: TRAINS2-fs52
   examples:
   - text: |
-    when I reach Dansville I wanna pick up one more boxcar
+      when I reach Dansville I wanna pick up one more boxcar
 
 - intent: TRAINS2-fs53
   examples:
   - text: |
-    mm-hm
+      mm-hm
 
 - intent: TRAINS2-fs54
   examples:
   - text: |
-    f- .. uh
+      f- .. uh
     metadata:
       turnManagement: turnTake
 
 - intent: TRAINS2-fs55
   examples:
   - text: |
-    okay
+      okay
 
 - intent: TRAINS2-fs56
   examples:
   - text: |
-    and
+      and
     metadata:
       turnManagement: turnKeep
 
 - intent: TRAINS2-fs57
   examples:
   - text: |
-    bring it with me with the other two to Avon
+      bring it with me with the other two to Avon
 
 - intent: TRAINS2-fs58
   examples:
   - text: |
-    okay
+      okay
 
 - intent: TRAINS2-fs59
   examples:
   - text: |
-    then
+      then
     metadata:
       turnManagement: turnKeep
 
 - intent: TRAINS2-fs60
   examples:
   - text: |
-    in Avon I want to load three box- drop off the one engine drop off the two tankers of OJ
+      in Avon I want to load three box- drop off the one engine drop off the two tankers of OJ
 
 - intent: TRAINS2-fs61
   examples:
   - text: |
-    the one tanker the two tankers
+      the one tanker the two tankers
 
 - intent: TRAINS2-fs62
   examples:
   - text: |
-    of oranges and of OJ actually
+      of oranges and of OJ actually
 
 - intent: TRAINS2-fs63
   examples:
   - text: |
-    load those three
+      load those three
 
 - intent: TRAINS2-fs64
   examples:
   - text: |
-    mm-hm
+      mm-hm
 
 - intent: TRAINS2-fs65
   examples:
   - text: |
-    the two tankers
+      the two tankers
 
 - intent: TRAINS2-fs66
   examples:
   - text: |
-    of ..
+      of ..
 
 - intent: TRAINS2-fs67
   examples:
   - text: |
-    and
+      and
     metadata:
       turnManagement: turnKeep
 
 - intent: TRAINS2-fs68
   examples:
   - text: |
-    fill up the three boxcars with bananas
+      fill up the three boxcars with bananas
 
 - intent: TRAINS2-fs69
   examples:
   - text: |
-    okay
+      okay
 
 - intent: TRAINS2-fs70
   examples:
   - text: |
-    and
+      and
     metadata:
       turnManagement: turnKeep
 
 - intent: TRAINS2-fs71
   examples:
   - text: |
-    bring them back to Elmira
+      bring them back to Elmira
 
 - intent: TRAINS2-fs72
   examples:
   - text: |
-    which way do we wanna go
+      which way do we wanna go
 
 - intent: TRAINS2-fs73
   examples:
   - text: |
-    uh
+      uh
     metadata:
       turnManagement: turnTake
 
 - intent: TRAINS2-fs74
   examples:
   - text: |
-    to Dansville to Corning to Elmira
+      to Dansville to Corning to Elmira
 
 - intent: TRAINS2-fs75
   examples:
   - text: |
-    okay
+      okay
 
 - intent: TRAINS2-fs76
   examples:
   - text: |
-    let's see
+      let's see
     metadata:
       turnManagement: turnKeep
 
 - intent: TRAINS2-fs77
   examples:
   - text: |
-    four p.m.
+      four p.m.
 
 - intent: TRAINS2-fs78
   examples:
   - text: |
-    four p.m.
+      four p.m.
 
 - intent: TRAINS2-fs79
   examples:
   - text: |
-    okay
+      okay
     metadata:
       turnManagement: turnKeep
 
 - intent: TRAINS2-fs80
   examples:
   - text: |
-    we'll get there by seven p.m.
+      we'll get there by seven p.m.
 
 - intent: TRAINS2-fs81
   examples:
   - text: |
-    okay great
+      okay great
 
 - intent: interactionStructuring
   examples:
   - text: |
-    okay great
+      okay great
 
 - intent: TRAINS2-fs82
   examples:
   - text: |
-    I am now finished
+      I am now finished
 

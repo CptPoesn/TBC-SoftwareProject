@@ -2,633 +2,633 @@ nlu:
 - intent: fsp1DISCV0;fsp1SOMCV0;fsp1CTMCV0
   examples:
   - text: |
-     hello again 
+       hello again 
 
 - intent: opening
   examples:
   - text: |
-     hello again 
+       hello again 
 
 - intent: initGreeting
   examples:
   - text: |
-     hello again 
+       hello again 
 
 - intent: dap1CTM0:contactManagement:contactIndication
   examples:
   - text: |
-     hello again 
+       hello again 
 
 - intent: fsp2DISCV0;fsp2SOMCV0;fsp2CTMCV0
   examples:
   - text: |
-     hello 
+       hello 
 
 - intent: opening(Fu:dap1DIS0)
   examples:
   - text: |
-     hello 
+       hello 
 
 - intent: returnGreeting(Fu:dap1SOM0)
   examples:
   - text: |
-     hello 
+       hello 
 
 - intent: dap2CTM0:contactManagement:contactIndication
   examples:
   - text: |
-     hello 
+       hello 
 
 - intent: fsp1DISCV1
   examples:
   - text: |
-     ready to start with the next round 
+       ready to start with the next round 
 
 - intent: checkQuestion
   examples:
   - text: |
-     ready to start with the next round 
+       ready to start with the next round 
 
 - intent: fsp2DISCV1
   examples:
   - text: |
-     mhm 
+       mhm 
 
 - intent: confirm(Fu:dap1DIS1)
   examples:
   - text: |
-     mhm 
+       mhm 
 
 - intent: fsp1AUFCV0;fsp1ALFCV0
   examples:
   - text: |
-     alright 
+       alright 
 
 - intent: autoPositive(Fe:fsp1AUFFB0)
   examples:
   - text: |
-     alright 
+       alright 
 
 - intent: alloPositive(Fe:fsp1ALFFB0)
   examples:
   - text: |
-     alright 
+       alright 
 
 - intent: fsp1TSMCV0
   examples:
   - text: |
-     do you still remember all of the rules 
+       do you still remember all of the rules 
 
 - intent: dap1TSM0:taskManagement:propositionalQuestion
   examples:
   - text: |
-     do you still remember all of the rules 
+       do you still remember all of the rules 
 
 - intent: fsp2TSMCV0
   examples:
   - text: |
-     yes 
+       yes 
 
 - intent: dap2TSM0:taskManagement:propositionalAnswer(Fu:dap1TSM0)
   examples:
   - text: |
-     yes 
+       yes 
 
 - intent: fsp1AUFCV1;fsp1ALFCV1
   examples:
   - text: |
-     great 
+       great 
 
 - intent: autoPositive(Fe:fsp1AUFFB1)
   examples:
   - text: |
-     great 
+       great 
 
 - intent: alloPositive(Fe:fsp1ALFFB1)
   examples:
   - text: |
-     great 
+       great 
 
 - intent: fsp1DISCV2
   examples:
   - text: |
-     alright 
+       alright 
 
 - intent: interactionStructuring
   examples:
   - text: |
-     alright 
+       alright 
 
 - intent: fsp1TUMCV0;fsp1TIMCV0
   examples:
   - text: |
-     uhm 
+       uhm 
     metadata:
       turnManagement: turnKeep
 
 - intent: stalling
   examples:
   - text: |
-     uhm 
+       uhm 
     metadata:
       turnManagement: turnKeep
   - text: |
-     uh 
+       uh 
     metadata:
       turnManagement: turnAccept
   - text: |
-     uhm 
+       uhm 
     metadata:
       turnManagement: turnKeep
   - text: |
-     uhm 
+       uhm 
     metadata:
       turnManagement: turnKeep
   - text: |
-     uh 
+       uh 
     metadata:
       turnManagement: turnKeep
   - text: |
-     uh 
+       uh 
     metadata:
       turnManagement: turnKeep
   - text: |
-     uhm 
+       uhm 
     metadata:
       turnManagement: turnTake
   - text: |
-     and 
+       and 
     metadata:
       turnManagement: turnTake
   - text: |
-     and 
+       and 
     metadata:
       turnManagement: turnTake
   - text: |
-     uhm 
+       uhm 
     metadata:
       turnManagement: turnKeep
   - text: |
-     and 
+       and 
     metadata:
       turnManagement: turnTake
   - text: |
-     uhm 
+       uhm 
     metadata:
       turnManagement: turnKeep
   - text: |
-     mmh 
+       mmh 
     metadata:
       turnManagement: turnKeep
   - text: |
-     uh 
+       uh 
     metadata:
       turnManagement: turnKeep
   - text: |
-     uh 
+       uh 
     metadata:
       turnManagement: turnKeep
 
 - intent: fsp1DISCV3
   examples:
   - text: |
-     lets get started then 
+       lets get started then 
 
 - intent: suggest
   examples:
   - text: |
-     lets get started then 
+       lets get started then 
 
 - intent: fsp1TSKCV0;fsp1TSMCV1
   examples:
   - text: |
-     what is your first question 
+       what is your first question 
 
 - intent: setQuestion
   examples:
   - text: |
-     what is your first question 
+       what is your first question 
   - text: |
-     what is your mother tongue 
+       what is your mother tongue 
   - text: |
-     where are you from 
+       where are you from 
   - text: |
-     and how old are you 
+       and how old are you 
   - text: |
-     and what are you doing 
+       and what are you doing 
 
 - intent: dap1TSM1:taskManagement:request
   examples:
   - text: |
-     what is your first question 
+       what is your first question 
 
 - intent: fsp2TUMCV0;fsp2TIMCV0
   examples:
   - text: |
-     uh 
+       uh 
     metadata:
       turnManagement: turnAccept
 
 - intent: fsp2TUMCV1;fsp2TIMCV1
   examples:
   - text: |
-     uhm 
+       uhm 
     metadata:
       turnManagement: turnKeep
 
 - intent: fsp2TUMCV2;fsp2TIMCV2
   examples:
   - text: |
-     uhm 
+       uhm 
     metadata:
       turnManagement: turnKeep
 
 - intent: fsp2TSKCV0;fsp2TSMCV1
   examples:
   - text: |
-     what is your mother tongue 
+       what is your mother tongue 
 
 - intent: dap2TSM1:taskManagement:addressRequest(Fu:dap1TSM1)
   examples:
   - text: |
-     what is your mother tongue 
+       what is your mother tongue 
 
 - intent: fsp2TUMCV3;fsp2TIMCV3
   examples:
   - text: |
-     uh 
+       uh 
     metadata:
       turnManagement: turnKeep
 
 - intent: fsp2TUMCV4;fsp2TIMCV4
   examples:
   - text: |
-     uh 
+       uh 
     metadata:
       turnManagement: turnKeep
 
 - intent: fsp1TSKCV1
   examples:
   - text: |
-     my mother tongue is english 
+       my mother tongue is english 
 
 - intent: setAnswer(Fu:dap2TSK0)
   examples:
   - text: |
-     my mother tongue is english 
+       my mother tongue is english 
 
 - intent: fsp2TUMCV5;fsp2TIMCV5
   examples:
   - text: |
-     uhm 
+       uhm 
     metadata:
       turnManagement: turnTake
 
 - intent: fsp2TSKCV1
   examples:
   - text: |
-     where are you from 
+       where are you from 
 
 - intent: fsp1TSKCV2
   examples:
   - text: |
-     i am from the united states 
+       i am from the united states 
 
 - intent: setAnswer(Fu:dap2TSK1)
   examples:
   - text: |
-     i am from the united states 
+       i am from the united states 
 
 - intent: fsp2TSKCV2
   examples:
   - text: |
-     and youre still alive 
+       and youre still alive 
 
 - intent: propositionalQuestion
   examples:
   - text: |
-     and youre still alive 
+       and youre still alive 
   - text: |
-     does your first name start with an s 
+       does your first name start with an s 
   - text: |
-     are you successful in tennis 
+       are you successful in tennis 
 
 - intent: fsp2TUMCV6;fsp2TIMCV6
   examples:
   - text: |
-     and 
+       and 
     metadata:
       turnManagement: turnTake
 
 - intent: fsp1TSKCV3
   examples:
   - text: |
-     yes i am still alive 
+       yes i am still alive 
 
 - intent: propositionalAnswer(Fu:dap2TSK2)
   examples:
   - text: |
-     yes i am still alive 
+       yes i am still alive 
 
 - intent: fsp2TSKCV3
   examples:
   - text: |
-     and how old are you 
+       and how old are you 
 
 - intent: fsp2TUMCV7;fsp2TIMCV7
   examples:
   - text: |
-     and 
+       and 
     metadata:
       turnManagement: turnTake
 
 - intent: fsp1TSKCV4
   examples:
   - text: |
-     i am thirty three 
+       i am thirty three 
 
 - intent: setAnswer(Fu:dap2TSK3)
   examples:
   - text: |
-     i am thirty three 
+       i am thirty three 
   - text: |
-     thirty three years old 
+       thirty three years old 
 
 - intent: fsp1OCMCV0
   examples:
   - text: |
-     thirty 
+       thirty 
 
 - intent: selfCorrection(Fe:fsp1OCMFB0)
   examples:
   - text: |
-     thirty 
+       thirty 
 
 - intent: fsp1TSKCV5
   examples:
   - text: |
-     thirty three years old 
+       thirty three years old 
 
 - intent: fsp2AUFCV0
   examples:
   - text: |
-     yeah 
+       yeah 
 
 - intent: autoPositive(Fe:fsp2AUFFB0)
   examples:
   - text: |
-     yeah 
+       yeah 
 
 - intent: fsp2TUMCV8;fsp2TIMCV8
   examples:
   - text: |
-     uhm 
+       uhm 
     metadata:
       turnManagement: turnKeep
 
 - intent: fsp2TSKCV4
   examples:
   - text: |
-     and what are you doing 
+       and what are you doing 
 
 - intent: fsp2TUMCV9;fsp2TIMCV9
   examples:
   - text: |
-     and 
+       and 
     metadata:
       turnManagement: turnTake
 
 - intent: fsp1TSKCV6
   examples:
   - text: |
-     i am a professional tennis player 
+       i am a professional tennis player 
 
 - intent: setAnswer(Fu:dap2TSK4)
   examples:
   - text: |
-     i am a professional tennis player 
+       i am a professional tennis player 
 
 - intent: fsp2AUFCV1;fsp2TUMCV10
   examples:
   - text: |
-     okay 
+       okay 
     metadata:
       turnManagement: turnTake
 
 - intent: autoPositive(Fe:fsp2AUFFB1)
   examples:
   - text: |
-     okay 
+       okay 
     metadata:
       turnManagement: turnTake
 
 - intent: fsp2TSKCV5
   examples:
   - text: |
-     does your first name start with an s 
+       does your first name start with an s 
 
 - intent: fsp2OCMCV0
   examples:
   - text: |
-     with an 
+       with an 
 
 - intent: selfCorrection(Fe:fsp2OCMFB0)
   examples:
   - text: |
-     with an 
+       with an 
 
 - intent: fsp1AUFCV2
   examples:
   - text: |
-     im not sure if i can answer that question 
+       im not sure if i can answer that question 
 
 - intent: inform[certain](Fe:fsp1AUFFB2)
   examples:
   - text: |
-     im not sure if i can answer that question 
+       im not sure if i can answer that question 
 
 - intent: fsp1TSKCV7;fsp1AUFCV3
   examples:
   - text: |
-     no i cant answer that question 
+       no i cant answer that question 
 
 - intent: answer(Fu:dap2TSK5)
   examples:
   - text: |
-     no i cant answer that question 
+       no i cant answer that question 
 
 - intent: inform[uncertain](Fe:fsp1AUFFB3)
   examples:
   - text: |
-     no i cant answer that question 
+       no i cant answer that question 
 
 - intent: fsp2AUFCV2
   examples:
   - text: |
-     okay 
+       okay 
 
 - intent: autoPositive(Fe:fsp2AUFFB2)
   examples:
   - text: |
-     okay 
+       okay 
 
 - intent: fsp2TUMCV11;fsp2TIMCV10
   examples:
   - text: |
-     uhm 
+       uhm 
     metadata:
       turnManagement: turnKeep
 
 - intent: fsp2TUMCV12;fsp2TIMCV11
   examples:
   - text: |
-     mmh 
+       mmh 
     metadata:
       turnManagement: turnKeep
 
 - intent: fsp2TUMCV13;fsp2TIMCV12
   examples:
   - text: |
-     uh 
+       uh 
     metadata:
       turnManagement: turnKeep
 
 - intent: fsp2TSKCV6
   examples:
   - text: |
-     are you successful in tennis 
+       are you successful in tennis 
 
 - intent: fsp2TUMCV14;fsp2TIMCV13
   examples:
   - text: |
-     uh 
+       uh 
     metadata:
       turnManagement: turnKeep
 
 - intent: fsp1TSKCV8
   examples:
   - text: |
-     yes I am very successful 
+       yes I am very successful 
 
 - intent: propositionalAnswer(Fu:dap2TSK6)
   examples:
   - text: |
-     yes I am very successful 
+       yes I am very successful 
 
 - intent: fsp2TSKCV7
   examples:
   - text: |
-     are you serena williams 
+       are you serena williams 
 
 - intent: guess
   examples:
   - text: |
-     are you serena williams 
+       are you serena williams 
 
 - intent: fsp1TSKCV9
   examples:
   - text: |
-     no 
+       no 
 
 - intent: disconfirm(Fu:dap2TSK7)
   examples:
   - text: |
-     no 
+       no 
 
 - intent: fsp1TSKCV10;fsp1ALFCV2
   examples:
   - text: |
-     very close 
+       very close 
 
 - intent: inform_continue
   examples:
   - text: |
-     very close 
+       very close 
   - text: |
-     but that is not the correct answer 
+       but that is not the correct answer 
 
 - intent: alloPositive(Fe:fsp1ALFFB2)
   examples:
   - text: |
-     very close 
+       very close 
 
 - intent: fsp1TSKCV11
   examples:
   - text: |
-     but that is not the correct answer 
+       but that is not the correct answer 
 
 - intent: fsp1TSKCV12
   examples:
   - text: |
-     im venus williams 
+       im venus williams 
 
 - intent: inform_pass
   examples:
   - text: |
-     im venus williams 
+       im venus williams 
 
 - intent: fsp2AUFCV3
   examples:
   - text: |
-     ah okay 
+       ah okay 
 
 - intent: autoPositive(Fe:fsp2AUFFB3)
   examples:
   - text: |
-     ah okay 
+       ah okay 
 
 - intent: fsp1ALFCV3
   examples:
   - text: |
-     very close though 
+       very close though 
 
 - intent: alloPositive(Fe:fsp1ALFFB3)
   examples:
   - text: |
-     very close though 
+       very close though 
 
 - intent: fsp1SOMCV1
   examples:
   - text: |
-     very good try 
+       very good try 
 
 - intent: congratulation
   examples:
   - text: |
-     very good try 
+       very good try 
 
 - intent: fsp2AUFCV4
   examples:
   - text: |
-     okay 
+       okay 
 
 - intent: autoPositive(Fe:fsp2AUFFB4)
   examples:
   - text: |
-     okay 
+       okay 
 
 - intent: fsp2SOMCV1
   examples:
   - text: |
-     thank you 
+       thank you 
 
 - intent: thanking(Fu:dap1SOM1)
   examples:
   - text: |
-     thank you 
+       thank you 
 
 - intent: fsp1AUFCV4;fsp1DISCV4
   examples:
   - text: |
-     alright 
+       alright 
 
 - intent: autoPositive(Fe:fsp1AUFFB4)
   examples:
   - text: |
-     alright 
+       alright 
 
 - intent: closing
   examples:
   - text: |
-     alright 
+       alright 
 

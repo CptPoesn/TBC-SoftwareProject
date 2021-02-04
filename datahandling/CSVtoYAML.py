@@ -3,12 +3,12 @@ from collections import defaultdict as dd
 
 
 def cvs_to_dict(filename):
-    with open(filename) as csvfile:
+    with open(filename, encoding="utf-8") as csvfile:
         reader = list(csv.DictReader(csvfile, delimiter=';', dialect='excel'))
         for rownum in range(len(reader)):
             for key, value in reader[rownum].items():
                 # TODO make list of allowed items instead of disallowed
-                if value and key != '﻿Markables' and key != 'Sender' and key != 'Addressee' and key != 'Turn transcription'and key != 'FS text' and key != 'Comments' and key!= 'other':
+                if value and key != '﻿Markables' and key != 'Markables' and key != '\ufeffMarkables' and key != 'Sender' and key != 'Addressee' and key != 'Turn transcription'and key != 'FS text' and key != 'Comments' and key!= 'other':
                     spl = value.split()
                     reader[rownum][key] = spl[1]
 
@@ -48,7 +48,7 @@ def dict_to_yaml(filename_out, data_dict):
 
             for ex in values:
                 f.write('  - text: |\n')  # four spaces
-                f.write('    ' + ex + '\n')  # six spaces
+                f.write('      ' + ex + '\n')  # six spaces
 
             f.write('\n')
 
