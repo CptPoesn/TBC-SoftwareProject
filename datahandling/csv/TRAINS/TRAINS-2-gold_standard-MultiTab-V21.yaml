@@ -1,9 +1,4 @@
 nlu:
-- intent: TRAINS2-fs1
-  examples:
-  - text: |
-      hello
-
 - intent: opening
   examples:
   - text: |
@@ -14,30 +9,15 @@ nlu:
   - text: |
       hello
 
-- intent: TRAINS2-fs2
-  examples:
-  - text: |
-      can I help you
-
 - intent: offer
   examples:
   - text: |
       can I help you
 
-- intent: TRAINS2-fs3
-  examples:
-  - text: |
-      yes
-
 - intent: acceptOffer
   examples:
   - text: |
       yes
-
-- intent: TRAINS2-fs4
-  examples:
-  - text: |
-      I have a problem I need to transport two tankers of OJ to Avon and three boxcars of bananas to Elmira
 
 - intent: inform_continue
   examples:
@@ -55,11 +35,6 @@ nlu:
       four p.m.
   - text: |
       four p.m.
-
-- intent: TRAINS2-fs5
-  examples:
-  - text: |
-      the bananas must arrive in Elmira by nine p.m.
 
 - intent: inform_pass
   examples:
@@ -83,11 +58,6 @@ nlu:
       bring them back to Elmira
   - text: |
       we'll get there by seven p.m.
-
-- intent: TRAINS2-fs6
-  examples:
-  - text: |
-      okay
 
 - intent: autoPositive
   examples:
@@ -131,13 +101,6 @@ nlu:
       okay
   - text: |
       okay
-
-- intent: TRAINS2-fs7
-  examples:
-  - text: |
-      um
-    metadata:
-      turnManagement: turnTake
 
 - intent: stalling
   examples:
@@ -186,90 +149,10 @@ nlu:
   - text: |
       four p.m.
 
-- intent: TRAINS2-fs8
-  examples:
-  - text: |
-      I can only use engine two
-
-- intent: TRAINS2-fs9
-  examples:
-  - text: |
-      okay
-
-- intent: TRAINS2-fs10
-  examples:
-  - text: |
-      so … VOC noise
-    metadata:
-      turnManagement: turnTake
-
-- intent: TRAINS2-fs11
-  examples:
-  - text: |
-      and I can only use engine two it's all the way over here
-
-- intent: TRAINS2-fs12
-  examples:
-  - text: |
-      and ..
-    metadata:
-      turnManagement: turnKeep
-
-- intent: TRAINS2-fs13
-  examples:
-  - text: |
-      two tankers of OJ to Avon would mean I take engine two and take the two b(oxcars)- from Elmira and bring them over and pick up two and bring them back to Elmira to fill with OJ
-
-- intent: TRAINS2-fs14
-  examples:
-  - text: |
-      Avon
-
-- intent: TRAINS2-fs15
-  examples:
-  - text: |
-      VOC click
-    metadata:
-      turnManagement: turnKeep
-
-- intent: TRAINS2-fs16
-  examples:
-  - text: |
-      mm-hm
-
-- intent: TRAINS2-fs17
-  examples:
-  - text: |
-      over
-
-- intent: TRAINS2-fs18
-  examples:
-  - text: |
-      VOC click
-    metadata:
-      turnManagement: turnKeep
-
-- intent: TRAINS2-fs19
-  examples:
-  - text: |
-      okay
-    metadata:
-      turnManagement: turnTake
-
-- intent: TRAINS2-fs20
-  examples:
-  - text: |
-      do you wanna load the boxcars while you're in Corning
-
 - intent: propositionalQuestion
   examples:
   - text: |
       do you wanna load the boxcars while you're in Corning
-
-- intent: TRAINS2-fs21
-  examples:
-  - text: |
-      yes
 
 - intent: answer
   examples:
@@ -284,46 +167,10 @@ nlu:
   - text: |
       to Dansville to Corning to Elmira
 
-- intent: TRAINS2-fs22
-  examples:
-  - text: |
-      okay
-
-- intent: TRAINS2-fs23
-  examples:
-  - text: |
-      and
-    metadata:
-      turnManagement: turnTake
-
-- intent: abandoned
-  examples:
-  - text: |
-      then make
-  - text: |
-      but i need
-
-- intent: TRAINS2-fs24
-  examples:
-  - text: |
-      then make the OJ in Elmira with engine two and take it from Elmira to Corning to Dansville to Avon
-
 - intent: instruct
   examples:
   - text: |
       then make the OJ in Elmira with engine two and take it from Elmira to Corning to Dansville to Avon
-
-- intent: TRAINS2-fs25
-  examples:
-  - text: |
-      okay
-
-- intent: TRAINS2-fs26
-  examples:
-  - text: |
-      do you wanna take the boxcars with you or do you want to leave them in Elmira
-    metadata:
-      turnManagement: turnAssign
 
 - intent: choiceQuestion
   examples:
@@ -332,52 +179,15 @@ nlu:
     metadata:
       turnManagement: turnAssign
 
-- intent: TRAINS2-fs27
-  examples:
-  - text: |
-      uh …
-    metadata:
-      turnManagement: turnAccept
-
-- intent: TRAINS2-fs28
-  examples:
-  - text: |
-      I will take them with me
-
-- intent: TRAINS2-fs29
-  examples:
-  - text: |
-      okay
-
-- intent: TRAINS2-fs30
-  examples:
-  - text: |
-      so you wanna go from Elmira
-
 - intent: checkQuestion
   examples:
   - text: |
       so you wanna go from Elmira
 
-- intent: TRAINS2-fs31
-  examples:
-  - text: |
-      to Avon
-
 - intent: completion
   examples:
   - text: |
       to Avon
-
-- intent: TRAINS2-fs32
-  examples:
-  - text: |
-      okay
-
-- intent: TRAINS2-fs33
-  examples:
-  - text: |
-      by which way
 
 - intent: setQuestion
   examples:
@@ -385,28 +195,6 @@ nlu:
       by which way
   - text: |
       which way do we wanna go
-
-- intent: TRAINS2-fs34
-  examples:
-  - text: |
-      uh
-    metadata:
-      turnManagement: turnTake
-
-- intent: TRAINS2-fs35
-  examples:
-  - text: |
-      t(o)-
-
-- intent: TRAINS2-fs36
-  examples:
-  - text: |
-      to Corning
-
-- intent: TRAINS2-fs37
-  examples:
-  - text: |
-      let me see
 
 - intent: pausing
   examples:
@@ -421,81 +209,12 @@ nlu:
     metadata:
       turnManagement: turnKeep
 
-- intent: TRAINS2-fs38
-  examples:
-  - text: |
-      let me think
-
-- intent: TRAINS2-fs39
-  examples:
-  - text: |
-      VOC mumble .. VOC click ..
-
-- intent: TRAINS2-fs40
-  examples:
-  - text: |
-      yeah to Corning to Dansville to Avon
-
-- intent: TRAINS2-fs41
-  examples:
-  - text: |
-      okay
-    metadata:
-      turnManagement: turnTake
-
-- intent: TRAINS2-fs42
-  examples:
-  - text: |
-      okay then that way
-
-- intent: TRAINS2-fs43
-  examples:
-  - text: |
-      it's now noon when you arrive in Avon
-
-- intent: TRAINS2-fs44
-  examples:
-  - text: |
-      okay that's fine
-
-- intent: TRAINS2-fs45
-  examples:
-  - text: |
-      I guess I still have nine hours
-
-- intent: TRAINS2-fs46
-  examples:
-  - text: |
-      okay
-
-- intent: TRAINS2-fs47
-  examples:
-  - text: |
-      um
-    metadata:
-      turnManagement: turnTake
-
-- intent: TRAINS2-fs48
-  examples:
-  - text: |
-      oh oh wait
-
-- intent: TRAINS2-fs49
-  examples:
-  - text: |
-      I have something else to say
-
 - intent: inform
   examples:
   - text: |
       I have something else to say
   - text: |
       I am now finished
-
-- intent: TRAINS2-fs50
-  examples:
-  - text: |
-      I when I hit- when I reach
 
 - intent: selfCorrection
   examples:
@@ -508,184 +227,8 @@ nlu:
   - text: |
       the two tankers
 
-- intent: TRAINS2-fs51
-  examples:
-  - text: |
-      when I reach, when I reach
-
-- intent: TRAINS2-fs52
-  examples:
-  - text: |
-      when I reach Dansville I wanna pick up one more boxcar
-
-- intent: TRAINS2-fs53
-  examples:
-  - text: |
-      mm-hm
-
-- intent: TRAINS2-fs54
-  examples:
-  - text: |
-      f- .. uh
-    metadata:
-      turnManagement: turnTake
-
-- intent: TRAINS2-fs55
-  examples:
-  - text: |
-      okay
-
-- intent: TRAINS2-fs56
-  examples:
-  - text: |
-      and
-    metadata:
-      turnManagement: turnKeep
-
-- intent: TRAINS2-fs57
-  examples:
-  - text: |
-      bring it with me with the other two to Avon
-
-- intent: TRAINS2-fs58
-  examples:
-  - text: |
-      okay
-
-- intent: TRAINS2-fs59
-  examples:
-  - text: |
-      then
-    metadata:
-      turnManagement: turnKeep
-
-- intent: TRAINS2-fs60
-  examples:
-  - text: |
-      in Avon I want to load three box- drop off the one engine drop off the two tankers of OJ
-
-- intent: TRAINS2-fs61
-  examples:
-  - text: |
-      the one tanker the two tankers
-
-- intent: TRAINS2-fs62
-  examples:
-  - text: |
-      of oranges and of OJ actually
-
-- intent: TRAINS2-fs63
-  examples:
-  - text: |
-      load those three
-
-- intent: TRAINS2-fs64
-  examples:
-  - text: |
-      mm-hm
-
-- intent: TRAINS2-fs65
-  examples:
-  - text: |
-      the two tankers
-
-- intent: TRAINS2-fs66
-  examples:
-  - text: |
-      of ..
-
-- intent: TRAINS2-fs67
-  examples:
-  - text: |
-      and
-    metadata:
-      turnManagement: turnKeep
-
-- intent: TRAINS2-fs68
-  examples:
-  - text: |
-      fill up the three boxcars with bananas
-
-- intent: TRAINS2-fs69
-  examples:
-  - text: |
-      okay
-
-- intent: TRAINS2-fs70
-  examples:
-  - text: |
-      and
-    metadata:
-      turnManagement: turnKeep
-
-- intent: TRAINS2-fs71
-  examples:
-  - text: |
-      bring them back to Elmira
-
-- intent: TRAINS2-fs72
-  examples:
-  - text: |
-      which way do we wanna go
-
-- intent: TRAINS2-fs73
-  examples:
-  - text: |
-      uh
-    metadata:
-      turnManagement: turnTake
-
-- intent: TRAINS2-fs74
-  examples:
-  - text: |
-      to Dansville to Corning to Elmira
-
-- intent: TRAINS2-fs75
-  examples:
-  - text: |
-      okay
-
-- intent: TRAINS2-fs76
-  examples:
-  - text: |
-      let's see
-    metadata:
-      turnManagement: turnKeep
-
-- intent: TRAINS2-fs77
-  examples:
-  - text: |
-      four p.m.
-
-- intent: TRAINS2-fs78
-  examples:
-  - text: |
-      four p.m.
-
-- intent: TRAINS2-fs79
-  examples:
-  - text: |
-      okay
-    metadata:
-      turnManagement: turnKeep
-
-- intent: TRAINS2-fs80
-  examples:
-  - text: |
-      we'll get there by seven p.m.
-
-- intent: TRAINS2-fs81
-  examples:
-  - text: |
-      okay great
-
 - intent: interactionStructuring
   examples:
   - text: |
       okay great
-
-- intent: TRAINS2-fs82
-  examples:
-  - text: |
-      I am now finished
 

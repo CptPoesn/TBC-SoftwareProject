@@ -8,7 +8,11 @@ def cvs_to_dict(filename):
         for rownum in range(len(reader)):
             for key, value in reader[rownum].items():
                 # TODO make list of allowed items instead of disallowed
-                if value and key != '﻿Markables' and key != 'Markables' and key != '\ufeffMarkables' and key != 'Sender' and key != 'Addressee' and key != 'Turn transcription'and key != 'FS text' and key != 'Comments' and key!= 'other':
+                # if value and key != '﻿Markables' and key != 'Markables' and key != '\ufeffMarkables' and key != 'Sender' and key != 'Addressee' and key != 'Turn transcription'and key != 'FS text' and key != 'Comments' and key!= 'other':
+                if value and (key == 'Task' or key == 'autoFeedback' or key == 'alloFeedback' or key == 'turnManagement'
+                              or key == 'timeManagement' or key == 'ownCommunicationManagement'
+                              or key == 'partnerCommunicationManagement' or key == 'discourseStructuring'
+                              or key == 'socialObligationsManagement'):
                     spl = value.split()
                     reader[rownum][key] = spl[1]
 
@@ -31,10 +35,13 @@ def dict_to_yaml(filename_out, data_dict):
     for row in data_dict:
         for key, value in row.items():
             # skips lines that aren't annotated
-            if value and key != 'Markables' and key != 'Sender' \
-                    and key != 'Addressee' and key != 'Turn transcription' and key != 'FS text' \
-                    and key != 'turnManagement':
+            if value and (key == 'Task' or key == 'autoFeedback' or key == 'alloFeedback' or key == 'turnManagement'
+                          or key == 'timeManagement' or key == 'ownCommunicationManagement'
+                          or key == 'partnerCommunicationManagement' or key == 'discourseStructuring'
+                          or key == 'socialObligationsManagement'):
                 if row['turnManagement']:
+                    if value == row['turnManagement']:
+                        continue
                     yaml_dict[value].append(row['FS text'] + '\n    metadata:\n      turnManagement: '
                                             + row['turnManagement'])
                     # print(row['turnManagement'])
@@ -43,6 +50,8 @@ def dict_to_yaml(filename_out, data_dict):
     with open(filename_out, 'w') as f:
         f.write('nlu:\n')  # no spaces
         for key, values in yaml_dict.items():
+            if key == 'turnKeep':
+                continue
             f.write('- intent: ' + key + '\n')  # no spaces
             f.write('  examples:' + '\n')  # two spaces
 

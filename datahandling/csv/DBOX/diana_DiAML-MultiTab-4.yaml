@@ -1,9 +1,4 @@
 nlu:
-- intent: fsp1DISCV0;fsp1SOMCV0;fsp1CTMCV0
-  examples:
-  - text: |
-       good afternoon 
-
 - intent: opening
   examples:
   - text: |
@@ -14,16 +9,6 @@ nlu:
   - text: |
        good afternoon 
 
-- intent: dap1CTM0:contactManagement:contactIndication
-  examples:
-  - text: |
-       good afternoon 
-
-- intent: fsp2DISCV0;fsp2SOMCV0;fsp2CTMCV0
-  examples:
-  - text: |
-       hello 
-
 - intent: opening(Fe:fsp2DISFB0)
   examples:
   - text: |
@@ -33,18 +18,6 @@ nlu:
   examples:
   - text: |
        hello 
-
-- intent: dap2CTM0:contactManagement:contactIndication(Fu:dap1CTM0)
-  examples:
-  - text: |
-       hello 
-
-- intent: fsp1TUMCV0;fsp1TIMCV0
-  examples:
-  - text: |
-       uh 
-    metadata:
-      turnManagement: turnTake
 
 - intent: stalling
   examples:
@@ -151,11 +124,6 @@ nlu:
     metadata:
       turnManagement: turnKeep
 
-- intent: fsp1SOMCV1
-  examples:
-  - text: |
-       whats your name 
-
 - intent: setQuestion
   examples:
   - text: |
@@ -171,20 +139,10 @@ nlu:
   - text: |
        where did you die 
 
-- intent: fsp2SOMCV1
-  examples:
-  - text: |
-       my name is gregor linn 
-
 - intent: setAnswer(Fu:dap1SOM1)
   examples:
   - text: |
        my name is gregor linn 
-
-- intent: fsp1AUFCV0;fsp1SOMCV2
-  examples:
-  - text: |
-       nice to meet you 
 
 - intent: autoPositive(Fe:fsp1AUFFB0)
   examples:
@@ -192,11 +150,6 @@ nlu:
        nice to meet you 
 
 - intent: initGreeting[positive](Fe:fsp1SOMFB2)
-  examples:
-  - text: |
-       nice to meet you 
-
-- intent: fsp2AUFCV0;fsp2SOMCV2
   examples:
   - text: |
        nice to meet you 
@@ -211,39 +164,10 @@ nlu:
   - text: |
        nice to meet you 
 
-- intent: fsp1TUMCV1;fsp1TIMCV1
-  examples:
-  - text: |
-       uh 
-    metadata:
-      turnManagement: turnTake
-
-- intent: fsp1SOMCV3
-  examples:
-  - text: |
-       how are you doing today 
-
-- intent: fsp2TUMCV0
-  examples:
-  - text: |
-       mh 
-    metadata:
-      turnManagement: turnAccept
-
-- intent: fsp2SOMCV3
-  examples:
-  - text: |
-       fine 
-
 - intent: setAnswer(Fu:dap1SOM3)
   examples:
   - text: |
        fine 
-
-- intent: fsp1AUFCV1;fsp1OCMCV0
-  examples:
-  - text: |
-       im doing well too 
 
 - intent: autoPositive(Fe:fsp1AUFFB1)
   examples:
@@ -254,28 +178,6 @@ nlu:
   examples:
   - text: |
        im doing well too 
-
-- intent: fsp1TUMCV2;fsp1TIMCV2
-  examples:
-  - text: |
-       uh 
-    metadata:
-      turnManagement: turnKeep
-
-- intent: fsp1TSMCV0
-  examples:
-  - text: |
-       lets play 
-
-- intent: dap1TSM0:taskManagement:suggest
-  examples:
-  - text: |
-       lets play 
-
-- intent: fsp1TSMCV1;fsp1DISCV1
-  examples:
-  - text: |
-       so first ill tell you the rules 
 
 - intent: interactionStructuring
   examples:
@@ -288,49 +190,7 @@ nlu:
   - text: |
        alright 
 
-- intent: dap1TSM1:taskManagement:inform
-  examples:
-  - text: |
-       so first ill tell you the rules 
-
-- intent: fsp1TSMCV2
-  examples:
-  - text: |
-       i am a very famous person 
-
-- intent: dap1TSM2:taskManagement:inform
-  examples:
-  - text: |
-       i am a very famous person 
-
-- intent: fsp2AUFCV1
-  examples:
-  - text: |
-       okay 
-
 - intent: autoPositive(Fe:fsp2AUFFB1)
-  examples:
-  - text: |
-       okay 
-
-- intent: fsp1TUMCV3;fsp1TIMCV3
-  examples:
-  - text: |
-       uh 
-    metadata:
-      turnManagement: turnKeep
-
-- intent: fsp1TSMCV3
-  examples:
-  - text: |
-       you need to guess my name 
-
-- intent: dap1TSM3:taskManagement:instruct
-  examples:
-  - text: |
-       you need to guess my name 
-
-- intent: fsp2AUFCV2
   examples:
   - text: |
        okay 
@@ -340,134 +200,20 @@ nlu:
   - text: |
        okay 
 
-- intent: fsp1TSMCV4
-  examples:
-  - text: |
-       you can ask several questions except for one about my name 
-
-- intent: dap1TSM4:taskManagement:instruct
-  examples:
-  - text: |
-       you can ask several questions except for one about my name 
-
-- intent: fsp2AUFCV3
-  examples:
-  - text: |
-       okay 
-
 - intent: autoPositive(Fe:fsp2AUFFB3)
   examples:
   - text: |
        okay 
-
-- intent: fsp1TSMCV5
-  examples:
-  - text: |
-       you do not have to ask yes or no questions 
-
-- intent: dap1TSM5:taskManagement:instruct
-  examples:
-  - text: |
-       you do not have to ask yes or no questions 
-
-- intent: fsp1TSMCV6
-  examples:
-  - text: |
-       you can also ask open-ended questions 
-
-- intent: dap1TSM6:taskManagement:instruct {elaboration dap1TSM5}
-  examples:
-  - text: |
-       you can also ask open-ended questions 
-
-- intent: fsp2TSMCV0;fsp2AUFCV4
-  examples:
-  - text: |
-       okay i understand 
 
 - intent: autoPositive(Fe:fsp2AUFFB4)
   examples:
   - text: |
        okay i understand 
 
-- intent: dap2TSM0:taskManagement:inform
-  examples:
-  - text: |
-       okay i understand 
-
-- intent: fsp1TSMCV7
-  examples:
-  - text: |
-       you have ten tries 
-
-- intent: dap1TSM7:taskManagement:inform
-  examples:
-  - text: |
-       you have ten tries 
-
-- intent: fsp1TSMCV8
-  examples:
-  - text: |
-       and if after ten questions or earlier you guess my name correctly 
-
-- intent: dap1TSM8:taskManagement:inform {cause da}
-  examples:
-  - text: |
-       and if after ten questions or earlier you guess my name correctly 
-
-- intent: fsp1TSMCV9
-  examples:
-  - text: |
-       you have won the game 
-
-- intent: dap1TSM9:taskManagement:inform
-  examples:
-  - text: |
-       you have won the game 
-
-- intent: fsp1TSMCV10
-  examples:
-  - text: |
-       if not youve lost the game 
-
-- intent: dap1TSM10:taskManagement:inform
-  examples:
-  - text: |
-       if not youve lost the game 
-
-- intent: fsp2AUFCV5
-  examples:
-  - text: |
-       okay 
-
 - intent: autoPositive(Fe:fsp2AUFFB5)
   examples:
   - text: |
        okay 
-
-- intent: fsp2TUMCV1
-  examples:
-  - text: |
-       and 
-    metadata:
-      turnManagement: turnGrab
-
-- intent: fsp1TSMCV11
-  examples:
-  - text: |
-       you should 
-
-- intent: dap1TSM11:taskManagement:instruct
-  examples:
-  - text: |
-       you should 
-
-- intent: fsp1AUFCV2;fsp1TUMCV4
-  examples:
-  - text: |
-       mhm 
-    metadata:
-      turnManagement: turnRelease(Fu:dap2TUM1)
 
 - intent: autoPositive(Fe:fsp1AUFFB2)
   examples:
@@ -476,163 +222,27 @@ nlu:
     metadata:
       turnManagement: turnRelease(Fu:dap2TUM1)
 
-- intent: fsp2TSMCV1
-  examples:
-  - text: |
-       what is it what you answer 
-
-- intent: dap2TSM1:taskManagement:setQuestion
-  examples:
-  - text: |
-       what is it what you answer 
-
-- intent: fsp2TUMCV2;fsp2TIMCV0
-  examples:
-  - text: |
-       uh is 
-    metadata:
-      turnManagement: turnKeep
-
-- intent: fsp2OCMCV0
-  examples:
-  - text: |
-       is 
-
 - intent: selfCorrection(Fu:dap233)
   examples:
   - text: |
        is 
-
-- intent: fsp1TUMCV5;fsp1TIMCV4
-  examples:
-  - text: |
-       uhm 
-    metadata:
-      turnManagement: turnAccept
-
-- intent: fsp1AUFCV3
-  examples:
-  - text: |
-       could you repeat the questions 
 
 - intent: autoNegative(Fe:fsp1AUFFB3)
   examples:
   - text: |
        could you repeat the questions 
 
-- intent: fsp1AUFCV4
-  examples:
-  - text: |
-       could you clarify the question 
-
 - intent: autoNegative(Fe:fsp1AUFFB4)
   examples:
   - text: |
        could you clarify the question 
-
-- intent: fsp2TUMCV3;fsp2TIMCV1
-  examples:
-  - text: |
-       uhm 
-    metadata:
-      turnManagement: turnTake
-
-- intent: fsp2TSMCV2
-  examples:
-  - text: |
-       are you just saying yes or no or 
-
-- intent: dap2TSM2:taskManagement:choiceQuestion(Fu:dap1TSM7)
-  examples:
-  - text: |
-       are you just saying yes or no or 
-
-- intent: fsp2TUMCV4;fsp2TIMCV2
-  examples:
-  - text: |
-       uh 
-    metadata:
-      turnManagement: turnKeep
-
-- intent: fsp1TSMCV12;fsp1TUMCV6
-  examples:
-  - text: |
-       no 
-    metadata:
-      turnManagement: turnGrab
-
-- intent: dap1TSM12:taskManagement:propositionalAnswer(Fu:dap2TSM2)
-  examples:
-  - text: |
-       no 
-    metadata:
-      turnManagement: turnGrab
-
-- intent: fsp1TSMCV13
-  examples:
-  - text: |
-       i will if you ask me yes or no question i will say yes or no 
-
-- intent: dap1TSM13:taskManagement:inform {elaboration dap1TSM12}
-  examples:
-  - text: |
-       i will if you ask me yes or no question i will say yes or no 
-
-- intent: fsp1OCMCV1
-  examples:
-  - text: |
-       i will 
 
 - intent: selfCorrection(Fu:dap1141)
   examples:
   - text: |
        i will 
 
-- intent: fsp2AUFCV6
-  examples:
-  - text: |
-       okay 
-
 - intent: autoPositive(Fe:fsp2AUFFB6)
-  examples:
-  - text: |
-       okay 
-
-- intent: fsp1TUMCV7;fsp1TIMCV5
-  examples:
-  - text: |
-       uhm 
-    metadata:
-      turnManagement: turnKeep
-
-- intent: fsp1TSMCV14
-  examples:
-  - text: |
-       if you ask me a more open-ended question i will try to answer the question 
-
-- intent: dap1TSM14:taskManagement:inform {elaboration dap1TSM13}
-  examples:
-  - text: |
-       if you ask me a more open-ended question i will try to answer the question 
-
-- intent: fsp1TUMCV8;fsp1TIMCV6
-  examples:
-  - text: |
-       uh 
-    metadata:
-      turnManagement: turnKeep
-
-- intent: fsp1TSMCV15
-  examples:
-  - text: |
-       i wont always have an answer to your question though 
-
-- intent: dap1TSM15:taskManagement:inform {contrast dap1TSM14}
-  examples:
-  - text: |
-       i wont always have an answer to your question though 
-
-- intent: fsp2AUFCV7
   examples:
   - text: |
        okay 
@@ -642,193 +252,35 @@ nlu:
   - text: |
        okay 
 
-- intent: fsp1TUMCV9;fsp1TIMCV7
-  examples:
-  - text: |
-       uhm 
-    metadata:
-      turnManagement: turnKeep
-
-- intent: fsp1DISCV2
-  examples:
-  - text: |
-       alright 
-
-- intent: fsp1TSMCV16
-  examples:
-  - text: |
-       do you understand the rules 
-
-- intent: dap1TSM16:taskManagement:propositionalQuestion
-  examples:
-  - text: |
-       do you understand the rules 
-
-- intent: fsp2TSMCV3
-  examples:
-  - text: |
-       yeah 
-
-- intent: dap2TSM3:taskManagement:confirm(Fu:dap1TSM16)
-  examples:
-  - text: |
-       yeah 
-
-- intent: fsp1TSMCV17
-  examples:
-  - text: |
-       would you like me to repeat anything 
-
-- intent: dap1TSM17:taskManagement:offer
-  examples:
-  - text: |
-       would you like me to repeat anything 
-
-- intent: fsp1OCMCV2
-  examples:
-  - text: |
-       would you 
-
 - intent: selfCorrection(Fu:dap1202)
   examples:
   - text: |
        would you 
-
-- intent: fsp2TSMCV4
-  examples:
-  - text: |
-       no 
-
-- intent: dap2TSM4:taskManagement:declineOffer(Fu:dap1TSM17)
-  examples:
-  - text: |
-       no 
-
-- intent: fsp2TSMCV5
-  examples:
-  - text: |
-       i think i understood everything 
-
-- intent: dap2TSM5:taskManagement:inform[uncertain] {elaboration dap2TSM4}
-  examples:
-  - text: |
-       i think i understood everything 
-
-- intent: fsp2TUMCV5;fsp2TIMCV3
-  examples:
-  - text: |
-       mh 
-    metadata:
-      turnManagement: turnKeep
-
-- intent: fsp1AUFCV5
-  examples:
-  - text: |
-       alright 
 
 - intent: autoPositive(Fe:fsp1AUFFB5)
   examples:
   - text: |
        alright 
 
-- intent: fsp1DISCV3
-  examples:
-  - text: |
-       alright and one more important thing 
-
-- intent: fsp1TSMCV18
-  examples:
-  - text: |
-       and one more important thing 
-
-- intent: dap1TSM18:taskManagement:inform
-  examples:
-  - text: |
-       and one more important thing 
-
-- intent: fsp1TSMCV19
-  examples:
-  - text: |
-       i will only be female famous people 
-
-- intent: dap1TSM19:taskManagement:inform
-  examples:
-  - text: |
-       i will only be female famous people 
-
-- intent: fsp1TUMCV10;fsp1TIMCV8
-  examples:
-  - text: |
-       uh 
-    metadata:
-      turnManagement: turnKeep
-
-- intent: fsp2AUFCV8
-  examples:
-  - text: |
-       ah okay 
-
 - intent: autoPositive(Fe:fsp2AUFFB8)
   examples:
   - text: |
        ah okay 
-
-- intent: fsp1ALFCV0
-  examples:
-  - text: |
-       mhm 
 
 - intent: alloPositive(Fe:fsp1ALFFB0)
   examples:
   - text: |
        mhm 
 
-- intent: fsp1AUFCV6;fsp1DISCV4
-  examples:
-  - text: |
-       alright 
-
 - intent: autoPositive(Fe:fsp1AUFFB6)
   examples:
   - text: |
        alright 
 
-- intent: fsp1TUMCV11
-  examples:
-  - text: |
-       alright uh 
-    metadata:
-      turnManagement: turnKeep
-
-- intent: fsp1TIMCV9
-  examples:
-  - text: |
-       uh 
-
-- intent: fsp1DISCV5
-  examples:
-  - text: |
-       so lets start 
-
 - intent: suggest
   examples:
   - text: |
        so lets start 
-
-- intent: fsp1TSKCV0;fsp1TSMCV20
-  examples:
-  - text: |
-       what is your first question 
-
-- intent: dap1TSM20:taskManagement:request
-  examples:
-  - text: |
-       what is your first question 
-
-- intent: fsp2TSKCV0;fsp2TSMCV6
-  examples:
-  - text: |
-       are you still alive 
 
 - intent: propositionalQuestion
   examples:
@@ -839,27 +291,10 @@ nlu:
   - text: |
        are you from america 
 
-- intent: dap2TSM6:taskManagement:addressRequest(Fu:dap1TSM20)
-  examples:
-  - text: |
-       are you still alive 
-
-- intent: fsp1TSKCV1
-  examples:
-  - text: |
-       no i am not 
-
 - intent: propositionalAnswer(Fu:dap2TSK0)
   examples:
   - text: |
        no i am not 
-
-- intent: fsp2AUFCV9;fsp2TUMCV6
-  examples:
-  - text: |
-       mhm 
-    metadata:
-      turnManagement: turnTake
 
 - intent: autoPositive(Fe:fsp2AUFFB9)
   examples:
@@ -868,80 +303,15 @@ nlu:
     metadata:
       turnManagement: turnTake
 
-- intent: fsp2TUMCV7;fsp2TIMCV4
-  examples:
-  - text: |
-       uhm 
-    metadata:
-      turnManagement: turnKeep
-
-- intent: fsp1TUMCV12;fsp1TIMCV10
-  examples:
-  - text: |
-       uh 
-    metadata:
-      turnManagement: turnTake
-
-- intent: fsp2TSKCV1
-  examples:
-  - text: |
-       are you from germany 
-
-- intent: fsp1TSKCV2
-  examples:
-  - text: |
-       no i am not from germany 
-
 - intent: propositionalAnswer(Fu:dap2TSK1)
   examples:
   - text: |
        no i am not from germany 
 
-- intent: fsp2TUMCV8;fsp2TIMCV5
-  examples:
-  - text: |
-       uhm 
-    metadata:
-      turnManagement: turnTake
-
-- intent: fsp2TSKCV2
-  examples:
-  - text: |
-       are you from america 
-
-- intent: fsp1TSKCV3
-  examples:
-  - text: |
-       no i am not from america 
-
 - intent: propositionalAnswer(Fu:dap2TSK2)
   examples:
   - text: |
        no i am not from america 
-
-- intent: fsp2TUMCV9;fsp2TIMCV6
-  examples:
-  - text: |
-       uh 
-    metadata:
-      turnManagement: turnTake
-
-- intent: fsp2TSKCV3
-  examples:
-  - text: |
-       what were you doing when you were alive 
-
-- intent: fsp1TUMCV13;fsp1TIMCV11
-  examples:
-  - text: |
-       ehm 
-    metadata:
-      turnManagement: turnTake
-
-- intent: fsp1TIMCV12
-  examples:
-  - text: |
-       let me think for a minute 
 
 - intent: pausing
   examples:
@@ -952,186 +322,60 @@ nlu:
     metadata:
       turnManagement: turnKeep
 
-- intent: fsp1TUMCV14;fsp1TIMCV13
-  examples:
-  - text: |
-       uhm 
-    metadata:
-      turnManagement: turnKeep
-
-- intent: fsp1TSKCV4
-  examples:
-  - text: |
-       i was 
-
 - intent: setAnswer
   examples:
   - text: |
        i was 
-
-- intent: fsp1TSKCV5
-  examples:
-  - text: |
-       i was a princess 
 
 - intent: setAnswer(Fu:dap2TSK3)
   examples:
   - text: |
        i was a princess 
 
-- intent: fsp1OCMCV3
-  examples:
-  - text: |
-       i was 
-
 - intent: selfCorrection(Fu:dap1281)
   examples:
   - text: |
        i was 
-
-- intent: fsp1TSKCV6
-  examples:
-  - text: |
-       when i was alive 
 
 - intent: setAnswer(Fu:dap1TSK5)
   examples:
   - text: |
        when i was alive 
 
-- intent: fsp2TSKCV4
-  examples:
-  - text: |
-       and where are you from 
-
-- intent: fsp1TSKCV7
-  examples:
-  - text: |
-       i am from england 
-
 - intent: setAnswer(Fu:dap2TSK4)
   examples:
   - text: |
        i am from england 
-
-- intent: fsp2AUFCV10
-  examples:
-  - text: |
-       okay 
 
 - intent: autoPositive(Fe:fsp2AUFFB10)
   examples:
   - text: |
        okay 
 
-- intent: fsp2TUMCV10;fsp2TIMCV7
-  examples:
-  - text: |
-       uhm 
-    metadata:
-      turnManagement: turnKeep
-
-- intent: fsp2TUMCV11;fsp2TIMCV8
-  examples:
-  - text: |
-       uh 
-    metadata:
-      turnManagement: turnKeep
-
-- intent: fsp2TSKCV5
-  examples:
-  - text: |
-       where did you die 
-
-- intent: fsp1TUMCV15;fsp1TIMCV14
-  examples:
-  - text: |
-       just a second 
-    metadata:
-      turnManagement: turnKeep
-
-- intent: fsp1TUMCV16;fsp1TIMCV15
-  examples:
-  - text: |
-       uhm 
-    metadata:
-      turnManagement: turnKeep
-
-- intent: fsp1TSKCV8
-  examples:
-  - text: |
-       i died in paris 
-
 - intent: setAnswer(Fu:dap2TSK5)
   examples:
   - text: |
        i died in paris 
-
-- intent: fsp2AUFCV11
-  examples:
-  - text: |
-       mhm 
 
 - intent: autoPositive(Fe:fsp2AUFFB11)
   examples:
   - text: |
        mhm 
 
-- intent: fsp2TUMCV12;fsp2TIMCV9
-  examples:
-  - text: |
-       uhm 
-    metadata:
-      turnManagement: turnKeep
-
-- intent: fsp2TUMCV13;fsp2TIMCV10
-  examples:
-  - text: |
-       uhm 
-    metadata:
-      turnManagement: turnKeep
-
-- intent: fsp2TSKCV6
-  examples:
-  - text: |
-       you are princess diana 
-
 - intent: guess
   examples:
   - text: |
        you are princess diana 
-
-- intent: fsp2TUMCV14;fsp2TIMCV11
-  examples:
-  - text: |
-       uh 
-    metadata:
-      turnManagement: turnKeep
-
-- intent: fsp1TSKCV9
-  examples:
-  - text: |
-       yes 
 
 - intent: confirm(Fu:dap2TSK6)
   examples:
   - text: |
        yes 
 
-- intent: fsp1TSKCV10
-  examples:
-  - text: |
-       that is the correct answer 
-
 - intent: inform_continue
   examples:
   - text: |
        that is the correct answer 
-
-- intent: fsp1ALFCV1;fsp1DISCV6;fsp1SOMCV4
-  examples:
-  - text: |
-       good job 
 
 - intent: alloPositive(Fe:fsp1ALFFB1)
   examples:
@@ -1149,11 +393,6 @@ nlu:
   examples:
   - text: |
        good job 
-
-- intent: fsp2AUFCV12;fsp2DISCV1
-  examples:
-  - text: |
-       okay 
 
 - intent: autoPositive(Fe:fsp2AUFFB12)
   examples:

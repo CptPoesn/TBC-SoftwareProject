@@ -17,7 +17,7 @@ TRAINS1-fs15;U;S;;and it's gonna take us also an hour to load boxcars right;and 
 TRAINS1-fs16;S;U;;right;right;da20: confirm (Fu: da18);;;;;;;;;
 TRAINS1-fs17;U;S;;okay so ... hm so every trip will take at least three hours then .. Um;okay;;da21: autoPositive (Fe: da20);;da22: turnTake;;;;;;
 TRAINS1-fs18;U;S;;;so;;;;da23: turnKeep;;;;;;
-TRAINS1-fs19;U;S;;;… hm so;;;;;da24: stalling;;;;;
+TRAINS1-fs19;U;S;;;... hm so;;;;;da24: stalling;;;;;
 TRAINS1-fs20;U;S;;;every trip will take at least three hours then;da25: checkQuestion;;;;;;;;;
 TRAINS1-fs21;U;S;;;... um;;;;da26: turnKeep;da27: stalling;;;;;
 TRAINS1-fs22;S;U;;right we can unload any amount of cargo onto a train in one hour so we can do a maximum of three boxcars in one hour;right;da28: confirm (Fu: da25);;;;;;;;;

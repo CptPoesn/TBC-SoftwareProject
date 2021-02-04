@@ -1,9 +1,4 @@
 nlu:
-- intent: fsp1DISCV0;fsp1SOMCV0;fsp1CTMCV0
-  examples:
-  - text: |
-       hello again 
-
 - intent: opening
   examples:
   - text: |
@@ -13,16 +8,6 @@ nlu:
   examples:
   - text: |
        hello again 
-
-- intent: dap1CTM0:contactManagement:contactIndication
-  examples:
-  - text: |
-       hello again 
-
-- intent: fsp2DISCV0;fsp2SOMCV0;fsp2CTMCV0
-  examples:
-  - text: |
-       hello 
 
 - intent: opening(Fu:dap1DIS0)
   examples:
@@ -34,85 +19,15 @@ nlu:
   - text: |
        hello 
 
-- intent: dap2CTM0:contactManagement:contactIndication(Fu:dap1CTM0)
-  examples:
-  - text: |
-       hello 
-
-- intent: fsp1TSMCV0
-  examples:
-  - text: |
-       lets start on the next round 
-
-- intent: dap1TSM0:taskManagement:suggest
-  examples:
-  - text: |
-       lets start on the next round 
-
-- intent: fsp2TSMCV0
-  examples:
-  - text: |
-       yeah 
-
-- intent: dap2TSM0:taskManagement:acceptSuggest(Fu:dap1TSM0)
-  examples:
-  - text: |
-       yeah 
-
-- intent: fsp1TSMCV1
-  examples:
-  - text: |
-       so do you remember all of the rules 
-
-- intent: dap1TSM1:taskManagement:propositionalQuestion
-  examples:
-  - text: |
-       so do you remember all of the rules 
-
-- intent: fsp2TSMCV1
-  examples:
-  - text: |
-       yes i think so 
-
-- intent: dap2TSM1:taskManagement:propositionalAnswer[uncertain](Fu:dap1TSM1)
-  examples:
-  - text: |
-       yes i think so 
-
-- intent: fsp1ALFCV0
-  examples:
-  - text: |
-       great 
-
 - intent: alloPositive(Fe:fsp1ALFFB0)
   examples:
   - text: |
        great 
 
-- intent: fsp1DISCV1
-  examples:
-  - text: |
-       alright so 
-
 - intent: interactionStructuring
   examples:
   - text: |
        alright so 
-
-- intent: fsp1TSMCV2
-  examples:
-  - text: |
-       lets get started 
-
-- intent: dap1TSM2:taskManagement:suggest
-  examples:
-  - text: |
-       lets get started 
-
-- intent: fsp1TSKCV0;fsp1TSMCV3
-  examples:
-  - text: |
-       what is your first question 
 
 - intent: setQuestion
   examples:
@@ -123,18 +38,6 @@ nlu:
   - text: |
        where are you from 
 
-- intent: dap1TSM3:taskManagement:request
-  examples:
-  - text: |
-       what is your first question 
-
-- intent: fsp2AUFCV0;fsp2TUMCV0
-  examples:
-  - text: |
-       mh 
-    metadata:
-      turnManagement: turnAccept
-
 - intent: autoPositive(Fe:fsp2AUFFB0)
   examples:
   - text: |
@@ -142,40 +45,15 @@ nlu:
     metadata:
       turnManagement: turnAccept
 
-- intent: fsp2TSKCV0;fsp2TSMCV2
-  examples:
-  - text: |
-       what are your initials 
-
-- intent: dap2TSM2:taskManagement:acceptRequest(Fu:dap1TSM3)
-  examples:
-  - text: |
-       what are your initials 
-
-- intent: fsp1AUFCV0
-  examples:
-  - text: |
-       i can not answer that question 
-
 - intent: inform(Fe:fsp1AUFFB0)
   examples:
   - text: |
        i can not answer that question 
 
-- intent: fsp2AUFCV1
-  examples:
-  - text: |
-       okay 
-
 - intent: autoPositive(Fe:fsp2AUFFB1)
   examples:
   - text: |
        okay 
-
-- intent: fsp2TSKCV1
-  examples:
-  - text: |
-       are you a real person 
 
 - intent: propositionalQuestion
   examples:
@@ -186,22 +64,10 @@ nlu:
   - text: |
        are you a musician 
 
-- intent: fsp1TSKCV1
-  examples:
-  - text: |
-       yes i am a real person 
-
 - intent: propositionalAnswer(Fu:dap2TSK1)
   examples:
   - text: |
        yes i am a real person 
-
-- intent: fsp2TUMCV1;fsp2TIMCV0
-  examples:
-  - text: |
-       uhm 
-    metadata:
-      turnManagement: turnTake
 
 - intent: stalling
   examples:
@@ -222,27 +88,10 @@ nlu:
     metadata:
       turnManagement: turnTake
 
-- intent: fsp2TSKCV2
-  examples:
-  - text: |
-       are you dead 
-
-- intent: fsp1TSKCV2
-  examples:
-  - text: |
-       no i am still alive 
-
 - intent: propositionalAnswer(Fu:dap2TSK2)
   examples:
   - text: |
        no i am still alive 
-
-- intent: fsp2AUFCV2;fsp2TUMCV2;fsp2TIMCV1
-  examples:
-  - text: |
-       mh 
-    metadata:
-      turnManagement: turnTake
 
 - intent: autoPositive(Fe:fsp2AUFFB2)
   examples:
@@ -251,27 +100,10 @@ nlu:
     metadata:
       turnManagement: turnTake
 
-- intent: fsp2TSKCV3
-  examples:
-  - text: |
-       where are you from 
-
-- intent: fsp1TSKCV3
-  examples:
-  - text: |
-       i am from barbados 
-
 - intent: setAnswer(Fu:dap2TSK3)
   examples:
   - text: |
        i am from barbados 
-
-- intent: fsp2AUFCV3;fsp2TUMCV3;fsp2TIMCV2
-  examples:
-  - text: |
-       mh 
-    metadata:
-      turnManagement: turnTake
 
 - intent: autoPositive(Fe:fsp2AUFFB3)
   examples:
@@ -280,27 +112,10 @@ nlu:
     metadata:
       turnManagement: turnTake
 
-- intent: fsp2TSKCV4
-  examples:
-  - text: |
-       are you a musician 
-
-- intent: fsp1TSKCV4
-  examples:
-  - text: |
-       yes i am a musician 
-
 - intent: propositionalAnswer(Fu:dap2TSK4)
   examples:
   - text: |
        yes i am a musician 
-
-- intent: fsp2AUFCV4;fsp2TUMCV4;fsp2TIMCV3
-  examples:
-  - text: |
-       mh 
-    metadata:
-      turnManagement: turnTake
 
 - intent: autoPositive(Fe:fsp2AUFFB4)
   examples:
@@ -309,30 +124,15 @@ nlu:
     metadata:
       turnManagement: turnTake
 
-- intent: fsp2TSKCV5
-  examples:
-  - text: |
-       are you rihanna 
-
 - intent: guess
   examples:
   - text: |
        are you rihanna 
 
-- intent: fsp1TSKCV5
-  examples:
-  - text: |
-       yes that is correct i am rihanna 
-
 - intent: confirm(Fu:dap2TSK5)
   examples:
   - text: |
        yes that is correct i am rihanna 
-
-- intent: fsp1ALFCV1;fsp1DISCV2;fsp1SOMCV1
-  examples:
-  - text: |
-       very good job 
 
 - intent: alloPositive(Fe:fsp1ALFFB1)
   examples:

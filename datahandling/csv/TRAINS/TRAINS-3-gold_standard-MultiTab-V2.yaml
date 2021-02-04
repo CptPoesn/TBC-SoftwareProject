@@ -1,38 +1,18 @@
 nlu:
-- intent: TRAINS3-fs1
-  examples:
-  - text: |
-      hello
-
 - intent: opening
   examples:
   - text: |
       hello
-
-- intent: TRAINS3-fs2
-  examples:
-  - text: |
-      can I help you
 
 - intent: offer
   examples:
   - text: |
       can I help you
 
-- intent: TRAINS3-fs3
-  examples:
-  - text: |
-      yes
-
 - intent: acceptOffer
   examples:
   - text: |
       yes
-
-- intent: TRAINS3-fs4
-  examples:
-  - text: |
-      I'd like to take a tanker from Corning and bring it to Elmira
 
 - intent: inform_pass
   examples:
@@ -44,11 +24,6 @@ nlu:
       then I'd like to take the tanker of orange juice through Dansville and then on to Avon
   - text: |
       then I'll take engine E two
-
-- intent: TRAINS3-fs5
-  examples:
-  - text: |
-      alright
 
 - intent: autoPositive
   examples:
@@ -69,30 +44,10 @@ nlu:
   - text: |
       alright
 
-- intent: TRAINS3-fs6
-  examples:
-  - text: |
-      and from Elmira I'd like to load orange juice into the tanker
-
-- intent: TRAINS3-fs7
-  examples:
-  - text: |
-      mm-hm
-
-- intent: TRAINS3-fs8
-  examples:
-  - text: |
-      I'd like then to take the tanker back from Elmira to Corning
-
 - intent: inform_continue
   examples:
   - text: |
       I'd like then to take the tanker back from Elmira to Corning
-
-- intent: TRAINS3-fs9
-  examples:
-  - text: |
-      the the
 
 - intent: stalling
   examples:
@@ -113,16 +68,6 @@ nlu:
   - text: |
       so uh
 
-- intent: TRAINS3-fs10
-  examples:
-  - text: |
-      alright
-
-- intent: TRAINS3-fs11
-  examples:
-  - text: |
-      now from Corning what would be the quickest route to Avon
-
 - intent: setQuestion
   examples:
   - text: |
@@ -133,16 +78,6 @@ nlu:
       the tankers move at the same speed
   - text: |
       how long will that take
-
-- intent: TRAINS3-fs12
-  examples:
-  - text: |
-      uh
-
-- intent: TRAINS3-fs13
-  examples:
-  - text: |
-      through Dansville
 
 - intent: answer
   examples:
@@ -155,118 +90,15 @@ nlu:
   - text: |
       eleven hours
 
-- intent: TRAINS3-fs14
-  examples:
-  - text: |
-      okay
-
-- intent: TRAINS3-fs15
-  examples:
-  - text: |
-      then I'd like to take the tanker of orange juice through Dansville and then on to Avon
-
-- intent: TRAINS3-fs16
-  examples:
-  - text: |
-      alright
-
-- intent: TRAINS3-fs17
-  examples:
-  - text: |
-      um
-    metadata:
-      turnManagement: turnKeep
-
-- intent: TRAINS3-fs18
-  examples:
-  - text: |
-      which engine would you like to use
-
-- intent: TRAINS3-fs19
-  examples:
-  - text: |
-      engine E two
-
-- intent: TRAINS3-fs20
-  examples:
-  - text: |
-      alright
-
-- intent: TRAINS3-fs21
-  examples:
-  - text: |
-      well
-    metadata:
-      turnManagement: turnTake
-
-- intent: abandoned
-  examples:
-  - text: |
-      is E two
-  - text: |
-      which is a
-
-- intent: TRAINS3-fs22
-  examples:
-  - text: |
-      will either one take me there any quicker
-
 - intent: propositionalQuestion
   examples:
   - text: |
       will either one take me there any quicker
 
-- intent: TRAINS3-fs23
-  examples:
-  - text: |
-      uh
-
-- intent: TRAINS3-fs24
-  examples:
-  - text: |
-      they're a they're
-
 - intent: selfCorrection
   examples:
   - text: |
       they're a they're
-
-- intent: TRAINS3-fs25
-  examples:
-  - text: |
-      no they're both the same
-
-- intent: TRAINS3-fs26
-  examples:
-  - text: |
-      okay
-
-- intent: TRAINS3-fs27
-  examples:
-  - text: |
-      then I'll take engine E two
-
-- intent: TRAINS3-fs28
-  examples:
-  - text: |
-      alright
-
-- intent: TRAINS3-fs29
-  examples:
-  - text: |
-      and
-    metadata:
-      turnManagement: turnTake
-
-- intent: TRAINS3-fs30
-  examples:
-  - text: |
-      the tankers move at the same speed
-
-- intent: TRAINS3-fs31
-  examples:
-  - text: |
-      right
 
 - intent: confirm
   examples:
@@ -274,11 +106,6 @@ nlu:
       right
   - text: |
       right
-
-- intent: TRAINS3-fs32
-  examples:
-  - text: |
-      okay
 
 - intent: interactionStructuring
   examples:
@@ -289,43 +116,8 @@ nlu:
   - text: |
       I am now finished
 
-- intent: TRAINS3-fs33
-  examples:
-  - text: |
-      so uh
-
-- intent: TRAINS3-fs34
-  examples:
-  - text: |
-      the plan is to take engine E two to Corning pick up a tanker back to Elmira load it with orange juice and then to Avon
-
 - intent: checkQuestion
   examples:
   - text: |
       the plan is to take engine E two to Corning pick up a tanker back to Elmira load it with orange juice and then to Avon
-
-- intent: TRAINS3-fs35
-  examples:
-  - text: |
-      right
-
-- intent: TRAINS3-fs36
-  examples:
-  - text: |
-      how long will that take
-
-- intent: TRAINS3-fs37
-  examples:
-  - text: |
-      eleven hours
-
-- intent: TRAINS3-fs38
-  examples:
-  - text: |
-      okay
-
-- intent: TRAINS3-fs39
-  examples:
-  - text: |
-      I am now finished
 
