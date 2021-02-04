@@ -10,3 +10,5 @@ do you see this?
 `our_dialogue_manader.py` same as above
 
 `rasa_env.yml` conda environment to set up rasa and its prerequisites
+
+`evaluation.py` the script we are / will be using to measure the performance of our model
