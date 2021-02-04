@@ -9,116 +9,114 @@ nlu:
 - intent: instruct
   examples:
   - text: |
-       now youre starting above the diamond mine 
-  - text: |
-       now go south from the diamond mine 
-  - text: |
        until you are still above the desert 
   - text: |
-       now go right from the diamond mine 
+       not beside but on the same level as the the carved wooden pole 
   - text: |
-       and now youve got to pass 
-  - text: |
-       and so youre pass by the graveyard as well 
-  - text: |
-       and then youre go up and over the top of the 
-  - text: |
-       go along 
-  - text: |
-       go along to your right and veer slightly upwards 
-  - text: |
-       as you reach the creek 
-  - text: |
-       and then go over and round the creek to your right 
-  - text: |
-       and then 
-  - text: |
-       see when youre over the top of the fast or your creek or the river that ive got here 
-  - text: |
-       when youre over the top of that and vertically in line with the apache camp go south 
-  - text: |
-       until just above the apache camp 
-  - text: |
-       when you reach the apache camp 
-  - text: |
-       well youre going to go from above the apache camp to the walled city 
-  - text: |
-       but youve got to avoid a carved wooden pole 
-  - text: |
-       so youve got 
-    metadata:
-      turnManagement: turnGrab
-  - text: |
-       so youre going from above the apache camp the carved wooden pole and over the top of the walled city 
-  - text: |
-       and then when you reach the far your left-hand side of the walled city travel southwards 
-  - text: |
-       until you come to the level of some flat rocks 
+       so youre go from the buffalo to the fort 
   - text: |
        and go bel-- 
   - text: |
-       so what i want you to do is go between the flat rocks and stone creek 
+       now youre starting above the diamond mine 
   - text: |
-       but 
+       now go right from the diamond mine 
   - text: |
-       so youre going to 
+       which on my map is halfway between the buffalo and the fort 
+  - text: |
+       the base of the carved wooden pole 
+  - text: |
+       then go slightly to your right beyond the flat rocks 
+  - text: |
+       until just above the apache camp 
+  - text: |
+       and then go over and round the creek to your right 
+  - text: |
+       so that youre on the right of the buffalo 
+  - text: |
+       and finishing 
+  - text: |
+       and then 
+  - text: |
+       when youre over the top of that and vertically in line with the apache camp go south 
   - text: |
        youve got to avoid that i think 
   - text: |
        so go south down past the walled city underneath your ghost town 
   - text: |
+       so avoid the saloon bar 
+  - text: |
+       but youve got to avoid the cattle ranch on the way 
+  - text: |
+       until you are above the level of the buffalo 
+  - text: |
+       go along to your right and veer slightly upwards 
+  - text: |
+       well youre going to go from above the apache camp to the walled city 
+  - text: |
+       so youve got 
+    metadata:
+      turnManagement: turnGrab
+  - text: |
+       and now youve got to pass 
+  - text: |
+       as you reach the creek 
+  - text: |
+       over the cattle ranch underneath buffalo or over the cattle ranch 
+  - text: |
+       and then youre go up and over the top of the 
+  - text: |
+       when you reach the apache camp 
+  - text: |
+       and come out at the left-hand side of the fort 
+  - text: |
+       and then when you reach the far your left-hand side of the walled city travel southwards 
+  - text: |
        and then slightly up 
   - text: |
        sort of northeast direction between the flat rocks and the stone creek 
   - text: |
+       then underneath the fort 
+  - text: |
+       so youre going from above the apache camp the carved wooden pole and over the top of the walled city 
+  - text: |
+       go along 
+  - text: |
+       now go south from the diamond mine 
+  - text: |
        and then slightly up underneath the flat rocks and above the stone creek 
-  - text: |
-       then go slightly to your right beyond the flat rocks 
-  - text: |
-       until you are above the level of the buffalo 
-  - text: |
-       so avoid the saloon bar 
-  - text: |
-       and then 
   - text: |
        then just straight down to the right of the buffalo 
   - text: |
-       so that youre on the right of the buffalo 
-  - text: |
-       and go underneath the buffalo 
-  - text: |
-       so youre go from the buffalo to the fort 
-  - text: |
-       but youve got to avoid the cattle ranch on the way 
+       so youre going to 
   - text: |
        and youll have to go up and over the top of the cattle ranch 
   - text: |
-       which on my map is halfway between the buffalo and the fort 
+       and so youre pass by the graveyard as well 
+  - text: |
+       until you come to the level of some flat rocks 
+  - text: |
+       but 
+  - text: |
+       but youve got to avoid a carved wooden pole 
+  - text: |
+       and go underneath the buffalo 
+  - text: |
+       so what i want you to do is go between the flat rocks and stone creek 
   - text: |
        so you need to go up on a sort of hill 
   - text: |
-       over the cattle ranch underneath buffalo or over the cattle ranch 
-  - text: |
-       then underneath the fort 
-  - text: |
-       and come out at the left-hand side of the fort 
-  - text: |
-       and finishing 
-  - text: |
-       not beside but on the same level as the the carved wooden pole 
-  - text: |
-       the base of the carved wooden pole 
+       see when youre over the top of the fast or your creek or the river that ive got here 
 
 - intent: stalling
   examples:
   - text: |
-       ehm 
-    metadata:
-      turnManagement: turnKeep
-  - text: |
        er 
     metadata:
       turnManagement: turnKeep
+  - text: |
+       ehm 
+    metadata:
+      turnManagement: turnTake
   - text: |
        ehm 
     metadata:
@@ -135,191 +133,93 @@ nlu:
        ehm 
     metadata:
       turnManagement: turnKeep
-  - text: |
-       ehm 
-    metadata:
-      turnManagement: turnKeep
-  - text: |
-       ehm 
-    metadata:
-      turnManagement: turnKeep
-  - text: |
-       ehm 
-    metadata:
-      turnManagement: turnKeep
-  - text: |
-       ehm 
-    metadata:
-      turnManagement: turnTake
-  - text: |
-       ehm 
-    metadata:
-      turnManagement: turnTake
-  - text: |
-       ehm 
-    metadata:
-      turnManagement: turnKeep
 
 - intent: acceptRequest
   examples:
-  - text: |
-       mmhmm 
   - text: |
        okay 
   - text: |
        mm 
   - text: |
-       mmhmm 
-  - text: |
-       okay 
-  - text: |
        uh-huh 
   - text: |
-       okay 
-  - text: |
-       right 
-  - text: |
-       right 
-  - text: |
-       right 
-  - text: |
-       right 
-  - text: |
        mmhmm 
-  - text: |
-       right 
   - text: |
        right 
 
 - intent: checkQuestion
   examples:
   - text: |
-       and the desert is below to your left 
+       mm 
   - text: |
-       so id be better to go underneath it right 
+       and the desert is below to your left 
   - text: |
        so ill be avoiding the saloon bar 
   - text: |
-       that on the level between the fort 
-  - text: |
-       mm 
-  - text: |
        under the fort 
+  - text: |
+       so id be better to go underneath it right 
+  - text: |
+       that on the level between the fort 
 
 - intent: confirm
   examples:
   - text: |
-       uh-huh 
-  - text: |
-       uh-huh 
-  - text: |
        its almost on level with the fort 
+  - text: |
+       uh-huh 
   - text: |
        underneath the fort uh-huh 
 
 - intent: autoPositive
   examples:
   - text: |
-       right 
-    metadata:
-      turnManagement: turnTake
-  - text: |
        okay 
-  - text: |
-       canoes 
-  - text: |
-       fast running creek 
-  - text: |
-       right okay 
-  - text: |
-       okay 
-    metadata:
-      turnManagement: turnTake
-  - text: |
-       mmhmm 
-  - text: |
-       you have fast running creek 
   - text: |
        slightly above 
   - text: |
-       right 
-    metadata:
-      turnManagement: turnTake
+       canoes 
   - text: |
-       right 
-    metadata:
-      turnManagement: turnTake
+       a ghost town 
   - text: |
-       mmhmm 
-  - text: |
-       mmhmm 
-  - text: |
-       right 
-    metadata:
-      turnManagement: turnTake
-  - text: |
-       right 
-  - text: |
-       right 
-  - text: |
-       right 
-  - text: |
-       right 
-  - text: |
-       mmhmm 
+       right okay 
   - text: |
        okay 
     metadata:
       turnManagement: turnRelease
   - text: |
-       right 
-  - text: |
-       a ghost town 
-  - text: |
-       right 
+       fast running creek 
   - text: |
        okay 
     metadata:
       turnManagement: turnTake
   - text: |
-       right okay 
-  - text: |
        right 
     metadata:
       turnManagement: turnTake
+  - text: |
+       mmhmm 
   - text: |
        to the right 
   - text: |
-       okay 
-    metadata:
-      turnManagement: turnTake
-  - text: |
        right 
   - text: |
-       right 
-  - text: |
-       okay 
-    metadata:
-      turnManagement: turnTake
-  - text: |
-       okay 
+       you have fast running creek 
 
 - intent: selfCorrection
   examples:
   - text: |
-       go 
-  - text: |
-       go 
-  - text: |
-       youre _ pass 
+       a c-shaped curve 
   - text: |
        vertically in line 
   - text: |
-       a c-shaped curve 
-  - text: |
-       ill 
+       go 
   - text: |
        youre on 
+  - text: |
+       youre _ pass 
+  - text: |
+       ill 
   - text: |
        go up 
   - text: |
@@ -329,70 +229,52 @@ nlu:
   examples:
   - text: |
        okay 
-  - text: |
-       okay 
-  - text: |
-       okay 
-  - text: |
-       okay 
 
 - intent: request
   examples:
   - text: |
-       now if you tell me whats to your right 
-  - text: |
        at the 
+  - text: |
+       now if you tell me whats to your right 
 
 - intent: setQuestion
   examples:
   - text: |
        whats to your right 
   - text: |
-       where is that 
-  - text: |
        okay so 
   - text: |
-       do you have anything between the walled city and the carved wooden pole 
-  - text: |
        so 
+  - text: |
+       where is that 
+  - text: |
+       do you have anything between the walled city and the carved wooden pole 
 
 - intent: answer
   examples:
   - text: |
+       uh-huh 
+  - text: |
        the canoes 
-  - text: |
-       fast running creek 
-  - text: |
-       no 
-  - text: |
-       right away down the very bottom 
-  - text: |
-       no 
-  - text: |
-       fast running creek 
-  - text: |
-       its just slightly above 
-  - text: |
-       uh-huh 
-  - text: |
-       right away on the far left 
-  - text: |
-       uh-huh 
   - text: |
        ghost town 
   - text: |
        ive not got anything between the carved wooden pole and the walled city 
   - text: |
+       fast running creek 
+  - text: |
        no 
   - text: |
        mmhmm 
+  - text: |
+       right away on the far left 
+  - text: |
+       right away down the very bottom 
+  - text: |
+       its just slightly above 
 
 - intent: propositionalQuestion
   examples:
-  - text: |
-       and do you have a graveyard 
-  - text: |
-       do you have a carved wooden pole in this area 
   - text: |
        below it 
   - text: |
@@ -400,26 +282,30 @@ nlu:
   - text: |
        do you have an apache camp 
   - text: |
+       or have you got something else there 
+  - text: |
+       do you have a fort 
+  - text: |
+       and do you have a graveyard 
+  - text: |
+       do you have a carved wooden pole in this area 
+  - text: |
        do you have a walled city 
   - text: |
        do you have a stone creek 
   - text: |
-       or have you got something else there 
-  - text: |
        now do you have a cattle ranch 
-  - text: |
-       do you have a fort 
 
 - intent: inform_continue
   examples:
   - text: |
-       theres actually a graveyard to the right of the diamond mine 
-  - text: |
-       well ive got a fast flowing river here 
-  - text: |
        but theres another one a carved wooden pole here 
   - text: |
        which is halfway between the walled city and the apache camp 
+  - text: |
+       theres actually a graveyard to the right of the diamond mine 
+  - text: |
+       well ive got a fast flowing river here 
   - text: |
        thats not on my map 
 
@@ -428,21 +314,21 @@ nlu:
   - text: |
        on my map 
   - text: |
-       on the same level as the diamond mine 
+       this is vertically in line with the walled city below it 
   - text: |
-       ive got is a fast flowing river 
+       ive got here 
+  - text: |
+       on the same level as the diamond mine 
   - text: |
        which in my map is slightly above the level of the apache camp 
   - text: |
-       this is vertically in line with the walled city below it 
-  - text: |
-       ive got one of them as well 
+       ive got is a fast flowing river 
   - text: |
        but slightly above the level of the apache camp 
   - text: |
        i dont have a saloon bar here 
   - text: |
-       ive got here 
+       ive got one of them as well 
 
 - intent: agreement
   examples:
@@ -452,8 +338,6 @@ nlu:
        right 
   - text: |
        score that out 
-  - text: |
-       right 
 
 - intent: choiceQuestion
   examples:
@@ -477,9 +361,9 @@ nlu:
 - intent: correction
   examples:
   - text: |
-       no 
-  - text: |
        but its slightly higher than the fort 
+  - text: |
+       no 
 
 - intent: declineSuggest
   examples:
@@ -498,10 +382,6 @@ nlu:
 
 - intent: alloPositive
   examples:
-  - text: |
-       okay 
-    metadata:
-      turnManagement: turnTake
   - text: |
        okay 
     metadata:

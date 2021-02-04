@@ -19,76 +19,42 @@ nlu:
 - intent: autoPositive
   examples:
   - text: |
-       great 
-  - text: |
        okay 
   - text: |
        great 
   - text: |
-       $LAUGH 
+       do I know any French which 
+  - text: |
+       now how do i ask that 
   - text: |
        france 
   - text: |
        okay 
     metadata:
-      turnManagement: turnKeep
-  - text: |
-       do I know any French which 
-  - text: |
-       okay 
-    metadata:
       turnManagement: turnTake
   - text: |
-       okay 
-    metadata:
-      turnManagement: turnTake
-  - text: |
-       now how do i ask that 
-  - text: |
-       okay 
-  - text: |
-       yes 
+       $LAUGH 
   - text: |
        ok 
     metadata:
       turnManagement: turnTake
   - text: |
-       okay 
-    metadata:
-      turnManagement: turnTake
-  - text: |
-       okay 
-    metadata:
-      turnManagement: turnTake
-  - text: |
-       okay 
-    metadata:
-      turnManagement: turnTake
-  - text: |
-       okay 
-    metadata:
-      turnManagement: turnTake
-  - text: |
-       okay 
-    metadata:
-      turnManagement: turnTake
+       yes 
   - text: |
        yeah 
   - text: |
+       know 
+  - text: |
        mkay 
   - text: |
-       know 
+       okay 
+    metadata:
+      turnManagement: turnKeep
 
 - intent: alloPositive
   examples:
   - text: |
-       great 
-  - text: |
        okay 
-  - text: |
-       great 
-  - text: |
-       that is a very good question 
   - text: |
        yeah 
   - text: |
@@ -97,75 +63,13 @@ nlu:
       turnManagement: turnTake
   - text: |
        well good try though 
+  - text: |
+       that is a very good question 
+  - text: |
+       great 
 
 - intent: stalling
   examples:
-  - text: |
-       uh 
-    metadata:
-      turnManagement: turnKeep
-  - text: |
-       uh 
-    metadata:
-      turnManagement: turnAccept
-  - text: |
-       uh 
-    metadata:
-      turnManagement: turnAccept
-  - text: |
-       uhm 
-    metadata:
-      turnManagement: turnAccept
-  - text: |
-       uh 
-    metadata:
-      turnManagement: turnAccept
-  - text: |
-       uh 
-    metadata:
-      turnManagement: turnKeep
-  - text: |
-       uhm 
-    metadata:
-      turnManagement: turnAccept
-  - text: |
-       uh 
-    metadata:
-      turnManagement: turnKeep
-  - text: |
-       uh 
-    metadata:
-      turnManagement: turnKeep
-  - text: |
-       uhm 
-    metadata:
-      turnManagement: turnAccept
-  - text: |
-       uhm 
-    metadata:
-      turnManagement: turnKeep
-  - text: |
-       uh 
-    metadata:
-      turnManagement: turnKeep
-  - text: |
-       okay 
-    metadata:
-      turnManagement: turnKeep
-  - text: |
-       uh 
-    metadata:
-      turnManagement: turnAccept
-  - text: |
-       uh 
-  - text: |
-       uhm 
-    metadata:
-      turnManagement: turnKeep
-  - text: |
-       uhm 
-    metadata:
-      turnManagement: turnKeep
   - text: |
        mh 
     metadata:
@@ -173,11 +77,7 @@ nlu:
   - text: |
        uh 
     metadata:
-      turnManagement: turnKeep
-  - text: |
-       uh 
-    metadata:
-      turnManagement: turnKeep
+      turnManagement: turnAccept
   - text: |
        uhm 
     metadata:
@@ -187,27 +87,13 @@ nlu:
     metadata:
       turnManagement: turnKeep
   - text: |
-       uhm 
+       uh 
+  - text: |
+       uh 
     metadata:
       turnManagement: turnKeep
   - text: |
-       uhm 
-    metadata:
-      turnManagement: turnKeep
-  - text: |
-       uhm 
-    metadata:
-      turnManagement: turnKeep
-  - text: |
-       uhm 
-    metadata:
-      turnManagement: turnKeep
-  - text: |
-       uhm 
-    metadata:
-      turnManagement: turnKeep
-  - text: |
-       uhm 
+       okay 
     metadata:
       turnManagement: turnKeep
 
@@ -224,78 +110,78 @@ nlu:
 - intent: setQuestion
   examples:
   - text: |
+       can you name one thing that many people know that you did 
+  - text: |
        what is your first question 
+  - text: |
+       what are you most known for in history of humankind 
+  - text: |
+       and during which year were you the queen consort of england 
   - text: |
        what are you famous for 
   - text: |
        which country $UNINTELLIGIBLE 
   - text: |
-       during which years exactly did you reign 
-  - text: |
        while you were at the peak of your power which position did you occupy in the country 
-  - text: |
-       and during which year were you the queen consort of england 
   - text: |
        how did you die 
   - text: |
        who was your husband during your time as queen regent of england 
   - text: |
-       what are you most known for in history of humankind 
-  - text: |
-       can you name one thing that many people know that you did 
+       during which years exactly did you reign 
 
 - intent: setAnswer
   examples:
   - text: |
-       i am famous for being one of the wealthiest and most powerful women in western europe during the middle ages 
+       from eleven fifty four to eleven eighty nine 
   - text: |
        france 
   - text: |
-       i was the queen consort of france and later the queen consort of england 
-  - text: |
-       from eleven fifty four to eleven eighty nine 
+       SIL i was married to henry duke of normandy who became king henry the second of england 
   - text: |
        i was 
   - text: |
-       SIL i was married to henry duke of normandy who became king henry the second of england 
+       i am famous for being one of the wealthiest and most powerful women in western europe during the middle ages 
   - text: |
        i was married to two kings and i participated in the second crusade while queen of france 
+  - text: |
+       i was the queen consort of france and later the queen consort of england 
 
 - intent: choiceQuestion
   examples:
   - text: |
-       are you part of the royalty or were you part of the royalty rather 
-  - text: |
        are you more famous for your time in england or in france 
+  - text: |
+       are you part of the royalty or were you part of the royalty rather 
 
 - intent: answer
   examples:
   - text: |
-       yes i was 
-  - text: |
        unfortunately im not sure how to answer that question 
+  - text: |
+       yes i was 
 
 - intent: pausing
   examples:
-  - text: |
-       yeah 
-  - text: |
-       just a minute 
-    metadata:
-      turnManagement: turnAccept
   - text: |
        just a minute 
     metadata:
       turnManagement: turnKeep
   - text: |
+       yeah 
+  - text: |
        just a second 
+  - text: |
+       just a minute 
+    metadata:
+      turnManagement: turnAccept
 
 - intent: autoNegative
   examples:
   - text: |
-       could you clarify 
-  - text: |
        now that does not work 
+  - text: |
+       could you clarify 
 
 - intent: acceptRequest
   examples:
@@ -307,20 +193,18 @@ nlu:
   - text: |
        which position 
   - text: |
-       years 
-  - text: |
-       how do 
+       documented 
   - text: |
        SIL i was 
   - text: |
-       king 
+       how do 
   - text: |
-       documented 
+       years 
+  - text: |
+       king 
 
 - intent: request
   examples:
-  - text: |
-       wait 
   - text: |
        give me just a second 
     metadata:
@@ -331,39 +215,37 @@ nlu:
 - intent: inform
   examples:
   - text: |
-       i dont have an answer to that question 
-  - text: |
-       im not sure if i can answer it 
+       nah i dont think i know her 
   - text: |
        not sure that i can fully answer that question 
   - text: |
-       i dont have an answer to that question 
-  - text: |
        unfortunately im not sure how to answer that question 
+  - text: |
+       and maybe next time 
+  - text: |
+       im not sure if i can answer it 
+  - text: |
+       i dont have an answer to that question 
   - text: |
        but i dont have a answer to that question 
   - text: |
-       nah i dont think i know her 
-  - text: |
        well good try though 
-  - text: |
-       and maybe next time 
 
 - intent: inform_pass
   examples:
   - text: |
-       if its not too general for a question 
-  - text: |
        my name is eleanor of aquitaine 
+  - text: |
+       if its not too general for a question 
 
 - intent: propositionalQuestion
   examples:
   - text: |
+       are you considered a hero by some 
+  - text: |
        did you have any religious epiphanies 
   - text: |
        documented 
-  - text: |
-       are you considered a hero by some 
 
 - intent: propositionalAnswer
   examples:

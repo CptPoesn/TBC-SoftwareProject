@@ -31,8 +31,10 @@ def cvs_to_dict(filename):
 
 
 def dict_to_yaml(filename_out, data_dict):
-    yaml_dict = dd(list)
+    # yaml_dict = dd(list)
+    yaml_dict = dd(set)
     for row in data_dict:
+
         for key, value in row.items():
             # skips lines that aren't annotated
             if value and (key == 'Task' or key == 'autoFeedback' or key == 'alloFeedback' or key == 'turnManagement'
@@ -42,11 +44,14 @@ def dict_to_yaml(filename_out, data_dict):
                 if row['turnManagement']:
                     if value == row['turnManagement']:
                         continue
-                    yaml_dict[value].append(row['FS text'] + '\n    metadata:\n      turnManagement: '
+                    # yaml_dict[value].append(row['FS text'] + '\n    metadata:\n      turnManagement: '
+                    #                         + row['turnManagement'])
+                    yaml_dict[value].add(row['FS text'] + '\n    metadata:\n      turnManagement: '
                                             + row['turnManagement'])
-                    # print(row['turnManagement'])
+
                 else:
-                    yaml_dict[value].append(row['FS text'])
+                    # yaml_dict[value].append(row['FS text'])
+                    yaml_dict[value].add(row['FS text'])
     with open(filename_out, 'w') as f:
         f.write('nlu:\n')  # no spaces
         for key, values in yaml_dict.items():

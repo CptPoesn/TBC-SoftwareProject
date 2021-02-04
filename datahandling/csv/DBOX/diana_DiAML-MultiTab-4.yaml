@@ -2,46 +2,26 @@ nlu:
 - intent: opening
   examples:
   - text: |
-       good afternoon 
-  - text: |
        hello 
+  - text: |
+       good afternoon 
 
 - intent: initGreeting
   examples:
   - text: |
-       good afternoon 
-  - text: |
        nice to meet you 
+  - text: |
+       good afternoon 
 
 - intent: returnGreeting
   examples:
   - text: |
-       hello 
-  - text: |
        nice to meet you 
+  - text: |
+       hello 
 
 - intent: stalling
   examples:
-  - text: |
-       uh 
-    metadata:
-      turnManagement: turnTake
-  - text: |
-       uh 
-    metadata:
-      turnManagement: turnTake
-  - text: |
-       uh 
-    metadata:
-      turnManagement: turnKeep
-  - text: |
-       uh 
-    metadata:
-      turnManagement: turnKeep
-  - text: |
-       uh is 
-    metadata:
-      turnManagement: turnKeep
   - text: |
        uhm 
     metadata:
@@ -51,86 +31,34 @@ nlu:
     metadata:
       turnManagement: turnTake
   - text: |
-       uh 
+       ehm 
     metadata:
-      turnManagement: turnKeep
-  - text: |
-       uhm 
-    metadata:
-      turnManagement: turnKeep
-  - text: |
-       uh 
-    metadata:
-      turnManagement: turnKeep
-  - text: |
-       uhm 
-    metadata:
-      turnManagement: turnKeep
+      turnManagement: turnTake
   - text: |
        mh 
     metadata:
       turnManagement: turnKeep
   - text: |
-       uh 
+       uh is 
+    metadata:
+      turnManagement: turnKeep
+  - text: |
+       uhm 
     metadata:
       turnManagement: turnKeep
   - text: |
        uh 
   - text: |
-       uhm 
+       uh 
     metadata:
       turnManagement: turnKeep
   - text: |
        uh 
     metadata:
       turnManagement: turnTake
-  - text: |
-       uhm 
-    metadata:
-      turnManagement: turnTake
-  - text: |
-       uh 
-    metadata:
-      turnManagement: turnTake
-  - text: |
-       ehm 
-    metadata:
-      turnManagement: turnTake
-  - text: |
-       uhm 
-    metadata:
-      turnManagement: turnKeep
-  - text: |
-       uhm 
-    metadata:
-      turnManagement: turnKeep
-  - text: |
-       uh 
-    metadata:
-      turnManagement: turnKeep
-  - text: |
-       uhm 
-    metadata:
-      turnManagement: turnKeep
-  - text: |
-       uhm 
-    metadata:
-      turnManagement: turnKeep
-  - text: |
-       uhm 
-    metadata:
-      turnManagement: turnKeep
-  - text: |
-       uh 
-    metadata:
-      turnManagement: turnKeep
 
 - intent: setQuestion
   examples:
-  - text: |
-       whats your name 
-  - text: |
-       how are you doing today 
   - text: |
        what is your first question 
   - text: |
@@ -138,43 +66,31 @@ nlu:
   - text: |
        and where are you from 
   - text: |
+       whats your name 
+  - text: |
+       how are you doing today 
+  - text: |
        where did you die 
 
 - intent: setAnswer
   examples:
   - text: |
-       my name is gregor linn 
-  - text: |
-       fine 
-  - text: |
-       i was 
-  - text: |
-       i was a princess 
-  - text: |
        when i was alive 
   - text: |
        i am from england 
   - text: |
+       my name is gregor linn 
+  - text: |
        i died in paris 
+  - text: |
+       fine 
+  - text: |
+       i was a princess 
+  - text: |
+       i was 
 
 - intent: autoPositive
   examples:
-  - text: |
-       nice to meet you 
-  - text: |
-       nice to meet you 
-  - text: |
-       im doing well too 
-  - text: |
-       okay 
-  - text: |
-       okay 
-  - text: |
-       okay 
-  - text: |
-       okay i understand 
-  - text: |
-       okay 
   - text: |
        mhm 
     metadata:
@@ -182,23 +98,21 @@ nlu:
   - text: |
        okay 
   - text: |
-       okay 
-  - text: |
        alright 
+  - text: |
+       mhm 
   - text: |
        ah okay 
   - text: |
-       alright 
+       im doing well too 
+  - text: |
+       okay i understand 
+  - text: |
+       nice to meet you 
   - text: |
        mhm 
     metadata:
       turnManagement: turnTake
-  - text: |
-       okay 
-  - text: |
-       mhm 
-  - text: |
-       okay 
 
 - intent: inform
   examples:
@@ -210,8 +124,6 @@ nlu:
   - text: |
        so first ill tell you the rules 
   - text: |
-       alright 
-  - text: |
        alright and one more important thing 
   - text: |
        alright 
@@ -219,9 +131,9 @@ nlu:
 - intent: selfCorrection
   examples:
   - text: |
-       is 
-  - text: |
        i will 
+  - text: |
+       is 
   - text: |
        would you 
   - text: |
@@ -230,16 +142,16 @@ nlu:
 - intent: autoNegative
   examples:
   - text: |
-       could you repeat the questions 
-  - text: |
        could you clarify the question 
+  - text: |
+       could you repeat the questions 
 
 - intent: alloPositive
   examples:
   - text: |
-       mhm 
-  - text: |
        good job 
+  - text: |
+       mhm 
 
 - intent: suggest
   examples:
@@ -249,11 +161,11 @@ nlu:
 - intent: propositionalQuestion
   examples:
   - text: |
+       are you from america 
+  - text: |
        are you still alive 
   - text: |
        are you from germany 
-  - text: |
-       are you from america 
 
 - intent: propositionalAnswer
   examples:
@@ -267,11 +179,11 @@ nlu:
 - intent: pausing
   examples:
   - text: |
-       let me think for a minute 
-  - text: |
        just a second 
     metadata:
       turnManagement: turnKeep
+  - text: |
+       let me think for a minute 
 
 - intent: guess
   examples:
@@ -291,9 +203,9 @@ nlu:
 - intent: closing
   examples:
   - text: |
-       good job 
-  - text: |
        okay 
+  - text: |
+       good job 
 
 - intent: congratulation
   examples:

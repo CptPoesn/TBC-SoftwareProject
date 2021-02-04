@@ -17,32 +17,22 @@ nlu:
 - intent: inform_pass
   examples:
   - text: |
-      I'd like to take a tanker from Corning and bring it to Elmira
-  - text: |
       and from Elmira I'd like to load orange juice into the tanker
   - text: |
-      then I'd like to take the tanker of orange juice through Dansville and then on to Avon
-  - text: |
       then I'll take engine E two
+  - text: |
+      I'd like to take a tanker from Corning and bring it to Elmira
+  - text: |
+      then I'd like to take the tanker of orange juice through Dansville and then on to Avon
 
 - intent: autoPositive
   examples:
-  - text: |
-      alright
   - text: |
       mm-hm
   - text: |
       alright
   - text: |
       okay
-  - text: |
-      alright
-  - text: |
-      alright
-  - text: |
-      okay
-  - text: |
-      alright
 
 - intent: inform_continue
   examples:
@@ -52,9 +42,11 @@ nlu:
 - intent: stalling
   examples:
   - text: |
+      uh
+  - text: |
       the the
   - text: |
-      uh
+      so uh
   - text: |
       um
     metadata:
@@ -63,32 +55,28 @@ nlu:
       well
     metadata:
       turnManagement: turnTake
-  - text: |
-      uh
-  - text: |
-      so uh
 
 - intent: setQuestion
   examples:
+  - text: |
+      how long will that take
   - text: |
       now from Corning what would be the quickest route to Avon
   - text: |
       which engine would you like to use
   - text: |
       the tankers move at the same speed
-  - text: |
-      how long will that take
 
 - intent: answer
   examples:
   - text: |
-      through Dansville
+      eleven hours
   - text: |
       engine E two
   - text: |
-      no they're both the same
+      through Dansville
   - text: |
-      eleven hours
+      no they're both the same
 
 - intent: propositionalQuestion
   examples:
@@ -104,17 +92,13 @@ nlu:
   examples:
   - text: |
       right
-  - text: |
-      right
 
 - intent: interactionStructuring
   examples:
   - text: |
-      okay
-  - text: |
-      okay
-  - text: |
       I am now finished
+  - text: |
+      okay
 
 - intent: checkQuestion
   examples:

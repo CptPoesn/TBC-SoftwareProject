@@ -7,11 +7,11 @@ nlu:
 - intent: initGreeting
   examples:
   - text: |
-       hello 
+       hello nikolina its nice to meet you 
   - text: |
        good afternoon almost evening 
   - text: |
-       hello nikolina its nice to meet you 
+       hello 
 
 - intent: opening(Fu:dap1DIS0)
   examples:
@@ -26,59 +26,7 @@ nlu:
 - intent: stalling
   examples:
   - text: |
-       uhm 
-    metadata:
-      turnManagement: turnTake
-  - text: |
-       uhm 
-    metadata:
-      turnManagement: turnKeep
-  - text: |
-       uhm 
-    metadata:
-      turnManagement: turnTake
-  - text: |
-       so 
-  - text: |
-       uhm 
-    metadata:
-      turnManagement: turnKeep
-  - text: |
-       uhm 
-    metadata:
-      turnManagement: turnKeep
-  - text: |
-       uhm 
-    metadata:
-      turnManagement: turnKeep
-  - text: |
-       uh 
-    metadata:
-      turnManagement: turnKeep
-  - text: |
        so uhm 
-    metadata:
-      turnManagement: turnKeep
-  - text: |
-       so 
-    metadata:
-      turnManagement: turnKeep
-  - text: |
-       uhm 
-    metadata:
-      turnManagement: turnKeep
-  - text: |
-       youre not alive 
-  - text: |
-       okay 
-    metadata:
-      turnManagement: turnKeep
-  - text: |
-       so 
-    metadata:
-      turnManagement: turnKeep
-  - text: |
-       so 
     metadata:
       turnManagement: turnKeep
   - text: |
@@ -90,50 +38,48 @@ nlu:
     metadata:
       turnManagement: turnKeep
   - text: |
+       uhm 
+    metadata:
+      turnManagement: turnAccept
+  - text: |
+       uhm 
+    metadata:
+      turnManagement: turnTake
+  - text: |
+       youre not alive 
+  - text: |
+       so 
+  - text: |
        eehm 
     metadata:
       turnManagement: turnKeep
   - text: |
-       so 
-  - text: |
        uhm 
     metadata:
-      turnManagement: turnAccept
+      turnManagement: turnKeep
   - text: |
        uh 
     metadata:
       turnManagement: turnKeep
   - text: |
-       uhm 
-    metadata:
-      turnManagement: turnKeep
-  - text: |
-       uhm 
-    metadata:
-      turnManagement: turnAccept
-  - text: |
        ninety seven 
   - text: |
-       uhm 
+       okay 
     metadata:
       turnManagement: turnKeep
-  - text: |
-       uhm 
-    metadata:
-      turnManagement: turnAccept
 
 - intent: setQuestion
   examples:
   - text: |
        what is your name 
   - text: |
-       how are you doing today 
-  - text: |
        what is your first question 
   - text: |
-       what do you do 
-  - text: |
        what is your nationality 
+  - text: |
+       how are you doing today 
+  - text: |
+       what do you do 
   - text: |
        when are you born 
   - text: |
@@ -162,9 +108,9 @@ nlu:
 - intent: interactionStructuring
   examples:
   - text: |
-       so 
-  - text: |
        alright so 
+  - text: |
+       so 
   - text: |
        alright 
     metadata:
@@ -256,13 +202,13 @@ nlu:
 - intent: propositionalQuestion
   examples:
   - text: |
-       are you alive 
-  - text: |
        are you a 
+  - text: |
+       are a politician 
   - text: |
        are you leading a company 
   - text: |
-       are a politician 
+       are you alive 
   - text: |
        did you have an affair with Monica Lewinsky 
 
@@ -377,9 +323,9 @@ nlu:
 - intent: guess
   examples:
   - text: |
-       george washington 
-  - text: |
        washington or bill clinton 
+  - text: |
+       george washington 
   - text: |
        so you are not Bill Clinton 
 
@@ -391,9 +337,9 @@ nlu:
 - intent: inform_pass
   examples:
   - text: |
-       im not sure hes alive 
-  - text: |
        I am george washington 
+  - text: |
+       im not sure hes alive 
 
 - intent: propositionalAnswer(Fu:dap2TSK13)
   examples:

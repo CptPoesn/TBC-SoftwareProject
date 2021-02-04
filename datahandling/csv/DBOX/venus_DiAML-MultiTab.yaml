@@ -29,9 +29,11 @@ nlu:
 - intent: autoPositive
   examples:
   - text: |
+       okay 
+  - text: |
        alright 
   - text: |
-       great 
+       ah okay 
   - text: |
        yeah 
   - text: |
@@ -39,24 +41,18 @@ nlu:
     metadata:
       turnManagement: turnTake
   - text: |
-       okay 
-  - text: |
-       ah okay 
-  - text: |
-       okay 
-  - text: |
-       alright 
+       great 
 
 - intent: alloPositive
   examples:
   - text: |
-       alright 
+       very close though 
   - text: |
-       great 
+       alright 
   - text: |
        very close 
   - text: |
-       very close though 
+       great 
 
 - intent: interactionStructuring
   examples:
@@ -66,59 +62,23 @@ nlu:
 - intent: stalling
   examples:
   - text: |
-       uhm 
-    metadata:
-      turnManagement: turnKeep
-  - text: |
        uh 
     metadata:
       turnManagement: turnAccept
   - text: |
-       uhm 
-    metadata:
-      turnManagement: turnKeep
-  - text: |
-       uhm 
-    metadata:
-      turnManagement: turnKeep
-  - text: |
-       uh 
-    metadata:
-      turnManagement: turnKeep
-  - text: |
-       uh 
-    metadata:
-      turnManagement: turnKeep
-  - text: |
-       uhm 
-    metadata:
-      turnManagement: turnTake
-  - text: |
-       and 
-    metadata:
-      turnManagement: turnTake
-  - text: |
        and 
     metadata:
       turnManagement: turnTake
   - text: |
        uhm 
     metadata:
-      turnManagement: turnKeep
-  - text: |
-       and 
-    metadata:
       turnManagement: turnTake
-  - text: |
-       uhm 
-    metadata:
-      turnManagement: turnKeep
   - text: |
        mmh 
     metadata:
       turnManagement: turnKeep
   - text: |
-       uh 
+       uhm 
     metadata:
       turnManagement: turnKeep
   - text: |
@@ -136,56 +96,56 @@ nlu:
   - text: |
        what is your first question 
   - text: |
+       and how old are you 
+  - text: |
        what is your mother tongue 
   - text: |
        where are you from 
-  - text: |
-       and how old are you 
   - text: |
        and what are you doing 
 
 - intent: setAnswer
   examples:
   - text: |
-       my mother tongue is english 
-  - text: |
        i am from the united states 
+  - text: |
+       i am a professional tennis player 
   - text: |
        i am thirty three 
   - text: |
        thirty three years old 
   - text: |
-       i am a professional tennis player 
+       my mother tongue is english 
 
 - intent: propositionalQuestion
   examples:
   - text: |
        and youre still alive 
   - text: |
-       does your first name start with an s 
-  - text: |
        are you successful in tennis 
+  - text: |
+       does your first name start with an s 
 
 - intent: propositionalAnswer
   examples:
   - text: |
-       yes i am still alive 
-  - text: |
        yes I am very successful 
+  - text: |
+       yes i am still alive 
 
 - intent: selfCorrection
   examples:
   - text: |
-       thirty 
-  - text: |
        with an 
+  - text: |
+       thirty 
 
 - intent: inform
   examples:
   - text: |
-       im not sure if i can answer that question 
-  - text: |
        no i cant answer that question 
+  - text: |
+       im not sure if i can answer that question 
 
 - intent: answer
   examples:
@@ -205,9 +165,9 @@ nlu:
 - intent: inform_continue
   examples:
   - text: |
-       very close 
-  - text: |
        but that is not the correct answer 
+  - text: |
+       very close 
 
 - intent: inform_pass
   examples:

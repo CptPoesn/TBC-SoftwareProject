@@ -7,338 +7,154 @@ nlu:
 - intent: autoPositive
   examples:
   - text: |
-      All right  
-  - text: |
-      Right 
+      That's true  
   - text: |
       Huh-uh 
-  - text: |
-      Huh-uh 
-  - text: |
-      Huh-uh 
-  - text: |
-      Right 
-  - text: |
-      Right 
-  - text: |
-      Huh-uh  
-  - text: |
-      Huh-uh 
-  - text: |
-      Huh-uh 
-  - text: |
-      Huh-uh   
-  - text: |
-      Huh-uh   
-  - text: |
-      Right 
-  - text: |
-      Right  
-  - text: |
-       Yeah   
-  - text: |
-      Yeah  
-  - text: |
-      Yeah 
-  - text: |
-      Yeah 
-  - text: |
-      Yeah  
-  - text: |
-      Yeah  
-  - text: |
-      Huh-uh 
-  - text: |
-      yeah
   - text: |
        Huh-uh   
-  - text: |
-      Yeah <laughter>  
-  - text: |
-      Yeah  
-  - text: |
-      sure
-  - text: |
-      Sure  
-  - text: |
-      Sure  
-  - text: |
-      Sure 
-  - text: |
-      Right  
-    metadata:
-      turnManagement: turnTake
-  - text: |
-      Right  
-  - text: |
-      Right  
-  - text: |
-      Right  
-  - text: |
-      Huh-uh  
   - text: |
       That's a big plus
   - text: |
-       Right   
-  - text: |
-      Right 
-  - text: |
-      Huh-uh 
-  - text: |
       Yeah 
   - text: |
-      Huh-uh 
+      <Laughter>
   - text: |
-      Right 
-  - text: |
-      Right  
-  - text: |
-      Right  
-  - text: |
-      Yeah 
-  - text: |
-      Huh-uh 
-  - text: |
-      Huh-uh  
-  - text: |
-      yeah
-  - text: |
-      Yeah,  
-  - text: |
-      <Laughter> Oh,  really  
-  - text: |
-       Huh-uh   
-  - text: |
-      Right  
-  - text: |
-      Right 
-  - text: |
-      Right  
-  - text: |
-      Right 
-  - text: |
-      Huh-uh 
+      Sure 
   - text: |
       That's amazing  
   - text: |
-      <Laughter>
+      Right  
+  - text: |
+      Yeah,  
   - text: |
        <Laughter>  Huh-uh 
   - text: |
-      Yeah  
+       Yeah   
   - text: |
-      <Laughter>
+      Huh-uh   
   - text: |
-       <Laughter>
+      Right  
+    metadata:
+      turnManagement: turnTake
+  - text: |
+      Sure  
   - text: |
       No  
   - text: |
-      Yeah 
-  - text: |
-      Huh-uh 
-  - text: |
-      Yeah  
-  - text: |
-      Yeah  
-  - text: |
       That's true 
   - text: |
-      Yeah 
+      yeah
   - text: |
-      Yeah <laughter>  
+      sure
   - text: |
-      Huh-uh 
+       Right   
+  - text: |
+      <Laughter> Oh,  really  
+  - text: |
+      Right 
+  - text: |
+      Yeah  
+  - text: |
+      All right  
   - text: |
       Yeah <laughter> 
   - text: |
+       <Laughter>
+  - text: |
       Yeah, oh,   
   - text: |
-      That's true  
-  - text: |
-      <Laughter>
-  - text: |
-      That's true 
+      Yeah <laughter>  
   - text: |
       Huh-uh  
-  - text: |
-      Huh-uh 
-  - text: |
-      Yeah 
-  - text: |
-      Huh-uh 
-  - text: |
-      Huh-uh 
 
 - intent: stalling
   examples:
-  - text: |
-      Uh,
-    metadata:
-      turnManagement: turnKeep
-  - text: |
-      uh
-  - text: |
-      from uh from
-  - text: |
-      uh
-  - text: |
-      uh
-  - text: |
-      you know
-  - text: |
-      uh
-  - text: |
-      of, of
-  - text: |
-      um
-  - text: |
-      it's, it's
-  - text: |
-      Uh
-  - text: |
-      uh
-  - text: |
-      uh
-  - text: |
-      Uh
-  - text: |
-      uh uh
-  - text: |
-      you know
-  - text: |
-      uh
-  - text: |
-      you know
-  - text: |
-      um
-  - text: |
-      you know
-  - text: |
-      you're, you're
-  - text: |
-      It's uh you know it's
-  - text: |
-      Oh
-    metadata:
-      turnManagement: turnTake
-  - text: |
-      that's, that's, that's
-  - text: |
-      uh, you know
-  - text: |
-      and, and
-  - text: |
-      and, and
-  - text: |
-      it, it
-  - text: |
-      uh
-  - text: |
-      Uh
-  - text: |
-      Oh
-  - text: |
-      Oh
-  - text: |
-      you know
-  - text: |
-      you know
-  - text: |
-      but, you know
-  - text: |
-      why <laughter> why 
-  - text: |
-      you know
-  - text: |
-      It's its
-  - text: |
-      I, you know, I
-  - text: |
-      and and
-  - text: |
-      uh
-  - text: |
-      uh
-  - text: |
-      and and you know
-  - text: |
-      um
-  - text: |
-      that that
-  - text: |
-      I don't know,  
-  - text: |
-      their, their
-  - text: |
-      Oh
-  - text: |
-      Oh
-    metadata:
-      turnManagement: turnTake
-  - text: |
-      uh
-  - text: |
-      Oh
-    metadata:
-      turnManagement: turnTake
-  - text: |
-      uh
-  - text: |
-      Oh
-  - text: |
-      you know
-  - text: |
-      um
-  - text: |
-      I would, I would
-  - text: |
-      Uh
   - text: |
       And,  uh,  -
     metadata:
       turnManagement: turnTake
   - text: |
-      it's, it's
+      uh
   - text: |
       is it, is it
   - text: |
-      needs, needs
+      uh, you know
   - text: |
-      You don't think, you don't think
+      I, you know, I
   - text: |
-      I, I, I'm
+      that that
   - text: |
-      uh
+      uh uh
   - text: |
       We, we're
   - text: |
-      I don't know  
-  - text: |
       I, I, I
   - text: |
-      You know
+      it's, it's
   - text: |
-      uh
+      Uh
+  - text: |
+      their, their
+  - text: |
+      had, had
+  - text: |
+      It's uh you know it's
+  - text: |
+      It's its
+  - text: |
+      of, of
   - text: |
        but, uh, anyway  -
   - text: |
-      you know
-  - text: |
-      um
-  - text: |
-      I don't know  
-  - text: |
-      uh
-  - text: |
-      what, what's
+      but, you know
   - text: |
       that, that
   - text: |
-      um
+      why <laughter> why 
+  - text: |
+      Oh
+  - text: |
+      I would, I would
+  - text: |
+      from uh from
+  - text: |
+      Uh,
+    metadata:
+      turnManagement: turnKeep
+  - text: |
+      what, what's
+  - text: |
+      You know
+  - text: |
+      and, and
+  - text: |
+      I don't know,  
+  - text: |
+      You don't think, you don't think
+  - text: |
+      I don't know  
+  - text: |
+      you're, you're
+  - text: |
+      Oh
+    metadata:
+      turnManagement: turnTake
+  - text: |
+      and and
+  - text: |
+      I, I, I'm
+  - text: |
+      needs, needs
+  - text: |
+      that's, that's, that's
   - text: |
       you know
   - text: |
-      had, had
+      um
+  - text: |
+      and and you know
+  - text: |
+      it, it
 
 - intent: propositionalQuestion
   examples:
@@ -352,13 +168,13 @@ nlu:
 - intent: answer
   examples:
   - text: |
-      I do have friends that have children
-  - text: |
-      yes 
-  - text: |
       Absolutely not 
     metadata:
       turnManagement: turnGrab
+  - text: |
+      I do have friends that have children
+  - text: |
+      yes 
   - text: |
       Of course 
 
@@ -372,314 +188,310 @@ nlu:
 - intent: inform_pass
   examples:
   - text: |
-      I think that may be the key word 
-  - text: |
-      so it's difficult for them
-  - text: |
-      our children are now eleven and nine 
-  - text: |
-      we moved away from institutionalized child care --
-  - text: |
-      at one point in time we've had au pairs,
-  - text: |
-      by trading services with them, 
-  - text: |
-      It takes that mixture of a very mature college student, who wants to do something and yet is willing to give the time, and the interest to the children
-  - text: |
-      and  that's something that we're struggling with now 
-  - text: |
-       but  you still have to be realistic, as well, I think 
-  - text: |
-      Much as other cultures disagree, our lives don't revolve around our children 
-  - text: |
-      It is such an honor and a thrill, to be a parent, that most of the time, it's worth it
-  - text: |
-      It's not always worth it
-  - text: |
       There are those times when I think, gee,  if I didn't have children I could be out playing  (( bridge ))  or golf 
-  - text: |
-      it's just a scary thing 
-  - text: |
-      were leaving them  ((   ))  small children
-  - text: |
-      we also learned something from that experience as our children got older 
-  - text: |
-      It's that care givers are not omniscient -- 
-  - text: |
-       -- they are not all things to all people --
-  - text: |
-       -- or all children 
-  - text: |
-      The ones that are good with babies tend not to be good with toddlers 
-  - text: |
-      I'm sure that's a whole new ball game 
-  - text: |
-      I have a nine year old that I would trade happily for a baby
-  - text: |
-      since they're both in school, you don't have to worry about a full-time person to take care of them  <<Voices fading in and out>> 
-  - text: |
-      you don't know what happens after they get in school 
-  - text: |
-      the other one, of course can't do the same thing
-  - text: |
-      and  no  it's not adequate to sit and wait
-  - text: |
-      we are helping,  you know
-  - text: |
-      You don't understand this 
   - text: |
       it's almost everyday 
   - text: |
-      I guess you find out that you're a much stronger person than you thought, maybe 
+      and  no  it's not adequate to sit and wait
   - text: |
-      ((   ))  hit for many years -
+       -- or all children 
   - text: |
-      ((   )) because  I didn't need it 
-  - text: |
-      now, I need it
-  - text: |
-      Now it's just a reservoir that you tend to regularly, I'm sure 
+      hair ribbon
   - text: |
       it stays low a lot <laughter>
-  - text: |
-      the other one I wouldn't leave unsupervised two minutes
-  - text: |
-      That's just a difference in kids, I suppose 
-  - text: |
-      How unfortunate <laughter> 
-  - text: |
-      But I do hear my friends talk about it 
   - text: |
       my wife and I were both only children 
   - text: |
       we just couldn't wait to have two children so they would be such friends 
   - text: |
-      Wrong 
+      we moved away from institutionalized child care --
   - text: |
-      By the time the youngest ones are there, you'll have older one to take care of them 
+      The ones that are good with babies tend not to be good with toddlers 
+  - text: |
+      since they're both in school, you don't have to worry about a full-time person to take care of them  <<Voices fading in and out>> 
+  - text: |
+      That's just a difference in kids, I suppose 
   - text: |
       It really is 
   - text: |
+      Much as other cultures disagree, our lives don't revolve around our children 
+  - text: |
+       -- they are not all things to all people --
+  - text: |
+      You don't understand this 
+  - text: |
+      we are helping,  you know
+  - text: |
+      our children are now eleven and nine 
+  - text: |
+      the other one I wouldn't leave unsupervised two minutes
+  - text: |
+      I think that may be the key word 
+  - text: |
+      By the time the youngest ones are there, you'll have older one to take care of them 
+  - text: |
+      and  that's something that we're struggling with now 
+  - text: |
+      ((   )) because  I didn't need it 
+  - text: |
+      I guess you find out that you're a much stronger person than you thought, maybe 
+  - text: |
+      we also learned something from that experience as our children got older 
+  - text: |
+      It takes that mixture of a very mature college student, who wants to do something and yet is willing to give the time, and the interest to the children
+  - text: |
+      I have a nine year old that I would trade happily for a baby
+  - text: |
+      But I do hear my friends talk about it 
+  - text: |
+      Wrong 
+  - text: |
+      I'm sure that's a whole new ball game 
+  - text: |
+      It is such an honor and a thrill, to be a parent, that most of the time, it's worth it
+  - text: |
+      it's just a scary thing 
+  - text: |
       And then  you don't really know what happened 
   - text: |
-      hair ribbon
+      It's not always worth it
+  - text: |
+      so it's difficult for them
+  - text: |
+      at one point in time we've had au pairs,
+  - text: |
+      you don't know what happens after they get in school 
+  - text: |
+      ((   ))  hit for many years -
+  - text: |
+       but  you still have to be realistic, as well, I think 
+  - text: |
+      the other one, of course can't do the same thing
+  - text: |
+      by trading services with them, 
+  - text: |
+      How unfortunate <laughter> 
+  - text: |
+      Now it's just a reservoir that you tend to regularly, I'm sure 
+  - text: |
+      It's that care givers are not omniscient -- 
+  - text: |
+      now, I need it
+  - text: |
+      were leaving them  ((   ))  small children
 
 - intent: agreement
   examples:
-  - text: |
-      I think that's correct  
-  - text: |
-      we certainly found that to be true 
-  - text: |
-      yeah
-  - text: |
-      it certainly is
-  - text: |
-      Most of the time <laughter> 
-  - text: |
-      yes
-  - text: |
-      of course not 
-  - text: |
-      <Laughter>  You can't do that  
-  - text: |
-      No 
-  - text: |
-      No 
-  - text: |
-      No  
-  - text: |
-      No 
   - text: |
       that will not do 
   - text: |
       That's out of the question,  
   - text: |
+      Most of the time <laughter> 
+  - text: |
+      of course not 
+  - text: |
+      we certainly found that to be true 
+  - text: |
+      <Laughter>  You can't do that  
+  - text: |
+      No 
+  - text: |
+      it certainly is
+  - text: |
+      No  
+  - text: |
       I'm sure 
+  - text: |
+      I think that's correct  
+  - text: |
+      yeah
+  - text: |
+      yes
   - text: |
       Of course 
 
 - intent: inform_continue
   examples:
   - text: |
+       -- tied in a chair
+  - text: |
+      we were lucky when our children were that age, 
+  - text: |
+      it's just such a responsibility
+  - text: |
+      So I'm sort of at a loss where that's concerned 
+  - text: |
+      I think that is one reason why I continue to be without children 
+  - text: |
+      so  I've never been around children  
+  - text: |
+      so that worked out pretty well  
+  - text: |
+      she got older 
+  - text: |
+      why am I waiting
+  - text: |
+      you sound like you're pretty well passed the worst of it as far as worrying about, - 
+  - text: |
+      We are being cooperative,  
+  - text: |
+      <Laughter>  That's like World War Three every minute <laughter>  
+  - text: |
+      where obviously she
+  - text: |
+      so, it's such a responsibility 
+  - text: |
+      that worked for a while,  
+  - text: |
+      Now we have one takes piano lessons
+  - text: |
       They're, relatively nonexistent from what I hear from my friends
+  - text: |
+      she said, we never do those things anyway 
+  - text: |
+      I think that sort of goes hand in hand 
+  - text: |
+      It must be interesting  
+  - text: |
+      my best friend is one child of ten  
+  - text: |
+      that's bad to have to admit, too, 
+  - text: |
+      If you could just, have a whole bunch <laughter>
+  - text: |
+      the stamina that you must draw from yourself to deal with it 
+  - text: |
+      they loved it
+  - text: |
+      I think they feel that these people are under qualified basically and  underpaid, 
+  - text: |
+      of course people are denying it 
+  - text: |
+      I do have a friend, she and her roommate became live-in care givers
+  - text: |
+      I think your patience level needs to increase as the child gets older <laughter>
+  - text: |
+      having lived in a community for a while we knew the person to whom we were entrusting our children
+  - text: |
+      But the thing about the child care I have friends that struggle financially and they both do have to work 
+  - text: |
+      it's funny
+  - text: |
+      I just have to be honest about it  
+  - text: |
+      I've been finding out that I really am a nice person
+  - text: |
+      I have to admit, I was selfish as a child 
+  - text: |
+      what's frightening is a parent to see things that you don't really don't understand
+  - text: |
+      they had done such a good job 
+  - text: |
+      And when I seen some of my friends that have taken that six week old baby you know, to someone else, it's just, I can imagine how emotional  it must be and multiplied by the fact that you don't really trust the person  or you're uncomfortable with the situation, as far as child care,
+  - text: |
+      That's just the way their minds work  
+  - text: |
+      I think about, wouldn't it be nice, 
+  - text: |
+      I didn't want a brother or sister  
   - text: |
       It seems like even when they have consulted day care centers that are reputable, that are sort of like a chain, if I can use that word, still you have to deal with the people that, happen to be operating it locally 
   - text: |
       it's just a matter of trust, you know
   - text: |
-      I think they feel that these people are under qualified basically and  underpaid, 
-  - text: |
-      I think that sort of goes hand in hand 
-  - text: |
-      And found that more creative avenues were the right answer for us
-  - text: |
-      that worked for a while,  
-  - text: |
-      but adequate ones were really tough to find
-  - text: |
-      I do have a friend, she and her roommate became live-in care givers
-  - text: |
-      she and her roommate became live-in care givers  
-  - text: |
-      they loved it
-  - text: |
-      They had stayed with this family from the time these children were small four or five years old, up until they were well into grade school
-  - text: |
-      she was paid very well because the parents trusted them
-  - text: |
-      they had done such a good job 
-  - text: |
-      So I can see where someone, in a position like that, in a live-in capacity, would definitely be the way to go if you're lucky enough to have the financial  to be able to do that 
-  - text: |
-      I think it's just a matter of priorities  
-  - text: |
-      it's a terrible thing to say when you're speaking of children in that way
-  - text: |
-      that's bad to have to admit, too, 
-  - text: |
-      but it's just, there's so much pressure when you're talking about two people that work outside the home 
-  - text: |
-      I think that is one reason why I continue to be without children 
-  - text: |
-      it's just such a responsibility
-  - text: |
-      when you hear people say, it alters your life forever, please take heed <laughter>
-  - text: |
-      Well, I realize that's true  
-  - text: |
-      so, it's such a responsibility 
-  - text: |
-      I just have to be honest about it  
-  - text: |
-      it's funny
-  - text: |
-      I had a friend that said, before we always said we don't want children because we can't go off on the spur of the moment or this or that and the other 
-  - text: |
-      she got older 
-  - text: |
-      she said, we never do those things anyway 
-  - text: |
-      why am I waiting
-  - text: |
-      It's just the way your attitude changes 
-  - text: |
-      you mature I suppose 
-  - text: |
-      But the thing about the child care I have friends that struggle financially and they both do have to work 
-  - text: |
-      It's a matter not necessarily that she might want to stay home or he, as well, 
-  - text: |
-       but, you know,  they need the money  
-  - text: |
-      And when I seen some of my friends that have taken that six week old baby you know, to someone else, it's just, I can imagine how emotional  it must be and multiplied by the fact that you don't really trust the person  or you're uncomfortable with the situation, as far as child care,
-  - text: |
-      we were lucky when our children were that age, 
-  - text: |
-      having lived in a community for a while we knew the person to whom we were entrusting our children
-  - text: |
-      And felt that feeling of safety
-  - text: |
-      I think your patience level needs to increase as the child gets older <laughter>
-  - text: |
-      I think that might be part of the problem with some people You know,   
-  - text: |
-      taking care of a baby, I know, is not an easy thing,  
-  - text: |
-      but when you have them in, their little feet are moving 
-  - text: |
-      you have to chase them down constantly 
-  - text: |
-      you sound like you're pretty well passed the worst of it as far as worrying about, - 
-  - text: |
-      <Laughter> That's something altogether different
-  - text: |
-      Now we have one takes piano lessons
-  - text: |
-       somewhere  on one afternoon  
-  - text: |
-      It has to be somewhere else  
-  - text: |
-      We are being cooperative,  
-  - text: |
-      That's just the way their minds work  
-  - text: |
-      It's amazing that people actually, - 
-  - text: |
-      the stamina that you must draw from yourself to deal with it 
-  - text: |
-      It must be interesting  
-  - text: |
-      I've been finding out that I really am a nice person
-  - text: |
-      I mean one of them I would leave unsupervised any time, any place, any where
-  - text: |
-      it's the one that's going downhill,
-  - text: |
       I'm living in a dream world, 
-  - text: |
-      what do I know  
-  - text: |
-      As I said, I don't have kids  
-  - text: |
-      I'm an only child 
-  - text: |
-      so  I've never been around children  
-  - text: |
-      So I'm sort of at a loss where that's concerned 
-  - text: |
-      we're having such fun
-  - text: |
-      <Laughter>  That's like World War Three every minute <laughter>  
-  - text: |
-      I have to admit, I was selfish as a child 
-  - text: |
-      I didn't want a brother or sister  
-  - text: |
-      now that I'm older, of course, it's different 
-  - text: |
-      I think about, wouldn't it be nice, 
-  - text: |
-      I have wonderful friends  
-  - text: |
-      my best friend is one child of ten  
-  - text: |
-      they just sort of adopted me as their eleventh child 
-  - text: |
-      so that worked out pretty well  
   - text: |
       She never had to worry about taking anybody to child care because there was always somebody there older to deal with them,  
   - text: |
-      so I guess, that's an alternative  
+      They had stayed with this family from the time these children were small four or five years old, up until they were well into grade school
   - text: |
-      If you could just, have a whole bunch <laughter>
+      I have wonderful friends  
   - text: |
-      When you see all these horror stories on television about child care  
-  - text: |
-      gosh
-  - text: |
-      I was seeing something on the television earlier about a little girl that's been telling her mother these terrible stories  
-  - text: |
-      of course people are denying it 
-  - text: |
-      it's just frightening 
-  - text: |
-      what's frightening is a parent to see things that you don't really don't understand
+      It's a matter not necessarily that she might want to stay home or he, as well, 
   - text: |
       We gave up on one baby sitter because we came home one night and found pieces of ribbon
   - text: |
-       -- tied in a chair
+      it's the one that's going downhill,
   - text: |
-      where obviously she
+      It's amazing that people actually, - 
+  - text: |
+       somewhere  on one afternoon  
+  - text: |
+      but it's just, there's so much pressure when you're talking about two people that work outside the home 
+  - text: |
+      <Laughter> That's something altogether different
+  - text: |
+      It has to be somewhere else  
+  - text: |
+      I mean one of them I would leave unsupervised any time, any place, any where
+  - text: |
+      now that I'm older, of course, it's different 
+  - text: |
+      what do I know  
+  - text: |
+      they just sort of adopted me as their eleventh child 
+  - text: |
+      I was seeing something on the television earlier about a little girl that's been telling her mother these terrible stories  
+  - text: |
+      I'm an only child 
+  - text: |
+      so I guess, that's an alternative  
+  - text: |
+      So I can see where someone, in a position like that, in a live-in capacity, would definitely be the way to go if you're lucky enough to have the financial  to be able to do that 
+  - text: |
+      you mature I suppose 
+  - text: |
+      she and her roommate became live-in care givers  
+  - text: |
+      you have to chase them down constantly 
+  - text: |
+      taking care of a baby, I know, is not an easy thing,  
+  - text: |
+      we're having such fun
+  - text: |
+      And felt that feeling of safety
+  - text: |
+      it's a terrible thing to say when you're speaking of children in that way
+  - text: |
+      And found that more creative avenues were the right answer for us
+  - text: |
+      Well, I realize that's true  
+  - text: |
+      I think that might be part of the problem with some people You know,   
+  - text: |
+      It's just the way your attitude changes 
+  - text: |
+      When you see all these horror stories on television about child care  
+  - text: |
+      she was paid very well because the parents trusted them
+  - text: |
+      it's just frightening 
+  - text: |
+      I had a friend that said, before we always said we don't want children because we can't go off on the spur of the moment or this or that and the other 
+  - text: |
+      but adequate ones were really tough to find
+  - text: |
+      when you hear people say, it alters your life forever, please take heed <laughter>
+  - text: |
+       but, you know,  they need the money  
+  - text: |
+      but when you have them in, their little feet are moving 
+  - text: |
+      As I said, I don't have kids  
+  - text: |
+      gosh
+  - text: |
+      I think it's just a matter of priorities  
 
 - intent: retraction
   examples:
   - text: |
+      I, - 
+  - text: |
       indeed we've, - 
   - text: |
       that, -
-  - text: |
-      I, - 
   - text: |
       That just, - 
 
@@ -691,30 +503,30 @@ nlu:
 - intent: selfCorrection
   examples:
   - text: |
-      like that, by that name
+      I did, I had
   - text: |
-      they were really, adequate ones were really
+      like that, by that name
   - text: |
       they, the parents
   - text: |
-      when I've had friends that have said - when you hear people say
-  - text: |
-      I did, I had
-  - text: |
-      and
-  - text: |
-      must, needs to
+      self-, selfish
   - text: |
       worrying about, since they're both in school, you don't have to worry about
   - text: |
-      self-, selfish
+      they were really, adequate ones were really
+  - text: |
+      must, needs to
+  - text: |
+      when I've had friends that have said - when you hear people say
+  - text: |
+      and
 
 - intent: Agreement
   examples:
   - text: |
-      I'm sure that's true 
-  - text: |
       that's true, 
+  - text: |
+      I'm sure that's true 
 
 - intent: request
   examples:
@@ -724,9 +536,9 @@ nlu:
 - intent: checkQuestion
   examples:
   - text: |
-      one leads the other
-  - text: |
       You don't think that good prevails 
+  - text: |
+      one leads the other
 
 - intent: confirm
   examples:
