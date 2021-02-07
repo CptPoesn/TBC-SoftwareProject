@@ -1,0 +1,24 @@
+utterance,intent
+ but its slightly higher than the fort ,correction
+ so ,setQuestion
+ so you need to go up on a sort of hill ,instruct
+ go up ,selfCorrection
+ mmhmm ,acceptRequest
+ over the cattle ranch underneath buffalo or over the cattle ranch ,instruct
+ right ,acceptRequest
+ right ,autoPositive
+ then underneath the fort ,instruct
+ under the fort ,checkQuestion
+ underneath the fort uh-huh ,confirm
+ and come out at the left-hand side of the fort ,instruct
+ and finishing ,instruct
+ ehm ,stalling
+ not beside but on the same level as the the carved wooden pole ,instruct
+ the base of the carved wooden pole ,instruct
+ wooden ,selfCorrection
+ right ,acceptRequest
+ okay ,autoPositive
+ okay ,alloPositive
+ thats you finished ,inform
+ okay ,autoPositive
+ okay ,interactionStructuring

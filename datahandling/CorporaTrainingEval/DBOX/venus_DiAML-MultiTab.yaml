@@ -2,9 +2,9 @@ nlu:
 - intent: opening
   examples:
   - text: |
-       hello again 
-  - text: |
        hello 
+  - text: |
+       hello again 
 
 - intent: initGreeting
   examples:
@@ -31,15 +31,15 @@ nlu:
   - text: |
        alright 
   - text: |
-       okay 
-  - text: |
-       yeah 
-  - text: |
        great 
   - text: |
        okay 
     metadata:
       turnManagement: turnTake
+  - text: |
+       okay 
+  - text: |
+       yeah 
 
 - intent: alloPositive
   examples:
@@ -56,6 +56,10 @@ nlu:
 - intent: stalling
   examples:
   - text: |
+       mmh 
+    metadata:
+      turnManagement: turnKeep
+  - text: |
        and 
     metadata:
       turnManagement: turnTake
@@ -64,21 +68,17 @@ nlu:
     metadata:
       turnManagement: turnTake
   - text: |
+       uh 
+    metadata:
+      turnManagement: turnAccept
+  - text: |
        uhm 
     metadata:
       turnManagement: turnKeep
   - text: |
-       mmh 
-    metadata:
-      turnManagement: turnKeep
-  - text: |
        uh 
     metadata:
       turnManagement: turnKeep
-  - text: |
-       uh 
-    metadata:
-      turnManagement: turnAccept
 
 - intent: suggest
   examples:
@@ -88,28 +88,28 @@ nlu:
 - intent: setQuestion
   examples:
   - text: |
-       where are you from 
-  - text: |
-       what is your mother tongue 
+       what is your first question 
   - text: |
        and how old are you 
   - text: |
-       what is your first question 
-  - text: |
        and what are you doing 
+  - text: |
+       what is your mother tongue 
+  - text: |
+       where are you from 
 
 - intent: setAnswer
   examples:
   - text: |
-       i am from the united states 
-  - text: |
-       thirty three years old 
-  - text: |
-       i am thirty three 
-  - text: |
        my mother tongue is english 
   - text: |
        i am a professional tennis player 
+  - text: |
+       i am thirty three 
+  - text: |
+       i am from the united states 
+  - text: |
+       thirty three years old 
 
 - intent: propositionalQuestion
   examples:

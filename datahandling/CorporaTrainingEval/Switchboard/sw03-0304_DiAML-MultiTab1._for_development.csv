@@ -1,0 +1,24 @@
+utterance,intent
+well,stalling
+"we're, we are",selfCorrection
+we are on the dry side of the mountains,inform_continue
+Seattle is only about two and a half hours,inform_continue
+so of course I'm a real Seahawks fan,inform_pass
+ Yeah,autoPositive
+"um,",stalling
+going over that pass is  just a real nightmare,inform_pass
+" I can imagine, my lord",autoPositive
+"um, so, ",stalling
+"and we're on the colder side,",inform_continue
+they're on the rainy side,inform_continue
+we're on the snowy side,inform_continue
+"um,",stalling
+"we, we",stalling
+we ski,inform_continue
+"My, my",stalling
+my children all ski,inform_pass
+"Oh, super",autoPositive
+"we've, we have",selfCorrection
+"and we have been to Whistler in Canada,  which is just a marvelous place,  ",inform_continue
+Whistler and Black Home <<spelled phonetically>> is in Canada,inform_continue
+and then we've gone to Sun Valley several times,inform_continue

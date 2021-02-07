@@ -19,19 +19,7 @@ nlu:
 - intent: autoPositive
   examples:
   - text: |
-       do I know any French which 
-  - text: |
-       okay 
-  - text: |
-       $LAUGH 
-  - text: |
-       now how do i ask that 
-  - text: |
        yes 
-  - text: |
-       okay 
-    metadata:
-      turnManagement: turnKeep
   - text: |
        great 
   - text: |
@@ -43,27 +31,39 @@ nlu:
   - text: |
        okay 
     metadata:
+      turnManagement: turnKeep
+  - text: |
+       do I know any French which 
+  - text: |
+       okay 
+    metadata:
       turnManagement: turnTake
+  - text: |
+       now how do i ask that 
+  - text: |
+       okay 
+  - text: |
+       $LAUGH 
 
 - intent: alloPositive
   examples:
   - text: |
-       great 
-  - text: |
        okay 
+  - text: |
+       great 
   - text: |
        that is a very good question 
 
 - intent: stalling
   examples:
   - text: |
+       mh 
+    metadata:
+      turnManagement: turnAccept
+  - text: |
        uh 
   - text: |
-       uhm 
-    metadata:
-      turnManagement: turnKeep
-  - text: |
-       uhm 
+       uh 
     metadata:
       turnManagement: turnAccept
   - text: |
@@ -71,17 +71,17 @@ nlu:
     metadata:
       turnManagement: turnKeep
   - text: |
-       mh 
+       uhm 
     metadata:
       turnManagement: turnAccept
   - text: |
-       uh 
+       uhm 
     metadata:
       turnManagement: turnKeep
   - text: |
        uh 
     metadata:
-      turnManagement: turnAccept
+      turnManagement: turnKeep
 
 - intent: checkQuestion
   examples:
@@ -96,56 +96,56 @@ nlu:
 - intent: setQuestion
   examples:
   - text: |
-       how did you die 
+       who was your husband during your time as queen regent of england 
+  - text: |
+       what is your first question 
+  - text: |
+       can you name one thing that many people know that you did 
+  - text: |
+       and during which year were you the queen consort of england 
+  - text: |
+       while you were at the peak of your power which position did you occupy in the country 
   - text: |
        during which years exactly did you reign 
   - text: |
-       who was your husband during your time as queen regent of england 
+       how did you die 
   - text: |
        what are you most known for in history of humankind 
   - text: |
        what are you famous for 
   - text: |
-       what is your first question 
-  - text: |
-       and during which year were you the queen consort of england 
-  - text: |
-       can you name one thing that many people know that you did 
-  - text: |
        which country $UNINTELLIGIBLE 
-  - text: |
-       while you were at the peak of your power which position did you occupy in the country 
 
 - intent: setAnswer
   examples:
   - text: |
-       i was 
+       i was married to two kings and i participated in the second crusade while queen of france 
   - text: |
        i was the queen consort of france and later the queen consort of england 
   - text: |
-       i am famous for being one of the wealthiest and most powerful women in western europe during the middle ages 
-  - text: |
-       i was married to two kings and i participated in the second crusade while queen of france 
+       SIL i was married to henry duke of normandy who became king henry the second of england 
   - text: |
        france 
   - text: |
-       SIL i was married to henry duke of normandy who became king henry the second of england 
+       i am famous for being one of the wealthiest and most powerful women in western europe during the middle ages 
   - text: |
        from eleven fifty four to eleven eighty nine 
+  - text: |
+       i was 
 
 - intent: choiceQuestion
   examples:
   - text: |
-       are you more famous for your time in england or in france 
-  - text: |
        are you part of the royalty or were you part of the royalty rather 
+  - text: |
+       are you more famous for your time in england or in france 
 
 - intent: answer
   examples:
   - text: |
-       unfortunately im not sure how to answer that question 
-  - text: |
        yes i was 
+  - text: |
+       unfortunately im not sure how to answer that question 
 
 - intent: pausing
   examples:
@@ -154,20 +154,20 @@ nlu:
   - text: |
        just a minute 
     metadata:
-      turnManagement: turnAccept
+      turnManagement: turnKeep
   - text: |
        just a second 
   - text: |
        just a minute 
     metadata:
-      turnManagement: turnKeep
+      turnManagement: turnAccept
 
 - intent: autoNegative
   examples:
   - text: |
-       could you clarify 
-  - text: |
        now that does not work 
+  - text: |
+       could you clarify 
 
 - intent: acceptRequest
   examples:
@@ -177,17 +177,17 @@ nlu:
 - intent: selfCorrection
   examples:
   - text: |
-       years 
-  - text: |
-       king 
+       documented 
   - text: |
        SIL i was 
-  - text: |
-       documented 
   - text: |
        which position 
   - text: |
        how do 
+  - text: |
+       years 
+  - text: |
+       king 
 
 - intent: request
   examples:
@@ -203,11 +203,11 @@ nlu:
   - text: |
        im not sure if i can answer it 
   - text: |
-       but i dont have a answer to that question 
-  - text: |
        i dont have an answer to that question 
   - text: |
        unfortunately im not sure how to answer that question 
+  - text: |
+       but i dont have a answer to that question 
   - text: |
        not sure that i can fully answer that question 
 

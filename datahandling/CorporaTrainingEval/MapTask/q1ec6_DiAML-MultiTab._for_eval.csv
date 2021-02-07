@@ -1,0 +1,18 @@
+utterance,intent
+ mm ,autoPositive
+ right ,acceptRequest
+ and then youre going east ,instruct
+ um ,stalling
+ you come to the lighthouse ,instruct
+ so right down past the caves ,checkQuestion
+ until you ,instruct
+ then go east until you get to the lighthouse ,instruct
+ right ,autoPositive
+ okay ,acceptRequest
+ right ,autoPositive
+ right ,alloPositive
+ thats the end ,inform
+ above or below ,choiceQuestion
+ laugh ,autoPositive
+ at the side ,answer
+ laugh ,autoPositive

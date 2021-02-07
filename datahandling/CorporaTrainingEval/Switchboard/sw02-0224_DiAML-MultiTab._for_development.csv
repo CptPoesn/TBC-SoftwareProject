@@ -1,0 +1,34 @@
+utterance,intent
+"I, I, I'm",stalling
+"I'm living in a dream world, ",inform_continue
+what do I know  ,inform_continue
+"As I said, I don't have kids  ",inform_continue
+I'm an only child ,inform_continue
+so  I've never been around children  ,inform_continue
+So I'm sort of at a loss where that's concerned ,inform_continue
+uh,stalling
+But I do hear my friends talk about it ,inform_pass
+"We, we're",stalling
+we're having such fun,inform_continue
+my wife and I were both only children ,inform_pass
+Huh-uh ,autoPositive
+we just couldn't wait to have two children so they would be such friends ,inform_pass
+Yeah <laughter> ,autoPositive
+Wrong ,inform_pass
+<Laughter>  That's like World War Three every minute <laughter>  ,inform_continue
+I don't know  ,stalling
+"I, I, I",stalling
+"I have to admit, I was selfish as a child ",inform_continue
+"self-, selfish",selfCorrection
+I didn't want a brother or sister  ,inform_continue
+"now that I'm older, of course, it's different ",inform_continue
+You know,stalling
+"I think about, wouldn't it be nice, ",inform_continue
+uh,stalling
+" but, uh, anyway  -",stalling
+Just make good friends ,suggest
+"Yeah, oh,   ",autoPositive
+I have wonderful friends  ,inform_continue
+That's true  ,autoPositive
+my best friend is one child of ten  ,inform_continue
+they just sort of adopted me as their eleventh child ,inform_continue

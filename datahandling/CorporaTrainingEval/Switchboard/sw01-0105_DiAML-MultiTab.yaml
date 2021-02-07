@@ -2,99 +2,109 @@ nlu:
 - intent: setQuestion
   examples:
   - text: |
-      so how do you get most of your news?
-  - text: |
       What newspapers do you read
   - text: |
       when you say the morning news, or evening news or national news is when? /
+  - text: |
+      so how do you get most of your news?
 
 - intent: stalling
   examples:
-  - text: |
-      I, I
-  - text: |
-      uh, I mean
-  - text: |
-      uh
-    metadata:
-      turnManagement: turnKeep
-  - text: |
-      you know
   - text: |
       Uh
     metadata:
       turnManagement: turnTake
   - text: |
-      Well
+      to, to
+  - text: |
+      uh
+  - text: |
+      on, on, uh
+  - text: |
+      I, I don't know
+  - text: |
+      a-, actually
+  - text: |
+      I, uh, I
+  - text: |
+      they, they
+  - text: |
+      Oh
     metadata:
       turnManagement: turnTake
+  - text: |
+      Well
+    metadata:
+      turnManagement: turnKeep
   - text: |
       o-, off 
   - text: |
       What, what, uh
   - text: |
-      newspape-, uh, news
+       r-, really
   - text: |
-      the, the
+      of, of
   - text: |
-      they, they
-  - text: |
-      Oh
-  - text: |
-      Well
+      uh
     metadata:
       turnManagement: turnKeep
   - text: |
-      a-, actually
+      the, the
+  - text: |
+      uh, you know
+  - text: |
+      I, I, I, uh
+  - text: |
+      I don't, uh, I don't, uh
+  - text: |
+      the,  <inhaling> the
+  - text: |
+      newspape-, uh, news
+  - text: |
+      be-, because
+  - text: |
+      uh
+    metadata:
+      turnManagement: turnTake
+  - text: |
+      Oh
   - text: |
       well
     metadata:
       turnManagement: turnKeep
   - text: |
-      Oh
-    metadata:
-      turnManagement: turnTake
+      they're, they're
   - text: |
-      the,  <inhaling> the
+      I, I
   - text: |
-      on, on, uh
-  - text: |
-       r-, really
-  - text: |
-      I, I, I, uh
-  - text: |
-      to, to
-  - text: |
-      uh
-    metadata:
-      turnManagement: turnTake
-  - text: |
-      I don't, uh, I don't, uh
-  - text: |
-      uh
+      uh, I mean
   - text: |
       Uh
   - text: |
-      of, of
+      Well
+    metadata:
+      turnManagement: turnTake
   - text: |
-      I, uh, I
-  - text: |
-      they're, they're
-  - text: |
-      be-, because
-  - text: |
-      I, I don't know
-  - text: |
-      uh, you know
+      you know
 
 - intent: selfCorrection
   examples:
   - text: |
+      I'm a, I'm pretty much a
+  - text: |
       where you, where they
   - text: |
-      newspape-, uh, news
+      he's leaving, one of them is leaving
   - text: |
       s-,  watch
+  - text: |
+      if you, if you'll
+  - text: |
+      want-, help wanted
+  - text: |
+      a lot of it's still a lot of
+  - text: |
+      newspape-, uh, news
   - text: |
       they,  they tr-, the newspapers are
   - text: |
@@ -102,142 +112,132 @@ nlu:
   - text: |
       I kind of I
   - text: |
-      he's leaving, one of them is leaving
-  - text: |
       McNeil, Neil
-  - text: |
-      a lot of it's still a lot of
-  - text: |
-      want-, help wanted
-  - text: |
-      if you, if you'll
-  - text: |
-      I'm a, I'm pretty much a
   - text: |
       just in-, just
 
 - intent: answer
   examples:
   - text: |
-      every evening at six thirty, I believe, I watch the national news
-  - text: |
-      I also read one or two papers a day 
-  - text: |
-      I watch the national news every day, for one,
-  - text: |
-      I read the local newspaper
-  - text: |
       I also try and read one of the major dailies like the CHICAGO TRIBUNE, or the NEW YORK TIMES or something like that.
   - text: |
       I tune in to CNN a lot. 
+  - text: |
+      I read the local newspaper
+  - text: |
+      every evening at six thirty, I believe, I watch the national news
+  - text: |
+      I watch the national news every day, for one,
+  - text: |
+      I also read one or two papers a day 
 
 - intent: inform_continue
   examples:
   - text: |
-      and so often the newspapers are trying to compete with a lot of other sources of news
-  - text: |
-      but when you read a lot of this stuff, the quality of the writing has definitely gone down in the last ten years or so
-  - text: |
-      and I guess that's good when it's live, if you'll really want that
-  - text: |
-      I would probably be a junkie or watch <laughter> CNN a lot
-  - text: |
-      I guess one of them is leaving.
-  - text: |
-      I like listening to that when I get a chance, when I'm in the car a long enough time to listen to it, because I
-  - text: |
-      usually you get pretty incomplete coverage 
-  - text: |
-      but I guess it's still a lot of hype
-  - text: |
       overall, the quality of the news you get of most sources I would say is pretty low. 
-  - text: |
-      I don't subscribe to cable
   - text: |
       Neil and Lehrer, they're pretty good too
   - text: |
       I had some visitor, he was just, I don't know, fixated on that, just listened to it constantly
   - text: |
-      I take away a addiction <laughter>
+      I like listening to that when I get a chance, when I'm in the car a long enough time to listen to it, because I
   - text: |
-      I'm a news junkie
-  - text: |
-      so she really needed to look at the help wanted ads
-  - text: |
-      NEW YORK TIMES is okay
-  - text: |
-      I really like them because they give, instead of being, as your newspaper or your TV news where you get a five minute blurb or a ten paragraph blurb, they go really in depth on topics which i think is good
+      and I guess that's good when it's live, if you'll really want that
   - text: |
       but, I don't know, I think if you listen to like NPR or something like
   - text: |
-      that's one of the reasons why I try and get as many sources as possible, 
+      I'm a news junkie
   - text: |
-      they say it's  like the sixth grade reading level
+      because of the poor service and also because I give to the United Way
   - text: |
-      I miss NPR a lot also
+      NEW YORK TIMES is okay
   - text: |
-      I don't know,
+      but I guess it's still a lot of hype
   - text: |
-      because my fiance - she was unemployed for a while 
+      and so often the newspapers are trying to compete with a lot of other sources of news
   - text: |
-      but then you also have things where they broadcast the Clarence Thomas hearings basically the whole length of them which I thought was really good.
+      but when you read a lot of this stuff, the quality of the writing has definitely gone down in the last ten years or so
   - text: |
       For a while there I subscribed to NEW YORK TIMES, a couple of newspapers
   - text: |
+      so she really needed to look at the help wanted ads
+  - text: |
+      I really like them because they give, instead of being, as your newspaper or your TV news where you get a five minute blurb or a ten paragraph blurb, they go really in depth on topics which i think is good
+  - text: |
+      usually you get pretty incomplete coverage 
+  - text: |
+      because my fiance - she was unemployed for a while 
+  - text: |
+      I would probably be a junkie or watch <laughter> CNN a lot
+  - text: |
+      that's one of the reasons why I try and get as many sources as possible, 
+  - text: |
       because if you hear the same story from three different sources, then you get a much clearer picture of what is going on. You would hope,
   - text: |
-      because of the poor service and also because I give to the United Way
+      I don't know,
+  - text: |
+      they say it's  like the sixth grade reading level
+  - text: |
+      but then you also have things where they broadcast the Clarence Thomas hearings basically the whole length of them which I thought was really good.
+  - text: |
+      I guess one of them is leaving.
+  - text: |
+      I miss NPR a lot also
+  - text: |
+      I take away a addiction <laughter>
+  - text: |
+      I don't subscribe to cable
 
 - intent: autoPositive
   examples:
   - text: |
-      Uh-uh
+      Pretty low
+  - text: |
+      Right. /
+  - text: |
+      Right
   - text: |
       <Laughter>
   - text: |
       Uh-huh
   - text: |
-      okay
+      Uh-uh
   - text: |
        <Laughter>
-  - text: |
-      Right
-  - text: |
-      Right. /
-  - text: |
-      Pretty low
   - text: |
       Oh
   - text: |
       Oh,  wow  
+  - text: |
+      okay
 
 - intent: inform_pass
   examples:
   - text: |
+      but that's not really providing you news. 
+  - text: |
        Oh, something
+  - text: |
+      I figured that amount of money I just donate to that.
+  - text: |
+      their editorial stand point seems to be a lot better than, say, your major network news and that kind of thing
+  - text: |
+      still, you know, hard to say that what you've heard is what really is.
   - text: |
       Had that invasion or whatever it is
   - text: |
       but I swear it's at least second or third grade sometimes.
   - text: |
-      but that's not really providing you news. 
-  - text: |
-      still, you know, hard to say that what you've heard is what really is.
-  - text: |
       I mean, that was a joke
   - text: |
       I really like NPR a lot
-  - text: |
-      their editorial stand point seems to be a lot better than, say, your major network news and that kind of thing
-  - text: |
-      I figured that amount of money I just donate to that.
 
 - intent: checkQuestion
   examples:
   - text: |
-      as opposed to paying for cable
-  - text: |
       I guess a year ago you're probably watching CNN a lot, right?
+  - text: |
+      as opposed to paying for cable
 
 - intent: confirm
   examples:
@@ -251,30 +251,30 @@ nlu:
 - intent: agreement
   examples:
   - text: |
-      Right
-  - text: |
       Yeah
   - text: |
-      Yeah that was
-  - text: |
       Oh yeah, the NPR doing that, yeah, I know
+  - text: |
+      yeah
+  - text: |
+      Yeah that was
   - text: |
       Sure was
   - text: |
       That's pretty good.  /
   - text: |
-      yeah
+      Right
 
 - intent: retraction
   examples:
   - text: |
       I,  I 
   - text: |
-      It's
+      I
   - text: |
       they also
   - text: |
-      I
+      It's
 
 - intent: suggest
   examples:

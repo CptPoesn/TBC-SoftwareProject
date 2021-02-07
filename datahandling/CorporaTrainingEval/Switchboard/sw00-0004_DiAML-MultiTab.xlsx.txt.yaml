@@ -7,201 +7,201 @@ nlu:
 - intent: stalling
   examples:
   - text: |
-      I I
-    metadata:
-      turnManagement: turnKeep
-  - text: |
-      I  if 
-  - text: |
-      a a a
-  - text: |
-      uh
-    metadata:
-      turnManagement: turnKeep
-  - text: |
-      you know
-  - text: |
       Uh
     metadata:
       turnManagement: turnTake
-  - text: |
-      I mean
-  - text: |
-      do it do it
-  - text: |
-      <Throat_clearing> You know
-  - text: |
-      d disregard
-  - text: |
-      Oh
-  - text: |
-      He he
-  - text: |
-      I mean uh uh
-  - text: |
-      your your
-  - text: |
-      uh uh
-  - text: |
-      a a
-  - text: |
-      a uh a
   - text: |
       I I I
     metadata:
       turnManagement: turnKeep
   - text: |
-      to the to the
+      uh
+  - text: |
+      I mean uh uh
+  - text: |
+      <lipsmack>
+  - text: |
+      a a a
+  - text: |
+      oh
+  - text: |
+      I mean
+  - text: |
+      uh uh
   - text: |
       uh
+    metadata:
+      turnManagement: turnKeep
+  - text: |
+      a uh a
+  - text: |
+      d disregard
+  - text: |
+      He he
+  - text: |
+      I  if 
+  - text: |
+      do it do it
+  - text: |
+      a a
+  - text: |
+      <Breathing> Well you know it's it's 
+  - text: |
+      Oh
+  - text: |
+      your your
+  - text: |
+      I I
+    metadata:
+      turnManagement: turnKeep
   - text: |
       Uh
   - text: |
-      oh
+      <Throat_clearing> You know
   - text: |
       Ou ou our
     metadata:
       turnManagement: turnTake
   - text: |
-      <Breathing> Well you know it's it's 
-  - text: |
-      <lipsmack>
-  - text: |
       you know uh
+  - text: |
+      to the to the
+  - text: |
+      you know
 
 - intent: inform_continue
   examples:
   - text: |
-      The judicial system is aimed at the citizens  
-  - text: |
-       Criminals have none of these things
-  - text: |
-      if they did it with just the judges the police have to do a lot better job of making sure that their evidence is airtight
-  - text: |
-      And you get up there  
-  - text: |
-      like here in Atlanta area our crime rate is just astronomical
-  - text: |
-      because it was either illegally obtained or whatever
-  - text: |
-      he still charges you that hundred dollars
-  - text: |
-      and in Germany they don't have the jury system
-  - text: |
-      they went to a trial by jury
-  - text: |
-      If you take your TV in a lot of these TV repair places will say  well  I'll repair your TV for a hundred dollars
-  - text: |
-      we can be called at work  
-  - text: |
-      they'd be able to say, I'm sorry,  /
-  - text: |
-      I've nailed the problem down  
-  - text: |
-      It's kind of like do it in the similar vein like VCR or television repair
-  - text: |
-      maybe if we did that with the lawyers so that whether it's a murder case or somebody suing somebody else you get X dollars for that case
-  - text: |
-      and the prosecuting attorney presents his evidence  
-  - text: |
-      I'm going to have to leave those details like what would you do about
-  - text: |
-      then we have checkbooks
-  - text: |
-      he repairs it gives it back to you and takes your hundred dollars
-  - text: |
-      my favorite is the police department
-  - text: |
-      and if they do catch them they don't get any monetary gain out of it whereas we write a check
-  - text: |
-      you can't use this as evidence
-  - text: |
-      talking about the lawyers what might very well cause a drop in the number of lawyers and things like that is to set the fees for cases
-  - text: |
       we have a family called All day family
-  - text: |
-      because you and I we have work schedules
-  - text: |
-      you wouldn't have this theatrics where the lawyer jumps up and presents it to the jury
-  - text: |
-      what they've done is they've bought Mercedes after Mercedes after Mercedes is what they've done
-  - text: |
-      maybe it's a blown fuse
-  - text: |
-      All the people signed confessions
   - text: |
       we have Social Security numbers
   - text: |
-      I think what they need to do is they need to somehow take the money out of it
-  - text: |
-      What they do is they have three judges basically
-  - text: |
-      They're real difficult to catch
-  - text: |
-      and then the judge says no disregard that
-  - text: |
-      takes him two minutes
+      if he comes in and says  I'll repair your VCR or somebody else's VCR for a hundred dollars gets in there
   - text: |
       we have telephones
   - text: |
-      and if he gets in there and starts rooting around and finds something in there that's really tremendously wrong with it then he eats it
+      I would have to look at it
   - text: |
-      I think to begin with you would have
-  - text: |
-      they can trace us down
-  - text: |
-      because the judges sitting in that kind of stuff day after day they know all the procedures
+      and then the judge says no disregard that
   - text: |
       he fixes it
   - text: |
+      he repairs it gives it back to you and takes your hundred dollars
+  - text: |
+      they'd be able to say, I'm sorry,  /
+  - text: |
+      I'm going to have to leave those details like what would you do about
+  - text: |
+      and in Germany they don't have the jury system
+  - text: |
+      maybe if we did that with the lawyers so that whether it's a murder case or somebody suing somebody else you get X dollars for that case
+  - text: |
+      I think what they need to do is they need to somehow take the money out of it
+  - text: |
+      and if they do catch them they don't get any monetary gain out of it whereas we write a check
+  - text: |
+      takes him two minutes
+  - text: |
       they know what's good and what isn't
   - text: |
-      I lived in Germany 
+      And you get up there  
   - text: |
-      your defense attorney presents their evidence  
+      he still charges you that hundred dollars
   - text: |
-      I would have to look at it
+      All the people signed confessions
   - text: |
-      if he comes in and says  I'll repair your VCR or somebody else's VCR for a hundred dollars gets in there
+      because the judges sitting in that kind of stuff day after day they know all the procedures
+  - text: |
+      my favorite is the police department
+  - text: |
+      because you and I we have work schedules
+  - text: |
+      what they've done is they've bought Mercedes after Mercedes after Mercedes is what they've done
+  - text: |
+      They're real difficult to catch
+  - text: |
+      If you take your TV in a lot of these TV repair places will say  well  I'll repair your TV for a hundred dollars
   - text: |
       when you have a man that's signed a statement saying he's guilty
   - text: |
+      I've nailed the problem down  
+  - text: |
+      then we have checkbooks
+  - text: |
+      talking about the lawyers what might very well cause a drop in the number of lawyers and things like that is to set the fees for cases
+  - text: |
+      and if he gets in there and starts rooting around and finds something in there that's really tremendously wrong with it then he eats it
+  - text: |
+      you wouldn't have this theatrics where the lawyer jumps up and presents it to the jury
+  - text: |
       <breathing> they're not aimed at the criminal  
   - text: |
+      you can't use this as evidence
+  - text: |
+      they can trace us down
+  - text: |
+      I think to begin with you would have
+  - text: |
+      like here in Atlanta area our crime rate is just astronomical
+  - text: |
+       Criminals have none of these things
+  - text: |
+      we can be called at work  
+  - text: |
+      because it was either illegally obtained or whatever
+  - text: |
+      It's kind of like do it in the similar vein like VCR or television repair
+  - text: |
+      if they did it with just the judges the police have to do a lot better job of making sure that their evidence is airtight
+  - text: |
       actually I lived over in Europe for a couple of years
+  - text: |
+      they went to a trial by jury
+  - text: |
+      What they do is they have three judges basically
+  - text: |
+      and the prosecuting attorney presents his evidence  
+  - text: |
+      The judicial system is aimed at the citizens  
+  - text: |
+      your defense attorney presents their evidence  
+  - text: |
+      maybe it's a blown fuse
+  - text: |
+      I lived in Germany 
 
 - intent: inform_pass
   examples:
-  - text: |
-      So where do you think they target their efforts? 
-  - text: |
-      those three guys take the evidence go off figure it out and then come back and say whether you're guilty or not
-  - text: |
-      our judicial system is in such total chaos
-  - text: |
-      They target their efforts toward the citizens not the criminals
-  - text: |
-      I hold it in the utmost contempt
-  - text: |
-      I think somehow you have to separate the revenues from
-  - text: |
-      Come on any jury's not going to  disregard the evidence you know <laughter>
-  - text: |
-      They were all murdered
   - text: |
       yet you go out on the streets and they're giving speeding tickets
   - text: |
       but I
   - text: |
-       has nothing to do with justice whatsoever
+      None of this
+  - text: |
+      our judicial system is in such total chaos
+  - text: |
+      I hold it in the utmost contempt
+  - text: |
+      They been trying these people now for twentytwo years ever since I was a child
+  - text: |
+      Come on any jury's not going to  disregard the evidence you know <laughter>
   - text: |
       that's it.
   - text: |
-      None of this
+      I think somehow you have to separate the revenues from
+  - text: |
+      So where do you think they target their efforts? 
+  - text: |
+      They target their efforts toward the citizens not the criminals
   - text: |
       I think our judicial system is attorney welfare myself
   - text: |
-      They been trying these people now for twentytwo years ever since I was a child
+      those three guys take the evidence go off figure it out and then come back and say whether you're guilty or not
+  - text: |
+       has nothing to do with justice whatsoever
+  - text: |
+      They were all murdered
 
 - intent: autoPositive
   examples:
@@ -220,32 +220,32 @@ nlu:
 - intent: selfCorrection
   examples:
   - text: |
-      do uh cause
-  - text: |
-      the just the
-  - text: |
-      The d my
-  - text: |
       a  a civil somebody suing somebody else
   - text: |
       you would h  you would have
   - text: |
-      us we
+      do uh cause
+  - text: |
+      the just the
   - text: |
       similar like
+  - text: |
+      The d my
+  - text: |
+      us we
 
 - intent: agreement
   examples:
   - text: |
-      that's true
+      That's true
   - text: |
       Yeah
   - text: |
-      I firmly believe in that  
-  - text: |
-      That's true
-  - text: |
       That may very well be
+  - text: |
+      that's true
+  - text: |
+      I firmly believe in that  
 
 - intent: setQuestion
   examples:

@@ -1,0 +1,13 @@
+utterance,intent
+ uhm ,stalling
+ uhm ,stalling
+ nah i dont think i know her ,inform
+ mkay ,autoPositive
+ my name is eleanor of aquitaine ,inform_pass
+ know ,autoPositive
+ alright ,alloPositive
+ alright ,interactionStructuring
+ well good try though ,alloPositive
+ well good try though ,inform
+ and maybe next time ,closing
+ and maybe next time ,inform

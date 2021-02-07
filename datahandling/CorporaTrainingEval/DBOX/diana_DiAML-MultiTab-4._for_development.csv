@@ -1,0 +1,12 @@
+utterance,intent
+ i was ,setAnswer
+ i was a princess ,setAnswer
+ i was ,selfCorrection
+ when i was alive ,setAnswer
+ and where are you from ,setQuestion
+ i am from england ,setAnswer
+ okay ,autoPositive
+ uhm ,stalling
+ uh ,stalling
+ where did you die ,setQuestion
+ just a second ,pausing

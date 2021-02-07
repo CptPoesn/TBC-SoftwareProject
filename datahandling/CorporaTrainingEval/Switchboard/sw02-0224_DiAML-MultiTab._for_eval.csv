@@ -1,0 +1,35 @@
+utterance,intent
+you know,stalling
+so that worked out pretty well  ,inform_continue
+"She never had to worry about taking anybody to child care because there was always somebody there older to deal with them,  ",inform_continue
+"so I guess, that's an alternative  ",inform_continue
+"If you could just, have a whole bunch <laughter>",inform_continue
+um,stalling
+Have enough   ,completion
+<Laughter>,autoPositive
+"By the time the youngest ones are there, you'll have older one to take care of them ",inform_pass
+That's true ,autoPositive
+I don't know  ,stalling
+When you see all these horror stories on television about child care  ,inform_continue
+gosh,inform_continue
+I was seeing something on the television earlier about a little girl that's been telling her mother these terrible stories  ,inform_continue
+of course people are denying it ,inform_continue
+uh,stalling
+it's just frightening ,inform_continue
+It really is ,inform_pass
+"what, what's",stalling
+what's frightening is a parent to see things that you don't really don't understand,inform_continue
+"that, that",stalling
+Huh-uh  ,autoPositive
+Huh-uh ,autoPositive
+And then  you don't really know what happened ,inform_pass
+Yeah ,autoPositive
+We gave up on one baby sitter because we came home one night and found pieces of ribbon,inform_continue
+um,stalling
+Huh-uh ,autoPositive
+you know,stalling
+hair ribbon,inform_pass
+Huh-uh ,autoPositive
+ -- tied in a chair,inform_continue
+where obviously she,inform_continue
+"had, had",stalling

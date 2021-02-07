@@ -1,0 +1,12 @@
+utterance,intent
+ yeah ,alloPositive
+ yeah ,acceptApology
+ youre not giving me a lot to work with ,alloNegative
+ I know ,agreement
+ okay ,autoPositive
+ uhm ,stalling
+ wait ,request
+ no ,correction
+ yeah ,autoPositive
+ uhm ,stalling
+ uhm ,stalling

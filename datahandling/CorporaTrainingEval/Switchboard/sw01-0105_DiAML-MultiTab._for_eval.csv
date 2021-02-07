@@ -1,0 +1,20 @@
+utterance,intent
+"you're going, your opinion is going",selfCorrection
+"about, on ",selfCorrection
+Yeah,agreement
+"as opposed to actually watching it yourself and forming your own opinion, which I would  be much more in favor of forming my own opinion as opposed to following someone else's",inform_continue
+"pinion, opinion",selfCorrection
+"haven't, would",selfCorrection
+Yeah,agreement
+I guess that's true,inform_continue
+"one of the ways that I get information is, every day when I log in on the computer I subscribe to this thing",inform_continue
+uh,stalling
+"this, this",stalling
+it's free inside the company,inform_continue
+it's called INTELLECT,inform_continue
+"and, and",stalling
+uh,stalling
+"they basically, type out abstracts which are really literally, -",inform_continue
+"I've, I've",stalling
+I've actually read the actual articles,inform_continue
+they're pretty g,inform_end

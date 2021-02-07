@@ -1,0 +1,21 @@
+utterance,intent
+ right ,acceptRequest
+ okay ,autoPositive
+ okay ,alloPositive
+ and go underneath the buffalo ,instruct
+ now do you have a cattle ranch ,propositionalQuestion
+ no ,answer
+ ehm ,stalling
+ do you have a fort ,propositionalQuestion
+ mmhmm ,answer
+ so youre go from the buffalo to the fort ,instruct
+ but youve got to avoid the cattle ranch on the way ,instruct
+ and youll have to go up and over the top of the cattle ranch ,instruct
+ right ,acceptRequest
+ which on my map is halfway between the buffalo and the fort ,instruct
+ okay ,feedbackElicitation
+ right ,autoPositive
+ that on the level between the fort ,checkQuestion
+ ehm ,stalling
+ mm ,checkQuestion
+ its almost on level with the fort ,confirm

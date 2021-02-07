@@ -1,0 +1,10 @@
+utterance,intent
+ oh ,autoPositive[annoyed](Fe:fsp2AUFFB19)
+ ok ,autoPositive
+ im sorry but ,apology(Fe:fsp1SOMFB5)
+ im sorry but ,selfCorrection(Fe:fsp1OCMFB2)
+ im sorry ,apology
+ but youll do better next time ,inform[encouraging]
+ youll do better next time we get to do lots of rounds ,closing
+ okay hopefully hopefully ,autoPositive(Fe:fsp2AUFFB21)
+ okay ,acceptApology(Fu:dap1SOM6)

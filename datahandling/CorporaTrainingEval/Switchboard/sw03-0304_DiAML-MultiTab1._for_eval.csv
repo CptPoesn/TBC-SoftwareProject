@@ -1,0 +1,27 @@
+utterance,intent
+that's just a great place. ,inform_continue
+But not in Colorado,inform_continue
+"a, just a",selfCorrection
+"no Colora-, not in Colorado",selfCorrection
+"since I was in college, since I went to school,",selfCorrection
+What about Utah?,setQuestion
+ Haven't been there,answer
+I keep hearing these marvelous things about Dear Valley and City,inform_pass
+Yeah,autoPositive
+haven't either,inform_pass
+"um,",stalling
+um,stalling
+Always want to go to Canada to Banff or somewhere like that,inform_pass
+"Ooh, yes",autoPositive
+And your kids all ski? ,propositionalQuestion
+"Uh,",stalling
+not all of them,answer
+Uh-huh,autoPositive
+My kids are all grown,inform_continue
+But my youngest son is a skier,inform_pass
+Really,autoPositive
+that's great,autoPositive
+"Well,",stalling
+my boys are at the point where they scare their mommy to death,inform_pass
+Uh-huh,autoPositive
+When they're skiing they're fearless,inform_end

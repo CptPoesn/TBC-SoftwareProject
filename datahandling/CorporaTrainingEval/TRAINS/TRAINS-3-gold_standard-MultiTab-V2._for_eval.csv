@@ -1,0 +1,6 @@
+utterance,intent
+right,confirm
+how long will that take,setQuestion
+eleven hours,answer
+okay,interactionStructuring
+I am now finished,interactionStructuring
