@@ -1,6 +1,8 @@
 """
 Outline for the evaluation
 """
+import csv
+
 import our_dialogue_manager as dm
 from nltk.tokenize import word_tokenize
 
@@ -48,15 +50,20 @@ model = dm.get_rasa_model(model_path)
 
 # TODO @Ben ab hier
 # read in corpus file as csv
-# corpus_file =
+corpus_file_name = "datahandling/CorporaTrainingEval/Switchboard/sw02-0224_DiAML-MultiTab._for_development.csv"
+corpus_file = []
+with open(corpus_file_name, mode='r') as csv_file:
+	csv_reader = csv.DictReader(csv_file)
+	for row in csv_reader:
+		corpus_file.append(row)
 
 # run model on corpus file
-# for line in corpus_file:
-	# p_intent, prediction_locking_time, response_delivery_time = get_prediction(line["utterance"], model)
+for line in corpus_file:
+	p_intent, prediction_locking_time, response_delivery_time = get_prediction(line["utterance"], model)
 
-	# confusion_matrix[line["intent"]][p_intent] += 1
-	# locking_times.append(prediction_locking_time)
-	# response_times.append(response_delivery_time)
+	confusion_matrix[line["intent"]][p_intent] += 1
+	locking_times.append(prediction_locking_time)
+	response_times.append(response_delivery_time)
 
 
 # get P,R,F1,Acc from confusion matrix
