@@ -17,10 +17,7 @@ import math
 # test 1 only imports ###################################################
 import re
 import string
-import nltk
 from nltk.tokenize import word_tokenize
-
-
 
 
 # functions################################################################
@@ -68,7 +65,7 @@ def get_utterance_predictor_and_tokenizer(predictor="huggingtweets/ppredictors")
 def predict_with_score(input, generator, tokenizer):
 
     # make model and generate output
-    input_ids = tokenizer(input, return_tensors="pt").input_ids
+    input_ids = tokenizer(input, return_tensors="pt").input_ids # "pt" stands for pytorch; could also be "tf"
     generated_outputs = generator.generate(input_ids, do_sample=True, num_return_sequences=5, output_scores=True)
 
     # gen_sequences has shape [5, 15] TODO why 15????
@@ -90,8 +87,6 @@ def predict_with_score(input, generator, tokenizer):
     print("unique probs:", unique_prob_per_sequence)
     # 2) normalize the probs over the three sequences
     normed_gen_probs = gen_probs / gen_probs.sum(0)
-    assert normed_gen_probs[:, 0].sum() == 1.0, "probs should be normalized" # TODO: find out what causes this error and how to try/except it
-    # 3) compare normalized probs to each other like in 1)
     unique_normed_prob_per_sequence = normed_gen_probs.prod(-1)
     print("unique NORMED prob per sequence: ", unique_normed_prob_per_sequence)
 
@@ -131,12 +126,14 @@ def get_pred_text(input_so_far, predfull_text):
     return pred_text
 
 
-def main(tokenized_msg, generator, tokenizer, rasa_model):
+def main(tokenized_msg, generator, tokenizer, rasa_model, threshold, update_weight_timesteps):
     cumu_msg = []  # cumulated message
+    intent_dict = dict()
     response_word_at_trp = ""
     response_intent_at_trp = (0, 0)
     trp_list = list()
     earliest_word = ""
+    utterance_prediction_at_trp = ""
 
     for word in tokenized_msg:
         cumu_msg.append(word)  # take one more word from full msg
@@ -158,63 +155,70 @@ def main(tokenized_msg, generator, tokenizer, rasa_model):
 
             for (intent, confi) in item_intent_dis:
                 if intent in intent_dict:
-                    intent_update = intent_dict[intent] * 0.5 + float(confi) * 0.5 # TODO make variable
+                    intent_update = intent_dict[intent] * (1 - update_weight_timesteps) + float(confi) * update_weight_timesteps # TODO make variable
                     intent_update = intent_update * weight_by_utterance_probability(pred_score) # TODO get meaningful weighting heuristic
                     intent_dict[intent] = intent_update
                     if intent_update >= threshold:
                         if earliest_word == "":
                             earliest_word = out
                         response_word_at_trp = out
+                        utterance_prediction_at_trp = pred_text
                         response_intent_at_trp = sorted(intent_dict.items(), key=operator.itemgetter(1), reverse=True)[0]
                         trp_list.append((response_word_at_trp, response_intent_at_trp))
                 else:
                     intent_dict[intent] = float(confi) * weight_by_utterance_probability(pred_score)
-                # print("intent: ", intent, "\tconfi: ", confi)
-                # print('--------')
             print(sorted(intent_dict.items(), key=operator.itemgetter(1), reverse=True))
         print("\n ------------------------- \n")
+
+
+    # TODO: edit after Clara's update / @Clara: double-check
+    if not response_word_at_trp:
+        response_word_at_trp = out
+    if response_intent_at_trp == (0,0):
+        response_intent_at_trp = sorted(intent_dict.items(), key=operator.itemgetter(1), reverse=True)[0]
+    if not utterance_prediction_at_trp:
+        utterance_prediction_at_trp = pred_text
+    if not trp_list:
+        trp_list.append((response_word_at_trp, response_intent_at_trp))
 
     print("full message: ", input_msg)
     print("earliest possible response point: ", response_word_at_trp)
     print("top intent and confi at earliest possible response point: ", response_intent_at_trp)
     print("trp list: ", trp_list)
 
+    return cumu_msg, response_intent_at_trp, utterance_prediction_at_trp
 
 
+if __name__ == "__main__":
 
+    # alter these################################################################
 
-# alter these################################################################
+    '''
+    # suggested test text (from switchboard sw00-0004) (trained with the rest of switchboard)
+    [inform_pass]           They been trying these people now for twentytwo years ever since I was a child
+    [inform_continue]       And here's this bum that didn't have a job
+    [stalling]              I mean they're they're
+    [agreement]             That may very well be
+    [autoPositive]          Uh-huh
+    [confirm]               Yeah
+    [selfCorrection]        you would h  you would have
+    [setQuestion]           Who's paying for that
+    [checkQuestion]         huh
+    [propositionalQuestion] because when you get the most heinous of crimes have you ever noticed you always get the most renowned defense attorney
+    [answer]                you're talking to part of them that's paying for that <laughter>
+    '''
 
-'''
-# suggested test text (from switchboard sw00-0004) (trained with the rest of switchboard)
-[inform_pass]           They been trying these people now for twentytwo years ever since I was a child
-[inform_continue]       And here's this bum that didn't have a job
-[stalling]              I mean they're they're
-[agreement]             That may very well be
-[autoPositive]          Uh-huh
-[confirm]               Yeah
-[selfCorrection]        you would h  you would have
-[setQuestion]           Who's paying for that
-[checkQuestion]         huh
-[propositionalQuestion] because when you get the most heinous of crimes have you ever noticed you always get the most renowned defense attorney
-[answer]                you're talking to part of them that's paying for that <laughter>
-'''
+    input_msg = "I mean they're they're"  # input text
+    threshold = float(0.8)  # threshold: 0.9/0.8 tested
+    predicted = "by_sentend"  # options: "by_sentend" or "by_allpunc" or "by_fulltext" for predicted text length
+    update_weight_timesteps = 0.5
 
-input_msg = "Who's paying for that"  # input text
-threshold = float(0.8)  # threshold: 0.9/0.8 tested
-predicted = "by_sentend"  # options: "by_sentend" or "by_allpunc" or "by_fulltext" for predicted text length
+    model_path = "../../Softwareprojekt/rasa_test/models"
+    tokenized_msg = word_tokenize(input_msg)
+    print("tokens: ", tokenized_msg)
 
+    # models
+    generator, tokenizer = get_utterance_predictor_and_tokenizer(predictor="huggingtweets/ppredictors")
+    model = get_rasa_model(model_path)
 
-
-model_path = "../../Softwareprojekt/rasa_test/models"
-tokenized_msg = word_tokenize(input_msg)
-
-print("tokens: ", tokenized_msg)
-
-intent_dict = dict()
-
-
-generator, tokenizer = get_utterance_predictor_and_tokenizer(predictor="gpt2")
-model = get_rasa_model(model_path)
-
-main(tokenized_msg, generator, tokenizer, model)
+    main(tokenized_msg, generator, tokenizer, model, threshold, update_weight_timesteps)
