@@ -1,0 +1,249 @@
+nlu:
+- intent: opening
+  examples:
+  - text: |
+      hello
+
+- intent: initialGreeting
+  examples:
+  - text: |
+      hello
+
+- intent: offer
+  examples:
+  - text: |
+      can I help you
+
+- intent: acceptOffer
+  examples:
+  - text: |
+      yeah
+
+- intent: stalling
+  examples:
+  - text: |
+      I want t-
+  - text: |
+      VOC_breath
+    metadata:
+      turnManagement: turnKeep
+  - text: |
+      VOC_breath so
+    metadata:
+      turnManagement: turnKeep
+  - text: |
+      VOC_breath hm ... so
+  - text: |
+      ... hm so
+  - text: |
+      ... um
+    metadata:
+      turnManagement: turnKeep
+  - text: |
+      VOC_breath
+  - text: |
+      um
+    metadata:
+      turnManagement: turnKeep
+  - text: |
+      VOC_breath so VOC_breath
+    metadata:
+      turnManagement: turnKeep
+
+- intent: inform_continue
+  examples:
+  - text: |
+      so that's good
+  - text: |
+      then I guess we can also take like engine E two with those two boxcars from Elmira take it to Corning
+  - text: |
+      we have the three boxcars at Dansville
+  - text: |
+      but the thing is that I was thinking if we could actually pick up those two boxcars which are at Bath
+  - text: |
+      like I don't think we so to get the maximum number of box cars of oranges to bath by seven am I don't think we can even use those two at Bath
+  - text: |
+      have it go to Bath pick up those two box cars
+  - text: |
+      so we're like screwed as far as those two box cars at Bath
+  - text: |
+      but I think that we can't even put them in to
+  - text: |
+      so that's three boxcars
+  - text: |
+      so that gives us a maximum number of five
+  - text: |
+      we could actually take like engine E
+  - text: |
+      I want to determine the maximum number of boxcars of oranges that I can get to Bath by seven a.m. tomorrow
+  - text: |
+      that they won't even come in to
+  - text: |
+      so that's engine E one from Avon going to Dansville pick up the three boxcars go to Corning load them up and then take it to Bath
+  - text: |
+      we can unload any amount of cargo onto a train in one hour
+  - text: |
+      I guess all the boxcars will have to go through Corning
+  - text: |
+      because that's where the orange juice factory is
+
+- intent: selfCorrection
+  examples:
+  - text: |
+      that they won't even come in to
+  - text: |
+      orange factory
+  - text: |
+      to Corning
+
+- intent: setQuestion
+  examples:
+  - text: |
+      I thought well from like Elmira through to Corning to Bath is many hours
+  - text: |
+      how far is it from Elmira to Bath VOC_breath
+  - text: |
+      from Corning to Bath how far is that
+    metadata:
+      turnManagement: turnAssign
+  - text: |
+      how long from Bath to Corning
+  - text: |
+      how far is it from Avon to Bath
+  - text: |
+      how far is it from Avon to Danville
+
+- intent: answer
+  examples:
+  - text: |
+      one hour
+  - text: |
+      three hours
+  - text: |
+      four hours
+  - text: |
+      two hours
+  - text: |
+      that's six hours 
+
+- intent: checkQuestion
+  examples:
+  - text: |
+      an hour I guess
+  - text: |
+      so Elmira to Corning is two hours
+  - text: |
+      so we can actually use those three boxcars right
+    metadata:
+      turnManagement: turnAssign
+  - text: |
+      and it's gonna take us also an hour to load boxcars right
+    metadata:
+      turnManagement: turnAssign
+  - text: |
+      every trip will take at least three hours then
+
+- intent: confirm
+  examples:
+  - text: |
+      mm-hm
+  - text: |
+      right
+
+- intent: autoPositive
+  examples:
+  - text: |
+      okay
+  - text: |
+      VOC_click VOC_breath
+    metadata:
+      turnManagement: turnTake
+  - text: |
+      from Avon
+  - text: |
+      mm
+  - text: |
+      oh really
+  - text: |
+      right
+  - text: |
+      three hours
+  - text: |
+      okay
+    metadata:
+      turnManagement: turnTake
+  - text: |
+      oh wait a second
+  - text: |
+      oh that's four hours
+
+- intent: inform_pass
+  examples:
+  - text: |
+      engine one goes to Dansville picks up three boxcars goes to Corning is loaded with oranges and goes to Bath engine E two picks takes the two boxcars at Elmira to Corning where they're loaded with oranges and then takes them to Bath
+  - text: |
+      it's shorter through Dansville
+  - text: |
+      yeah that should also work
+  - text: |
+      we can do a maximum of three boxcars in an hour
+  - text: |
+      because we can't get an engine to Bath in time
+
+- intent: suggest
+  examples:
+  - text: |
+      I guess one thing we can do
+  - text: |
+      I guess one thing is that we should see how many boxcars we can actually get to Corning in four hours
+
+- intent: selfError
+  examples:
+  - text: |
+      oh
+  - text: |
+      oh no
+
+- intent: retraction
+  examples:
+  - text: |
+      take it to Corn-
+  - text: |
+      unless
+
+- intent: agreement
+  examples:
+  - text: |
+      that's right
+  - text: |
+      mm-hm
+
+- intent: SetQuestion
+  examples:
+  - text: |
+      then from Dansville to Corning
+
+- intent: request
+  examples:
+  - text: |
+      so did you wanna repeat that plan
+    metadata:
+      turnManagement: turnAssign
+
+- intent: acceptRequest
+  examples:
+  - text: |
+      okay
+    metadata:
+      turnManagement: turnAccept
+
+- intent: alloPositive
+  examples:
+  - text: |
+      okay
+
+- intent: interactionStructuring
+  examples:
+  - text: |
+      okay
+

@@ -1,0 +1,398 @@
+nlu:
+- intent: opening
+  examples:
+  - text: |
+       hello 
+
+- intent: initGreeting
+  examples:
+  - text: |
+       hello nikolina its nice to meet you 
+  - text: |
+       good afternoon almost evening 
+  - text: |
+       hello 
+
+- intent: opening(Fu:dap1DIS0)
+  examples:
+  - text: |
+       hello 
+
+- intent: returnGreeting(Fu:dap1SOM0)
+  examples:
+  - text: |
+       hello 
+
+- intent: stalling
+  examples:
+  - text: |
+       eehm 
+    metadata:
+      turnManagement: turnKeep
+  - text: |
+       ninety seven 
+  - text: |
+       so 
+  - text: |
+       uh 
+    metadata:
+      turnManagement: turnKeep
+  - text: |
+       hm 
+    metadata:
+      turnManagement: turnKeep
+  - text: |
+       okay 
+    metadata:
+      turnManagement: turnKeep
+  - text: |
+       youre not alive 
+  - text: |
+       uhm 
+    metadata:
+      turnManagement: turnAccept
+  - text: |
+       so 
+    metadata:
+      turnManagement: turnKeep
+  - text: |
+       uhm 
+    metadata:
+      turnManagement: turnTake
+  - text: |
+       so uhm 
+    metadata:
+      turnManagement: turnKeep
+  - text: |
+       uhm 
+    metadata:
+      turnManagement: turnKeep
+
+- intent: setQuestion
+  examples:
+  - text: |
+       what is your first question 
+  - text: |
+       what is your name 
+  - text: |
+       what do you do 
+  - text: |
+       what is your nationality 
+  - text: |
+       when are you born 
+  - text: |
+       how are you doing today 
+  - text: |
+       when were you in the goverment 
+
+- intent: setAnswer(Fu:dap1TSK0)
+  examples:
+  - text: |
+       my name is nikolina 
+
+- intent: initSelfIntroduction(Fu:dap1SOM2)
+  examples:
+  - text: |
+       my name is nikolina 
+
+- intent: selfCorrection(Fe:fsp1OCMFB0)
+  examples:
+  - text: |
+       nikolina 
+
+- intent: returnGreeting(Fu:dap1SOM3)
+  examples:
+  - text: |
+       Nice to meet you 
+
+- intent: interactionStructuring
+  examples:
+  - text: |
+       so 
+  - text: |
+       so 
+    metadata:
+      turnManagement: turnKeep
+  - text: |
+       alright so 
+  - text: |
+       alright 
+    metadata:
+      turnManagement: turnTake
+
+- intent: setAnswer(Fu:dap1SOM4)
+  examples:
+  - text: |
+       good 
+
+- intent: thanking(Fe:fsp2SOMFB4)
+  examples:
+  - text: |
+       thank you 
+
+- intent: autoPositive(Fe:fsp1AUFFB0)
+  examples:
+  - text: |
+       alright 
+    metadata:
+      turnManagement: turnTake
+
+- intent: checkQuestion(Fe:fsp2AUFFB0)
+  examples:
+  - text: |
+       so the name is kind of a famous person yeah 
+
+- intent: feedbackElicitation(Fe:fsp2ALFFB0)
+  examples:
+  - text: |
+       yeah 
+
+- intent: autoPositive
+  examples:
+  - text: |
+       ok 
+  - text: |
+       okay 
+
+- intent: confirm(Fu:dap2AUF0)
+  examples:
+  - text: |
+       yes 
+
+- intent: inform_continue
+  examples:
+  - text: |
+       im not sure how good am i in this area 
+
+- intent: autoPositive(Fe:fsp2AUFFB2)
+  examples:
+  - text: |
+       okay okay 
+
+- intent: autoPositive(Fe:fsp2AUFFB3)
+  examples:
+  - text: |
+       good 
+
+- intent: autoPositive(Fe:fsp2AUFFB4)
+  examples:
+  - text: |
+       what is the first question 
+
+- intent: setAnswer(Fu:dap2TSK2)
+  examples:
+  - text: |
+       i am a leader 
+
+- intent: autoPositive(Fe:fsp2AUFFB5)
+  examples:
+  - text: |
+       a leader 
+
+- intent: setAnswer(Fu:dap2TSK3)
+  examples:
+  - text: |
+       i am american 
+
+- intent: autoPositive(Fe:fsp2AUFFB6)
+  examples:
+  - text: |
+       american 
+
+- intent: propositionalQuestion
+  examples:
+  - text: |
+       are you leading a company 
+  - text: |
+       are you alive 
+  - text: |
+       did you have an affair with Monica Lewinsky 
+  - text: |
+       are you a 
+  - text: |
+       are a politician 
+
+- intent: propositionalAnswer(Fu:dap2TSK4)
+  examples:
+  - text: |
+       i am not alive 
+
+- intent: autoPositive(Fe:fsp2AUFFB7)
+  examples:
+  - text: |
+       youre not alive 
+
+- intent: autoPositive(Fe:fsp2AUFFB8)
+  examples:
+  - text: |
+       okay 
+    metadata:
+      turnManagement: turnKeep
+
+- intent: selfCorrection(Fe:fsp2OCMFB0)
+  examples:
+  - text: |
+       are you leading 
+
+- intent: propositionalAnswer(Fu:dap2TSK6)
+  examples:
+  - text: |
+       i am not leading a company 
+
+- intent: autoPositive(Fe:fsp2AUFFB9)
+  examples:
+  - text: |
+       okay 
+
+- intent: autoPositive(Fe:fsp2AUFFB10)
+  examples:
+  - text: |
+       youre not a company leader 
+
+- intent: setAnswer(Fu:dap2TSK7)
+  examples:
+  - text: |
+       i was born on february twenty second seventeen thirty two 
+
+- intent: autoPositive(Fe:fsp2AUFFB11)
+  examples:
+  - text: |
+       seventeen thirty two 
+
+- intent: autoPositive(Fe:fsp2AUFFB12)
+  examples:
+  - text: |
+       ok 
+    metadata:
+      turnManagement: turnKeep
+
+- intent: propositionalAnswer(Fu:dap2TSK8)
+  examples:
+  - text: |
+       i am a politician 
+
+- intent: autoPositive(Fe:fsp2AUFFB13)
+  examples:
+  - text: |
+       okay 
+
+- intent: inform(Fe:fsp2AUFFB14)
+  examples:
+  - text: |
+       so then it is not my area 
+
+- intent: autoPositive(Fe:fsp2AUFFB15)
+  examples:
+  - text: |
+       a politician 
+
+- intent: pausing
+  examples:
+  - text: |
+       lets see 
+    metadata:
+      turnManagement: turnKeep
+
+- intent: setAnswer[uncertain](Fu:dap2TSK9)
+  examples:
+  - text: |
+       this must be 
+
+- intent: autoPositive(Fe:fsp1AUFFB1)
+  examples:
+  - text: |
+       okay 
+    metadata:
+      turnManagement: turnKeep
+
+- intent: setAnswer(Fu:dap2TSK9)
+  examples:
+  - text: |
+       i retired from the presidency in seventeen ninety seven 
+
+- intent: selfCorrection(Fe:fsp1OCMFB1)
+  examples:
+  - text: |
+       i retired 
+
+- intent: autoPositive(Fe:fsp2AUFFB16)
+  examples:
+  - text: |
+       ninety seven 
+
+- intent: guess
+  examples:
+  - text: |
+       george washington 
+  - text: |
+       washington or bill clinton 
+  - text: |
+       so you are not Bill Clinton 
+
+- intent: autoPositive(Fe:fsp2AUFFB17)
+  examples:
+  - text: |
+       ninety seven 
+
+- intent: inform_pass
+  examples:
+  - text: |
+       I am george washington 
+  - text: |
+       im not sure hes alive 
+
+- intent: propositionalAnswer(Fu:dap2TSK13)
+  examples:
+  - text: |
+       i did not 
+
+- intent: disconfirm(Fu:dap2TSK14)
+  examples:
+  - text: |
+       i am not bill clinton 
+
+- intent: autoPositive(Fe:fsp2AUFFB18)
+  examples:
+  - text: |
+       correct uuh 
+
+- intent: autoPositive[annoyed](Fe:fsp2AUFFB19)
+  examples:
+  - text: |
+       oh 
+
+- intent: apology(Fe:fsp1SOMFB5)
+  examples:
+  - text: |
+       im sorry but 
+
+- intent: selfCorrection(Fe:fsp1OCMFB2)
+  examples:
+  - text: |
+       im sorry but 
+
+- intent: apology
+  examples:
+  - text: |
+       im sorry 
+
+- intent: inform[encouraging]
+  examples:
+  - text: |
+       but youll do better next time 
+
+- intent: closing
+  examples:
+  - text: |
+       youll do better next time we get to do lots of rounds 
+
+- intent: autoPositive(Fe:fsp2AUFFB21)
+  examples:
+  - text: |
+       okay hopefully hopefully 
+
+- intent: acceptApology(Fu:dap1SOM6)
+  examples:
+  - text: |
+       okay 
+

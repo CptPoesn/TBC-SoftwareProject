@@ -1,0 +1,107 @@
+nlu:
+- intent: opening
+  examples:
+  - text: |
+      hello
+
+- intent: offer
+  examples:
+  - text: |
+      can I help you
+
+- intent: acceptOffer
+  examples:
+  - text: |
+      yes
+
+- intent: inform_pass
+  examples:
+  - text: |
+      I'd like to take a tanker from Corning and bring it to Elmira
+  - text: |
+      and from Elmira I'd like to load orange juice into the tanker
+  - text: |
+      then I'd like to take the tanker of orange juice through Dansville and then on to Avon
+  - text: |
+      then I'll take engine E two
+
+- intent: autoPositive
+  examples:
+  - text: |
+      okay
+  - text: |
+      alright
+  - text: |
+      mm-hm
+
+- intent: inform_continue
+  examples:
+  - text: |
+      I'd like then to take the tanker back from Elmira to Corning
+
+- intent: stalling
+  examples:
+  - text: |
+      well
+    metadata:
+      turnManagement: turnTake
+  - text: |
+      so uh
+  - text: |
+      the the
+  - text: |
+      uh
+  - text: |
+      um
+    metadata:
+      turnManagement: turnKeep
+
+- intent: setQuestion
+  examples:
+  - text: |
+      now from Corning what would be the quickest route to Avon
+  - text: |
+      which engine would you like to use
+  - text: |
+      how long will that take
+  - text: |
+      the tankers move at the same speed
+
+- intent: answer
+  examples:
+  - text: |
+      eleven hours
+  - text: |
+      no they're both the same
+  - text: |
+      engine E two
+  - text: |
+      through Dansville
+
+- intent: propositionalQuestion
+  examples:
+  - text: |
+      will either one take me there any quicker
+
+- intent: selfCorrection
+  examples:
+  - text: |
+      they're a they're
+
+- intent: confirm
+  examples:
+  - text: |
+      right
+
+- intent: interactionStructuring
+  examples:
+  - text: |
+      okay
+  - text: |
+      I am now finished
+
+- intent: checkQuestion
+  examples:
+  - text: |
+      the plan is to take engine E two to Corning pick up a tanker back to Elmira load it with orange juice and then to Avon
+

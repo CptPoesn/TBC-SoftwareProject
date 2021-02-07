@@ -91,34 +91,38 @@ if __name__ == '__main__':
 
     files = []
 
-    #Trains
-    files.append('csv/TRAINS/TRAINS-1-gold_standard-MultiTab-V21.csv')
-    files.append('csv/TRAINS/TRAINS-2-gold_standard-MultiTab-V21.csv')
-    files.append('csv/TRAINS/TRAINS-3-gold_standard-MultiTab-V2.csv')
+    # Trains
+    files.append('CorporaTrainingEval/TRAINS/TRAINS-1-gold_standard-MultiTab-V21.csv')
+    files.append('CorporaTrainingEval/TRAINS/TRAINS-2-gold_standard-MultiTab-V21.csv')
+    files.append('CorporaTrainingEval/TRAINS/TRAINS-3-gold_standard-MultiTab-V2.csv')
 
-    #Switchboard
-    files.append('csv/Switchboard/sw00-0004_DiAML-MultiTab.xlsx.txt.csv')
-    files.append('csv/Switchboard/sw01-0105_DiAML-MultiTab.csv')
-    files.append('csv/Switchboard/sw02-0224_DiAML-MultiTab.csv')
-    files.append('csv/Switchboard/sw03-0304_DiAML-MultiTab1.csv')
+    # Switchboard
+    files.append('CorporaTrainingEval/Switchboard/sw00-0004_DiAML-MultiTab.xlsx.txt.csv')
+    files.append('CorporaTrainingEval/Switchboard/sw01-0105_DiAML-MultiTab.csv')
+    files.append('CorporaTrainingEval/Switchboard/sw02-0224_DiAML-MultiTab.csv')
+    files.append('CorporaTrainingEval/Switchboard/sw03-0304_DiAML-MultiTab1.csv')
 
-    #MapTask
-    files.append('csv/MapTask/q1ec5_DiAML-MultiTab.csv')
-    files.append('csv/MapTask/q1ec6_DiAML-MultiTab.csv')
+    # MapTask
+    files.append('CorporaTrainingEval/MapTask/q1ec5_DiAML-MultiTab.csv')
+    files.append('CorporaTrainingEval/MapTask/q1ec6_DiAML-MultiTab.csv')
 
-    #DBOX
-    files.append('csv/DBOX/diana_DiAML-MultiTab-4.csv')
-    files.append('csv/DBOX/eleanor_DiAML-MultiTab.csv')
-    files.append('csv/DBOX/rihanna_DiAML-MultiTab.csv')
-    files.append('csv/DBOX/venus_DiAML-MultiTab.csv')
-    files.append('csv/DBOX/washington_DiAML-MultiTab.csv')
+    # DBOX
+    files.append('CorporaTrainingEval/DBOX/diana_DiAML-MultiTab-4.csv')
+    files.append('CorporaTrainingEval/DBOX/eleanor_DiAML-MultiTab.csv')
+    files.append('CorporaTrainingEval/DBOX/rihanna_DiAML-MultiTab.csv')
+    files.append('CorporaTrainingEval/DBOX/venus_DiAML-MultiTab.csv')
+    files.append('CorporaTrainingEval/DBOX/washington_DiAML-MultiTab.csv')
 
 
     for file in files:
         file_out = file[:-3] + 'yaml'
 
         data = cvs_to_dict(file)
-
+        train_split = int(len(data)/100*80)
+        dev_split = int(len(data)/100 * 90)
+        train_data = data[:train_split]
+        dev_data = data[train_split:dev_split]
+        eval_data = data[dev_split:]
         # print(data[1].keys())
 
         dict_to_yaml(file_out, data)

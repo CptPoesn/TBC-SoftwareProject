@@ -1,0 +1,42 @@
+﻿Markables;Sender;Addressee;other Ps;Turn transcription;FS text;Task;autoFeedback;alloFeedback;turnManagement;timeManagement;ownCommunicationManagement;partnerCommunicationManagement;discourseStructuring;socialObligationsManagement;Comments
+TRAINS3-fs1;S;U;;hello, can I help you;hello;;;;;;;;da1: opening;;
+TRAINS3-fs2;S;U;;;can I help you;;;;;;;;da2: offer;;
+TRAINS3-fs3;U;S;;yes, I'd like to take a tanker from Corning and bring it to Elmira;yes;;;;;;;;da3: acceptOffer (Fu: da2);;
+TRAINS3-fs4;U;S;;;I'd like to take a tanker from Corning and bring it to Elmira;da4: inform;;;;;;;;;
+TRAINS3-fs5;S;U;;alright;alright;;da5: autoPositive (Fe: da4);;;;;;;;
+TRAINS3-fs6;U;S;;and from Elmira I'd like to load orange juice into the tanker;and from Elmira I'd like to load orange juice into the tanker;da6: inform {Expand: Expander da4};;;;;;;;;
+TRAINS3-fs7;S;U;;mm-hm;mm-hm;;da7: autoPositive (Fe: da6);;;;;;;;
+TRAINS3-fs8;U;S;;I'd like then to take the the tanker back from Elmira to Corning;I'd like then to take the tanker back from Elmira to Corning;da8: inform {Expand: Expander da4};;;;;;;;;
+TRAINS3-fs9;U;S;;;the the;;;;;da9: stalling;;;;;
+TRAINS3-fs10;S;U;;alright;alright;;da10: autoPositive (Fe: da8);;;;;;;;
+TRAINS3-fs11;U;S;;now from Corning what would be the quickest route to Avon;now from Corning what would be the quickest route to Avon;da11: setQuestion;;;;;;;;;
+TRAINS3-fs12;S;U;;uh through Dansville;uh;;;;;da12: stalling;;;;;
+TRAINS3-fs13;S;U;;;through Dansville;da13: answer (Fu: da11);;;;;;;;;
+TRAINS3-fs14;U;S;;okay then I'd like to take the tanker of orange juice through Dansville and then on to Avon;okay;;da14: autoPositive (Fe: da13);;;;;;;;
+TRAINS3-fs15;U;S;;;then I'd like to take the tanker of orange juice through Dansville and then on to Avon;da15: inform {Cause: Result da13};;;;;;;;;
+TRAINS3-fs16;S;U;;alright um which engine would you like to use;alright;;da16: autoPositive (Fe: da15);;;;;;;;
+TRAINS3-fs17;S;U;;;um;;;;da17: turnKeep;da18: stalling;;;;;
+TRAINS3-fs18;S;U;;;which engine would you like to use;da19: setQuestion;;;;;;;;;
+TRAINS3-fs19;U;S;;engine E two;engine E two;da20: answer (Fe: da19);;;;;;;;;
+TRAINS3-fs20;S;U;;alright;alright;;da21: autoPositive (Fe: da20);;;;;;;;
+TRAINS3-fs21;U;S;;well is E two which is a will either one take me there any quicker;well;;;;da22: turnTake;da23: stalling;;;;;
+;U;S;;;is E two;;;;;;;;;;abandoned
+;U;S;;;which is a;;;;;;;;;;abandoned
+TRAINS3-fs22;U;S;;;will either one take me there any quicker;da24: propositionalQuestion;;;;;;;;;
+TRAINS3-fs23;S;U;;uh no they're a they're both the same;uh;;;;;da25: stalling;;;;;
+TRAINS3-fs24;S;U;;;they're a they're;;;;;;da26: selfCorrection;;;;
+TRAINS3-fs25;S;U;;;no they're both the same;da27: answer (Fu: da24);;;;;;;;;
+TRAINS3-fs26;U;S;;okay then I'll take engine E two;okay;;da28: autoPositive (Fe: da27);;;;;;;;
+TRAINS3-fs27;U;S;;;then I'll take engine E two;da29: inform {Cause: Result da27};;;;;;;;;
+TRAINS3-fs28;S;U;;alright;alright;;da30: autoPositive (Fe: da29);;;;;;;;
+TRAINS3-fs29;U;S;;and the tankers move at the same speed;and;;;;da31: turnTake;;;;;;
+TRAINS3-fs30;U;S;;;the tankers move at the same speed;da32: setQuestion;;;;;;;;;
+TRAINS3-fs31;S;U;;right okay so uh the plan is to take engine E two to Corning pick up a tanker back to Elmira load it with orange juice and then to Avon;right;da33: confirm (Fu: da32);;;;;;;;;
+TRAINS3-fs32;S;U;;;okay;;;;;;;;da34: interactionStructuring;;
+TRAINS3-fs33;S;U;;;so uh;;;;;da35: stalling;;;;;
+TRAINS3-fs34;S;U;;;the plan is to take engine E two to Corning pick up a tanker back to Elmira load it with orange juice and then to Avon;da36: checkQuestion;;;;;;;;;
+TRAINS3-fs35;U;S;;right how long will that take;right;da37: confirm (Fu: da36);;;;;;;;;
+TRAINS3-fs36;U;S;;;how long will that take;da38: setQuestion;;;;;;;;;
+TRAINS3-fs37;S;U;;eleven hours;eleven hours;da39: answer (Fu: da38);;;;;;;;;
+TRAINS3-fs38;U;S;;okay I am now finished;okay;;;;;;;;da40: interactionStructuring;;
+TRAINS3-fs39;U;S;;;I am now finished;;;;;;;;da41: interactionStructuring;;

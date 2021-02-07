@@ -1,0 +1,196 @@
+nlu:
+- intent: opening
+  examples:
+  - text: |
+      hello
+
+- intent: initialGreeting
+  examples:
+  - text: |
+      hello
+
+- intent: offer
+  examples:
+  - text: |
+      can I help you
+
+- intent: acceptOffer
+  examples:
+  - text: |
+      yes
+
+- intent: inform_continue
+  examples:
+  - text: |
+      and I can only use engine two it's all the way over here
+  - text: |
+      I have a problem I need to transport two tankers of OJ to Avon and three boxcars of bananas to Elmira
+  - text: |
+      two tankers of OJ to Avon would mean I take engine two and take the two b(oxcars)- from Elmira and bring them over and pick up two and bring them back to Elmira to fill with OJ
+  - text: |
+      in Avon I want to load three box- drop off the one engine drop off the two tankers of OJ
+  - text: |
+      the two tankers
+  - text: |
+      four p.m.
+
+- intent: inform_pass
+  examples:
+  - text: |
+      load those three
+  - text: |
+      when I reach Dansville I wanna pick up one more boxcar
+  - text: |
+      bring it with me with the other two to Avon
+  - text: |
+      the bananas must arrive in Elmira by nine p.m.
+  - text: |
+      I can only use engine two
+  - text: |
+      it's now noon when you arrive in Avon
+  - text: |
+      I guess I still have nine hours
+  - text: |
+      fill up the three boxcars with bananas
+  - text: |
+      bring them back to Elmira
+  - text: |
+      we'll get there by seven p.m.
+
+- intent: autoPositive
+  examples:
+  - text: |
+      okay
+  - text: |
+      mm-hm
+  - text: |
+      okay
+    metadata:
+      turnManagement: turnTake
+  - text: |
+      okay that's fine
+  - text: |
+      okay then that way
+
+- intent: stalling
+  examples:
+  - text: |
+      so … VOC noise
+    metadata:
+      turnManagement: turnTake
+  - text: |
+      okay
+  - text: |
+      when I reach, when I reach
+  - text: |
+      VOC mumble .. VOC click ..
+  - text: |
+      and ..
+    metadata:
+      turnManagement: turnKeep
+  - text: |
+      um
+    metadata:
+      turnManagement: turnTake
+  - text: |
+      f- .. uh
+    metadata:
+      turnManagement: turnTake
+  - text: |
+      uh
+    metadata:
+      turnManagement: turnTake
+  - text: |
+      of ..
+  - text: |
+      uh …
+    metadata:
+      turnManagement: turnAccept
+  - text: |
+      four p.m.
+  - text: |
+      t(o)-
+
+- intent: propositionalQuestion
+  examples:
+  - text: |
+      do you wanna load the boxcars while you're in Corning
+
+- intent: answer
+  examples:
+  - text: |
+      to Dansville to Corning to Elmira
+  - text: |
+      yes
+  - text: |
+      to Corning
+  - text: |
+      I will take them with me
+  - text: |
+      yeah to Corning to Dansville to Avon
+
+- intent: instruct
+  examples:
+  - text: |
+      then make the OJ in Elmira with engine two and take it from Elmira to Corning to Dansville to Avon
+
+- intent: choiceQuestion
+  examples:
+  - text: |
+      do you wanna take the boxcars with you or do you want to leave them in Elmira
+    metadata:
+      turnManagement: turnAssign
+
+- intent: checkQuestion
+  examples:
+  - text: |
+      so you wanna go from Elmira
+
+- intent: completion
+  examples:
+  - text: |
+      to Avon
+
+- intent: setQuestion
+  examples:
+  - text: |
+      which way do we wanna go
+  - text: |
+      by which way
+
+- intent: pausing
+  examples:
+  - text: |
+      let me think
+  - text: |
+      let me see
+  - text: |
+      oh oh wait
+  - text: |
+      let's see
+    metadata:
+      turnManagement: turnKeep
+
+- intent: inform
+  examples:
+  - text: |
+      I have something else to say
+  - text: |
+      I am now finished
+
+- intent: selfCorrection
+  examples:
+  - text: |
+      the one tanker the two tankers
+  - text: |
+      I when I hit- when I reach
+  - text: |
+      the two tankers
+  - text: |
+      of oranges and of OJ actually
+
+- intent: interactionStructuring
+  examples:
+  - text: |
+      okay great
+
