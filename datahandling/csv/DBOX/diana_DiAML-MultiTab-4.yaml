@@ -2,28 +2,36 @@ nlu:
 - intent: opening
   examples:
   - text: |
-       hello 
-  - text: |
        good afternoon 
+  - text: |
+       hello 
 
 - intent: initGreeting
   examples:
   - text: |
-       nice to meet you 
-  - text: |
        good afternoon 
+  - text: |
+       nice to meet you 
 
 - intent: returnGreeting
   examples:
   - text: |
-       hello 
-  - text: |
        nice to meet you 
+  - text: |
+       hello 
 
 - intent: stalling
   examples:
   - text: |
-       uh is 
+       mh 
+    metadata:
+      turnManagement: turnKeep
+  - text: |
+       uhm 
+    metadata:
+      turnManagement: turnTake
+  - text: |
+       uhm 
     metadata:
       turnManagement: turnKeep
   - text: |
@@ -31,88 +39,80 @@ nlu:
     metadata:
       turnManagement: turnAccept
   - text: |
-       uh 
-  - text: |
-       uh 
-    metadata:
-      turnManagement: turnKeep
-  - text: |
-       uhm 
-    metadata:
-      turnManagement: turnKeep
-  - text: |
-       uhm 
-    metadata:
-      turnManagement: turnTake
-  - text: |
        ehm 
     metadata:
       turnManagement: turnTake
   - text: |
        uh 
-    metadata:
-      turnManagement: turnTake
   - text: |
-       mh 
+       uh 
     metadata:
       turnManagement: turnKeep
+  - text: |
+       uh is 
+    metadata:
+      turnManagement: turnKeep
+  - text: |
+       uh 
+    metadata:
+      turnManagement: turnTake
 
 - intent: setQuestion
   examples:
   - text: |
-       whats your name 
-  - text: |
-       what were you doing when you were alive 
-  - text: |
        and where are you from 
-  - text: |
-       how are you doing today 
   - text: |
        what is your first question 
   - text: |
        where did you die 
+  - text: |
+       how are you doing today 
+  - text: |
+       whats your name 
+  - text: |
+       what were you doing when you were alive 
 
 - intent: setAnswer
   examples:
   - text: |
-       i am from england 
-  - text: |
-       when i was alive 
-  - text: |
        my name is gregor linn 
+  - text: |
+       i am from england 
   - text: |
        i was 
   - text: |
-       i died in paris 
-  - text: |
        fine 
   - text: |
+       when i was alive 
+  - text: |
        i was a princess 
+  - text: |
+       i died in paris 
 
 - intent: autoPositive
   examples:
   - text: |
-       ah okay 
-  - text: |
        im doing well too 
   - text: |
-       nice to meet you 
+       okay 
   - text: |
        mhm 
     metadata:
       turnManagement: turnTake
   - text: |
-       okay 
+       nice to meet you 
+  - text: |
+       mhm 
+  - text: |
+       okay i understand 
+  - text: |
+       ah okay 
   - text: |
        alright 
   - text: |
        mhm 
-  - text: |
-       mhm 
     metadata:
       turnManagement: turnRelease
-  - text: |
-       okay i understand 
 
 - intent: inform
   examples:
@@ -122,22 +122,22 @@ nlu:
 - intent: interactionStructuring
   examples:
   - text: |
-       so first ill tell you the rules 
-  - text: |
        alright and one more important thing 
   - text: |
        alright 
+  - text: |
+       so first ill tell you the rules 
 
 - intent: selfCorrection
   examples:
   - text: |
-       i was 
+       would you 
   - text: |
        is 
   - text: |
-       would you 
-  - text: |
        i will 
+  - text: |
+       i was 
 
 - intent: autoNegative
   examples:
@@ -149,9 +149,9 @@ nlu:
 - intent: alloPositive
   examples:
   - text: |
-       mhm 
-  - text: |
        good job 
+  - text: |
+       mhm 
 
 - intent: suggest
   examples:
@@ -161,29 +161,29 @@ nlu:
 - intent: propositionalQuestion
   examples:
   - text: |
-       are you still alive 
+       are you from america 
   - text: |
        are you from germany 
   - text: |
-       are you from america 
+       are you still alive 
 
 - intent: propositionalAnswer
   examples:
   - text: |
-       no i am not from america 
+       no i am not 
   - text: |
        no i am not from germany 
   - text: |
-       no i am not 
+       no i am not from america 
 
 - intent: pausing
   examples:
   - text: |
+       let me think for a minute 
+  - text: |
        just a second 
     metadata:
       turnManagement: turnKeep
-  - text: |
-       let me think for a minute 
 
 - intent: guess
   examples:

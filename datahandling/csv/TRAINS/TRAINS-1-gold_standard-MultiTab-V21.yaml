@@ -24,23 +24,7 @@ nlu:
   - text: |
       ... hm so
   - text: |
-      ... um
-    metadata:
-      turnManagement: turnKeep
-  - text: |
-      VOC_breath
-    metadata:
-      turnManagement: turnKeep
-  - text: |
-      VOC_breath
-  - text: |
-      VOC_breath so
-    metadata:
-      turnManagement: turnKeep
-  - text: |
       VOC_breath hm ... so
-  - text: |
-      I want t-
   - text: |
       VOC_breath so VOC_breath
     metadata:
@@ -49,82 +33,98 @@ nlu:
       um
     metadata:
       turnManagement: turnKeep
+  - text: |
+      I want t-
+  - text: |
+      VOC_breath so
+    metadata:
+      turnManagement: turnKeep
+  - text: |
+      VOC_breath
+  - text: |
+      VOC_breath
+    metadata:
+      turnManagement: turnKeep
+  - text: |
+      ... um
+    metadata:
+      turnManagement: turnKeep
 
 - intent: inform_continue
   examples:
   - text: |
-      so that's engine E one from Avon going to Dansville pick up the three boxcars go to Corning load them up and then take it to Bath
-  - text: |
-      so that's good
+      that they won't even come in to
   - text: |
       so we're like screwed as far as those two box cars at Bath
   - text: |
+      so that's good
+  - text: |
       have it go to Bath pick up those two box cars
-  - text: |
-      because that's where the orange juice factory is
-  - text: |
-      I guess all the boxcars will have to go through Corning
-  - text: |
-      I want to determine the maximum number of boxcars of oranges that I can get to Bath by seven a.m. tomorrow
-  - text: |
-      we could actually take like engine E
-  - text: |
-      so that gives us a maximum number of five
-  - text: |
-      then I guess we can also take like engine E two with those two boxcars from Elmira take it to Corning
-  - text: |
-      but I think that we can't even put them in to
-  - text: |
-      but the thing is that I was thinking if we could actually pick up those two boxcars which are at Bath
-  - text: |
-      like I don't think we so to get the maximum number of box cars of oranges to bath by seven am I don't think we can even use those two at Bath
   - text: |
       so that's three boxcars
   - text: |
-      that they won't even come in to
+      I guess all the boxcars will have to go through Corning
+  - text: |
+      because that's where the orange juice factory is
+  - text: |
+      we could actually take like engine E
+  - text: |
+      like I don't think we so to get the maximum number of box cars of oranges to bath by seven am I don't think we can even use those two at Bath
+  - text: |
+      then I guess we can also take like engine E two with those two boxcars from Elmira take it to Corning
+  - text: |
+      so that gives us a maximum number of five
+  - text: |
+      but I think that we can't even put them in to
   - text: |
       we have the three boxcars at Dansville
+  - text: |
+      I want to determine the maximum number of boxcars of oranges that I can get to Bath by seven a.m. tomorrow
+  - text: |
+      so that's engine E one from Avon going to Dansville pick up the three boxcars go to Corning load them up and then take it to Bath
+  - text: |
+      but the thing is that I was thinking if we could actually pick up those two boxcars which are at Bath
   - text: |
       we can unload any amount of cargo onto a train in one hour
 
 - intent: selfCorrection
   examples:
   - text: |
-      to Corning
+      that they won't even come in to
   - text: |
       orange factory
   - text: |
-      that they won't even come in to
+      to Corning
 
 - intent: setQuestion
   examples:
+  - text: |
+      I thought well from like Elmira through to Corning to Bath is many hours
   - text: |
       how far is it from Avon to Danville
   - text: |
       how long from Bath to Corning
   - text: |
-      from Corning to Bath how far is that
-    metadata:
-      turnManagement: turnAssign
-  - text: |
       how far is it from Avon to Bath
   - text: |
       how far is it from Elmira to Bath VOC_breath
   - text: |
-      I thought well from like Elmira through to Corning to Bath is many hours
+      from Corning to Bath how far is that
+    metadata:
+      turnManagement: turnAssign
 
 - intent: answer
   examples:
-  - text: |
-      three hours
   - text: |
       one hour
   - text: |
       that's six hours 
   - text: |
-      four hours
-  - text: |
       two hours
+  - text: |
+      three hours
+  - text: |
+      four hours
 
 - intent: checkQuestion
   examples:
@@ -153,29 +153,29 @@ nlu:
 - intent: autoPositive
   examples:
   - text: |
-      okay
-  - text: |
-      okay
-    metadata:
-      turnManagement: turnTake
-  - text: |
-      three hours
-  - text: |
-      oh that's four hours
-  - text: |
-      right
-  - text: |
       oh wait a second
   - text: |
       from Avon
   - text: |
-      oh really
+      mm
+  - text: |
+      oh that's four hours
   - text: |
       VOC_click VOC_breath
     metadata:
       turnManagement: turnTake
   - text: |
-      mm
+      right
+  - text: |
+      oh really
+  - text: |
+      three hours
+  - text: |
+      okay
+  - text: |
+      okay
+    metadata:
+      turnManagement: turnTake
 
 - intent: inform_pass
   examples:
@@ -184,32 +184,32 @@ nlu:
   - text: |
       yeah that should also work
   - text: |
-      we can do a maximum of three boxcars in an hour
-  - text: |
       it's shorter through Dansville
+  - text: |
+      we can do a maximum of three boxcars in an hour
   - text: |
       engine one goes to Dansville picks up three boxcars goes to Corning is loaded with oranges and goes to Bath engine E two picks takes the two boxcars at Elmira to Corning where they're loaded with oranges and then takes them to Bath
 
 - intent: suggest
   examples:
   - text: |
-      I guess one thing is that we should see how many boxcars we can actually get to Corning in four hours
-  - text: |
       I guess one thing we can do
+  - text: |
+      I guess one thing is that we should see how many boxcars we can actually get to Corning in four hours
 
 - intent: selfError
   examples:
   - text: |
-      oh no
-  - text: |
       oh
+  - text: |
+      oh no
 
 - intent: retraction
   examples:
   - text: |
-      take it to Corn-
-  - text: |
       unless
+  - text: |
+      take it to Corn-
 
 - intent: agreement
   examples:

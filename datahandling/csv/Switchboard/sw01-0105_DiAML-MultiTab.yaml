@@ -2,38 +2,18 @@ nlu:
 - intent: setQuestion
   examples:
   - text: |
-      so how do you get most of your news?
+      when you say the morning news, or evening news or national news is when? /
   - text: |
       What newspapers do you read
   - text: |
-      when you say the morning news, or evening news or national news is when? /
+      so how do you get most of your news?
 
 - intent: stalling
   examples:
   - text: |
-      I, I
-  - text: |
-      ne-, news, news 
-  - text: |
-      uh
-    metadata:
-      turnManagement: turnKeep
-  - text: |
       Oh
     metadata:
       turnManagement: turnTake
-  - text: |
-      Well
-    metadata:
-      turnManagement: turnKeep
-  - text: |
-      uh
-    metadata:
-      turnManagement: turnTake
-  - text: |
-      Oh
-  - text: |
-      What, what, uh
   - text: |
       Uh
     metadata:
@@ -41,292 +21,312 @@ nlu:
   - text: |
       a-, actually
   - text: |
-      the,  <inhaling> the
-  - text: |
-      o-, off 
-  - text: |
-      Uh
-  - text: |
-      uh
-  - text: |
-      I've, I've
-  - text: |
-      newspape-, uh, news
-  - text: |
-      be-, because
-  - text: |
-      if, if
-  - text: |
-      you're supposed, you're supposed
-  - text: |
-      uh, you know
-  - text: |
-      and, and
-  - text: |
-      it, it
-  - text: |
-      I, I, I, uh
-  - text: |
-      I, I don't know
-  - text: |
-       r-, really
-  - text: |
-      on, on, uh
-  - text: |
-      Well
-  - text: |
-      I don't, uh, I don't, uh
-  - text: |
-      to, to
-  - text: |
-      well
-    metadata:
-      turnManagement: turnKeep
-  - text: |
-      uh, I mean
-  - text: |
-      this, this
-  - text: |
-      you know
-  - text: |
-      they, they
+      ne-, news, news 
   - text: |
       it's it's 
   - text: |
-      I, uh, I
+      you're supposed, you're supposed
+  - text: |
+      you know
+  - text: |
+      uh
+    metadata:
+      turnManagement: turnTake
+  - text: |
+      the, the
+  - text: |
+      uh
+  - text: |
+      to, to
+  - text: |
+      I, I
+  - text: |
+      Oh
+  - text: |
+      Uh
+  - text: |
+      and, and
+  - text: |
+      I've, I've
+  - text: |
+      this, this
+  - text: |
+      if, if
+  - text: |
+      I, I, I, uh
+  - text: |
+      uh, you know
+  - text: |
+      newspape-, uh, news
+  - text: |
+      the,  <inhaling> the
+  - text: |
+      be-, because
+  - text: |
+      uh, I mean
+  - text: |
+      on, on, uh
+  - text: |
+      I don't, uh, I don't, uh
+  - text: |
+      Well
+  - text: |
+      Well
+    metadata:
+      turnManagement: turnKeep
   - text: |
       they're, they're
   - text: |
-      the, the
+      What, what, uh
+  - text: |
+      they, they
+  - text: |
+      o-, off 
+  - text: |
+      of, of
+  - text: |
+       r-, really
+  - text: |
+      I, uh, I
   - text: |
       Well
     metadata:
       turnManagement: turnTake
   - text: |
-      of, of
+      uh
+    metadata:
+      turnManagement: turnKeep
+  - text: |
+      it, it
+  - text: |
+      I, I don't know
+  - text: |
+      well
+    metadata:
+      turnManagement: turnKeep
 
 - intent: selfCorrection
   examples:
+  - text: |
+      s-,  watch
+  - text: |
+      I'm a, I'm pretty much a
+  - text: |
+      pinion, opinion
+  - text: |
+      just in-, just
+  - text: |
+      he's leaving, one of them is leaving
+  - text: |
+      about, on 
+  - text: |
+      want-, help wanted
+  - text: |
+      they,  they tr-, the newspapers are
   - text: |
       if you, if you'll
   - text: |
       where you, where they
   - text: |
-      want-, help wanted
-  - text: |
-      s-,  watch
-  - text: |
       you're going, your opinion is going
-  - text: |
-      where I,  why I 
-  - text: |
-      pinion, opinion
   - text: |
       haven't, would
   - text: |
-      they,  they tr-, the newspapers are
+      I kind of I
+  - text: |
+      where I,  why I 
   - text: |
       McNeil, Neil
   - text: |
-      I'm a, I'm pretty much a
-  - text: |
-      about, on 
-  - text: |
-      I kind of I
-  - text: |
       newspape-, uh, news
   - text: |
-      he's leaving, one of them is leaving
-  - text: |
       a lot of it's still a lot of
-  - text: |
-      just in-, just
 
 - intent: answer
   examples:
   - text: |
-      every evening at six thirty, I believe, I watch the national news
-  - text: |
-      I read the local newspaper
-  - text: |
       I also read one or two papers a day 
+  - text: |
+      I watch the national news every day, for one,
   - text: |
       I also try and read one of the major dailies like the CHICAGO TRIBUNE, or the NEW YORK TIMES or something like that.
   - text: |
-      I watch the national news every day, for one,
+      every evening at six thirty, I believe, I watch the national news
+  - text: |
+      I read the local newspaper
   - text: |
       I tune in to CNN a lot. 
 
 - intent: inform_continue
   examples:
   - text: |
-      if you watch the news, your opinion is going to be formed on what somebody else thought about it
-  - text: |
-      and so often the newspapers are trying to compete with a lot of other sources of news
-  - text: |
-      because of the poor service and also because I give to the United Way
-  - text: |
-      I guess one of them is leaving.
-  - text: |
-      because if you hear the same story from three different sources, then you get a much clearer picture of what is going on. You would hope,
-  - text: |
-      I guess that's true
-  - text: |
       one of the ways that I get information is, every day when I log in on the computer I subscribe to this thing
-  - text: |
-      I would probably be a junkie or watch <laughter> CNN a lot
-  - text: |
-      I miss NPR a lot also
-  - text: |
-      I take away a addiction <laughter>
-  - text: |
-      because my fiance - she was unemployed for a while 
-  - text: |
-      but, I don't know, I think if you listen to like NPR or something like
-  - text: |
-      they basically, type out abstracts which are really literally, -
-  - text: |
-      NEW YORK TIMES is okay
-  - text: |
-      I've actually read the actual articles
-  - text: |
-      it's free inside the company
-  - text: |
-      so she really needed to look at the help wanted ads
-  - text: |
-      that's one of the reasons why I try and get as many sources as possible, 
   - text: |
       Neil and Lehrer, they're pretty good too
   - text: |
-      I don't subscribe to cable
+      I would probably be a junkie or watch <laughter> CNN a lot
   - text: |
-      it's called INTELLECT
-  - text: |
-      but then you also have things where they broadcast the Clarence Thomas hearings basically the whole length of them which I thought was really good.
-  - text: |
-      I like listening to that when I get a chance, when I'm in the car a long enough time to listen to it, because I
-  - text: |
-      and I guess that's good when it's live, if you'll really want that
-  - text: |
-      I really like them because they give, instead of being, as your newspaper or your TV news where you get a five minute blurb or a ten paragraph blurb, they go really in depth on topics which i think is good
-  - text: |
-      I had some visitor, he was just, I don't know, fixated on that, just listened to it constantly
-  - text: |
-      but the news that you would get from any other source is being generated from that event, which is something that's good also about C Span which I tune into every once in a while
-  - text: |
-      For a while there I subscribed to NEW YORK TIMES, a couple of newspapers
-  - text: |
-      I'm a news junkie
-  - text: |
-      usually you get pretty incomplete coverage 
-  - text: |
-      I don't know,
-  - text: |
-      as opposed to actually watching it yourself and forming your own opinion, which I would  be much more in favor of forming my own opinion as opposed to following someone else's
-  - text: |
-      they say it's  like the sixth grade reading level
-  - text: |
-      but I guess it's still a lot of hype
-  - text: |
-      but when you read a lot of this stuff, the quality of the writing has definitely gone down in the last ten years or so
+      I guess one of them is leaving.
   - text: |
       but that's if you don't watch it there, then you're going to hear somebody else's canned report, somebody else's view about it
   - text: |
+      but then you also have things where they broadcast the Clarence Thomas hearings basically the whole length of them which I thought was really good.
+  - text: |
+      because my fiance - she was unemployed for a while 
+  - text: |
+      if you watch the news, your opinion is going to be formed on what somebody else thought about it
+  - text: |
+      I don't know,
+  - text: |
+      For a while there I subscribed to NEW YORK TIMES, a couple of newspapers
+  - text: |
+      usually you get pretty incomplete coverage 
+  - text: |
+      but, I don't know, I think if you listen to like NPR or something like
+  - text: |
+      I had some visitor, he was just, I don't know, fixated on that, just listened to it constantly
+  - text: |
+      and I guess that's good when it's live, if you'll really want that
+  - text: |
+      NEW YORK TIMES is okay
+  - text: |
+      I take away a addiction <laughter>
+  - text: |
+      they say it's  like the sixth grade reading level
+  - text: |
+      I like listening to that when I get a chance, when I'm in the car a long enough time to listen to it, because I
+  - text: |
+      I don't subscribe to cable
+  - text: |
+      but when you read a lot of this stuff, the quality of the writing has definitely gone down in the last ten years or so
+  - text: |
+      I really like them because they give, instead of being, as your newspaper or your TV news where you get a five minute blurb or a ten paragraph blurb, they go really in depth on topics which i think is good
+  - text: |
+      as opposed to actually watching it yourself and forming your own opinion, which I would  be much more in favor of forming my own opinion as opposed to following someone else's
+  - text: |
+      because if you hear the same story from three different sources, then you get a much clearer picture of what is going on. You would hope,
+  - text: |
+      because of the poor service and also because I give to the United Way
+  - text: |
+      it's called INTELLECT
+  - text: |
+      they basically, type out abstracts which are really literally, -
+  - text: |
+      it's free inside the company
+  - text: |
+      I miss NPR a lot also
+  - text: |
+      and so often the newspapers are trying to compete with a lot of other sources of news
+  - text: |
+      I guess that's true
+  - text: |
+      but I guess it's still a lot of hype
+  - text: |
+      I'm a news junkie
+  - text: |
+      that's one of the reasons why I try and get as many sources as possible, 
+  - text: |
+      I've actually read the actual articles
+  - text: |
+      but the news that you would get from any other source is being generated from that event, which is something that's good also about C Span which I tune into every once in a while
+  - text: |
       overall, the quality of the news you get of most sources I would say is pretty low. 
+  - text: |
+      so she really needed to look at the help wanted ads
 
 - intent: autoPositive
   examples:
   - text: |
-      okay
-  - text: |
-      Right
-  - text: |
-      Pretty low
-  - text: |
-      <Laughter>
-  - text: |
-      really
-  - text: |
-       <Laughter>
-  - text: |
-      Oh,  wow  
-  - text: |
-      Oh
+      Right. /
   - text: |
       Uh-uh
   - text: |
-      Right. /
+      Oh,  wow  
+  - text: |
+      <Laughter>
+  - text: |
+      Right
+  - text: |
+      okay
+  - text: |
+       <Laughter>
+  - text: |
+      Pretty low
+  - text: |
+      really
+  - text: |
+      Oh
   - text: |
       Uh-huh
 
 - intent: inform_pass
   examples:
   - text: |
+      it's more like a media event rather than reporting
+  - text: |
+      their editorial stand point seems to be a lot better than, say, your major network news and that kind of thing
+  - text: |
+      I mean, that was a joke
+  - text: |
       I really like NPR a lot
   - text: |
       but I swear it's at least second or third grade sometimes.
   - text: |
-      it's more like a media event rather than reporting
-  - text: |
-      That's kind of boring to me, I think
-  - text: |
-      still, you know, hard to say that what you've heard is what really is.
-  - text: |
-      I mean, that was a joke
+       Oh, something
   - text: |
       Had that invasion or whatever it is
   - text: |
-      I figured that amount of money I just donate to that.
-  - text: |
-      their editorial stand point seems to be a lot better than, say, your major network news and that kind of thing
-  - text: |
-       Oh, something
+      That's kind of boring to me, I think
   - text: |
       but that's not really providing you news. 
+  - text: |
+      I figured that amount of money I just donate to that.
+  - text: |
+      still, you know, hard to say that what you've heard is what really is.
 
 - intent: checkQuestion
   examples:
   - text: |
-      I guess a year ago you're probably watching CNN a lot, right?
-  - text: |
       as opposed to paying for cable
+  - text: |
+      I guess a year ago you're probably watching CNN a lot, right?
 
 - intent: confirm
   examples:
   - text: |
-      Yeah
-  - text: |
       yeah
+  - text: |
+      Yeah
   - text: |
       Right <laughter> 
 
 - intent: agreement
   examples:
   - text: |
-      yeah
+      Oh yeah, the NPR doing that, yeah, I know
   - text: |
-      That's pretty good.  /
-  - text: |
-      Right
-  - text: |
-      Yeah
+      Sure was
   - text: |
       Yeah that was
   - text: |
-      Oh yeah, the NPR doing that, yeah, I know
+      Right
   - text: |
       Yeah, it is really kind of boring
   - text: |
-      Sure was
+      Yeah
+  - text: |
+      That's pretty good.  /
+  - text: |
+      yeah
 
 - intent: retraction
   examples:
   - text: |
-      that's what you're supposed to
+      they also
   - text: |
       I
   - text: |
-      they also
+      that's what you're supposed to
   - text: |
       I,  I 
   - text: |

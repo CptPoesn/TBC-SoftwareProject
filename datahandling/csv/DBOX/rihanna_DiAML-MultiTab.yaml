@@ -19,9 +19,9 @@ nlu:
 - intent: alloPositive
   examples:
   - text: |
-       very good job 
-  - text: |
        great 
+  - text: |
+       very good job 
 
 - intent: interactionStructuring
   examples:
@@ -31,14 +31,16 @@ nlu:
 - intent: setQuestion
   examples:
   - text: |
+       what are your initials 
+  - text: |
        what is your first question 
   - text: |
        where are you from 
-  - text: |
-       what are your initials 
 
 - intent: autoPositive
   examples:
+  - text: |
+       okay 
   - text: |
        mh 
     metadata:
@@ -47,8 +49,6 @@ nlu:
        mh 
     metadata:
       turnManagement: turnAccept
-  - text: |
-       okay 
 
 - intent: inform
   examples:
@@ -58,11 +58,11 @@ nlu:
 - intent: propositionalQuestion
   examples:
   - text: |
-       are you a musician 
-  - text: |
        are you a real person 
   - text: |
        are you dead 
+  - text: |
+       are you a musician 
 
 - intent: propositionalAnswer
   examples:
@@ -76,11 +76,11 @@ nlu:
 - intent: stalling
   examples:
   - text: |
-       uhm 
+       mh 
     metadata:
       turnManagement: turnTake
   - text: |
-       mh 
+       uhm 
     metadata:
       turnManagement: turnTake
 

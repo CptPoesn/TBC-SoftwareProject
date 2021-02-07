@@ -29,30 +29,30 @@ nlu:
 - intent: autoPositive
   examples:
   - text: |
-       ah okay 
-  - text: |
-       great 
-  - text: |
        okay 
   - text: |
-       alright 
-  - text: |
-       yeah 
+       great 
   - text: |
        okay 
     metadata:
       turnManagement: turnTake
+  - text: |
+       ah okay 
+  - text: |
+       yeah 
+  - text: |
+       alright 
 
 - intent: alloPositive
   examples:
   - text: |
-       very close 
-  - text: |
        great 
   - text: |
-       very close though 
-  - text: |
        alright 
+  - text: |
+       very close 
+  - text: |
+       very close though 
 
 - intent: interactionStructuring
   examples:
@@ -66,25 +66,25 @@ nlu:
     metadata:
       turnManagement: turnKeep
   - text: |
-       uh 
+       uhm 
     metadata:
-      turnManagement: turnKeep
+      turnManagement: turnTake
   - text: |
        uhm 
     metadata:
       turnManagement: turnKeep
+  - text: |
+       uh 
+    metadata:
+      turnManagement: turnAccept
   - text: |
        and 
     metadata:
       turnManagement: turnTake
   - text: |
-       uhm 
-    metadata:
-      turnManagement: turnTake
-  - text: |
        uh 
     metadata:
-      turnManagement: turnAccept
+      turnManagement: turnKeep
 
 - intent: suggest
   examples:
@@ -94,28 +94,28 @@ nlu:
 - intent: setQuestion
   examples:
   - text: |
-       what is your mother tongue 
+       what is your first question 
   - text: |
        where are you from 
   - text: |
-       and how old are you 
-  - text: |
        and what are you doing 
   - text: |
-       what is your first question 
+       and how old are you 
+  - text: |
+       what is your mother tongue 
 
 - intent: setAnswer
   examples:
   - text: |
+       i am from the united states 
+  - text: |
        i am a professional tennis player 
+  - text: |
+       i am thirty three 
   - text: |
        thirty three years old 
   - text: |
        my mother tongue is english 
-  - text: |
-       i am thirty three 
-  - text: |
-       i am from the united states 
 
 - intent: propositionalQuestion
   examples:
@@ -129,9 +129,9 @@ nlu:
 - intent: propositionalAnswer
   examples:
   - text: |
-       yes i am still alive 
-  - text: |
        yes I am very successful 
+  - text: |
+       yes i am still alive 
 
 - intent: selfCorrection
   examples:
@@ -143,9 +143,9 @@ nlu:
 - intent: inform
   examples:
   - text: |
-       no i cant answer that question 
-  - text: |
        im not sure if i can answer that question 
+  - text: |
+       no i cant answer that question 
 
 - intent: answer
   examples:
@@ -165,9 +165,9 @@ nlu:
 - intent: inform_continue
   examples:
   - text: |
-       very close 
-  - text: |
        but that is not the correct answer 
+  - text: |
+       very close 
 
 - intent: inform_pass
   examples:

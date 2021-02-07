@@ -2,9 +2,9 @@ nlu:
 - intent: opening
   examples:
   - text: |
-       hello 
-  - text: |
        alright hello again 
+  - text: |
+       hello 
 
 - intent: initGreeting
   examples:
@@ -21,55 +21,59 @@ nlu:
   - text: |
        $LAUGH 
   - text: |
-       great 
+       okay 
   - text: |
        okay 
     metadata:
       turnManagement: turnKeep
   - text: |
-       know 
+       great 
   - text: |
        okay 
-  - text: |
-       yes 
-  - text: |
-       ok 
     metadata:
       turnManagement: turnTake
   - text: |
        yeah 
   - text: |
-       okay 
-    metadata:
-      turnManagement: turnTake
-  - text: |
-       france 
-  - text: |
-       do I know any French which 
-  - text: |
        now how do i ask that 
   - text: |
        mkay 
+  - text: |
+       ok 
+    metadata:
+      turnManagement: turnTake
+  - text: |
+       yes 
+  - text: |
+       do I know any French which 
+  - text: |
+       know 
+  - text: |
+       france 
 
 - intent: alloPositive
   examples:
   - text: |
        well good try though 
   - text: |
-       great 
-  - text: |
        okay 
   - text: |
-       yeah 
-  - text: |
-       that is a very good question 
+       great 
   - text: |
        alright 
     metadata:
       turnManagement: turnTake
+  - text: |
+       yeah 
+  - text: |
+       that is a very good question 
 
 - intent: stalling
   examples:
+  - text: |
+       okay 
+    metadata:
+      turnManagement: turnKeep
   - text: |
        mh 
     metadata:
@@ -77,25 +81,21 @@ nlu:
   - text: |
        uhm 
     metadata:
-      turnManagement: turnAccept
-  - text: |
-       uh 
+      turnManagement: turnKeep
   - text: |
        uhm 
     metadata:
-      turnManagement: turnKeep
+      turnManagement: turnAccept
   - text: |
        uh 
-    metadata:
-      turnManagement: turnKeep
-  - text: |
-       okay 
-    metadata:
-      turnManagement: turnKeep
   - text: |
        uh 
     metadata:
       turnManagement: turnAccept
+  - text: |
+       uh 
+    metadata:
+      turnManagement: turnKeep
 
 - intent: checkQuestion
   examples:
@@ -110,42 +110,42 @@ nlu:
 - intent: setQuestion
   examples:
   - text: |
-       how did you die 
-  - text: |
-       who was your husband during your time as queen regent of england 
-  - text: |
-       during which years exactly did you reign 
+       what is your first question 
   - text: |
        which country $UNINTELLIGIBLE 
   - text: |
-       and during which year were you the queen consort of england 
-  - text: |
-       what are you famous for 
+       who was your husband during your time as queen regent of england 
   - text: |
        what are you most known for in history of humankind 
-  - text: |
-       what is your first question 
   - text: |
        while you were at the peak of your power which position did you occupy in the country 
   - text: |
        can you name one thing that many people know that you did 
+  - text: |
+       and during which year were you the queen consort of england 
+  - text: |
+       during which years exactly did you reign 
+  - text: |
+       how did you die 
+  - text: |
+       what are you famous for 
 
 - intent: setAnswer
   examples:
   - text: |
-       i was married to two kings and i participated in the second crusade while queen of france 
-  - text: |
-       from eleven fifty four to eleven eighty nine 
-  - text: |
-       i am famous for being one of the wealthiest and most powerful women in western europe during the middle ages 
-  - text: |
        i was the queen consort of france and later the queen consort of england 
+  - text: |
+       i was married to two kings and i participated in the second crusade while queen of france 
   - text: |
        i was 
   - text: |
-       france 
+       i am famous for being one of the wealthiest and most powerful women in western europe during the middle ages 
+  - text: |
+       from eleven fifty four to eleven eighty nine 
   - text: |
        SIL i was married to henry duke of normandy who became king henry the second of england 
+  - text: |
+       france 
 
 - intent: choiceQuestion
   examples:
@@ -164,24 +164,24 @@ nlu:
 - intent: pausing
   examples:
   - text: |
-       yeah 
-  - text: |
        just a minute 
     metadata:
       turnManagement: turnKeep
   - text: |
-       just a second 
+       yeah 
   - text: |
        just a minute 
     metadata:
       turnManagement: turnAccept
+  - text: |
+       just a second 
 
 - intent: autoNegative
   examples:
   - text: |
-       now that does not work 
-  - text: |
        could you clarify 
+  - text: |
+       now that does not work 
 
 - intent: acceptRequest
   examples:
@@ -193,13 +193,13 @@ nlu:
   - text: |
        SIL i was 
   - text: |
-       years 
+       king 
   - text: |
-       how do 
+       years 
   - text: |
        documented 
   - text: |
-       king 
+       how do 
   - text: |
        which position 
 
@@ -215,21 +215,21 @@ nlu:
 - intent: inform
   examples:
   - text: |
-       unfortunately im not sure how to answer that question 
-  - text: |
-       nah i dont think i know her 
-  - text: |
-       but i dont have a answer to that question 
-  - text: |
        well good try though 
   - text: |
-       not sure that i can fully answer that question 
-  - text: |
-       i dont have an answer to that question 
+       im not sure if i can answer it 
   - text: |
        and maybe next time 
   - text: |
-       im not sure if i can answer it 
+       not sure that i can fully answer that question 
+  - text: |
+       but i dont have a answer to that question 
+  - text: |
+       nah i dont think i know her 
+  - text: |
+       unfortunately im not sure how to answer that question 
+  - text: |
+       i dont have an answer to that question 
 
 - intent: inform_pass
   examples:
@@ -241,9 +241,9 @@ nlu:
 - intent: propositionalQuestion
   examples:
   - text: |
-       documented 
-  - text: |
        are you considered a hero by some 
+  - text: |
+       documented 
   - text: |
        did you have any religious epiphanies 
 
