@@ -125,4 +125,4 @@ if __name__ == '__main__':
         eval_data = data[dev_split:]
         # print(data[1].keys())
 
-        dict_to_yaml(file_out, data)
+        dict_to_yaml(file_out, train_data)

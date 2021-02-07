@@ -30,9 +30,9 @@ nlu:
   - text: |
       okay
   - text: |
-      alright
-  - text: |
       mm-hm
+  - text: |
+      alright
 
 - intent: inform_continue
   examples:
@@ -46,11 +46,9 @@ nlu:
     metadata:
       turnManagement: turnTake
   - text: |
-      so uh
+      uh
   - text: |
       the the
-  - text: |
-      uh
   - text: |
       um
     metadata:
@@ -59,18 +57,14 @@ nlu:
 - intent: setQuestion
   examples:
   - text: |
+      the tankers move at the same speed
+  - text: |
       now from Corning what would be the quickest route to Avon
   - text: |
       which engine would you like to use
-  - text: |
-      how long will that take
-  - text: |
-      the tankers move at the same speed
 
 - intent: answer
   examples:
-  - text: |
-      eleven hours
   - text: |
       no they're both the same
   - text: |
@@ -87,21 +81,4 @@ nlu:
   examples:
   - text: |
       they're a they're
-
-- intent: confirm
-  examples:
-  - text: |
-      right
-
-- intent: interactionStructuring
-  examples:
-  - text: |
-      okay
-  - text: |
-      I am now finished
-
-- intent: checkQuestion
-  examples:
-  - text: |
-      the plan is to take engine E two to Corning pick up a tanker back to Elmira load it with orange juice and then to Avon
 
