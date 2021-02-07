@@ -2,9 +2,9 @@ nlu:
 - intent: opening
   examples:
   - text: |
-       alright hello again 
-  - text: |
        hello 
+  - text: |
+       alright hello again 
 
 - intent: initGreeting
   examples:
@@ -19,54 +19,54 @@ nlu:
 - intent: autoPositive
   examples:
   - text: |
-       okay 
+       $LAUGH 
   - text: |
        great 
   - text: |
-       do I know any French which 
-  - text: |
-       now how do i ask that 
-  - text: |
-       france 
-  - text: |
        okay 
     metadata:
-      turnManagement: turnTake
+      turnManagement: turnKeep
   - text: |
-       $LAUGH 
+       know 
+  - text: |
+       okay 
+  - text: |
+       yes 
   - text: |
        ok 
     metadata:
       turnManagement: turnTake
   - text: |
-       yes 
-  - text: |
        yeah 
-  - text: |
-       know 
-  - text: |
-       mkay 
   - text: |
        okay 
     metadata:
-      turnManagement: turnKeep
+      turnManagement: turnTake
+  - text: |
+       france 
+  - text: |
+       do I know any French which 
+  - text: |
+       now how do i ask that 
+  - text: |
+       mkay 
 
 - intent: alloPositive
   examples:
   - text: |
+       well good try though 
+  - text: |
+       great 
+  - text: |
        okay 
   - text: |
        yeah 
   - text: |
+       that is a very good question 
+  - text: |
        alright 
     metadata:
       turnManagement: turnTake
-  - text: |
-       well good try though 
-  - text: |
-       that is a very good question 
-  - text: |
-       great 
 
 - intent: stalling
   examples:
@@ -75,19 +75,15 @@ nlu:
     metadata:
       turnManagement: turnAccept
   - text: |
-       uh 
-    metadata:
-      turnManagement: turnAccept
-  - text: |
        uhm 
     metadata:
       turnManagement: turnAccept
+  - text: |
+       uh 
   - text: |
        uhm 
     metadata:
       turnManagement: turnKeep
-  - text: |
-       uh 
   - text: |
        uh 
     metadata:
@@ -96,6 +92,10 @@ nlu:
        okay 
     metadata:
       turnManagement: turnKeep
+  - text: |
+       uh 
+    metadata:
+      turnManagement: turnAccept
 
 - intent: checkQuestion
   examples:
@@ -110,42 +110,42 @@ nlu:
 - intent: setQuestion
   examples:
   - text: |
-       can you name one thing that many people know that you did 
-  - text: |
-       what is your first question 
-  - text: |
-       what are you most known for in history of humankind 
-  - text: |
-       and during which year were you the queen consort of england 
-  - text: |
-       what are you famous for 
-  - text: |
-       which country $UNINTELLIGIBLE 
-  - text: |
-       while you were at the peak of your power which position did you occupy in the country 
-  - text: |
        how did you die 
   - text: |
        who was your husband during your time as queen regent of england 
   - text: |
        during which years exactly did you reign 
+  - text: |
+       which country $UNINTELLIGIBLE 
+  - text: |
+       and during which year were you the queen consort of england 
+  - text: |
+       what are you famous for 
+  - text: |
+       what are you most known for in history of humankind 
+  - text: |
+       what is your first question 
+  - text: |
+       while you were at the peak of your power which position did you occupy in the country 
+  - text: |
+       can you name one thing that many people know that you did 
 
 - intent: setAnswer
   examples:
   - text: |
+       i was married to two kings and i participated in the second crusade while queen of france 
+  - text: |
        from eleven fifty four to eleven eighty nine 
+  - text: |
+       i am famous for being one of the wealthiest and most powerful women in western europe during the middle ages 
+  - text: |
+       i was the queen consort of france and later the queen consort of england 
+  - text: |
+       i was 
   - text: |
        france 
   - text: |
        SIL i was married to henry duke of normandy who became king henry the second of england 
-  - text: |
-       i was 
-  - text: |
-       i am famous for being one of the wealthiest and most powerful women in western europe during the middle ages 
-  - text: |
-       i was married to two kings and i participated in the second crusade while queen of france 
-  - text: |
-       i was the queen consort of france and later the queen consort of england 
 
 - intent: choiceQuestion
   examples:
@@ -157,18 +157,18 @@ nlu:
 - intent: answer
   examples:
   - text: |
-       unfortunately im not sure how to answer that question 
-  - text: |
        yes i was 
+  - text: |
+       unfortunately im not sure how to answer that question 
 
 - intent: pausing
   examples:
   - text: |
+       yeah 
+  - text: |
        just a minute 
     metadata:
       turnManagement: turnKeep
-  - text: |
-       yeah 
   - text: |
        just a second 
   - text: |
@@ -191,17 +191,17 @@ nlu:
 - intent: selfCorrection
   examples:
   - text: |
-       which position 
-  - text: |
-       documented 
-  - text: |
        SIL i was 
-  - text: |
-       how do 
   - text: |
        years 
   - text: |
+       how do 
+  - text: |
+       documented 
+  - text: |
        king 
+  - text: |
+       which position 
 
 - intent: request
   examples:
@@ -215,37 +215,37 @@ nlu:
 - intent: inform
   examples:
   - text: |
-       nah i dont think i know her 
-  - text: |
-       not sure that i can fully answer that question 
-  - text: |
        unfortunately im not sure how to answer that question 
   - text: |
-       and maybe next time 
-  - text: |
-       im not sure if i can answer it 
-  - text: |
-       i dont have an answer to that question 
+       nah i dont think i know her 
   - text: |
        but i dont have a answer to that question 
   - text: |
        well good try though 
+  - text: |
+       not sure that i can fully answer that question 
+  - text: |
+       i dont have an answer to that question 
+  - text: |
+       and maybe next time 
+  - text: |
+       im not sure if i can answer it 
 
 - intent: inform_pass
   examples:
   - text: |
-       my name is eleanor of aquitaine 
-  - text: |
        if its not too general for a question 
+  - text: |
+       my name is eleanor of aquitaine 
 
 - intent: propositionalQuestion
   examples:
   - text: |
+       documented 
+  - text: |
        are you considered a hero by some 
   - text: |
        did you have any religious epiphanies 
-  - text: |
-       documented 
 
 - intent: propositionalAnswer
   examples:

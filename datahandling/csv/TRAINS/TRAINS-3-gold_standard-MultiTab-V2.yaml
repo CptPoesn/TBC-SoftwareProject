@@ -17,22 +17,22 @@ nlu:
 - intent: inform_pass
   examples:
   - text: |
-      and from Elmira I'd like to load orange juice into the tanker
-  - text: |
-      then I'll take engine E two
-  - text: |
       I'd like to take a tanker from Corning and bring it to Elmira
   - text: |
       then I'd like to take the tanker of orange juice through Dansville and then on to Avon
+  - text: |
+      and from Elmira I'd like to load orange juice into the tanker
+  - text: |
+      then I'll take engine E two
 
 - intent: autoPositive
   examples:
   - text: |
-      mm-hm
+      okay
   - text: |
       alright
   - text: |
-      okay
+      mm-hm
 
 - intent: inform_continue
   examples:
@@ -42,41 +42,41 @@ nlu:
 - intent: stalling
   examples:
   - text: |
-      uh
-  - text: |
       the the
   - text: |
-      so uh
+      uh
   - text: |
-      um
-    metadata:
-      turnManagement: turnKeep
+      so uh
   - text: |
       well
     metadata:
       turnManagement: turnTake
+  - text: |
+      um
+    metadata:
+      turnManagement: turnKeep
 
 - intent: setQuestion
   examples:
   - text: |
       how long will that take
   - text: |
-      now from Corning what would be the quickest route to Avon
-  - text: |
       which engine would you like to use
+  - text: |
+      now from Corning what would be the quickest route to Avon
   - text: |
       the tankers move at the same speed
 
 - intent: answer
   examples:
   - text: |
-      eleven hours
-  - text: |
-      engine E two
+      no they're both the same
   - text: |
       through Dansville
   - text: |
-      no they're both the same
+      engine E two
+  - text: |
+      eleven hours
 
 - intent: propositionalQuestion
   examples:
@@ -96,9 +96,9 @@ nlu:
 - intent: interactionStructuring
   examples:
   - text: |
-      I am now finished
-  - text: |
       okay
+  - text: |
+      I am now finished
 
 - intent: checkQuestion
   examples:

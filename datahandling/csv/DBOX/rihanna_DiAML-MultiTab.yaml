@@ -31,16 +31,14 @@ nlu:
 - intent: setQuestion
   examples:
   - text: |
-       what are your initials 
-  - text: |
        what is your first question 
   - text: |
        where are you from 
+  - text: |
+       what are your initials 
 
 - intent: autoPositive
   examples:
-  - text: |
-       okay 
   - text: |
        mh 
     metadata:
@@ -49,6 +47,8 @@ nlu:
        mh 
     metadata:
       turnManagement: turnAccept
+  - text: |
+       okay 
 
 - intent: inform
   examples:
@@ -58,9 +58,9 @@ nlu:
 - intent: propositionalQuestion
   examples:
   - text: |
-       are you a real person 
-  - text: |
        are you a musician 
+  - text: |
+       are you a real person 
   - text: |
        are you dead 
 
@@ -69,9 +69,9 @@ nlu:
   - text: |
        no i am still alive 
   - text: |
-       yes i am a musician 
-  - text: |
        yes i am a real person 
+  - text: |
+       yes i am a musician 
 
 - intent: stalling
   examples:

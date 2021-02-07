@@ -26,7 +26,7 @@ def cvs_to_dict(filename):
                         else:
                             reader[rownum]['Task'] = 'inform_pass'
                     except IndexError:
-                        print('Catch error that inform is last label')
+                            reader[rownum]['Task'] = 'inform_end'
     return reader
 
 
