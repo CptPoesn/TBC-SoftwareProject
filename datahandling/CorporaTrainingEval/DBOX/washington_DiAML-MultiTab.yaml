@@ -4,21 +4,21 @@ nlu:
   - text: |
        hello 
 
-- intent: initGreeting
+- intent: initgreeting
   examples:
   - text: |
-       hello 
+       good afternoon almost evening 
   - text: |
        hello nikolina its nice to meet you 
   - text: |
-       good afternoon almost evening 
+       hello 
 
-- intent: opening(Fu:dap1DIS0)
+- intent: opening(fu:dap1dis0)
   examples:
   - text: |
        hello 
 
-- intent: returnGreeting(Fu:dap1SOM0)
+- intent: returngreeting(fu:dap1som0)
   examples:
   - text: |
        hello 
@@ -26,13 +26,15 @@ nlu:
 - intent: stalling
   examples:
   - text: |
-       so 
-  - text: |
-       youre not alive 
-  - text: |
-       so uhm 
+       okay 
     metadata:
       turnManagement: turnKeep
+  - text: |
+       so 
+  - text: |
+       uhm 
+    metadata:
+      turnManagement: turnTake
   - text: |
        eehm 
     metadata:
@@ -40,115 +42,113 @@ nlu:
   - text: |
        uhm 
     metadata:
-      turnManagement: turnTake
-  - text: |
-       hm 
-    metadata:
       turnManagement: turnKeep
-  - text: |
-       okay 
-    metadata:
-      turnManagement: turnKeep
-  - text: |
-       uhm 
-    metadata:
-      turnManagement: turnAccept
-  - text: |
-       ninety seven 
   - text: |
        so 
     metadata:
       turnManagement: turnKeep
   - text: |
-       uhm 
+       so uhm 
     metadata:
       turnManagement: turnKeep
   - text: |
        uh 
     metadata:
       turnManagement: turnKeep
+  - text: |
+       ninety seven 
+  - text: |
+       youre not alive 
+  - text: |
+       hm 
+    metadata:
+      turnManagement: turnKeep
+  - text: |
+       uhm 
+    metadata:
+      turnManagement: turnAccept
 
-- intent: setQuestion
+- intent: setquestion
   examples:
   - text: |
-       what is your nationality 
-  - text: |
-       what is your first question 
-  - text: |
-       what is your name 
-  - text: |
        what do you do 
-  - text: |
-       how are you doing today 
   - text: |
        when are you born 
   - text: |
        when were you in the goverment 
+  - text: |
+       what is your nationality 
+  - text: |
+       how are you doing today 
+  - text: |
+       what is your name 
+  - text: |
+       what is your first question 
 
-- intent: setAnswer(Fu:dap1TSK0)
+- intent: setanswer(fu:dap1tsk0)
   examples:
   - text: |
        my name is nikolina 
 
-- intent: initSelfIntroduction(Fu:dap1SOM2)
+- intent: initselfintroduction(fu:dap1som2)
   examples:
   - text: |
        my name is nikolina 
 
-- intent: selfCorrection(Fe:fsp1OCMFB0)
+- intent: selfcorrection(fe:fsp1ocmfb0)
   examples:
   - text: |
        nikolina 
 
-- intent: returnGreeting(Fu:dap1SOM3)
+- intent: returngreeting(fu:dap1som3)
   examples:
   - text: |
        Nice to meet you 
 
-- intent: interactionStructuring
+- intent: interactionstructuring
   examples:
   - text: |
        alright 
     metadata:
       turnManagement: turnTake
   - text: |
-       so 
-  - text: |
        alright so 
+  - text: |
+       so 
 
-- intent: setAnswer(Fu:dap1SOM4)
+- intent: setanswer(fu:dap1som4)
   examples:
   - text: |
        good 
 
-- intent: thanking(Fe:fsp2SOMFB4)
+- intent: thanking(fe:fsp2somfb4)
   examples:
   - text: |
        thank you 
 
-- intent: autoPositive(Fe:fsp1AUFFB0)
+- intent: autopositive(fe:fsp1auffb0)
   examples:
   - text: |
        alright 
     metadata:
       turnManagement: turnTake
 
-- intent: checkQuestion(Fe:fsp2AUFFB0)
+- intent: checkquestion(fe:fsp2auffb0)
   examples:
   - text: |
        so the name is kind of a famous person yeah 
 
-- intent: feedbackElicitation(Fe:fsp2ALFFB0)
+- intent: feedbackelicitation(fe:fsp2alffb0)
   examples:
   - text: |
        yeah 
 
-- intent: autoPositive
+- intent: autopositive
   examples:
   - text: |
        okay 
 
-- intent: confirm(Fu:dap2AUF0)
+- intent: confirm(fu:dap2auf0)
   examples:
   - text: |
        yes 
@@ -158,122 +158,122 @@ nlu:
   - text: |
        im not sure how good am i in this area 
 
-- intent: autoPositive(Fe:fsp2AUFFB2)
+- intent: autopositive(fe:fsp2auffb2)
   examples:
   - text: |
        okay okay 
 
-- intent: autoPositive(Fe:fsp2AUFFB3)
+- intent: autopositive(fe:fsp2auffb3)
   examples:
   - text: |
        good 
 
-- intent: autoPositive(Fe:fsp2AUFFB4)
+- intent: autopositive(fe:fsp2auffb4)
   examples:
   - text: |
        what is the first question 
 
-- intent: setAnswer(Fu:dap2TSK2)
+- intent: setanswer(fu:dap2tsk2)
   examples:
   - text: |
        i am a leader 
 
-- intent: autoPositive(Fe:fsp2AUFFB5)
+- intent: autopositive(fe:fsp2auffb5)
   examples:
   - text: |
        a leader 
 
-- intent: setAnswer(Fu:dap2TSK3)
+- intent: setanswer(fu:dap2tsk3)
   examples:
   - text: |
        i am american 
 
-- intent: autoPositive(Fe:fsp2AUFFB6)
+- intent: autopositive(fe:fsp2auffb6)
   examples:
   - text: |
        american 
 
-- intent: propositionalQuestion
+- intent: propositionalquestion
   examples:
+  - text: |
+       are you leading a company 
   - text: |
        are you a 
   - text: |
-       are a politician 
-  - text: |
        are you alive 
   - text: |
-       are you leading a company 
+       are a politician 
 
-- intent: propositionalAnswer(Fu:dap2TSK4)
+- intent: propositionalanswer(fu:dap2tsk4)
   examples:
   - text: |
        i am not alive 
 
-- intent: autoPositive(Fe:fsp2AUFFB7)
+- intent: autopositive(fe:fsp2auffb7)
   examples:
   - text: |
        youre not alive 
 
-- intent: autoPositive(Fe:fsp2AUFFB8)
+- intent: autopositive(fe:fsp2auffb8)
   examples:
   - text: |
        okay 
     metadata:
       turnManagement: turnKeep
 
-- intent: selfCorrection(Fe:fsp2OCMFB0)
+- intent: selfcorrection(fe:fsp2ocmfb0)
   examples:
   - text: |
        are you leading 
 
-- intent: propositionalAnswer(Fu:dap2TSK6)
+- intent: propositionalanswer(fu:dap2tsk6)
   examples:
   - text: |
        i am not leading a company 
 
-- intent: autoPositive(Fe:fsp2AUFFB9)
+- intent: autopositive(fe:fsp2auffb9)
   examples:
   - text: |
        okay 
 
-- intent: autoPositive(Fe:fsp2AUFFB10)
+- intent: autopositive(fe:fsp2auffb10)
   examples:
   - text: |
        youre not a company leader 
 
-- intent: setAnswer(Fu:dap2TSK7)
+- intent: setanswer(fu:dap2tsk7)
   examples:
   - text: |
        i was born on february twenty second seventeen thirty two 
 
-- intent: autoPositive(Fe:fsp2AUFFB11)
+- intent: autopositive(fe:fsp2auffb11)
   examples:
   - text: |
        seventeen thirty two 
 
-- intent: autoPositive(Fe:fsp2AUFFB12)
+- intent: autopositive(fe:fsp2auffb12)
   examples:
   - text: |
        ok 
     metadata:
       turnManagement: turnKeep
 
-- intent: propositionalAnswer(Fu:dap2TSK8)
+- intent: propositionalanswer(fu:dap2tsk8)
   examples:
   - text: |
        i am a politician 
 
-- intent: autoPositive(Fe:fsp2AUFFB13)
+- intent: autopositive(fe:fsp2auffb13)
   examples:
   - text: |
        okay 
 
-- intent: inform(Fe:fsp2AUFFB14)
+- intent: inform(fe:fsp2auffb14)
   examples:
   - text: |
        so then it is not my area 
 
-- intent: autoPositive(Fe:fsp2AUFFB15)
+- intent: autopositive(fe:fsp2auffb15)
   examples:
   - text: |
        a politician 
@@ -285,29 +285,29 @@ nlu:
     metadata:
       turnManagement: turnKeep
 
-- intent: setAnswer[uncertain](Fu:dap2TSK9)
+- intent: setanswer[uncertain](fu:dap2tsk9)
   examples:
   - text: |
        this must be 
 
-- intent: autoPositive(Fe:fsp1AUFFB1)
+- intent: autopositive(fe:fsp1auffb1)
   examples:
   - text: |
        okay 
     metadata:
       turnManagement: turnKeep
 
-- intent: setAnswer(Fu:dap2TSK9)
+- intent: setanswer(fu:dap2tsk9)
   examples:
   - text: |
        i retired from the presidency in seventeen ninety seven 
 
-- intent: selfCorrection(Fe:fsp1OCMFB1)
+- intent: selfcorrection(fe:fsp1ocmfb1)
   examples:
   - text: |
        i retired 
 
-- intent: autoPositive(Fe:fsp2AUFFB16)
+- intent: autopositive(fe:fsp2auffb16)
   examples:
   - text: |
        ninety seven 
@@ -317,7 +317,7 @@ nlu:
   - text: |
        george washington 
 
-- intent: autoPositive(Fe:fsp2AUFFB17)
+- intent: autopositive(fe:fsp2auffb17)
   examples:
   - text: |
        ninety seven 

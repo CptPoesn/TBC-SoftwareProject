@@ -1,11 +1,11 @@
 utterance,intent
 to Dansville to Corning to Elmira,answer
-okay,autoPositive
+okay,autopositive
 okay,stalling
 let's see,pausing
 four p.m.,inform_continue
 four p.m.,inform_continue
 four p.m.,stalling
 we'll get there by seven p.m.,inform_pass
-okay great,interactionStructuring
+okay great,interactionstructuring
 I am now finished,inform

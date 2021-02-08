@@ -9,7 +9,7 @@ nlu:
   - text: |
       can I help you
 
-- intent: acceptOffer
+- intent: acceptoffer
   examples:
   - text: |
       yes
@@ -17,20 +17,20 @@ nlu:
 - intent: inform_pass
   examples:
   - text: |
-      then I'll take engine E two
-  - text: |
-      I'd like to take a tanker from Corning and bring it to Elmira
-  - text: |
       and from Elmira I'd like to load orange juice into the tanker
   - text: |
       then I'd like to take the tanker of orange juice through Dansville and then on to Avon
+  - text: |
+      then I'll take engine E two
+  - text: |
+      I'd like to take a tanker from Corning and bring it to Elmira
 
-- intent: autoPositive
+- intent: autopositive
   examples:
   - text: |
-      alright
-  - text: |
       okay
+  - text: |
+      alright
   - text: |
       mm-hm
 
@@ -42,42 +42,42 @@ nlu:
 - intent: stalling
   examples:
   - text: |
-      uh
-  - text: |
       the the
-  - text: |
-      um
-    metadata:
-      turnManagement: turnKeep
   - text: |
       well
     metadata:
       turnManagement: turnTake
+  - text: |
+      uh
+  - text: |
+      um
+    metadata:
+      turnManagement: turnKeep
 
-- intent: setQuestion
+- intent: setquestion
   examples:
+  - text: |
+      which engine would you like to use
   - text: |
       now from Corning what would be the quickest route to Avon
   - text: |
       the tankers move at the same speed
-  - text: |
-      which engine would you like to use
 
 - intent: answer
   examples:
   - text: |
-      through Dansville
-  - text: |
       engine E two
   - text: |
       no they're both the same
+  - text: |
+      through Dansville
 
-- intent: propositionalQuestion
+- intent: propositionalquestion
   examples:
   - text: |
       will either one take me there any quicker
 
-- intent: selfCorrection
+- intent: selfcorrection
   examples:
   - text: |
       they're a they're

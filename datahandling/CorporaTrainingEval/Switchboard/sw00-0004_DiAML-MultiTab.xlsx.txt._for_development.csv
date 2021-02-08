@@ -1,17 +1,17 @@
 utterance,intent
 yeah,answer
 And here's this bum that didn't have a job,inform_continue
-Yeah,autoPositive
+Yeah,autopositive
 and he's got a attorney that you and I could never afford,inform_pass
 That's true,agreement
-Who's paying for that,setQuestion
+Who's paying for that,setquestion
 Yeah,agreement
 y well you you know <laughter> ,stalling
 you're talking to part of them that's paying for that <laughter>,answer
-<Laughter>,autoPositive
+<Laughter>,autopositive
 Yeah,agreement
 and you're talking to the other half that's paying for it <laughter> ,inform_pass
-<Laughter>,autoPositive
+<Laughter>,autopositive
 That's right,agreement
 You know,stalling
-that's it it's,selfCorrection
+that's it it's,selfcorrection

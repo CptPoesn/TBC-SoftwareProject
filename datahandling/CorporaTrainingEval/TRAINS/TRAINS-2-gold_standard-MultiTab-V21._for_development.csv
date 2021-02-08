@@ -1,7 +1,7 @@
 utterance,intent
 of ..,stalling
 fill up the three boxcars with bananas,inform_pass
-okay,autoPositive
+okay,autopositive
 bring them back to Elmira,inform_pass
-which way do we wanna go,setQuestion
+which way do we wanna go,setquestion
 uh,stalling

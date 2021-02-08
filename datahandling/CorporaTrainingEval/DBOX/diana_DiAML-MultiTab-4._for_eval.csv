@@ -1,15 +1,15 @@
 utterance,intent
  uhm ,stalling
- i died in paris ,setAnswer
- mhm ,autoPositive
+ i died in paris ,setanswer
+ mhm ,autopositive
  uhm ,stalling
  uhm ,stalling
  you are princess diana ,guess
  uh ,stalling
  yes ,confirm
  that is the correct answer ,inform_continue
- good job ,alloPositive
+ good job ,allopositive
  good job ,closing
  good job ,congratulation
- okay ,autoPositive
+ okay ,autopositive
  okay ,closing

@@ -63,7 +63,7 @@ def dict_to_yaml(filename_out, data_dict):
         for key, values in yaml_dict.items():
             if key == 'turnKeep':
                 continue
-            f.write('- intent: ' + key + '\n')  # no spaces
+            f.write('- intent: ' + key.lower() + '\n')  # no spaces
             f.write('  examples:' + '\n')  # two spaces
 
             for ex in values:
@@ -97,10 +97,10 @@ def data_to_goldstandard(file, data):
                         # easier: if key == 'turnManagement' or take out of if statement above?!
                         continue
                     # TODO handle metadata differently
-                    gold_standards.append({"utterance": row["FS text"], "intent": value})
+                    gold_standards.append({"utterance": row["FS text"], "intent": value.lower()})
                 else:
                     # yaml_dict[value].append(row['FS text'])
-                    gold_standards.append({"utterance": row["FS text"], "intent": value})
+                    gold_standards.append({"utterance": row["FS text"], "intent": value.lower()})
 
     with open(file, mode='w') as csv_file:
         fieldnames = ['utterance', 'intent']

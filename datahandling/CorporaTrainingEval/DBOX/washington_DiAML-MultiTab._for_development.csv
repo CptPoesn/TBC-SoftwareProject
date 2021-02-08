@@ -1,11 +1,11 @@
 utterance,intent
  washington or bill clinton ,guess
  im not sure hes alive ,inform_pass
- so ,interactionStructuring
- did you have an affair with Monica Lewinsky ,propositionalQuestion
- i did not ,propositionalAnswer(Fu:dap2TSK13)
+ so ,interactionstructuring
+ did you have an affair with Monica Lewinsky ,propositionalquestion
+ i did not ,propositionalanswer(fu:dap2tsk13)
  so you are not Bill Clinton ,guess
  uhm ,stalling
- i am not bill clinton ,disconfirm(Fu:dap2TSK14)
- correct uuh ,autoPositive(Fe:fsp2AUFFB18)
+ i am not bill clinton ,disconfirm(fu:dap2tsk14)
+ correct uuh ,autopositive(fe:fsp2auffb18)
  I am george washington ,inform_pass

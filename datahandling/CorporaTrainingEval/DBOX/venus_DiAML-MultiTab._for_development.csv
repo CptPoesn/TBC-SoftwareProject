@@ -1,8 +1,8 @@
 utterance,intent
- yes I am very successful ,propositionalAnswer
+ yes I am very successful ,propositionalanswer
  are you serena williams ,guess
  no ,disconfirm
  very close ,inform_continue
- very close ,alloPositive
+ very close ,allopositive
  but that is not the correct answer ,inform_continue
  im venus williams ,inform_pass

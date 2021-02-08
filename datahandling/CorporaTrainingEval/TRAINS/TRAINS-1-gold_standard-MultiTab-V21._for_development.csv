@@ -3,6 +3,6 @@ so that's three boxcars,inform_continue
 so that's engine E one from Avon going to Dansville pick up the three boxcars go to Corning load them up and then take it to Bath,inform_continue
 so that's good,inform_continue
 then I guess we can also take like engine E two with those two boxcars from Elmira take it to Corning,inform_continue
-so Elmira to Corning is two hours,checkQuestion
+so Elmira to Corning is two hours,checkquestion
 mm-hm,confirm
-okay,autoPositive
+okay,autopositive

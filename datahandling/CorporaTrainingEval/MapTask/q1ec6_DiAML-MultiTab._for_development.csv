@@ -1,19 +1,19 @@
 utterance,intent
- yep ,autoPositive
+ yep ,autopositive
  and then like go west ,instruct
- right ,acceptRequest
- so youre between them ,checkQuestion
- between them ,selfCorrection
+ right ,acceptrequest
+ so youre between them ,checkquestion
+ between them ,selfcorrection
  between them ,confirm
- between them ,alloPositive
+ between them ,allopositive
  um ,stalling
- right ,autoPositive
- mmhmm ,autoPositive
- mmhmm ,alloPositive
- okay ,acceptRequest
+ right ,autopositive
+ mmhmm ,autopositive
+ mmhmm ,allopositive
+ okay ,acceptrequest
  and then southwest towards the edge of the map ,instruct
- right ,autoPositive
- okay ,acceptRequest
- right ,autoPositive
- right ,alloPositive
+ right ,autopositive
+ okay ,acceptrequest
+ right ,autopositive
+ right ,allopositive
  and then south ,instruct

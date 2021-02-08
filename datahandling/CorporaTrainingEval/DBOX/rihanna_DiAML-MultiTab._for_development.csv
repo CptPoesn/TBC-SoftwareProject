@@ -1,5 +1,5 @@
 utterance,intent
- are you a musician ,propositionalQuestion
- yes i am a musician ,propositionalAnswer
- mh ,autoPositive
+ are you a musician ,propositionalquestion
+ yes i am a musician ,propositionalanswer
+ mh ,autopositive
  mh ,stalling

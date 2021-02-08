@@ -3,8 +3,8 @@ VOC_breath so,stalling
 yeah that should also work,inform_pass
 mm-hm,agreement
 so did you wanna repeat that plan,request
-okay,acceptRequest
+okay,acceptrequest
 engine one goes to Dansville picks up three boxcars goes to Corning is loaded with oranges and goes to Bath engine E two picks takes the two boxcars at Elmira to Corning where they're loaded with oranges and then takes them to Bath,inform_pass
-okay,alloPositive
+okay,allopositive
 so that gives us a maximum number of five,inform_continue
-okay,interactionStructuring
+okay,interactionstructuring

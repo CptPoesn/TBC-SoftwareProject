@@ -6,43 +6,43 @@ nlu:
   - text: |
        hello again 
 
-- intent: initGreeting
+- intent: initgreeting
   examples:
   - text: |
        hello again 
 
-- intent: returnGreeting
+- intent: returngreeting
   examples:
   - text: |
        hello 
 
-- intent: alloPositive
+- intent: allopositive
   examples:
   - text: |
        great 
 
-- intent: interactionStructuring
+- intent: interactionstructuring
   examples:
   - text: |
        alright so 
 
-- intent: setQuestion
+- intent: setquestion
   examples:
-  - text: |
-       what is your first question 
   - text: |
        what are your initials 
   - text: |
        where are you from 
-
-- intent: autoPositive
-  examples:
   - text: |
-       okay 
+       what is your first question 
+
+- intent: autopositive
+  examples:
   - text: |
        mh 
     metadata:
       turnManagement: turnTake
+  - text: |
+       okay 
   - text: |
        mh 
     metadata:
@@ -53,32 +53,32 @@ nlu:
   - text: |
        i can not answer that question 
 
-- intent: propositionalQuestion
+- intent: propositionalquestion
   examples:
   - text: |
        are you a real person 
   - text: |
        are you dead 
 
-- intent: propositionalAnswer
+- intent: propositionalanswer
   examples:
   - text: |
-       no i am still alive 
-  - text: |
        yes i am a real person 
+  - text: |
+       no i am still alive 
 
 - intent: stalling
   examples:
   - text: |
-       uhm 
-    metadata:
-      turnManagement: turnTake
-  - text: |
        mh 
     metadata:
       turnManagement: turnTake
+  - text: |
+       uhm 
+    metadata:
+      turnManagement: turnTake
 
-- intent: setAnswer
+- intent: setanswer
   examples:
   - text: |
        i am from barbados 

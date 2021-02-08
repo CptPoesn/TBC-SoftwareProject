@@ -7,37 +7,51 @@ nlu:
 - intent: stalling
   examples:
   - text: |
+      Oh, okay
+  - text: |
       Uh
     metadata:
       turnManagement: turnTake
   - text: |
-      uh
+      uh, uh
   - text: |
       At, at
     metadata:
       turnManagement: turnTake
   - text: |
-      you know, 
-  - text: |
-      <laughter> I, I
-  - text: |
       but, you know
     metadata:
       turnManagement: turnKeep
+  - text: |
+      Well,
+  - text: |
+      uh
+    metadata:
+      turnManagement: turnKeep
+  - text: |
+      you know
+  - text: |
+      a, a
+  - text: |
+      um
+  - text: |
+      uh,
+  - text: |
+      <laughter> I, I
   - text: |
       Ooh
     metadata:
       turnManagement: turnTake
   - text: |
-      it's, you know, it's
+      I, I'm 
   - text: |
-      uh,
+      and, and
   - text: |
-      a, a
+      but, uh
+    metadata:
+      turnManagement: turnKeep
   - text: |
-      Oh, okay
-  - text: |
-      Well,
+      Well
     metadata:
       turnManagement: turnTake
   - text: |
@@ -45,33 +59,11 @@ nlu:
     metadata:
       turnManagement: turnTake
   - text: |
-      uh
-    metadata:
-      turnManagement: turnKeep
-  - text: |
       um,
     metadata:
       turnManagement: turnKeep
   - text: |
-      but, uh
-    metadata:
-      turnManagement: turnKeep
-  - text: |
-      and, and
-  - text: |
-      um
-  - text: |
       Oh,
-    metadata:
-      turnManagement: turnTake
-  - text: |
-      I, I'm 
-  - text: |
-      uh, uh
-  - text: |
-      Well,
-  - text: |
-      Well
     metadata:
       turnManagement: turnTake
   - text: |
@@ -79,290 +71,298 @@ nlu:
   - text: |
       well
   - text: |
-      you know
+      Well,
+    metadata:
+      turnManagement: turnTake
+  - text: |
+      it's, you know, it's
+  - text: |
+      you know, 
+  - text: |
+      uh
 
 - intent: answer
   examples:
   - text: |
-      I  collect antique tools
-  - text: |
-      it is snowing right now
-  - text: |
-      I may
-  - text: |
       I do lots of cross stitching when I have time
+  - text: |
+      so basically I'm just real busy with my kids right now in sports
   - text: |
       Yeah
   - text: |
-      Yes,
-  - text: |
-      University of Texas in Dallas
-  - text: |
-      yeah
-  - text: |
       Breckenridge
   - text: |
-      Copper
+      Yes,
+  - text: |
+      I  collect antique tools
   - text: |
       and Keystone
-  - text: |
-      so basically I'm just real busy with my kids right now in sports
   - text: |
       No
   - text: |
       I've been to Telluride which is on the west side
   - text: |
+      yeah
+  - text: |
+      Copper
+  - text: |
+      University of Texas in Dallas
+  - text: |
+      I may
+  - text: |
+      it is snowing right now
+  - text: |
       I'm mother of four
 
-- intent: interactionStructuring
+- intent: interactionstructuring
   examples:
   - text: |
-      and what else do I do, 
+      for one thing
   - text: |
       So
   - text: |
       we'll see
   - text: |
-      for one thing
+      and what else do I do, 
 
-- intent: selfCorrection
+- intent: selfcorrection
   examples:
   - text: |
       the  limestone hills
   - text: |
+      what do you, what kind of  
+  - text: |
       You guys, are you guys
   - text: |
-      sideline,  part time
+      that's kind of the, that's the
   - text: |
       I would love, I can hardly wait to get
+  - text: |
+      is mostly is
+  - text: |
+      sideline,  part time
   - text: |
       lime-, limestone
   - text: |
       I, I'm 
-  - text: |
-      is mostly is
-  - text: |
-      that's kind of the, that's the
-  - text: |
-      what do you, what kind of  
 
 - intent: inform_continue
   examples:
   - text: |
-      it's low hills
-  - text: |
-      we snow ski
-  - text: |
-      and we have a little Halloween talent show tonight
-  - text: |
-      I am a travel agent at heart
-  - text: |
-      but, it's real hard to work in the summers and  holidays and weekends when you have four children and a husband
-  - text: |
-      it's really different because  that's the chalk hills down there,
-  - text: |
-      Me, too
-  - text: |
-      But they seem to like it okay.
-  - text: |
-      of course there's still a lot of work to be done,  
-  - text: |
-      and I enter things in our little state fair,
-  - text: |
-      it's really neat
-  - text: |
-      and this is his first year
-  - text: |
-      that's pretty neat
-  - text: |
-      course I've been working on it for five years
-  - text: |
-      But it's beautiful
-  - text: |
-      I think they're too far away from me,
-  - text: |
-       it's great, 
-  - text: |
       and then when you get it completely, the shell finished, you still have a lot of stuff to do inside
-  - text: |
-      it's Eastern Hardwood, forest,  
-  - text: |
-      I had never been there
   - text: |
       I've skied in Colorado
   - text: |
-      there are a lot of pine trees,
-  - text: |
-      he's got a job  there
-  - text: |
-      I love traveling and being involved in that and finding out more
-  - text: |
-      but it's mostly oaks
-  - text: |
-       I'm building a log house at a  farm that I have in East Texas, which is a hundred miles from here
-  - text: |
       I'm sort of in an antique business
-  - text: |
-      I've only been to Texas once
-  - text: |
-      I'm around my kids  
-  - text: |
-      actually, I'm not even sure
-  - text: |
-      My sisters both seem to like it pretty well
   - text: |
       and I'm enjoying it.  
   - text: |
+      I am a travel agent at heart
+  - text: |
+      and I enter things in our little state fair,
+  - text: |
       escape
   - text: |
-      so I've been librarian all this week, which has been real interesting,  
+      But it's beautiful
+  - text: |
+      and we have a little Halloween talent show tonight
+  - text: |
+      My sisters both seem to like it pretty well
+  - text: |
+      I'm around my kids  
+  - text: |
+      I had never been there
+  - text: |
+      I think they're too far away from me,
+  - text: |
+      but, it's real hard to work in the summers and  holidays and weekends when you have four children and a husband
+  - text: |
+      I've only been to Texas once
+  - text: |
+       I'm building a log house at a  farm that I have in East Texas, which is a hundred miles from here
   - text: |
       and I ski
   - text: |
+      Me, too
+  - text: |
+      course I've been working on it for five years
+  - text: |
+       it's great, 
+  - text: |
       My brother-in-law works for the University, in Dallas
   - text: |
+      there are a lot of pine trees,
+  - text: |
+      it's really different because  that's the chalk hills down there,
+  - text: |
+      it's low hills
+  - text: |
+      it's really neat
+  - text: |
+      it's Eastern Hardwood, forest,  
+  - text: |
+      so I've been librarian all this week, which has been real interesting,  
+  - text: |
+      of course there's still a lot of work to be done,  
+  - text: |
+      But they seem to like it okay.
+  - text: |
+      that's pretty neat
+  - text: |
+      but it's mostly oaks
+  - text: |
        I have two sisters in Texas now, one in Austin, one in Dallas
+  - text: |
+      he's got a job  there
+  - text: |
+      and this is his first year
+  - text: |
+      we snow ski
+  - text: |
+      I love traveling and being involved in that and finding out more
+  - text: |
+      actually, I'm not even sure
 
 - intent: inform_pass
   examples:
   - text: |
-      Copper is kind of my favorite up there.
+      so, it's been a real interesting thing for them
   - text: |
-      and the one in Dallas is the one that got me to doing this
+       I play tennis
+  - text: |
+      I guess those are the only places I've skied up there
   - text: |
       and that's pretty fun.
   - text: |
-      I substitute at the schools part-time
+      except for time in service
+  - text: |
+       I liked the hills and the trees
   - text: |
       it's getting real close to 
+  - text: |
+      it's just north of me here
+  - text: |
+      I'll probably always have a place here in Richardson or Dallas
+  - text: |
+      I can hardly wait to get up there
+  - text: |
+      but maybe some day they can get closer
+  - text: |
+      but it's a little part time thing
   - text: |
       I love tennis too
   - text: |
       He's admissions director
   - text: |
-       I play tennis
-  - text: |
-      so, it's been a real interesting thing for them
-  - text: |
-      Wonderful place.
-  - text: |
       We snow ski at Mount Bachelor mostly, in Oregon 
-  - text: |
-       I liked the hills and the trees
-  - text: |
-      I'll probably always have a place here in Richardson or Dallas
-  - text: |
-      but maybe some day they can get closer
-  - text: |
-      I heard Aspen got three feet
-  - text: |
-      I guess those are the only places I've skied up there
-  - text: |
-      except for time in service
-  - text: |
-      we usually go to New Mexico because it's a little cheaper
-  - text: |
-      I thought Austin was beautiful
   - text: |
       actually my hobbies mostly  is my sports. Tennis,
   - text: |
-      but it's a little part time thing
+      we usually go to New Mexico because it's a little cheaper
   - text: |
-      I can hardly wait to get up there
+      I heard Aspen got three feet
   - text: |
-      it's just north of me here
+      Copper is kind of my favorite up there.
+  - text: |
+      and the one in Dallas is the one that got me to doing this
   - text: |
       so I reluctantly gave that career up and am just substituting at the school
   - text: |
       We're to get one to three inches tonight
+  - text: |
+      Wonderful place.
+  - text: |
+      I thought Austin was beautiful
+  - text: |
+      I substitute at the schools part-time
 
-- intent: autoPositive
+- intent: autopositive
   examples:
-  - text: |
-      <Laughter>
-  - text: |
-      Wonderful
-  - text: |
-      Ooh.
-  - text: |
-      how beautiful
-  - text: |
-       <Laughter> Oh, gee
-  - text: |
-      Yeah
-  - text: |
-       Oh
   - text: |
       Oh, okay
   - text: |
-      Yes,
-  - text: |
-      That's great.
-  - text: |
-      Oh, yeah,
-  - text: |
-      Really
-  - text: |
-      but how wonderful
-  - text: |
-      Uh-huh
-  - text: |
-      yeah
-  - text: |
-       Yeah
-  - text: |
-      No, kidding. 
-  - text: |
-      yes
-  - text: |
-      that's great
-  - text: |
-      Oh
-  - text: |
-      Ooh,
+       Oh
   - text: |
       wonderful
   - text: |
       Ooh
   - text: |
+      that's great
+  - text: |
+      <Laughter>
+  - text: |
+       Yeah
+  - text: |
+      Yeah
+  - text: |
+      how beautiful
+  - text: |
+      No, kidding. 
+  - text: |
+      yes
+  - text: |
+      Ooh.
+  - text: |
+      Really
+  - text: |
+      but how wonderful
+  - text: |
+      Oh
+  - text: |
+      Yes,
+  - text: |
        Yeah,
   - text: |
+      yeah
+  - text: |
+      Ooh,
+  - text: |
+      That's great.
+  - text: |
+      Uh-huh
+  - text: |
       <Laughter>.
+  - text: |
+       <Laughter> Oh, gee
+  - text: |
+      Wonderful
+  - text: |
+      Oh, yeah,
 
-- intent: propositionalQuestion
+- intent: propositionalquestion
   examples:
   - text: |
       Are you going to move your whole family over there then? 
   - text: |
-      do you?
-  - text: |
       have you ever been there?
-  - text: |
-      are you guys getting snow?
   - text: |
       do you ski?
   - text: |
       Are you close to getting it done?
+  - text: |
+      are you guys getting snow?
+  - text: |
+      do you?
 
-- intent: checkQuestion
+- intent: checkquestion
   examples:
+  - text: |
+      kind of your getaway place
+  - text: |
+      and  you've always lived in Texas, have you?
+  - text: |
+      That's pretty easy substituting isn't it?
   - text: |
       and it's pretty flat there?
   - text: |
       Born and raised Texan, huh
-  - text: |
-      and  you've always lived in Texas, have you?
-  - text: |
-      kind of your getaway place
-  - text: |
-      That's pretty easy substituting isn't it?
 
 - intent: confirm
   examples:
   - text: |
-      Yeah
-  - text: |
       Oh yeah, 
+  - text: |
+      Yeah
   - text: |
       yeah,
 
@@ -374,37 +374,37 @@ nlu:
 - intent: retraction
   examples:
   - text: |
+       in Aus-
+  - text: |
+      We,
+  - text: |
+      my hobby is just
+  - text: |
       You
     metadata:
       turnManagement: turnTake
   - text: |
-      We,
-  - text: |
       that's,
   - text: |
       it's not
-  - text: |
-      my hobby is just
-  - text: |
-       in Aus-
 
-- intent: setQuestion
+- intent: setquestion
   examples:
   - text: |
-      Wh
+      at which one?
   - text: |
       what kind of  hobbies are you in?
   - text: |
       Where in Colorado?
   - text: |
-      at which one?
+      Wh
 
 - intent: agreement
   examples:
   - text: |
        Pretty good trip
 
-- intent: feedbackElicitation
+- intent: feedbackelicitation
   examples:
   - text: |
       you know

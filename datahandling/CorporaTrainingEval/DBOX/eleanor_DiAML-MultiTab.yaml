@@ -2,26 +2,26 @@ nlu:
 - intent: opening
   examples:
   - text: |
-       hello 
-  - text: |
        alright hello again 
+  - text: |
+       hello 
 
-- intent: initGreeting
+- intent: initgreeting
   examples:
   - text: |
        hello again 
 
-- intent: returnGreeting
+- intent: returngreeting
   examples:
   - text: |
        hello 
 
-- intent: autoPositive
+- intent: autopositive
   examples:
   - text: |
-       yes 
-  - text: |
-       great 
+       okay 
+    metadata:
+      turnManagement: turnKeep
   - text: |
        france 
   - text: |
@@ -29,51 +29,39 @@ nlu:
     metadata:
       turnManagement: turnTake
   - text: |
-       okay 
-    metadata:
-      turnManagement: turnKeep
-  - text: |
        do I know any French which 
-  - text: |
-       okay 
-    metadata:
-      turnManagement: turnTake
   - text: |
        now how do i ask that 
   - text: |
-       okay 
+       yes 
   - text: |
        $LAUGH 
-
-- intent: alloPositive
-  examples:
   - text: |
        okay 
   - text: |
        great 
   - text: |
+       okay 
+    metadata:
+      turnManagement: turnTake
+
+- intent: allopositive
+  examples:
+  - text: |
        that is a very good question 
+  - text: |
+       okay 
+  - text: |
+       great 
 
 - intent: stalling
   examples:
-  - text: |
-       mh 
-    metadata:
-      turnManagement: turnAccept
-  - text: |
-       uh 
-  - text: |
-       uh 
-    metadata:
-      turnManagement: turnAccept
   - text: |
        okay 
     metadata:
       turnManagement: turnKeep
   - text: |
-       uhm 
-    metadata:
-      turnManagement: turnAccept
+       uh 
   - text: |
        uhm 
     metadata:
@@ -82,8 +70,20 @@ nlu:
        uh 
     metadata:
       turnManagement: turnKeep
+  - text: |
+       uh 
+    metadata:
+      turnManagement: turnAccept
+  - text: |
+       uhm 
+    metadata:
+      turnManagement: turnAccept
+  - text: |
+       mh 
+    metadata:
+      turnManagement: turnAccept
 
-- intent: checkQuestion
+- intent: checkquestion
   examples:
   - text: |
        so you know all of the rules 
@@ -93,52 +93,52 @@ nlu:
   - text: |
        yes i do 
 
-- intent: setQuestion
+- intent: setquestion
   examples:
-  - text: |
-       who was your husband during your time as queen regent of england 
-  - text: |
-       what is your first question 
-  - text: |
-       can you name one thing that many people know that you did 
-  - text: |
-       and during which year were you the queen consort of england 
   - text: |
        while you were at the peak of your power which position did you occupy in the country 
   - text: |
        during which years exactly did you reign 
   - text: |
+       who was your husband during your time as queen regent of england 
+  - text: |
        how did you die 
+  - text: |
+       and during which year were you the queen consort of england 
   - text: |
        what are you most known for in history of humankind 
   - text: |
        what are you famous for 
   - text: |
        which country $UNINTELLIGIBLE 
-
-- intent: setAnswer
-  examples:
   - text: |
-       i was married to two kings and i participated in the second crusade while queen of france 
+       can you name one thing that many people know that you did 
+  - text: |
+       what is your first question 
+
+- intent: setanswer
+  examples:
   - text: |
        i was the queen consort of france and later the queen consort of england 
   - text: |
-       SIL i was married to henry duke of normandy who became king henry the second of england 
-  - text: |
        france 
+  - text: |
+       i was married to two kings and i participated in the second crusade while queen of france 
   - text: |
        i am famous for being one of the wealthiest and most powerful women in western europe during the middle ages 
   - text: |
-       from eleven fifty four to eleven eighty nine 
+       SIL i was married to henry duke of normandy who became king henry the second of england 
   - text: |
        i was 
+  - text: |
+       from eleven fifty four to eleven eighty nine 
 
-- intent: choiceQuestion
+- intent: choicequestion
   examples:
   - text: |
-       are you part of the royalty or were you part of the royalty rather 
-  - text: |
        are you more famous for your time in england or in france 
+  - text: |
+       are you part of the royalty or were you part of the royalty rather 
 
 - intent: answer
   examples:
@@ -150,6 +150,10 @@ nlu:
 - intent: pausing
   examples:
   - text: |
+       just a minute 
+    metadata:
+      turnManagement: turnAccept
+  - text: |
        yeah 
   - text: |
        just a minute 
@@ -157,37 +161,33 @@ nlu:
       turnManagement: turnKeep
   - text: |
        just a second 
-  - text: |
-       just a minute 
-    metadata:
-      turnManagement: turnAccept
 
-- intent: autoNegative
+- intent: autonegative
   examples:
   - text: |
        now that does not work 
   - text: |
        could you clarify 
 
-- intent: acceptRequest
+- intent: acceptrequest
   examples:
   - text: |
        okay 
 
-- intent: selfCorrection
+- intent: selfcorrection
   examples:
-  - text: |
-       documented 
-  - text: |
-       SIL i was 
   - text: |
        which position 
   - text: |
-       how do 
+       documented 
   - text: |
        years 
   - text: |
+       how do 
+  - text: |
        king 
+  - text: |
+       SIL i was 
 
 - intent: request
   examples:
@@ -203,29 +203,29 @@ nlu:
   - text: |
        im not sure if i can answer it 
   - text: |
-       i dont have an answer to that question 
-  - text: |
        unfortunately im not sure how to answer that question 
   - text: |
-       but i dont have a answer to that question 
-  - text: |
        not sure that i can fully answer that question 
+  - text: |
+       i dont have an answer to that question 
+  - text: |
+       but i dont have a answer to that question 
 
 - intent: inform_pass
   examples:
   - text: |
        if its not too general for a question 
 
-- intent: propositionalQuestion
+- intent: propositionalquestion
   examples:
   - text: |
        did you have any religious epiphanies 
   - text: |
-       documented 
-  - text: |
        are you considered a hero by some 
+  - text: |
+       documented 
 
-- intent: propositionalAnswer
+- intent: propositionalanswer
   examples:
   - text: |
        that is possible 

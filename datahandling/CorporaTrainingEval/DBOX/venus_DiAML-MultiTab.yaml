@@ -6,17 +6,17 @@ nlu:
   - text: |
        hello again 
 
-- intent: initGreeting
+- intent: initgreeting
   examples:
   - text: |
        hello again 
 
-- intent: returnGreeting
+- intent: returngreeting
   examples:
   - text: |
        hello 
 
-- intent: checkQuestion
+- intent: checkquestion
   examples:
   - text: |
        ready to start with the next round 
@@ -26,29 +26,29 @@ nlu:
   - text: |
        mhm 
 
-- intent: autoPositive
+- intent: autopositive
   examples:
   - text: |
+       yeah 
+  - text: |
        alright 
+  - text: |
+       okay 
   - text: |
        great 
   - text: |
        okay 
     metadata:
       turnManagement: turnTake
-  - text: |
-       okay 
-  - text: |
-       yeah 
 
-- intent: alloPositive
+- intent: allopositive
   examples:
   - text: |
-       great 
-  - text: |
        alright 
+  - text: |
+       great 
 
-- intent: interactionStructuring
+- intent: interactionstructuring
   examples:
   - text: |
        alright 
@@ -56,7 +56,11 @@ nlu:
 - intent: stalling
   examples:
   - text: |
-       mmh 
+       uhm 
+    metadata:
+      turnManagement: turnTake
+  - text: |
+       uhm 
     metadata:
       turnManagement: turnKeep
   - text: |
@@ -64,68 +68,64 @@ nlu:
     metadata:
       turnManagement: turnTake
   - text: |
-       uhm 
+       uh 
     metadata:
-      turnManagement: turnTake
+      turnManagement: turnKeep
+  - text: |
+       mmh 
+    metadata:
+      turnManagement: turnKeep
   - text: |
        uh 
     metadata:
       turnManagement: turnAccept
-  - text: |
-       uhm 
-    metadata:
-      turnManagement: turnKeep
-  - text: |
-       uh 
-    metadata:
-      turnManagement: turnKeep
 
 - intent: suggest
   examples:
   - text: |
        lets get started then 
 
-- intent: setQuestion
+- intent: setquestion
   examples:
-  - text: |
-       what is your first question 
-  - text: |
-       and how old are you 
   - text: |
        and what are you doing 
   - text: |
        what is your mother tongue 
   - text: |
        where are you from 
+  - text: |
+       and how old are you 
+  - text: |
+       what is your first question 
 
-- intent: setAnswer
+- intent: setanswer
   examples:
-  - text: |
-       my mother tongue is english 
-  - text: |
-       i am a professional tennis player 
   - text: |
        i am thirty three 
   - text: |
-       i am from the united states 
+       my mother tongue is english 
   - text: |
        thirty three years old 
+  - text: |
+       i am a professional tennis player 
+  - text: |
+       i am from the united states 
 
-- intent: propositionalQuestion
+- intent: propositionalquestion
   examples:
   - text: |
        are you successful in tennis 
   - text: |
-       does your first name start with an s 
-  - text: |
        and youre still alive 
+  - text: |
+       does your first name start with an s 
 
-- intent: propositionalAnswer
+- intent: propositionalanswer
   examples:
   - text: |
        yes i am still alive 
 
-- intent: selfCorrection
+- intent: selfcorrection
   examples:
   - text: |
        thirty 
@@ -135,9 +135,9 @@ nlu:
 - intent: inform
   examples:
   - text: |
-       no i cant answer that question 
-  - text: |
        im not sure if i can answer that question 
+  - text: |
+       no i cant answer that question 
 
 - intent: answer
   examples:
