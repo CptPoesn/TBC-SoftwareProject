@@ -94,10 +94,13 @@ def predict_with_score(input, generator, tokenizer):
             for x,y in zip(gen_sequences, unique_normed_prob_per_sequence)]
 
 
-def weight_by_utterance_probability(pred_score):
+def weight_by_utterance_probability(pred_score, scaling_weight_utterance_prediction_score):
     # TODO (urgent): define meaningful heuristic!!!
-    return 1
-    # return -10/math.log(pred_score,10) # i.e. 10/num_decimal_zeroes # TODO use variable instead of -10
+    #return 1
+    try:
+        return float(scaling_weight_utterance_prediction_score)/math.log(pred_score,10) # i.e. 10/num_decimal_zeroes for scaling_weight_utterance_prediction_score=-10
+    except ValueError:
+        return 1/1000 # TODO: double-check: this should be a very small number
 
 
 # def intent_cumulative(intent, confi):
@@ -110,7 +113,7 @@ def weight_by_utterance_probability(pred_score):
 
 # generate up to first sentence-end marker (. or ? or !)
 
-def get_pred_text(input_so_far, predfull_text):
+def get_pred_text(input_so_far, predfull_text, predicted):
     print("predfull_text: ", predfull_text)
     punc = "[" + ".?!" + "]"  # string.punctuation
     allpunc = string.punctuation
@@ -126,7 +129,14 @@ def get_pred_text(input_so_far, predfull_text):
     return pred_text
 
 
-def main(tokenized_msg, generator, tokenizer, rasa_model, threshold, update_weight_timesteps):
+def earliest_locking_time(trp_list):
+    user_utterance, predicted_utterance, prediction = sorted(trp_list, key=(lambda x: len(x[0])))[0]
+    intent, score = prediction
+    return user_utterance, intent, predicted_utterance
+
+
+def main(tokenized_msg, generator, tokenizer, rasa_model, threshold,
+         update_weight_timesteps, predicted, scaling_weight_utterance_prediction_score):
     cumu_msg = []  # cumulated message
     intent_dict = dict()
     response_word_at_trp = ""
@@ -142,7 +152,7 @@ def main(tokenized_msg, generator, tokenizer, rasa_model, threshold, update_weig
 
         predict = predict_with_score(out, generator, tokenizer) # generate 5 text (tweet) predictions
         for item in predict:  # for each prediction text
-            pred_text = get_pred_text(cumu_msg, item["generated_text"])
+            pred_text = get_pred_text(cumu_msg, item["generated_text"], predicted)
 
             # Get intents ranking
 
@@ -156,7 +166,7 @@ def main(tokenized_msg, generator, tokenizer, rasa_model, threshold, update_weig
             for (intent, confi) in item_intent_dis:
                 if intent in intent_dict:
                     intent_update = intent_dict[intent] * (1 - update_weight_timesteps) + float(confi) * update_weight_timesteps # TODO make variable
-                    intent_update = intent_update * weight_by_utterance_probability(pred_score) # TODO get meaningful weighting heuristic
+                    intent_update = intent_update * weight_by_utterance_probability(pred_score, scaling_weight_utterance_prediction_score) # TODO get meaningful weighting heuristic
                     intent_dict[intent] = intent_update
                     if intent_update >= threshold:
                         if earliest_word == "":
@@ -164,9 +174,9 @@ def main(tokenized_msg, generator, tokenizer, rasa_model, threshold, update_weig
                         response_word_at_trp = out
                         utterance_prediction_at_trp = pred_text
                         response_intent_at_trp = sorted(intent_dict.items(), key=operator.itemgetter(1), reverse=True)[0]
-                        trp_list.append((response_word_at_trp, response_intent_at_trp))
+                        trp_list.append((out, utterance_prediction_at_trp, response_intent_at_trp))
                 else:
-                    intent_dict[intent] = float(confi) * weight_by_utterance_probability(pred_score)
+                    intent_dict[intent] = float(confi) * weight_by_utterance_probability(pred_score, scaling_weight_utterance_prediction_score)
             print(sorted(intent_dict.items(), key=operator.itemgetter(1), reverse=True))
         print("\n ------------------------- \n")
 
@@ -179,14 +189,17 @@ def main(tokenized_msg, generator, tokenizer, rasa_model, threshold, update_weig
     if not utterance_prediction_at_trp:
         utterance_prediction_at_trp = pred_text
     if not trp_list:
-        trp_list.append((response_word_at_trp, response_intent_at_trp))
+        trp_list.append((response_word_at_trp, utterance_prediction_at_trp, response_intent_at_trp))
 
-    print("full message: ", input_msg)
+    print("full message: ", " ".join(tokenized_msg))
     print("earliest possible response point: ", response_word_at_trp)
     print("top intent and confi at earliest possible response point: ", response_intent_at_trp)
     print("trp list: ", trp_list)
 
-    return cumu_msg, response_intent_at_trp, utterance_prediction_at_trp
+    # extract return values from trp-list
+    msg_at_locking_time, p_intent, p_utterance = earliest_locking_time(trp_list)
+
+    return msg_at_locking_time, p_intent, p_utterance
 
 
 if __name__ == "__main__":
@@ -221,4 +234,4 @@ if __name__ == "__main__":
     generator, tokenizer = get_utterance_predictor_and_tokenizer(predictor="huggingtweets/ppredictors")
     model = get_rasa_model(model_path)
 
-    main(tokenized_msg, generator, tokenizer, model, threshold, update_weight_timesteps)
+    main(tokenized_msg, generator, tokenizer, model, threshold, update_weight_timesteps, predicted)
