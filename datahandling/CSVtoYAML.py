@@ -21,7 +21,7 @@ def cvs_to_dict(filename):
             if not (this_row['Task'] or this_row['autoFeedback'] or this_row['timeManagement'] or
                     this_row['ownCommunicationManagement'] or this_row['partnerCommunicationManagement'] or
                     this_row['discourseStructuring'] or this_row['socialObligationsManagement']):
-                print(this_row['FS text'], 'tM:', this_row['turnManagement'], 'comm:', this_row['Comments'])
+                print(this_row['FS text'], 'tM:', this_row['turnManagement'], 'comm:', this_row['Comments'], 'from:', filename)
 
             if reader[rownum]['Task']:
                 task_label = reader[rownum]['Task']
@@ -129,7 +129,8 @@ if __name__ == '__main__':
              'CorporaTrainingEval/DBOX/diana_DiAML-MultiTab-4.csv',
              'CorporaTrainingEval/DBOX/eleanor_DiAML-MultiTab.csv',
              'CorporaTrainingEval/DBOX/rihanna_DiAML-MultiTab.csv', 'CorporaTrainingEval/DBOX/venus_DiAML-MultiTab.csv',
-             'CorporaTrainingEval/DBOX/washington_DiAML-MultiTab.csv']
+             'CorporaTrainingEval/DBOX/washington_DiAML-MultiTab.csv',
+             'unifiedCorpora/allSwitchboard.csv']
 
     # Trains
 

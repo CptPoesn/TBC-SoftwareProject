@@ -42,17 +42,17 @@ nlu:
 - intent: stalling
   examples:
   - text: |
-      the the
-  - text: |
-      well
-    metadata:
-      turnManagement: turnTake
-  - text: |
       uh
+  - text: |
+      the the
   - text: |
       um
     metadata:
       turnManagement: turnKeep
+  - text: |
+      well
+    metadata:
+      turnManagement: turnTake
 
 - intent: setquestion
   examples:
@@ -66,11 +66,11 @@ nlu:
 - intent: answer
   examples:
   - text: |
+      through Dansville
+  - text: |
       engine E two
   - text: |
       no they're both the same
-  - text: |
-      through Dansville
 
 - intent: propositionalquestion
   examples:

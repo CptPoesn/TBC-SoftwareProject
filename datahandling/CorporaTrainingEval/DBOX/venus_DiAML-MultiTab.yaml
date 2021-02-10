@@ -2,9 +2,9 @@ nlu:
 - intent: opening
   examples:
   - text: |
-       hello 
-  - text: |
        hello again 
+  - text: |
+       hello 
 
 - intent: initgreeting
   examples:
@@ -29,24 +29,24 @@ nlu:
 - intent: autopositive
   examples:
   - text: |
-       yeah 
+       okay 
   - text: |
        alright 
   - text: |
-       okay 
-  - text: |
-       great 
+       yeah 
   - text: |
        okay 
     metadata:
       turnManagement: turnTake
+  - text: |
+       great 
 
 - intent: allopositive
   examples:
   - text: |
-       alright 
-  - text: |
        great 
+  - text: |
+       alright 
 
 - intent: interactionstructuring
   examples:
@@ -56,29 +56,29 @@ nlu:
 - intent: stalling
   examples:
   - text: |
-       uhm 
+       uh 
     metadata:
-      turnManagement: turnTake
+      turnManagement: turnAccept
+  - text: |
+       uh 
+    metadata:
+      turnManagement: turnKeep
   - text: |
        uhm 
     metadata:
       turnManagement: turnKeep
+  - text: |
+       uhm 
+    metadata:
+      turnManagement: turnTake
   - text: |
        and 
     metadata:
       turnManagement: turnTake
   - text: |
-       uh 
-    metadata:
-      turnManagement: turnKeep
-  - text: |
        mmh 
     metadata:
       turnManagement: turnKeep
-  - text: |
-       uh 
-    metadata:
-      turnManagement: turnAccept
 
 - intent: suggest
   examples:
@@ -88,28 +88,28 @@ nlu:
 - intent: setquestion
   examples:
   - text: |
-       and what are you doing 
-  - text: |
        what is your mother tongue 
   - text: |
-       where are you from 
+       what is your first question 
   - text: |
        and how old are you 
   - text: |
-       what is your first question 
+       where are you from 
+  - text: |
+       and what are you doing 
 
 - intent: setanswer
   examples:
   - text: |
-       i am thirty three 
+       i am a professional tennis player 
+  - text: |
+       i am from the united states 
   - text: |
        my mother tongue is english 
   - text: |
        thirty three years old 
   - text: |
-       i am a professional tennis player 
-  - text: |
-       i am from the united states 
+       i am thirty three 
 
 - intent: propositionalquestion
   examples:
@@ -128,16 +128,16 @@ nlu:
 - intent: selfcorrection
   examples:
   - text: |
-       thirty 
-  - text: |
        with an 
+  - text: |
+       thirty 
 
 - intent: inform
   examples:
   - text: |
-       im not sure if i can answer that question 
-  - text: |
        no i cant answer that question 
+  - text: |
+       im not sure if i can answer that question 
 
 - intent: answer
   examples:
