@@ -5,7 +5,7 @@ from nltk.tokenize import word_tokenize
 from collections import defaultdict
 import csv
 import numpy as np
-import pandas
+from timeit import default_timer as timer
 
 def get_prediction(utterance, model, generator, tokenizer):
 	"""
@@ -17,10 +17,12 @@ def get_prediction(utterance, model, generator, tokenizer):
 	"""
 
 	# hyper-parameters for tuning
-	threshold = 0.8
+	threshold = 1.1
 	predicted = "by_allpunc"  # options: "by_sentend" or "by_allpunc" or "by_fulltext" for predicted text length
-	update_weight_timesteps = 0.5 # how strongly the new intent ranking is weighted compared to the previous time step
-	scaling_weight_utterance_prediction_score = -20 # the more negative, the stronger the score's influence
+	update_weight_timesteps = 0.9 # how strongly the new intent ranking is weighted compared to the previous time step; range [0,1]
+	scaling_weight_utterance_prediction_score = -17 # the more negative, the stronger the score's influence
+	averaging = True # whether we take an average over all predicted utterances or only the highest scoring utterance
+	num_utterance_predictions = 5
 
 	"""
 	run several experiments with different configuration: different weightings for incremental scores; 
@@ -35,7 +37,8 @@ def get_prediction(utterance, model, generator, tokenizer):
 
 	msg_at_trp, predicted_intent, utterance_prediction_at_trp = \
 		dm.main(tokenized_msg, generator, tokenizer, model, threshold,
-				update_weight_timesteps, predicted, scaling_weight_utterance_prediction_score)
+				update_weight_timesteps, predicted, scaling_weight_utterance_prediction_score,
+				average=averaging, num_utterance_predictions=num_utterance_predictions)
 
 	# return values
 	cumu_msg_at_trp = word_tokenize(msg_at_trp)
@@ -51,6 +54,7 @@ def get_prediction(utterance, model, generator, tokenizer):
 
 # train model (manually or within script whichever is easier)
 #TODO
+start = timer()
 
 # get models
 model_path = "../../Softwareprojekt/rasa_test/models"
@@ -61,7 +65,7 @@ model = dm.get_rasa_model(model_path)
 confusion_matrix = defaultdict(lambda: defaultdict(int))
 locking_times = []
 response_times = []
-corpus_file_name = "CorporaTrainingEval/Switchboard/sw02-0224_DiAML-MultiTab._for_development.csv"
+corpus_file_name = "C:/Users/schmi/Downloads/rasa-master/unifiedCorpora/allSwitchboard._for_development.csv"
 with open(corpus_file_name, mode='r') as csv_file:
 	csv_reader = csv.DictReader(csv_file)
 	for row in csv_reader:
@@ -81,6 +85,7 @@ print("total sum: ", total_sum)
 accuracy = true_positives / total_sum
 print("accuracy: ", accuracy)
 
+end = timer()
 """
 import pickle
 
@@ -96,6 +101,13 @@ print("locking times: ", locking_times)
 print("average locking time: ", sum(locking_times)/total_sum, " +/- ", np.std(locking_times))
 print("response delivery times: ", response_times)
 print("average response time: ", sum(response_times) / total_sum, " +/- ", np.std(response_times))
+	# Gervits: 	baseline (=without prediction of trp) response_time = 1.4 seconds
+	# 			Switchboard mean syllable duration = 200 ms
+	#			English: ~1.5 syllables / word
+	#			very roughly, Gervits et al.'s baseline translates into 4.6 tokens after the EOU
+	#			or: English: ~100-130 words/minute => baseline translates into 3-4 tokens
+print("Execution time: ", start-end)
+
 
 
 
