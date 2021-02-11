@@ -22,6 +22,7 @@ def get_prediction(utterance, model, generator, tokenizer):
 	update_weight_timesteps = 0.9 # how strongly the new intent ranking is weighted compared to the previous time step; range [0,1]
 	scaling_weight_utterance_prediction_score = -17 # the more negative, the stronger the score's influence
 	averaging = True # whether we take an average over all predicted utterances or only the highest scoring utterance
+	averaging_weight = 0.8 # how strongly the individual score of the most successful utterance is weighted against the avarage of all scores
 	num_utterance_predictions = 5
 
 	"""
@@ -38,7 +39,8 @@ def get_prediction(utterance, model, generator, tokenizer):
 	msg_at_trp, predicted_intent, utterance_prediction_at_trp = \
 		dm.main(tokenized_msg, generator, tokenizer, model, threshold,
 				update_weight_timesteps, predicted, scaling_weight_utterance_prediction_score,
-				average=averaging, num_utterance_predictions=num_utterance_predictions)
+				average=averaging, averaging_weight=averaging_weight,
+				num_utterance_predictions=num_utterance_predictions)
 
 	# return values
 	cumu_msg_at_trp = word_tokenize(msg_at_trp)
