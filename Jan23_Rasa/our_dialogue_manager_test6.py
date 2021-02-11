@@ -145,7 +145,7 @@ def earliest_locking_time(trp_list):
 
 def main(tokenized_msg, generator, tokenizer, rasa_model, threshold,
          update_weight_timesteps, predicted, scaling_weight_utterance_prediction_score,
-         average=False, num_utterance_predictions = 5): #TODO implement num_utt_pred
+         average=False, averaging_weight = 0.5, num_utterance_predictions = 5): #TODO implement num_utt_pred
     cumu_msg = []  # cumulated message
     intent_dict = defaultdict(int)
     trp_list = list()
@@ -193,8 +193,7 @@ def main(tokenized_msg, generator, tokenizer, rasa_model, threshold,
             if average:
                 # replace score by average over the scores of all utterance predictions at this time step
                 average = sum([x[1] for x in predictions]) / 5.0  # score = average_score
-                weight = 0.5
-                score = average * (1- weight) + score * weight
+                score = average * (1- averaging_weight) + score * averaging_weight
 
             intent_dict[intent] = intent_dict[intent] * (
                         1 - update_weight_timesteps) + score * update_weight_timesteps  # in Gervits et al.: update_weight_timesteps=1.0
