@@ -1,0 +1,22 @@
+utterance,intent
+which engine would you like to use,setquestion
+engine E two,answer
+alright,autopositive
+well,stalling
+will either one take me there any quicker,propositionalquestion
+uh,stalling
+they're a they're,selfcorrection
+no they're both the same,answer
+okay,autopositive
+then I'll take engine E two,inform_pass
+alright,autopositive
+the tankers move at the same speed,setquestion
+right,confirm
+okay,interactionstructuring
+so uh,stalling
+the plan is to take engine E two to Corning pick up a tanker back to Elmira load it with orange juice and then to Avon,checkquestion
+right,confirm
+how long will that take,setquestion
+eleven hours,answer
+okay,interactionstructuring
+I am now finished,interactionstructuring

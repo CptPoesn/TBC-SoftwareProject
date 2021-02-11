@@ -1,0 +1,24 @@
+utterance,intent
+so did you wanna repeat that plan,request
+okay,acceptrequest
+engine one goes to Dansville picks up three boxcars goes to Corning is loaded with oranges and goes to Bath engine E two picks takes the two boxcars at Elmira to Corning where they're loaded with oranges and then takes them to Bath,inform_pass
+okay,allopositive
+so that gives us a maximum number of five,inform_continue
+okay,interactionstructuring
+hello,opening
+can I help you,offer
+yes,acceptoffer
+I'd like to take a tanker from Corning and bring it to Elmira,inform_pass
+alright,autopositive
+and from Elmira I'd like to load orange juice into the tanker,inform_pass
+mm-hm,autopositive
+I'd like then to take the tanker back from Elmira to Corning,inform_continue
+the the,stalling
+alright,autopositive
+now from Corning what would be the quickest route to Avon,setquestion
+uh,stalling
+through Dansville,answer
+okay,autopositive
+then I'd like to take the tanker of orange juice through Dansville and then on to Avon,inform_pass
+alright,autopositive
+um,stalling

@@ -22,15 +22,15 @@ nlu:
 - intent: stalling
   examples:
   - text: |
+      I want t-
+  - text: |
       ... hm so
   - text: |
-      VOC_breath
-  - text: |
-      VOC_breath
+      ... um
     metadata:
       turnManagement: turnKeep
   - text: |
-      ... um
+      VOC_breath so VOC_breath
     metadata:
       turnManagement: turnKeep
   - text: |
@@ -38,54 +38,52 @@ nlu:
     metadata:
       turnManagement: turnKeep
   - text: |
-      I want t-
+      VOC_breath hm ... so
   - text: |
-      VOC_breath so VOC_breath
+      VOC_breath
     metadata:
       turnManagement: turnKeep
   - text: |
-      VOC_breath hm ... so
+      VOC_breath
 
 - intent: inform_continue
   examples:
   - text: |
+      I guess all the boxcars will have to go through Corning
+  - text: |
       have it go to Bath pick up those two box cars
-  - text: |
-      but the thing is that I was thinking if we could actually pick up those two boxcars which are at Bath
-  - text: |
-      I want to determine the maximum number of boxcars of oranges that I can get to Bath by seven a.m. tomorrow
   - text: |
       because that's where the orange juice factory is
   - text: |
-      but I think that we can't even put them in to
-  - text: |
-      we could actually take like engine E
-  - text: |
-      I guess all the boxcars will have to go through Corning
+      but the thing is that I was thinking if we could actually pick up those two boxcars which are at Bath
   - text: |
       like I don't think we so to get the maximum number of box cars of oranges to bath by seven am I don't think we can even use those two at Bath
   - text: |
-      that they won't even come in to
+      we could actually take like engine E
+  - text: |
+      I want to determine the maximum number of boxcars of oranges that I can get to Bath by seven a.m. tomorrow
   - text: |
       we have the three boxcars at Dansville
   - text: |
       we can unload any amount of cargo onto a train in one hour
   - text: |
       so we're like screwed as far as those two box cars at Bath
+  - text: |
+      but I think that we can't even put them in to
+  - text: |
+      that they won't even come in to
 
 - intent: selfcorrection
   examples:
   - text: |
       orange factory
   - text: |
-      to Corning
-  - text: |
       that they won't even come in to
+  - text: |
+      to Corning
 
 - intent: setquestion
   examples:
-  - text: |
-      how far is it from Elmira to Bath VOC_breath
   - text: |
       from Corning to Bath how far is that
     metadata:
@@ -93,20 +91,22 @@ nlu:
   - text: |
       how far is it from Avon to Bath
   - text: |
+      how far is it from Avon to Danville
+  - text: |
       how long from Bath to Corning
   - text: |
-      I thought well from like Elmira through to Corning to Bath is many hours
+      how far is it from Elmira to Bath VOC_breath
   - text: |
-      how far is it from Avon to Danville
+      I thought well from like Elmira through to Corning to Bath is many hours
 
 - intent: answer
   examples:
   - text: |
-      that's six hours 
-  - text: |
       three hours
   - text: |
       four hours
+  - text: |
+      that's six hours 
   - text: |
       one hour
   - text: |
@@ -115,17 +115,17 @@ nlu:
 - intent: checkquestion
   examples:
   - text: |
-      every trip will take at least three hours then
-  - text: |
       an hour I guess
+  - text: |
+      so we can actually use those three boxcars right
+    metadata:
+      turnManagement: turnAssign
   - text: |
       and it's gonna take us also an hour to load boxcars right
     metadata:
       turnManagement: turnAssign
   - text: |
-      so we can actually use those three boxcars right
-    metadata:
-      turnManagement: turnAssign
+      every trip will take at least three hours then
 
 - intent: confirm
   examples:
@@ -137,52 +137,52 @@ nlu:
 - intent: autopositive
   examples:
   - text: |
+      three hours
+  - text: |
       okay
     metadata:
       turnManagement: turnTake
   - text: |
-      okay
+      oh that's four hours
+  - text: |
+      mm
+  - text: |
+      oh really
   - text: |
       VOC_click VOC_breath
     metadata:
       turnManagement: turnTake
   - text: |
+      from Avon
+  - text: |
+      okay
+  - text: |
       right
   - text: |
       oh wait a second
-  - text: |
-      three hours
-  - text: |
-      oh that's four hours
-  - text: |
-      oh really
-  - text: |
-      mm
-  - text: |
-      from Avon
 
 - intent: inform_pass
   examples:
   - text: |
       it's shorter through Dansville
   - text: |
-      we can do a maximum of three boxcars in an hour
-  - text: |
       because we can't get an engine to Bath in time
+  - text: |
+      we can do a maximum of three boxcars in an hour
 
 - intent: suggest
   examples:
   - text: |
-      I guess one thing is that we should see how many boxcars we can actually get to Corning in four hours
-  - text: |
       I guess one thing we can do
+  - text: |
+      I guess one thing is that we should see how many boxcars we can actually get to Corning in four hours
 
 - intent: selferror
   examples:
   - text: |
-      oh
-  - text: |
       oh no
+  - text: |
+      oh
 
 - intent: retraction
   examples:

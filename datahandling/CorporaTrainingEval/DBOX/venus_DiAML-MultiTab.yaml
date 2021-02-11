@@ -2,9 +2,9 @@ nlu:
 - intent: opening
   examples:
   - text: |
-       hello again 
-  - text: |
        hello 
+  - text: |
+       hello again 
 
 - intent: initgreeting
   examples:
@@ -30,23 +30,23 @@ nlu:
   examples:
   - text: |
        okay 
+    metadata:
+      turnManagement: turnTake
+  - text: |
+       okay 
   - text: |
        great 
   - text: |
        yeah 
   - text: |
        alright 
-  - text: |
-       okay 
-    metadata:
-      turnManagement: turnTake
 
 - intent: allopositive
   examples:
   - text: |
-       alright 
-  - text: |
        great 
+  - text: |
+       alright 
 
 - intent: interactionstructuring
   examples:
@@ -56,29 +56,29 @@ nlu:
 - intent: stalling
   examples:
   - text: |
-       uhm 
+       uh 
     metadata:
-      turnManagement: turnTake
-  - text: |
-       and 
-    metadata:
-      turnManagement: turnTake
-  - text: |
-       uhm 
-    metadata:
-      turnManagement: turnKeep
+      turnManagement: turnAccept
   - text: |
        mmh 
     metadata:
       turnManagement: turnKeep
   - text: |
-       uh 
+       and 
     metadata:
-      turnManagement: turnAccept
+      turnManagement: turnTake
   - text: |
        uh 
     metadata:
       turnManagement: turnKeep
+  - text: |
+       uhm 
+    metadata:
+      turnManagement: turnKeep
+  - text: |
+       uhm 
+    metadata:
+      turnManagement: turnTake
 
 - intent: suggest
   examples:
@@ -88,37 +88,37 @@ nlu:
 - intent: setquestion
   examples:
   - text: |
+       and how old are you 
+  - text: |
        what is your mother tongue 
   - text: |
-       and how old are you 
+       where are you from 
   - text: |
        what is your first question 
   - text: |
        and what are you doing 
-  - text: |
-       where are you from 
 
 - intent: setanswer
   examples:
   - text: |
        i am from the united states 
   - text: |
-       my mother tongue is english 
-  - text: |
-       thirty three years old 
+       i am a professional tennis player 
   - text: |
        i am thirty three 
   - text: |
-       i am a professional tennis player 
+       my mother tongue is english 
+  - text: |
+       thirty three years old 
 
 - intent: propositionalquestion
   examples:
   - text: |
-       and youre still alive 
+       are you successful in tennis 
   - text: |
        does your first name start with an s 
   - text: |
-       are you successful in tennis 
+       and youre still alive 
 
 - intent: propositionalanswer
   examples:
@@ -135,9 +135,9 @@ nlu:
 - intent: inform
   examples:
   - text: |
-       im not sure if i can answer that question 
-  - text: |
        no i cant answer that question 
+  - text: |
+       im not sure if i can answer that question 
 
 - intent: answer
   examples:

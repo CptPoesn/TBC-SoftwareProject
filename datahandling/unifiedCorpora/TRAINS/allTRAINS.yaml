@@ -1,0 +1,368 @@
+nlu:
+- intent: opening
+  examples:
+  - text: |
+      hello
+
+- intent: initialgreeting
+  examples:
+  - text: |
+      hello
+
+- intent: offer
+  examples:
+  - text: |
+      can I help you
+
+- intent: acceptoffer
+  examples:
+  - text: |
+      yeah
+  - text: |
+      yes
+
+- intent: inform_continue
+  examples:
+  - text: |
+      so that's good
+  - text: |
+      have it go to Bath pick up those two box cars
+  - text: |
+      so that's three boxcars
+  - text: |
+      then I guess we can also take like engine E two with those two boxcars from Elmira take it to Corning
+  - text: |
+      like I don't think we so to get the maximum number of box cars of oranges to bath by seven am I don't think we can even use those two at Bath
+  - text: |
+      so that's engine E one from Avon going to Dansville pick up the three boxcars go to Corning load them up and then take it to Bath
+  - text: |
+      and I can only use engine two it's all the way over here
+  - text: |
+      but the thing is that I was thinking if we could actually pick up those two boxcars which are at Bath
+  - text: |
+      we could actually take like engine E
+  - text: |
+      I want to determine the maximum number of boxcars of oranges that I can get to Bath by seven a.m. tomorrow
+  - text: |
+      so we're like screwed as far as those two box cars at Bath
+  - text: |
+      two tankers of OJ to Avon would mean I take engine two and take the two b(oxcars)- from Elmira and bring them over and pick up two and bring them back to Elmira to fill with OJ
+  - text: |
+      because that's where the orange juice factory is
+  - text: |
+      the two tankers
+  - text: |
+      I have a problem I need to transport two tankers of OJ to Avon and three boxcars of bananas to Elmira
+  - text: |
+      but I think that we can't even put them in to
+  - text: |
+      that they won't even come in to
+  - text: |
+      in Avon I want to load three box- drop off the one engine drop off the two tankers of OJ
+  - text: |
+      I guess all the boxcars will have to go through Corning
+  - text: |
+      we have the three boxcars at Dansville
+  - text: |
+      we can unload any amount of cargo onto a train in one hour
+  - text: |
+      four p.m.
+
+- intent: inform_pass
+  examples:
+  - text: |
+      bring it with me with the other two to Avon
+  - text: |
+      when I reach Dansville I wanna pick up one more boxcar
+  - text: |
+      it's shorter through Dansville
+  - text: |
+      yeah that should also work
+  - text: |
+      we'll get there by seven p.m.
+  - text: |
+      load those three
+  - text: |
+      it's now noon when you arrive in Avon
+  - text: |
+      I can only use engine two
+  - text: |
+      we can do a maximum of three boxcars in an hour
+  - text: |
+      because we can't get an engine to Bath in time
+  - text: |
+      the bananas must arrive in Elmira by nine p.m.
+  - text: |
+      I guess I still have nine hours
+  - text: |
+      fill up the three boxcars with bananas
+  - text: |
+      bring them back to Elmira
+
+- intent: autopositive
+  examples:
+  - text: |
+      three hours
+  - text: |
+      okay then that way
+  - text: |
+      okay
+    metadata:
+      turnManagement: turnTake
+  - text: |
+      oh that's four hours
+  - text: |
+      mm
+  - text: |
+      oh really
+  - text: |
+      VOC_click VOC_breath
+    metadata:
+      turnManagement: turnTake
+  - text: |
+      from Avon
+  - text: |
+      mm-hm
+  - text: |
+      okay that's fine
+  - text: |
+      okay
+  - text: |
+      right
+  - text: |
+      oh wait a second
+
+- intent: stalling
+  examples:
+  - text: |
+      and ..
+    metadata:
+      turnManagement: turnKeep
+  - text: |
+      uh …
+    metadata:
+      turnManagement: turnAccept
+  - text: |
+      VOC mumble .. VOC click ..
+  - text: |
+      so … VOC noise
+    metadata:
+      turnManagement: turnTake
+  - text: |
+      um
+    metadata:
+      turnManagement: turnKeep
+  - text: |
+      VOC_breath
+    metadata:
+      turnManagement: turnKeep
+  - text: |
+      I want t-
+  - text: |
+      ... hm so
+  - text: |
+      uh
+    metadata:
+      turnManagement: turnTake
+  - text: |
+      of ..
+  - text: |
+      f- .. uh
+    metadata:
+      turnManagement: turnTake
+  - text: |
+      VOC_breath
+  - text: |
+      ... um
+    metadata:
+      turnManagement: turnKeep
+  - text: |
+      VOC_breath hm ... so
+  - text: |
+      um
+    metadata:
+      turnManagement: turnTake
+  - text: |
+      when I reach, when I reach
+  - text: |
+      t(o)-
+  - text: |
+      VOC_breath so VOC_breath
+    metadata:
+      turnManagement: turnKeep
+  - text: |
+      VOC_breath so
+    metadata:
+      turnManagement: turnKeep
+  - text: |
+      okay
+  - text: |
+      four p.m.
+
+- intent: propositionalquestion
+  examples:
+  - text: |
+      do you wanna load the boxcars while you're in Corning
+
+- intent: answer
+  examples:
+  - text: |
+      I will take them with me
+  - text: |
+      three hours
+  - text: |
+      four hours
+  - text: |
+      yeah to Corning to Dansville to Avon
+  - text: |
+      yes
+  - text: |
+      that's six hours 
+  - text: |
+      one hour
+  - text: |
+      to Dansville to Corning to Elmira
+  - text: |
+      two hours
+  - text: |
+      to Corning
+
+- intent: instruct
+  examples:
+  - text: |
+      then make the OJ in Elmira with engine two and take it from Elmira to Corning to Dansville to Avon
+
+- intent: choicequestion
+  examples:
+  - text: |
+      do you wanna take the boxcars with you or do you want to leave them in Elmira
+    metadata:
+      turnManagement: turnAssign
+
+- intent: checkquestion
+  examples:
+  - text: |
+      so you wanna go from Elmira
+  - text: |
+      every trip will take at least three hours then
+  - text: |
+      so we can actually use those three boxcars right
+    metadata:
+      turnManagement: turnAssign
+  - text: |
+      an hour I guess
+  - text: |
+      so Elmira to Corning is two hours
+  - text: |
+      and it's gonna take us also an hour to load boxcars right
+    metadata:
+      turnManagement: turnAssign
+
+- intent: completion
+  examples:
+  - text: |
+      to Avon
+
+- intent: setquestion
+  examples:
+  - text: |
+      from Corning to Bath how far is that
+    metadata:
+      turnManagement: turnAssign
+  - text: |
+      how far is it from Avon to Bath
+  - text: |
+      how far is it from Avon to Danville
+  - text: |
+      how long from Bath to Corning
+  - text: |
+      how far is it from Elmira to Bath VOC_breath
+  - text: |
+      I thought well from like Elmira through to Corning to Bath is many hours
+  - text: |
+      which way do we wanna go
+  - text: |
+      by which way
+
+- intent: pausing
+  examples:
+  - text: |
+      oh oh wait
+  - text: |
+      let me think
+  - text: |
+      let me see
+  - text: |
+      let's see
+    metadata:
+      turnManagement: turnKeep
+
+- intent: inform
+  examples:
+  - text: |
+      I have something else to say
+  - text: |
+      I am now finished
+
+- intent: selfcorrection
+  examples:
+  - text: |
+      I when I hit- when I reach
+  - text: |
+      the one tanker the two tankers
+  - text: |
+      orange factory
+  - text: |
+      the two tankers
+  - text: |
+      that they won't even come in to
+  - text: |
+      of oranges and of OJ actually
+  - text: |
+      to Corning
+
+- intent: interactionstructuring
+  examples:
+  - text: |
+      okay great
+
+- intent: confirm
+  examples:
+  - text: |
+      right
+  - text: |
+      mm-hm
+
+- intent: suggest
+  examples:
+  - text: |
+      I guess one thing we can do
+  - text: |
+      I guess one thing is that we should see how many boxcars we can actually get to Corning in four hours
+
+- intent: selferror
+  examples:
+  - text: |
+      oh no
+  - text: |
+      oh
+
+- intent: retraction
+  examples:
+  - text: |
+      unless
+  - text: |
+      take it to Corn-
+
+- intent: agreement
+  examples:
+  - text: |
+      that's right
+  - text: |
+      mm-hm
+
+- intent: setquestion
+  examples:
+  - text: |
+      then from Dansville to Corning
+

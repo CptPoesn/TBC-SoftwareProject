@@ -16,20 +16,22 @@ nlu:
 - intent: returngreeting
   examples:
   - text: |
-       hello 
-  - text: |
        nice to meet you 
+  - text: |
+       hello 
 
 - intent: stalling
   examples:
   - text: |
        uhm 
     metadata:
-      turnManagement: turnTake
+      turnManagement: turnAccept
   - text: |
        uh 
+    metadata:
+      turnManagement: turnTake
   - text: |
-       uhm 
+       mh 
     metadata:
       turnManagement: turnKeep
   - text: |
@@ -37,32 +39,30 @@ nlu:
     metadata:
       turnManagement: turnKeep
   - text: |
-       mh 
-    metadata:
-      turnManagement: turnKeep
+       uh 
   - text: |
        uh 
     metadata:
-      turnManagement: turnTake
+      turnManagement: turnKeep
   - text: |
        uhm 
     metadata:
-      turnManagement: turnAccept
+      turnManagement: turnKeep
+  - text: |
+       uhm 
+    metadata:
+      turnManagement: turnTake
   - text: |
        ehm 
     metadata:
       turnManagement: turnTake
-  - text: |
-       uh 
-    metadata:
-      turnManagement: turnKeep
 
 - intent: setquestion
   examples:
   - text: |
-       how are you doing today 
-  - text: |
        what is your first question 
+  - text: |
+       how are you doing today 
   - text: |
        whats your name 
   - text: |
@@ -71,32 +71,32 @@ nlu:
 - intent: setanswer
   examples:
   - text: |
-       my name is gregor linn 
-  - text: |
        fine 
+  - text: |
+       my name is gregor linn 
 
 - intent: autopositive
   examples:
   - text: |
-       nice to meet you 
+       okay i understand 
   - text: |
        okay 
   - text: |
-       mhm 
-    metadata:
-      turnManagement: turnTake
-  - text: |
-       okay i understand 
-  - text: |
        im doing well too 
   - text: |
-       alright 
+       nice to meet you 
+  - text: |
+       ah okay 
   - text: |
        mhm 
     metadata:
       turnManagement: turnRelease
   - text: |
-       ah okay 
+       alright 
+  - text: |
+       mhm 
+    metadata:
+      turnManagement: turnTake
 
 - intent: inform
   examples:
@@ -106,18 +106,18 @@ nlu:
 - intent: interactionstructuring
   examples:
   - text: |
-       so first ill tell you the rules 
+       alright 
   - text: |
        alright and one more important thing 
   - text: |
-       alright 
+       so first ill tell you the rules 
 
 - intent: selfcorrection
   examples:
   - text: |
-       i will 
-  - text: |
        is 
+  - text: |
+       i will 
   - text: |
        would you 
 
@@ -141,20 +141,20 @@ nlu:
 - intent: propositionalquestion
   examples:
   - text: |
-       are you still alive 
+       are you from america 
   - text: |
        are you from germany 
   - text: |
-       are you from america 
+       are you still alive 
 
 - intent: propositionalanswer
   examples:
   - text: |
-       no i am not from germany 
+       no i am not from america 
   - text: |
        no i am not 
   - text: |
-       no i am not from america 
+       no i am not from germany 
 
 - intent: pausing
   examples:
