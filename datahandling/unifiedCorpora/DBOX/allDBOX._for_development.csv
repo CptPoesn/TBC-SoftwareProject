@@ -1,0 +1,45 @@
+utterance,intent
+ could you clarify ,autonegative
+ okay ,acceptrequest
+ uh ,stalling
+ while you were at the peak of your power which position did you occupy in the country ,setquestion
+ uh ,stalling
+ which position ,selfcorrection
+ uhm ,stalling
+ i was the queen consort of france and later the queen consort of england ,setanswer
+ okay ,autopositive
+ and during which year were you the queen consort of england ,setquestion
+ uhm ,stalling
+ years ,selfcorrection
+ from eleven fifty four to eleven eighty nine ,setanswer
+ okay ,autopositive
+ uh ,stalling
+ wait ,request
+ now how do i ask that ,autopositive
+ how do ,selfcorrection
+ now that does not work ,autonegative
+ okay ,stalling
+ how did you die ,setquestion
+ just a minute ,pausing
+ i dont have an answer to that question ,inform
+ okay ,autopositive
+ who was your husband during your time as queen regent of england ,setquestion
+ uh ,stalling
+ just a minute ,pausing
+ i was ,setanswer
+ uh ,stalling
+ just a second ,pausing
+ yes ,autopositive
+ SIL i was married to henry duke of normandy who became king henry the second of england ,setanswer
+ SIL i was ,selfcorrection
+ uhm ,stalling
+ king ,selfcorrection
+ ok ,autopositive
+ uhm ,stalling
+ what are you most known for in history of humankind ,setquestion
+ if its not too general for a question ,inform_pass
+ that is a very good question ,allopositive
+ im not sure if i can answer it ,inform
+ give me just a second ,request
+ not sure that i can fully answer that question ,inform
+ okay ,autopositive

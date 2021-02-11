@@ -31,9 +31,9 @@ nlu:
   - text: |
        what is your first question 
   - text: |
-       where are you from 
-  - text: |
        what are your initials 
+  - text: |
+       where are you from 
 
 - intent: autopositive
   examples:
@@ -63,9 +63,9 @@ nlu:
 - intent: propositionalanswer
   examples:
   - text: |
-       yes i am a real person 
-  - text: |
        no i am still alive 
+  - text: |
+       yes i am a real person 
 
 - intent: stalling
   examples:

@@ -130,7 +130,8 @@ if __name__ == '__main__':
              'CorporaTrainingEval/DBOX/eleanor_DiAML-MultiTab.csv',
              'CorporaTrainingEval/DBOX/rihanna_DiAML-MultiTab.csv', 'CorporaTrainingEval/DBOX/venus_DiAML-MultiTab.csv',
              'CorporaTrainingEval/DBOX/washington_DiAML-MultiTab.csv',
-             'unifiedCorpora/allSwitchboard.csv']
+             'unifiedCorpora/Switchboard/allSwitchboard.csv',
+             'unifiedCorpora/DBOX/allDBOX.csv']
 
     # Trains
 

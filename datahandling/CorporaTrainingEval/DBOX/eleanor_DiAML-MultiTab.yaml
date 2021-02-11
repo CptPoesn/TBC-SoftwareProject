@@ -2,9 +2,9 @@ nlu:
 - intent: opening
   examples:
   - text: |
-       hello 
-  - text: |
        alright hello again 
+  - text: |
+       hello 
 
 - intent: initgreeting
   examples:
@@ -19,21 +19,11 @@ nlu:
 - intent: autopositive
   examples:
   - text: |
-       $LAUGH 
-  - text: |
        okay 
-  - text: |
-       now how do i ask that 
-  - text: |
-       okay 
-    metadata:
-      turnManagement: turnTake
   - text: |
        great 
   - text: |
-       okay 
-    metadata:
-      turnManagement: turnKeep
+       now how do i ask that 
   - text: |
        yes 
   - text: |
@@ -43,29 +33,45 @@ nlu:
     metadata:
       turnManagement: turnTake
   - text: |
+       okay 
+    metadata:
+      turnManagement: turnKeep
+  - text: |
        france 
+  - text: |
+       $LAUGH 
+  - text: |
+       okay 
+    metadata:
+      turnManagement: turnTake
 
 - intent: allopositive
   examples:
   - text: |
        great 
   - text: |
-       that is a very good question 
-  - text: |
        okay 
+  - text: |
+       that is a very good question 
 
 - intent: stalling
   examples:
   - text: |
        uh 
-    metadata:
-      turnManagement: turnAccept
   - text: |
-       uh 
+       uhm 
     metadata:
       turnManagement: turnKeep
   - text: |
+       uh 
+    metadata:
+      turnManagement: turnAccept
+  - text: |
        uhm 
+    metadata:
+      turnManagement: turnAccept
+  - text: |
+       okay 
     metadata:
       turnManagement: turnKeep
   - text: |
@@ -73,15 +79,9 @@ nlu:
     metadata:
       turnManagement: turnAccept
   - text: |
-       uhm 
-    metadata:
-      turnManagement: turnAccept
-  - text: |
-       okay 
+       uh 
     metadata:
       turnManagement: turnKeep
-  - text: |
-       uh 
 
 - intent: checkquestion
   examples:
@@ -96,42 +96,42 @@ nlu:
 - intent: setquestion
   examples:
   - text: |
-       what are you most known for in history of humankind 
-  - text: |
-       which country $UNINTELLIGIBLE 
-  - text: |
-       can you name one thing that many people know that you did 
-  - text: |
        during which years exactly did you reign 
   - text: |
-       what is your first question 
+       what are you most known for in history of humankind 
   - text: |
        who was your husband during your time as queen regent of england 
   - text: |
-       how did you die 
+       what is your first question 
+  - text: |
+       what are you famous for 
+  - text: |
+       can you name one thing that many people know that you did 
+  - text: |
+       which country $UNINTELLIGIBLE 
   - text: |
        while you were at the peak of your power which position did you occupy in the country 
   - text: |
-       and during which year were you the queen consort of england 
+       how did you die 
   - text: |
-       what are you famous for 
+       and during which year were you the queen consort of england 
 
 - intent: setanswer
   examples:
   - text: |
        i was the queen consort of france and later the queen consort of england 
   - text: |
-       SIL i was married to henry duke of normandy who became king henry the second of england 
+       i am famous for being one of the wealthiest and most powerful women in western europe during the middle ages 
   - text: |
        i was 
   - text: |
-       i am famous for being one of the wealthiest and most powerful women in western europe during the middle ages 
-  - text: |
-       i was married to two kings and i participated in the second crusade while queen of france 
-  - text: |
        from eleven fifty four to eleven eighty nine 
   - text: |
+       SIL i was married to henry duke of normandy who became king henry the second of england 
+  - text: |
        france 
+  - text: |
+       i was married to two kings and i participated in the second crusade while queen of france 
 
 - intent: choicequestion
   examples:
@@ -150,17 +150,17 @@ nlu:
 - intent: pausing
   examples:
   - text: |
-       just a second 
+       just a minute 
+    metadata:
+      turnManagement: turnKeep
   - text: |
        just a minute 
     metadata:
       turnManagement: turnAccept
   - text: |
-       yeah 
+       just a second 
   - text: |
-       just a minute 
-    metadata:
-      turnManagement: turnKeep
+       yeah 
 
 - intent: autonegative
   examples:
@@ -177,17 +177,17 @@ nlu:
 - intent: selfcorrection
   examples:
   - text: |
-       years 
-  - text: |
        documented 
   - text: |
-       SIL i was 
+       how do 
   - text: |
        which position 
   - text: |
-       king 
+       SIL i was 
   - text: |
-       how do 
+       years 
+  - text: |
+       king 
 
 - intent: request
   examples:
@@ -201,13 +201,13 @@ nlu:
 - intent: inform
   examples:
   - text: |
-       i dont have an answer to that question 
+       not sure that i can fully answer that question 
   - text: |
        im not sure if i can answer it 
   - text: |
-       not sure that i can fully answer that question 
-  - text: |
        unfortunately im not sure how to answer that question 
+  - text: |
+       i dont have an answer to that question 
   - text: |
        but i dont have a answer to that question 
 
@@ -221,9 +221,9 @@ nlu:
   - text: |
        did you have any religious epiphanies 
   - text: |
-       documented 
-  - text: |
        are you considered a hero by some 
+  - text: |
+       documented 
 
 - intent: propositionalanswer
   examples:

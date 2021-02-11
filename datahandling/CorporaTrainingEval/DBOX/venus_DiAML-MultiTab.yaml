@@ -31,22 +31,22 @@ nlu:
   - text: |
        okay 
   - text: |
-       alright 
+       great 
   - text: |
        yeah 
+  - text: |
+       alright 
   - text: |
        okay 
     metadata:
       turnManagement: turnTake
-  - text: |
-       great 
 
 - intent: allopositive
   examples:
   - text: |
-       great 
-  - text: |
        alright 
+  - text: |
+       great 
 
 - intent: interactionstructuring
   examples:
@@ -56,18 +56,6 @@ nlu:
 - intent: stalling
   examples:
   - text: |
-       uh 
-    metadata:
-      turnManagement: turnAccept
-  - text: |
-       uh 
-    metadata:
-      turnManagement: turnKeep
-  - text: |
-       uhm 
-    metadata:
-      turnManagement: turnKeep
-  - text: |
        uhm 
     metadata:
       turnManagement: turnTake
@@ -76,7 +64,19 @@ nlu:
     metadata:
       turnManagement: turnTake
   - text: |
+       uhm 
+    metadata:
+      turnManagement: turnKeep
+  - text: |
        mmh 
+    metadata:
+      turnManagement: turnKeep
+  - text: |
+       uh 
+    metadata:
+      turnManagement: turnAccept
+  - text: |
+       uh 
     metadata:
       turnManagement: turnKeep
 
@@ -90,18 +90,16 @@ nlu:
   - text: |
        what is your mother tongue 
   - text: |
-       what is your first question 
-  - text: |
        and how old are you 
   - text: |
-       where are you from 
+       what is your first question 
   - text: |
        and what are you doing 
+  - text: |
+       where are you from 
 
 - intent: setanswer
   examples:
-  - text: |
-       i am a professional tennis player 
   - text: |
        i am from the united states 
   - text: |
@@ -110,15 +108,17 @@ nlu:
        thirty three years old 
   - text: |
        i am thirty three 
+  - text: |
+       i am a professional tennis player 
 
 - intent: propositionalquestion
   examples:
   - text: |
-       are you successful in tennis 
-  - text: |
        and youre still alive 
   - text: |
        does your first name start with an s 
+  - text: |
+       are you successful in tennis 
 
 - intent: propositionalanswer
   examples:
@@ -135,9 +135,9 @@ nlu:
 - intent: inform
   examples:
   - text: |
-       no i cant answer that question 
-  - text: |
        im not sure if i can answer that question 
+  - text: |
+       no i cant answer that question 
 
 - intent: answer
   examples:

@@ -1,0 +1,46 @@
+utterance,intent
+ can you name one thing that many people know that you did ,setquestion
+ mh ,stalling
+ i was married to two kings and i participated in the second crusade while queen of france ,setanswer
+ okay ,autopositive
+ uh ,stalling
+ uh ,stalling
+ did you have any religious epiphanies ,propositionalquestion
+ uhm ,stalling
+ documented ,propositionalquestion
+ documented ,selfcorrection
+ i dont have an answer to that question ,inform
+ okay ,autopositive
+ uhm ,stalling
+ are you more famous for your time in england or in france ,choicequestion
+ unfortunately im not sure how to answer that question ,answer
+ unfortunately im not sure how to answer that question ,inform
+ are you considered a hero by some ,propositionalquestion
+ that is possible ,propositionalanswer
+ but i dont have a answer to that question ,inform
+ okay ,autopositive
+ uhm ,stalling
+ sorry ,apology
+ yeah ,allopositive
+ yeah ,acceptapology
+ youre not giving me a lot to work with ,allonegative
+ I know ,agreement
+ okay ,autopositive
+ uhm ,stalling
+ wait ,request
+ no ,correction
+ yeah ,autopositive
+ uhm ,stalling
+ uhm ,stalling
+ uhm ,stalling
+ uhm ,stalling
+ nah i dont think i know her ,inform
+ mkay ,autopositive
+ my name is eleanor of aquitaine ,inform_pass
+ know ,autopositive
+ alright ,allopositive
+ alright ,interactionstructuring
+ well good try though ,allopositive
+ well good try though ,inform
+ and maybe next time ,closing
+ and maybe next time ,inform
