@@ -265,9 +265,13 @@ if __name__ == "__main__":
     '''
 
     input_msg = "I mean they're they're"  # input text
-    threshold = float(0.8)  # threshold: 0.9/0.8 tested
+    threshold = float(0.9)  # threshold
     predicted = "by_sentend"  # options: "by_sentend" or "by_allpunc" or "by_fulltext" for predicted text length
-    update_weight_timesteps = 0.5
+    update_weight_timesteps = 0.9
+    scaling_weight_utterance_prediction_score = -17
+    average = True
+    averaging_weight= 0.5
+    num_utterance_predictions = 5
 
     model_path = "../../Softwareprojekt/rasa_test/models"
     tokenized_msg = word_tokenize(input_msg)
@@ -277,4 +281,7 @@ if __name__ == "__main__":
     generator, tokenizer = get_utterance_predictor_and_tokenizer(predictor="huggingtweets/ppredictors")
     model = get_rasa_model(model_path)
 
-    main(tokenized_msg, generator, tokenizer, model, threshold, update_weight_timesteps, predicted)
+    main(tokenized_msg, generator, tokenizer, model, threshold,
+             update_weight_timesteps, predicted, scaling_weight_utterance_prediction_score,
+             average=average, averaging_weight=averaging_weight,
+         num_utterance_predictions=num_utterance_predictions)
