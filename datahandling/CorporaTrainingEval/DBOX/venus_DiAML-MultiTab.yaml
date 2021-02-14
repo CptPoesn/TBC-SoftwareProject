@@ -2,9 +2,9 @@ nlu:
 - intent: opening
   examples:
   - text: |
-       hello 
-  - text: |
        hello again 
+  - text: |
+       hello 
 
 - intent: initgreeting
   examples:
@@ -30,16 +30,16 @@ nlu:
   examples:
   - text: |
        okay 
-    metadata:
-      turnManagement: turnTake
-  - text: |
-       okay 
   - text: |
        great 
   - text: |
+       alright 
+  - text: |
        yeah 
   - text: |
-       alright 
+       okay 
+    metadata:
+      turnManagement: turnTake
 
 - intent: allopositive
   examples:
@@ -56,29 +56,29 @@ nlu:
 - intent: stalling
   examples:
   - text: |
-       uh 
+       and 
     metadata:
-      turnManagement: turnAccept
+      turnManagement: turnTake
   - text: |
        mmh 
     metadata:
       turnManagement: turnKeep
   - text: |
-       and 
-    metadata:
-      turnManagement: turnTake
-  - text: |
        uh 
     metadata:
       turnManagement: turnKeep
   - text: |
-       uhm 
+       uh 
     metadata:
-      turnManagement: turnKeep
+      turnManagement: turnAccept
   - text: |
        uhm 
     metadata:
       turnManagement: turnTake
+  - text: |
+       uhm 
+    metadata:
+      turnManagement: turnKeep
 
 - intent: suggest
   examples:
@@ -88,26 +88,26 @@ nlu:
 - intent: setquestion
   examples:
   - text: |
+       what is your first question 
+  - text: |
        and how old are you 
   - text: |
        what is your mother tongue 
   - text: |
        where are you from 
   - text: |
-       what is your first question 
-  - text: |
        and what are you doing 
 
 - intent: setanswer
   examples:
   - text: |
-       i am from the united states 
-  - text: |
-       i am a professional tennis player 
+       my mother tongue is english 
   - text: |
        i am thirty three 
   - text: |
-       my mother tongue is english 
+       i am from the united states 
+  - text: |
+       i am a professional tennis player 
   - text: |
        thirty three years old 
 
@@ -128,16 +128,16 @@ nlu:
 - intent: selfcorrection
   examples:
   - text: |
-       with an 
-  - text: |
        thirty 
+  - text: |
+       with an 
 
 - intent: inform
   examples:
   - text: |
-       no i cant answer that question 
-  - text: |
        im not sure if i can answer that question 
+  - text: |
+       no i cant answer that question 
 
 - intent: answer
   examples:

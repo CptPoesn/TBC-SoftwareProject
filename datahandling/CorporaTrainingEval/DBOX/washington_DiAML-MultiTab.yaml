@@ -26,27 +26,23 @@ nlu:
 - intent: stalling
   examples:
   - text: |
-       youre not alive 
+       so 
+    metadata:
+      turnManagement: turnKeep
   - text: |
        uhm 
     metadata:
       turnManagement: turnAccept
   - text: |
-       so uhm 
+       uh 
     metadata:
       turnManagement: turnKeep
-  - text: |
-       so 
   - text: |
        okay 
     metadata:
       turnManagement: turnKeep
   - text: |
-       eehm 
-    metadata:
-      turnManagement: turnKeep
-  - text: |
-       so 
+       so uhm 
     metadata:
       turnManagement: turnKeep
   - text: |
@@ -54,36 +50,40 @@ nlu:
     metadata:
       turnManagement: turnKeep
   - text: |
-       uh 
-    metadata:
-      turnManagement: turnKeep
-  - text: |
        ninety seven 
   - text: |
        uhm 
     metadata:
-      turnManagement: turnKeep
+      turnManagement: turnTake
   - text: |
        uhm 
     metadata:
-      turnManagement: turnTake
+      turnManagement: turnKeep
+  - text: |
+       youre not alive 
+  - text: |
+       eehm 
+    metadata:
+      turnManagement: turnKeep
+  - text: |
+       so 
 
 - intent: setquestion
   examples:
   - text: |
-       how are you doing today 
-  - text: |
-       what is your nationality 
-  - text: |
-       when are you born 
-  - text: |
-       what do you do 
-  - text: |
-       what is your first question 
-  - text: |
        what is your name 
   - text: |
        when were you in the goverment 
+  - text: |
+       what is your nationality 
+  - text: |
+       what is your first question 
+  - text: |
+       when are you born 
+  - text: |
+       how are you doing today 
+  - text: |
+       what do you do 
 
 - intent: setanswer(fu:dap1tsk0)
   examples:
@@ -108,9 +108,9 @@ nlu:
 - intent: interactionstructuring
   examples:
   - text: |
-       so 
-  - text: |
        alright so 
+  - text: |
+       so 
   - text: |
        alright 
     metadata:
@@ -196,13 +196,13 @@ nlu:
 - intent: propositionalquestion
   examples:
   - text: |
-       are you leading a company 
-  - text: |
-       are you a 
-  - text: |
        are you alive 
   - text: |
        are a politician 
+  - text: |
+       are you a 
+  - text: |
+       are you leading a company 
 
 - intent: propositionalanswer(fu:dap2tsk4)
   examples:

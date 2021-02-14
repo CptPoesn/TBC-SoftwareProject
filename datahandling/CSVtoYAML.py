@@ -1,11 +1,31 @@
 import csv
 from collections import defaultdict as dd
+from nltk.tokenize import word_tokenize
+import nltk
+nltk.download('punkt')
 
 
 def cvs_to_dict(filename):
     with open(filename, encoding="utf-8") as csvfile:
         reader = list(csv.DictReader(csvfile, delimiter=';', dialect='excel'))
+        max_fstext = 0
+        total_tokens = 0
+        total_turns = 1
+        total_utterances = 0
         for rownum in range(len(reader)):
+            total_utterances += 1
+            # get the number of transitions from one speaker to the next:
+            try:
+                if not(reader[rownum]['Sender'] == reader[rownum + 1]['Sender']):
+                    total_turns += 1
+            except IndexError:
+                pass
+
+            # metadata gathering
+            total_tokens += len(word_tokenize(reader[rownum]["FS text"]))
+            if len(word_tokenize(reader[rownum]['FS text'])) > max_fstext:
+                max_fstext = len(word_tokenize(reader[rownum]['FS text']))
+
             for key, value in reader[rownum].items():
                 # TODO make list of allowed items instead of disallowed
                 # if value and key != '﻿Markables' and key != 'Markables' and key != '\ufeffMarkables' and key != 'Sender' and key != 'Addressee' and key != 'Turn transcription'and key != 'FS text' and key != 'Comments' and key!= 'other':
@@ -18,10 +38,10 @@ def cvs_to_dict(filename):
 
             # find unannotated statements
             this_row = reader[rownum]
-            if not (this_row['Task'] or this_row['autoFeedback'] or this_row['timeManagement'] or
-                    this_row['ownCommunicationManagement'] or this_row['partnerCommunicationManagement'] or
-                    this_row['discourseStructuring'] or this_row['socialObligationsManagement']):
-                print(this_row['FS text'], 'tM:', this_row['turnManagement'], 'comm:', this_row['Comments'], 'from:', filename)
+            # if not (this_row['Task'] or this_row['autoFeedback'] or this_row['timeManagement'] or
+            #         this_row['ownCommunicationManagement'] or this_row['partnerCommunicationManagement'] or
+            #         this_row['discourseStructuring'] or this_row['socialObligationsManagement']):
+            #     print(this_row['FS text'], 'tM:', this_row['turnManagement'], 'comm:', this_row['Comments'], 'from:', filename)
 
             if reader[rownum]['Task']:
                 task_label = reader[rownum]['Task']
@@ -33,6 +53,10 @@ def cvs_to_dict(filename):
                             reader[rownum]['Task'] = 'inform_pass'
                     except IndexError:
                         reader[rownum]['Task'] = 'inform_end'
+    print("Total turns: ", total_turns, filename)
+    print("Total tokens: ", total_tokens, filename)
+    print("Maximum Utterance Length in tokens: ", max_fstext, filename)
+    print("Average tokens per utterance: ", total_tokens/total_utterances, filename)
     return reader
 
 
@@ -128,7 +152,8 @@ if __name__ == '__main__':
              'CorporaTrainingEval/MapTask/q1ec6_DiAML-MultiTab.csv',
              'CorporaTrainingEval/DBOX/diana_DiAML-MultiTab-4.csv',
              'CorporaTrainingEval/DBOX/eleanor_DiAML-MultiTab.csv',
-             'CorporaTrainingEval/DBOX/rihanna_DiAML-MultiTab.csv', 'CorporaTrainingEval/DBOX/venus_DiAML-MultiTab.csv',
+             'CorporaTrainingEval/DBOX/rihanna_DiAML-MultiTab.csv',
+             'CorporaTrainingEval/DBOX/venus_DiAML-MultiTab.csv',
              'CorporaTrainingEval/DBOX/washington_DiAML-MultiTab.csv',
              'unifiedCorpora/Switchboard/allSwitchboard.csv',
              'unifiedCorpora/DBOX/allDBOX.csv',

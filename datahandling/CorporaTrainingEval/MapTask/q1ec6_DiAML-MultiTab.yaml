@@ -9,17 +9,19 @@ nlu:
 - intent: autopositive
   examples:
   - text: |
-       nonvocal 
-  - text: |
-       and do a loop 
-  - text: |
        not as far down as that 
   - text: |
-       uh-huh 
+       nonvocal 
   - text: |
-       oh 
+       right 
+  - text: |
+       right 
+    metadata:
+      turnManagement: turnRelease
   - text: |
        ah right 
+  - text: |
+       and do a loop 
   - text: |
        east again 
   - text: |
@@ -27,11 +29,9 @@ nlu:
     metadata:
       turnManagement: turnKeep
   - text: |
-       right 
+       uh-huh 
   - text: |
-       right 
-    metadata:
-      turnManagement: turnRelease
+       oh 
   - text: |
        right 
     metadata:
@@ -40,7 +40,11 @@ nlu:
 - intent: allopositive
   examples:
   - text: |
+       right 
+  - text: |
        nonvocal 
+  - text: |
+       uh-huh right 
   - text: |
        and do a loop 
   - text: |
@@ -49,74 +53,70 @@ nlu:
        no 
   - text: |
        right 
-  - text: |
-       uh-huh right 
-  - text: |
-       right 
     metadata:
       turnManagement: turnTake
 
 - intent: instruct
   examples:
   - text: |
-       and go up past it 
+       and then youre going southwest 
   - text: |
        youre going 
   - text: |
-       follow the curve of crane bay 
-  - text: |
-       you loop round about a bakery 
-  - text: |
-       and then down south 
-  - text: |
-       youre going northeast 
-  - text: |
-       go south and youll pass some cliffs on your right 
-  - text: |
-       east 
-  - text: |
-       and keep going down south 
-  - text: |
-       and coming back round towards the west 
-  - text: |
-       and then east again 
-  - text: |
        and then start going south 
-  - text: |
-       past a forge on your right 
-  - text: |
-       and then start going southeast 
-  - text: |
-       and then go east again 
-  - text: |
-       til youre just above the top of the pine 
   - text: |
        and loop round a bit until youre underneath it 
   - text: |
-       til you get to just underneath pine forest 
+       and go up past it 
+  - text: |
+       and then down south 
+  - text: |
+       go south and youll pass some cliffs on your right 
+  - text: |
+       you loop round about a bakery 
+  - text: |
+       and coming back round towards the west 
+  - text: |
+       and then loop towards the east 
+  - text: |
+       past a forge on your right 
+  - text: |
+       til youre just above the top of the pine 
+  - text: |
+       follow the curve of crane bay 
   - text: |
        nonvocal keep going down 
   - text: |
-       and then youre going southwest 
+       and then start going southeast 
+  - text: |
+       youre going northeast 
+  - text: |
+       and keep going down south 
+  - text: |
+       and then east again 
+  - text: |
+       til you get to just underneath pine forest 
+  - text: |
+       east 
   - text: |
        and then west 
   - text: |
-       and then start going back up again 
+       and then go east again 
   - text: |
-       and then loop towards the east 
+       and then start going back up again 
 
 - intent: acceptrequest
   examples:
+  - text: |
+       okay right got that 
+  - text: |
+       right 
   - text: |
        okay 
   - text: |
        uh-huh 
   - text: |
-       okay right got that 
-  - text: |
        right okay 
-  - text: |
-       right 
   - text: |
        yeah 
   - text: |
@@ -139,19 +139,19 @@ nlu:
 - intent: checkquestion
   examples:
   - text: |
-       im going east underneath the bakery 
-  - text: |
-       so youre going west 
+       and then you s-- 
   - text: |
        underneath what wheatfields 
   - text: |
-       so i go straight 
-  - text: |
        you theres a 
   - text: |
-       and then you s-- 
+       so youre going west 
   - text: |
        thats it 
+  - text: |
+       so i go straight 
+  - text: |
+       im going east underneath the bakery 
 
 - intent: disconfirm
   examples:
@@ -166,15 +166,15 @@ nlu:
 - intent: inform_pass
   examples:
   - text: |
-       pines on your right 
-  - text: |
        between the two of them 
+  - text: |
+       pine forest on your way 
+  - text: |
+       pines on your right 
   - text: |
        til youre at the top of the bakery 
   - text: |
        and theres a crane bay 
-  - text: |
-       pine forest on your way 
   - text: |
        im going right straight down 
 
@@ -186,18 +186,22 @@ nlu:
 - intent: inform_continue
   examples:
   - text: |
-       til youre not 
-  - text: |
-       sort of for a wee bit 
-  - text: |
-       im coming down by the pine forest 
-  - text: |
        and its got a 
   - text: |
        between the wheatfields and the warehouse 
+  - text: |
+       im coming down by the pine forest 
+  - text: |
+       til youre not 
+  - text: |
+       sort of for a wee bit 
 
 - intent: stalling
   examples:
+  - text: |
+       ehm 
+    metadata:
+      turnManagement: turnTake
   - text: |
        um 
     metadata:
@@ -206,10 +210,6 @@ nlu:
        and 
     metadata:
       turnManagement: turnKeep
-  - text: |
-       ehm 
-    metadata:
-      turnManagement: turnTake
 
 - intent: autonegative
   examples:
@@ -225,11 +225,11 @@ nlu:
   - text: |
        uh-huh 
   - text: |
+       yeah 
+  - text: |
        right 
   - text: |
        yeah thats right 
-  - text: |
-       yeah 
 
 - intent: confirm
   examples:

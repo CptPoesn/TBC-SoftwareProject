@@ -2,150 +2,224 @@ nlu:
 - intent: setquestion
   examples:
   - text: |
-      when you say the morning news, or evening news or national news is when? /
-  - text: |
-      And what do they say about finding adequate child care? 
-  - text: |
-      What newspapers do you read
+      Wh
   - text: |
       Where in Colorado?
   - text: |
-      so how do you get most of your news?
+      when you say the morning news, or evening news or national news is when? /
   - text: |
       what's wrong with you
   - text: |
+      at which one?
+  - text: |
+      And what do they say about finding adequate child care? 
+  - text: |
       what kind of  hobbies are you in?
   - text: |
-      Wh
+      What newspapers do you read
   - text: |
-      at which one?
+      so how do you get most of your news?
 
 - intent: stalling
   examples:
   - text: |
-      but, you know
-  - text: |
-      Oh,
-    metadata:
-      turnManagement: turnTake
-  - text: |
-      you know, 
-  - text: |
-      Well
-  - text: |
-      I don't, uh, I don't, uh
-  - text: |
-      to, to
-  - text: |
-      we, we
-  - text: |
-      You don't think, you don't think
-  - text: |
-      that, that
-  - text: |
-      uh, uh
-  - text: |
-      It's its
-  - text: |
-      I, I
-  - text: |
-      from uh from
-  - text: |
-      We, we're
-  - text: |
-      What, what, uh
-  - text: |
-      their, their
-  - text: |
-      um,
-  - text: |
-      uh, I mean
-  - text: |
-      ne-, news, news 
-  - text: |
-      and and
-  - text: |
-      Uh
-  - text: |
-      well
-    metadata:
-      turnManagement: turnKeep
-  - text: |
-      and and you know
-  - text: |
       um,
     metadata:
       turnManagement: turnKeep
-  - text: |
-      they're, they're
-  - text: |
-      uh
-  - text: |
-      ski, ski
-  - text: |
-      You know
-  - text: |
-      well
-  - text: |
-      I, I, I'm
-  - text: |
-      uh, you know
   - text: |
       <laughter> I, I
   - text: |
-      Oh
+      their, their
   - text: |
-      on, on, uh
+      Well
+    metadata:
+      turnManagement: turnTake
   - text: |
-       r-, really
+      if, if
+  - text: |
+      I, I, I'm
+  - text: |
+      Well
+  - text: |
+      Uh
+  - text: |
+      I, I, I
+  - text: |
+      but, you know
+  - text: |
+      You don't think, you don't think
+  - text: |
+      it's it's 
+  - text: |
+      o-, off 
+  - text: |
+      uh uh
+  - text: |
+      but, you know
+    metadata:
+      turnManagement: turnKeep
+  - text: |
+      I don't know  
+  - text: |
+      what, what's
+  - text: |
+      to, to
   - text: |
       Uh,
     metadata:
       turnManagement: turnKeep
   - text: |
-      Well,
+      well
   - text: |
-      uh uh
+      I've, I've
   - text: |
-      you're supposed, you're supposed
+      it, it
+  - text: |
+      they, they
+  - text: |
+      is it, is it
+  - text: |
+      we, we
   - text: |
       that that
   - text: |
-      I would, I would
+      a, a
   - text: |
-      I, you know, I
-  - text: |
-      Well
-    metadata:
-      turnManagement: turnTake
-  - text: |
-      Ooh
-    metadata:
-      turnManagement: turnTake
-  - text: |
-      I, I'm 
-  - text: |
-      I, I, I
-  - text: |
-      and, and
+      It's its
   - text: |
       It's uh you know it's
-  - text: |
-      be-, because
   - text: |
       At, at
     metadata:
       turnManagement: turnTake
   - text: |
-      they, they
+      I, I'm 
   - text: |
-      it's it's 
+      newspape-, uh, news
   - text: |
-      um
+      Ooh
+    metadata:
+      turnManagement: turnTake
+  - text: |
+      had, had
+  - text: |
+      the, the
+  - text: |
+      Oh
+  - text: |
+      uh, uh
+  - text: |
+      We, we're
+  - text: |
+      you're supposed, you're supposed
+  - text: |
+      I, you know, I
+  - text: |
+      I, uh, I
+  - text: |
+      why <laughter> why 
+  - text: |
+      I don't know,  
+  - text: |
+      needs, needs
+  - text: |
+      um,
+  - text: |
+      a-, actually
+  - text: |
+       r-, really
+  - text: |
+      you know, 
+  - text: |
+      you're, you're
   - text: |
       you know
   - text: |
-      I've, I've
+      Well,
+  - text: |
+      from uh from
+  - text: |
+      um
+  - text: |
+      ne-, news, news 
+  - text: |
+      on, on, uh
+  - text: |
+      it's, you know, it's
+  - text: |
+      um, so, 
+  - text: |
+      Well,
+    metadata:
+      turnManagement: turnTake
+  - text: |
+      that, that
+  - text: |
+      uh
+  - text: |
+      uh
+    metadata:
+      turnManagement: turnTake
+  - text: |
+      What, what, uh
+  - text: |
+      of, of
+  - text: |
+      I don't, uh, I don't, uh
+  - text: |
+      but, uh
+    metadata:
+      turnManagement: turnKeep
+  - text: |
+      ski, ski
+  - text: |
+      Well
+    metadata:
+      turnManagement: turnKeep
+  - text: |
+      that's, that's, that's
+  - text: |
+      uh, I mean
+  - text: |
+      and and you know
+  - text: |
+      Oh, okay
+  - text: |
+      and and
+  - text: |
+      uh,
+  - text: |
+      I, I don't know
+  - text: |
+      the,  <inhaling> the
+  - text: |
+      I would, I would
+  - text: |
+      be-, because
+  - text: |
+       but, uh, anyway  -
+  - text: |
+      My, my
+  - text: |
+      they're, they're
+  - text: |
+      it's, it's
+  - text: |
+      this, this
+  - text: |
+      I, I, I, uh
+  - text: |
+      Oh
+    metadata:
+      turnManagement: turnTake
+  - text: |
+      I, I
+  - text: |
+      uh, you know
+  - text: |
+      uh
+    metadata:
+      turnManagement: turnKeep
   - text: |
       Uh,
     metadata:
@@ -155,933 +229,859 @@ nlu:
     metadata:
       turnManagement: turnTake
   - text: |
-      Well,
-    metadata:
-      turnManagement: turnTake
-  - text: |
-      the,  <inhaling> the
-  - text: |
-      I, I, I, uh
-  - text: |
-      you're, you're
-  - text: |
-      why <laughter> why 
-  - text: |
-      it's, you know, it's
-  - text: |
-       but, uh, anyway  -
-  - text: |
-      I, uh, I
-  - text: |
-      that's, that's, that's
-  - text: |
-      a-, actually
-  - text: |
-      My, my
-  - text: |
       Uh
     metadata:
       turnManagement: turnTake
   - text: |
-      newspape-, uh, news
+      and, and
   - text: |
-      if, if
+      You know
   - text: |
-      Well
-    metadata:
-      turnManagement: turnKeep
-  - text: |
-      it's, it's
-  - text: |
-      the, the
-  - text: |
-      uh
-    metadata:
-      turnManagement: turnKeep
-  - text: |
-      uh
+      Oh,
     metadata:
       turnManagement: turnTake
   - text: |
-      Oh
-    metadata:
-      turnManagement: turnTake
-  - text: |
-      it, it
-  - text: |
-      is it, is it
-  - text: |
-      o-, off 
-  - text: |
-      but, uh
+      well
     metadata:
       turnManagement: turnKeep
-  - text: |
-      um, so, 
-  - text: |
-      I don't know,  
-  - text: |
-      of, of
-  - text: |
-      needs, needs
-  - text: |
-      had, had
-  - text: |
-      what, what's
-  - text: |
-      I don't know  
-  - text: |
-      but, you know
-    metadata:
-      turnManagement: turnKeep
-  - text: |
-      Oh, okay
-  - text: |
-      this, this
-  - text: |
-      I, I don't know
-  - text: |
-      a, a
-  - text: |
-      uh,
 
 - intent: selfcorrection
   examples:
   - text: |
-      you're going, your opinion is going
-  - text: |
-      we're, we are
-  - text: |
-      I did, I had
-  - text: |
       if you, if you'll
-  - text: |
-      they,  they tr-, the newspapers are
-  - text: |
-      I, I'm 
-  - text: |
-      that's kind of the, that's the
-  - text: |
-      newspape-, uh, news
-  - text: |
-      lime-, limestone
-  - text: |
-      pinion, opinion
-  - text: |
-      and
-  - text: |
-      the  limestone hills
-  - text: |
-      about, on 
-  - text: |
-      McNeil, Neil
-  - text: |
-      when I've had friends that have said - when you hear people say
-  - text: |
-      haven't, would
-  - text: |
-      I'm a, I'm pretty much a
-  - text: |
-      like that, by that name
-  - text: |
-      they, the parents
-  - text: |
-      must, needs to
-  - text: |
-      what do you, what kind of  
-  - text: |
-      where you, where they
-  - text: |
-      want-, help wanted
-  - text: |
-      worrying about, since they're both in school, you don't have to worry about
-  - text: |
-      You guys, are you guys
-  - text: |
-      he's leaving, one of them is leaving
-  - text: |
-      just in-, just
-  - text: |
-      I would love, I can hardly wait to get
-  - text: |
-      self-, selfish
-  - text: |
-      I kind of I
-  - text: |
-      where I,  why I 
-  - text: |
-      sideline,  part time
-  - text: |
-      they were really, adequate ones were really
-  - text: |
-      s-,  watch
   - text: |
       a lot of it's still a lot of
   - text: |
+      self-, selfish
+  - text: |
+      I would love, I can hardly wait to get
+  - text: |
+      and
+  - text: |
+      where I,  why I 
+  - text: |
+      about, on 
+  - text: |
+      like that, by that name
+  - text: |
+      they,  they tr-, the newspapers are
+  - text: |
+      that's kind of the, that's the
+  - text: |
+      pinion, opinion
+  - text: |
+      you're going, your opinion is going
+  - text: |
+      I, I'm 
+  - text: |
+      newspape-, uh, news
+  - text: |
+      they, the parents
+  - text: |
       is mostly is
+  - text: |
+      McNeil, Neil
+  - text: |
+      they were really, adequate ones were really
+  - text: |
+      where you, where they
+  - text: |
+      s-,  watch
+  - text: |
+      he's leaving, one of them is leaving
+  - text: |
+      haven't, would
+  - text: |
+      want-, help wanted
+  - text: |
+      the  limestone hills
+  - text: |
+      when I've had friends that have said - when you hear people say
+  - text: |
+      I kind of I
+  - text: |
+      worrying about, since they're both in school, you don't have to worry about
+  - text: |
+      must, needs to
+  - text: |
+      I did, I had
+  - text: |
+      we're, we are
+  - text: |
+      You guys, are you guys
+  - text: |
+      lime-, limestone
+  - text: |
+      I'm a, I'm pretty much a
+  - text: |
+      sideline,  part time
+  - text: |
+      just in-, just
+  - text: |
+      what do you, what kind of  
 
 - intent: answer
   examples:
   - text: |
-      I read the local newspaper
+      and Keystone
   - text: |
-      I tune in to CNN a lot. 
+      I  collect antique tools
   - text: |
-      yeah
+      Breckenridge
   - text: |
       yes 
   - text: |
-      I'm mother of four
+      Yes,
   - text: |
-      I  collect antique tools
+      No
+  - text: |
+      Of course 
+  - text: |
+      I do lots of cross stitching when I have time
+  - text: |
+      it is snowing right now
+  - text: |
+      every evening at six thirty, I believe, I watch the national news
+  - text: |
+      University of Texas in Dallas
+  - text: |
+      I do have friends that have children
+  - text: |
+      I watch the national news every day, for one,
+  - text: |
+      yeah
+  - text: |
+      I read the local newspaper
+  - text: |
+      so basically I'm just real busy with my kids right now in sports
+  - text: |
+      I tune in to CNN a lot. 
   - text: |
       Absolutely not 
     metadata:
       turnManagement: turnGrab
   - text: |
-      and Keystone
-  - text: |
-      Yes,
-  - text: |
-      every evening at six thirty, I believe, I watch the national news
-  - text: |
-      Copper
-  - text: |
-      so basically I'm just real busy with my kids right now in sports
-  - text: |
-      I've been to Telluride which is on the west side
-  - text: |
-      Of course 
-  - text: |
-      Breckenridge
-  - text: |
-      I do lots of cross stitching when I have time
-  - text: |
-      I may
-  - text: |
-      it is snowing right now
-  - text: |
-      I also read one or two papers a day 
-  - text: |
-      I do have friends that have children
+      I'm mother of four
   - text: |
       Yeah
   - text: |
-      University of Texas in Dallas
+      I've been to Telluride which is on the west side
+  - text: |
+      I may
   - text: |
       I also try and read one of the major dailies like the CHICAGO TRIBUNE, or the NEW YORK TIMES or something like that.
   - text: |
-      I watch the national news every day, for one,
+      Copper
   - text: |
-      No
+      I also read one or two papers a day 
 
 - intent: inform_continue
   examples:
   - text: |
-      I had never been there
-  - text: |
-      I'm living in a dream world, 
-  - text: |
-      it's just such a responsibility
-  - text: |
-      because if you hear the same story from three different sources, then you get a much clearer picture of what is going on. You would hope,
-  - text: |
-      but I guess it's still a lot of hype
-  - text: |
-      overall, the quality of the news you get of most sources I would say is pretty low. 
-  - text: |
-      I think they feel that these people are under qualified basically and  underpaid, 
-  - text: |
-      We gave up on one baby sitter because we came home one night and found pieces of ribbon
-  - text: |
-      and this is his first year
-  - text: |
-      And found that more creative avenues were the right answer for us
-  - text: |
-      and we're on the colder side,
-  - text: |
-      It must be interesting  
-  - text: |
-      usually you get pretty incomplete coverage 
-  - text: |
-      you have to chase them down constantly 
-  - text: |
-      But it's beautiful
-  - text: |
-      I miss NPR a lot also
-  - text: |
-      when you hear people say, it alters your life forever, please take heed <laughter>
-  - text: |
-      you mature I suppose 
-  - text: |
-      so, it's such a responsibility 
-  - text: |
-      now that I'm older, of course, it's different 
-  - text: |
-      the stamina that you must draw from yourself to deal with it 
-  - text: |
-      where obviously she
-  - text: |
-      Well, I realize that's true  
-  - text: |
-      escape
-  - text: |
-      they had done such a good job 
-  - text: |
-      it's a terrible thing to say when you're speaking of children in that way
-  - text: |
-      I have wonderful friends  
-  - text: |
-      they just sort of adopted me as their eleventh child 
-  - text: |
-      I think that might be part of the problem with some people You know,   
-  - text: |
-      So I can see where someone, in a position like that, in a live-in capacity, would definitely be the way to go if you're lucky enough to have the financial  to be able to do that 
-  - text: |
-      that's pretty neat
-  - text: |
-      I really like them because they give, instead of being, as your newspaper or your TV news where you get a five minute blurb or a ten paragraph blurb, they go really in depth on topics which i think is good
-  - text: |
-      that's one of the reasons why I try and get as many sources as possible, 
-  - text: |
-      we are on the dry side of the mountains
-  - text: |
-      we're having such fun
-  - text: |
-      I take away a addiction <laughter>
-  - text: |
-      I guess one of them is leaving.
-  - text: |
-      I don't know,
-  - text: |
-      I'm around my kids  
-  - text: |
-      as opposed to actually watching it yourself and forming your own opinion, which I would  be much more in favor of forming my own opinion as opposed to following someone else's
-  - text: |
-      That's just the way their minds work  
-  - text: |
-       it's great, 
-  - text: |
-      so she really needed to look at the help wanted ads
-  - text: |
-      and I guess that's good when it's live, if you'll really want that
-  - text: |
-      I guess that's true
-  - text: |
-      and I ski
-  - text: |
-      there are a lot of pine trees,
-  - text: |
-      it's just frightening 
-  - text: |
-      you sound like you're pretty well passed the worst of it as far as worrying about, - 
-  - text: |
-      she said, we never do those things anyway 
-  - text: |
-      taking care of a baby, I know, is not an easy thing,  
-  - text: |
-      they're on the rainy side
-  - text: |
-      I think they're too far away from me,
-  - text: |
-      I have to admit, I was selfish as a child 
-  - text: |
-      we ski
-  - text: |
-      I think your patience level needs to increase as the child gets older <laughter>
-  - text: |
-      that worked for a while,  
-  - text: |
-      it's Eastern Hardwood, forest,  
-  - text: |
-      because my fiance - she was unemployed for a while 
-  - text: |
-      I mean one of them I would leave unsupervised any time, any place, any where
-  - text: |
-      I've only been to Texas once
-  - text: |
-      but it's mostly oaks
-  - text: |
-      but then you also have things where they broadcast the Clarence Thomas hearings basically the whole length of them which I thought was really good.
-  - text: |
-      it's just a matter of trust, you know
+      my best friend is one child of ten  
   - text: |
       so that worked out pretty well  
   - text: |
-      If you could just, have a whole bunch <laughter>
+      I'm a news junkie
   - text: |
-      that's bad to have to admit, too, 
+      we are on the dry side of the mountains
   - text: |
-      Seattle is only about two and a half hours
-  - text: |
-      They had stayed with this family from the time these children were small four or five years old, up until they were well into grade school
-  - text: |
-      it's called INTELLECT
-  - text: |
-      it's funny
-  - text: |
-      actually, I'm not even sure
-  - text: |
-      They're, relatively nonexistent from what I hear from my friends
-  - text: |
-      but when you read a lot of this stuff, the quality of the writing has definitely gone down in the last ten years or so
-  - text: |
-      we're on the snowy side
-  - text: |
-      I think that sort of goes hand in hand 
-  - text: |
-       but, you know,  they need the money  
-  - text: |
-      if you watch the news, your opinion is going to be formed on what somebody else thought about it
-  - text: |
-      but the news that you would get from any other source is being generated from that event, which is something that's good also about C Span which I tune into every once in a while
-  - text: |
-       I'm building a log house at a  farm that I have in East Texas, which is a hundred miles from here
-  - text: |
-      we snow ski
-  - text: |
-      My brother-in-law works for the University, in Dallas
-  - text: |
-      Me, too
-  - text: |
-      I am a travel agent at heart
-  - text: |
-      I was seeing something on the television earlier about a little girl that's been telling her mother these terrible stories  
-  - text: |
-      what's frightening is a parent to see things that you don't really don't understand
-  - text: |
-      but, I don't know, I think if you listen to like NPR or something like
-  - text: |
-      they loved it
-  - text: |
-      course I've been working on it for five years
-  - text: |
-      she and her roommate became live-in care givers  
-  - text: |
-      of course people are denying it 
-  - text: |
-      I had some visitor, he was just, I don't know, fixated on that, just listened to it constantly
-  - text: |
-      She never had to worry about taking anybody to child care because there was always somebody there older to deal with them,  
+      it's a terrible thing to say when you're speaking of children in that way
   - text: |
       and we have a little Halloween talent show tonight
   - text: |
-      NEW YORK TIMES is okay
-  - text: |
-      they basically, type out abstracts which are really literally, -
-  - text: |
-      I've actually read the actual articles
-  - text: |
-      and I enter things in our little state fair,
-  - text: |
-      and I'm enjoying it.  
-  - text: |
-      I didn't want a brother or sister  
-  - text: |
-      I would probably be a junkie or watch <laughter> CNN a lot
-  - text: |
-      I like listening to that when I get a chance, when I'm in the car a long enough time to listen to it, because I
-  - text: |
-      I think it's just a matter of priorities  
-  - text: |
-      but it's just, there's so much pressure when you're talking about two people that work outside the home 
-  - text: |
-      It's amazing that people actually, - 
-  - text: |
-      My sisters both seem to like it pretty well
-  - text: |
-      It has to be somewhere else  
-  - text: |
-      it's free inside the company
-  - text: |
-      and then when you get it completely, the shell finished, you still have a lot of stuff to do inside
-  - text: |
-      having lived in a community for a while we knew the person to whom we were entrusting our children
-  - text: |
-      she was paid very well because the parents trusted them
-  - text: |
-       somewhere  on one afternoon  
-  - text: |
-      It's a matter not necessarily that she might want to stay home or he, as well, 
-  - text: |
-      It seems like even when they have consulted day care centers that are reputable, that are sort of like a chain, if I can use that word, still you have to deal with the people that, happen to be operating it locally 
-  - text: |
-      I don't subscribe to cable
-  - text: |
-      And felt that feeling of safety
-  - text: |
-      When you see all these horror stories on television about child care  
-  - text: |
-      It's just the way your attitude changes 
-  - text: |
-      As I said, I don't have kids  
-  - text: |
-      We are being cooperative,  
-  - text: |
-      But they seem to like it okay.
-  - text: |
       it's low hills
   - text: |
-      but adequate ones were really tough to find
+      we snow ski
   - text: |
-      I just have to be honest about it  
+      that's bad to have to admit, too, 
   - text: |
-      they say it's  like the sixth grade reading level
+      I think they're too far away from me,
   - text: |
-      they're pretty g
+      you mature I suppose 
   - text: |
-      I had a friend that said, before we always said we don't want children because we can't go off on the spur of the moment or this or that and the other 
+      it's just frightening 
   - text: |
-      he's got a job  there
+      because if you hear the same story from three different sources, then you get a much clearer picture of what is going on. You would hope,
   - text: |
-      so I guess, that's an alternative  
+      I guess one of them is leaving.
   - text: |
-       I have two sisters in Texas now, one in Austin, one in Dallas
-  - text: |
-      So I'm sort of at a loss where that's concerned 
-  - text: |
-      because of the poor service and also because I give to the United Way
-  - text: |
-      I love traveling and being involved in that and finding out more
-  - text: |
-      of course there's still a lot of work to be done,  
-  - text: |
-      I've skied in Colorado
-  - text: |
-      I'm a news junkie
-  - text: |
-      Neil and Lehrer, they're pretty good too
-  - text: |
-      but, it's real hard to work in the summers and  holidays and weekends when you have four children and a husband
-  - text: |
-       -- tied in a chair
-  - text: |
-      one of the ways that I get information is, every day when I log in on the computer I subscribe to this thing
-  - text: |
-      it's really neat
-  - text: |
-      I'm sort of in an antique business
-  - text: |
-      I think that is one reason why I continue to be without children 
-  - text: |
-      why am I waiting
-  - text: |
-      I do have a friend, she and her roommate became live-in care givers
-  - text: |
-      but that's if you don't watch it there, then you're going to hear somebody else's canned report, somebody else's view about it
-  - text: |
-      it's the one that's going downhill,
-  - text: |
-      I think about, wouldn't it be nice, 
-  - text: |
-      she got older 
-  - text: |
-      so I've been librarian all this week, which has been real interesting,  
-  - text: |
-      we were lucky when our children were that age, 
-  - text: |
-      Now we have one takes piano lessons
-  - text: |
-      I've been finding out that I really am a nice person
-  - text: |
-      and so often the newspapers are trying to compete with a lot of other sources of news
-  - text: |
-      <Laughter>  That's like World War Three every minute <laughter>  
-  - text: |
-      I'm an only child 
+      Well, I realize that's true  
   - text: |
       But the thing about the child care I have friends that struggle financially and they both do have to work 
   - text: |
-      For a while there I subscribed to NEW YORK TIMES, a couple of newspapers
+      and I ski
   - text: |
-      it's really different because  that's the chalk hills down there,
+      she was paid very well because the parents trusted them
   - text: |
-      so  I've never been around children  
+      I'm sort of in an antique business
   - text: |
-      gosh
+      what's frightening is a parent to see things that you don't really don't understand
+  - text: |
+      of course there's still a lot of work to be done,  
+  - text: |
+      and I'm enjoying it.  
+  - text: |
+      I miss NPR a lot also
+  - text: |
+      I think it's just a matter of priorities  
+  - text: |
+      they say it's  like the sixth grade reading level
+  - text: |
+      but, I don't know, I think if you listen to like NPR or something like
+  - text: |
+       I'm building a log house at a  farm that I have in East Texas, which is a hundred miles from here
+  - text: |
+      because of the poor service and also because I give to the United Way
+  - text: |
+      when you hear people say, it alters your life forever, please take heed <laughter>
+  - text: |
+      <Laughter>  That's like World War Three every minute <laughter>  
+  - text: |
+      and we're on the colder side,
+  - text: |
+      but when you read a lot of this stuff, the quality of the writing has definitely gone down in the last ten years or so
+  - text: |
+      so I guess, that's an alternative  
+  - text: |
+      Neil and Lehrer, they're pretty good too
+  - text: |
+      We are being cooperative,  
+  - text: |
+      I was seeing something on the television earlier about a little girl that's been telling her mother these terrible stories  
+  - text: |
+      I've skied in Colorado
+  - text: |
+      I would probably be a junkie or watch <laughter> CNN a lot
+  - text: |
+      he's got a job  there
+  - text: |
+      I'm living in a dream world, 
+  - text: |
+      I've been finding out that I really am a nice person
+  - text: |
+      course I've been working on it for five years
+  - text: |
+      of course people are denying it 
+  - text: |
+      one of the ways that I get information is, every day when I log in on the computer I subscribe to this thing
   - text: |
       but when you have them in, their little feet are moving 
   - text: |
+      so I've been librarian all this week, which has been real interesting,  
+  - text: |
+      and this is his first year
+  - text: |
+      As I said, I don't have kids  
+  - text: |
+      It's amazing that people actually, - 
+  - text: |
+      and then when you get it completely, the shell finished, you still have a lot of stuff to do inside
+  - text: |
+       I have two sisters in Texas now, one in Austin, one in Dallas
+  - text: |
+      she said, we never do those things anyway 
+  - text: |
+      And felt that feeling of safety
+  - text: |
+      It's a matter not necessarily that she might want to stay home or he, as well, 
+  - text: |
+      as opposed to actually watching it yourself and forming your own opinion, which I would  be much more in favor of forming my own opinion as opposed to following someone else's
+  - text: |
+      And found that more creative avenues were the right answer for us
+  - text: |
+      they had done such a good job 
+  - text: |
+      I have wonderful friends  
+  - text: |
+      why am I waiting
+  - text: |
+      I have to admit, I was selfish as a child 
+  - text: |
+      I had never been there
+  - text: |
+      they just sort of adopted me as their eleventh child 
+  - text: |
+      NEW YORK TIMES is okay
+  - text: |
+      I think that is one reason why I continue to be without children 
+  - text: |
+      I don't subscribe to cable
+  - text: |
+      So I'm sort of at a loss where that's concerned 
+  - text: |
+      Me, too
+  - text: |
+      and so often the newspapers are trying to compete with a lot of other sources of news
+  - text: |
+      I think your patience level needs to increase as the child gets older <laughter>
+  - text: |
+      now that I'm older, of course, it's different 
+  - text: |
+      When you see all these horror stories on television about child care  
+  - text: |
+       -- tied in a chair
+  - text: |
+      I like listening to that when I get a chance, when I'm in the car a long enough time to listen to it, because I
+  - text: |
+      it's free inside the company
+  - text: |
+      I think that might be part of the problem with some people You know,   
+  - text: |
+      you sound like you're pretty well passed the worst of it as far as worrying about, - 
+  - text: |
+      gosh
+  - text: |
+      that's pretty neat
+  - text: |
+      it's Eastern Hardwood, forest,  
+  - text: |
+      I'm an only child 
+  - text: |
+      My brother-in-law works for the University, in Dallas
+  - text: |
+      they're pretty g
+  - text: |
+      escape
+  - text: |
+      I really like them because they give, instead of being, as your newspaper or your TV news where you get a five minute blurb or a ten paragraph blurb, they go really in depth on topics which i think is good
+  - text: |
+      But it's beautiful
+  - text: |
+      I just have to be honest about it  
+  - text: |
+      it's really different because  that's the chalk hills down there,
+  - text: |
+      overall, the quality of the news you get of most sources I would say is pretty low. 
+  - text: |
+      we're on the snowy side
+  - text: |
+      but the news that you would get from any other source is being generated from that event, which is something that's good also about C Span which I tune into every once in a while
+  - text: |
+      I don't know,
+  - text: |
+      I guess that's true
+  - text: |
+      They're, relatively nonexistent from what I hear from my friends
+  - text: |
+      But they seem to like it okay.
+  - text: |
+      That's just the way their minds work  
+  - text: |
+      it's called INTELLECT
+  - text: |
+      It's just the way your attitude changes 
+  - text: |
+      having lived in a community for a while we knew the person to whom we were entrusting our children
+  - text: |
+      I had some visitor, he was just, I don't know, fixated on that, just listened to it constantly
+  - text: |
+      but I guess it's still a lot of hype
+  - text: |
+      Now we have one takes piano lessons
+  - text: |
+      we ski
+  - text: |
+      It has to be somewhere else  
+  - text: |
+      there are a lot of pine trees,
+  - text: |
+      I take away a addiction <laughter>
+  - text: |
+      they're on the rainy side
+  - text: |
+      you have to chase them down constantly 
+  - text: |
+      It must be interesting  
+  - text: |
+      I'm around my kids  
+  - text: |
+      where obviously she
+  - text: |
+      actually, I'm not even sure
+  - text: |
+      but it's just, there's so much pressure when you're talking about two people that work outside the home 
+  - text: |
+      she and her roommate became live-in care givers  
+  - text: |
+      taking care of a baby, I know, is not an easy thing,  
+  - text: |
+      so, it's such a responsibility 
+  - text: |
+      My sisters both seem to like it pretty well
+  - text: |
+      She never had to worry about taking anybody to child care because there was always somebody there older to deal with them,  
+  - text: |
+      she got older 
+  - text: |
       what do I know  
+  - text: |
+      I do have a friend, she and her roommate became live-in care givers
+  - text: |
+      I've only been to Texas once
+  - text: |
+      but that's if you don't watch it there, then you're going to hear somebody else's canned report, somebody else's view about it
+  - text: |
+      I think that sort of goes hand in hand 
+  - text: |
+      We gave up on one baby sitter because we came home one night and found pieces of ribbon
+  - text: |
+      usually you get pretty incomplete coverage 
+  - text: |
+      the stamina that you must draw from yourself to deal with it 
+  - text: |
+       it's great, 
+  - text: |
+      and I guess that's good when it's live, if you'll really want that
+  - text: |
+      they loved it
+  - text: |
+      because my fiance - she was unemployed for a while 
+  - text: |
+      It seems like even when they have consulted day care centers that are reputable, that are sort of like a chain, if I can use that word, still you have to deal with the people that, happen to be operating it locally 
+  - text: |
+      it's the one that's going downhill,
+  - text: |
+      so she really needed to look at the help wanted ads
+  - text: |
+      I didn't want a brother or sister  
+  - text: |
+      So I can see where someone, in a position like that, in a live-in capacity, would definitely be the way to go if you're lucky enough to have the financial  to be able to do that 
+  - text: |
+      we're having such fun
+  - text: |
+      I am a travel agent at heart
+  - text: |
+      it's just a matter of trust, you know
+  - text: |
+      it's really neat
+  - text: |
+       somewhere  on one afternoon  
+  - text: |
+      but it's mostly oaks
+  - text: |
+      that's one of the reasons why I try and get as many sources as possible, 
   - text: |
       <Laughter> That's something altogether different
   - text: |
-      my best friend is one child of ten  
+      it's just such a responsibility
+  - text: |
+      but then you also have things where they broadcast the Clarence Thomas hearings basically the whole length of them which I thought was really good.
+  - text: |
+      They had stayed with this family from the time these children were small four or five years old, up until they were well into grade school
+  - text: |
+      so  I've never been around children  
+  - text: |
+      If you could just, have a whole bunch <laughter>
+  - text: |
+      and I enter things in our little state fair,
+  - text: |
+      I think about, wouldn't it be nice, 
+  - text: |
+      if you watch the news, your opinion is going to be formed on what somebody else thought about it
+  - text: |
+      it's funny
+  - text: |
+      I love traveling and being involved in that and finding out more
+  - text: |
+      we were lucky when our children were that age, 
+  - text: |
+      they basically, type out abstracts which are really literally, -
+  - text: |
+      that worked for a while,  
+  - text: |
+      but adequate ones were really tough to find
+  - text: |
+      I think they feel that these people are under qualified basically and  underpaid, 
+  - text: |
+      For a while there I subscribed to NEW YORK TIMES, a couple of newspapers
+  - text: |
+      I mean one of them I would leave unsupervised any time, any place, any where
+  - text: |
+      I had a friend that said, before we always said we don't want children because we can't go off on the spur of the moment or this or that and the other 
+  - text: |
+      but, it's real hard to work in the summers and  holidays and weekends when you have four children and a husband
+  - text: |
+       but, you know,  they need the money  
+  - text: |
+      I've actually read the actual articles
+  - text: |
+      Seattle is only about two and a half hours
   - text: |
       And when I seen some of my friends that have taken that six week old baby you know, to someone else, it's just, I can imagine how emotional  it must be and multiplied by the fact that you don't really trust the person  or you're uncomfortable with the situation, as far as child care,
 
 - intent: autopositive
   examples:
   - text: |
-      Ooh,
-  - text: |
-      That's true 
-  - text: |
-      Pretty low
-  - text: |
-      but how wonderful
-  - text: |
-       <Laughter>
-  - text: |
-      Yeah,  
-  - text: |
-      yeah
-  - text: |
-       Yeah,
-  - text: |
-      Uh-uh
-  - text: |
-      Really
-  - text: |
-       Right   
-  - text: |
-       Huh-uh   
-  - text: |
-       <Laughter> Oh, gee
-  - text: |
-      That's great.
-  - text: |
-      Huh-uh 
-  - text: |
-      Oh,  wow  
-  - text: |
-       I can imagine, my lord
-  - text: |
-      No, kidding. 
-  - text: |
-      That's amazing  
-  - text: |
-      Yes,
-  - text: |
-      yes
-  - text: |
-      Right. /
-  - text: |
-      sure
-  - text: |
-       Yeah   
-  - text: |
-      Yeah  
-  - text: |
-      Ooh
-  - text: |
-      Sure  
-  - text: |
-      wonderful
-  - text: |
       really
   - text: |
-       Yeah
-  - text: |
-      All right  
-  - text: |
-      Right  
-  - text: |
-      <Laughter>
-  - text: |
-      Yeah <laughter> 
-  - text: |
-       Oh
-  - text: |
-       <Laughter>  Huh-uh 
-  - text: |
-      how beautiful
-  - text: |
-      that's great
-  - text: |
-      <Laughter> Oh,  really  
-  - text: |
-      Oh, okay
-  - text: |
-      Huh-uh   
-  - text: |
-      No  
-  - text: |
-      Oh, yeah,
-  - text: |
-      Oh
+      That's true  
   - text: |
       Sure 
   - text: |
-      Yeah
+      Oh, yeah,
   - text: |
-      Wonderful
+      Right 
   - text: |
-      Yeah, oh,   
+      Really
   - text: |
-      Right
+      Oh, okay
   - text: |
-      That's a big plus
+       Yeah
   - text: |
-      Yeah 
+       <Laughter> Oh, gee
   - text: |
-      That's true  
+      Pretty low
+  - text: |
+      Huh-uh  
+  - text: |
+      Yeah  
   - text: |
       Right  
     metadata:
       turnManagement: turnTake
   - text: |
-      <Laughter>.
+      Yes,
   - text: |
-      Uh-huh
+      Yeah 
+  - text: |
+      Yeah <laughter> 
+  - text: |
+      sure
+  - text: |
+      No, kidding. 
+  - text: |
+      That's true 
+  - text: |
+      Uh-uh
+  - text: |
+       Yeah,
+  - text: |
+      Right  
+  - text: |
+      Oh
+  - text: |
+      Wonderful
+  - text: |
+       Right   
+  - text: |
+      Yeah,  
+  - text: |
+      <Laughter> Oh,  really  
+  - text: |
+      No  
+  - text: |
+       <Laughter>
+  - text: |
+      <Laughter>.
   - text: |
       Yeah <laughter>  
   - text: |
       Ooh.
   - text: |
+      yeah
+  - text: |
+      that's great
+  - text: |
+      Sure  
+  - text: |
+      That's a big plus
+  - text: |
+      That's great.
+  - text: |
+      Huh-uh 
+  - text: |
+      That's amazing  
+  - text: |
+       I can imagine, my lord
+  - text: |
+      Ooh
+  - text: |
+      Oh,  wow  
+  - text: |
+      but how wonderful
+  - text: |
+       Yeah   
+  - text: |
+      yes
+  - text: |
+      Huh-uh   
+  - text: |
       okay
   - text: |
-      Huh-uh  
+      Yeah, oh,   
   - text: |
-      Right 
+       <Laughter>  Huh-uh 
+  - text: |
+      how beautiful
+  - text: |
+       Huh-uh   
+  - text: |
+      Yeah
+  - text: |
+      All right  
+  - text: |
+      <Laughter>
+  - text: |
+      Ooh,
+  - text: |
+      Right
+  - text: |
+      Uh-huh
+  - text: |
+      Right. /
+  - text: |
+       Oh
+  - text: |
+      wonderful
 
 - intent: inform_pass
   examples:
   - text: |
-      it's just a scary thing 
-  - text: |
-      it's almost everyday 
-  - text: |
-      it's more like a media event rather than reporting
-  - text: |
-      I'm sure that's a whole new ball game 
-  - text: |
-      by trading services with them, 
-  - text: |
-      I figured that amount of money I just donate to that.
-  - text: |
-      You don't understand this 
-  - text: |
-      hair ribbon
-  - text: |
-      I thought Austin was beautiful
-  - text: |
-      were leaving them  ((   ))  small children
-  - text: |
-      It is such an honor and a thrill, to be a parent, that most of the time, it's worth it
-  - text: |
-      it's getting real close to 
-  - text: |
-      Copper is kind of my favorite up there.
-  - text: |
-      I really like NPR a lot
-  - text: |
-      it's just north of me here
-  - text: |
-      so it's difficult for them
-  - text: |
-      we also learned something from that experience as our children got older 
-  - text: |
-      and that's pretty fun.
-  - text: |
-      the other one, of course can't do the same thing
-  - text: |
-      I can hardly wait to get up there
-  - text: |
-      I heard Aspen got three feet
-  - text: |
-      There are those times when I think, gee,  if I didn't have children I could be out playing  (( bridge ))  or golf 
-  - text: |
-      I mean, that was a joke
-  - text: |
-      we usually go to New Mexico because it's a little cheaper
-  - text: |
-      That's just a difference in kids, I suppose 
-  - text: |
-      now, I need it
-  - text: |
-      but I swear it's at least second or third grade sometimes.
-  - text: |
-      so I reluctantly gave that career up and am just substituting at the school
-  - text: |
-      except for time in service
-  - text: |
-      I think that may be the key word 
-  - text: |
-       Oh, something
-  - text: |
-      It's not always worth it
-  - text: |
-      so, it's been a real interesting thing for them
-  - text: |
-      we are helping,  you know
-  - text: |
-      It really is 
-  - text: |
-      actually my hobbies mostly  is my sports. Tennis,
-  - text: |
-      but it's a little part time thing
-  - text: |
-      We snow ski at Mount Bachelor mostly, in Oregon 
-  - text: |
-      ((   )) because  I didn't need it 
-  - text: |
-      By the time the youngest ones are there, you'll have older one to take care of them 
-  - text: |
-      still, you know, hard to say that what you've heard is what really is.
-  - text: |
-       I liked the hills and the trees
-  - text: |
-      their editorial stand point seems to be a lot better than, say, your major network news and that kind of thing
-  - text: |
-      I have a nine year old that I would trade happily for a baby
-  - text: |
-      we moved away from institutionalized child care --
-  - text: |
-      It's that care givers are not omniscient -- 
-  - text: |
-      How unfortunate <laughter> 
-  - text: |
-      Much as other cultures disagree, our lives don't revolve around our children 
-  - text: |
-      going over that pass is  just a real nightmare
-  - text: |
-      but maybe some day they can get closer
-  - text: |
-      ((   ))  hit for many years -
-  - text: |
-      my wife and I were both only children 
-  - text: |
-      you don't know what happens after they get in school 
-  - text: |
-      at one point in time we've had au pairs,
-  - text: |
-      so of course I'm a real Seahawks fan
-  - text: |
-      We're to get one to three inches tonight
-  - text: |
-      But I do hear my friends talk about it 
-  - text: |
       Now it's just a reservoir that you tend to regularly, I'm sure 
-  - text: |
-      Had that invasion or whatever it is
-  - text: |
-       -- they are not all things to all people --
-  - text: |
-       but  you still have to be realistic, as well, I think 
-  - text: |
-      since they're both in school, you don't have to worry about a full-time person to take care of them  <<Voices fading in and out>> 
-  - text: |
-      The ones that are good with babies tend not to be good with toddlers 
-  - text: |
-      and  no  it's not adequate to sit and wait
-  - text: |
-      it stays low a lot <laughter>
-  - text: |
-      I guess you find out that you're a much stronger person than you thought, maybe 
-  - text: |
-      but that's not really providing you news. 
   - text: |
       That's kind of boring to me, I think
   - text: |
       Wonderful place.
   - text: |
-      the other one I wouldn't leave unsupervised two minutes
+      but that's not really providing you news. 
   - text: |
-      It takes that mixture of a very mature college student, who wants to do something and yet is willing to give the time, and the interest to the children
+      ((   )) because  I didn't need it 
   - text: |
-       -- or all children 
+      I heard Aspen got three feet
   - text: |
-      He's admissions director
+      How unfortunate <laughter> 
   - text: |
-      I love tennis too
+      I'll probably always have a place here in Richardson or Dallas
   - text: |
-      and  that's something that we're struggling with now 
+      I really like NPR a lot
+  - text: |
+       but  you still have to be realistic, as well, I think 
+  - text: |
+       Oh, something
+  - text: |
+       I liked the hills and the trees
+  - text: |
+      I think that may be the key word 
+  - text: |
+      it's just north of me here
   - text: |
       I substitute at the schools part-time
   - text: |
-      we just couldn't wait to have two children so they would be such friends 
+      But I do hear my friends talk about it 
   - text: |
-      Wrong 
-  - text: |
-      I guess those are the only places I've skied up there
+      so I reluctantly gave that career up and am just substituting at the school
   - text: |
       and the one in Dallas is the one that got me to doing this
   - text: |
+      except for time in service
+  - text: |
+      and that's pretty fun.
+  - text: |
+      at one point in time we've had au pairs,
+  - text: |
+      Much as other cultures disagree, our lives don't revolve around our children 
+  - text: |
+      were leaving them  ((   ))  small children
+  - text: |
+      we are helping,  you know
+  - text: |
+      I love tennis too
+  - text: |
+      Copper is kind of my favorite up there.
+  - text: |
+      now, I need it
+  - text: |
+      It's that care givers are not omniscient -- 
+  - text: |
+      we moved away from institutionalized child care --
+  - text: |
+      It takes that mixture of a very mature college student, who wants to do something and yet is willing to give the time, and the interest to the children
+  - text: |
+      ((   ))  hit for many years -
+  - text: |
+       -- they are not all things to all people --
+  - text: |
+      the other one I wouldn't leave unsupervised two minutes
+  - text: |
+      I'm sure that's a whole new ball game 
+  - text: |
+      We snow ski at Mount Bachelor mostly, in Oregon 
+  - text: |
+      but it's a little part time thing
+  - text: |
+      You don't understand this 
+  - text: |
+      their editorial stand point seems to be a lot better than, say, your major network news and that kind of thing
+  - text: |
+      so it's difficult for them
+  - text: |
+      since they're both in school, you don't have to worry about a full-time person to take care of them  <<Voices fading in and out>> 
+  - text: |
+      the other one, of course can't do the same thing
+  - text: |
+      He's admissions director
+  - text: |
+      I can hardly wait to get up there
+  - text: |
+      but maybe some day they can get closer
+  - text: |
       And then  you don't really know what happened 
+  - text: |
+      We're to get one to three inches tonight
+  - text: |
+      it's just a scary thing 
+  - text: |
+      It really is 
+  - text: |
+      my wife and I were both only children 
+  - text: |
+      we just couldn't wait to have two children so they would be such friends 
+  - text: |
+      actually my hobbies mostly  is my sports. Tennis,
+  - text: |
+      still, you know, hard to say that what you've heard is what really is.
+  - text: |
+      we usually go to New Mexico because it's a little cheaper
+  - text: |
+      That's just a difference in kids, I suppose 
+  - text: |
+      I mean, that was a joke
   - text: |
        I play tennis
   - text: |
+      I thought Austin was beautiful
+  - text: |
+      so of course I'm a real Seahawks fan
+  - text: |
+      you don't know what happens after they get in school 
+  - text: |
+      but I swear it's at least second or third grade sometimes.
+  - text: |
+      and  no  it's not adequate to sit and wait
+  - text: |
+      by trading services with them, 
+  - text: |
+      it's more like a media event rather than reporting
+  - text: |
+      hair ribbon
+  - text: |
+      we also learned something from that experience as our children got older 
+  - text: |
+      it stays low a lot <laughter>
+  - text: |
+      I figured that amount of money I just donate to that.
+  - text: |
+      going over that pass is  just a real nightmare
+  - text: |
+      and  that's something that we're struggling with now 
+  - text: |
+      I guess you find out that you're a much stronger person than you thought, maybe 
+  - text: |
+      There are those times when I think, gee,  if I didn't have children I could be out playing  (( bridge ))  or golf 
+  - text: |
+      The ones that are good with babies tend not to be good with toddlers 
+  - text: |
+      Wrong 
+  - text: |
       our children are now eleven and nine 
   - text: |
-      I'll probably always have a place here in Richardson or Dallas
+      Had that invasion or whatever it is
+  - text: |
+      it's getting real close to 
+  - text: |
+      I guess those are the only places I've skied up there
+  - text: |
+      It is such an honor and a thrill, to be a parent, that most of the time, it's worth it
+  - text: |
+      it's almost everyday 
+  - text: |
+      I have a nine year old that I would trade happily for a baby
+  - text: |
+       -- or all children 
+  - text: |
+      so, it's been a real interesting thing for them
+  - text: |
+      It's not always worth it
+  - text: |
+      By the time the youngest ones are there, you'll have older one to take care of them 
 
 - intent: checkquestion
   examples:
   - text: |
-      one leads the other
-  - text: |
-      I guess a year ago you're probably watching CNN a lot, right?
-  - text: |
-      as opposed to paying for cable
-  - text: |
-      You don't think that good prevails 
-  - text: |
-      and it's pretty flat there?
+      Born and raised Texan, huh
   - text: |
       kind of your getaway place
   - text: |
       and  you've always lived in Texas, have you?
   - text: |
+      one leads the other
+  - text: |
+      You don't think that good prevails 
+  - text: |
       That's pretty easy substituting isn't it?
   - text: |
-      Born and raised Texan, huh
+      and it's pretty flat there?
+  - text: |
+      as opposed to paying for cable
+  - text: |
+      I guess a year ago you're probably watching CNN a lot, right?
 
 - intent: confirm
   examples:
-  - text: |
-      Right <laughter> 
-  - text: |
-      Oh yeah, 
-  - text: |
-      Yeah
   - text: |
       Huh-uh,  
   - text: |
       yeah
   - text: |
-      yeah 
-  - text: |
       yeah,
+  - text: |
+      Oh yeah, 
+  - text: |
+      Yeah
+  - text: |
+      Right <laughter> 
+  - text: |
+      yeah 
 
 - intent: agreement
   examples:
   - text: |
-      it certainly is
-  - text: |
-      No 
-  - text: |
-      yeah
-  - text: |
       I think that's correct  
   - text: |
-      Oh yeah, the NPR doing that, yeah, I know
+      of course not 
   - text: |
-      <Laughter>  You can't do that  
+      Yeah, it is really kind of boring
   - text: |
-      that will not do 
+      we certainly found that to be true 
+  - text: |
+      Of course 
+  - text: |
+      it certainly is
   - text: |
       Yeah that was
   - text: |
       I'm sure 
   - text: |
-      Most of the time <laughter> 
+      No  
   - text: |
-      Yeah, it is really kind of boring
+      yeah
   - text: |
-      yes
+      Oh yeah, the NPR doing that, yeah, I know
   - text: |
        Pretty good trip
   - text: |
-      That's out of the question,  
+      No 
   - text: |
-      Of course 
-  - text: |
-      of course not 
-  - text: |
-      No  
+      that will not do 
   - text: |
       That's pretty good.  /
+  - text: |
+      Most of the time <laughter> 
+  - text: |
+      yes
+  - text: |
+      That's out of the question,  
   - text: |
       Yeah
   - text: |
@@ -1089,18 +1089,30 @@ nlu:
   - text: |
       Right
   - text: |
-      we certainly found that to be true 
+      <Laughter>  You can't do that  
 
 - intent: retraction
   examples:
   - text: |
-      my hobby is just
+      it's not
+  - text: |
+       in Aus-
+  - text: |
+      I,  I 
+  - text: |
+      I
+  - text: |
+      indeed we've, - 
+  - text: |
+      that's what you're supposed to
   - text: |
       that, -
   - text: |
-      We,
+      That just, - 
   - text: |
-      that's what you're supposed to
+      my hobby is just
+  - text: |
+      they also
   - text: |
       I, - 
   - text: |
@@ -1108,30 +1120,18 @@ nlu:
     metadata:
       turnManagement: turnTake
   - text: |
-       in Aus-
-  - text: |
-      it's not
-  - text: |
-      That just, - 
-  - text: |
-      I
-  - text: |
-      they also
-  - text: |
-      indeed we've, - 
-  - text: |
-      that's,
-  - text: |
       It's
   - text: |
-      I,  I 
+      We,
+  - text: |
+      that's,
 
 - intent: suggest
   examples:
   - text: |
-      Just make good friends 
-  - text: |
       Look at the Smith trial
+  - text: |
+      Just make good friends 
 
 - intent: opening
   examples:
@@ -1141,23 +1141,23 @@ nlu:
 - intent: propositionalquestion
   examples:
   - text: |
-      is it the one that needs more supervision that has a bad influence on the older or more mature one
-  - text: |
-      are you guys getting snow?
-  - text: |
-      Are you going to move your whole family over there then? 
+      do you ski?
   - text: |
       do you?
   - text: |
-      do you ski?
-  - text: |
-      have you ever been there?
-  - text: |
-      Are you close to getting it done?
+      are you guys getting snow?
   - text: |
       do you have any friends that have children
   - text: |
+      is it the one that needs more supervision that has a bad influence on the older or more mature one
+  - text: |
+      have you ever been there?
+  - text: |
       do you feel comfortable with them coming home after school until you and your wife get home 
+  - text: |
+      Are you going to move your whole family over there then? 
+  - text: |
+      Are you close to getting it done?
 
 - intent: inform
   examples:
@@ -1167,16 +1167,16 @@ nlu:
 - intent: agreement
   examples:
   - text: |
-      I'm sure that's true 
-  - text: |
       that's true, 
+  - text: |
+      I'm sure that's true 
 
 - intent: request
   examples:
   - text: |
-      Tell me what you like to do. /
-  - text: |
       if I can  ((   ))  the other side of the coin for a moment 
+  - text: |
+      Tell me what you like to do. /
 
 - intent: completion
   examples:
@@ -1186,13 +1186,13 @@ nlu:
 - intent: interactionstructuring
   examples:
   - text: |
-      for one thing
-  - text: |
-      we'll see
-  - text: |
       So
   - text: |
       and what else do I do, 
+  - text: |
+      we'll see
+  - text: |
+      for one thing
 
 - intent: disconfirm
   examples:

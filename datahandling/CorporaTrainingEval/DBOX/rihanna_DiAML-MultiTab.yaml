@@ -2,9 +2,9 @@ nlu:
 - intent: opening
   examples:
   - text: |
-       hello 
-  - text: |
        hello again 
+  - text: |
+       hello 
 
 - intent: initgreeting
   examples:
@@ -29,24 +29,24 @@ nlu:
 - intent: setquestion
   examples:
   - text: |
+       what are your initials 
+  - text: |
        what is your first question 
   - text: |
        where are you from 
-  - text: |
-       what are your initials 
 
 - intent: autopositive
   examples:
+  - text: |
+       mh 
+    metadata:
+      turnManagement: turnTake
   - text: |
        okay 
   - text: |
        mh 
     metadata:
       turnManagement: turnAccept
-  - text: |
-       mh 
-    metadata:
-      turnManagement: turnTake
 
 - intent: inform
   examples:
@@ -56,25 +56,25 @@ nlu:
 - intent: propositionalquestion
   examples:
   - text: |
-       are you a real person 
-  - text: |
        are you dead 
+  - text: |
+       are you a real person 
 
 - intent: propositionalanswer
   examples:
   - text: |
-       no i am still alive 
-  - text: |
        yes i am a real person 
+  - text: |
+       no i am still alive 
 
 - intent: stalling
   examples:
   - text: |
-       uhm 
+       mh 
     metadata:
       turnManagement: turnTake
   - text: |
-       mh 
+       uhm 
     metadata:
       turnManagement: turnTake
 

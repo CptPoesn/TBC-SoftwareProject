@@ -2,26 +2,26 @@ nlu:
 - intent: opening
   examples:
   - text: |
+       good afternoon 
+  - text: |
        hello 
   - text: |
        alright hello again 
-  - text: |
-       good afternoon 
 
 - intent: initgreeting
   examples:
   - text: |
        hello nikolina its nice to meet you 
   - text: |
-       good afternoon 
-  - text: |
-       hello again 
-  - text: |
        nice to meet you 
   - text: |
        hello 
   - text: |
        good afternoon almost evening 
+  - text: |
+       hello again 
+  - text: |
+       good afternoon 
 
 - intent: opening(fu:dap1dis0)
   examples:
@@ -36,11 +36,35 @@ nlu:
 - intent: stalling
   examples:
   - text: |
-       mh 
+       mmh 
+    metadata:
+      turnManagement: turnKeep
+  - text: |
+       hm 
+    metadata:
+      turnManagement: turnKeep
+  - text: |
+       uh 
+  - text: |
+       youre not alive 
+  - text: |
+       and 
     metadata:
       turnManagement: turnTake
   - text: |
-       mmh 
+       uhm 
+    metadata:
+      turnManagement: turnKeep
+  - text: |
+       uhm 
+    metadata:
+      turnManagement: turnAccept
+  - text: |
+       uh 
+    metadata:
+      turnManagement: turnKeep
+  - text: |
+       mh 
     metadata:
       turnManagement: turnKeep
   - text: |
@@ -48,51 +72,27 @@ nlu:
     metadata:
       turnManagement: turnKeep
   - text: |
-       so 
-    metadata:
-      turnManagement: turnKeep
-  - text: |
-       uh 
-    metadata:
-      turnManagement: turnKeep
-  - text: |
-       uh 
-    metadata:
-      turnManagement: turnTake
-  - text: |
-       uhm 
-    metadata:
-      turnManagement: turnAccept
-  - text: |
-       and 
-    metadata:
-      turnManagement: turnTake
-  - text: |
-       hm 
-    metadata:
-      turnManagement: turnKeep
-  - text: |
-       ninety seven 
-  - text: |
        so uhm 
     metadata:
       turnManagement: turnKeep
   - text: |
-       so 
-  - text: |
-       uh 
-  - text: |
-       uhm 
-    metadata:
-      turnManagement: turnTake
-  - text: |
-       youre not alive 
-  - text: |
        uh 
     metadata:
       turnManagement: turnAccept
   - text: |
+       eehm 
+    metadata:
+      turnManagement: turnKeep
+  - text: |
+       uh 
+    metadata:
+      turnManagement: turnTake
+  - text: |
        mh 
+    metadata:
+      turnManagement: turnTake
+  - text: |
+       so 
     metadata:
       turnManagement: turnKeep
   - text: |
@@ -100,13 +100,13 @@ nlu:
     metadata:
       turnManagement: turnKeep
   - text: |
-       eehm 
-    metadata:
-      turnManagement: turnKeep
+       ninety seven 
   - text: |
        uhm 
     metadata:
-      turnManagement: turnKeep
+      turnManagement: turnTake
+  - text: |
+       so 
   - text: |
        ehm 
     metadata:
@@ -115,43 +115,43 @@ nlu:
 - intent: setquestion
   examples:
   - text: |
-       how are you doing today 
-  - text: |
-       and how old are you 
-  - text: |
-       what is your nationality 
-  - text: |
-       what is your first question 
-  - text: |
-       what are you famous for 
-  - text: |
-       when were you in the goverment 
+       what is your name 
   - text: |
        what is your mother tongue 
   - text: |
-       when are you born 
-  - text: |
-       what were you doing when you were alive 
-  - text: |
-       what is your name 
-  - text: |
        where did you die 
-  - text: |
-       whats your name 
-  - text: |
-       during which years exactly did you reign 
-  - text: |
-       which country $UNINTELLIGIBLE 
-  - text: |
-       where are you from 
-  - text: |
-       what do you do 
   - text: |
        and what are you doing 
   - text: |
-       and where are you from 
+       what is your first question 
   - text: |
        what are your initials 
+  - text: |
+       which country $UNINTELLIGIBLE 
+  - text: |
+       what are you famous for 
+  - text: |
+       when are you born 
+  - text: |
+       what is your nationality 
+  - text: |
+       and how old are you 
+  - text: |
+       where are you from 
+  - text: |
+       how are you doing today 
+  - text: |
+       what do you do 
+  - text: |
+       when were you in the goverment 
+  - text: |
+       during which years exactly did you reign 
+  - text: |
+       whats your name 
+  - text: |
+       what were you doing when you were alive 
+  - text: |
+       and where are you from 
 
 - intent: setanswer(fu:dap1tsk0)
   examples:
@@ -176,23 +176,23 @@ nlu:
 - intent: interactionstructuring
   examples:
   - text: |
-       alright 
-  - text: |
-       alright 
-    metadata:
-      turnManagement: turnTake
-  - text: |
-       so 
-  - text: |
-       alright and one more important thing 
-  - text: |
        so 
     metadata:
       turnManagement: turnKeep
   - text: |
+       alright and one more important thing 
+  - text: |
+       alright 
+  - text: |
        alright so 
   - text: |
+       so 
+  - text: |
        so first ill tell you the rules 
+  - text: |
+       alright 
+    metadata:
+      turnManagement: turnTake
 
 - intent: setanswer(fu:dap1som4)
   examples:
@@ -224,31 +224,41 @@ nlu:
 - intent: autopositive
   examples:
   - text: |
-       mh 
-    metadata:
-      turnManagement: turnTake
+       nice to meet you 
+  - text: |
+       okay 
+  - text: |
+       great 
+  - text: |
+       alright 
+  - text: |
+       ok 
+  - text: |
+       france 
   - text: |
        okay 
     metadata:
       turnManagement: turnKeep
   - text: |
-       ah okay 
+       do I know any French which 
   - text: |
-       okay 
-    metadata:
-      turnManagement: turnTake
-  - text: |
-       france 
-  - text: |
-       great 
+       okay i understand 
   - text: |
        mhm 
   - text: |
+       yeah 
+  - text: |
+       mh 
+    metadata:
+      turnManagement: turnTake
+  - text: |
+       mhm 
+    metadata:
+      turnManagement: turnTake
+  - text: |
+       im doing well too 
+  - text: |
        $LAUGH 
-  - text: |
-       do I know any French which 
-  - text: |
-       nice to meet you 
   - text: |
        mh 
     metadata:
@@ -258,19 +268,9 @@ nlu:
     metadata:
       turnManagement: turnRelease
   - text: |
-       okay i understand 
+       ah okay 
   - text: |
        okay 
-  - text: |
-       im doing well too 
-  - text: |
-       ok 
-  - text: |
-       yeah 
-  - text: |
-       alright 
-  - text: |
-       mhm 
     metadata:
       turnManagement: turnTake
 
@@ -282,13 +282,13 @@ nlu:
 - intent: inform_continue
   examples:
   - text: |
-       but that is not the correct answer 
-  - text: |
-       im not sure how good am i in this area 
-  - text: |
        very close 
   - text: |
        that is the correct answer 
+  - text: |
+       im not sure how good am i in this area 
+  - text: |
+       but that is not the correct answer 
 
 - intent: autopositive(fe:fsp2auffb2)
   examples:
@@ -328,33 +328,33 @@ nlu:
 - intent: propositionalquestion
   examples:
   - text: |
-       and youre still alive 
+       are you successful in tennis 
   - text: |
        are a politician 
   - text: |
-       are you leading a company 
-  - text: |
-       are you from germany 
-  - text: |
-       are you a real person 
-  - text: |
        are you a 
-  - text: |
-       are you a musician 
   - text: |
        did you have an affair with Monica Lewinsky 
   - text: |
        are you alive 
   - text: |
-       are you still alive 
-  - text: |
-       are you from america 
-  - text: |
-       are you successful in tennis 
+       are you a real person 
   - text: |
        does your first name start with an s 
   - text: |
+       are you a musician 
+  - text: |
+       and youre still alive 
+  - text: |
+       are you leading a company 
+  - text: |
        are you dead 
+  - text: |
+       are you from germany 
+  - text: |
+       are you from america 
+  - text: |
+       are you still alive 
 
 - intent: propositionalanswer(fu:dap2tsk4)
   examples:
@@ -433,17 +433,17 @@ nlu:
 - intent: pausing
   examples:
   - text: |
-       just a second 
-    metadata:
-      turnManagement: turnKeep
-  - text: |
-       let me think for a minute 
-  - text: |
        lets see 
     metadata:
       turnManagement: turnKeep
   - text: |
        yeah 
+  - text: |
+       let me think for a minute 
+  - text: |
+       just a second 
+    metadata:
+      turnManagement: turnKeep
 
 - intent: setanswer[uncertain](fu:dap2tsk9)
   examples:
@@ -475,9 +475,9 @@ nlu:
 - intent: guess
   examples:
   - text: |
-       are you serena williams 
-  - text: |
        george washington 
+  - text: |
+       are you serena williams 
   - text: |
        so you are not Bill Clinton 
   - text: |
@@ -495,11 +495,11 @@ nlu:
 - intent: inform_pass
   examples:
   - text: |
+       im not sure hes alive 
+  - text: |
        I am george washington 
   - text: |
        im venus williams 
-  - text: |
-       im not sure hes alive 
 
 - intent: propositionalanswer(fu:dap2tsk13)
   examples:
@@ -544,15 +544,15 @@ nlu:
 - intent: closing
   examples:
   - text: |
-       very good job 
-  - text: |
-       okay 
-  - text: |
        good job 
   - text: |
        youll do better next time we get to do lots of rounds 
   - text: |
+       okay 
+  - text: |
        alright 
+  - text: |
+       very good job 
 
 - intent: autopositive(fe:fsp2auffb21)
   examples:
@@ -567,94 +567,94 @@ nlu:
 - intent: returngreeting
   examples:
   - text: |
-       nice to meet you 
-  - text: |
        hello 
+  - text: |
+       nice to meet you 
 
 - intent: setanswer
   examples:
   - text: |
-       france 
-  - text: |
-       i was a princess 
+       when i was alive 
   - text: |
        my name is gregor linn 
   - text: |
-       i am from the united states 
-  - text: |
-       i am a professional tennis player 
-  - text: |
-       i am thirty three 
-  - text: |
-       fine 
-  - text: |
        my mother tongue is english 
+  - text: |
+       france 
   - text: |
        thirty three years old 
   - text: |
-       i am famous for being one of the wealthiest and most powerful women in western europe during the middle ages 
-  - text: |
        i am from barbados 
   - text: |
-       i died in paris 
+       i was a princess 
   - text: |
        i am from england 
   - text: |
+       fine 
+  - text: |
+       i am thirty three 
+  - text: |
        i was 
   - text: |
-       when i was alive 
+       i am from the united states 
+  - text: |
+       i am famous for being one of the wealthiest and most powerful women in western europe during the middle ages 
+  - text: |
+       i am a professional tennis player 
+  - text: |
+       i died in paris 
 
 - intent: inform
   examples:
   - text: |
-       no i cant answer that question 
+       im not sure if i can answer that question 
   - text: |
        im doing well too 
   - text: |
        i can not answer that question 
   - text: |
-       im not sure if i can answer that question 
+       no i cant answer that question 
 
 - intent: selfcorrection
   examples:
   - text: |
-       would you 
-  - text: |
        with an 
+  - text: |
+       i will 
+  - text: |
+       would you 
   - text: |
        thirty 
   - text: |
        i was 
   - text: |
        is 
-  - text: |
-       i will 
 
 - intent: autonegative
   examples:
   - text: |
-       could you clarify the question 
-  - text: |
        could you repeat the questions 
+  - text: |
+       could you clarify the question 
 
 - intent: allopositive
   examples:
   - text: |
-       very good job 
-  - text: |
-       okay 
-  - text: |
        good job 
-  - text: |
-       great 
-  - text: |
-       very close 
-  - text: |
-       mhm 
   - text: |
        very close though 
   - text: |
+       very close 
+  - text: |
+       okay 
+  - text: |
+       great 
+  - text: |
        alright 
+  - text: |
+       mhm 
+  - text: |
+       very good job 
 
 - intent: suggest
   examples:
@@ -666,41 +666,41 @@ nlu:
 - intent: propositionalanswer
   examples:
   - text: |
-       yes i am still alive 
+       no i am not from america 
   - text: |
        no i am still alive 
+  - text: |
+       yes i am still alive 
+  - text: |
+       no i am not from germany 
   - text: |
        no i am not 
   - text: |
        yes i am a real person 
   - text: |
-       yes i am a musician 
-  - text: |
-       no i am not from america 
-  - text: |
        yes I am very successful 
   - text: |
-       no i am not from germany 
+       yes i am a musician 
 
 - intent: confirm
   examples:
+  - text: |
+       yes 
   - text: |
        yes that is correct i am rihanna 
   - text: |
        yes i do 
   - text: |
        mhm 
-  - text: |
-       yes 
 
 - intent: congratulation
   examples:
   - text: |
+       very good try 
+  - text: |
        good job 
   - text: |
        very good job 
-  - text: |
-       very good try 
 
 - intent: checkquestion
   examples:

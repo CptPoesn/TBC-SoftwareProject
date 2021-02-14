@@ -17,9 +17,9 @@ nlu:
 - intent: inform_pass
   examples:
   - text: |
-      I'd like to take a tanker from Corning and bring it to Elmira
-  - text: |
       then I'd like to take the tanker of orange juice through Dansville and then on to Avon
+  - text: |
+      I'd like to take a tanker from Corning and bring it to Elmira
   - text: |
       and from Elmira I'd like to load orange juice into the tanker
   - text: |
@@ -48,29 +48,29 @@ nlu:
     metadata:
       turnManagement: turnTake
   - text: |
+      the the
+  - text: |
       um
     metadata:
       turnManagement: turnKeep
-  - text: |
-      the the
 
 - intent: setquestion
   examples:
   - text: |
       which engine would you like to use
   - text: |
-      now from Corning what would be the quickest route to Avon
-  - text: |
       the tankers move at the same speed
+  - text: |
+      now from Corning what would be the quickest route to Avon
 
 - intent: answer
   examples:
   - text: |
       no they're both the same
   - text: |
-      through Dansville
-  - text: |
       engine E two
+  - text: |
+      through Dansville
 
 - intent: propositionalquestion
   examples:

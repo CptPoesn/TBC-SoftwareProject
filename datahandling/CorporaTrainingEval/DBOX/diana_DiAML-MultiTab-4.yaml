@@ -2,23 +2,23 @@ nlu:
 - intent: opening
   examples:
   - text: |
-       hello 
-  - text: |
        good afternoon 
+  - text: |
+       hello 
 
 - intent: initgreeting
   examples:
   - text: |
-       nice to meet you 
-  - text: |
        good afternoon 
+  - text: |
+       nice to meet you 
 
 - intent: returngreeting
   examples:
   - text: |
-       nice to meet you 
-  - text: |
        hello 
+  - text: |
+       nice to meet you 
 
 - intent: stalling
   examples:
@@ -29,44 +29,44 @@ nlu:
   - text: |
        uh 
     metadata:
-      turnManagement: turnTake
+      turnManagement: turnKeep
   - text: |
        mh 
     metadata:
       turnManagement: turnKeep
   - text: |
-       uh is 
-    metadata:
-      turnManagement: turnKeep
-  - text: |
-       uh 
-  - text: |
-       uh 
-    metadata:
-      turnManagement: turnKeep
-  - text: |
-       uhm 
-    metadata:
-      turnManagement: turnKeep
-  - text: |
-       uhm 
-    metadata:
-      turnManagement: turnTake
-  - text: |
        ehm 
     metadata:
       turnManagement: turnTake
+  - text: |
+       uh 
+  - text: |
+       uhm 
+    metadata:
+      turnManagement: turnTake
+  - text: |
+       uhm 
+    metadata:
+      turnManagement: turnKeep
+  - text: |
+       uh 
+    metadata:
+      turnManagement: turnTake
+  - text: |
+       uh is 
+    metadata:
+      turnManagement: turnKeep
 
 - intent: setquestion
   examples:
   - text: |
-       what is your first question 
-  - text: |
-       how are you doing today 
+       what were you doing when you were alive 
   - text: |
        whats your name 
   - text: |
-       what were you doing when you were alive 
+       what is your first question 
+  - text: |
+       how are you doing today 
 
 - intent: setanswer
   examples:
@@ -78,25 +78,25 @@ nlu:
 - intent: autopositive
   examples:
   - text: |
-       okay i understand 
-  - text: |
-       okay 
+       mhm 
+    metadata:
+      turnManagement: turnTake
   - text: |
        im doing well too 
   - text: |
        nice to meet you 
   - text: |
-       ah okay 
+       okay 
+  - text: |
+       alright 
+  - text: |
+       okay i understand 
   - text: |
        mhm 
     metadata:
       turnManagement: turnRelease
   - text: |
-       alright 
-  - text: |
-       mhm 
-    metadata:
-      turnManagement: turnTake
+       ah okay 
 
 - intent: inform
   examples:
@@ -106,27 +106,27 @@ nlu:
 - intent: interactionstructuring
   examples:
   - text: |
-       alright 
+       so first ill tell you the rules 
   - text: |
        alright and one more important thing 
   - text: |
-       so first ill tell you the rules 
+       alright 
 
 - intent: selfcorrection
   examples:
   - text: |
        is 
   - text: |
-       i will 
-  - text: |
        would you 
+  - text: |
+       i will 
 
 - intent: autonegative
   examples:
   - text: |
-       could you clarify the question 
-  - text: |
        could you repeat the questions 
+  - text: |
+       could you clarify the question 
 
 - intent: allopositive
   examples:
@@ -141,20 +141,20 @@ nlu:
 - intent: propositionalquestion
   examples:
   - text: |
-       are you from america 
-  - text: |
        are you from germany 
+  - text: |
+       are you from america 
   - text: |
        are you still alive 
 
 - intent: propositionalanswer
   examples:
   - text: |
-       no i am not from america 
+       no i am not from germany 
   - text: |
        no i am not 
   - text: |
-       no i am not from germany 
+       no i am not from america 
 
 - intent: pausing
   examples:
