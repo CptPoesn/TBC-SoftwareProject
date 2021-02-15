@@ -1,11 +1,12 @@
-
-
 import our_dialogue_manager as dm
 from nltk.tokenize import word_tokenize
 from collections import defaultdict
 import csv
 import numpy as np
 from timeit import default_timer as timer
+
+model_path = "../../Softwareprojekt/switchboard/models"
+predictor = "huggingtweets/ppredictors" # huggingtweets/ppredictors or gpt2
 
 def get_prediction(utterance, model, generator, tokenizer):
 	"""
@@ -22,11 +23,11 @@ def get_prediction(utterance, model, generator, tokenizer):
 	# hyper-parameters for tuning
 	threshold = 0.8
 	predicted = "by_allpunc"  # options: "by_sentend" or "by_allpunc" or "by_fulltext" for predicted text length
-	update_weight_timesteps = 1.0 # how strongly the new intent ranking is weighted compared to the previous time step; range [0,1]
+	update_weight_timesteps = 0.9 # how strongly the new intent ranking is weighted compared to the previous time step; range [0,1]
 	scaling_weight_utterance_prediction_score = -17 # the more negative, the stronger the score's influence
-	averaging = False # whether we take an average over all predicted utterances or only the highest scoring utterance
+	averaging = True # whether we take an average over all predicted utterances or only the highest scoring utterance
 	averaging_weight = 0.8 # how strongly the individual score of the most successful utterance is weighted against the avarage of all scores
-	num_utterance_predictions = 1
+	num_utterance_predictions = 5
 	utt_pred_threshold = 0.6
 
 	"""
@@ -73,8 +74,7 @@ def get_prediction(utterance, model, generator, tokenizer):
 start = timer()
 
 # get models
-model_path = "../../Softwareprojekt/switchboard/models"
-generator, tokenizer = dm.get_utterance_predictor_and_tokenizer(predictor="huggingtweets/ppredictors") #huggingtweets/ppredictors
+generator, tokenizer = dm.get_utterance_predictor_and_tokenizer(predictor=predictor)
 model = dm.get_rasa_model(model_path)
 
 # read in corpus file as csv

@@ -179,18 +179,17 @@ def main(tokenized_msg, generator, tokenizer, rasa_model, threshold,
             # TODO: break when the utterance prediction we use is "" ?
             item_intent_dis = intent_prob(all_result) # item_intent_dis = list of (intent,confi)
 
-            """
-            proposed bug fix: 
-            """
             for intent,confi in item_intent_dis:
                 #score = float(confi) * utt_score # In Gervits they use utt_score as threshold instead of weight
                 #weight = 0.5
                 #score = float(confi) * (1-weight) + sigmoid(utt_score) * (weight)
-                #score = sigmoid(float(confi) + utt_score)
+                score = sigmoid(float(confi) + utt_score)
+                """
                 if sigmoid(utt_score) > utt_score_threshold:
                     score = float(confi)
                 else:
                     score = 0.0
+                """
 
                 _intent_dict[intent].append((pred_text, score))
 
@@ -218,28 +217,6 @@ def main(tokenized_msg, generator, tokenizer, rasa_model, threshold,
 
         print("\n ------------------------- \n")
 
-        """ bugged
-            
-            for (intent, confi) in item_intent_dis:
-                if intent in intent_dict:
-                    # add to variable
-                    intent_update = intent_dict[intent] * (1 - update_weight_timesteps) + float(confi) * update_weight_timesteps # TODO make variable
-                    intent_update = intent_update * weight_by_utterance_probability(pred_score, scaling_weight_utterance_prediction_score) # TODO get meaningful weighting heuristic
-                    intent_dict[intent] = intent_update
-                    if intent_update >= threshold:
-                        if earliest_word == "":
-                            earliest_word = out
-                        response_word_at_locking_time = out
-                        utterance_prediction_at_locking_time = pred_text
-                        print("pred text saved: ", pred_text)
-                        response_intent_at_locking_time = max(intent_dict.items(), key=operator.itemgetter(1) )
-                        trp_list.append((out, utterance_prediction_at_locking_time, response_intent_at_locking_time))
-                else:
-                    intent_dict[intent] = float(confi) * weight_by_utterance_probability(pred_score, scaling_weight_utterance_prediction_score)
-                    
-        """
-
-
     # If threshold hasn't been reached,
     #   choose best intent after reading in the whole input
     if not trp_list:
@@ -248,8 +225,7 @@ def main(tokenized_msg, generator, tokenizer, rasa_model, threshold,
 
     # extract return values from trp-list
     msg_at_locking_time, p_intent, score, p_utterance = earliest_locking_time(trp_list)
-    
-    print("\n ------------------------- \n")
+
     print("full message: ", " ".join(tokenized_msg))
     print("earliest possible response point: ", msg_at_locking_time)
     print("top intent and score at earliest possible response point: ", p_intent, score)
@@ -283,7 +259,7 @@ if __name__ == "__main__":
     update_weight_timesteps = 0.9
     scaling_weight_utterance_prediction_score = -17
     average = True
-    averaging_weight= 0.5
+    averaging_weight= 0.8
     num_utterance_predictions = 5
     utt_score_threshold = 0.6
 
@@ -292,7 +268,7 @@ if __name__ == "__main__":
     print("tokens: ", tokenized_msg)
 
     # models
-    generator, tokenizer = get_utterance_predictor_and_tokenizer(predictor="huggingtweets/ppredictors")
+    generator, tokenizer = get_utterance_predictor_and_tokenizer(predictor="huggingtweets/ppredictors") # "huggingtweets/ppredictors" or "gpt2"
     model = get_rasa_model(model_path)
 
     main(tokenized_msg, generator, tokenizer, model, threshold,
