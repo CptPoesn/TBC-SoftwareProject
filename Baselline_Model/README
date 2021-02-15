@@ -20,12 +20,13 @@ Software Requirements
 1. Anaconda3
 2. Spyder from Anaconda3
 3. environment file rasa_env.yml
+(Alternatively: any installation of Python 3.7 and pip 19 should do. Then you will have to install some libraries (e.g. rasa, nltk) to be able to run our code.)
 
 ----------------------------------------------------------------------------------------------------------------
 
 Please run by doing the followings:
-A. Set up an environment
-  1. In Anaconda Prompt, go to the path of the rasa_env.yml file
+A. Set up an environment from file
+  1. In Anaconda Prompt or CMD, go to the path of the rasa_env.yml file
   2. Activate the environment with the command "conda activate rasa_test"
   #fyi: https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html
 
