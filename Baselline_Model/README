@@ -12,11 +12,14 @@ Uploaded files
 6. evaluation data files
   - switchboard data adapted to rasa yml format
 
+----------------------------------------------------------------------------------------------------------------
 
 Software Requirements
 1. Anaconda3
 2. Spyder from Anaconda3
 3. environment file rasa_env.yml
+
+----------------------------------------------------------------------------------------------------------------
 
 Please run by doing the followings:
 A. Set up an environment
