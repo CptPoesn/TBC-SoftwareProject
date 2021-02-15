@@ -248,7 +248,8 @@ def main(tokenized_msg, generator, tokenizer, rasa_model, threshold,
 
     # extract return values from trp-list
     msg_at_locking_time, p_intent, score, p_utterance = earliest_locking_time(trp_list)
-
+    
+    print("\n ------------------------- \n")
     print("full message: ", " ".join(tokenized_msg))
     print("earliest possible response point: ", msg_at_locking_time)
     print("top intent and score at earliest possible response point: ", p_intent, score)
