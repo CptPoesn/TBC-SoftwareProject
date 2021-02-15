@@ -30,7 +30,7 @@ A. Set up an environment
 B. Train a Rasa model with provided data
   1. Go to the path intended to have your model saved
   2. Get up a new initial Rasa model with command "rasa init"
-  3. Replace the initial nlu.yml with training data files
+  3. Replace the initial nlu.yml with training data files (in "data" folder)
   4. Replace the initial config.yml file with the one uploaded here
   5. Run the command "rasa train"
 
