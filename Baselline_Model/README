@@ -1,1 +1,44 @@
+Updated files
+1. rasa_env.yml
+2. our_dialogue_manager.py
+3. evaluation.py
+4. config.yml
+5. training data files
+6. evaluation data files
 
+1. our_dialogue_manager_test1.py
+  - incremental intent classification, text prediction with PPredictor
+2. our_dialogue_manager_test2.py
+  - incremental intent classification, text prediction with GPT-2
+3. nlu.yml
+  - corpus data in nlu format from Ben, with some indent manually added/deleted
+4. our_dialogue_manager_test5.py
+  - updated of odm 1 & 2, uses PPredictor, uses a threshold and additionally returns a list of possible TRPs (where confidence exceeded threshold)
+  - choose your own text input, threshold and splitting point of predicted text under the "alter these" section
+
+Software Requirements
+1. Anaconda3
+2. Spyder from Anaconda3
+3. environment file rasa_env.yml
+
+Please run by doing the followings:
+A. Set up an environment
+  1. In Anaconda Prompt, go to the path of the rasa_env.yml file
+  2. Activate the environment with the command "conda activate rasa_test"
+  #fyi: https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html
+
+B. Train a Rasa model with provided data
+  1. Go to the path intended to have your model saved
+  2. Get up a new initial Rasa model with command "rasa init"
+  3. Replace the initial nlu.yml with training data files
+  4. Replace the initial config.yml file with the one uploaded here
+  5. Run the command "rasa train"
+
+C. Run model on a single sentence as input
+  1. Have the our_dialogue_manager.py file in the same folder as config.yml
+  2. Change the path to your trained model's path (line 290)
+  3. Input a sentence for the variable input_msg (line 280)
+  4. If desired, change the variable threshold (line 281)
+  5. Run the command "python our_dialogue_manager.py"
+
+D. Run evaluation
