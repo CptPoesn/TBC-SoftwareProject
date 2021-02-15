@@ -1,4 +1,4 @@
-name: rasa_test
+name: rasa_env
 channels:
   - defaults
 dependencies:
