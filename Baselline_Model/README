@@ -7,10 +7,12 @@ Uploaded files
   - for batch evaluation
 4. config.yml
   - replacement of config.yml from rasa initial model
-5. training data files
-  - switchboard data adapted to rasa yml format
-6. evaluation data files
-  - switchboard data adapted to rasa yml format
+5. allSwitchboard.yaml
+  - switchboard data adapted to rasa yml format (see directory "../datahandling" for further corpora)
+6. allSwitchboard_eval.csv
+  - switchboard data for evaluation (csv format)
+7. allSwitchboard_dev.csv
+  - switchboard data for development; this is the data we tested on to get the performance measures reported in our presentation
 
 ----------------------------------------------------------------------------------------------------------------
 
