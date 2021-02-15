@@ -24,7 +24,7 @@ Software Requirements
 Please run by doing the followings:
 A. Set up an environment
   1. In Anaconda Prompt, go to the path of the rasa_env.yml file
-  2. Activate the environment with the command "conda activate rasa_test"
+  2. Activate the environment with the command ```conda activate rasa_test```
   #fyi: https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html
 
 B. Train a Rasa model with provided data
@@ -32,13 +32,15 @@ B. Train a Rasa model with provided data
   2. Get up a new initial Rasa model with command "rasa init"
   3. Replace the initial nlu.yml with training data files (in "data" folder)
   4. Replace the initial config.yml file with the one uploaded here
-  5. Run the command "rasa train"
+  5. Run the command `rasa train` in the directory that contains `config.yml` and 
 
 C. Run model on a single sentence as input
-  1. Have the our_dialogue_manager.py file in the same folder as config.yml
-  2. Change the path to your trained model's path (line 290)
-  3. Input a sentence for the variable input_msg (line 280)
-  4. If desired, change the variable threshold (line 281)
-  5. Run the command "python our_dialogue_manager.py"
+  1. Change the path to your trained model's path, i.e. the directory you created in step B.2. (line 266)
+  2. Input a sentence for the variable input_msg (line 256)
+  3. If desired, change the variable threshold (line 257)
+  4. Run the command `python our_dialogue_manager.py`
 
 D. Run evaluation
+  1. Adapt the paths for your trained model and the evaluation data corresponding to your training data (lines 8,9)
+  2. Feel free to manipulate the hyper-parameters (lines 10, 25-32)
+  3. Run `python evaluation.py`
