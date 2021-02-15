@@ -6,16 +6,6 @@ Updated files
 5. training data files
 6. evaluation data files
 
-1. our_dialogue_manager_test1.py
-  - incremental intent classification, text prediction with PPredictor
-2. our_dialogue_manager_test2.py
-  - incremental intent classification, text prediction with GPT-2
-3. nlu.yml
-  - corpus data in nlu format from Ben, with some indent manually added/deleted
-4. our_dialogue_manager_test5.py
-  - updated of odm 1 & 2, uses PPredictor, uses a threshold and additionally returns a list of possible TRPs (where confidence exceeded threshold)
-  - choose your own text input, threshold and splitting point of predicted text under the "alter these" section
-
 Software Requirements
 1. Anaconda3
 2. Spyder from Anaconda3
