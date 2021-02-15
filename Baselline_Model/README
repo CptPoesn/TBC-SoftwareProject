@@ -1,10 +1,17 @@
-Updated files
+Uploaded files
 1. rasa_env.yml
+  - environment for Rasa and predictors requirements
 2. our_dialogue_manager.py
+  - for running model on single input
 3. evaluation.py
+  - for batch evaluation
 4. config.yml
+  - replacement of config.yml from rasa initial model
 5. training data files
+  - switchboard data adapted to rasa yml format
 6. evaluation data files
+  - switchboard data adapted to rasa yml format
+
 
 Software Requirements
 1. Anaconda3
