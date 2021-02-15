@@ -5,6 +5,7 @@ import csv
 import numpy as np
 from timeit import default_timer as timer
 
+corpus_file_name = "C:/Users/schmi/Downloads/rasa-master/unifiedCorpora/SwitchBoard/allSwitchboard._for_development.csv"
 model_path = "../../Softwareprojekt/switchboard/models"
 predictor = "huggingtweets/ppredictors" # huggingtweets/ppredictors or gpt2
 
@@ -30,17 +31,8 @@ def get_prediction(utterance, model, generator, tokenizer):
 	num_utterance_predictions = 5
 	utt_pred_threshold = 0.6
 
-	"""
-	run several experiments with different configuration: different weightings for incremental scores; 
-	confidence thresholds; unique vs recurring values in training file; cutting predicted utterance at 
-	different break points (punctuation, EOS, EOT, defined maximum length, ...); different utterance 
-	prediction models (GPT2, PPredict, GPT3?); task-based vs chit-chat
-	"""
-
+	# process utterance, process i.e. input
 	tokenized_msg = word_tokenize(utterance)
-	print("tokens: ", tokenized_msg)
-
-
 	msg_at_trp, predicted_intent, utterance_prediction_at_trp = \
 		dm.main(tokenized_msg, generator, tokenizer, model, threshold,
 				update_weight_timesteps, predicted, scaling_weight_utterance_prediction_score,
@@ -51,8 +43,8 @@ def get_prediction(utterance, model, generator, tokenizer):
 	cumu_msg_at_trp = word_tokenize(msg_at_trp)
 	tokenized_utterance_prediction = word_tokenize(utterance_prediction_at_trp)
 	prediction_locking_time = len(cumu_msg_at_trp) - len(tokenized_msg)
-	print(len(tokenized_utterance_prediction),tokenized_utterance_prediction)
-	print(len(tokenized_msg), tokenized_msg)
+	#print(len(tokenized_utterance_prediction),tokenized_utterance_prediction)
+	#print(len(tokenized_msg), tokenized_msg)
 	predicted_trp = len(tokenized_utterance_prediction) - len(tokenized_msg)
 	# According to Gervits et al., it takes the model about 1400ms to compute its response.
 	# This translates into something between 3-5 tokens in typical English dialogue. Let's assume 3 tokens.
@@ -82,7 +74,6 @@ confusion_matrix = defaultdict(lambda: defaultdict(int))
 locking_times = []
 trps = []
 fots = []
-corpus_file_name = "C:/Users/schmi/Downloads/rasa-master/unifiedCorpora/SwitchBoard/allSwitchboard._for_development.csv"
 with open(corpus_file_name, mode='r') as csv_file:
 	csv_reader = csv.DictReader(csv_file)
 	for row in csv_reader:
@@ -103,7 +94,7 @@ print("total sum: ", total_sum)
 accuracy = true_positives / total_sum
 print("accuracy: ", accuracy)
 
-
+"""
 _confusion_matrix = defaultdict(lambda: defaultdict(int))
 for intent in confusion_matrix:
 	if intent.startswith("inform"):
@@ -125,20 +116,11 @@ total_sum = float(sum([sum(_confusion_matrix[x].values()) for x in _confusion_ma
 print("\ttotal sum: ", total_sum)
 accuracy = true_positives / total_sum
 print("\taccuracy: ", accuracy)
-
+"""
 
 
 
 end = timer()
-"""
-import pickle
-
-with open('list_dump', 'wb') as fp:
-	pickle.dump(locking_times, fp)
-	pickle.dump(response_delivery_times, fp)
-	pickle.dump(total_sum)
-	pickle.dump(confusion_matrix)
-"""
 
 # get relevant measures for timing
 print("locking times: ", locking_times)
@@ -156,7 +138,7 @@ print("Execution time: ", start-end)
 
 
 
-
+# TODO label-specific evaluation
 # label-specific
 """
 false_negatives = dict()

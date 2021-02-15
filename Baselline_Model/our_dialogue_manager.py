@@ -48,7 +48,7 @@ def intent_prob(result):
             thing = thing.strip()
 
             if "name" in thing:  # thing.startswith('"name'):
-                now_intent = thing.split(":")[1].strip(string.punctuation).strip().strip(string.punctuation).strip()
+                now_intent = thing.split(":")[1].strip(string.punctuation).strip().strip(string.punctuation).strip() #TODO: delete " and ' from string.punctuation
             elif thing.startswith('"confidence"'):
                 now_confi = thing.split(":")[1].strip("}").strip(string.punctuation).strip().strip(
                     string.punctuation).strip()
@@ -94,7 +94,7 @@ def predict_with_score(input, generator, tokenizer, num_predictions=5):
     # 2) normalize the probs over the three sequences
     normed_gen_probs = gen_probs / gen_probs.sum(0)
     unique_normed_prob_per_sequence = normed_gen_probs.prod(-1)
-    print("unique NORMED prob per sequence: ", unique_normed_prob_per_sequence)
+    print("unique NORMED probs per sequence: ", unique_normed_prob_per_sequence)
 
     return [{"generated_text":tokenizer.decode(x), "score":y}
             for x,y in zip(gen_sequences, unique_normed_prob_per_sequence)]
@@ -116,7 +116,7 @@ def weight_by_utterance_probability(pred_score, scaling_weight_utterance_predict
 
 
 def get_pred_text(input_so_far, predfull_text, predicted):
-    print("predfull_text: ", predfull_text)
+    print("Full predicted utterance: ", predfull_text)
     punc = "[" + ".?!" + "]"  # string.punctuation
     allpunc = "[" + string.punctuation + "]"
     if predicted == "by_sentend":
@@ -128,7 +128,7 @@ def get_pred_text(input_so_far, predfull_text, predicted):
 
     pred_text = " ".join(input_so_far + [pred_text]) # append the newly predicted text to what we already have as input
     pred_text = pred_text.replace("<|endoftext|>","") # str.removesuffix is only implemented in python>=3.9
-    print("prediction item: ", pred_text)
+    #print("prediction item: ", pred_text)
 
     return pred_text
 
@@ -159,7 +159,7 @@ def main(tokenized_msg, generator, tokenizer, rasa_model, threshold,
     for word in tokenized_msg:
         cumu_msg.append(word)  # take one more word from full msg
         out = " ".join(cumu_msg)
-        print("current output: ", out)
+        print("current utterance portion: ", out)
 
         _intent_dict = defaultdict(list)
 
@@ -170,7 +170,7 @@ def main(tokenized_msg, generator, tokenizer, rasa_model, threshold,
             pred_score = item["score"] # score for utterance prediction
             utt_score = weight_by_utterance_probability(pred_score, scaling_weight_utterance_prediction_score)
             pred_text = get_pred_text(cumu_msg, item["generated_text"], predicted)
-            print("pred text: ", pred_text)
+            print("input to intent classifier: ", pred_text)
 
             # Get intents ranking for predicted utterance
             all_result = process_input(pred_text, rasa_model)  # classify intent
@@ -215,7 +215,7 @@ def main(tokenized_msg, generator, tokenizer, rasa_model, threshold,
         if trp_list:
             break
 
-        print("\n ------------------------- \n")
+    print("\n ------------------------- \n")
 
     # If threshold hasn't been reached,
     #   choose best intent after reading in the whole input
@@ -227,9 +227,10 @@ def main(tokenized_msg, generator, tokenizer, rasa_model, threshold,
     msg_at_locking_time, p_intent, score, p_utterance = earliest_locking_time(trp_list)
 
     print("full message: ", " ".join(tokenized_msg))
-    print("earliest possible response point: ", msg_at_locking_time)
-    print("top intent and score at earliest possible response point: ", p_intent, score)
-    print("trp list: ", trp_list)
+    print("predicted utterance at locking time: ", msg_at_locking_time)
+    print("top intent and score at earliest locking time: ", p_intent, score)
+    print("\n\n\n")
+    #print("prediction list: ", trp_list)
 
     return msg_at_locking_time, p_intent, p_utterance
 
@@ -265,7 +266,7 @@ if __name__ == "__main__":
 
     model_path = "../../Softwareprojekt/rasa_test/models"
     tokenized_msg = word_tokenize(input_msg)
-    print("tokens: ", tokenized_msg)
+    #print("tokens: ", tokenized_msg)
 
     # models
     generator, tokenizer = get_utterance_predictor_and_tokenizer(predictor="huggingtweets/ppredictors") # "huggingtweets/ppredictors" or "gpt2"
