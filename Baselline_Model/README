@@ -32,10 +32,10 @@ A. Set up an environment from file
 
 B. Train a Rasa model with provided data
   1. Go to the path intended to have your model saved
-  2. Get up a new initial Rasa model with command "rasa init". Rasa will create some files and directories, including a file called "config.yml" and a folder calles "data".
-  3. Replace the initial nlu.yml with training data files in "data" folder (e.g. allSwitchboard.yaml - see ../datahandling for more training files) 
-  4. Replace the initial config.yml file with the one uploaded here
-  5. Run the command "rasa train" in the directory that contains config.yml and the "data" folder
+  2. Get up a new initial Rasa model with command "rasa init" (you can select "n" when asked whether to train an initial model). Rasa will create some files and directories, including a file called "config.yml" and a folder calles "data".
+  3. Replace the initial training data files in "data" folder with the training data of your choice (e.g. allSwitchboard.yaml - see ../datahandling for more training files) 
+  4. Replace the initial config.yml file with the one uploaded here.
+  5. Run the command "rasa train" in the directory that contains config.yml and the "data" folder.
 
 C. Run model on a single sentence as input
   1. In "our_dialogue_manager.py", change the path to your trained model's path, i.e. the directory from step B. (line 266)
