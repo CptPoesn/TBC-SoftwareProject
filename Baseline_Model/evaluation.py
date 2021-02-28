@@ -6,7 +6,7 @@ import numpy as np
 from timeit import default_timer as timer
 
 corpus_file_name = "C:/Users/schmi/Downloads/rasa-master/unifiedCorpora/SwitchBoard/allSwitchboard._for_development.csv"
-model_path = "../../Softwareprojekt/switchboard/models"
+model_path = "C:/Users/schmi/Softwareprojekt/switchboard/models"
 predictor = "huggingtweets/ppredictors" # huggingtweets/ppredictors or gpt2
 
 def get_prediction(utterance, model, generator, tokenizer):
