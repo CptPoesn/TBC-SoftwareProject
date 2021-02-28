@@ -1,5 +1,6 @@
 
 # imports################################################################
+import logging
 
 from rasa.cli.utils import get_validated_path
 from rasa.model import get_model, get_model_subdirectories
@@ -128,20 +129,25 @@ def get_pred_text(input_so_far, predfull_text, predicted):
     return pred_text
 
 def earliest_locking_time(trp_list):
-    user_utterance, predicted_utterance, prediction = min(trp_list, key=(lambda x: (len(x[0]), -x[2][1])))
-    intent,score = prediction
-    return user_utterance, intent, score, predicted_utterance
+    # Choose prediction at earliest point in time (i.e. shortest user utterance) and with highest score (i.e. prediction[1]).
+    user_utterance, predicted_utterance, intent, score, pred_id = min(trp_list, key=(lambda x: (len(x[0]), -x[3])))
+    return user_utterance, intent, score, predicted_utterance, pred_id
 
 def last_locking_time(trp_list):
-    pass
+    # Choose prediction at latest point in time (i.e. longest user utterance) and with highest score (i.e. prediction[1]).
+    user_utterance, predicted_utterance, intent, score, pred_id = max(trp_list, key=(lambda x: (len(x[0]), x[3)))
+    return user_utterance, intent, score, predicted_utterance, pred_id
 
 def best_locking_time(trp_list):
-    pass
+    # Choose prediction with best score (i.e. highest prediction[1])
+    user_utterance, predicted_utterance, intent, score, pred_id = max(trp_list, key=(lambda x: x[3]))
+    return user_utterance, intent, score, predicted_utterance, pred_id
 
 
-def main(tokenized_msg, generator, tokenizer, rasa_model, threshold,
+def get_prediction(tokenized_msg, generator, tokenizer, rasa_model, threshold,
          update_weight_timesteps, predicted, scaling_weight_utterance_prediction_score,
          average=False, averaging_weight = 0.5, num_utterance_predictions = 5, utt_score_threshold=0.6, prediction_updates=True):
+    num_updates = 0 # counter for at how many time steps a prediction passed the threshold
     cumu_msg = []  # cumulated message
     intent_dict = defaultdict(int)
     trp_list = list()
@@ -184,7 +190,9 @@ def main(tokenized_msg, generator, tokenizer, rasa_model, threshold,
 
             #print(sorted(intent_dict.items(), key=operator.itemgetter(1), reverse=True))
 
-        # make average
+        update_performed = False # flag whether a prediction passed the threshold at this time step; using flag because we want to count at how many time steps a prediction was performed and because trp_list can contain several elements per time step.
+
+        # make final scores by averaging over the individual utterance predictions
         for intent, predictions in _intent_dict.items():
             # _intent_dict[intent] : list of (predicted_utterance, intent_score) tuples
 
@@ -198,11 +206,24 @@ def main(tokenized_msg, generator, tokenizer, rasa_model, threshold,
             intent_dict[intent] = intent_dict[intent] * (
                         1 - update_weight_timesteps) + score * update_weight_timesteps  # in Gervits et al.: update_weight_timesteps=1.0
             if score >= threshold:
-                trp_list.append((out, highest_ranking_utterance, (intent, score)))
+                update_performed = True
+                trp_list.append((out, highest_ranking_utterance, intent, score, num_updates+1))
+
+        if update_performed:
+            num_updates += 1
 
         # compute output at this time step
-        if trp_list:
+        if trp_list and not prediction_updates:
+            # If we don't update predictions and trp_list is non-empty (i.e. at least one prediction has passed the threshold),
+            # there's no need for further computation.
             break
+        elif prediction_updates:
+            # Break if the highest scoring prediction in trp_list predicts the trp to be 3 or less tokens away
+            user_utterance, intent, score, predicted_utterance, pred_id = best_locking_time(trp_list)
+            if len(predicted_utterance) - len(user_utterance) < 4:
+                logging.info(f"Highest scoring prediction is {pred_id}th out of {num_updates} predictions.")
+                break
+
 
     print("\n ------------------------- \n")
 
@@ -210,10 +231,26 @@ def main(tokenized_msg, generator, tokenizer, rasa_model, threshold,
     #   choose best intent after reading in the whole input
     if not trp_list:
         best_intent,best_score = max(intent_dict.items(), key=itemgetter(1))
-        trp_list.append((out, pred_text, (best_intent, best_score) ))
+        trp_list.append((out, pred_text, best_intent, best_score, num_updates))
 
-    # extract return values from trp-list
-    msg_at_locking_time, p_intent, score, p_utterance = earliest_locking_time(trp_list)
+    return trp_list
+
+def main(tokenized_msg, generator, tokenizer, rasa_model, threshold,
+         update_weight_timesteps, predicted, scaling_weight_utterance_prediction_score,
+         average=False, averaging_weight=0.5, num_utterance_predictions=5,
+         utt_score_threshold=0.6, prediction_updates=True):
+
+    # 1. Get trp_list
+    trp_list = get_prediction(tokenized_msg, generator, tokenizer, rasa_model, threshold,
+         update_weight_timesteps, predicted, scaling_weight_utterance_prediction_score,
+         average=average, averaging_weight=averaging_weight, num_utterance_predictions=num_utterance_predictions,
+                   utt_score_threshold=utt_score_threshold, prediction_updates=prediction_updates)
+
+    # 2. Extract return values from trp-list
+    if prediction_updates:
+        msg_at_locking_time, p_intent, score, p_utterance, pred_id = best_locking_time(trp_list)
+    else:
+        msg_at_locking_time, p_intent, score, p_utterance, pred_id = earliest_locking_time(trp_list)
 
     print("full message: ", " ".join(tokenized_msg))
     print("predicted utterance at locking time: ", msg_at_locking_time)
