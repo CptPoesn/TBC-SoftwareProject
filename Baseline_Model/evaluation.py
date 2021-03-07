@@ -5,9 +5,11 @@ import csv
 import numpy as np
 from timeit import default_timer as timer
 
-corpus_file_name = "C:/Users/schmi/Downloads/rasa-master/unifiedCorpora/SwitchBoard/allSwitchboard._for_development.csv"
-model_path = "C:/Users/schmi/Softwareprojekt/switchboard/models"
+corpus_file_name = "C:/Users/schmi/Downloads/rasa-master/unifiedCorpora/TRAINS/allTRAINS._for_development.csv"
+model_path = "C:/Users/schmi/Softwareprojekt/trains/models"
 predictor = "huggingtweets/ppredictors" # huggingtweets/ppredictors or gpt2
+vad_threshold = 2 # VAD = voice activation detector; threshold indicates after how many tokens of silence we deduce an end-of-utterance
+response_generation_duration = 2  # how long it takes the NLG module to produce a response given a utterance and intent; duration measured in number of tokens
 
 def get_prediction(utterance, model, generator, tokenizer):
 	"""
@@ -48,16 +50,16 @@ def get_prediction(utterance, model, generator, tokenizer):
 	#print(len(tokenized_utterance_prediction),tokenized_utterance_prediction)
 	#print(len(tokenized_msg), tokenized_msg)
 	predicted_trp = len(tokenized_utterance_prediction) - len(tokenized_msg)
-	# According to Gervits et al., it takes the model about 1400ms to compute its response.
-	# This translates into something between 3-5 tokens in typical English dialogue. Let's assume 3 tokens.
+	# According to Gervits et al., it takes the model about 1400ms to compute its response (including VAD).
+	# This translates into something between 3-5 tokens in typical English dialogue. Let's assume 2 tokens for VAD-threshold and 2 tokens for generation.
 	# In that case, if the model locks its prediction at t=-1 (one token before the user has finished their utterance),
 	# and predicts the TRP correctly (i.e. len(tokenized_utterance_prediction) - len(tokenized_msg) == 0),
-	# then it can still respond at t=2lockingTime+computationDuration=-1+3 instead of the correctly predicted 0.
-	# In general, if predictedTRP>(lockingTime+3): FOT=predictedTRP, else: FOT=lockingTime+3.
-	if predicted_trp > (prediction_locking_time + 3) :
+	# then it can still respond at t=1lockingTime+computationDuration=-1+2 instead of the correctly predicted 0.
+	# In general, if predictedTRP>(lockingTime+2): FOT=predictedTRP, else: FOT=lockingTime+2.
+	if predicted_trp > (prediction_locking_time + response_generation_duration) :
 		fot_estimate = predicted_trp
 	else:
-		fot_estimate = prediction_locking_time + 3
+		fot_estimate = prediction_locking_time + response_generation_duration
 
 	return predicted_intent, prediction_locking_time, predicted_trp, fot_estimate
 
@@ -131,12 +133,18 @@ print("predicted TRPs / response delivery times: ", trps)
 print("average predicted TRPs / response time: ", sum(trps) / total_sum, " +/- ", np.std(trps))
 print("estimated floor transfer offset: ", fots)
 print("average estimated floor transfer offset: ", sum(fots) / total_sum, " +/- ", np.std(fots))
-	# Gervits: 	baseline (=without prediction of trp) response_time = 1.4 seconds
+	# Gervits: 	baseline (=non-incremental, without prediction of trp) response_time = 1.4 seconds (=generation-time + vad-threshold)
 	# 			Switchboard mean syllable duration = 200 ms
 	#			English: ~1.5 syllables / word
 	#			very roughly, Gervits et al.'s baseline translates into 4.6 tokens after the EOU
 	#			or: English: ~100-130 words/minute => baseline translates into 3-4 tokens
-print("Execution time: ", start-end)
+
+# Assuming a VAD module, the response generation would be started at time t = end-of-utterance + vad-threshold.
+fots_with_vad = [min(vad_threshold+response_generation_duration, x) for x in fots] # x already includes response-generation-duration
+print(f"estimated floor transfer offset with VAD threshold of {vad_threshold}: {fots_with_vad}")
+print(f"average estimated floor transfer offset with a VAD threshold of {vad_threshold}: ", sum(fots_with_vad) / total_sum, " +/- ", np.std(fots_with_vad))
+
+print(f"Execution time: {end-start} seconds")
 
 
 
