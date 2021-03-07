@@ -5,8 +5,8 @@ import csv
 import numpy as np
 from timeit import default_timer as timer
 
-corpus_file_name = "C:/Users/schmi/Downloads/rasa-master/unifiedCorpora/TRAINS/allTRAINS._for_development.csv"
-model_path = "C:/Users/schmi/Softwareprojekt/trains/models"
+corpus_file_name = "C:/Users/schmi/Downloads/rasa-master/unifiedCorpora/SwitchBoard/allSwitchboard._for_development.csv"
+model_path = "C:/Users/schmi/Softwareprojekt/switchboard/models"
 predictor = "huggingtweets/ppredictors" # huggingtweets/ppredictors or gpt2
 vad_threshold = 2 # VAD = voice activation detector; threshold indicates after how many tokens of silence we deduce an end-of-utterance
 response_generation_duration = 2  # how long it takes the NLG module to produce a response given a utterance and intent; duration measured in number of tokens
