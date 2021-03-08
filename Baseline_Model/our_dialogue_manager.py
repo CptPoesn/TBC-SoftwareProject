@@ -59,8 +59,9 @@ def intent_prob(result):
 def get_utterance_predictor_and_tokenizer(predictor="huggingtweets/ppredictors"):
     # predictor can either be "huggingtweets/ppredictors" or "gpt2"
     # start generator and tokenizer
-    generator = AutoModelForCausalLM.from_pretrained(predictor, return_dict_in_generate=True, max_length=30)
     tokenizer = AutoTokenizer.from_pretrained("gpt2")
+    generator = AutoModelForCausalLM.from_pretrained(predictor, return_dict_in_generate=True,
+                                                     max_length=30, pad_token_id=tokenizer.eos_token_id)
     return generator, tokenizer
 
 def predict_with_score(input, generator, tokenizer, num_predictions=5):
@@ -146,7 +147,8 @@ def best_locking_time(trp_list):
 
 def get_prediction(tokenized_msg, generator, tokenizer, rasa_model, threshold,
          update_weight_timesteps, predicted, scaling_weight_utterance_prediction_score,
-         average=False, averaging_weight = 0.5, num_utterance_predictions = 5, utt_score_threshold=0.6, prediction_updates=True):
+         average=False, averaging_weight = 0.5, num_utterance_predictions = 5, utt_score_threshold=0.6,
+                   prediction_updates=True, response_generation_duration=2):
     num_updates = 0 # counter for at how many time steps a prediction passed the threshold
     cumu_msg = []  # cumulated message
     intent_dict = defaultdict(int)
@@ -216,7 +218,7 @@ def get_prediction(tokenized_msg, generator, tokenizer, rasa_model, threshold,
             if prediction_updates:
                 # Break if the highest scoring prediction in trp_list predicts the trp to be 3 or less tokens away
                 user_utterance, intent, score, predicted_utterance, pred_id = best_locking_time(trp_list)
-                if len(word_tokenize(predicted_utterance)) - len(word_tokenize(user_utterance)) < 4:
+                if len(word_tokenize(predicted_utterance)) - len(word_tokenize(user_utterance)) <= response_generation_duration:
                     logging.info(f"Highest scoring prediction is {pred_id}th out of {num_updates} predictions.")
                     print(f"Highest scoring prediction is {pred_id}th out of {num_updates} predictions.")
                     for t in trp_list:
@@ -247,13 +249,14 @@ def get_prediction(tokenized_msg, generator, tokenizer, rasa_model, threshold,
 def main(tokenized_msg, generator, tokenizer, rasa_model, threshold,
          update_weight_timesteps, predicted, scaling_weight_utterance_prediction_score,
          average=False, averaging_weight=0.5, num_utterance_predictions=5,
-         utt_score_threshold=0.6, prediction_updates=True):
+         utt_score_threshold=0.6, prediction_updates=True, response_generation_duration = 2):
 
     # 1. Get trp_list
     trp_list = get_prediction(tokenized_msg, generator, tokenizer, rasa_model, threshold,
          update_weight_timesteps, predicted, scaling_weight_utterance_prediction_score,
          average=average, averaging_weight=averaging_weight, num_utterance_predictions=num_utterance_predictions,
-                   utt_score_threshold=utt_score_threshold, prediction_updates=prediction_updates)
+                   utt_score_threshold=utt_score_threshold, prediction_updates=prediction_updates,
+                              response_generation_duration=response_generation_duration)
 
     # 2. Extract return values from trp-list
     if prediction_updates:
