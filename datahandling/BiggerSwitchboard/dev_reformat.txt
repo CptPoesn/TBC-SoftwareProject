@@ -14,7 +14,7 @@ but I certainly work near a city.|sd
 Okay,|bk
 so Can you notice,|qy
 How about you?|qo
-well it's, it's,|%
+well it's, it's,|uninterpretable
 I live in a rural area.|sd
 Uh-huh.|b
 It's mainly farms and, uh, no heavy industry.|sd
@@ -44,7 +44,7 @@ Yeah,|ny
 yeah,|ny
 we generate,|sd
 one of our, our biggest electrical plants in Rhode Island uses coal to, uh, generate electricity.|sd
-Um,|%
+Um,|uninterpretable
 Um, there doesn't seem to be much emission from them,|sv
 but I'm not sure about the rest of the country.|sd
 Yeah,|b
@@ -77,18 +77,18 @@ they could do something about, about that, I guess.|sv
 Yeah.|aa
 That seems a little ridiculous.|sv
 How are your, uh, your lakes,|qo
-and, uh,|%
+and, uh,|uninterpretable
 Oh they've been getting cleaner.|sd
 They have?|qy^d
 Sure.|na
-But, um, yeah,|%
+But, um, yeah,|uninterpretable
 I'm not sure how much the water pollution is, is directly related to the air pollution, other than acid rain,|sd
-yeah,|%
+yeah,|uninterpretable
 Acid rain,|b^m
 yeah,|b
 that's, that's what I was, uh,|sd
 I mean the stuff I've read recently in Technology Review basically indicates that acid rain may be a little bit, uh, overstated. That a lot of the die off they've seen in forests may not really be due to acid rain at all.|sd
-Um,|%
+Um,|uninterpretable
 I'm not an expert.|h
 Yeah,|aa
 no.|aa
@@ -110,10 +110,10 @@ that's|ba
 But I, I thought it was up there.|sv
 So, that's interesting because New Hampshire, and parts of Vermont, um, they showed pictures of, of extensive tree damage that they attributed to acid rain.|sv
 Uh-huh.|b
-Um.|%
+Um.|uninterpretable
 Um, you kind of think it's something else then?|qy
 Well, that's what the environmentalists were claiming in this article.|arp_nd
-So that,|%
+So that,|uninterpretable
 Oh, they didn't say, they didn't say what though,|bf
 they just said they thought it was,|fo_o_fw_"_by_bc
 They didn't say what,|na
@@ -151,11 +151,11 @@ Uh, I'm not really sure.|no
 You think that, that, that the, uh, the trucking industry is that, uh, incompetent, that they wouldn't, you know,|qy^d
 fuel is, is one of their biggest costs.|sd
 Right.|b
-So, you would,|%
-But diesel engines.|%
+So, you would,|uninterpretable
+But diesel engines.|uninterpretable
 Yeah,|b
 diesel engines.|sd
-It, you know, it's, it,|%
+It, you know, it's, it,|uninterpretable
 I mean, they do generate a lot of soot|sv
 but that at least, that kind of particulate comes out of the air pretty quickly.|sv
 Yeah.|b
@@ -184,7 +184,7 @@ Now that's an idea.|ba
 don't say that too loud though because, uh, every city and town will have a meter on your tail pipe generating generating revenue,|ad
 Well, it just means if you don't pollute, right, or you pollute very little you don't have to pay any tax|sd
 or you just buy one of these things|sd
-and it, it, uh,|%
+and it, it, uh,|uninterpretable
 maybe you, you could probably devise them so it slowly closed off your tail pipe|sv
 and, uh, the less you pollute the longer the devise lasts|sd
 and if you pollute a lot then it closed off your tail pipe|sd
@@ -192,7 +192,7 @@ and you couldn't start your car anymore.|sd
 That's a, that's an interesting concept.|ba
 Is that your idea?|qy
 Yeah,|ny
-but, uh, you know, it's, uh,|%
+but, uh, you know, it's, uh,|uninterpretable
 I guess the difficulty would be to, that somebody could obviously just take it right off the tail pipe again|sv
 so you probably would have to build it right into the muffler or something.|sv
 Well I was going to say,|sd
@@ -200,14 +200,14 @@ right.|aa
 You could put it in, you could, you could, it could be installed like a catalytic converter.|sd
 Right.|b
 I mean I guess you could take those off too|sv
-but,|%
-You could take|%
+but,|uninterpretable
+You could take|uninterpretable
 but mufflers would be a little more obvious if you took that off.|sv
 Yeah,|aa
 if you can take a muffler off and only replace,|sd
 well not unless it was built into every muffler.|sd
 Right.|b
-And that's .|%
+And that's .|uninterpretable
 But if you was talking about something which was more or less universal that, uh, busses and any kind of vehicle, had to pay a pollution tax, uh, this would penalize the heavy polluters and not penalize the light polluters,|sd
 That's a, that's quite a concept.|ba
 You should, uh, pursue that I think, or patent it, you know.|sv
@@ -218,7 +218,7 @@ If you could come up with a device that's the thing.|sv
 Right.|b
 But it shouldn't be too hard to do something like that.|sv
 But that's a, that's a thought.|sd
-No,|%
+No,|uninterpretable
 Uh-huh.|b
 you're right|sv
 and that will solve, uh, a lot of problems.|sv
@@ -242,8 +242,8 @@ Oh.|b
 but, uh, I grew up with country and western,|sd
 Yeah,|b
 I did, too,|sd
-but, uh,|%
-and then,|%
+but, uh,|uninterpretable
+and then,|uninterpretable
 just about any kind of music.|sd
 I even like classical music.|sd
 Yeah,|b
@@ -253,28 +253,28 @@ I, I grew up in a small town|sd
 so, uh, the only, we only had one radio station|sd
 so it was country music,|sd
 Yeah.|b
-but then, uh, when I,|%
+but then, uh, when I,|uninterpretable
 Yeah,|b
 I grew up with Hank Snow, and Lefty Frizzell and Hank Williams and all of those old country and western songs.|sd
 Oh, really.|b
 You're older than I am|sd
-But, uh, I,|%
+But, uh, I,|uninterpretable
 did you happen to see last night the special on Channel Two with James Galway?|qy
 We don't get Channel Two.|ng
 My, uh, our cable doesn't,|sd
 Oh.|b
 I wish we got that what,|sd
-but,|%
+but,|uninterpretable
 That is fabulous.|sv
 Was it?|qy
 Well, we don't get Channel Two.|sd
-We,|%
+We,|uninterpretable
 Yeah,|ny
 when he played DANNY BOY it just almost brought, tears to your eyes, because he can make that flute sing.|sd
 Oh, really?|bh
 Yeah,|ny
 and, uh, it was tremendous.|sv
-Now, he, he is a, uh,|%
+Now, he, he is a, uh,|uninterpretable
 actually, I did,|sd
 I played flute for, almost ten years|sd
 Yeah.|b
@@ -284,7 +284,7 @@ he, he, he's from Ireland isn't he?|qy
 Yeah,|ny
 uh-huh,|ny
 and it was, uh, mostly all Irish tunes,|sd
-Was|%
+Was|uninterpretable
 yeah.|b
 they had a band with him that, uh, had a harpist and another flute and then a guy that played the bagpipes plus the, uh, tin whistle, and a couple of violins and, uh, drum,|sd
 Yeah.|b
@@ -293,7 +293,7 @@ and they, they played all the Irish jigs and so forth,|sd
 it was just fabulous.|sv
 Yeah,|b
 I, he, he is really good.|sv
-Yeah,|%
+Yeah,|uninterpretable
 I, I, I come from a musical background,|sd
 Yeah.|b
 so, uh, uh, I've played flute, flute and piano,|sd
@@ -319,13 +319,13 @@ I've always wanted too,|sd
 Yeah.|b
 I've always wished my parents had forced me to learn the piano or something,|sd
 Yeah|b
-but, uh,|%
+but, uh,|uninterpretable
 I was one of the forced ones|sd
 but I, I'd just love to be able to go to a party or something and sit down at the piano and bang out music|sd
 Oh, I could never do that|sd
-and,|%
+and,|uninterpretable
 I was never that brave|sd
-but, uh, yeah.|%
+but, uh, yeah.|uninterpretable
 I guess the closest I've ever come to participating in music is singing in the choir.|sd
 Yeah,|b
 oh, yeah,|b
@@ -339,7 +339,7 @@ Well, what kind of music do you not like?|qw
 Well, like I say the acid rock,|sd
 I just do not|sd
 an I don't care for rap music either.|sd
-Oh,|%
+Oh,|uninterpretable
 that's not music|sv
 Uh-huh,|aa
 no.|aa
@@ -362,7 +362,7 @@ Yeah.|b
 Have you ever been to the, to, to the Dallas Symphony?|qy
 Uh-huh.|ny
 Have you?|bh
-Is|%
+Is|uninterpretable
 are, are they good?|qy
 Yeah.|ny
 Yeah,|ny
@@ -376,13 +376,13 @@ I, I've heard, I've heard that that is a really,|sd
 Yeah.|b
 I heard that was hard to get tickets to.|qy^d
 Yeah,|ny
-it, it, uh,|%
+it, it, uh,|uninterpretable
 I can't remember how far in advance we reserved, tickets|sd
 but it was out, you know, out at the State Fair Music Hall|sd
 and, uh it was well worth the price.|sv
 Yeah.|b
 Yeah,|b
-that was a real,|%
+that was a real,|uninterpretable
 Was it?|bh
 Yeah,|ny
 I, I bet it was,|ba
@@ -392,13 +392,13 @@ Is that the only, uh, musical,|qy
 do you go see a lot of musicals?|qy
 Just, just ever so often you know, a real, a real good one like that one|sd
 Yeah.|b
-and,|%
+and,|uninterpretable
 That, that would be, that would be nice|sv
 I went and saw, uh, I think it was, uh, SUGAR BABIES,|sd
 that was good,|sv
 that had good music in it.|sv
 Was it?|bh
-How, how,|%
+How, how,|uninterpretable
 I can't, I don't know what that's about.|sd
 Uh, that was the one with Mickey Rooney|sd
 and, uh, oh, what's that real, oh, not real old, my wife she is old too, dancer, uh,|qw
@@ -413,10 +413,10 @@ I know who your talking about.|sd
 I can't think ever her name either.|sd
 I can't think of it.|sd
 Yeah,|b
-that that was, that was,|%
+that that was, that was,|uninterpretable
 I remember that being, uh, here a few years ago.|sd
 Yeah,|b
-but, uh,|%
+but, uh,|uninterpretable
 Oh, oh, the last country music,|sd
 my, my parents still, uh, really like country, music|sd
 Yeah.|b
@@ -436,7 +436,7 @@ Yeah,|aa
 yeah,|aa
 well, yeah,|aa
 Alabama,|sd
-Uh,|%
+Uh,|uninterpretable
 I think, I think they're a bit over exposed|sv
 Yeah|b
 I get kind, of get tired of every other song being Alabama on the, radio.|sv
@@ -451,7 +451,7 @@ we enjoy watching the country and the Grammies and stuff|sd
 but I just, I just don't care for him,|sd
 Yeah.|b
 I just never have.|sd
-I don't,|%
+I don't,|uninterpretable
 I guess probably my favorite all time country and western song or singer is, uh, probably Eddy Arnold.|sd
 Is, is it?|bh
 Uh-huh.|ny
@@ -466,14 +466,14 @@ Smiley Burnette, I don't know if you were old enough to remember him him.|qy^d
 I've heard the name.|sd
 He was, uh, played in the old western movies.|sd
 He was the sidekick of Gene Autry I believe|sv
-Huh.|%
-or they,|%
+Huh.|uninterpretable
+or they,|uninterpretable
 I think his name in, in the movie was Froggy|sv
-and,|%
+and,|uninterpretable
 I've, I've never seen a Gene Autry movie,|sd
 had a real raspy voice,|sd
-Huh.|%
-and, uh,|%
+Huh.|uninterpretable
+and, uh,|uninterpretable
 No,|fo_o_fw_"_by_bc
 I never have|sd
 some of those old ones, of course, Bob Wills, Miss Texas Playboys Ernest Tubbs and Red Foley an,|sd
@@ -484,12 +484,12 @@ Yeah.|b
 I took them up here to Collectors Records and was able to get a little money for them|sd
 Yeah.|b
 but, uh, my mother and dad use to, uh, own a restaurant,|sd
-It's hard to,|%
+It's hard to,|uninterpretable
 Oh, yeah.|b
 and he had, uh, they had a, uh, nickelodeon, of course, in the restaurant,|sd
 Yeah.|b
 and when they would come and change the records the guys would, the guy would give her the old records|sd
-Well, that|%
+Well, that|uninterpretable
 that's neat.|ba
 so, that's where I got my,|sd
 that would be great if they weren't too worn out, at the time.|sv
@@ -539,19 +539,19 @@ back then when I was a kid, there wasn't that much T V,|sd
 Oh, no.|b
 so that's all you had to listen to was the, radio,|sd
 Radio.|^2
-and, uh,|%
+and, uh,|uninterpretable
 that's just what, just what you had,|sd
-plus,|%
+plus,|uninterpretable
 Yeah.|b
 I think it was better back then to,|sv
 there's too much T V now|sv
 Yeah.|b
 and the radio is, you know, more exciting, really, than, than television,|sv
 Yeah.|b
-your imagination|%
+your imagination|uninterpretable
 Yeah.|b
-kept|%
-and|%
+kept|uninterpretable
+and|uninterpretable
 it just didn't vegetate your mind like television does|sv
 Yeah,|b
 I remember mother and dad always turned on the Grand Ole Opera.|sd
@@ -562,8 +562,8 @@ Yeah.|ny
 what day, what day was that on,|qw
 do you, can you recall.|qy
 Uh, uh, seems like it was on a Friday,|sv
-Uh.|%
-Friday or,|%
+Uh.|uninterpretable
+Friday or,|uninterpretable
 Okay.|fo_o_fw_"_by_bc
 Okay.|b^m
 Well what do you think about the idea of, uh, kids having to do public service work for a year?|qw
@@ -588,11 +588,11 @@ but these days they're not, uh,|sv
 parents aren't encouraging their kids to do things like that.|sv
 Because when I was in the Girl Scouts, we did a lot of public service things, because that's just part of, of the scouting, and, you know.|sd
 Yeah,|b
-I've, I've,|%
+I've, I've,|uninterpretable
 that's really great.|sv
 I, I really think that both the Boy Scouts and Girl Scouts is a excellent, two excellent organizations.|sv
 They are|aa
-but parents,|%
+but parents,|uninterpretable
 You know, kids seem like when they get ten or twelve years old they fall out of that,|sv
 Yeah,|aa
 they do.|aa
@@ -600,14 +600,14 @@ and they don't follow it at all, you know.|sv
 There are very few Scouts go on, and become Eagle Scouts.|sv
 Oh, no.|aa
 And, and I don't know what the high rank is for the gals|sd
-but,|%
-I, I, uh,|%
+but,|uninterpretable
+I, I, uh,|uninterpretable
 senior.|sd
 Oh.|b
 Senior,|b^m
 okay.|bk
-So, there's not, uh,|%
-Oh, they're just not,|%
+So, there's not, uh,|uninterpretable
+Oh, they're just not,|uninterpretable
 once they get into junior high it just, not done anymore|sv
 Yeah,|b
 they, they lose interest.|sv
@@ -615,7 +615,7 @@ and then when they young, young adults, there's even less interest there.|sv
 Uh-huh.|b
 They're more for, I|sv
 Me|^2
-Not, not,|%
+Not, not,|uninterpretable
 yeah.|aa
 Grab,|sd
 grab,|sd
@@ -630,11 +630,11 @@ of course, there's, you know, third world countries that can use all kind of hel
 Yeah,|b
 but there's a lot that can be done right here in this country, too.|sv
 But I think, we ought to start right here at home.|sv
-I'm, you know,|%
+I'm, you know,|uninterpretable
 Yeah,|b
 uh, I'm not, I'm not so sure that overseas help, helping overseas would be such a hot idea for, for, uh, a lot of young people.|sv
 No,|aa
-it, it,|%
+it, it,|uninterpretable
 But, since there is much that needs to be done here.|sv
 I think that, yeah, I think that we need to really address what we've done here|sv
 and, and then perhaps even a six month tour overseas that gives them much broader outlook.|sv
@@ -681,7 +681,7 @@ then you have to take a shower and get cleaned up, you know.|sv
 Yeah.|b
 Well, I'm trying to get back in shape for softball this spring.|sd
 Oh, yeah.|b
-But I,|%
+But I,|uninterpretable
 Do you go through this, is this something that you go through every year|qy
 Yeah,|ny
 I haven't decided whether, whether I want to play yet or not|sd
@@ -700,9 +700,9 @@ and I finally got rid of sit cause I never used it,|sd
 but I do use my treadmill|sd
 Uh-huh,|b
 well, that's good.|ba
-Yeah,|%
+Yeah,|uninterpretable
 my parents have a treadmill|sd
-it's,|%
+it's,|uninterpretable
 when I go visit them, uh, I get on that thing every now and then.|sd
 Yeah,|b
 it's nice because when the weather's bad you can't, you don't have any excuse.|sv
@@ -712,7 +712,7 @@ and it was real nice outside,|sd
 had to get out to do something.|sd
 Yeah,|b
 I can't ride a bike|sd
-so.|%
+so.|uninterpretable
 I've been sitting in here in the house all weekend with a cold|sd
 so thought I, better, better get outside and do something and not waist the day.|sd
 Oh.|b
@@ -741,7 +741,7 @@ that's, very important.|sv
 Yeah.|b
 Yeah.|b
 I found that, true especially from walking on toe and fronts .|sd
-But,|%
+But,|uninterpretable
 Yeah,|b
 I don't have to buy jogging shoes all to often|sd
 my don't get very much use|sd
@@ -796,11 +796,11 @@ but I'm trying to workup to three miles.|sd
 Well, that's good.|ba
 Well they say that walking is just as good if not better then jogging.|sv
 Yeah,|b
-It,|%
+It,|uninterpretable
 it takes, it's just that it takes longer to get to the same effect.|sv
 Sure.|b
 Yeah,|b
-but.|%
+but.|uninterpretable
 Well, if you keep up with a consistent pace just to, uh, keep the heart rating going, uh,|sv
 My walkman broke,|sd
 Yeah.|b
@@ -810,7 +810,7 @@ Yeah.|b
 But it's a lot less stressful on the joints then jogging is.|sv
 Yeah,|aa
 it is|aa
-and this doesn't, you know,|%
+and this doesn't, you know,|uninterpretable
 my treadmill has an incline|sd
 and, you know, you can get a really good workout on it.|sv
 Um, do you go to an aerobics class|qy
@@ -820,7 +820,7 @@ I, I just do it on T V,|sd
 Okay.|bk
 I have a cassette.|sd
 Which, uh, shows do you watch on T V?|qw
-Um, it's a, it's a|%
+Um, it's a, it's a|uninterpretable
 I use tapes.|sd
 Oh, okay,|bk
 okay,|b
@@ -839,11 +839,11 @@ There was one guy I use to watch on E S P N,|sd
 I don't know if he's still on any more or not,|sd
 I I don't know if I get E S P N or not|sd
 Uh-huh.|b
-But, uh, one, you know,|%
+But, uh, one, you know,|uninterpretable
 I use to watch one, watch one on the air,|sd
 but that was back,|sd
 BODIES IN MOTION that's, that's the name of the one I was thinking of. With Gill.|sd
-That's was,|%
+That's was,|uninterpretable
 yeah.|b
 Yeah.|b
 Yeah,|b
@@ -851,7 +851,7 @@ I watched that cause he was cute|sd
 Yeah,|aa
 he's not bad|aap_am
 his assistants usually aren't either.|sv
-But, uh,|%
+But, uh,|uninterpretable
 They're always in, in Hawaii some place. On, on the beach.|sd
 Yeah,|b
 yeah.|b
@@ -859,7 +859,7 @@ But then that was back when, uh, you know, the high impact and,|sd
 Yeah,|b
 well, they, they do low I pact stuff now,|sd
 Do they.|bh
-Are|%
+Are|uninterpretable
 yeah|b
 they're still, they're still, he's still doing it then, uh.|qy^d
 Yeah,|ny
@@ -868,13 +868,13 @@ I'll have to tune in.|sd
 It's on E S P N, uh,|sd
 at what time,|t1
 I can't remember what time.|sd
-It's, uh, you know,|%
+It's, uh, you know,|uninterpretable
 I can't remember offhand what time.|sd
 I'll have to check it, check, check, check it back up,|sd
 Yeah|b
 and, but the thing is everybody always looks so good on that show, at least on|sv
 Yeah,|b
-every now and then.|%
+every now and then.|uninterpretable
 Not everybody has a picture perfect body.|sv
 Uh-huh,|b
 well, I found that they, they have just a much better program than the other shows that are on T V.|sv
@@ -908,7 +908,7 @@ Uh, the ammunition is probably so old I'm afraid to use it.|sd
 But, uh, I bought it for target practicing and, uh, and also because I wanted a weapon.|sd
 Uh, how do you feel about it?|qo
 Well, I think, uh, down here in Texas they don't have a waiting period on handguns.|sv
-Huh.|%
+Huh.|uninterpretable
 And, I think they need that.|sv
 Uh, and I do have a, I have a pistol.|sd
 It's a little twenty-two|sd
@@ -928,7 +928,7 @@ You have to get a permit from the police station in your local area to do that.|
 I've never heard of anything like that.|sd
 Yeah. Uh,|b
 That would be nice.|sv
-But,  you know,|%
+But,  you know,|uninterpretable
 the criminals that are going to get their guns one  way or the other.|sv
 I  I, I agree.|aa
 I think, you know, one of the things that, that, that needs to happen is, uh, to, to stop the impulse buyer from, uh, buying it quickly and, and, uh, maybe putting a week's waiting period or something on it.|sv
@@ -939,10 +939,10 @@ I know|aa
 I, I had a waiting period on my pistol because I was down in, uh, Tennessee. And, uh, they had a waiting period|sd
 Uh-huh.|b
 and, uh, we bought it there.|sd
-And,|%
+And,|uninterpretable
 How long was the waiting period out there?|qw
 About nine days.|sd
-Huh.|%
+Huh.|uninterpretable
 That wasn't too, too bad.|sv
 No.|aa
 No|aa
@@ -964,7 +964,7 @@ No,|aa
 a shotgun's got too much of a spread.|sv
 Or at  least ours does.|sd
 Yeah.|b
-Uh, it's, you know,|%
+Uh, it's, you know,|uninterpretable
 you have a little, uh, thing on the bottom of on top of the barrel where you, you turn it,|sd
 Uh-huh.|b
 you can make it either tight or as loose as loose can get.|sd
@@ -980,7 +980,7 @@ Yeah.|b
 My husband had a, uh, a police gun at one time.|sd
 And I shot that thing one time.|sd
 Almost knocked me down.|sd
-And it just a|%
+And it just a|uninterpretable
 I I forget,|sd
 I think it was a three fifty-seven.|sv
 I'm not sure.|h
@@ -1004,7 +1004,7 @@ Plus you have to pay for the, the ammunition in any tournaments that you would j
 Yeah.|b
 Well, that's what my husband,|sd
 when he was in that gun club where he was doing that tell if it's a cough or something was|sd
-It, you know,|%
+It, you know,|uninterpretable
 he went mostly just to, uh, shoot at paper targets.|sd
 Uh-huh.|b
 Uh, but, you know, they used speed and accuracy and all that.|sd
@@ -1013,15 +1013,15 @@ In fact, I'd like to see somehow they tie the legislation into not only when you
 That's a good,|ba
 I've never thought of that.|sd
 That's a good point.|ba
-And, you know, it, it,|%
+And, you know, it, it,|uninterpretable
 even after you wait your nine days, if you don't know how to handle it, it's just like putting someone in an automobile that doesn't know how to drive.|sv
 And you give him a license because he waited nine days.|sd
 Yeah.|b
-That's,|%
-and, yeah.|%
+That's,|uninterpretable
+and, yeah.|uninterpretable
 He could, he could not only, uh, uh, shoot himself.|sv
 He could, he could, uh, mishandle a weapon. Leave it at home and let a child get at it.|sv
-It,|%
+It,|uninterpretable
 well we, uh, we was living on a navy base down in Memphis|sd
 and, uh, this one guy decided to play, uh, lonesome cowboy or something.|sd
 And he was twirling his gun around and shot himself in his foot.|sd
@@ -1041,28 +1041,28 @@ Do you believe there ought to be legislation guiding the, uh, buyer and the sell
 And, or do you believe that you ought to be able to sell your system, uh, because you own it?|qrr
 Uh, that's a hard one because we did that.|h
 But, uh, I think there ought to be some rule against it.|sd
-I'll, uh, you know,|%
+I'll, uh, you know,|uninterpretable
 the person who sells the gun ought to protect themselves because if that gun's registered to them and somebody else uses that gun in something, the cops are going to come to you.|sv
 Yeah.|b
 isn't  there a way to, uh, to deregister yourself after you register a gun?|qy
-Uh,|%
+Uh,|uninterpretable
 I have no idea.|no
 I've only  had one gun|sd
-Because I   have,|%
+Because I   have,|uninterpretable
 and I've kept it, you  know, the one gun that was in my name.|sd
 Yeah.|b
 Is it registered?|qy
 Yeah.|ny
 The, uh, the rifle that I've got is not registered,|sd
 and, uh, I don't know why I never registered it|sd
-but the, uh,|%
+but the, uh,|uninterpretable
 I don't think you have to register a shotgun|sv
 Um, I, I think it's, it's voluntary|sv
-The, uh, the,|%
+The, uh, the,|uninterpretable
 Well, see, uh, my husband has a thing.|sd
 If they go to, uh, regulating, uh, all right, uh, banning guns. private citizens|sd
 Yeah.|b
-this,|%
+this,|uninterpretable
 my kid is jumping on me.|sd
 I can't hardly talk.|sd
 My husband feels that they'll come and collect everybody's guns.|sd
@@ -1077,7 +1077,7 @@ And if you try to do anything, uh, like, uh, not identify yourself to the govern
 Yeah.|aa
 And everything about you.|^2
 And , that's true|aa
-Uh, I,|%
+Uh, I,|uninterpretable
 you know, they know so, how much money you make a week to, uh, probably your, uh,|sv
 my kid is banging.|sd
 I was seeing what they was banging on.|sd
@@ -1085,7 +1085,7 @@ Uh, I've lost my train of thought.|sd
 I'm sorry|fa
 That's all right.|bd
 You, you were talking about, uh, uh, what the Federal government knows about people.|bf
-Oh, the|%
+Oh, the|uninterpretable
 Yeah.|aa
 They, they probably know everything from, half the time what time you go to the bathroom.|sv
 They probably do.|aa
@@ -1098,7 +1098,7 @@ but we wouldn't lose our our, uh, shotgun.|sd
 Yeah.|b
 And, uh, we're wanting to get a couple of more that no one knows about.|sd
 Uh-huh.|b
-But I don't, I don't, uh|%
+But I don't, I don't, uh|uninterpretable
 Do you find it difficult picking up, uh, guns that, that are not registered?|qy
 No.|nn
 No.|b^m
@@ -1140,14 +1140,14 @@ so I can't complain too much.|sv
 Yeah,|b
 I guess so.|sv
 I don't know.|h
-They're|%
+They're|uninterpretable
 Well, I haven't heard anything about the proposal myself,|sd
 but, uh, Uh, I don't know if its their proposal or one that's being seriously kicked around.|sd
 No,|b
 I haven't either.|sd
 I've, I've always felt for a long time that I, I think that all young kids ought to do a stint, uh, primarily in the military.|sv
 Yeah.|b
-Uh.|%
+Uh.|uninterpretable
 Most countries require that now,|sd
 they you know, they have, uh, it mandatory for, for the, the uh at least the young men,|sd
 Yeah,|b
@@ -1156,8 +1156,8 @@ Uh-huh.|b
 I don't know about the young women,|sd
 I don't know if they have to serve in the military,  too.|sd
 Yeah,|b
-a lot,|%
-yeah,|%
+a lot,|uninterpretable
+yeah,|uninterpretable
 well, you take Israel|sd
 I mean, everybody does.|sd
 Yeah.|b
@@ -1201,7 +1201,7 @@ That's good.|ba
 Yeah,|b
 I guess.|sv
 Yeah,|b
-that's, uh,|%
+that's, uh,|uninterpretable
 I don't know.|h
 There's other kinds of service to the country that could be done, you know,|sv
 Yeah,|b
@@ -1211,7 +1211,7 @@ Sure.|b
 Exactly.|ba
 I mean, I've always felt that people on welfare should be required to spend at least part of their time, *why no slash? not all the time because that takes away from their opportunity to look for a job, but at least some of their time to look for, to go out and clean up the roads. You know,|sv
 Oh yeah, Absolutely.|aa
-I mean,|%
+I mean,|uninterpretable
 All these, all this money that we're throwing away to pay people to go out and do things when we're paying all these welfare recipients,|sv
 and if they're able-bodied people, I don't see any problem at all with having them go out there and, and, if nothing else, get a group of them together and take them around to old folks  places and let them cut the yards, paint the houses.|sv
 Yeah.|b
@@ -1219,17 +1219,17 @@ Yeah,|b
 we'd learn service to other people   in this country.|sv
 Sure ,|b
 sure.|b
-So I'm,|%
+So I'm,|uninterpretable
 get something out of that money.|sv
 Country would benefit,|sv
 Yeah|b
-I've,|%
-I mean, uh,|%
+I've,|uninterpretable
+I mean, uh,|uninterpretable
 yeah,|b
 yeah,|b
 my next door neighbor when I was growing up, worked for the unemployment division,|sd
 and his sole job was just tracking down people who were getting benefits and able-bodied|sd
-and,|%
+and,|uninterpretable
 That right.|bh
 Yeah,|ny
 and he, he had all kinds of horror stories.|sd
@@ -1277,7 +1277,7 @@ Yeah.|b
 Yeah.|b
 What would happen if the required young people to do service to the country,|qw
 what should they get in return, I wonder.|qh
-Like, uh,|%
+Like, uh,|uninterpretable
 I think, I think there ought to be some kind of assistance as far as, uh,|sv
 and I would limit it strictly to something like tuition assistance.|sd
 Yeah.|b
@@ -1287,8 +1287,8 @@ Yeah.|aa
 Something that's going to help them along the way.|sd
 And they'll help the country eventually, too, because rather than having a bunch of uneducated people we can have educated people,|sv
 Sure,|aa
-I mean,|%
-Well, this,|%
+I mean,|uninterpretable
+Well, this,|uninterpretable
 I mean I mean, look at the statistics,|ad
 and that's only going to help.|sv
 I mean, it's sad.|sv
@@ -1321,11 +1321,11 @@ Yeah,|b
 and, and it can be good for them, too.|sv
 Yeah,|b
 oh yeah.|b
-I mean, even, even the greedy kids that we've got now ...|%
+I mean, even, even the greedy kids that we've got now ...|uninterpretable
 Oh god, you go to the mall|ad
 and you see, you know, fourteen year old kids flaunting money, because the parents give them money to go down and play video games all night, you know|sd
 I know.|aa
-for what.|%
+for what.|uninterpretable
 I know.|aa
 Give me the money|ad
 and I'll, I'll teach them something good|sd
@@ -1360,12 +1360,12 @@ Well, in a way it is,|aap_am
 but you have to look out for yourself you know,|sv
 Yeah,|aa
 that's right.|aa
-I mean, that's|%
+I mean, that's|uninterpretable
 and when we pay garbage men more than we pay teachers,|sv
 That's wrong.|sv
 Yeah,|aa
 gosh,|ba
-I mean,|%
+I mean,|uninterpretable
 I'm not saying that garbage men should be paid less,|sd
 I saying teachers should be paid more.|sd
 No,|aa
@@ -1375,15 +1375,15 @@ I mean, I, I have a great deal of admiration for these people who can go out the
 Yeah.|b
 But, uh, I mean, there's, there's a sense of priorities here, too.|sv
 Yeah.|b
-You know, we need,|%
+You know, we need,|uninterpretable
 what's more important, picking up the garbage or educating our kids.|qh
 Yeah|b
 They both have their place.|sv
 Yeah,|aa
-they, they,|%
+they, they,|uninterpretable
 sure.|aa
 But, you know, when it gets right down to it,|sd
-I mean, one's|%
+I mean, one's|uninterpretable
 I mean, on the other hand, I mean, you take a garbage man in New York City starts out at twenty-six thousand dollars.|ad
 That's pretty good.|ba
 Well I bet you there's a whole bunch of homeless people up there who would take that job for thirteen thousand dollars a year.|sd
@@ -1399,7 +1399,7 @@ but there are enough laws on the books now that unions are outdated,|sv
 and they're only there to perpetuate their own, their own power structure.|sv
 I remember, the company my dad worked for, the people there went on strike against the management.|sd
 It was a steel manufacturing place,|sd
-and they, uh,|%
+and they, uh,|uninterpretable
 this was during a time when the import steel was so cheap,|sd
 and they were having a hard time.|sd
 And they told the strikers there, look,|sd
@@ -1411,7 +1411,7 @@ Yeah.|b
 And, and they all lost their jobs.|sd
 Sure,|b
 and, and   and that's really what happened to the steel industry in this country.|sv
-And it's like , you know.|%
+And it's like , you know.|uninterpretable
 Yeah.|b
 So many times, I mean, you had the, uh, the coal miners and steel workers going out at the same time.|sd
 And, well, that took care of that industry|sv
@@ -1424,16 +1424,16 @@ I mean, you know, we've never caught up,|sv
 and I don't think we ever will.|sv
 It'll be a tough road, though.|sv
 Yeah,|b
-I mean, here it is,|%
+I mean, here it is,|uninterpretable
 and we've got, we've got to go into partnership with the Japanese to build cars.|sv
 Yeah.|b
 You know And they only did it because they, I guess they were embarrassed that they're so good at it|sv
 Yeah.|b
 That's about right.|aa
 Gosh.|ba
-Yeah,|%
+Yeah,|uninterpretable
 well, back to the original subject,|sd
-yeah,|%
+yeah,|uninterpretable
 I think youngsters ought to go out and do some public service,|sv
 I don't care what kind it is.|sd
 It teaches them pride in their country.|sv
@@ -1442,7 +1442,7 @@ and pride in themselves, too.|sv
 That's right.|aa
 They could, they could, I mean, you could organize something just within your community. same old thing.|sv
 Yeah,|b
-I mean,|%
+I mean,|uninterpretable
 that's right.|aa
 That's like Eagle Scouts.|sv
 Sure.|aa
@@ -1469,31 +1469,31 @@ it just, you know, all the problems.|sd
 Oh, Lord, I mean, yeah,|b
 an, you talk about stress and pressure,|sd
 I tell you what,|fo_o_fw_"_by_bc
-it's, uh,|%
+it's, uh,|uninterpretable
 Yeah,|b
 they're putting in fifty, sixty hours a week,|sd
 I'm sure, because they've got to grade papers and get class stuff ready.|sv
-Do,|%
+Do,|uninterpretable
 right.|b
 And, you know, and they're being paid, probably half what most people being paid.|sv
 Exactly,|aa
-and,|%
+and,|uninterpretable
 And we're paying basketball people, you know, millions of dollars a year for, for what, you know.|sd
 That's right,|aa
 and then they, uh, poof it off, you know, do like Tarpley.|sv
 Yeah.|b
-But, uh, I|%
+But, uh, I|uninterpretable
 what gets me is I can't believe that Congress, uh, or, our state legislature can't come up with, uh, some kind of workable means to have funds for the school.|sv
-You know, it's, uh,|%
+You know, it's, uh,|uninterpretable
 I just don't understand that.|sd
 Yeah,|b
-it's, uh.|%
+it's, uh.|uninterpretable
 Now do you have little kids, or what?|qy
 No, uh,|nn
 sure don't,|sd
 my wife and I've just been married about two years|sd
 but I have a sister that's a, uh, school teacher,|sd
-and, uh.|%
+and, uh.|uninterpretable
 Yeah,|b
 yeah,|b
 my wife and I have a, a three year old, almost four and a, a two year old.|sd
@@ -1503,7 +1503,7 @@ Okay,|b
 so it's getting close.|bf
 Yeah,|aa
 he's going to be going to kindergarten,|sd
-so.|%
+so.|uninterpretable
 Right.|b
 So, you know, we're, we're thinking about that.|sd
 What's that going to be like.|qh
@@ -1537,13 +1537,13 @@ we talked, you talked about before, about the school funding.|sd
 I think there's only going to be one solution to school funding which I don't think will be necessarily the best way|sv
 but I think what's going to have to happen is there's going to have to be tuition for grade school and junior high and high school kids.|sv
 That's the only way they're going to fund it, because if they start raising taxes for property, and people are going to throw a fit.|sv
-That's,|%
+That's,|uninterpretable
 yeah,|b
-and, you know, that's,|%
+and, you know, that's,|uninterpretable
 taxes right now are political suicide. You know,|sv
 Oh, yeah.|b
 and I don't think any politician's going to do that,|sv
-so.|%
+so.|uninterpretable
 Yeah,|b
 and the only thing, they, they would think of would be tuition, you know,|sv
 if it works at colleges it will work down below.|sv
@@ -1554,7 +1554,7 @@ Exactly.|aa
 And, you know, it's going to really hurt the, the middle class, uh, people, I think. Because, uh, they're the ones that will probably have to, to carry the brunt of the load.|sv
 Oh, yeah.|b
 That's right.|aa
-So, uh,|%
+So, uh,|uninterpretable
 And most of the problems with kids in school carrying guns and, and knives and everything,|sv
 I mean, good grief what's .|ba
 Yeah|b
@@ -1576,14 +1576,14 @@ I mean I, I'm afraid for him to go.|sd
 Exactly,|aa
 right.|aa
 But there again , you can't hold them back.|sv
-Another reason,|%
+Another reason,|uninterpretable
 and you want to encourage them, you know, to, to be active and everything in school,|sv
 but, uh, you know, with all the peer pressure that's going on, with all the negative things, it is, uh, it's a tough environment to be growing up in.|sv
 Yeah,|aa
 and lot tougher than it was when I was going to school,|sv
-and that was,|%
+and that was,|uninterpretable
 well I was, I graduated high school in nineteen seventy-nine,|sd
-so.|%
+so.|uninterpretable
 Okay.|b
 That was what, twelve years ago, I guess.|qy^d
 Right.|na
@@ -1597,7 +1597,7 @@ but, uh, I don't know,|h
 I, I guess what you have to do is just, uh, keep in, uh, you know, encouraging them and, and, uh, uh, try to be open with them, so that you can deal with the problems as they come up.|sv
 That's all you can do.|sv
 Yeah,|b
-and.|%
+and.|uninterpretable
 You got to, you got to be your child's best friend, I guess, even when they're a teenager and they, you know are kind of standoffish,|sv
 Right.|b
 still you got to be their best friend because when they've got problems, who they going to go to, their friends that are dealing drugs, or, or your parents. You know,|sv
@@ -1613,7 +1613,7 @@ Right.|b
 need to teach them good values.|sv
 That's true,|aa
 that's true,|aa
-and, uh.|%
+and, uh.|uninterpretable
 Of course, if I say this is a good value, someone else is going to stand up and say, oh no.|sv
 And the A C L U is going to get after them and have a lawsuit. Which is going to take twenty years to resolve, you know.|sv
 Right.|b
@@ -1624,10 +1624,10 @@ that's where they, that's where they get the, the deep rooted values|sv
 and, and, and, uh, and that's about right.|sv
 That's all you can do.|sv
 Then you just have to hope and pray that, that everything, uh, works out, works out okay,|sv
-so.|%
+so.|uninterpretable
 That's right.|aa
 Well I got to be going,|fc
-so, uh.|%
+so, uh.|uninterpretable
 Okay,|fc
 well, hey, I appreciate the call.|fc
 Nice talking to you today.|fc
@@ -1658,14 +1658,14 @@ Yeah.|b
 I'd love to have a dog, you know.|sd
 I've got a little doggy, uh, that I've had quite, uh, quite a long time.|sd
 In fact, she just turned sixteen years old New Year's Eve.|sd
-Ah.|%
-And, uh|%
-Is she?|%
+Ah.|uninterpretable
+And, uh|uninterpretable
+Is she?|uninterpretable
 I beg your pardon?|br
 What is she?|qw
 She's, uh, uh, uh, a poodle.|sd
 Uh, a toy poodle, a toy poodle|sd
-and she's,|%
+and she's,|uninterpretable
 Ah.|b
 Ah,|b
 my, I got my mom a teacup little mutt ,  not too long ago.|sd
@@ -1693,9 +1693,9 @@ Yes,|b
 well. My, my mother has one that's, uh,|sd
 it's, uh, it's, uh, teacup|sd
 and, uh, it's made such a difference for her.|sd
-But, you know, just, I, you know,|%
+But, you know, just, I, you know,|uninterpretable
 the way my mom's presence countenance is, just, just for having a puppy|sd
-but, you know, having this dog|%
+but, you know, having this dog|uninterpretable
 she's had it for, I guess three years now. Oh, possibly four.|sd
 Uh-huh.|b
 But, uh, it was, it, it's it's really made such a difference for her.|sd
@@ -1704,7 +1704,7 @@ I'm a disabled person|sd
 Uh-huh.|b
 so I'm unable to, to, really take care of a pet|sd
 and if that weren't so, I would certainly have one.|sd
-I just, I just,|%
+I just, I just,|uninterpretable
 it frustrates me sometimes not being able to have a dog|sd
 yeah .|b
 Huh. Well, you might want to get yourself, uh, an animal that doesn't require much attention. Like a cat.|ad
@@ -1716,15 +1716,15 @@ And this cat is like no other cat I have ever seen.|sd
 And, uh, it would sleep on my chest, you know.|sd
 Yeah.|b
 It's just, it's just a great cat,|sd
-but.|%
+but.|uninterpretable
 Well, my, my personal preference is, is a dog.|sd
 Uh, I don't know that, uh, that I would ever want a cat.|sd
 Oh, I like cats.|sd
 I just wouldn't want to own one.|sd
 Uh  they're not, uh, they're, they're affectionate|sv
 Well, you don't own cats.|sv
-but they,|%
-yeah|%
+but they,|uninterpretable
+yeah|uninterpretable
 I don't know,|h
 I can't seem to communicate with a cat like I can with my dog.|sv
 Yeah.|b
@@ -1733,8 +1733,8 @@ Yeah,|aa
 right|aa
 Yeah.|aa
 Right.|aa
-That,|%
-yes,|%
+That,|uninterpretable
+yes,|uninterpretable
 we're supposed to appreciate them.|sd
 Well, my, my dog when I came home, uh, when I come home in the evenings, my dog greets me at the door.|sd
 I don't know that a cat would do that, uh|sv
@@ -1748,7 +1748,7 @@ Yeah,|b
 yeah.|b
 It was, uh, uncanny like a|sv
 Huh. I, I think, uh, in a way we're able to read each other pretty well because, uh, she knows when I'm upset and I know when she's not feeling good too|sd
-So.|%
+So.|uninterpretable
 Yeah.|b
 I know like when she has an accident, I know she's not doing it on purpose.|sd
 When when she was younger, she used to do that to get even with me,|sd
@@ -1760,7 +1760,7 @@ Oh, absolutely.|ba
 Like if I, if I put her in a room all by herself and close the door and leave her there for a few hours, uh, because I was going out. She would, uh, break something or rip up the carpet or do something just to, uh, to, to let me know that she was unhappy with what I did|sd
 Really?|bh
 Yeah.|ny
-That's the way,|%
+That's the way,|uninterpretable
 well, I had that cat that I mentioned, Alfie .|sd
 One morning, you know, the first thing you do is you get up and you, you, you feed this cat something and, and you make sure that it can get to its litter box.|sd
 Well, for some reason during the night, the door was not quite wide enough for it to get through|sd
@@ -1817,20 +1817,20 @@ and you owe me this bill,|^q
 and oh, by the way, do you want me to, to bury the cat|^q
 So, it cost her three hundred dollars, uh,|sd
 and she didn't get the cat back.|sd
-So, yeah,|%
+So, yeah,|uninterpretable
 they had to pay for all the medical, uh, bills that the cat ran up plus the burial expenses.|sd
 And, uh, you know, she just brought the cat in because he wasn't feeling good|sd
 So that  that was kind of a surprise|sd
 Really.|b
 Geez.|ba
-At|%
+At|uninterpretable
 Yeah.|b
 You kind of wonder what really happened.|qy^d
 Yeah.|ny
-Well even the, you know,|%
+Well even the, you know,|uninterpretable
 they, they claimed they did the best that they could have have|sd
 and then the cat, uh, died.|sd
-So|%
+So|uninterpretable
 My goodness.|ba
 I'm, I'm looking for another cat for them. Uh,|sd
 I, I've, I've got a little kitten, uh, that's still, uh, just being born right now.|sd
@@ -1860,14 +1860,14 @@ Okay.|fc
 Right|fc
 Thank you|fc
 Uh, so what do you do to exercise?|qw
-Uh,|%
+Uh,|uninterpretable
 I, uh, weight train, uh, three days on and one day off.|sd
 Uh-huh.|bk
 I, uh, ride bicycles, uh, fifteen, twenty miles, I don't know, maybe three times, maybe four times a week.|sd
 I play basketball, uh, couple times a week.|sd
 I play softball one night a week.|sd
 Uh, that's what I do.|sd
-Um.|%
+Um.|uninterpretable
 What about yourself?|qo
 That's pretty impressive.|sv
 Uh, I guess I bicycle.|sd
@@ -1925,7 +1925,7 @@ Uh-huh.|b
 so I began a program couple, I don't know probably three or four weeks ago|sd
 and I did my first bike rally this Saturday.|sd
 I did, uh, forty, forty miles,|sd
-Um.|%
+Um.|uninterpretable
 and, uh, that's the longest I've ever ridden so far,|sd
 I usually, you know, fifteen or twenty.|sd
 Uh-huh.|b
@@ -1952,7 +1952,7 @@ One is more of a distance,|sv
 and one's more, just, you know,|sv
 they want to put some equipment on their bike and go for a tour.|sv
 I've never really looked into that.|sd
-That, you know, that's,|%
+That, you know, that's,|uninterpretable
 my wife would just love that.|sd
 Uh-huh.|b
 And I may do that sometime.|sd
@@ -1966,7 +1966,7 @@ yeah.|b
 I mean, around Texas, you, you got about five or six,|sd
 if you live around the Dallas area, you got five or six every weekend to choose from. Because they're really into it.|sd
 Oh, that's nice.|ba
-Um.|%
+Um.|uninterpretable
 Bicycling is really big here.|sd
 I didn't know that, and, you know, until I came down here, and, kind of caught the fever.|sd
 Wow.|ba
@@ -1988,13 +1988,13 @@ It's, it's really neat.|sv
 Uh-huh.|b
 There are a lot of, a lot of resources, a lot of magazines, and stuff,|sd
 little TEXAS BICYCLIST, is like a little newspaper that comes out every month.|sd
-Um.|%
+Um.|uninterpretable
 It's free|sd
 just go to the bike shock, bike shop and pick it up,|ad
 and it's got all the rides coming up,|sd
 so I guess I'm going to be busy about every Saturday this summer, going to a different ride.|sd
 Oh, that's terrific.|ba
-Yeah,|%
+Yeah,|uninterpretable
 see a little bit of Texas I've never seen before.|sd
 Uh-huh.|b
 So, uh, how long have you been biking?|qw
@@ -2009,13 +2009,13 @@ No,|nn
 I haven't,|sd
 no.|nn
 because it really, from what I understand, it really improves your, uh, cholesterol|sv
-Um.|%
+Um.|uninterpretable
 and, you know, it, uh, it kind of knocks down two of the big risk categories for coronary artery disease which is, uh, uh, low cardiovascular fitness, and also, uh, you know, the cholesterol.|sd
 Uh-huh.|b
 It gives you increased H D Ls and decreases your L D Ls.|sd
 Oh, that's great.|ba
 Yeah,|b
-so ...|%
+so ...|uninterpretable
 Yeah,|b
 I've, I've definitely noticed it's had a good effect on my pulse rate, my resting pulse.|sd
 Yeah.|b
@@ -2029,7 +2029,7 @@ Yeah.|ny
 Man.|ba
 That's, that's hard-core.|sv
 On average,|sd
-yeah.|%
+yeah.|uninterpretable
 When do you get to begin with the winters and all that?|qw
 What time of the year do you usually embark on your,|qw
 do you ride inside if you can't ride outside?|qy
@@ -2042,17 +2042,17 @@ Yeah.|b
 And, I don't do that.|sd
 I basically, I, I pretty much lay off for the winter.|sd
 Uh, I was thinking of getting rollers for the last winter, you know, because it will help your balance when you're indoor training.|sd
-Um.|%
+Um.|uninterpretable
 Uh, but I just, you know, more or less stocked, like an exercise bike and that kind of thing. uh,|sd
-but, yeah,|%
+but, yeah,|uninterpretable
 I mean winters are kind of a problem|sv
 so, I'm more or less out of shape now that I've been biking, I guess, this year for just a couple of weeks.|sd
 Uh-huh.|b
 Uh, but, you know, up here it's only stopped snowing since then.|sd
 Yeah.|b
-Uh, but, yeah,|%
+Uh, but, yeah,|uninterpretable
 it's, it's, it's, it's pretty good.|sv
-It's, uh,|%
+It's, uh,|uninterpretable
 the main, the main thing, I guess, for me is just to enjoy it because once it starts seeming like, you know, exercise and a chore I'll lay off it more.|sd
 Right.|b
 So you, uh, change up your routes a lot, and keep a ...|bf
@@ -2076,7 +2076,7 @@ Yeah.|aa
 That's true.|aa
 Sounds neat.|ba
 Yeah.|b
-It's kind of,|%
+It's kind of,|uninterpretable
 I was wondering if I was going to talk with someone that never has exercised before and doesn't want to and everything else,|sd
 but got a guy that rides a hundred and fifty miles a week.|sd
 That's, uh, motivating.|sv
@@ -2104,7 +2104,7 @@ but I, I think with the current war on drugs and all this kind of stuff I'd say 
 Uh-huh.|aa
 probably right, if you look at it from that stand point.|sv
 Uh-huh.|b
-What, uh,|%
+What, uh,|uninterpretable
 is there anything, uh, that you particularly are concerned with in your particular area as far as security and that sort of thing?|qy
 Uh, where I live now it's, it's not so bad.|sd
 I mean I can basically leave my front door unlocked and not have to worry about it.|sd
@@ -2113,7 +2113,7 @@ and I think that they get a lot of fallout from this war on drug thing. Uh, just
 Uh-huh.|b
 Do you live in a real small town or, or out in the country?|qy
 I live out in the country,|sd
-yeah.|%
+yeah.|uninterpretable
 How far out from the city, I mean, do you,|qw
 I'm about fifteen miles out.|sd
 About fifteen miles.|b^m
@@ -2121,9 +2121,9 @@ I live in a little suburb, uh, which is, I guess from Dallas is twelve miles or 
 Uh-huh.|b
 but it's pretty congested.|sd
 We are considered in the country,|sd
-Um.|%
+Um.|uninterpretable
 but it doesn't really feel like you're in the country.|sv
-Um.|%
+Um.|uninterpretable
 Our major crimes in our immediate town, uh, is probably robberies, house robberies and very few instances of, you know, alcohol, drugs, uh, reported.|sv
 Uh-huh.|b
 However, I'm sure they're there.|sv
@@ -2140,7 +2140,7 @@ so it still, uh, remains city wide, pretty, pretty high.|sv
 Are there, are there any theories on why this is happening?|qy
 Uh, I would say the majority of it's happening during the day, uh, between probably ten in the morning and three in the afternoon.|sv
 Uh-huh.|b
-Most,|%
+Most,|uninterpretable
 But why?|qw
 Why is it happening?|qw
 Well, most families, most families are young|sd
@@ -2152,38 +2152,38 @@ Uh, so, uh, I would say that's probably their prime motivation.|sv
 They'll, they'll stock your house and, uh, look at your pattern and then go from there.|sv
 So they're professionals?|qy^d
 Uh, they classify most of them as professionals.|na
-Um.|%
+Um.|uninterpretable
 Uh, you get a few of them that are a little bit sloppier, uh, just taking, uh, you know, just junk items that they, they can just get, you know, ten to twenty bucks for real quick.|sd
 Uh-huh.|b
 Probably the biggest items that, uh, that you get in our neighborhood, or, would be the high classed automobiles,|sv
 the, you know, Mercedes, Volvos, things that they can get, you know, big dollars for and the jewelry are the major targets,|sd
 Uh-huh.|b
 guns, that sort of stuff.|sd
-Um.|%
+Um.|uninterpretable
 Very few, you know, penny, penny ante stuff.|sd
 Well, what do you think can be done to reduce that sort of crime?|qw
 Well, uh, the police force, for one,|sv
 I think they could, uh, definitely add to the police force and the type equipment that they use.|sv
-Uh, it's,|%
+Uh, it's,|uninterpretable
 oh, right now I think, we are about thirty thousand people|sv
 and there's only eight officers that patrol for thirty, for that amount of people which is not very many.|sd
 Uh-huh.|b
 Uh-huh.|b
 Right.|b
-And,|%
+And,|uninterpretable
 But, I mean, that's going to tend to,|sv
 I mean it seems to me that sort of approach will tend to simply make the cost of committing the crime slightly higher|sv
 in other words, you've increased the probability of somebody being caught a little bit.|sv
 The real question is how do you convince people not to commit such crimes in the first place.|sv
-Well, the,|%
+Well, the,|uninterpretable
 course in our particular state, uh, we have the prison overcrowding, whatever,|sd
 so they're giving the early release, uh,|sd
 Right.|b
 They're doing that in our state, too.|sd
 Yeah,|b
-and, and it's,|%
+and, and it's,|uninterpretable
 I think what they need to do is stop building more jails and start giving stiffer sentences, uh,|sd
-but for the,|%
+but for the,|uninterpretable
 So you think that would be a deterrent?|qy
 That would be, certainly be a deterrent.|na
 Uh-huh.|b
@@ -2193,13 +2193,13 @@ Well, what about an innocent person who happens to have been found guilty?|qw
 Uh, I think they'd have to go to extra measures to make sure a person's guilty, you know, in a lot of cases.|sv
 Course, I, I know you can't be a hundred percent foolproof.|sv
 Right.|b
-Uh,|%
+Uh,|uninterpretable
 So you'd, you'd rather see it harder to convict somebody.|bf
 I'd rather see it a little bit harder and have a little bit more evidence, uh, to convict somebody|aa
 Uh-huh.|b
 and then those convicted, especially of, you know, murder and, and, uh, you know, major crimes, uh, to reach the life sentences and, you know, death penalties and follow-through with that.|sd
 Uh-huh.|b
-Huh.|%
+Huh.|uninterpretable
 Uh, especially, you know, in the case of murder|sd
 Right.|b
 uh, I know in my case, I, my wife and daughter were kidnapped, during a house robbery back in eighty-five|sd
@@ -2213,7 +2213,7 @@ Uh-huh.|b
 Right.|b
 Wow.|ba
 And, you know, he was out within two months because of the parole system.|sd
-So what, what,|%
+So what, what,|uninterpretable
 Did you, did you sue him under the civil system?|qy
 Do what now?|br
 Did you sue him under the civil system?|qy
@@ -2221,7 +2221,7 @@ no.|nn
 I'm not real familiar with that.|sd
 Well, you could probably sue him for mental anguish or something, right, and try to get money from him|sv
 Oh.|b
-and,|%
+and,|uninterpretable
 Well, the insurance companies and all that tried to, tried to go after him|sd
 and they said, well, you know, he, they're, he has no job,|sd
 he has nothing,|^q
@@ -2229,12 +2229,12 @@ there's nothing that he has that, that you could go after.|^q
 Yeah.|b
 Makes you wish that had, uh, still had indentured servitude, for this sort of thing.|sv
 Yeah.|aa
-Uh, very|%
+Uh, very|uninterpretable
 But they give the guy a job in prison and make him pay his damn debt.|sd
 Yeah.|b
 They don't do that here.|sd
 Course they pay them,|sd
-but they don't, you don't,|%
+but they don't, you don't,|uninterpretable
 you or the insurance companies never see any of that money.|sd
 Yeah,|b
 that's too bad.|ba
@@ -2255,7 +2255,7 @@ and, you know, the guy gets out in two months|sd
 That's awful|ba
 and he goes out and commits it again.|sd
 Fact, he's back in jail now.|sd
-So, what, what, uh,|%
+So, what, what, uh,|uninterpretable
 Gives you sympathy for the vigilantes.|sv
 Yeah.|aa
 What, what deterrent does he really have?|qh
@@ -2291,7 +2291,7 @@ And, uh, it helps for a while|sd
 Uh-huh.|b
 but then just another different set of people come in,|sd
 and most of the people are transients from out, outside of the state.|sd
-Huh.|%
+Huh.|uninterpretable
 Uh, I would say probably eighty percent of them that are caught, they're from places like up in Oklahoma, and Louisiana, Arkansas, you know, across the, the border.|sv
 Wow,|ba
 So, you know, people who don't readily read the newspapers in our town or whatever|sd
@@ -2315,7 +2315,7 @@ and just a lot of things that we're trying to worry about, you know, protecting 
 I know like in my wife's case, they made her feel like the criminal.|sd
 I know,|aa
 and I think, I think that's ridiculous.|sv
-They, they went to all, all ...|%
+They, they went to all, all ...|uninterpretable
 Okay,|fo_o_fw_"_by_bc
 have you painted something lately?|qy
 Yes,|ny
@@ -2353,7 +2353,7 @@ We use, uh, uh, a two inch brush with, uh, on a slant|sd
 Uh-huh.|b
 Uh-huh.|b
 and that mostly does it even though you still make mistakes.|sd
-But.|%
+But.|uninterpretable
 Huh. Well are you going to paint the outside of your house too?|qy
 Well, yeah.|ny
 I think I am going to do it this spring actually.|sd
@@ -2368,7 +2368,7 @@ So, I am thinking I am going to change it to, uh, something, you know,|sd
 the brick is multi color. Mostly earth tones.|sd
 Uh-huh.|b
 Oh, that will be nice.|ba
-Huh.|%
+Huh.|uninterpretable
 Or, two tone, or two tone. You know.|^2
 Yeah.|b
 There are some columns that could be painted a different color too.|sd
@@ -2384,7 +2384,7 @@ We have one of those ladders.|sd
 We are just not willing to get up that high.|sd
 Oh, yeah.|b
 A friend of mine that lives out in your neighborhood, he has done his house|sd
-and that is what he,|%
+and that is what he,|uninterpretable
 I was out there last week|sd
 and he has finished everything except the chimney.|sd
 Well, we did too.|sd
@@ -2393,7 +2393,7 @@ and it, it's just too high.|sd
 It is really scary,|sd
 but and the only thing I would consider doing, a professional, maybe doing that,|sd
 Yeah.|b
-but it|%
+but it|uninterpretable
 other than doing our own work I prefer it to a professional.|sd
 Well, our house in New Mexico, it was stucco,|sd
 but we had all this trim to paint, and lots of it.|sd
@@ -2415,13 +2415,13 @@ scaffold.|sd
 That's it|sd
 He came and did it that way|sd
 and I think he charged me a hundred dollars to finish up.|sd
-Huh.|%
+Huh.|uninterpretable
 And literally I wouldn't have done it with the scaffolds because all the places that I had left for him were above huge humongous cactus|sd
-Its,|%
+Its,|uninterpretable
 Yeah.|b
 and if he fell, he was dead|sd
 and he knew that|sd
-So,|%
+So,|uninterpretable
 Oh, my.|ba
 So that was worth it getting a professional for that.|sv
 Yeah.|aa
@@ -2430,7 +2430,7 @@ Oh, I think that is what we might have to do with this chimney,|sd
 but other than that, it was pretty easy doing it ourself and caulking it and everything ourself.|sd
 Uh-huh.|b
 It wasn't too bad.|sv
-I mean you think,|%
+I mean you think,|uninterpretable
 How much did it cost you for the paint for the outside?|qw
 Shoot, maybe a hundred and fifty.|sd
 Yeah.|bk
@@ -2472,7 +2472,7 @@ Uh. Rollers are so messy.|sv
 We never any more.|sd
 Oh, I know.|aa
 But it's that, it's the textured wall.|sd
-Well, a little paintbrush,|%
+Well, a little paintbrush,|uninterpretable
 So what do you think?|qo
 Uh, the causes of crime?|br
 Um, I think it was imbalance of power in the United States.|sv
@@ -2509,20 +2509,20 @@ And I think that's the basic, is they have no morals any more,|sv
 Yeah.|b
 so they don't care.|sv
 Yeah.|b
-So.|%
+So.|uninterpretable
 Yeah,|aa
 I think I can agree with that too.|aa
 But now, as far as what they can do about it, I don't know.|sd
 You can't make parents be parents|sv
 That's true.|aa
 You got to kind of make people want to do the right thing.|sv
-You know.|%
+You know.|uninterpretable
 I don't know how you do that.|sd
 I guess if you gave the, gave them jobs,|sv
 that's another problem with the United States,|sv
 there's no jobs any more.|sv
 Yeah.|b
-But.|%
+But.|uninterpretable
 Well, I've heard this one theory, that if, that if a kid commits a crime, that, uh, instead of the, prosecuting the kid, they prosecute the parent.|sd
 Or both of them.|sd
 That would work to a point,|sv
@@ -2530,17 +2530,17 @@ Now, to put the blame on the parent.|sd
 Well, that'd work to a point because some kids are just bad anyway.|sv
 I don't care what you do to them.|sv
 Yeah.|b
-You know,|%
+You know,|uninterpretable
 so I think it depends on how much trouble that kid has been in, you know.|sv
 Yeah.|b
 Because a, a, a child can get into anything|sv
 Yeah.|b
 I don't care how good you, they are.|sd
 Yeah.|b
-at least one time,|%
+at least one time,|uninterpretable
 but now if this is a repeated thing,|sd
 here with this child in juvenile,|sd
-and or, to me, yeah, both of them.|%
+and or, to me, yeah, both of them.|uninterpretable
 Yeah.|b
 Because that means she's still not doing what she's supposed to do.|sv
 Because I just watched it on T V one night on one of them, um, Twenty Twenty, Forty-eight hours, one of them shows where this boy had been stealing cars.|sd
@@ -2558,7 +2558,7 @@ That meaned she was warned.|sv
 Yeah.|b
 But see, by that, I think sometimes it's a little late.|sv
 Yeah.|b
-You know,|%
+You know,|uninterpretable
 but I'm sure there's something can be done.|sv
 Yeah.|b
 What about with adults?|qo
@@ -2590,11 +2590,11 @@ Yeah.|b
 Little rock stars, put all them in there.|ad
 Um.|b
 You know, the murderers, the drug dealers, the user, put them all in|ad
-jail you know,|%
+jail you know,|uninterpretable
 Yeah.|b
 and let all the normal people go|ad
 Yeah.|b
-you know, because, okay,|%
+you know, because, okay,|uninterpretable
 if you write a bad check, you go to jail, right.|qy
 Yeah.|ny
 Let them people go.|ad
@@ -2605,15 +2605,15 @@ they, you still have to punish them.|sv
 Let them go and pay their crime or their time doing something else you know, like cleaning up the city or however they do their community time, you know, whatever that is|ad
 Yeah.|b
 Yeah,|b
-that's,|%
+that's,|uninterpretable
 But don't put them in jail because they're not hardened criminals.|sv
 Yeah,|aa
 and they're, they're still, they can provide for society,|sv
 whereas some of them are so far gone that they can't do anything good for society.|sv
 Uh-huh.|b
-So.|%
+So.|uninterpretable
 I don't know,|h
-some people, boy, they got,|%
+some people, boy, they got,|uninterpretable
 I think the United States has got too many problems to be worrying about everybody else.|sv
 Yeah,|aa
 that's true.|sv
@@ -2621,13 +2621,13 @@ Now how they going to fix it, I don't know.|sd
 I don't think there is a ready solution.|sv
 No,|aa
 I don't think so either.|sv
-Uh.|%
+Uh.|uninterpretable
 Because the economy is down, people, you know, the, the, the low man on the pole is getting more of the, I guess, the bulk of it.|sv
 Yeah.|b
 And he's got to work extra hard just to make ends meet.|sv
 And they keep taking more money from us|sv
 Uh-huh.|b
-and people are get,|%
+and people are get,|uninterpretable
 and they don't have any incentive to work if we're just going to take fifty percent of it.|sv
 Yeah.|b
 Might as well steal,|sv
@@ -2640,7 +2640,7 @@ They could have had a lottery.|sd
 They don't want a lottery.|sd
 Why not?|qh
 I would rather pay for a lottery a dollar, two, three dollars, whatever I'm paying, you know a week or whatever, and never see any of that money, than to have them take a portion of my paycheck.|sv
-They'd have a,|%
+They'd have a,|uninterpretable
 Yeah.|b
 Yeah.|b
 Because, you know, they take,|sd
@@ -2651,16 +2651,16 @@ Because we're paying for Social Security they using now.|sd
 Yeah.|b
 Who's going to pay for mine?|qw
 I don't know|no
-But it's, it's|%
+But it's, it's|uninterpretable
 I'm not counting on it.|sd
 No,|aa
 you don't count on Social Security.|sv
 Yeah.|b
-But, it's, it's,|%
+But, it's, it's,|uninterpretable
 that's what I'm saying,|sd
 they need to do something else.|sv
 Um.|b
-But.|%
+But.|uninterpretable
 Crime is going to go up as long as the economy stays down.|sv
 Yeah.|b
 And it's going to get worse.|sv
@@ -2694,11 +2694,11 @@ They didn't have to kill them or rape them, or anything.|sv
 Um.|b
 Um.|b
 That's awful.|sv
-Yeah,|%
+Yeah,|uninterpretable
 we still get some in Raleigh.|sd
 I mean, not not too often real bad ones,|sd
 Uh-huh.|b
-but.|%
+but.|uninterpretable
 It's just getting really ridiculous down here.|sv
 I wish I could move somewhere where, this, you know, you got to like in the country.|sv
 I don't think there's anywhere where there isn't going to be crimes.|sv
@@ -2709,17 +2709,17 @@ and everybody knows everybody|sd
 Yeah.|b
 it's harder to come in there and do something.|sv
 Yeah.|b
-Where is,|%
+Where is,|uninterpretable
 and, and, and see that's another thing.|sv
 Neighborhoods aren't neighborhoods any more.|sv
 Yeah.|b
 There's nobody is next door to you,|sv
 you don't know your neighbors, and stuff like that.|sv
 Yeah.|b
-It's just, huh-uh, you know,|%
+It's just, huh-uh, you know,|uninterpretable
 because I moved out some apartments before because they were loaded with drug dealers.|sd
 Um.|b
-And you didn't even,|%
+And you didn't even,|uninterpretable
 and what the manager, the manager won't even do anything.|sd
 He's probably a drug dealer himself|sv
 Uh-huh.|b
@@ -2744,7 +2744,7 @@ but it's nice.|sv
 I don't, you know.|h
 Yeah.|b
 I'm kind of in the same, same kind of deal, town house in a neighborhood.|sd
-But,|%
+But,|uninterpretable
 It's pretty nice.|sv
 I don't know how they can live, a neighborhood or apartment complex.|sv
 That's what happen, that's what wrong, you know.|sv
@@ -2786,7 +2786,7 @@ I just felt like there were some real basics that are missing from education,|sv
 Uh.|b
 and the people are, are leaving school not even knowing some common sense things.|sv
 Yeah.|b
-One,|%
+One,|uninterpretable
 well, talking about public education, um, I'm, we're doing a proposal,|sd
 Uh-huh.|b
 it's, we're doing it at N C State,|sd
@@ -2830,7 +2830,7 @@ and the library canceling all of it's subscriptions.|sd
 Yeah.|b
 It's pretty sorry.|sv
 I know,|aa
-um, they, uh,|%
+um, they, uh,|uninterpretable
 I forget|sd
 I think it's, um, some place in New York because they're having budget problems, they're closing the libraries.|sv
 Uh-huh.|b
@@ -2840,9 +2840,9 @@ they're not cutting in any other corner|sd
 they're closing the libraries.|sd
 That to me shows a little, uh, switch in priorities.|sv
 Yeah.|b
-You know.|%
+You know.|uninterpretable
 So do you go to college right now?|qy
-Are|%
+Are|uninterpretable
 Yeah,|ny
 it's my last year|sd
 You're a, so you're a senior now.|qy^d
@@ -2872,7 +2872,7 @@ It's just a outrageously expensive.|sv
 Luckily state is one of the cheap ones.|sd
 Oh is it.|qy
 Yeah.|ny
-Well, still though|%
+Well, still though|uninterpretable
 I mean, you know, thousands of dollars,|sv
 Yeah, state's not that bad|sv
 Oh, well, that's good.|ba
@@ -2887,10 +2887,10 @@ But, um, I have a lot of friends that went to state schools or didn't even go to
 and I still feel like they came out knowing just as much as I did.|sv
 I really do|sd
 and that's probably a pretty sad thing to say|sv
-but, um,|%
+but, um,|uninterpretable
 Yeah,|b
 I don't know,|h
-I, I|%
+I, I|uninterpretable
 Where did you go?|qw
 what?|br
 Where did you go?|qw
@@ -2924,7 +2924,7 @@ it's true.|sv
 Uh-huh.|b
 Yeah.|b
 And I don't know if it makes them feel better|sd
-I mean the do teachers get,|%
+I mean the do teachers get,|uninterpretable
 I mean personally I would get more satisfaction out of taking someone that wasn't as successful.|sv
 Yeah.|b
 And seeing what they could do verses somebody that did excel in, in areas and just watching them get better, you know.|sv
@@ -2956,13 +2956,13 @@ well the way I pick the final four was, um, by the state that had the warmest cl
 Uh-huh.|b
 So that's how I chose all mine,|sd
 so you can tell that I really didn't have that much to do with any of it.|sd
-But,|%
+But,|uninterpretable
 so obviously you're into education.|qy^d
 Yeah.|ny
-If you can be going,|%
+If you can be going,|uninterpretable
 my husband went to, is in graduate school actually right now.|sd
 Uh-huh.|b
-And, uh,|%
+And, uh,|uninterpretable
 I don't know|h
 I give you a lot of credit.|sd
 I couldn't do it,|sd
@@ -2991,10 +2991,10 @@ Bye-bye.|fc
 Okay,|fo_o_fw_"_by_bc
 well yes,|fo_o_fw_"_by_bc
 we do have pollution in Houston|sd
-and it,|%
+and it,|uninterpretable
 How bad is it?|qw
 Do you have smog like they do in California?|qy
-Well it, it|%
+Well it, it|uninterpretable
 some,|no
 I think it depends on, uh, you know, what the, the cloud cover|sv
 and like right now, it's, uh, it's kind of overcast, you know,|sd
@@ -3002,10 +3002,10 @@ just, it's hot,|sd
 Uh-huh.|b
 and the sun is trying, tries to shine through|sd
 but it's, it's holding in this, this pollution|sv
-and I,|%
+and I,|uninterpretable
 It depends on whether you have some sort of temperature inversion, I take it.|sv
 I think so,|aa
-and, uh,|%
+and, uh,|uninterpretable
 Yeah.|b
 and we have, uh, Pasadena, Texas which is sort of between here an, you know, heading toward Galveston,|sd
 I mean it's still part of, it's part of the Houston metroplex.|sd
@@ -3016,10 +3016,10 @@ Well, I think it's industry|sv
 and I think it's cars.|sv
 You do?|qy^d
 You really think cars contribute a lot now that they've taken lead out of gas?|qy
-I don't, I,|%
+I don't, I,|uninterpretable
 well maybe not,|h
 but, it, it sure, it sure,|sv
-you know, it,|%
+you know, it,|uninterpretable
 I, I know that when I'm, when I'm behind a car|sd
 and, uh, sometimes, uh, I can really smell especially diesel and things like that,|sd
 Uh-huh.|b
@@ -3030,7 +3030,7 @@ Um,|b
 my goodness.|ba
 I don't know if it's, uh, if it's partly from what's blooming, you know, right now, pollen and stuff like that,|sd
 that's part of it,|sd
-but, um.|%
+but, um.|uninterpretable
 Uh-huh.|b
 I think a lot of it's industrial.|sv
 I also think, uh, that, uh, there is a certain amount that comes from automobiles|sv
@@ -3038,7 +3038,7 @@ but it's mostly from older automobiles.|sv
 I don't think the newer automobiles are as polluting, uh, frankly.|sv
 Uh-huh.|b
 I think that, uh, I think that, uh, uh,|sv
-if, uh,|%
+if, uh,|uninterpretable
 I, I, I heard a story a while back|sd
 something to the effect that if they could just pay to get twenty percent, or, take all the cars off the road that have been, uh, manufactured say before nineteen seventy-five, that they could cut the automobile pollution by over fifty percent just by getting rid of those cars that are still left remaining.|sd
 Uh-huh.|b
@@ -3046,7 +3046,7 @@ You mean, uh, fifty percent pollution total from that comes from,|qy
 Yeah.|ny
 From, from cars|^2
 that is, not, not total but just from cars,|sd
-okay.|%
+okay.|uninterpretable
 Oh, uh-huh.|bk
 So, that I think would be tremendous help.|sv
 But I happen to drive an old model car because it's very economical|sd
@@ -3065,16 +3065,16 @@ yeah,|ny
 oh, uh, yeah,|ny
 it's, it's, uh, pretty heavy up here I think|sv
 but I think it's mostly industrial, is what I really, uh, believe is the, the main problem.|sv
-And, and, uh, ause|%
+And, and, uh, ause|uninterpretable
 and, uh, uh, people, uh, I don't think are paying as close attention to it in this area as they frankly should.|sv
 I, I we, we seem to have a high, uh, cancer rate up here in Maryland.|sv
 Really,|bh
 Yeah,|ny
-and, uh,|%
-like what|%
+and, uh,|uninterpretable
+like what|uninterpretable
 any particular kind or just all kinds?|qy
 Well, for instance breast cancer seems to be pretty rampant|sv
-and, uh, I think,|%
+and, uh, I think,|uninterpretable
 of course prostrate cancer's sort of bad for everybody,|sv
 but, uh, this state was like the second,|sd
 my wife's a registered nurse,|sd
@@ -3091,7 +3091,7 @@ and that's also what's causing our atmosphere to lose it's ozone layer.|sv
 Uh-huh.|b
 And I can't help believe if it's sufficient enough to make the atmosphere lose it's ozone layer, that it's not acting as a pollutant in our lungs also,|sv
 and having all kinds of effects,|sv
-and.|%
+and.|uninterpretable
 Well what can we do about the, the, the, the air conditioning problem?|qw
 Well they're working now,|sd
 I know DuPont and Dow and several other chemical companies are working, uh, feverishly to try to come up with a substitute for fluorocarbons,|sd
@@ -3116,16 +3116,16 @@ Uh, uh, just trying to I think be careful, uh, with the way you handle garbage,|
 I notice in this state,|sd
 I don't know if you're doing it in Texas yet or not,|sd
 but in this state we have special containers now we have to put all our cans and bottles and plastic pieces, uh, you know, containers in,|sd
-yeah.|%
+yeah.|uninterpretable
 Here, they've just started, started doing that,|sd
-it's, it's, you know,|%
+it's, it's, you know,|uninterpretable
 you're not, you don't have to,|sd
-but you know,|%
+but you know,|uninterpretable
 I know I am.|sd
 I save,|sd
 Yeah,|b
 well we are doing it pretty religiously in our group too.|sd
-But they, uh,|%
+But they, uh,|uninterpretable
 in one of the counties here, they're actually doing a trial program of having a trash police.|sd
 They have a lady that goes around like a meter maid|sd
 and she spot checks people's trash.|sd
@@ -3137,7 +3137,7 @@ Is that right.|bh
 Well, we need to do something,|sv
 we need to get serious about it.|sv
 Yeah,|b
-you,|%
+you,|uninterpretable
 right,|b
 you've got to get people to see|sv
 and surprisingly enough just handling of trash, uh, can cut pollution, uh, from, uh, uh, from just throwing it in a dump, or, or, or, where ever else they used to do with it, maybe used to burn it.|sv
@@ -3152,7 +3152,7 @@ But plastic containers and the like, uh, they may be,|sv
 I'm not sure of that.|sd
 How much does, uh, planting more trees and things like that help?|qo
 Oh I think that's very important to do.|sv
-too.|%
+too.|uninterpretable
 I, I really think that, uh, trying to get along with your environment and help it out is a very, very important thing.|sv
 Uh-huh.|b
 And, uh, that can help to cut pollution, I guess some.|sv
@@ -3176,13 +3176,13 @@ Uh-huh.|b
 Do you all have that?|qy
 Uh, no,|nn
 we don't have a state inspection,|sd
-So,|%
-which I,|%
-I|%
-I would|%
+So,|uninterpretable
+which I,|uninterpretable
+I|uninterpretable
+I would|uninterpretable
 but any time you sell a car or buy a car it has to be inspected in this state.|sd
 So I'm I'm assuming that, you know, they check, they check everything for safety|qy^d
-or,|%
+or,|uninterpretable
 I don't know,|no
 uh, that's something that you'd have to just check with your authorities.|sd
 But in this state we have to, uh, pay eight dollars and a half and go to a, an emission station once a year and get every one of our cars checked that are, have been made starting in nineteen seventy-three.|sd
@@ -3219,7 +3219,7 @@ and that is water pollution and various of the other types of, uh, of, uh, like 
 I mean you, you hardly ever hear, hear anybody say anything about food pollution.|sd
 But I think there we have a pretty good handle on inspection of foods in this countries,|sv
 so, uh, hopefully we're not ingesting too much in the way of, uh, pollutants in our food.|sd
-But water pollution, uh,|%
+But water pollution, uh,|uninterpretable
 I've worried, especially the last few years about just how good the water supply we have in this country is for drinking and the like.|sd
 Uh-huh.|b
 I know a lot more people are going to bottled water.|sd
@@ -3228,14 +3228,14 @@ and that's not necessarily the answer either|sv
 because they've found out that that's just comes out of somebody's tap.|sd
 Yeah,|b
 tap,|b^m
-yeah|%
-So,|%
-but a lot of these, uh,|%
-some of this|%
+yeah|uninterpretable
+So,|uninterpretable
+but a lot of these, uh,|uninterpretable
+some of this|uninterpretable
 well, you know, a lot of people have well water,|sv
 in fact in this area too|sd
-and, an, you know,|%
-and, uh,|%
+and, an, you know,|uninterpretable
+and, uh,|uninterpretable
 Uh-huh.|b
 if you don't get it tested you don't necessarily know what you're, what you're drinking|sd
 and I, I know a lot of people, you know, have that|sd
@@ -3251,7 +3251,7 @@ I forget what you call those things,|sd
 Uh-huh.|b
 and, and that was some of the best tasting water,|sv
 I mean, I can still to this day taste that water.|sd
-When we were,|%
+When we were,|uninterpretable
 when I was growing up I lived in Huntsville, Alabama,|sd
 Yeah.|b
 and their water supply came from, uh, spring.|sd
@@ -3310,7 +3310,7 @@ Uh-huh.|b
 And this is very much his, you know, reaction that the rich are so rich and the poor are so poor.|sd
 Oh, the, there's a joke,|sd
 the, the graft and the, uh, payoffs down there are are an accepted way|sv
-and, in a way,|%
+and, in a way,|uninterpretable
 Uh-huh,|b
 uh-huh.|b
 And there's, there's a sad joke.|sv
@@ -3329,7 +3329,7 @@ and he said fifteen percent.|sd
 He said, you see that school over there?|sd
 And the Ambassador said, yes,|sd
 and he pot, patted his pocket and said fifteen percent,|sd
-so,|%
+so,|uninterpretable
 Oh, gosh.|ba
 so the next year the Senator went to Latin America to visit the Ambassador and was treated to dinner in his home|sd
 and it was twice as large and four times as many servants.|sd
@@ -3342,12 +3342,12 @@ And the Senator looked|sd
 and he couldn't see anything,|sd
 he said, no.|sd
 And the Ambassador potted, patted his pocket and said one hundred percent|sd
-so,|%
+so,|uninterpretable
 Yep|b
 Yeah,|b
-that,|%
+that,|uninterpretable
 it's a sad story|sv
-but,|%
+but,|uninterpretable
 Intentions, intentions|fo_o_fw_"_by_bc
 Yes,|aa
 yes,|aa
@@ -3365,12 +3365,12 @@ Yeah.|b
 and now, uh, couple of the older ones stayed or went back,|sd
 but the rest of them now have their American citizenship and are leading productive lives,|sd
 Uh-huh.|b
-but, you|%
+but, you|uninterpretable
 Well, the the other instance I think of their inability to, to handle things, the cholera,  and hepatitis epidemics now in, in Latin America.|sd
 Yes.|aa
 And it shows the, the unpreparedness for such, such a problem.|sv
 Yes.|aa
-And yet they're so,|%
+And yet they're so,|uninterpretable
 Oh, the stories she tells, you know, are just unnerving just unnerving.|sd
 Yeah.|b
 And they're, they're so rich in resources there.|sd
@@ -3378,16 +3378,16 @@ They're very rich in oil and gas.|sd
 And they're very rich in gold and silver, and very rich in, in, uh, natural resources such as the fish and, uh timber, and, and copper and all types of, uh, resources|sd
 Uh-huh,|b
 uh-huh.|b
-but they,|%
+but they,|uninterpretable
 And the uranium.|^2
 Yes,|aa
-and,|%
+and,|uninterpretable
 but they don't have,|sv
 it's sort of like Russia,|sv
 they don't have the ability to develop it.|sv
 The technology.|bf
 Right.|aa
-And they, they're very,|%
+And they, they're very,|uninterpretable
 Well,|b
 and, you know, they're very willing to be taught in many cases now, too,|sv
 but, you know, there's just always this kind of resentment underlying|sv
@@ -3411,13 +3411,13 @@ somewhat a sarcastic view,|h
 but some of those drugs czars, you know,|sd
 they, they know that by pumping that poison into our system that that's the way to bring us to our knees, more on their level.|sv
 Uh-huh.|b
-You know,|%
+You know,|uninterpretable
 You know, that's really, uh, kind of a far fetched idea,|sv
 I know,|aa
 and I don't think people probably think those things consciously,|sv
 Uh-huh.|b
 but it's like in any sibling rivalry|sv
-Well the,|%
+Well the,|uninterpretable
 we're hearing the same,|sv
 The solution discussed at one time and I think it has real merit on the drug situation is that the the U S government could spend less money by buying the crop and destroying it than they are in trying to, to beef up the military and to do all other things.|sv
 I think it would be cheaper to buy it and destroy it,|sv
@@ -3429,27 +3429,27 @@ True.|aa
 Course, then could, you know, at, at some point, could you ever convince someone to turn around and grow something that was productive for humankind.|qy
 No,|nn
 no.|nn
-You know.|%
+You know.|uninterpretable
 And, I, I think finding an alternate to that would be very good.|sv
 I mean even their, even their legal crops are things that we don't perceive as being healthy now from a medical standpoint of view, coffee tobacco you know|sv
 Right.|b
 Uh-huh.|b
 Argentine beef,|^2
-yeah,|%
-yeah.|%
+yeah,|uninterpretable
+yeah.|uninterpretable
 They're certainly legal,|sd
 but they're certainly not healthy.|sv
 Well, have we come up with a solution yet, Salina?|qy
 No,|nn
 not that I know of|sd
 But it's been fun hashing about it I suppose.|sv
-At any rate,|%
-yeah.|%
+At any rate,|uninterpretable
+yeah.|uninterpretable
 Yeah,|b^m
 yeah.|b
 Well, one of these days, uh, I hope we'll find some, some way to substitute the good crops for illegal ones.|sd
 Well, let's just hope that the powers that be, uh, have time to, a little bit once in a while to, to think in some farther reaching avenues than you and I do here tonight|sv
-but,|%
+but,|uninterpretable
 I agree.|aa
 Well, it's been nice chatting with you.|fc
 Yes,|fc
@@ -3472,14 +3472,14 @@ and I would certainly call for a ban on certain types.|sv
 Now the, the wisdom as to which types, that's going to be a debate forever, I would assume.|sv
 Uh, the method of, of controlling it, well that's all into how much money you want to put into the, the controls.|sv
 Uh, one point that was made in the House hearings|sd
-or|%
+or|uninterpretable
 the representative stood up and said, you know, we can check a guy's credit card instantly,|sd
 but, uh, we don't want to check his background,|^q
 and of course those are two different issues as far as privacy goes|sv
 Right.|b
-uh,|%
+uh,|uninterpretable
 but there still, the, the technology exists to, to check it if they want.|sd
-So, it's, it's kind of a,|%
+So, it's, it's kind of a,|uninterpretable
 I guess you could put a dollar figure on it if you really want to make that kind of an effort and regulate it like that.|sv
 And then you've got the group of people that decide that there's, there's no particular reason to have them at all|sd
 and you got to balance those against the ones that say there is some sport to it|sv
@@ -3498,14 +3498,14 @@ Yeah.|b
 I don't even keep the gun in our house,|sd
 Right.|b
 so I don't have that problem,|sd
-but, uh,|%
+but, uh,|uninterpretable
 it's a hard, hard topic, I guess.|sv
 A lot of people have a hard issue, a lot of hard feelings about it.|sv
 They do,|aa
 and you, boy you can get them on either side|sd
 and just like you say,|sd
 uh, well I think I, I guess I'd have to place myself, uh, probably seven or eight|sv
-because,|%
+because,|uninterpretable
 or not,|ar
 onto no control,|sd
 I'm sorry, excuse me, that,|fa
@@ -3518,13 +3518,13 @@ but the little boy was five years old and was intelligent enough to,|sd
 uh, he knew where booth, both places were, loaded the gun|sd
 and they were playing cowboys and Indians|sd
 and he shot the other little boy right between the eyes.|sd
-So, uh,|%
+So, uh,|uninterpretable
 I mean it,|sd
 it destroyed two families uh, in just that instant|sd
 Right.|b
 and, and I, a lot of people say that they need it for protection, uh,|sv
 having worked at one time in Baltimore,|sd
-or,|%
+or,|uninterpretable
 I don't know if you're in the big city,|sd
 Dallas.|sd
 are you,|qy
@@ -3532,12 +3532,12 @@ Dallas?|br
 Uh-huh.|ny
 That's a big city|sv
 Yeah.|b
-Uh, then you know that, uh, uh,|%
+Uh, then you know that, uh, uh,|uninterpretable
 if you live anywhere real close that, uh,|sv
-the safety is, uh,|%
+the safety is, uh,|uninterpretable
 some people argue that they need a gun to make sure that they aren't going to get shot because of the incidences of break ins and, you know.|sv
 But, uh, uh, we have never had a gun in the house with my children growing up.|sd
-Uh, I, uh,|%
+Uh, I, uh,|uninterpretable
 once, uh, uh, knew a fellow that had, had been a policeman|sd
 and he said that if you pull a gun on a robber, he's going to assume that you know how to use it well,|sd
 and he's going to, you know, try to shoot first.|sd
@@ -3546,20 +3546,20 @@ Uh, so, you know, if he's got one.|sd
 Uh, and if not,|sd
 uh, then usually they, uh,|sd
 if he's got a knife or whatever that can throw it at you,|sd
-I mean, you know they, they,|%
+I mean, you know they, they,|uninterpretable
 Right.|b
 he said that it, it was better not to have,|sd
 especially myself, now I'm a widow,|sd
-and, uh,|%
+and, uh,|uninterpretable
 I, so I'm, when my handicapped son is, is not at home, I'm by myself,|sd
-but, uh, there's,|%
+but, uh, there's,|uninterpretable
 I still won't have a gun in the house because he said it's really uh, playing Russian Roulette if you do|sd
-Uh,|%
+Uh,|uninterpretable
 Yeah.|b
 About the only circumstances that they'd be of any value is when you happen to already know that the, the, person was coming your way.|sv
 Once you're surprised, it's too late.|sv
 That's right.|aa
-And, and the rare,|%
+And, and the rare,|uninterpretable
 That's right.|aa
 you know, the very few of those burglaries actually occur in such a way that you knew the guy was coming,|sv
 Right.|b
@@ -3574,7 +3574,7 @@ Right.|b
 And you have a, you have a earn a right,|sv
 not just a privilege as it were if you're going to serve in the militia,|sv
 then you have a right to have that arm,|sv
-but, uh,|%
+but, uh,|uninterpretable
 That's right.|aa
 you know, there's all sorts of arguments there|sd
 I know|aa
@@ -3588,7 +3588,7 @@ So, we change our rights with our social status.|sv
 that's right.|aa
 They're man given rights|sd
 and they can be taken away by a man,|sd
-so,|%
+so,|uninterpretable
 Right.|b
 uh, the people that hide behind that, I don't worry about.|sd
 They can go live in another country if they want.|sd
@@ -3599,12 +3599,12 @@ even here where I work, uh, we have a, a gun club.|sd
 And, of course, those people are very avid.|sd
 They, you know, they say there should be no ban,|sd
 Uh-huh.|b
-that it's not,|%
+that it's not,|uninterpretable
 but I can't see why any, uh, on the street citizen should be able to be allowed to have a machine gun.|sv
 Right.|b
 Uh, you know, when you were talking about maybe what kind of guns that would be hard to decide,|sv
 but there are a few guns that, uh, just are not, uh, sport,|sv
-or, I mean,|%
+or, I mean,|uninterpretable
 I don't know too many people that use a machine gun to go sport hunting either|sd
 Right.|b
 So, uh, I, I think they should have at least some control over, over those things.|sv
@@ -3624,10 +3624,10 @@ Tends to, tends to strap only the legitimate people.|bf
 Most regulation does|sv
 Right,|aa
 oh, yeah.|aa
-and, most,|%
+and, most,|uninterpretable
 it's very difficult to, uh, legislate, uh, crooks or whatever you want, however you want to word it|sv
 That's right.|aa
-so it's,|%
+so it's,|uninterpretable
 well, this may be a never ending topic.|sv
 I got a couple of calls waiting on me,|sd
 so I'd better let you go.|fc
@@ -3654,7 +3654,7 @@ Oh, is that right?|qy
 But anyway, what do you think we've gained from the spaceflights?|qo
 Well uh, I'm not sure to be honest with you,|^h
 so, uh, this going to the moon seemed to be a exciting adventure|sv
-and, uh, And, yeah,|%
+and, uh, And, yeah,|uninterpretable
 Ego trip.|sv
 it was nice to go there,|sv
 but I don't know that it really benefitted mankind that much.|sv
@@ -3667,7 +3667,7 @@ And, uh, you know, that's been kind of a, a real negative feeling here|sd
 is|sd
 Right.|b
 sure it was, you know, very unfortunate thing that occurred there|sv
-and it's,|%
+and it's,|uninterpretable
 Where do you live?|qw
 Uh, we live in, uh, Utah.|sd
 You live in|bk
@@ -3682,7 +3682,7 @@ I have a sister that lives in Dallas,|sd
 that's how we got hooked up to the program was her her husband works for Penney's there.|sd
 I see.|b
 I see.|b
-So.|%
+So.|uninterpretable
 Carolyn Rash?|qy^d
 Pardon me?|br
 Is her name Rash, Carolyn Rash?|qy
@@ -3690,12 +3690,12 @@ No, her name is, uh, my last name is Skidmore.|ng
 I see.|b
 And her, her husband's name is, his last name is Weight.|sd
 I see.|b
-And, uh,|%
+And, uh,|uninterpretable
 Well, you probably know a lot about it.|sv
 I wasn't sure that they were blaming that space disaster on one company.|sv
 I hadn't heard that.|sd
 Well, they were.|sd
-There was, uh,|%
+There was, uh,|uninterpretable
 apparently the specifications for the joints, uh,|sd
 they were not to perform in, uh, cold weather|sd
 and, uh, apparently there was definitely a, a joint that did not seal,|sd
@@ -3705,13 +3705,13 @@ I mean, they're as long as a football field practically and about twelve foot in
 Uh-huh.|b
 and, and there is a lot of pressure, lot of thrust to get that much weight up in the air.|sd
 Oh, yeah.|b
-So it's, this book was interesting, though.|%
+So it's, this book was interesting, though.|uninterpretable
 I, uh,|sv
 talked about how a lot of the problems they have to come, overcome to, uh,|sd
 it's a very complex, uh, situation to go into space.|sv
 Oh, yeah,|aa
 I would think so, too|aa
-They would,|%
+They would,|uninterpretable
 the thing that he went into quite a bit of detail about how, how much of a problem it is to re-enter the Earth's atmosphere.|sd
 You never think about that do you?|qy
 Yeah.|ny
@@ -3722,18 +3722,18 @@ If you come in at the wrong angle, what happens is they bounce off and go back i
 Uh-huh.|b
 and if they come into it at a different angle there is so much friction that it burns them up.|sd
 Right.|b
-So,|%
+So,|uninterpretable
 Well, I saw one of, some of those early space capsules at Smithsonian.|sd
 I'm sure you've seen more of them than I have,|sv
 Oh.|b
 but you could see the scorch on them, you know,|sd
 Uh-huh.|b
-they had though piles|%
+they had though piles|uninterpretable
 Yeah.|b
 but you could see where they would come off in the, how hot it got because it was still the scorch on them which was quite interesting.|sv
 Yeah,|b
 I've, I've, I would say I've never, I've never seen an actual capsule.|sd
-Well, I,|%
+Well, I,|uninterpretable
 excuse me, go ahead.|ad
 Oh, yeah.|b
 I've seen more, more of the motors that, that they produced out there.|sd
@@ -3746,7 +3746,7 @@ the little bell type things.|sd
 People have commented how, uh, they were surprised at how small they were.|sd
 Yeah,|aa
 they really were,|sd
-they just, uh,|%
+they just, uh,|uninterpretable
 Looked pretty confining, huh.|qy^d
 Oh, yeah,|ny
 and, uh, the whole thing was small|sd
@@ -3768,7 +3768,7 @@ It's perfectly round.|sd
 Uh-huh.|b
 But I'm not sure you have to go to outer space to achieve that zero gravity.|sv
 Well, that's true|aa
-and,|%
+and,|uninterpretable
 Yeah.|b
 That's right|aa
 Well, do you think we should continue to support it at the level,|qy
@@ -3817,7 +3817,7 @@ Uh-huh.|b
 Yeah.|b
 Yeah,|aa
 that makes sense.|sv
-Um.|%
+Um.|uninterpretable
 Because you start prying in people's private lives, you ruin their lives as well as,|sv
 That's right.|aa
 And sometimes, you know, I don't even know how much of a difference it really makes, you know.|sv
@@ -3835,15 +3835,15 @@ That's it.|ba
 And, uh you when it becomes public, though, it becomes scandalous.|sv
 Uh-huh.|b
 Yeah.|b
-The, that's, that's the thing that,|%
+The, that's, that's the thing that,|uninterpretable
 uh, things that you don't know uh, do, do not worm their way around and influence other people or perhaps lead other people astray.|sv
 Uh-huh.|b
 Yeah.|b
 People could say, oh, they do it,|sd
-so, I guess, you know,|%
+so, I guess, you know,|uninterpretable
 but, as soon as things do get public uh, there, there is that terrible concern.|sv
 Uh-huh.|b
-Um|%
+Um|uninterpretable
 So, sometimes I ask myself, what are, uh, people doing that are in the media when somebody, you know, comes up to office,|sd
 Uh-huh.|b
 it seems that one of the first thing that's done is to dig up any kind of a thing they can on them and get it all over the headlines.|sv
@@ -3852,7 +3852,7 @@ Oh, yeah|aa
 I guess it's what sells newspapers, you know.|sv
 It's a very low way of living.|sv
 Uh-huh.|b
-Uh, so,|%
+Uh, so,|uninterpretable
 and, and, and as far as, uh, you know, myself having any particular personal, uh, knowledge or insight into politics or politicians, it, I'm not terribly involved in it.|sd
 Uh-huh|b
 Just in a very cursory way.|sd
@@ -3864,7 +3864,7 @@ Yeah.|b
 so, I, I always feel very outside this kind of, uh, this kind of an issue.|sd
 Uh-huh.|b
 Yeah.|b
-But, uh,|%
+But, uh,|uninterpretable
 I am kind of the same way.|sd
 I just kind of read the paper follow up on I mean, you know, just keep an eye on what's going on|sd
 Yeah.|b
@@ -3873,7 +3873,7 @@ Yeah,|b
 right.|b
 but I don't really play an active role in any kind of politics|sd
 Yeah,|b
-uh,|%
+uh,|uninterpretable
 Uh, uh-huh.|b
 I'm not, I'm not in there,|sd
 I'm not one of those, uh, you know, volunteers that's down at headquarters and whatever, uh, although I admire the people that do that|sd
@@ -3895,7 +3895,7 @@ I don't play any.|sd
 I used to.|sd
 Oh well,|b
 I think everybody took piano lessons|sv
-so,|%
+so,|uninterpretable
 Everybody,|sv
 sure.|aa
 I, I started when I was in, uh, third grade,|sd
@@ -3914,7 +3914,7 @@ Wow|ba
 Uh, you know, whatever|sd
 and so I, I still sing,|sd
 and I sing in the choir today|sd
-so,|%
+so,|uninterpretable
 All right|b
 I I enjoy the music,|sd
 it gives me an out.|sd
@@ -3949,30 +3949,30 @@ And Jaws,|sd
 but I think everybody can.|sv
 Okay.|bk
 I I, I can still read music if I'm lucky|sd
-because I,|%
+because I,|uninterpretable
 if I work real hard I can still barely read the music,|sd
 but, see, I played the piano from the third grade all the way through high school,|sd
 Yeah.|b
-so|%
+so|uninterpretable
 Yeah.|b
 I played uh, concertos and other stuff|sd
-but,|%
+but,|uninterpretable
 I got to the point where I wasn't really reading music, I was memorizing music,|sd
 so because of that, I can't read music as well as I used to,|sd
-but anyway,|%
+but anyway,|uninterpretable
 Yeah.|b
 but I enjoy it, though.|sd
 I find it to be a good out|sd
 and I still enjoy the marching band|sd
 and I still enjoy, uh, singing in the choir|sd
-so,|%
+so,|uninterpretable
 Do you sing at choir at your church?|qy
 Yes,|ny
 I do.|sd
 Yeah.|b
 Yes,|ny
 I do.|sd
-That's,|%
+That's,|uninterpretable
 in fact, that's about the only musical thing that I still do is sing in the choir.|sd
 Yeah.|b
 I tried out for choir when I was, think, in the seventh grade|sd
@@ -3988,7 +3988,7 @@ I never really learned the music or anything.|sd
 I never learned,|sd
 I got right to where I was figuring out where all the keys were on the piano|sd
 and that's about when I quit.|sd
-I was at,|%
+I was at,|uninterpretable
 I actually went to the University of Texas at one time thinking that I would, be a musician.|sd
 I wanted to be a high school band director.|sd
 Yeah.|b
@@ -4000,16 +4000,16 @@ And besides that I kind of learned I wasn't really that good|sd
 I gave up.|sd
 Yeah.|b
 Course, my mom thought I was,|sd
-but, uh, you know,|%
+but, uh, you know,|uninterpretable
 Of course,|aa
 parents always do.|sv
 Oh, yeah,|b
-so,|%
+so,|uninterpretable
 They're nice that way.|sv
 Yes.|aa
 Well, what else can we uh, talk about,|qy
-uh,|%
-Uh, well, I don't,|%
+uh,|uninterpretable
+Uh, well, I don't,|uninterpretable
 so you listen to kind of church music, gospel?|qy^d
 No,|nn
 no,|nn
@@ -4035,7 +4035,7 @@ Okay,|b
 now what kind of music do you listen to?|qw
 Well, I listen to like ninety-seven point one, you know, more,|sd
 What what is that?|qw
-It's more, uh,|%
+It's more, uh,|uninterpretable
 I don't know how to explain it,|^h
 kind of pop, you know, rock.|sd
 Rock.|b^m
@@ -4043,7 +4043,7 @@ Yeah.|aa
 Hard rock?|bf
 Well, not hard|ar
 Not hard rock.|qy^d
-Just kind of,|%
+Just kind of,|uninterpretable
 Not like the eagle.|qy^d
 Huh?|br
 Is that the eagle?|qy
@@ -4051,15 +4051,15 @@ Yeah.|ny
 Okay,|bk
 I know, I know what the eagle is.|sd
 It's not too hard,|sv
-it's,|%
+it's,|uninterpretable
 That's not too hard.|aa
-You know.|%
+You know.|uninterpretable
 But it's not enough to put you to sleep|sv
 True,|aa
 true.|aa
 Which some of the songs on K V I L can.|sv
 Well, course, see, I listen to K V I L for the contests.|sd
-I mean|%
+I mean|uninterpretable
 Oh, yeah,|b
 got the bumper sticker, too?|qy^d
 Oh, yes,|ny
