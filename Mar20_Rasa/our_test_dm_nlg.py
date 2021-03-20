@@ -73,6 +73,7 @@ def run(core_model, message, args: argparse.Namespace):
     print(response[1].is_end_to_end_prediction)
     print(response[1].optional_events)
     print(response[0].name())
+    #print(asyncio.run(response[0].run(output_channel=?, processor.nlg, tracker, processor.domain))) #TODO
 
     print("tracker", tracker.current_state())
     # TODO: clean up, make this the main method, integrate our stuff, make it an await and call with asyncio.run() => should us let get rid of all the asyncio.run()'s in here
