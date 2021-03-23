@@ -39,7 +39,7 @@ def get_prediction(utterance, model, generator, tokenizer):
 
 	# process utterance, process i.e. input
 	tokenized_msg = word_tokenize(utterance)
-	msg_at_trp, predicted_intent, utterance_prediction_at_trp = \
+	msg_at_trp, predicted_intent, score, utterance_prediction_at_trp = \
 		dm.main(tokenized_msg, generator, tokenizer, model, threshold,
 				update_weight_timesteps, predicted, scaling_weight_utterance_prediction_score,
 				average=averaging, averaging_weight=averaging_weight,
@@ -168,8 +168,8 @@ def from_log(logfile):
 	print_metrics(confusion_matrix, locking_times, trps, ftos, "unknown")
 
 if __name__ == "__main__":
-	from_log("eval_log_biggerSwitchboard.csv")
-	#main()
+	#from_log("eval_log_biggerSwitchboard.csv")
+	main()
 
 
 """

@@ -953,3 +953,4 @@ In other words, you know, you don't have a need to go buy a gun to go shoot it t
 somebody wants to do that,	sv	ad	-5	-5	-3
 I, I, at times I think they ought to have a waiting period on all firearms.	sv	h	-16	-16	-14
 Yeah.	aa	nlu_fallback	0	0	2
+utterance	intent	predicted intent	locking time	predicted TRP	estimated FTO without VAD

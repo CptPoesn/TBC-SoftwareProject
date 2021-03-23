@@ -1,7 +1,9 @@
 
 # imports################################################################
+import asyncio
 import logging
 
+import rasa
 from rasa.cli.utils import get_validated_path
 from rasa.model import get_model, get_model_subdirectories
 from rasa.nlu.model import Interpreter
@@ -170,7 +172,10 @@ def get_prediction(tokenized_msg, generator, tokenizer, rasa_model, threshold,
             logging.info("input to intent classifier: ", pred_text)
 
             # Get intents ranking for predicted utterance
-            all_result = process_input(pred_text, rasa_model)  # classify intent
+            if isinstance(rasa_model, rasa.nlu.model.Interpreter):
+                all_result = process_input(pred_text, rasa_model)  # classify intent
+            elif isinstance(rasa_model, rasa.core.interpreter.RasaNLUInterpreter):
+                all_result = asyncio.run(process_input(pred_text, rasa_model)) #classify intent but the Interpreter is asynchronized
             # TODO: possibly double-check whether pred_text==""
             # or maybe empty string means "end of sentence", i.e. the gpt2 prediction starts with ". NextSentence"
             # TODO: break when the utterance prediction we use is "" ?
@@ -246,8 +251,8 @@ def get_prediction(tokenized_msg, generator, tokenizer, rasa_model, threshold,
 
     return trp_list
 
-def main(tokenized_msg, generator, tokenizer, rasa_model, threshold,
-         update_weight_timesteps, predicted, scaling_weight_utterance_prediction_score,
+def main(tokenized_msg, generator, tokenizer, rasa_model, threshold=0.9,
+         update_weight_timesteps=0.9, predicted="by_allpunc", scaling_weight_utterance_prediction_score=-17,
          average=False, averaging_weight=0.5, num_utterance_predictions=5,
          utt_score_threshold=0.6, prediction_updates=True, response_generation_duration = 2):
 
@@ -271,7 +276,7 @@ def main(tokenized_msg, generator, tokenizer, rasa_model, threshold,
     print("\n\n\n")
     #print("prediction list: ", trp_list)
 
-    return msg_at_locking_time, p_intent, p_utterance
+    return msg_at_locking_time, p_intent, score, p_utterance
 
 
 if __name__ == "__main__":
@@ -304,7 +309,7 @@ if __name__ == "__main__":
     utt_score_threshold = 0.6
     update_predictions = True
 
-    model_path = "../../Softwareprojekt/rasa_test/models"
+    model_path = "../../../../Softwareprojekt/rasa_test/models"
     tokenized_msg = word_tokenize(input_msg)
     #print("tokens: ", tokenized_msg)
 
