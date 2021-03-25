@@ -9,7 +9,6 @@ from rasa.model import get_model, get_model_subdirectories
 from rasa.nlu.model import Interpreter
 from rasa.shared.constants import DEFAULT_MODELS_PATH
 from rasa.shared.utils.io import json_to_string
-import operator
 
 import torch
 from transformers import AutoModelForCausalLM
@@ -110,7 +109,7 @@ def weight_by_utterance_probability(pred_score, scaling_weight_utterance_predict
         # tried sigmoid here (to keep total value below 1.0) but didn't find good values for other hyper-parameters
         return float(scaling_weight_utterance_prediction_score)/math.log(pred_score,10) # i.e. 10/num_decimal_zeroes for scaling_weight_utterance_prediction_score=-10
     except ValueError:
-        return 1/1000 # TODO: double-check: this should be a very small number
+        return 1/1000 # very small number compared to the successful case above; results in the total score depending only on the intent prediction confidence
     except ZeroDivisionError:
         return 1
 
@@ -150,7 +149,8 @@ def best_locking_time(trp_list):
 def get_prediction(tokenized_msg, generator, tokenizer, rasa_model, threshold,
          update_weight_timesteps, predicted, scaling_weight_utterance_prediction_score,
          average=False, averaging_weight = 0.5, num_utterance_predictions = 5, utt_score_threshold=0.6,
-                   prediction_updates=True, response_generation_duration=2):
+                   prediction_updates=True, response_generation_duration=2,
+                   weight_utterance_score_relative_to_intent_confidence = 0.5):
     num_updates = 0 # counter for at how many time steps a prediction passed the threshold
     cumu_msg = []  # cumulated message
     intent_dict = defaultdict(int)
@@ -182,11 +182,13 @@ def get_prediction(tokenized_msg, generator, tokenizer, rasa_model, threshold,
             item_intent_dis = intent_prob(all_result) # item_intent_dis = list of (intent,confi)
 
             for intent,confi in item_intent_dis:
-                #score = float(confi) * utt_score # In Gervits they use utt_score as threshold instead of weight
-                #weight = 0.5
-                #score = float(confi) * (1-weight) + sigmoid(utt_score) * (weight)
-                score = sigmoid(float(confi) + utt_score)
+                # discarded working with sigmoid(pred_score) directly because the values for very good predictions and bad predictions were all very close to 0.5
+                #score = float(confi) * utt_score
+                weight = weight_utterance_score_relative_to_intent_confidence
+                score = float(confi) * (1-weight) + sigmoid(utt_score) * (weight)
+                #score = sigmoid(float(confi) + utt_score) # this is what we used first; seems to yield slightly higher values which are less precise (results in higher std on timing measures)
                 """
+                # In Gervits they use utt_score as threshold instead of weight
                 if sigmoid(utt_score) > utt_score_threshold:
                     score = float(confi)
                 else:
@@ -230,7 +232,7 @@ def get_prediction(tokenized_msg, generator, tokenizer, rasa_model, threshold,
                         print(t)
                     break
                 else:
-                    print(len(word_tokenize(predicted_utterance)), len(word_tokenize(user_utterance)))
+                    logging.debug(f"num tokens predicted utterance: {len(word_tokenize(predicted_utterance))}, num tokens user utterance {len(word_tokenize(user_utterance))}")
             else:
                 # If we don't update predictions and trp_list is non-empty (i.e. at least one prediction has passed the threshold),
                 # there's no need for further computation.
@@ -244,7 +246,6 @@ def get_prediction(tokenized_msg, generator, tokenizer, rasa_model, threshold,
     if not trp_list:
         best_intent,best_score = max(intent_dict.items(), key=itemgetter(1))
         trp_list.append((out, pred_text, best_intent, best_score, num_updates))
-        logging.info(f"Highest scoring prediction is 1st out of {num_updates} predictions.")
         print(f"Highest scoring prediction is 1st out of {num_updates} predictions.")
         print("default trp_list")
         print(trp_list)
@@ -254,14 +255,16 @@ def get_prediction(tokenized_msg, generator, tokenizer, rasa_model, threshold,
 def main(tokenized_msg, generator, tokenizer, rasa_model, threshold=0.9,
          update_weight_timesteps=0.9, predicted="by_allpunc", scaling_weight_utterance_prediction_score=-17,
          average=False, averaging_weight=0.5, num_utterance_predictions=5,
-         utt_score_threshold=0.6, prediction_updates=True, response_generation_duration = 2):
+         utt_score_threshold=0.6, prediction_updates=True, response_generation_duration = 2,
+         weight_utterance_score_relative_to_intent_confidence = 0.5):
 
     # 1. Get trp_list
     trp_list = get_prediction(tokenized_msg, generator, tokenizer, rasa_model, threshold,
          update_weight_timesteps, predicted, scaling_weight_utterance_prediction_score,
          average=average, averaging_weight=averaging_weight, num_utterance_predictions=num_utterance_predictions,
                    utt_score_threshold=utt_score_threshold, prediction_updates=prediction_updates,
-                              response_generation_duration=response_generation_duration)
+                              response_generation_duration=response_generation_duration,
+                              weight_utterance_score_relative_to_intent_confidence = 0.5)
 
     # 2. Extract return values from trp-list
     if prediction_updates:
