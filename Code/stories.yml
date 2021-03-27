@@ -1,0 +1,150 @@
+version: "2.0"
+
+stories:
+
+- story: path1
+  steps:
+  - intent: inform_pass
+  - action: utter_selfCorrection
+  - intent: autoPositive
+  - action: utter_autoPositive
+
+- story: path2
+  steps:
+  - intent: checkQuestion
+  - action: utter_confirm
+  - intent: autoPositive
+  - action: utter_selfCorrection
+  
+- story: path3
+  steps:
+  - intent: autoPositive
+  - action: utter_agreement
+  - intent: inform_continue
+  - action: utter_autoPositive
+  - intent: retraction
+  - action: utter_inform_pass
+
+- story: path4
+  steps:
+  - intent: inform_pass
+  - action: utter_agreement
+  - intent: inform_continue
+  - action: utter_agreement
+  - intent: setQuestion
+  - action: utter_inform_continue
+
+- story: path5
+  steps:
+  - intent: inform_continue
+  - action: utter_inform_pass
+  - intent: autoPositive
+  - action: utter_alloPositive
+  - intent: propositionalQuestion
+  - action: utter_answer
+
+- story: path6
+  steps:
+  - intent: stalling
+  - action: utter_retraction
+  - intent: checkQuestion
+  - action: utter_confirm
+
+- story: path7
+  steps:
+  - intent: agreement
+  - action: utter_inform_pass
+  - intent: stalling
+  - action: utter_inform_pass
+  - intent: setQuestion
+  - action: utter_agreement
+
+
+- story: path8
+  steps:
+  - intent: stalling
+  - action: utter_inform_continue
+  - intent: autoPositive
+  - action: utter_inform_pass
+  - intent: inform_continue
+  - action: utter_completion
+
+- story: path9
+  steps:
+  - intent: opening
+  - action: utter_inform_continue
+  - intent: autoPositive
+  - action: utter_inform_continue
+
+- story: path10
+  steps:
+  - intent: setQuestion
+  - action: utter_stalling
+  - intent: answer
+  - action: utter_autoPositive
+
+- story: path11
+  steps:
+  - intent: checkQuestion
+  - action: utter_confirm
+  - intent: inform_pass
+  - action: utter_agreement
+  - intent: confirm
+  - action: utter_autoPositive
+  
+- story: path12
+  steps:
+  - intent: inform_pass
+  - action: utter_suggest
+  - intent: autoPositive
+  - action: utter_inform_pass
+  - intent: agreement
+  - action: utter_autoPositive
+  
+- story: path13
+  steps:
+  - intent: answer
+  - action: utter_stalling
+  - intent: inform_continue
+  - action: utter_autoPositive
+  
+- story: path14
+  steps:
+  - intent: request
+  - action: utter_autoPositive
+  - intent: inform_continue
+  - action: utter_agreement
+
+- story: path15
+  steps:
+  - intent: inform_continue
+  - action: utter_autoPositive
+  - intent: propositionalQuestion
+  - action: utter_answer
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
