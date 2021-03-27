@@ -121,6 +121,51 @@ stories:
   - action: utter_autoPositive
   - intent: propositionalQuestion
   - action: utter_answer
+  
+- story: path 16
+  steps:
+  - intent: stalling
+  - action: utter_disconfirm
+  - intent: stalling
+  - action: utter_inform_continue
+  - intent: retraction
+  - action: utter_stalling
+
+- story: path 17
+  steps:
+  - intent: feedbackElicitation
+  - action: utter_autoPositive
+  - intent: setQuestion
+  - action: utter_answer
+  - intent: autoPositive
+  - action: utter_alloPositive
+  
+- story: path 18
+  steps:
+  - intent: interactionStructuring
+  - action: utter_autoPositive
+  - intent: inform_continue
+  - action: utter_autoPositive
+  - intent: inform_continue
+  - action: utter_propositionalQuestion
+  
+- story: path 19
+  steps:
+  - intent: checkQuestion
+  - action: utter_confirm
+  - intent: inform_pass
+  - action: utter_agreement
+  - intent: suggest
+  - action: utter_autoPositive
+  
+- story: path 20
+  steps:
+  - intent: inform_pass
+  - action: utter_agreement
+  - intent: stalling
+  - action: utter_selfCorrection
+  - intent: inform_continue
+  - action: utter_agreement
 
 - story: happy path
   steps:
