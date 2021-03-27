@@ -7,18 +7,21 @@ Uploaded files
   - for batch evaluation
 4. config.yml
   - replacement of config.yml from rasa initial model
-5. allSwitchboard.yaml
+5. domain.yml
+  - replacement of domain.yml from rasa initial model
+6. stories.yml
+  -replacement of stories.yml from rasa initial model
+7. allSwitchboard.yaml
   - switchboard data adapted to rasa yml format (see directory "../datahandling" for further corpora)
-6. allSwitchboard_eval.csv
+8. allSwitchboard_eval.csv
   - switchboard data for evaluation (csv format)
-7. allSwitchboard_dev.csv
+9. allSwitchboard_dev.csv
   - switchboard data for development; this is the data we tested on to get the performance measures reported in our presentation
 
 ----------------------------------------------------------------------------------------------------------------
 
 Software Requirements
 1. Anaconda3
-2. Spyder from Anaconda3
 3. environment file rasa_env.yml
 (Alternatively: any installation of Python 3.7 and pip 19 should do. Then you will have to install some libraries (e.g. rasa, nltk) to be able to run our code.)
 
@@ -35,13 +38,19 @@ B. Train a Rasa model with provided data
   2. Get up a new initial Rasa model with command "rasa init" (you can select "n" when asked whether to train an initial model). Rasa will create some files and directories, including a file called "config.yml" and a folder calles "data".
   3. Replace the initial training data files in "data" folder with the training data of your choice (e.g. allSwitchboard.yaml - see ../datahandling for more training files) 
   4. Replace the initial config.yml file with the one uploaded here.
-  5. Run the command "rasa train" in the directory that contains config.yml and the "data" folder.
+  5. Replace the initial domain.yml file with the one uploaded here.
+  6. In the "data" folder replace the initial stories.yml file with the one uploaded here.
+  7. Run the command "rasa train" in the directory that contains config.yml and the "data" folder.
 
-C. Run model on a single sentence as input
+C1. Run model on a single sentence as input
   1. In "our_dialogue_manager.py", change the path to your trained model's path, i.e. the directory from step B. (line 266)
   2. Input a sentence for the variable input_msg (line 256)
   3. If desired, change the variable threshold (line 257)
   4. Run the command "python our_dialogue_manager.py"
+  
+C2. Run model as an interactive agent.
+  1. Run "rasa shell"
+  2. Input your turn with keyboard input, press the "Enter" key your input is complete.
 
 D. Run evaluation
   1. Adapt the paths for your trained model and the evaluation data corresponding to your training data (lines 8,9)
