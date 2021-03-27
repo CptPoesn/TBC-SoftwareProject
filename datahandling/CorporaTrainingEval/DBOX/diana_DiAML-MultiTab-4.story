@@ -1,53 +1,53 @@
 utter_opening:
-- text: " hello "
 - text: " good afternoon "
+- text: " hello "
 
 utter_initgreeting:
-- text: " nice to meet you "
 - text: " good afternoon "
+- text: " nice to meet you "
 
 utter_returngreeting:
 - text: " hello "
 - text: " nice to meet you "
 
 utter_stalling:
-- text: " uh is "
-- text: " ehm "
-- text: " mh "
 - text: " uh "
+- text: " mh "
+- text: " ehm "
 - text: " uhm "
+- text: " uh is "
 
 utter_setquestion:
-- text: " whats your name "
 - text: " what were you doing when you were alive "
-- text: " what is your first question "
+- text: " whats your name "
 - text: " how are you doing today "
+- text: " what is your first question "
 
 utter_setanswer:
 - text: " my name is gregor linn "
 - text: " fine "
 
 utter_autopositive:
-- text: " mhm "
-- text: " okay i understand "
-- text: " ah okay "
-- text: " alright "
-- text: " im doing well too "
 - text: " nice to meet you "
+- text: " ah okay "
+- text: " im doing well too "
+- text: " okay i understand "
+- text: " alright "
 - text: " okay "
+- text: " mhm "
 
 utter_inform:
 - text: " im doing well too "
 
 utter_interactionstructuring:
+- text: " alright and one more important thing "
 - text: " alright "
 - text: " so first ill tell you the rules "
-- text: " alright and one more important thing "
 
 utter_selfcorrection:
-- text: " i will "
 - text: " is "
 - text: " would you "
+- text: " i will "
 
 utter_autonegative:
 - text: " could you repeat the questions "
@@ -60,14 +60,14 @@ utter_suggest:
 - text: " so lets start "
 
 utter_propositionalquestion:
-- text: " are you from germany "
-- text: " are you from america "
 - text: " are you still alive "
+- text: " are you from america "
+- text: " are you from germany "
 
 utter_propositionalanswer:
 - text: " no i am not "
-- text: " no i am not from germany "
 - text: " no i am not from america "
+- text: " no i am not from germany "
 
 utter_pausing:
 - text: " let me think for a minute "

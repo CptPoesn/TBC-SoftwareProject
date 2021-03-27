@@ -1,6 +1,6 @@
 utter_opening:
-- text: " hello "
 - text: " hello again "
+- text: " hello "
 
 utter_initgreeting:
 - text: " hello again "
@@ -15,13 +15,13 @@ utter_interactionstructuring:
 - text: " alright so "
 
 utter_setquestion:
-- text: " what is your first question "
 - text: " where are you from "
 - text: " what are your initials "
+- text: " what is your first question "
 
 utter_autopositive:
-- text: " mh "
 - text: " okay "
+- text: " mh "
 
 utter_inform:
 - text: " i can not answer that question "
@@ -31,8 +31,8 @@ utter_propositionalquestion:
 - text: " are you dead "
 
 utter_propositionalanswer:
-- text: " yes i am a real person "
 - text: " no i am still alive "
+- text: " yes i am a real person "
 
 utter_stalling:
 - text: " mh "

@@ -2,9 +2,9 @@ nlu:
 - intent: opening
   examples:
   - text: |
-       hello 
-  - text: |
        hello again 
+  - text: |
+       hello 
 
 - intent: initgreeting
   examples:
@@ -29,17 +29,17 @@ nlu:
 - intent: autopositive
   examples:
   - text: |
+       okay 
+    metadata:
+      turnManagement: turnTake
+  - text: |
        yeah 
   - text: |
        great 
   - text: |
        okay 
-    metadata:
-      turnManagement: turnTake
   - text: |
        alright 
-  - text: |
-       okay 
 
 - intent: allopositive
   examples:
@@ -56,7 +56,7 @@ nlu:
 - intent: stalling
   examples:
   - text: |
-       mmh 
+       uh 
     metadata:
       turnManagement: turnKeep
   - text: |
@@ -64,19 +64,19 @@ nlu:
     metadata:
       turnManagement: turnAccept
   - text: |
-       and 
+       uhm 
+    metadata:
+      turnManagement: turnKeep
+  - text: |
+       mmh 
+    metadata:
+      turnManagement: turnKeep
+  - text: |
+       uhm 
     metadata:
       turnManagement: turnTake
   - text: |
-       uhm 
-    metadata:
-      turnManagement: turnKeep
-  - text: |
-       uh 
-    metadata:
-      turnManagement: turnKeep
-  - text: |
-       uhm 
+       and 
     metadata:
       turnManagement: turnTake
 
@@ -90,35 +90,35 @@ nlu:
   - text: |
        and what are you doing 
   - text: |
-       what is your mother tongue 
-  - text: |
        where are you from 
   - text: |
-       and how old are you 
+       what is your mother tongue 
   - text: |
        what is your first question 
+  - text: |
+       and how old are you 
 
 - intent: setanswer
   examples:
   - text: |
-       i am a professional tennis player 
+       thirty three years old 
   - text: |
        i am thirty three 
+  - text: |
+       i am a professional tennis player 
   - text: |
        my mother tongue is english 
   - text: |
        i am from the united states 
-  - text: |
-       thirty three years old 
 
 - intent: propositionalquestion
   examples:
   - text: |
-       does your first name start with an s 
-  - text: |
        and youre still alive 
   - text: |
        are you successful in tennis 
+  - text: |
+       does your first name start with an s 
 
 - intent: propositionalanswer
   examples:
@@ -128,16 +128,16 @@ nlu:
 - intent: selfcorrection
   examples:
   - text: |
-       with an 
-  - text: |
        thirty 
+  - text: |
+       with an 
 
 - intent: inform
   examples:
   - text: |
-       im not sure if i can answer that question 
-  - text: |
        no i cant answer that question 
+  - text: |
+       im not sure if i can answer that question 
 
 - intent: answer
   examples:

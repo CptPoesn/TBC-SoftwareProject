@@ -3,8 +3,8 @@ utter_opening:
 
 utter_initgreeting:
 - text: " hello "
-- text: " hello nikolina its nice to meet you "
 - text: " good afternoon almost evening "
+- text: " hello nikolina its nice to meet you "
 
 utter_opening(fu:dap1dis0):
 - text: " hello "
@@ -13,24 +13,24 @@ utter_returngreeting(fu:dap1som0):
 - text: " hello "
 
 utter_stalling:
-- text: " so "
-- text: " hm "
 - text: " uh "
-- text: " so uhm "
-- text: " youre not alive "
+- text: " so "
 - text: " ninety seven "
-- text: " uhm "
+- text: " youre not alive "
 - text: " okay "
 - text: " eehm "
+- text: " uhm "
+- text: " so uhm "
+- text: " hm "
 
 utter_setquestion:
+- text: " how are you doing today "
+- text: " what is your first question "
+- text: " when are you born "
+- text: " what do you do "
+- text: " what is your name "
 - text: " when were you in the goverment "
 - text: " what is your nationality "
-- text: " how are you doing today "
-- text: " what do you do "
-- text: " when are you born "
-- text: " what is your first question "
-- text: " what is your name "
 
 utter_setanswer(fu:dap1tsk0):
 - text: " my name is nikolina "
@@ -96,9 +96,9 @@ utter_autopositive(fe:fsp2auffb6):
 
 utter_propositionalquestion:
 - text: " are a politician "
-- text: " are you leading a company "
 - text: " are you alive "
 - text: " are you a "
+- text: " are you leading a company "
 
 utter_propositionalanswer(fu:dap2tsk4):
 - text: " i am not alive "

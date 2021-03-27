@@ -9,9 +9,9 @@ nlu:
   - text: |
        hello 
   - text: |
-       hello nikolina its nice to meet you 
-  - text: |
        good afternoon almost evening 
+  - text: |
+       hello nikolina its nice to meet you 
 
 - intent: opening(fu:dap1dis0)
   examples:
@@ -26,19 +26,19 @@ nlu:
 - intent: stalling
   examples:
   - text: |
+       okay 
+    metadata:
+      turnManagement: turnKeep
+  - text: |
        so 
   - text: |
-       hm 
-    metadata:
-      turnManagement: turnKeep
-  - text: |
-       uhm 
-    metadata:
-      turnManagement: turnKeep
+       ninety seven 
   - text: |
        uh 
     metadata:
       turnManagement: turnKeep
+  - text: |
+       youre not alive 
   - text: |
        uhm 
     metadata:
@@ -48,7 +48,9 @@ nlu:
     metadata:
       turnManagement: turnKeep
   - text: |
-       youre not alive 
+       hm 
+    metadata:
+      turnManagement: turnKeep
   - text: |
        so uhm 
     metadata:
@@ -58,32 +60,30 @@ nlu:
     metadata:
       turnManagement: turnTake
   - text: |
-       ninety seven 
-  - text: |
-       okay 
+       eehm 
     metadata:
       turnManagement: turnKeep
   - text: |
-       eehm 
+       uhm 
     metadata:
       turnManagement: turnKeep
 
 - intent: setquestion
   examples:
   - text: |
-       when were you in the goverment 
-  - text: |
-       what is your nationality 
-  - text: |
        how are you doing today 
-  - text: |
-       what do you do 
-  - text: |
-       when are you born 
   - text: |
        what is your first question 
   - text: |
+       when are you born 
+  - text: |
+       what do you do 
+  - text: |
        what is your name 
+  - text: |
+       when were you in the goverment 
+  - text: |
+       what is your nationality 
 
 - intent: setanswer(fu:dap1tsk0)
   examples:
@@ -110,11 +110,11 @@ nlu:
   - text: |
        alright so 
   - text: |
+       so 
+  - text: |
        alright 
     metadata:
       turnManagement: turnTake
-  - text: |
-       so 
 
 - intent: setanswer(fu:dap1som4)
   examples:
@@ -198,11 +198,11 @@ nlu:
   - text: |
        are a politician 
   - text: |
-       are you leading a company 
-  - text: |
        are you alive 
   - text: |
        are you a 
+  - text: |
+       are you leading a company 
 
 - intent: propositionalanswer(fu:dap2tsk4)
   examples:

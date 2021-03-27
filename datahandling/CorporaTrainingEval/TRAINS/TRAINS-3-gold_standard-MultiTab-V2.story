@@ -9,14 +9,14 @@ utter_acceptoffer:
 
 utter_inform_pass:
 - text: "then I'll take engine E two"
+- text: "then I'd like to take the tanker of orange juice through Dansville and then on to Avon"
 - text: "I'd like to take a tanker from Corning and bring it to Elmira"
 - text: "and from Elmira I'd like to load orange juice into the tanker"
-- text: "then I'd like to take the tanker of orange juice through Dansville and then on to Avon"
 
 utter_autopositive:
 - text: "alright"
-- text: "okay"
 - text: "mm-hm"
+- text: "okay"
 
 utter_inform_continue:
 - text: "I'd like then to take the tanker back from Elmira to Corning"
@@ -28,9 +28,9 @@ utter_stalling:
 - text: "uh"
 
 utter_setquestion:
-- text: "now from Corning what would be the quickest route to Avon"
-- text: "which engine would you like to use"
 - text: "the tankers move at the same speed"
+- text: "which engine would you like to use"
+- text: "now from Corning what would be the quickest route to Avon"
 
 utter_answer:
 - text: "engine E two"

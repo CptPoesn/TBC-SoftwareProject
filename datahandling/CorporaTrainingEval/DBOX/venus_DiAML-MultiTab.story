@@ -1,6 +1,6 @@
 utter_opening:
-- text: " hello "
 - text: " hello again "
+- text: " hello "
 
 utter_initgreeting:
 - text: " hello again "
@@ -15,9 +15,9 @@ utter_confirm:
 - text: " mhm "
 
 utter_autopositive:
-- text: " alright "
 - text: " okay "
 - text: " yeah "
+- text: " alright "
 - text: " great "
 
 utter_allopositive:
@@ -28,9 +28,9 @@ utter_interactionstructuring:
 - text: " alright "
 
 utter_stalling:
-- text: " and "
-- text: " uh "
 - text: " mmh "
+- text: " uh "
+- text: " and "
 - text: " uhm "
 
 utter_suggest:
@@ -38,33 +38,33 @@ utter_suggest:
 
 utter_setquestion:
 - text: " and what are you doing "
-- text: " what is your mother tongue "
 - text: " where are you from "
-- text: " and how old are you "
+- text: " what is your mother tongue "
 - text: " what is your first question "
+- text: " and how old are you "
 
 utter_setanswer:
-- text: " i am a professional tennis player "
+- text: " thirty three years old "
 - text: " i am thirty three "
+- text: " i am a professional tennis player "
 - text: " my mother tongue is english "
 - text: " i am from the united states "
-- text: " thirty three years old "
 
 utter_propositionalquestion:
-- text: " does your first name start with an s "
 - text: " and youre still alive "
 - text: " are you successful in tennis "
+- text: " does your first name start with an s "
 
 utter_propositionalanswer:
 - text: " yes i am still alive "
 
 utter_selfcorrection:
-- text: " with an "
 - text: " thirty "
+- text: " with an "
 
 utter_inform:
-- text: " im not sure if i can answer that question "
 - text: " no i cant answer that question "
+- text: " im not sure if i can answer that question "
 
 utter_answer:
 - text: " no i cant answer that question "

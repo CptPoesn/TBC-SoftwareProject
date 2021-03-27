@@ -180,7 +180,7 @@ def extract_intents(file, data):
         row_intents = []
     with open(file, 'w') as f:
         for row in intents:
-            f.write(str(row) + '\n')
+            f.write('  ' + str(row) + '\n')
 
 
 if __name__ == '__main__':
