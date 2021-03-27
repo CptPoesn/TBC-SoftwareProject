@@ -117,11 +117,11 @@ def dict_to_story(filename_out, data_dict):
         for key, values in yaml_dict.items():
             # if key == 'turnKeep':
             #     continue
-            f.write('utter_' + key.lower() + ':\n')  # no spaces
+            f.write('  ' + 'utter_' + key.lower() + ':\n')  # no spaces
 
 
             for ex in values:
-                f.write('- text: "' + ex + '"\n')  # six spaces
+                f.write('  ' + '- text: "' + ex + '"\n')  # six spaces
 
             f.write('\n')
 
@@ -180,7 +180,7 @@ def extract_intents(file, data):
         row_intents = []
     with open(file, 'w') as f:
         for row in intents:
-            f.write('  ' + str(row) + '\n')
+            f.write(str(row) + '\n')
 
 
 if __name__ == '__main__':

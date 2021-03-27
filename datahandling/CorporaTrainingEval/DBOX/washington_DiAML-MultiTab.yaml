@@ -7,11 +7,11 @@ nlu:
 - intent: initgreeting
   examples:
   - text: |
-       hello 
-  - text: |
        good afternoon almost evening 
   - text: |
        hello nikolina its nice to meet you 
+  - text: |
+       hello 
 
 - intent: opening(fu:dap1dis0)
   examples:
@@ -26,29 +26,29 @@ nlu:
 - intent: stalling
   examples:
   - text: |
-       okay 
+       uhm 
     metadata:
-      turnManagement: turnKeep
+      turnManagement: turnAccept
   - text: |
-       so 
+       uhm 
+    metadata:
+      turnManagement: turnTake
   - text: |
-       ninety seven 
-  - text: |
-       uh 
+       okay 
     metadata:
       turnManagement: turnKeep
   - text: |
        youre not alive 
   - text: |
-       uhm 
-    metadata:
-      turnManagement: turnAccept
+       ninety seven 
   - text: |
        so 
+  - text: |
+       eehm 
     metadata:
       turnManagement: turnKeep
   - text: |
-       hm 
+       so 
     metadata:
       turnManagement: turnKeep
   - text: |
@@ -56,34 +56,34 @@ nlu:
     metadata:
       turnManagement: turnKeep
   - text: |
-       uhm 
-    metadata:
-      turnManagement: turnTake
-  - text: |
-       eehm 
+       uh 
     metadata:
       turnManagement: turnKeep
   - text: |
        uhm 
+    metadata:
+      turnManagement: turnKeep
+  - text: |
+       hm 
     metadata:
       turnManagement: turnKeep
 
 - intent: setquestion
   examples:
   - text: |
-       how are you doing today 
-  - text: |
        what is your first question 
-  - text: |
-       when are you born 
-  - text: |
-       what do you do 
   - text: |
        what is your name 
   - text: |
        when were you in the goverment 
   - text: |
+       what do you do 
+  - text: |
        what is your nationality 
+  - text: |
+       how are you doing today 
+  - text: |
+       when are you born 
 
 - intent: setanswer(fu:dap1tsk0)
   examples:
@@ -108,13 +108,13 @@ nlu:
 - intent: interactionstructuring
   examples:
   - text: |
-       alright so 
-  - text: |
-       so 
-  - text: |
        alright 
     metadata:
       turnManagement: turnTake
+  - text: |
+       alright so 
+  - text: |
+       so 
 
 - intent: setanswer(fu:dap1som4)
   examples:
@@ -198,11 +198,11 @@ nlu:
   - text: |
        are a politician 
   - text: |
-       are you alive 
-  - text: |
        are you a 
   - text: |
        are you leading a company 
+  - text: |
+       are you alive 
 
 - intent: propositionalanswer(fu:dap2tsk4)
   examples:

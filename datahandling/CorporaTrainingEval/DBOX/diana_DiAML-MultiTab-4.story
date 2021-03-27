@@ -1,74 +1,74 @@
-utter_opening:
-- text: " good afternoon "
-- text: " hello "
+  utter_opening:
+  - text: " good afternoon "
+  - text: " hello "
 
-utter_initgreeting:
-- text: " good afternoon "
-- text: " nice to meet you "
+  utter_initgreeting:
+  - text: " nice to meet you "
+  - text: " good afternoon "
 
-utter_returngreeting:
-- text: " hello "
-- text: " nice to meet you "
+  utter_returngreeting:
+  - text: " nice to meet you "
+  - text: " hello "
 
-utter_stalling:
-- text: " uh "
-- text: " mh "
-- text: " ehm "
-- text: " uhm "
-- text: " uh is "
+  utter_stalling:
+  - text: " mh "
+  - text: " uh is "
+  - text: " ehm "
+  - text: " uh "
+  - text: " uhm "
 
-utter_setquestion:
-- text: " what were you doing when you were alive "
-- text: " whats your name "
-- text: " how are you doing today "
-- text: " what is your first question "
+  utter_setquestion:
+  - text: " how are you doing today "
+  - text: " whats your name "
+  - text: " what is your first question "
+  - text: " what were you doing when you were alive "
 
-utter_setanswer:
-- text: " my name is gregor linn "
-- text: " fine "
+  utter_setanswer:
+  - text: " fine "
+  - text: " my name is gregor linn "
 
-utter_autopositive:
-- text: " nice to meet you "
-- text: " ah okay "
-- text: " im doing well too "
-- text: " okay i understand "
-- text: " alright "
-- text: " okay "
-- text: " mhm "
+  utter_autopositive:
+  - text: " alright "
+  - text: " okay "
+  - text: " ah okay "
+  - text: " im doing well too "
+  - text: " nice to meet you "
+  - text: " mhm "
+  - text: " okay i understand "
 
-utter_inform:
-- text: " im doing well too "
+  utter_inform:
+  - text: " im doing well too "
 
-utter_interactionstructuring:
-- text: " alright and one more important thing "
-- text: " alright "
-- text: " so first ill tell you the rules "
+  utter_interactionstructuring:
+  - text: " alright and one more important thing "
+  - text: " alright "
+  - text: " so first ill tell you the rules "
 
-utter_selfcorrection:
-- text: " is "
-- text: " would you "
-- text: " i will "
+  utter_selfcorrection:
+  - text: " would you "
+  - text: " i will "
+  - text: " is "
 
-utter_autonegative:
-- text: " could you repeat the questions "
-- text: " could you clarify the question "
+  utter_autonegative:
+  - text: " could you clarify the question "
+  - text: " could you repeat the questions "
 
-utter_allopositive:
-- text: " mhm "
+  utter_allopositive:
+  - text: " mhm "
 
-utter_suggest:
-- text: " so lets start "
+  utter_suggest:
+  - text: " so lets start "
 
-utter_propositionalquestion:
-- text: " are you still alive "
-- text: " are you from america "
-- text: " are you from germany "
+  utter_propositionalquestion:
+  - text: " are you from america "
+  - text: " are you still alive "
+  - text: " are you from germany "
 
-utter_propositionalanswer:
-- text: " no i am not "
-- text: " no i am not from america "
-- text: " no i am not from germany "
+  utter_propositionalanswer:
+  - text: " no i am not from america "
+  - text: " no i am not from germany "
+  - text: " no i am not "
 
-utter_pausing:
-- text: " let me think for a minute "
+  utter_pausing:
+  - text: " let me think for a minute "
 
