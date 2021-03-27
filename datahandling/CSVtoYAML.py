@@ -96,6 +96,35 @@ def dict_to_yaml(filename_out, data_dict):
 
             f.write('\n')
 
+def dict_to_story(filename_out, data_dict):
+    # yaml_dict = dd(list)
+    yaml_dict = dd(set)
+    for row in data_dict:
+
+        for key, value in row.items():
+            # skips lines that aren't annotated
+            if value and (key == 'Task' or key == 'autoFeedback' or key == 'alloFeedback' or key == 'turnManagement'
+                          or key == 'timeManagement' or key == 'ownCommunicationManagement'
+                          or key == 'partnerCommunicationManagement' or key == 'discourseStructuring'
+                          or key == 'socialObligationsManagement'):
+                if value == row['turnManagement']:
+                        continue
+
+                    # yaml_dict[value].append(row['FS text'])
+                yaml_dict[value].add(row['FS text'])
+    with open(filename_out, 'w') as f:
+
+        for key, values in yaml_dict.items():
+            # if key == 'turnKeep':
+            #     continue
+            f.write('utter_' + key.lower() + ':\n')  # no spaces
+
+
+            for ex in values:
+                f.write('- text: "' + ex + '"\n')  # six spaces
+
+            f.write('\n')
+
     # for row in reader:
     #     str = ''
     #     i = 0
@@ -136,6 +165,24 @@ def data_to_goldstandard(file, data):
             writer.writerow(dict)
 
 
+def extract_intents(file, data):
+    intents = []
+    for row in data:
+        sender = row['Sender']
+        row_intents = []
+        for key, value in row.items():
+            if value and (key == 'Task' or key == 'autoFeedback' or key == 'alloFeedback' or key == 'turnManagement'
+                          or key == 'timeManagement' or key == 'ownCommunicationManagement'
+                          or key == 'partnerCommunicationManagement' or key == 'discourseStructuring'
+                          or key == 'socialObligationsManagement'):
+                row_intents.append(value)
+        intents.append((sender, row_intents))
+        row_intents = []
+    with open(file, 'w') as f:
+        for row in intents:
+            f.write(str(row) + '\n')
+
+
 if __name__ == '__main__':
     # Examples/Tech Demo:
     # file = 'TRAINS-1-gold_standard-MultiTab-V21.csv'
@@ -169,6 +216,8 @@ if __name__ == '__main__':
 
     for file in files:
         training_file_out = file[:-3] + 'yaml'
+        story_file_out = file[:-3] + 'story'
+        intents_file_out = file[:-3] + 'intents'
         dev_file_out = file[:-3] + "_for_development.csv"
         eval_file_out = file[:-3] + "_for_eval.csv"
 
@@ -181,5 +230,7 @@ if __name__ == '__main__':
         # print(data[1].keys())
 
         dict_to_yaml(training_file_out, train_data)
+        dict_to_story(story_file_out, train_data)
+        extract_intents(intents_file_out, train_data)
         data_to_goldstandard(dev_file_out, dev_data)
         data_to_goldstandard(eval_file_out, eval_data)

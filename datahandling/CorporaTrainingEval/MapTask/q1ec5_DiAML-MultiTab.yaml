@@ -9,82 +9,90 @@ nlu:
 - intent: instruct
   examples:
   - text: |
-       until you are above the level of the buffalo 
-  - text: |
-       and then slightly up 
-  - text: |
-       so youve got 
-    metadata:
-      turnManagement: turnGrab
-  - text: |
-       and go bel-- 
-  - text: |
-       and then youre go up and over the top of the 
-  - text: |
-       as you reach the creek 
-  - text: |
-       and then go over and round the creek to your right 
-  - text: |
-       so that youre on the right of the buffalo 
-  - text: |
-       but 
-  - text: |
-       well youre going to go from above the apache camp to the walled city 
-  - text: |
-       and then when you reach the far your left-hand side of the walled city travel southwards 
-  - text: |
-       now youre starting above the diamond mine 
-  - text: |
-       then just straight down to the right of the buffalo 
-  - text: |
-       so avoid the saloon bar 
-  - text: |
-       so youre going from above the apache camp the carved wooden pole and over the top of the walled city 
+       so what i want you to do is go between the flat rocks and stone creek 
   - text: |
        now go south from the diamond mine 
   - text: |
-       youve got to avoid that i think 
+       but 
   - text: |
-       and so youre pass by the graveyard as well 
+       and then when you reach the far your left-hand side of the walled city travel southwards 
   - text: |
-       when you reach the apache camp 
+       so youre going to 
+  - text: |
+       now go right from the diamond mine 
+  - text: |
+       and then go over and round the creek to your right 
+  - text: |
+       so go south down past the walled city underneath your ghost town 
+  - text: |
+       and then slightly up underneath the flat rocks and above the stone creek 
+  - text: |
+       until you are above the level of the buffalo 
+  - text: |
+       until just above the apache camp 
+  - text: |
+       so avoid the saloon bar 
+  - text: |
+       and then 
+  - text: |
+       and go bel-- 
   - text: |
        then go slightly to your right beyond the flat rocks 
   - text: |
        when youre over the top of that and vertically in line with the apache camp go south 
   - text: |
-       until you come to the level of some flat rocks 
-  - text: |
-       now go right from the diamond mine 
-  - text: |
-       until you are still above the desert 
-  - text: |
-       sort of northeast direction between the flat rocks and the stone creek 
-  - text: |
-       and then 
-  - text: |
-       until just above the apache camp 
-  - text: |
-       go along 
-  - text: |
-       and now youve got to pass 
-  - text: |
-       so go south down past the walled city underneath your ghost town 
-  - text: |
-       so what i want you to do is go between the flat rocks and stone creek 
-  - text: |
-       see when youre over the top of the fast or your creek or the river that ive got here 
-  - text: |
-       go along to your right and veer slightly upwards 
+       and then slightly up 
   - text: |
        but youve got to avoid a carved wooden pole 
   - text: |
-       so youre going to 
+       until you are still above the desert 
   - text: |
-       and then slightly up underneath the flat rocks and above the stone creek 
+       and then youre go up and over the top of the 
+  - text: |
+       then just straight down to the right of the buffalo 
+  - text: |
+       so youre going from above the apache camp the carved wooden pole and over the top of the walled city 
+  - text: |
+       sort of northeast direction between the flat rocks and the stone creek 
+  - text: |
+       so youve got 
+    metadata:
+      turnManagement: turnGrab
+  - text: |
+       and now youve got to pass 
+  - text: |
+       until you come to the level of some flat rocks 
+  - text: |
+       go along to your right and veer slightly upwards 
+  - text: |
+       as you reach the creek 
+  - text: |
+       so that youre on the right of the buffalo 
+  - text: |
+       go along 
+  - text: |
+       well youre going to go from above the apache camp to the walled city 
+  - text: |
+       and so youre pass by the graveyard as well 
+  - text: |
+       youve got to avoid that i think 
+  - text: |
+       see when youre over the top of the fast or your creek or the river that ive got here 
+  - text: |
+       when you reach the apache camp 
+  - text: |
+       now youre starting above the diamond mine 
 
 - intent: stalling
   examples:
+  - text: |
+       ehm 
+    metadata:
+      turnManagement: turnAccept
+  - text: |
+       ehm 
+    metadata:
+      turnManagement: turnKeep
   - text: |
        uh 
     metadata:
@@ -94,37 +102,29 @@ nlu:
     metadata:
       turnManagement: turnKeep
   - text: |
-       ehm 
-    metadata:
-      turnManagement: turnAccept
-  - text: |
        er 
-    metadata:
-      turnManagement: turnKeep
-  - text: |
-       ehm 
     metadata:
       turnManagement: turnKeep
 
 - intent: acceptrequest
   examples:
   - text: |
-       right 
-  - text: |
-       okay 
+       uh-huh 
   - text: |
        mm 
   - text: |
-       uh-huh 
-  - text: |
        mmhmm 
+  - text: |
+       right 
+  - text: |
+       okay 
 
 - intent: checkquestion
   examples:
   - text: |
-       so id be better to go underneath it right 
-  - text: |
        so ill be avoiding the saloon bar 
+  - text: |
+       so id be better to go underneath it right 
   - text: |
        and the desert is below to your left 
 
@@ -136,40 +136,42 @@ nlu:
 - intent: autopositive
   examples:
   - text: |
-       right 
-  - text: |
-       a ghost town 
+       fast running creek 
   - text: |
        canoes 
-  - text: |
-       okay 
-  - text: |
-       slightly above 
-  - text: |
-       you have fast running creek 
-  - text: |
-       right okay 
   - text: |
        okay 
     metadata:
       turnManagement: turnRelease
   - text: |
-       mmhmm 
+       right 
+    metadata:
+      turnManagement: turnTake
   - text: |
        to the right 
+  - text: |
+       right okay 
   - text: |
        okay 
     metadata:
       turnManagement: turnTake
   - text: |
-       fast running creek 
+       you have fast running creek 
+  - text: |
+       a ghost town 
+  - text: |
+       mmhmm 
   - text: |
        right 
-    metadata:
-      turnManagement: turnTake
+  - text: |
+       okay 
+  - text: |
+       slightly above 
 
 - intent: selfcorrection
   examples:
+  - text: |
+       youre on 
   - text: |
        youre _ pass 
   - text: |
@@ -177,11 +179,9 @@ nlu:
   - text: |
        a c-shaped curve 
   - text: |
-       vertically in line 
-  - text: |
        ill 
   - text: |
-       youre on 
+       vertically in line 
 
 - intent: feedbackelicitation
   examples:
@@ -191,103 +191,103 @@ nlu:
 - intent: request
   examples:
   - text: |
-       at the 
-  - text: |
        now if you tell me whats to your right 
+  - text: |
+       at the 
 
 - intent: setquestion
   examples:
   - text: |
-       where is that 
-  - text: |
-       whats to your right 
-  - text: |
        do you have anything between the walled city and the carved wooden pole 
   - text: |
        okay so 
+  - text: |
+       whats to your right 
+  - text: |
+       where is that 
 
 - intent: answer
   examples:
   - text: |
-       its just slightly above 
-  - text: |
        ghost town 
-  - text: |
-       the canoes 
-  - text: |
-       ive not got anything between the carved wooden pole and the walled city 
-  - text: |
-       uh-huh 
-  - text: |
-       no 
-  - text: |
-       right away on the far left 
   - text: |
        fast running creek 
   - text: |
+       right away on the far left 
+  - text: |
+       its just slightly above 
+  - text: |
+       no 
+  - text: |
+       uh-huh 
+  - text: |
+       ive not got anything between the carved wooden pole and the walled city 
+  - text: |
        right away down the very bottom 
+  - text: |
+       the canoes 
 
 - intent: propositionalquestion
   examples:
   - text: |
-       and do you have a graveyard 
+       do you have a stone creek 
   - text: |
        do you have a carved wooden pole in this area 
   - text: |
+       and do you have a graveyard 
+  - text: |
+       do you have 
+  - text: |
        do you have an apache camp 
-  - text: |
-       do you have a stone creek 
-  - text: |
-       or have you got something else there 
   - text: |
        below it 
   - text: |
-       do you have 
+       or have you got something else there 
   - text: |
        do you have a walled city 
 
 - intent: inform_continue
   examples:
   - text: |
-       well ive got a fast flowing river here 
+       theres actually a graveyard to the right of the diamond mine 
+  - text: |
+       which is halfway between the walled city and the apache camp 
   - text: |
        thats not on my map 
   - text: |
-       theres actually a graveyard to the right of the diamond mine 
-  - text: |
        but theres another one a carved wooden pole here 
   - text: |
-       which is halfway between the walled city and the apache camp 
+       well ive got a fast flowing river here 
 
 - intent: inform_pass
   examples:
   - text: |
        on my map 
   - text: |
-       i dont have a saloon bar here 
-  - text: |
-       ive got one of them as well 
-  - text: |
-       ive got is a fast flowing river 
-  - text: |
        this is vertically in line with the walled city below it 
   - text: |
-       which in my map is slightly above the level of the apache camp 
+       i dont have a saloon bar here 
   - text: |
-       but slightly above the level of the apache camp 
+       ive got here 
   - text: |
        on the same level as the diamond mine 
   - text: |
-       ive got here 
+       ive got one of them as well 
+  - text: |
+       but slightly above the level of the apache camp 
+  - text: |
+       ive got is a fast flowing river 
+  - text: |
+       which in my map is slightly above the level of the apache camp 
 
 - intent: agreement
   examples:
   - text: |
-       mm 
-  - text: |
        score that out 
   - text: |
        right 
+  - text: |
+       mm 
 
 - intent: choicequestion
   examples:
