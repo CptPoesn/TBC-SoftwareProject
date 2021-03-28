@@ -79,6 +79,7 @@ if __name__ == "__main__":
         action_name, system_reply = interface.process_message(message)
         print("Action name: ", action_name)
         print("System reply: ", system_reply)
+        print("\n--------------------------------------------\n")
 
 
 
