@@ -55,7 +55,7 @@ C2. Run model as an interactive agent.
   2. Input your turn with keyboard input, press the "Enter" key your input is complete.
   3. When the input is empty, the interaction would be terminated, with an error message.
 
-D. Run evaluation
+C3. Run evaluation
   1. Adapt the paths for your trained model and the evaluation data corresponding to your training data (lines 8,9)
   2. Feel free to manipulate the hyper-parameters (lines 10, 25-32)
   3. Run "python evaluation.py"
