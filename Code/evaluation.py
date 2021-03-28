@@ -5,7 +5,7 @@ import csv
 import numpy as np
 from timeit import default_timer as timer
 
-corpus_file_name = "../datahandling/unifiedCorpora/SwitchBoard/allSwitchboard._for_evaluation.csv"
+corpus_file_name = "../datahandling/unifiedCorpora/SwitchBoard/allSwitchboard._for_eval.csv"
 model_path = "C:/Users/schmi/Softwareprojekt/switchboard/models"
 log_path = "eval/eval_log_allSwitchboard_0.csv"
 write_log = True

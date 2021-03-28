@@ -226,8 +226,8 @@ def get_prediction(tokenized_msg, generator, tokenizer, rasa_model, threshold,
                 # Break if the highest scoring prediction in trp_list predicts the trp to be 3 or less tokens away
                 user_utterance, intent, score, predicted_utterance, pred_id = best_locking_time(trp_list)
                 if len(word_tokenize(predicted_utterance)) - len(word_tokenize(user_utterance)) <= response_generation_duration:
-                    logging.info(f"Highest scoring prediction is {pred_id}th out of {num_updates} predictions.")
-                    print(f"Highest scoring prediction is {pred_id}th out of {num_updates} predictions.")
+                    logging.info(f"Highest scoring prediction is {pred_id}. out of {num_updates} early predictions.")
+                    print(f"Highest scoring prediction is {pred_id}th out of {num_updates} early predictions.")
                     for t in trp_list:
                         print(t)
                     break
@@ -239,15 +239,13 @@ def get_prediction(tokenized_msg, generator, tokenizer, rasa_model, threshold,
                 break
 
 
-    print("\n ------------------------- \n")
-
     # If threshold hasn't been reached,
     #   choose best intent after reading in the whole input
     if not trp_list:
         best_intent,best_score = max(intent_dict.items(), key=itemgetter(1))
         trp_list.append((out, pred_text, best_intent, best_score, num_updates))
-        print(f"Highest scoring prediction is 1st out of {num_updates} predictions.")
-        print("default trp_list")
+        print(f"The prediction was generated after the end of the user turn.")
+        print("List of predictions: ")
         print(trp_list)
 
     return trp_list
@@ -272,11 +270,10 @@ def main(tokenized_msg, generator, tokenizer, rasa_model, threshold=0.9,
     else:
         msg_at_locking_time, p_intent, score, p_utterance, pred_id = earliest_locking_time(trp_list)
 
-    print("full message: ", " ".join(tokenized_msg))
+    logging.info("full message: ", " ".join(tokenized_msg))
     print("predicted utterance at locking time: ", p_utterance)
     print(f"user utterance up to locking time: {msg_at_locking_time}")
     print("top intent and score at locking time: ", p_intent, score)
-    print("\n\n\n")
     #print("prediction list: ", trp_list)
 
     return msg_at_locking_time, p_intent, score, p_utterance
