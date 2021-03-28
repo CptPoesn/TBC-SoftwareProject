@@ -9,12 +9,9 @@ from nltk import word_tokenize
 from rasa.core.channels.channel import CollectingOutputChannel
 
 from rasa.shared.core.events import UserUttered
-from rasa.core import constants
 from rasa.core.channels import UserMessage
-from rasa.shared.utils.io import json_to_string
-from rasa.nlu.model import Interpreter
-from rasa.model import get_model, get_model_subdirectories
-from rasa.shared.constants import DEFAULT_MODELS_PATH, DEFAULT_CREDENTIALS_PATH, DEFAULT_ENDPOINTS_PATH
+from rasa.model import get_model
+from rasa.shared.constants import DEFAULT_MODELS_PATH
 from rasa.cli.utils import get_validated_path
 from rasa.core.agent import Agent
 
@@ -64,10 +61,14 @@ class CoreModelInterface():
         #print("probs",list(zip(prediction.probabilities, [action_for_index(x, processor.domain, processor.action_endpoint) for x in range(len(prediction.probabilities))])))
         output_channel = CollectingOutputChannel()
         messages = asyncio.run(action.run(output_channel, self.processor.nlg, tracker, self.processor.domain))
-        system_reply = messages.pop().text
+        try:
+            system_reply = messages[-1].text
+        except AttributeError:
+            return action.name(), (None, f"events: {messages}")
 
         #print("tracker", tracker.current_state())
         return action.name(), system_reply
+
 
 
 if __name__ == "__main__":
