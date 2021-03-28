@@ -17,6 +17,8 @@ Uploaded files
   - switchboard data for evaluation (csv format)
 9. allSwitchboard_dev.csv
   - switchboard data for development; this is the data we tested on to get the performance measures reported in our presentation
+10. coremodel_interface.py
+  - for running model on an interactive interface
 
 ----------------------------------------------------------------------------------------------------------------
 
@@ -49,8 +51,9 @@ C1. Run model on a single sentence as input
   4. Run the command "python our_dialogue_manager.py"
   
 C2. Run model as an interactive agent.
-  1. Run "rasa shell"
+  1. Run "python coremodel_interface.py"
   2. Input your turn with keyboard input, press the "Enter" key your input is complete.
+  3. When the input is empty, the interaction would be terminated, with an error message.
 
 D. Run evaluation
   1. Adapt the paths for your trained model and the evaluation data corresponding to your training data (lines 8,9)
