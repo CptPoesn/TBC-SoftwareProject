@@ -9,7 +9,7 @@ corpus_file_name = "../datahandling/unifiedCorpora/SwitchBoard/allSwitchboard._f
 model_path = "C:/Users/schmi/Softwareprojekt/switchboard/models"
 log_path = "eval/eval_log_allSwitchboard_0.csv"
 write_log = True
-predictor = "huggingtweets/ppredictors" # "huggingtweets/ppredictors" or "gpt2"
+predictor = "gpt2" # "huggingtweets/ppredictors" or "gpt2"
 vad_threshold = 2 # VAD = voice activation detector; threshold indicates after how many tokens of silence we deduce an end-of-utterance
 response_generation_duration = 2  # how long it takes the NLG module to produce a response given a utterance and intent; duration measured in number of tokens
 
@@ -38,7 +38,7 @@ def get_prediction(utterance, model, generator, tokenizer):
 	update_weight_timesteps = 0.9 # how strongly the new intent ranking is weighted compared to the previous time step; range [0,1]
 	scaling_weight_utterance_prediction_score = -17 # the more negative, the stronger the score's influence
 	averaging = True # whether we take an average over all predicted utterances or only the highest scoring utterance
-	averaging_weight = 0.8 # how strongly the individual score of the most successful utterance is weighted against the avarage of all scores
+	averaging_weight = 0.9 # how strongly the individual score of the most successful utterance is weighted against the avarage of all scores for the same intent
 	num_utterance_predictions = 5
 	utt_pred_threshold = 0.6
 	update_predictions = True

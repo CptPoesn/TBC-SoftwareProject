@@ -72,11 +72,12 @@ class CoreModelInterface():
 
 if __name__ == "__main__":
     model_path = "C:/Users/schmi/Softwareprojekt/full_model/models"
-    message = "hi there"
     interface = CoreModelInterface(model_path)
-    action_name, system_reply = interface.process_message(message)
-    print("action name: ", action_name)
-    print("system reply: ", system_reply)
+    while True:
+        message = input("You: ")
+        action_name, system_reply = interface.process_message(message)
+        print("Action name: ", action_name)
+        print("System reply: ", system_reply)
 
 
 

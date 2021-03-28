@@ -186,7 +186,7 @@ def get_prediction(tokenized_msg, generator, tokenizer, rasa_model, threshold,
                 #score = float(confi) * utt_score
                 weight = weight_utterance_score_relative_to_intent_confidence
                 score = float(confi) * (1-weight) + sigmoid(utt_score) * (weight)
-                #score = sigmoid(float(confi) + utt_score) # this is what we used first; seems to yield slightly higher values which are less precise (results in higher std on timing measures)
+                #score = sigmoid(float(confi) + utt_score) # this is what we used before; seems to yield slightly higher values which are less precise (results in higher std on timing measures)
                 """
                 # In Gervits they use utt_score as threshold instead of weight
                 if sigmoid(utt_score) > utt_score_threshold:
