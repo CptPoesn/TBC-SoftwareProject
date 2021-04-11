@@ -8,3 +8,4 @@ Baseline_Model/__pycache__/our_dialogue_manager.cpython-37.pyc
 Baseline_Model/eval_log_biggerSwitchboard.csv
 Code/eval/eval_log_allSwitchboard_0.csv
 Code/eval/eval_log_biggerSwitchboard.csv
+.idea/workspace.xml
