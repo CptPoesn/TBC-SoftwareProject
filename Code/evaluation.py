@@ -5,7 +5,7 @@ import csv
 import numpy as np
 from timeit import default_timer as timer
 
-corpus_file_name = "../datahandling/unifiedCorpora/SwitchBoard/allSwitchboard._for_eval.csv"
+corpus_file_name = "../datahandling/unifiedCorpora/SwitchBoard/allSwitchboard._for_development.csv"
 model_path = "C:/Users/schmi/Softwareprojekt/switchboard/models"
 log_path = "eval/eval_log_allSwitchboard_0.csv"
 write_log = True
@@ -35,13 +35,13 @@ def get_prediction(utterance, model, generator, tokenizer):
 	# hyper-parameters for tuning
 	threshold = 0.8
 	predicted = "by_allpunc"  # options: "by_sentend" or "by_allpunc" or "by_fulltext" for predicted text length
-	update_weight_timesteps = 0.9 # how strongly the new intent ranking is weighted compared to the previous time step; range [0,1]
+	update_weight_timesteps = 1.0 # how strongly the new intent ranking is weighted compared to the previous time step; range [0,1]
 	scaling_weight_utterance_prediction_score = -17 # the more negative, the stronger the score's influence
 	averaging = True # whether we take an average over all predicted utterances or only the highest scoring utterance
-	averaging_weight = 0.9 # how strongly the individual score of the most successful utterance is weighted against the avarage of all scores for the same intent
-	num_utterance_predictions = 5
-	utt_pred_threshold = 0.6
-	update_predictions = True
+	averaging_weight = 1.0 # how strongly the individual score of the most successful utterance is weighted against the avarage of all scores for the same intent
+	num_utterance_predictions = 1
+	utt_pred_threshold = 0.7
+	update_predictions = False
 	weight_utterance_score_relative_to_intent_confidence = 0.5
 
 	# process utterance, process i.e. input
@@ -74,7 +74,7 @@ def get_prediction(utterance, model, generator, tokenizer):
 	#	fot_estimate = prediction_locking_time + response_generation_duration
 	fot_estimate = max(predicted_trp, prediction_locking_time + response_generation_duration)
 
-	return predicted_intent, prediction_locking_time, predicted_trp, fot_estimate
+	return predicted_intent, prediction_locking_time, predicted_trp, fot_estimate, len(tokenized_msg)
 
 
 def main():
@@ -95,11 +95,12 @@ def main():
 	locking_times = []
 	trps = []
 	fots = []
+	msg_lens = []
 	with open(corpus_file_name, mode='r', encoding="utf-8") as csv_file:
 		csv_reader = csv.DictReader(csv_file)
 		for row in csv_reader:
 		#for line in csv_file:
-			p_intent, prediction_locking_time, predicted_trp, estimated_fot = \
+			p_intent, prediction_locking_time, predicted_trp, estimated_fot, len_original_msg = \
 				get_prediction(row["utterance"], model, generator, tokenizer)
 
 			confusion_matrix[row["intent"]][p_intent] += 1
@@ -111,18 +112,20 @@ def main():
 			locking_times.append(prediction_locking_time)
 			trps.append(predicted_trp)
 			fots.append(estimated_fot)
+			msg_lens.append(len_original_msg)
 
 			if write_log:
 				with open(log_path, "a", encoding="utf-8") as log:
 					#print([line[0], line[1], p_intent, prediction_locking_time, predicted_trp, estimated_fot])
 					#log.write("\t".join([line[0], line[1], p_intent, str(prediction_locking_time), str(predicted_trp), str(estimated_fot)]))
 					#log.write("\n")
-					print([row["utterance"], row["intent"], p_intent, prediction_locking_time, predicted_trp, estimated_fot])
+					print([row["utterance"], row["intent"], p_intent, prediction_locking_time, predicted_trp, estimated_fot], "\n\n")
 					log.write("\t".join([row["utterance"], row["intent"], p_intent, str(prediction_locking_time), str(predicted_trp),
 										 str(estimated_fot)]))
 					log.write("\n")
 
 	end = timer()
+	print("message lengths: ", msg_lens)
 
 	print_metrics(confusion_matrix, locking_times, trps, fots, end-start)
 

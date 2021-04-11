@@ -135,7 +135,7 @@ def earliest_locking_time(trp_list):
     user_utterance, predicted_utterance, intent, score, pred_id = min(trp_list, key=(lambda x: (len(x[0]), -x[3])))
     return user_utterance, intent, score, predicted_utterance, pred_id
 
-def last_locking_time(trp_list):
+def latest_locking_time(trp_list):
     # Choose prediction at latest point in time (i.e. longest user utterance) and with highest score (i.e. prediction[1]).
     user_utterance, predicted_utterance, intent, score, pred_id = max(trp_list, key=(lambda x: (len(x[0]), x[3])))
     return user_utterance, intent, score, predicted_utterance, pred_id
@@ -230,6 +230,7 @@ def get_prediction(tokenized_msg, generator, tokenizer, rasa_model, threshold,
                     print(f"Highest scoring prediction is {pred_id}th out of {num_updates} early predictions.")
                     for t in trp_list:
                         print(t)
+
                     break
                 else:
                     logging.debug(f"num tokens predicted utterance: {len(word_tokenize(predicted_utterance))}, num tokens user utterance {len(word_tokenize(user_utterance))}")
@@ -237,6 +238,7 @@ def get_prediction(tokenized_msg, generator, tokenizer, rasa_model, threshold,
                 # If we don't update predictions and trp_list is non-empty (i.e. at least one prediction has passed the threshold),
                 # there's no need for further computation.
                 break
+
 
 
     # If threshold hasn't been reached,
@@ -262,7 +264,7 @@ def main(tokenized_msg, generator, tokenizer, rasa_model, threshold=0.9,
          average=average, averaging_weight=averaging_weight, num_utterance_predictions=num_utterance_predictions,
                    utt_score_threshold=utt_score_threshold, prediction_updates=prediction_updates,
                               response_generation_duration=response_generation_duration,
-                              weight_utterance_score_relative_to_intent_confidence = 0.5)
+                              weight_utterance_score_relative_to_intent_confidence = weight_utterance_score_relative_to_intent_confidence)
 
     # 2. Extract return values from trp-list
     if prediction_updates:
