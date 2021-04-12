@@ -1,7 +1,6 @@
 
 import argparse
 import asyncio
-import logging
 
 import our_dialogue_manager as dm
 from nltk import word_tokenize
@@ -29,8 +28,6 @@ class CoreModelInterface():
 
     def process_message(self, message:str):
 
-        #nlu_parsed = asyncio.run(self.agent.parse_message_using_nlu_interpreter(message))
-        #logging.info(f"nlu {nlu_parsed}")
         # Get tracker and initial intent ranking
         tracker = asyncio.run(self.processor.fetch_tracker_and_update_session("user"))
         user_message = UserMessage(message)
@@ -56,9 +53,7 @@ class CoreModelInterface():
         )
 
         # Generate system response
-        #print("parsed", tracker.current_state())
         action,prediction = self.processor.predict_next_action(tracker)
-        #print("probs",list(zip(prediction.probabilities, [action_for_index(x, processor.domain, processor.action_endpoint) for x in range(len(prediction.probabilities))])))
         output_channel = CollectingOutputChannel()
         messages = asyncio.run(action.run(output_channel, self.processor.nlg, tracker, self.processor.domain))
         try:
@@ -66,14 +61,19 @@ class CoreModelInterface():
         except AttributeError:
             return action.name(), (None, f"events: {messages}")
 
-        #print("tracker", tracker.current_state())
         return action.name(), system_reply
 
 
 
 if __name__ == "__main__":
-    model_path = "C:/Users/schmi/Softwareprojekt/full_model/models"
-    interface = CoreModelInterface(model_path)
+
+    parser = argparse.ArgumentParser(
+        description='An interactive interface to our dialog agent.')
+    parser.add_argument("model",
+                        help="""Path to the "/models" directory with a model trained for NLU and core.""")
+    args = parser.parse_args()
+
+    interface = CoreModelInterface(args.model)
     while True:
         message = input("You: ")
         action_name, system_reply = interface.process_message(message)

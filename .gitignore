@@ -9,3 +9,5 @@ Baseline_Model/eval_log_biggerSwitchboard.csv
 Code/eval/eval_log_allSwitchboard_0.csv
 Code/eval/eval_log_biggerSwitchboard.csv
 .idea/workspace.xml
+Code/OldVersionsAndNotes/*
+*.pyc

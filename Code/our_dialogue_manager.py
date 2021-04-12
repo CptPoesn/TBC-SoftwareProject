@@ -1,5 +1,6 @@
 
 # imports################################################################
+import argparse
 import asyncio
 import logging
 
@@ -34,12 +35,11 @@ def get_rasa_model(model_path: str):
 def process_input(input: str, interpreter: Interpreter):
     # compute NLU result
     result = interpreter.parse(input)
-    return result # , json_to_string(result)
+    return result
 
 
 def intent_prob(result):
     intent_cal_list = list()
-    # TODO: think about whether it should be possible that we get predictions from empty string here  (which then cause there not be an key "intent_ranking" in result
     try:
         intent_rank = json_to_string(result["intent_ranking"])
         n = 1
@@ -81,7 +81,6 @@ def predict_with_score(input, generator, tokenizer, num_predictions=5):
     # now we need to collect the probability of the generated token
     # we need to add a dummy dim in the end to make gather work
     gen_probs = torch.gather(probs, 2, gen_sequences[:, :, None]).squeeze(-1)
-    #print("token probabilities: ", gen_probs)
 
     # now we can do all kinds of things with the probs
     # 1) the probs that exactly those sequences are generated again
@@ -114,7 +113,6 @@ def weight_by_utterance_probability(pred_score, scaling_weight_utterance_predict
         return 1
 
 def get_pred_text(input_so_far, predfull_text, predicted):
-    #print("Full predicted utterance: ", predfull_text)
     punc = "[" + ".?!" + "]"  # string.punctuation
     allpunc = "[" + string.punctuation + "]"
     if predicted == "by_sentend":
@@ -176,9 +174,6 @@ def get_prediction(tokenized_msg, generator, tokenizer, rasa_model, threshold,
                 all_result = process_input(pred_text, rasa_model)  # classify intent
             elif isinstance(rasa_model, rasa.core.interpreter.RasaNLUInterpreter):
                 all_result = asyncio.run(process_input(pred_text, rasa_model)) #classify intent but the Interpreter is asynchronized
-            # TODO: possibly double-check whether pred_text==""
-            # or maybe empty string means "end of sentence", i.e. the gpt2 prediction starts with ". NextSentence"
-            # TODO: break when the utterance prediction we use is "" ?
             item_intent_dis = intent_prob(all_result) # item_intent_dis = list of (intent,confi)
 
             for intent,confi in item_intent_dis:
@@ -197,7 +192,6 @@ def get_prediction(tokenized_msg, generator, tokenizer, rasa_model, threshold,
 
                 _intent_dict[intent].append((pred_text, score))
 
-            #print(sorted(intent_dict.items(), key=operator.itemgetter(1), reverse=True))
 
         update_performed = False # flag whether a prediction passed the threshold at this time step; using flag because we want to count at how many time steps a prediction was performed and because trp_list can contain several elements per time step.
 
@@ -276,14 +270,11 @@ def main(tokenized_msg, generator, tokenizer, rasa_model, threshold=0.9,
     print("predicted utterance at locking time: ", p_utterance)
     print(f"user utterance up to locking time: {msg_at_locking_time}")
     print("top intent and score at locking time: ", p_intent, score)
-    #print("prediction list: ", trp_list)
 
     return msg_at_locking_time, p_intent, score, p_utterance
 
 
 if __name__ == "__main__":
-
-    # alter these################################################################
 
     '''
     # suggested test text (from switchboard sw00-0004) (trained with the rest of switchboard)
@@ -300,7 +291,6 @@ if __name__ == "__main__":
     [answer]                you're talking to part of them that's paying for that <laughter>
     '''
 
-    input_msg = "those three guys take the evidence go off figure it out and then come back and say whether you're guilty or not"  # inform_pass
     threshold = float(0.9)  # threshold
     predicted = "by_sentend"  # options: "by_sentend" or "by_allpunc" or "by_fulltext" for predicted text length
     update_weight_timesteps = 0.9
@@ -311,9 +301,17 @@ if __name__ == "__main__":
     utt_score_threshold = 0.6
     update_predictions = True
 
-    model_path = "../../../../Softwareprojekt/rasa_test/models"
-    tokenized_msg = word_tokenize(input_msg)
-    #print("tokens: ", tokenized_msg)
+    parser = argparse.ArgumentParser(
+        description='This file is not optimized to be used as a script. It can be '
+                    'used to run the intent prediction with soft locking time for a single utterance.')
+    parser.add_argument("model",
+                        help="""Path to the "/models" directory with a trained model.""")
+    parser.add_argument("utterance",
+                        help="""Input message; exactly one utterance.""")
+    args = parser.parse_args()
+
+    model_path = args.model
+    tokenized_msg = word_tokenize(args.utterance)
 
     # models
     generator, tokenizer = get_utterance_predictor_and_tokenizer(predictor="huggingtweets/ppredictors") # "huggingtweets/ppredictors" or "gpt2"

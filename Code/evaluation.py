@@ -1,3 +1,5 @@
+import argparse
+
 import our_dialogue_manager as dm
 from nltk.tokenize import word_tokenize
 from collections import defaultdict
@@ -5,13 +7,6 @@ import csv
 import numpy as np
 from timeit import default_timer as timer
 
-corpus_file_name = "../datahandling/unifiedCorpora/SwitchBoard/allSwitchboard._for_development.csv"
-model_path = "C:/Users/schmi/Softwareprojekt/switchboard/models"
-log_path = "eval/eval_log_allSwitchboard_0.csv"
-write_log = True
-predictor = "gpt2" # "huggingtweets/ppredictors" or "gpt2"
-vad_threshold = 2 # VAD = voice activation detector; threshold indicates after how many tokens of silence we deduce an end-of-utterance
-response_generation_duration = 2  # how long it takes the NLG module to produce a response given a utterance and intent; duration measured in number of tokens
 
 
 def get_prediction(utterance, model, generator, tokenizer):
@@ -58,8 +53,6 @@ def get_prediction(utterance, model, generator, tokenizer):
 	cumu_msg_at_trp = word_tokenize(msg_at_trp)
 	tokenized_utterance_prediction = word_tokenize(utterance_prediction_at_trp)
 	prediction_locking_time = len(cumu_msg_at_trp) - len(tokenized_msg)
-	#print(len(tokenized_utterance_prediction),tokenized_utterance_prediction)
-	#print(len(tokenized_msg), tokenized_msg)
 	predicted_trp = len(tokenized_utterance_prediction) - len(tokenized_msg)
 	# According to Gervits et al., it takes the model about 1400ms to compute its response (including VAD).
 	# This translates into something between 3-5 tokens in typical English dialogue. Let's assume 2 tokens
@@ -77,9 +70,9 @@ def get_prediction(utterance, model, generator, tokenizer):
 	return predicted_intent, prediction_locking_time, predicted_trp, fot_estimate, len(tokenized_msg)
 
 
-def main():
-	if write_log:
-		with open(log_path, "a", encoding="utf-8") as log:
+def main(args):
+	if args.write_log:
+		with open(args.log_file, "a", encoding="utf-8") as log:
 			log.write("\t".join(["utterance", "intent", "predicted intent", "locking time", "predicted TRP",
 								 "estimated FTO without VAD"]))
 			log.write("\n")
@@ -88,7 +81,7 @@ def main():
 
 	# get models
 	generator, tokenizer = dm.get_utterance_predictor_and_tokenizer(predictor=predictor)
-	model = dm.get_rasa_model(model_path)
+	model = dm.get_rasa_model(args.model)
 
 	# read in corpus file as csv
 	confusion_matrix = defaultdict(lambda: defaultdict(int))
@@ -96,29 +89,20 @@ def main():
 	trps = []
 	fots = []
 	msg_lens = []
-	with open(corpus_file_name, mode='r', encoding="utf-8") as csv_file:
+	with open(args.file_name, mode='r', encoding="utf-8") as csv_file:
 		csv_reader = csv.DictReader(csv_file)
 		for row in csv_reader:
-		#for line in csv_file:
 			p_intent, prediction_locking_time, predicted_trp, estimated_fot, len_original_msg = \
 				get_prediction(row["utterance"], model, generator, tokenizer)
 
 			confusion_matrix[row["intent"]][p_intent] += 1
-			#line = line.strip().split("|")
-			#p_intent, prediction_locking_time, predicted_trp, estimated_fot = \
-				#get_prediction(line[0], model, generator, tokenizer)
-
-			#confusion_matrix[line[1]][p_intent] += 1
 			locking_times.append(prediction_locking_time)
 			trps.append(predicted_trp)
 			fots.append(estimated_fot)
 			msg_lens.append(len_original_msg)
 
-			if write_log:
-				with open(log_path, "a", encoding="utf-8") as log:
-					#print([line[0], line[1], p_intent, prediction_locking_time, predicted_trp, estimated_fot])
-					#log.write("\t".join([line[0], line[1], p_intent, str(prediction_locking_time), str(predicted_trp), str(estimated_fot)]))
-					#log.write("\n")
+			if args.write_log:
+				with open(args.log_file, "a", encoding="utf-8") as log:
 					print([row["utterance"], row["intent"], p_intent, prediction_locking_time, predicted_trp, estimated_fot], "\n\n")
 					log.write("\t".join([row["utterance"], row["intent"], p_intent, str(prediction_locking_time), str(predicted_trp),
 										 str(estimated_fot)]))
@@ -186,52 +170,26 @@ def from_log(logfile):
 	print_metrics(confusion_matrix, locking_times, trps, ftos, "unknown")
 
 if __name__ == "__main__":
-	#from_log("eval_log_biggerSwitchboard.csv")
-	main()
+	predictor = "gpt2"  # "huggingtweets/ppredictors" or "gpt2"
+	vad_threshold = 2  # VAD = voice activation detector; threshold indicates after how many tokens of silence we deduce an end-of-utterance
+	response_generation_duration = 2  # how long it takes the NLG module to produce a response given a utterance and intent; duration measured in number of tokens
 
+	parser = argparse.ArgumentParser(description='This script performs quantitative evaluation of the model our_dialog_manager')
+	parser.add_argument("-g", "--gold-file", dest="file_name",
+						help='The corpus file you wish to run. Format: csv file with columns "intent" and "utterance".')
+	parser.add_argument("-m", "--model",
+						help="""Path to the "/models" directory with a trained model.""")
+	parser.add_argument("-l", "--log-file",
+						help="""Path to a log file created in the previous run of the evaluation script or path to the 
+						log file to be created in this run of the evalutaion.""")
+	parser.add_argument("--write-log", action="store_true",
+						help="""Writes gold intents and predicted intents into a file. Default = false.""")
+	parser.add_argument("--from-log", action="store_true")
+	args = parser.parse_args()
 
-"""
-_confusion_matrix = defaultdict(lambda: defaultdict(int))
-for intent in confusion_matrix:
-	if intent.startswith("inform"):
-		for _intent in confusion_matrix[intent]:
-			if _intent.startswith("inform"):
-				_confusion_matrix["inform"]["inform"] += confusion_matrix[intent][_intent]
-			else:
-				_confusion_matrix["inform"][_intent] += confusion_matrix[intent][_intent]
+	if args.from_log:
+		from_log(args.log_file)
 	else:
-		for _intent in confusion_matrix[intent]:
-			if _intent.startswith("inform"):
-				_confusion_matrix[intent]["inform"] += confusion_matrix[intent][_intent]
-			else:
-				_confusion_matrix[intent][_intent] += confusion_matrix[intent][_intent]
-print("controlled for two types of inform")
-true_positives = float(sum([_confusion_matrix[x][x] for x in _confusion_matrix]))
-print("\ttrue_positives: ", true_positives)
-total_sum = float(sum([sum(_confusion_matrix[x].values()) for x in _confusion_matrix]))
-print("\ttotal sum: ", total_sum)
-accuracy = true_positives / total_sum
-print("\taccuracy: ", accuracy)
-"""
+		main(args)
 
-
-
-
-
-
-
-
-
-# TODO label-specific evaluation
-# label-specific
-"""
-false_negatives = dict()
-for gold in confusion_matrix:
-	false_negatives[gold] = sum(confusion_matrix[gold].values()) - confusion_matrix[gold][gold]
-false_positives = dict()
-for gold in confusion_matrix:
-	for pred in confusion_matrix:
-		if gold != pred:
-			false_positives[pred] += confusion_matrix[gold][pred]
-"""
 
